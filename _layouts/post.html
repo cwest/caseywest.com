@@ -26,7 +26,9 @@
     <header class="header-title">
       <div class="header-title-wrap">
         {% if page.link %}
-          <h1 class="entry-title"><a href="{{ page.link }}">{{ page.title }}</a></h1>
+          <h1 class="entry-title"><a href="{{ page.link }}">
+            <i class="fa fa-hand-o-right"></i>&nbsp;{{ page.title }}
+          </a></h1>
         {% else %}
           <h1 class="entry-title"><a href="{{ site.url }}{{ page.url }}" rel="bookmark" title="{{ page.title }}">{{ page.title }}</a></h1>
         {% endif %}
@@ -50,7 +52,7 @@
         {% if page.share != false %}{% include social-share.html %}{% endif %}
       </footer>
     </div><!-- /.entry-content -->
-    {% if page.comments != false %}<section id="disqus_thread"></section><!-- /#disqus_thread -->{% endif %}
+    {% if page.comments == true %}<section id="disqus_thread"></section><!-- /#disqus_thread -->{% endif %}
     {% if site.related_posts.size %}{% include read-more.html %}{% endif %}
   </article>
 </div><!-- /#main -->
@@ -61,7 +63,7 @@
   </footer>
 </div><!-- /.footer-wrapper -->
 
-{% include scripts.html %}	        
+{% include scripts.html %}
 
 </body>
 </html>

@@ -1,0 +1,9 @@
+gem 'rack-rewrite'
+require 'rack/rewrite'
+
+use Rack::Rewrite do
+  r301 %r{^([^\.]*[^\/])$}, '$1/'
+  r301 %r{^(.*\/)$}, '$1index.html'
+end
+
+run Rack::Directory.new( "_site" )
