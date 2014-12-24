@@ -8,9 +8,9 @@ image:
 date: 2014-12-24T10:00:22-05:00
 ---
 
-_Originally posted by me on [March 25, 2009](https://web.archive.org/web/20090416185738/http://caseywest.com/2009/03/25/your-software-is-made-of-people/) and reprinted here with no editing._
-
 I was talking with someone the other day about my time as (Interim) VP of Engineering at [Socialtext](http://socialtext.com). Did I enjoy that? The question was framed like this: some people just like doing things and not dealing with the social aspects of management. But I wonder, are they really much different?
+
+> Originally published by me on [March 25, 2009](https://web.archive.org/web/20090416185738/http://caseywest.com/2009/03/25/your-software-is-made-of-people/) and reprinted here as-is.
 
 Software development is creating, maintaining, and evolving a system. Use whatever action verb you like, you are working with a system. That system can be made better or worse by your actions. If you fix a bug the system is better. Remove a networking bottleneck? Better. Introduce a needless database query on every iteration of a loop? Worse.
 
