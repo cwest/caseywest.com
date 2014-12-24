@@ -1,6 +1,6 @@
 .pullquote-right:before,
 .pullquote-left:before {
-  color:  $info;
+  color:  lighten($base-color, 40);
   /* Reset metrics. */
   padding: 0;
   border: none;
