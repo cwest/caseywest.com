@@ -58,6 +58,7 @@ kramdown:
   entity_output: as_char
   toc_levels: 1..6
   use_coderay: true
+  smart_quotes: ["apos", "apos", "quot", "quot"]
 
   coderay:
     coderay_line_numbers: table
