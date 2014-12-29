@@ -26,15 +26,15 @@ module Jekyll
 
   class PullquoteTag < Liquid::Block
     def initialize(tag_name, markup, tokens)
-      @align = (markup =~ /left/i) ? "left" : "right"
       super
+      @align = (markup =~ /left/i) ? "left" : "right"
     end
 
     def render(context)
       output = super
       if output =~ /\{"\s*(.+?)\s*"\}/m
-        @quote = $1
-        "<span class='pullquote-#{@align}' data-pullquote='#{@quote}'>#{output.gsub(/\{"\s*|\s*"\}/, '')}</span>"
+        @quote = $1.gsub(/'/, '&apos;')
+        return %(<span class='pullquote-#{@align}' data-pullquote='#{@quote}'>#{output.gsub(/\{"\s*|\s*"\}/, '')}</span>)
       else
         return "Surround your pullquote like this {\" text to be quoted \"}"
       end
