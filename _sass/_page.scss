@@ -369,6 +369,17 @@ body {
 			padding: 50px 80px;
 		}
 	}
+	.entry-link-post {
+		position: relative;
+
+		.entry-link-marker {
+			$entry-link-marker-font-size: 32px;
+			position: absolute;
+			display: inline-block;
+			left: ($entry-link-marker-font-size/4*-1) - $entry-link-marker-font-size;
+			line-height: $doc-line-height / $doc-font-size * $entry-link-marker-font-size;
+		}
+	}
 }
 
 // Footer
