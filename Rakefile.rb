@@ -105,6 +105,7 @@ task :deploy => [:check_git] do
 
   system "bundle exec jekyll build"
   system "git checkout \"#{deploy_branch}\""
+  system "ls -a | egrep -v '^(_site|\.git|\.\.?)$' | xargs rm -r"
   system "cp -r _site/* . && rm -rf _site/ && touch .nojekyll"
 
   unless git_clean?
