@@ -117,3 +117,8 @@ task :deploy => [:check_git] do
 
   system "git checkout \"#{source_branch}\""
 end
+
+desc "Build and watch site in dev mode"
+task :write do
+  system "bundle exec jekyll build --watch --config _config.yml,_config-dev.yml"
+end
