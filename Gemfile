@@ -9,6 +9,7 @@ gem 'rack'
 gem 'rack-rewrite'
 gem 'stringex'
 gem 'rake'
+gem 'ruby-oembed'
 
 require 'json'
 require 'open-uri'

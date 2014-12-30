@@ -132,6 +132,7 @@ GEM
       ffi (>= 0.5.0)
     rdiscount (2.1.7)
     redcarpet (3.1.2)
+    ruby-oembed (0.8.11)
     safe_yaml (1.0.4)
     sass (3.4.5)
     stringex (2.5.2)
@@ -161,5 +162,6 @@ DEPENDENCIES
   rack
   rack-rewrite
   rake
+  ruby-oembed
   sass (= 3.4.5)
   stringex
