@@ -4,13 +4,122 @@
 <generator uri="https://github.com/mojombo/jekyll">Jekyll</generator>
 <link rel="self" type="application/atom+xml" href="http://caseywest.com/feed.xml" />
 <link rel="alternate" type="text/html" href="http://caseywest.com" />
-<updated>2014-12-30T15:52:59-05:00</updated>
+<updated>2014-12-31T19:33:15-05:00</updated>
 <id>http://caseywest.com/</id>
 <author>
   <name>Casey West</name>
   <uri>http://caseywest.com/</uri>
   <email></email>
 </author>
+
+
+<entry>
+  <title type="html"><![CDATA[2014's Podcast Recommendations]]></title>
+ <link rel="alternate" type="text/html" href="http://caseywest.com/2014-s-podcast-recommendations/" />
+  <id>http://caseywest.com/2014-s-podcast-recommendations</id>
+  <updated>2014-12-31 18:42:03 -0500T00:00:00-00:00</updated>
+  <published>2014-12-31T00:00:00-05:00</published>
+  
+  <author>
+    <name>Casey West</name>
+    <uri>http://caseywest.com</uri>
+    <email></email>
+  </author>
+  <content type="html">&lt;p&gt;I listen to podcasts a lot. My gift to you for the new year is a selection of podcasts I really enjoyed in 2014.&lt;/p&gt;
+
+&lt;p&gt;My recommendations are all audio-only because I&#39;m often listening during a commute, shower, walk, or as I&#39;m falling asleep. What did I miss?&lt;/p&gt;
+
+&lt;ul id=&quot;markdown-toc&quot;&gt;
+  &lt;li&gt;&lt;a href=&quot;#storytelling&quot;&gt;Storytelling&lt;/a&gt;    &lt;ul&gt;
+      &lt;li&gt;&lt;a href=&quot;#serialhttpserialpodcastorg-by-this-american-life&quot;&gt;&lt;a href=&quot;http://serialpodcast.org/&quot;&gt;Serial&lt;/a&gt; by This American Life&lt;/a&gt;&lt;/li&gt;
+      &lt;li&gt;&lt;a href=&quot;#this-american-lifehttpwwwthisamericanlifeorgpodcast&quot;&gt;&lt;a href=&quot;http://www.thisamericanlife.org/podcast&quot;&gt;This American Life&lt;/a&gt;&lt;/a&gt;&lt;/li&gt;
+      &lt;li&gt;&lt;a href=&quot;#welcome-to-night-valehttppodbayfmshow536258179-by-commonplace-bookshttpcommonplacebookscom&quot;&gt;&lt;a href=&quot;http://podbay.fm/show/536258179&quot;&gt;Welcome to Night Vale&lt;/a&gt; by &lt;a href=&quot;http://commonplacebooks.com/&quot;&gt;Commonplace Books&lt;/a&gt;&lt;/a&gt;&lt;/li&gt;
+      &lt;li&gt;&lt;a href=&quot;#radiolabhttpwwwradiolaborgseriespodcasts-by-wnychttpwwwwnycorg&quot;&gt;&lt;a href=&quot;http://www.radiolab.org/series/podcasts/&quot;&gt;Radiolab&lt;/a&gt; by &lt;a href=&quot;http://www.wnyc.org/&quot;&gt;WNYC&lt;/a&gt;&lt;/a&gt;&lt;/li&gt;
+      &lt;li&gt;&lt;a href=&quot;#reply-allhttpgimletmediacomshowreply-all-by-gimlet-media&quot;&gt;&lt;a href=&quot;http://gimletmedia.com/show/reply-all/&quot;&gt;Reply All&lt;/a&gt; by Gimlet Media&lt;/a&gt;&lt;/li&gt;
+      &lt;li&gt;&lt;a href=&quot;#startuphttpgimletmediacomshowstartup-by-gimlet-mediahttpgimletmediacom&quot;&gt;&lt;a href=&quot;http://gimletmedia.com/show/startup/&quot;&gt;StartUp&lt;/a&gt; by &lt;a href=&quot;http://gimletmedia.com/&quot;&gt;Gimlet Media&lt;/a&gt;&lt;/a&gt;&lt;/li&gt;
+      &lt;li&gt;&lt;a href=&quot;#selected-shortshttpwwwselectedshortsorgpodcast-by-pri&quot;&gt;&lt;a href=&quot;http://www.selectedshorts.org/podcast/&quot;&gt;Selected Shorts&lt;/a&gt; by PRI&lt;/a&gt;&lt;/li&gt;
+      &lt;li&gt;&lt;a href=&quot;#ted-radio-hourhttpwwwnprorgrsspodcastpodcastdetailphpsiteid151446218-by-npr&quot;&gt;&lt;a href=&quot;http://www.npr.org/rss/podcast/podcast_detail.php?siteId=151446218&quot;&gt;TED Radio Hour&lt;/a&gt; by NPR&lt;/a&gt;&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;#ideas&quot;&gt;Ideas&lt;/a&gt;    &lt;ul&gt;
+      &lt;li&gt;&lt;a href=&quot;#ted-talks-audiohttpsitunesapplecomuspodcasttedtalks-audioid160904630&quot;&gt;&lt;a href=&quot;https://itunes.apple.com/us/podcast/tedtalks-audio/id160904630&quot;&gt;TED Talks Audio&lt;/a&gt;&lt;/a&gt;&lt;/li&gt;
+      &lt;li&gt;&lt;a href=&quot;#ruby5httpruby5envylabscom&quot;&gt;&lt;a href=&quot;http://ruby5.envylabs.com/&quot;&gt;Ruby5&lt;/a&gt;&lt;/a&gt;&lt;/li&gt;
+      &lt;li&gt;&lt;a href=&quot;#the-ruby-rogueshttpdevchattvruby-rogues-by-devchattvhttpdevchattv&quot;&gt;&lt;a href=&quot;http://devchat.tv/ruby-rogues&quot;&gt;The Ruby Rogues&lt;/a&gt; by &lt;a href=&quot;http://devchat.tv/&quot;&gt;DevChat.TV&lt;/a&gt;&lt;/a&gt;&lt;/li&gt;
+      &lt;li&gt;&lt;a href=&quot;#the-changeloghttpthechangelogcom&quot;&gt;&lt;a href=&quot;http://thechangelog.com/&quot;&gt;The ChangeLog&lt;/a&gt;&lt;/a&gt;&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;#current-events&quot;&gt;Current Events&lt;/a&gt;    &lt;ul&gt;
+      &lt;li&gt;&lt;a href=&quot;#wait-wait-dont-tell-mehttpwwwnprorgrsspodcastpodcastdetailphpsiteid344098540-by-npr&quot;&gt;&lt;a href=&quot;http://www.npr.org/rss/podcast/podcast_detail.php?siteId=344098540&quot;&gt;Wait Wait… Don&#39;t Tell Me!&lt;/a&gt; by NPR&lt;/a&gt;&lt;/li&gt;
+      &lt;li&gt;&lt;a href=&quot;#the-rachel-maddow-showhttpwwwnbcnewscomid8132577tget-podcasts-nbc-news-msnbc-tv-nbcnewscomvksl4rf8v8-on-msnbc&quot;&gt;&lt;a href=&quot;http://www.nbcnews.com/id/8132577/t/get-podcasts-nbc-news-msnbc-tv-nbcnewscom/#.VKSL_4rF8v8&quot;&gt;The Rachel Maddow Show&lt;/a&gt; on MSNBC&lt;/a&gt;&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h1 id=&quot;storytelling&quot;&gt;Storytelling&lt;/h1&gt;
+
+&lt;h2 id=&quot;serialhttpserialpodcastorg-by-this-american-life&quot;&gt;&lt;a href=&quot;http://serialpodcast.org/&quot;&gt;Serial&lt;/a&gt; by This American Life&lt;/h2&gt;
+
+&lt;p&gt;This is obviously the breakout show of the year and it definitely got to me. &lt;a href=&quot;https://firstlook.org/theintercept/2014/12/29/exclusive-interview-jay-wilds-star-witness-adnan-syed-serial-case-pt-1/&quot;&gt;The post-series interview with Jay&lt;/a&gt; definitely keeps the mystery alive.&lt;/p&gt;
+
+&lt;h2 id=&quot;this-american-lifehttpwwwthisamericanlifeorgpodcast&quot;&gt;&lt;a href=&quot;http://www.thisamericanlife.org/podcast&quot;&gt;This American Life&lt;/a&gt;&lt;/h2&gt;
+
+&lt;p&gt;An essential standard.&lt;/p&gt;
+
+&lt;h2 id=&quot;welcome-to-night-valehttppodbayfmshow536258179-by-commonplace-bookshttpcommonplacebookscom&quot;&gt;&lt;a href=&quot;http://podbay.fm/show/536258179&quot;&gt;Welcome to Night Vale&lt;/a&gt; by &lt;a href=&quot;http://commonplacebooks.com/&quot;&gt;Commonplace Books&lt;/a&gt;&lt;/h2&gt;
+
+&lt;p&gt;A slightly creepy news cast about a slightly creepy town. Goodnight, Night Vale. Goodnight.&lt;/p&gt;
+
+&lt;h2 id=&quot;radiolabhttpwwwradiolaborgseriespodcasts-by-wnychttpwwwwnycorg&quot;&gt;&lt;a href=&quot;http://www.radiolab.org/series/podcasts/&quot;&gt;Radiolab&lt;/a&gt; by &lt;a href=&quot;http://www.wnyc.org/&quot;&gt;WNYC&lt;/a&gt;&lt;/h2&gt;
+
+&lt;p&gt;Great storytelling on a wide range of subjects.&lt;/p&gt;
+
+&lt;h2 id=&quot;reply-allhttpgimletmediacomshowreply-all-by-gimlet-media&quot;&gt;&lt;a href=&quot;http://gimletmedia.com/show/reply-all/&quot;&gt;Reply All&lt;/a&gt; by Gimlet Media&lt;/h2&gt;
+
+&lt;p&gt;Like it says, a show about the Internet. Fascinating stories about how the Internet shapes us and how we shape it.&lt;/p&gt;
+
+&lt;h2 id=&quot;startuphttpgimletmediacomshowstartup-by-gimlet-mediahttpgimletmediacom&quot;&gt;&lt;a href=&quot;http://gimletmedia.com/show/startup/&quot;&gt;StartUp&lt;/a&gt; by &lt;a href=&quot;http://gimletmedia.com/&quot;&gt;Gimlet Media&lt;/a&gt;&lt;/h2&gt;
+
+&lt;p&gt;A series (like Serial) of episodes recording the journey of one entrepreneur trying to start up.&lt;/p&gt;
+
+&lt;h2 id=&quot;selected-shortshttpwwwselectedshortsorgpodcast-by-pri&quot;&gt;&lt;a href=&quot;http://www.selectedshorts.org/podcast/&quot;&gt;Selected Shorts&lt;/a&gt; by PRI&lt;/h2&gt;
+
+&lt;p&gt;Short fiction read by actors. Makes me feel like the golden age of radio might still have a place.&lt;/p&gt;
+
+&lt;h2 id=&quot;ted-radio-hourhttpwwwnprorgrsspodcastpodcastdetailphpsiteid151446218-by-npr&quot;&gt;&lt;a href=&quot;http://www.npr.org/rss/podcast/podcast_detail.php?siteId=151446218&quot;&gt;TED Radio Hour&lt;/a&gt; by NPR&lt;/h2&gt;
+
+&lt;p&gt;This is an excellent mashup between TED talks and storytelling, often going behind the scenes or deeper into subjects presented at TED events.&lt;/p&gt;
+
+&lt;h1 id=&quot;ideas&quot;&gt;Ideas&lt;/h1&gt;
+
+&lt;h2 id=&quot;ted-talks-audiohttpsitunesapplecomuspodcasttedtalks-audioid160904630&quot;&gt;&lt;a href=&quot;https://itunes.apple.com/us/podcast/tedtalks-audio/id160904630&quot;&gt;TED Talks Audio&lt;/a&gt;&lt;/h2&gt;
+
+&lt;p&gt;These folks are so awesome they compiled all the episodes available into a &lt;a href=&quot;http://blog.ted.com/2010/06/17/audio_podcasts/&quot;&gt;Google Spreadsheet&lt;/a&gt;. I prefer the audio format for listening on the go, but each episode does suggest &lt;em&gt;&quot;This talk contains powerful visuals.&quot;&lt;/em&gt;&lt;/p&gt;
+
+&lt;h2 id=&quot;ruby5httpruby5envylabscom&quot;&gt;&lt;a href=&quot;http://ruby5.envylabs.com/&quot;&gt;Ruby5&lt;/a&gt;&lt;/h2&gt;
+
+&lt;p&gt;Get five minutes of curated news about the Ruby and Ruby on Rails community twice a week (Tuesdays and Fridays).&lt;/p&gt;
+
+&lt;h2 id=&quot;the-ruby-rogueshttpdevchattvruby-rogues-by-devchattvhttpdevchattv&quot;&gt;&lt;a href=&quot;http://devchat.tv/ruby-rogues&quot;&gt;The Ruby Rogues&lt;/a&gt; by &lt;a href=&quot;http://devchat.tv/&quot;&gt;DevChat.TV&lt;/a&gt;&lt;/h2&gt;
+
+&lt;p&gt;I have to be honest: this is hit or miss. In the last few months, though, it&#39;s been more hits than misses. I like the regulars on the show and someday I hope to be grilled by them about technical leadership. If I am so lucky…&lt;/p&gt;
+
+&lt;h2 id=&quot;the-changeloghttpthechangelogcom&quot;&gt;&lt;a href=&quot;http://thechangelog.com/&quot;&gt;The ChangeLog&lt;/a&gt;&lt;/h2&gt;
+
+&lt;p&gt;I like how polyglot this podcast is. Lots of communities get play including, for the first time, Perl just a couple weeks ago. Their [website] also has a nice link blog of interesting open source projects. Keep an eye on it.&lt;/p&gt;
+
+&lt;h1 id=&quot;current-events&quot;&gt;Current Events&lt;/h1&gt;
+
+&lt;h2 id=&quot;wait-wait-dont-tell-mehttpwwwnprorgrsspodcastpodcastdetailphpsiteid344098540-by-npr&quot;&gt;&lt;a href=&quot;http://www.npr.org/rss/podcast/podcast_detail.php?siteId=344098540&quot;&gt;Wait Wait… Don&#39;t Tell Me!&lt;/a&gt; by NPR&lt;/h2&gt;
+
+&lt;p&gt;Family favorite every weekend.&lt;/p&gt;
+
+&lt;h2 id=&quot;the-rachel-maddow-showhttpwwwnbcnewscomid8132577tget-podcasts-nbc-news-msnbc-tv-nbcnewscomvksl4rf8v8-on-msnbc&quot;&gt;&lt;a href=&quot;http://www.nbcnews.com/id/8132577/t/get-podcasts-nbc-news-msnbc-tv-nbcnewscom/#.VKSL_4rF8v8&quot;&gt;The Rachel Maddow Show&lt;/a&gt; on MSNBC&lt;/h2&gt;
+
+&lt;p&gt;Scroll to the bottom of that page for podcast subscription links. &lt;em&gt;Warning: political alignment obvious.&lt;/em&gt;&lt;/p&gt;
+
+
+  &lt;p&gt;&lt;a href=&quot;http://caseywest.com/2014-s-podcast-recommendations/&quot;&gt;2014's Podcast Recommendations&lt;/a&gt; was originally published by Casey West at &lt;a href=&quot;http://caseywest.com&quot;&gt;Corner of Weeping&lt;/a&gt; on December 31, 2014.&lt;/p&gt;</content>
+</entry>
 
 
 <entry>
