@@ -4,13 +4,181 @@
 <generator uri="https://github.com/mojombo/jekyll">Jekyll</generator>
 <link rel="self" type="application/atom+xml" href="http://caseywest.com/feed.xml" />
 <link rel="alternate" type="text/html" href="http://caseywest.com" />
-<updated>2014-12-31T19:33:15-05:00</updated>
+<updated>2015-01-03T00:27:52-05:00</updated>
 <id>http://caseywest.com/</id>
 <author>
   <name>Casey West</name>
   <uri>http://caseywest.com/</uri>
   <email></email>
 </author>
+
+
+<entry>
+  <title type="html"><![CDATA[Run bundle-audit from rake]]></title>
+ <link rel="alternate" type="text/html" href="http://caseywest.com/run-bundle-audit-from-rake/" />
+  <id>http://caseywest.com/run-bundle-audit-from-rake</id>
+  <updated>2015-01-03 00:07:06 -0500T00:00:00-00:00</updated>
+  <published>2015-01-03T00:00:00-05:00</published>
+  
+  <author>
+    <name>Casey West</name>
+    <uri>http://caseywest.com</uri>
+    <email></email>
+  </author>
+  <content type="html">&lt;p&gt;&lt;code&gt;bundle-audit&lt;/code&gt; is a command-line utility provided by the &lt;a href=&quot;https://github.com/rubysec/bundler-audit&quot;&gt;bundler-audit ruby gem&lt;/a&gt;. It does patch-level vulnerability scans on your Ruby dependencies by working with &lt;a href=&quot;http://bundler.io/&quot;&gt;bundler&lt;/a&gt; to inspect your project&#39;s &lt;code&gt;Gemfile.lock&lt;/code&gt;.&lt;/p&gt;
+
+&lt;p&gt;I want to run &lt;code&gt;bundle-audit&lt;/code&gt; from a rake task in a Rails project. Here&#39;s how I did it.&lt;/p&gt;
+
+&lt;p&gt;This is my &lt;code&gt;lib/tasks/bundle_audit.rake&lt;/code&gt; file.&lt;/p&gt;
+
+&lt;div&gt;&lt;table class=&quot;CodeRay&quot;&gt;&lt;tr&gt;
+  &lt;td class=&quot;line-numbers&quot;&gt;&lt;pre&gt;&lt;a href=&quot;#n1&quot; name=&quot;n1&quot;&gt;1&lt;/a&gt;
+&lt;a href=&quot;#n2&quot; name=&quot;n2&quot;&gt;2&lt;/a&gt;
+&lt;a href=&quot;#n3&quot; name=&quot;n3&quot;&gt;3&lt;/a&gt;
+&lt;a href=&quot;#n4&quot; name=&quot;n4&quot;&gt;4&lt;/a&gt;
+&lt;a href=&quot;#n5&quot; name=&quot;n5&quot;&gt;5&lt;/a&gt;
+&lt;a href=&quot;#n6&quot; name=&quot;n6&quot;&gt;6&lt;/a&gt;
+&lt;a href=&quot;#n7&quot; name=&quot;n7&quot;&gt;7&lt;/a&gt;
+&lt;a href=&quot;#n8&quot; name=&quot;n8&quot;&gt;8&lt;/a&gt;
+&lt;a href=&quot;#n9&quot; name=&quot;n9&quot;&gt;9&lt;/a&gt;
+&lt;strong&gt;&lt;a href=&quot;#n10&quot; name=&quot;n10&quot;&gt;10&lt;/a&gt;&lt;/strong&gt;
+&lt;a href=&quot;#n11&quot; name=&quot;n11&quot;&gt;11&lt;/a&gt;
+&lt;a href=&quot;#n12&quot; name=&quot;n12&quot;&gt;12&lt;/a&gt;
+&lt;a href=&quot;#n13&quot; name=&quot;n13&quot;&gt;13&lt;/a&gt;
+&lt;a href=&quot;#n14&quot; name=&quot;n14&quot;&gt;14&lt;/a&gt;
+&lt;a href=&quot;#n15&quot; name=&quot;n15&quot;&gt;15&lt;/a&gt;
+&lt;a href=&quot;#n16&quot; name=&quot;n16&quot;&gt;16&lt;/a&gt;
+&lt;a href=&quot;#n17&quot; name=&quot;n17&quot;&gt;17&lt;/a&gt;
+&lt;a href=&quot;#n18&quot; name=&quot;n18&quot;&gt;18&lt;/a&gt;
+&lt;a href=&quot;#n19&quot; name=&quot;n19&quot;&gt;19&lt;/a&gt;
+&lt;strong&gt;&lt;a href=&quot;#n20&quot; name=&quot;n20&quot;&gt;20&lt;/a&gt;&lt;/strong&gt;
+&lt;a href=&quot;#n21&quot; name=&quot;n21&quot;&gt;21&lt;/a&gt;
+&lt;a href=&quot;#n22&quot; name=&quot;n22&quot;&gt;22&lt;/a&gt;
+&lt;a href=&quot;#n23&quot; name=&quot;n23&quot;&gt;23&lt;/a&gt;
+&lt;/pre&gt;&lt;/td&gt;
+  &lt;td class=&quot;code&quot;&gt;&lt;pre&gt;require &lt;span class=&quot;string&quot;&gt;&lt;span class=&quot;delimiter&quot;&gt;&#39;&lt;/span&gt;&lt;span class=&quot;content&quot;&gt;bundler/audit/cli&lt;/span&gt;&lt;span class=&quot;delimiter&quot;&gt;&#39;&lt;/span&gt;&lt;/span&gt;
+
+namespace &lt;span class=&quot;symbol&quot;&gt;:bundle_audit&lt;/span&gt; &lt;span class=&quot;keyword&quot;&gt;do&lt;/span&gt;
+  desc &lt;span class=&quot;string&quot;&gt;&lt;span class=&quot;delimiter&quot;&gt;&#39;&lt;/span&gt;&lt;span class=&quot;content&quot;&gt;Update bundle-audit database&lt;/span&gt;&lt;span class=&quot;delimiter&quot;&gt;&#39;&lt;/span&gt;&lt;/span&gt;
+  task &lt;span class=&quot;symbol&quot;&gt;:update&lt;/span&gt; &lt;span class=&quot;keyword&quot;&gt;do&lt;/span&gt;
+    &lt;span class=&quot;constant&quot;&gt;Bundler&lt;/span&gt;::&lt;span class=&quot;constant&quot;&gt;Audit&lt;/span&gt;::&lt;span class=&quot;constant&quot;&gt;CLI&lt;/span&gt;.new.update
+  &lt;span class=&quot;keyword&quot;&gt;end&lt;/span&gt;
+
+  desc &lt;span class=&quot;string&quot;&gt;&lt;span class=&quot;delimiter&quot;&gt;&#39;&lt;/span&gt;&lt;span class=&quot;content&quot;&gt;Check gems for vulns using bundle-audit&lt;/span&gt;&lt;span class=&quot;delimiter&quot;&gt;&#39;&lt;/span&gt;&lt;/span&gt;
+  task &lt;span class=&quot;symbol&quot;&gt;:check&lt;/span&gt; &lt;span class=&quot;keyword&quot;&gt;do&lt;/span&gt;
+    &lt;span class=&quot;constant&quot;&gt;Bundler&lt;/span&gt;::&lt;span class=&quot;constant&quot;&gt;Audit&lt;/span&gt;::&lt;span class=&quot;constant&quot;&gt;CLI&lt;/span&gt;.new.check
+  &lt;span class=&quot;keyword&quot;&gt;end&lt;/span&gt;
+
+  desc &lt;span class=&quot;string&quot;&gt;&lt;span class=&quot;delimiter&quot;&gt;&#39;&lt;/span&gt;&lt;span class=&quot;content&quot;&gt;Update vulns database and check gems using bundle-audit&lt;/span&gt;&lt;span class=&quot;delimiter&quot;&gt;&#39;&lt;/span&gt;&lt;/span&gt;
+  task &lt;span class=&quot;symbol&quot;&gt;:run&lt;/span&gt; &lt;span class=&quot;keyword&quot;&gt;do&lt;/span&gt;
+    &lt;span class=&quot;constant&quot;&gt;Rake&lt;/span&gt;::&lt;span class=&quot;constant&quot;&gt;Task&lt;/span&gt;[&lt;span class=&quot;string&quot;&gt;&lt;span class=&quot;delimiter&quot;&gt;&#39;&lt;/span&gt;&lt;span class=&quot;content&quot;&gt;bundle_audit:update&lt;/span&gt;&lt;span class=&quot;delimiter&quot;&gt;&#39;&lt;/span&gt;&lt;/span&gt;].invoke
+    &lt;span class=&quot;constant&quot;&gt;Rake&lt;/span&gt;::&lt;span class=&quot;constant&quot;&gt;Task&lt;/span&gt;[&lt;span class=&quot;string&quot;&gt;&lt;span class=&quot;delimiter&quot;&gt;&#39;&lt;/span&gt;&lt;span class=&quot;content&quot;&gt;bundle_audit:check&lt;/span&gt;&lt;span class=&quot;delimiter&quot;&gt;&#39;&lt;/span&gt;&lt;/span&gt;].invoke
+  &lt;span class=&quot;keyword&quot;&gt;end&lt;/span&gt;
+&lt;span class=&quot;keyword&quot;&gt;end&lt;/span&gt;
+
+task &lt;span class=&quot;symbol&quot;&gt;:bundle_audit&lt;/span&gt; &lt;span class=&quot;keyword&quot;&gt;do&lt;/span&gt;
+  &lt;span class=&quot;constant&quot;&gt;Rake&lt;/span&gt;::&lt;span class=&quot;constant&quot;&gt;Task&lt;/span&gt;[&lt;span class=&quot;string&quot;&gt;&lt;span class=&quot;delimiter&quot;&gt;&#39;&lt;/span&gt;&lt;span class=&quot;content&quot;&gt;bundle_audit:run&lt;/span&gt;&lt;span class=&quot;delimiter&quot;&gt;&#39;&lt;/span&gt;&lt;/span&gt;].invoke
+&lt;span class=&quot;keyword&quot;&gt;end&lt;/span&gt;
+&lt;/pre&gt;&lt;/td&gt;
+&lt;/tr&gt;&lt;/table&gt;
+&lt;/div&gt;
+
+&lt;p&gt;It defines a few rasks under the &lt;code&gt;bundle_audit&lt;/code&gt; namespace. Thanks to the modular Ruby code built on top of &lt;a href=&quot;http://whatisthor.com/&quot;&gt;thor&lt;/a&gt; I had no trouble tapping directly into the command-line implementation for &lt;code&gt;bundle-audit&lt;/code&gt;.&lt;/p&gt;
+
+&lt;div&gt;&lt;table class=&quot;CodeRay&quot;&gt;&lt;tr&gt;
+  &lt;td class=&quot;line-numbers&quot;&gt;&lt;pre&gt;&lt;a href=&quot;#n1&quot; name=&quot;n1&quot;&gt;1&lt;/a&gt;
+&lt;a href=&quot;#n2&quot; name=&quot;n2&quot;&gt;2&lt;/a&gt;
+&lt;a href=&quot;#n3&quot; name=&quot;n3&quot;&gt;3&lt;/a&gt;
+&lt;a href=&quot;#n4&quot; name=&quot;n4&quot;&gt;4&lt;/a&gt;
+&lt;/pre&gt;&lt;/td&gt;
+  &lt;td class=&quot;code&quot;&gt;&lt;pre&gt;$ rake -T bundle_audit
+rake bundle_audit:check   # Check gems for vulns using bundle-audit
+rake bundle_audit:run     # Update vulns database and check gems using bundle-audit
+rake bundle_audit:update  # Update bundle-audit database
+&lt;/pre&gt;&lt;/td&gt;
+&lt;/tr&gt;&lt;/table&gt;
+&lt;/div&gt;
+
+&lt;p&gt;Invocation is as easy as you can imagine. On the command-line:&lt;/p&gt;
+
+&lt;div&gt;&lt;table class=&quot;CodeRay&quot;&gt;&lt;tr&gt;
+  &lt;td class=&quot;line-numbers&quot;&gt;&lt;pre&gt;&lt;a href=&quot;#n1&quot; name=&quot;n1&quot;&gt;1&lt;/a&gt;
+&lt;a href=&quot;#n2&quot; name=&quot;n2&quot;&gt;2&lt;/a&gt;
+&lt;a href=&quot;#n3&quot; name=&quot;n3&quot;&gt;3&lt;/a&gt;
+&lt;a href=&quot;#n4&quot; name=&quot;n4&quot;&gt;4&lt;/a&gt;
+&lt;a href=&quot;#n5&quot; name=&quot;n5&quot;&gt;5&lt;/a&gt;
+&lt;a href=&quot;#n6&quot; name=&quot;n6&quot;&gt;6&lt;/a&gt;
+&lt;a href=&quot;#n7&quot; name=&quot;n7&quot;&gt;7&lt;/a&gt;
+&lt;/pre&gt;&lt;/td&gt;
+  &lt;td class=&quot;code&quot;&gt;&lt;pre&gt;$ rake bundle_audit:run
+Updating ruby-advisory-db ...
+From https://github.com/rubysec/ruby-advisory-db
+ * branch            master     -&amp;gt; FETCH_HEAD
+Already up-to-date.
+ruby-advisory-db: 108 advisories
+No unpatched versions found
+&lt;/pre&gt;&lt;/td&gt;
+&lt;/tr&gt;&lt;/table&gt;
+&lt;/div&gt;
+
+&lt;p&gt;As you can see this does two things. First, it updates your local copy of the &lt;a href=&quot;https://github.com/rubysec/ruby-advisory-db&quot;&gt;ruby-advisory-db&lt;/a&gt;. Then it scans your gem dependency graph looking for unpatched dependencies. What you see above is the output when everything is OK.&lt;/p&gt;
+
+&lt;p&gt;I also incorporated the check into my &lt;code&gt;rake test&lt;/code&gt; task, because I want my tests to fail if I&#39;m shipping with vulnerable dependencies. Here&#39;s what I have going on in &lt;code&gt;lib/tasks/test.rake&lt;/code&gt;:&lt;/p&gt;
+
+&lt;div&gt;&lt;table class=&quot;CodeRay&quot;&gt;&lt;tr&gt;
+  &lt;td class=&quot;line-numbers&quot;&gt;&lt;pre&gt;&lt;a href=&quot;#n1&quot; name=&quot;n1&quot;&gt;1&lt;/a&gt;
+&lt;a href=&quot;#n2&quot; name=&quot;n2&quot;&gt;2&lt;/a&gt;
+&lt;a href=&quot;#n3&quot; name=&quot;n3&quot;&gt;3&lt;/a&gt;
+&lt;a href=&quot;#n4&quot; name=&quot;n4&quot;&gt;4&lt;/a&gt;
+&lt;a href=&quot;#n5&quot; name=&quot;n5&quot;&gt;5&lt;/a&gt;
+&lt;a href=&quot;#n6&quot; name=&quot;n6&quot;&gt;6&lt;/a&gt;
+&lt;a href=&quot;#n7&quot; name=&quot;n7&quot;&gt;7&lt;/a&gt;
+&lt;a href=&quot;#n8&quot; name=&quot;n8&quot;&gt;8&lt;/a&gt;
+&lt;a href=&quot;#n9&quot; name=&quot;n9&quot;&gt;9&lt;/a&gt;
+&lt;strong&gt;&lt;a href=&quot;#n10&quot; name=&quot;n10&quot;&gt;10&lt;/a&gt;&lt;/strong&gt;
+&lt;a href=&quot;#n11&quot; name=&quot;n11&quot;&gt;11&lt;/a&gt;
+&lt;a href=&quot;#n12&quot; name=&quot;n12&quot;&gt;12&lt;/a&gt;
+&lt;a href=&quot;#n13&quot; name=&quot;n13&quot;&gt;13&lt;/a&gt;
+&lt;a href=&quot;#n14&quot; name=&quot;n14&quot;&gt;14&lt;/a&gt;
+&lt;a href=&quot;#n15&quot; name=&quot;n15&quot;&gt;15&lt;/a&gt;
+&lt;a href=&quot;#n16&quot; name=&quot;n16&quot;&gt;16&lt;/a&gt;
+&lt;a href=&quot;#n17&quot; name=&quot;n17&quot;&gt;17&lt;/a&gt;
+&lt;a href=&quot;#n18&quot; name=&quot;n18&quot;&gt;18&lt;/a&gt;
+&lt;a href=&quot;#n19&quot; name=&quot;n19&quot;&gt;19&lt;/a&gt;
+&lt;strong&gt;&lt;a href=&quot;#n20&quot; name=&quot;n20&quot;&gt;20&lt;/a&gt;&lt;/strong&gt;
+&lt;a href=&quot;#n21&quot; name=&quot;n21&quot;&gt;21&lt;/a&gt;
+&lt;a href=&quot;#n22&quot; name=&quot;n22&quot;&gt;22&lt;/a&gt;
+&lt;/pre&gt;&lt;/td&gt;
+  &lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;comment&quot;&gt;# Remove the Rails defaults.&lt;/span&gt;
+&lt;span class=&quot;constant&quot;&gt;Rake&lt;/span&gt;::&lt;span class=&quot;constant&quot;&gt;Task&lt;/span&gt;[&lt;span class=&quot;string&quot;&gt;&lt;span class=&quot;delimiter&quot;&gt;&#39;&lt;/span&gt;&lt;span class=&quot;content&quot;&gt;test:all&lt;/span&gt;&lt;span class=&quot;delimiter&quot;&gt;&#39;&lt;/span&gt;&lt;/span&gt;].clear
+&lt;span class=&quot;constant&quot;&gt;Rake&lt;/span&gt;::&lt;span class=&quot;constant&quot;&gt;Task&lt;/span&gt;[&lt;span class=&quot;string&quot;&gt;&lt;span class=&quot;delimiter&quot;&gt;&#39;&lt;/span&gt;&lt;span class=&quot;content&quot;&gt;test:all:db&lt;/span&gt;&lt;span class=&quot;delimiter&quot;&gt;&#39;&lt;/span&gt;&lt;/span&gt;].clear
+&lt;span class=&quot;constant&quot;&gt;Rake&lt;/span&gt;::&lt;span class=&quot;constant&quot;&gt;Task&lt;/span&gt;[&lt;span class=&quot;string&quot;&gt;&lt;span class=&quot;delimiter&quot;&gt;&#39;&lt;/span&gt;&lt;span class=&quot;content&quot;&gt;test:db&lt;/span&gt;&lt;span class=&quot;delimiter&quot;&gt;&#39;&lt;/span&gt;&lt;/span&gt;].clear
+&lt;span class=&quot;constant&quot;&gt;Rake&lt;/span&gt;::&lt;span class=&quot;constant&quot;&gt;Task&lt;/span&gt;[&lt;span class=&quot;string&quot;&gt;&lt;span class=&quot;delimiter&quot;&gt;&#39;&lt;/span&gt;&lt;span class=&quot;content&quot;&gt;test&lt;/span&gt;&lt;span class=&quot;delimiter&quot;&gt;&#39;&lt;/span&gt;&lt;/span&gt;].clear
+
+namespace &lt;span class=&quot;symbol&quot;&gt;:test&lt;/span&gt; &lt;span class=&quot;keyword&quot;&gt;do&lt;/span&gt;
+  desc &lt;span class=&quot;string&quot;&gt;&lt;span class=&quot;delimiter&quot;&gt;&#39;&lt;/span&gt;&lt;span class=&quot;content&quot;&gt;Run all tests&lt;/span&gt;&lt;span class=&quot;delimiter&quot;&gt;&#39;&lt;/span&gt;&lt;/span&gt;
+  task &lt;span class=&quot;key&quot;&gt;all&lt;/span&gt;: &lt;span class=&quot;symbol&quot;&gt;:environment&lt;/span&gt; &lt;span class=&quot;keyword&quot;&gt;do&lt;/span&gt;
+    &lt;span class=&quot;constant&quot;&gt;Rake&lt;/span&gt;::&lt;span class=&quot;constant&quot;&gt;Task&lt;/span&gt;[&lt;span class=&quot;string&quot;&gt;&lt;span class=&quot;delimiter&quot;&gt;&#39;&lt;/span&gt;&lt;span class=&quot;content&quot;&gt;bundle_audit&lt;/span&gt;&lt;span class=&quot;delimiter&quot;&gt;&#39;&lt;/span&gt;&lt;/span&gt;].invoke
+    &lt;span class=&quot;constant&quot;&gt;Rake&lt;/span&gt;::&lt;span class=&quot;constant&quot;&gt;Task&lt;/span&gt;[&lt;span class=&quot;string&quot;&gt;&lt;span class=&quot;delimiter&quot;&gt;&#39;&lt;/span&gt;&lt;span class=&quot;content&quot;&gt;brakeman:run&lt;/span&gt;&lt;span class=&quot;delimiter&quot;&gt;&#39;&lt;/span&gt;&lt;/span&gt;].invoke
+    &lt;span class=&quot;constant&quot;&gt;Rake&lt;/span&gt;::&lt;span class=&quot;constant&quot;&gt;Task&lt;/span&gt;[&lt;span class=&quot;string&quot;&gt;&lt;span class=&quot;delimiter&quot;&gt;&#39;&lt;/span&gt;&lt;span class=&quot;content&quot;&gt;rubocop&lt;/span&gt;&lt;span class=&quot;delimiter&quot;&gt;&#39;&lt;/span&gt;&lt;/span&gt;].invoke
+    &lt;span class=&quot;constant&quot;&gt;Rake&lt;/span&gt;::&lt;span class=&quot;constant&quot;&gt;Task&lt;/span&gt;[&lt;span class=&quot;string&quot;&gt;&lt;span class=&quot;delimiter&quot;&gt;&#39;&lt;/span&gt;&lt;span class=&quot;content&quot;&gt;spec&lt;/span&gt;&lt;span class=&quot;delimiter&quot;&gt;&#39;&lt;/span&gt;&lt;/span&gt;].invoke
+  &lt;span class=&quot;keyword&quot;&gt;end&lt;/span&gt;
+&lt;span class=&quot;keyword&quot;&gt;end&lt;/span&gt;
+
+task &lt;span class=&quot;symbol&quot;&gt;:test&lt;/span&gt; &lt;span class=&quot;keyword&quot;&gt;do&lt;/span&gt;
+  &lt;span class=&quot;constant&quot;&gt;Rake&lt;/span&gt;::&lt;span class=&quot;constant&quot;&gt;Task&lt;/span&gt;[&lt;span class=&quot;string&quot;&gt;&lt;span class=&quot;delimiter&quot;&gt;&#39;&lt;/span&gt;&lt;span class=&quot;content&quot;&gt;test:all&lt;/span&gt;&lt;span class=&quot;delimiter&quot;&gt;&#39;&lt;/span&gt;&lt;/span&gt;].invoke
+&lt;span class=&quot;keyword&quot;&gt;end&lt;/span&gt;
+
+&lt;span class=&quot;comment&quot;&gt;# Running `rake` should run all my tests.&lt;/span&gt;
+task &lt;span class=&quot;key&quot;&gt;default&lt;/span&gt;: &lt;span class=&quot;symbol&quot;&gt;:test&lt;/span&gt;
+&lt;/pre&gt;&lt;/td&gt;
+&lt;/tr&gt;&lt;/table&gt;
+&lt;/div&gt;
+
+&lt;p&gt;Since this is part of my testing expectations I can also rest easy because my continuous integration tool has my back on every change, too.&lt;/p&gt;
+
+  &lt;p&gt;&lt;a href=&quot;http://caseywest.com/run-bundle-audit-from-rake/&quot;&gt;Run bundle-audit from rake&lt;/a&gt; was originally published by Casey West at &lt;a href=&quot;http://caseywest.com&quot;&gt;Corner of Weeping&lt;/a&gt; on January 03, 2015.&lt;/p&gt;</content>
+</entry>
 
 
 <entry>
