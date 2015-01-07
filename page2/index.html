@@ -138,6 +138,81 @@
 <article class="hentry">
   <header>
     <div class="entry-meta">
+      <span class="entry-date date published updated"><time datetime="2014-12-29T14:24:02-05:00"><a href="http://caseywest.com/integrated-tests-are-a-scam/">December 29, 2014</a></time></span><span class="author vcard"><span class="fn"><a href="http://caseywest.com/about/" title="About Casey West">Casey West</a></span></span>
+      
+      <span class="entry-reading-time pull-right">
+        <i class="fa fa-clock-o"></i>
+        
+        Reading time ~3 minutes
+      </span><!-- /.entry-reading-time -->
+      
+    </div><!-- /.entry-meta -->
+    
+      <h1 class="entry-title entry-link-post"><a href="http://caseywest.com/integrated-tests-are-a-scam/" rel="bookmark" title="Integrated Tests Are a Scam"><i class="entry-link-marker fa fa-hand-o-right"></i></a> <a href="http://vimeo.com/80533536">Integrated Tests Are a Scam</a></h1>
+    
+  </header>
+  <div class="entry-content">
+    <p>This is an excellent conference talk laying out the core problem with reliance on integrated tests<sup id="fnref:integrated_tests"><a href="#fn:integrated_tests" class="footnote">1</a></sup>. I've seen this problem at several companies. Here are the steps to reproduce:</p>
+
+<ol>
+  <li>Build a complicated system organically.</li>
+  <li>Observe quality degrade.</li>
+  <li>Declare testing a panacea.</li>
+  <li>Build a large, QA-lead integrated test suite at great cost.</li>
+</ol>
+
+<p>Now a huge, brittle test suite exists which provides no direct value to development, where it's needed most, and doesn't address the root problem: poor system design.</p>
+
+<h2 id="integrated-test-hell">Integrated test hell.</h2>
+
+<p><a href="http://www.jbrains.ca/">J.B. Rainsberger</a> describes the problem well. If your project has a monolithic, external test suite which relies on the entire architecture to run you are in this special hell right now. The clearest representation I can think of is his explanation of how many tests you'd have to write to get value out of an <em>integrated tests</em> versus <em>isolated tests</em><sup id="fnref:isolated_tests"><a href="#fn:isolated_tests" class="footnote">2</a></sup>.</p>
+
+<p>A software architecture with a few interconnected components (lets say, for example: a database, REST API, UI, Job Queue) requires tests for each function of each component. If we're relying on <em>integrated tests</em> we have to write tests to exercise every function of every component, and every combination of connections between every function of every component. As you write that software you need to write <script type="math/tex"> O(n!) </script> integrated tests. You can't write that many tests. You don't have enough time to write enough tests to have confidence in that system. That's scary. <strong>That's impossible.</strong></p>
+
+<h2 id="the-cycle">The cycle.</h2>
+
+<p>I love this because it's clear and true. We've all seen this run-on sentence loop:</p>
+
+<p><strong>100% of our integrated tests pass but there's a mistake<sup id="fnref:mistake"><a href="#fn:mistake" class="footnote">3</a></sup> in our software</strong>; so we write more integrated tests to fill in the cracks which allows us to design more sloppily and gives us more opportunities for mistakes, and spending time on integrated tests means less time for isolated tests which increases the likelihood that <strong>100% of the tests pass but we still have mistakes.</strong></p>
+
+<h2 id="what-should-you-do-about-this">What should you do about this?</h2>
+
+<p>There is a strong correlation between large numbers of integrated tests and design problems. Integrated tests don't offer any pressure to improve our designs. Isolated tests do. Stop pretending integrated tests are helping you. Write isolated tests. </p>
+
+<p>To quote J.B.:</p>
+
+<p><span class="pullquote-right" data-pullquote="the whole point of test driven development is not to do testing; it&apos;s to learn about the quality of our design"> 
+<em>The real benefit of isolated tests — testing one function at a time — is that those tests put tremendous pressure on our designs. Those tests are the ones that make it most clear where our design problems are. <strong>Remember that the whole point of test driven development is not to do testing; it's to learn about the quality of our design.</strong> We use the theory that if our design has problems then the tests will be hard to write. The tests will be hard to understand. It'll be difficult to write these small, isolated tests to check one thing at a time.</em>
+</span></p>
+
+<p>If you have more <em>isolated tests</em> than <em>integrated tests</em> chances are you have a decent design with clear interfaces and contracts between collaborating systems. This path is cheaper, faster, less likely to allow mistakes, and provides high-bandwith feedback on the quality of your software design. As you write this software you need to write <script type="math/tex"> O(n) </script> isolated tests.</p>
+
+<p>You don't have to multiply the code paths in your system to get thorough coverage, you can just add them. You go from a combinatorial explosion of tests-to-code-paths to a linear increase in tests. <strong>That's possible.</strong></p>
+
+<p>There's a lot of gold in this talk. Watch it. Twice!</p>
+
+<iframe width="500" height="281" src="http://player.vimeo.com/video/80533536 " frameborder="0" webkitallowfullscreen="" mozallowfullscreen="" allowfullscreen=""></iframe>
+
+<div class="footnotes">
+  <ol>
+    <li id="fn:integrated_tests">
+      <p>Not to be confused with <em>integration tests</em> (referred to in this talk as <em>collaboration tests</em>). Integrated tests require a complete, integrated architecture to run. <em>Integration tests</em> simply test the collaboration between independent components. <a href="#fnref:integrated_tests" class="reversefootnote">&#8617;</a></p>
+    </li>
+    <li id="fn:isolated_tests">
+      <p><em>Isolated tests</em> is a good name for tests operating on a specific function within a software architecture which exercise that function directly, in isolation, independent of any external collaborators in the architecture. <a href="#fnref:isolated_tests" class="reversefootnote">&#8617;</a></p>
+    </li>
+    <li id="fn:mistake">
+      <p>Sometimes we call these defects or bugs; I agree with the speaker that's too abstract. It's a human error (more likely a series of human errors). Everywhere else in the world we call those mistakes. <a href="#fnref:mistake" class="reversefootnote">&#8617;</a></p>
+    </li>
+  </ol>
+</div>
+
+  </div><!-- /.entry-content -->
+</article><!-- /.hentry -->
+
+<article class="hentry">
+  <header>
+    <div class="entry-meta">
       <span class="entry-date date published updated"><time datetime="2014-12-24T10:00:22-05:00"><a href="http://caseywest.com/your-software-is-made-of-people/">December 24, 2014</a></time></span><span class="author vcard"><span class="fn"><a href="http://caseywest.com/about/" title="About Casey West">Casey West</a></span></span>
       
       <span class="entry-reading-time pull-right">

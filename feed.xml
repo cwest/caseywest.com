@@ -4,13 +4,126 @@
 <generator uri="https://github.com/mojombo/jekyll">Jekyll</generator>
 <link rel="self" type="application/atom+xml" href="http://caseywest.com/feed.xml" />
 <link rel="alternate" type="text/html" href="http://caseywest.com" />
-<updated>2015-01-04T02:04:11-05:00</updated>
+<updated>2015-01-06T22:50:14-05:00</updated>
 <id>http://caseywest.com/</id>
 <author>
   <name>Casey West</name>
   <uri>http://caseywest.com/</uri>
   <email></email>
 </author>
+
+
+<entry>
+  <title type="html"><![CDATA[Faster CI on Travis (and Docker) for Ruby (and Rails (and RuboCop))]]></title>
+ <link rel="alternate" type="text/html" href="http://caseywest.com/faster-ci-on-travis-and-docker-for-ruby-and-rails-and-rubocop/" />
+  <id>http://caseywest.com/faster-ci-on-travis-and-docker-for-ruby-and-rails-and-rubocop</id>
+  <updated>2015-01-06 22:17:39 -0500T00:00:00-00:00</updated>
+  <published>2015-01-06T00:00:00-05:00</published>
+  
+  <author>
+    <name>Casey West</name>
+    <uri>http://caseywest.com</uri>
+    <email></email>
+  </author>
+  <content type="html">&lt;p&gt;If you read &lt;a href=&quot;/run-bundle-audit-from-rake/&quot;&gt;my post on running bundle-audit from rake&lt;/a&gt; you&#39;ll also know I run &lt;a href=&quot;https://github.com/bbatsov/rubocop&quot;&gt;RuboCop&lt;/a&gt; as part of continuous integration in &lt;a href=&quot;https://travis-ci.org&quot;&gt;Travis CI&lt;/a&gt;. Today I switched a project to run on Travis&#39; &lt;a href=&quot;http://blog.travis-ci.com/2014-12-17-faster-builds-with-container-based-infrastructure/&quot;&gt;new docker infrastructure&lt;/a&gt; and something hilarious happened.&lt;/p&gt;
+
+&lt;h1 id=&quot;running-travis-ci-on-docker&quot;&gt;Running Travis CI on Docker&lt;/h1&gt;
+
+&lt;p&gt;This part is super easy. Amazingly easy. Add this to your &lt;code&gt;.travis.yml&lt;/code&gt; file:&lt;/p&gt;
+
+&lt;div&gt;&lt;table class=&quot;CodeRay&quot;&gt;&lt;tr&gt;
+  &lt;td class=&quot;line-numbers&quot;&gt;&lt;pre&gt;&lt;a href=&quot;#n1&quot; name=&quot;n1&quot;&gt;1&lt;/a&gt;
+&lt;a href=&quot;#n2&quot; name=&quot;n2&quot;&gt;2&lt;/a&gt;
+&lt;a href=&quot;#n3&quot; name=&quot;n3&quot;&gt;3&lt;/a&gt;
+&lt;/pre&gt;&lt;/td&gt;
+  &lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;comment&quot;&gt;# Docker Infrastructure&lt;/span&gt;
+&lt;span class=&quot;key&quot;&gt;sudo&lt;/span&gt;: &lt;span class=&quot;string&quot;&gt;&lt;span class=&quot;content&quot;&gt;false&lt;/span&gt;&lt;/span&gt;
+&lt;span class=&quot;key&quot;&gt;cache&lt;/span&gt;: &lt;span class=&quot;string&quot;&gt;&lt;span class=&quot;content&quot;&gt;bundler&lt;/span&gt;&lt;/span&gt;
+&lt;/pre&gt;&lt;/td&gt;
+&lt;/tr&gt;&lt;/table&gt;
+&lt;/div&gt;
+
+&lt;p&gt;The &lt;code&gt;sudo&lt;/code&gt; key is the magic word to build your project in a Docker container. The &lt;code&gt;cache&lt;/code&gt; key will enable &lt;a href=&quot;http://bundler.io/&quot;&gt;bundler&lt;/a&gt; caching for your project.&lt;/p&gt;
+
+&lt;p&gt;These two lines can speed up your build times by nearly eliminating startup costs. I went from 2.5 minutes to 24 seconds on builds which used the cache and archived images. I&#39;m running &lt;code&gt;bundle-audit&lt;/code&gt;, &lt;code&gt;brakeman&lt;/code&gt;, &lt;code&gt;rubocop&lt;/code&gt;, and &lt;code&gt;rspec&lt;/code&gt; in 24 seconds. That is awesome!&lt;/p&gt;
+
+&lt;h1 id=&quot;the-funny-thing-is&quot;&gt;The funny thing is…&lt;/h1&gt;
+
+&lt;p&gt;The first run I had a little hiccup. &lt;a href=&quot;https://github.com/bbatsov/rubocop&quot;&gt;RuboCop&lt;/a&gt; was doing its thing and, on this project, it only has 30 files to inspect. I know that because I just ran it locally and, yep, 30 files. In the Travis environment, however, it was scanning &lt;strong&gt;5320 files&lt;/strong&gt;. That&#39;s probably wrong.&lt;/p&gt;
+
+&lt;p&gt;&lt;span class=&quot;pullquote-right&quot; data-pullquote=&quot;by enabling the `cache` in Travis I caused RuboCop to lose its mind&quot;&gt;
+Turns out, by enabling the &lt;code&gt;cache&lt;/code&gt; in Travis I caused RuboCop to lose its mind. How? Because of where the cache was stored. Travis put the cache in &lt;code&gt;vendor/bundle&lt;/code&gt; which is in my Rails app directory and within sight of RuboCop. That&#39;s legit, but I don&#39;t actually want RuboCop to check any vendor code.
+&lt;/span&gt;&lt;/p&gt;
+
+&lt;p&gt;Why was RuboCop doing that? Because I wanted to &lt;code&gt;Exclude&lt;/code&gt; a few things in my Rails app—mostly generated code—so I had a &lt;code&gt;.rubocop.yml&lt;/code&gt; file that looked a little like this:&lt;/p&gt;
+
+&lt;div&gt;&lt;table class=&quot;CodeRay&quot;&gt;&lt;tr&gt;
+  &lt;td class=&quot;line-numbers&quot;&gt;&lt;pre&gt;&lt;a href=&quot;#n1&quot; name=&quot;n1&quot;&gt;1&lt;/a&gt;
+&lt;a href=&quot;#n2&quot; name=&quot;n2&quot;&gt;2&lt;/a&gt;
+&lt;a href=&quot;#n3&quot; name=&quot;n3&quot;&gt;3&lt;/a&gt;
+&lt;a href=&quot;#n4&quot; name=&quot;n4&quot;&gt;4&lt;/a&gt;
+&lt;a href=&quot;#n5&quot; name=&quot;n5&quot;&gt;5&lt;/a&gt;
+&lt;a href=&quot;#n6&quot; name=&quot;n6&quot;&gt;6&lt;/a&gt;
+&lt;a href=&quot;#n7&quot; name=&quot;n7&quot;&gt;7&lt;/a&gt;
+&lt;a href=&quot;#n8&quot; name=&quot;n8&quot;&gt;8&lt;/a&gt;
+&lt;a href=&quot;#n9&quot; name=&quot;n9&quot;&gt;9&lt;/a&gt;
+&lt;strong&gt;&lt;a href=&quot;#n10&quot; name=&quot;n10&quot;&gt;10&lt;/a&gt;&lt;/strong&gt;
+&lt;/pre&gt;&lt;/td&gt;
+  &lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;key&quot;&gt;require&lt;/span&gt;: &lt;span class=&quot;string&quot;&gt;&lt;span class=&quot;content&quot;&gt;rubocop-rspec&lt;/span&gt;&lt;/span&gt;
+&lt;span class=&quot;key&quot;&gt;inherit_from&lt;/span&gt;: &lt;span class=&quot;string&quot;&gt;&lt;span class=&quot;content&quot;&gt;.rubocop_todo.yml&lt;/span&gt;&lt;/span&gt;
+&lt;span class=&quot;key&quot;&gt;AllCops&lt;/span&gt;:
+  &lt;span class=&quot;key&quot;&gt;Exclude&lt;/span&gt;:
+    - &lt;span class=&quot;string&quot;&gt;&lt;span class=&quot;content&quot;&gt;&#39;db/schema.rb&#39;&lt;/span&gt;&lt;/span&gt;
+    - &lt;span class=&quot;string&quot;&gt;&lt;span class=&quot;content&quot;&gt;&#39;bin/**/*&#39;&lt;/span&gt;&lt;/span&gt;
+    - &lt;span class=&quot;string&quot;&gt;&lt;span class=&quot;content&quot;&gt;&#39;config/initializers/devise.rb&#39;&lt;/span&gt;&lt;/span&gt;
+    - &lt;span class=&quot;string&quot;&gt;&lt;span class=&quot;content&quot;&gt;&#39;config/initializers/simple_form*&#39;&lt;/span&gt;&lt;/span&gt;
+    - &lt;span class=&quot;string&quot;&gt;&lt;span class=&quot;content&quot;&gt;&#39;db/migrate/*&#39;&lt;/span&gt;&lt;/span&gt;
+  &lt;span class=&quot;key&quot;&gt;RunRailsCops&lt;/span&gt;: &lt;span class=&quot;string&quot;&gt;&lt;span class=&quot;content&quot;&gt;true&lt;/span&gt;&lt;/span&gt;
+&lt;/pre&gt;&lt;/td&gt;
+&lt;/tr&gt;&lt;/table&gt;
+&lt;/div&gt;
+
+&lt;p&gt;The &lt;a href=&quot;https://github.com/bbatsov/rubocop/blob/master/config/default.yml#L28&quot;&gt;default RuboCop configuration&lt;/a&gt; &lt;em&gt;does&lt;/em&gt; exclude vendor. I need that, too, but my &lt;code&gt;Exclude&lt;/code&gt; above overrides the default, so it was gone.&lt;/p&gt;
+
+&lt;h1 id=&quot;the-simple-fix&quot;&gt;The simple fix&lt;/h1&gt;
+
+&lt;p&gt;Lets just add &lt;code&gt;vendor&lt;/code&gt; back into the exclusion list:&lt;/p&gt;
+
+&lt;div&gt;&lt;table class=&quot;CodeRay&quot;&gt;&lt;tr&gt;
+  &lt;td class=&quot;line-numbers&quot;&gt;&lt;pre&gt;&lt;a href=&quot;#n1&quot; name=&quot;n1&quot;&gt;1&lt;/a&gt;
+&lt;a href=&quot;#n2&quot; name=&quot;n2&quot;&gt;2&lt;/a&gt;
+&lt;a href=&quot;#n3&quot; name=&quot;n3&quot;&gt;3&lt;/a&gt;
+&lt;a href=&quot;#n4&quot; name=&quot;n4&quot;&gt;4&lt;/a&gt;
+&lt;a href=&quot;#n5&quot; name=&quot;n5&quot;&gt;5&lt;/a&gt;
+&lt;a href=&quot;#n6&quot; name=&quot;n6&quot;&gt;6&lt;/a&gt;
+&lt;a href=&quot;#n7&quot; name=&quot;n7&quot;&gt;7&lt;/a&gt;
+&lt;a href=&quot;#n8&quot; name=&quot;n8&quot;&gt;8&lt;/a&gt;
+&lt;a href=&quot;#n9&quot; name=&quot;n9&quot;&gt;9&lt;/a&gt;
+&lt;strong&gt;&lt;a href=&quot;#n10&quot; name=&quot;n10&quot;&gt;10&lt;/a&gt;&lt;/strong&gt;
+&lt;a href=&quot;#n11&quot; name=&quot;n11&quot;&gt;11&lt;/a&gt;
+&lt;/pre&gt;&lt;/td&gt;
+  &lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;key&quot;&gt;require&lt;/span&gt;: &lt;span class=&quot;string&quot;&gt;&lt;span class=&quot;content&quot;&gt;rubocop-rspec&lt;/span&gt;&lt;/span&gt;
+&lt;span class=&quot;key&quot;&gt;inherit_from&lt;/span&gt;: &lt;span class=&quot;string&quot;&gt;&lt;span class=&quot;content&quot;&gt;.rubocop_todo.yml&lt;/span&gt;&lt;/span&gt;
+&lt;span class=&quot;key&quot;&gt;AllCops&lt;/span&gt;:
+  &lt;span class=&quot;key&quot;&gt;Exclude&lt;/span&gt;:
+    - &lt;span class=&quot;string&quot;&gt;&lt;span class=&quot;content&quot;&gt;&#39;db/schema.rb&#39;&lt;/span&gt;&lt;/span&gt;
+    - &lt;span class=&quot;string&quot;&gt;&lt;span class=&quot;content&quot;&gt;&#39;bin/**/*&#39;&lt;/span&gt;&lt;/span&gt;
+    - &lt;span class=&quot;string&quot;&gt;&lt;span class=&quot;content&quot;&gt;&#39;config/initializers/devise.rb&#39;&lt;/span&gt;&lt;/span&gt;
+    - &lt;span class=&quot;string&quot;&gt;&lt;span class=&quot;content&quot;&gt;&#39;config/initializers/simple_form*&#39;&lt;/span&gt;&lt;/span&gt;
+    - &lt;span class=&quot;string&quot;&gt;&lt;span class=&quot;content&quot;&gt;&#39;db/migrate/*&#39;&lt;/span&gt;&lt;/span&gt;
+    - &lt;span class=&quot;string&quot;&gt;&lt;span class=&quot;content&quot;&gt;&#39;vendor/**/*&#39;&lt;/span&gt;&lt;/span&gt;
+  &lt;span class=&quot;key&quot;&gt;RunRailsCops&lt;/span&gt;: &lt;span class=&quot;string&quot;&gt;&lt;span class=&quot;content&quot;&gt;true&lt;/span&gt;&lt;/span&gt;
+&lt;/pre&gt;&lt;/td&gt;
+&lt;/tr&gt;&lt;/table&gt;
+&lt;/div&gt;
+
+&lt;p&gt;Voila!&lt;/p&gt;
+
+&lt;p&gt;Be careful when modifying RuboCop&#39;s configuration that you copy what you need to keep from the defaults, because defining an entry in your project will discard the them, not merge them.&lt;/p&gt;
+
+
+  &lt;p&gt;&lt;a href=&quot;http://caseywest.com/faster-ci-on-travis-and-docker-for-ruby-and-rails-and-rubocop/&quot;&gt;Faster CI on Travis (and Docker) for Ruby (and Rails (and RuboCop))&lt;/a&gt; was originally published by Casey West at &lt;a href=&quot;http://caseywest.com&quot;&gt;Corner of Weeping&lt;/a&gt; on January 06, 2015.&lt;/p&gt;</content>
+</entry>
 
 
 <entry>

@@ -1,0 +1,323 @@
+<!doctype html>
+<!--[if lt IE 7]><html class="no-js lt-ie9 lt-ie8 lt-ie7" lang="en"> <![endif]-->
+<!--[if (IE 7)&!(IEMobile)]><html class="no-js lt-ie9 lt-ie8" lang="en"><![endif]-->
+<!--[if (IE 8)&!(IEMobile)]><html class="no-js lt-ie9" lang="en"><![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en"><!--<![endif]-->
+<head>
+<meta charset="utf-8">
+<title>Faster CI on Travis (and Docker) for Ruby (and Rails (and RuboCop)) &#8211; Corner of Weeping</title>
+<meta name="description" content="I made RuboCop lose its mind.">
+<meta name="keywords" content="ruby, rails, rubocop, travis, ci">
+
+<!-- Twitter Cards -->
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:image" content="http://caseywest.com/images/feature/feature-painted-pittsburgh.jpg">
+
+<meta name="twitter:title" content="Faster CI on Travis (and Docker) for Ruby (and Rails (and RuboCop))">
+<meta name="twitter:description" content="I made RuboCop lose its mind.">
+<meta name="twitter:creator" content="@caseywest">
+
+<!-- Open Graph -->
+<meta property="og:locale" content="en_US">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Faster CI on Travis (and Docker) for Ruby (and Rails (and RuboCop))">
+<meta property="og:description" content="I made RuboCop lose its mind.">
+<meta property="og:url" content="http://caseywest.com/faster-ci-on-travis-and-docker-for-ruby-and-rails-and-rubocop/">
+<meta property="og:site_name" content="Corner of Weeping">
+
+
+
+
+
+<link rel="canonical" href="http://caseywest.com/faster-ci-on-travis-and-docker-for-ruby-and-rails-and-rubocop/">
+<link href="http://caseywest.com/feed.xml" type="application/atom+xml" rel="alternate" title="Corner of Weeping Feed">
+<link rel="author" href="https://google.com/+CaseyWest412?rel=author">
+
+<!-- http://t.co/dKP3o1e -->
+<meta name="HandheldFriendly" content="True">
+<meta name="MobileOptimized" content="320">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<!-- For all browsers -->
+<link rel="stylesheet" href="http://caseywest.com/assets/css/main.css">
+<!-- Webfonts -->
+<link href="//fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,700,300italic,400italic|Source+Code+Pro" rel="stylesheet" type="text/css">
+
+<meta http-equiv="cleartype" content="on">
+
+<!-- Load Modernizr -->
+<script src="http://caseywest.com/assets/js/vendor/modernizr-2.6.2.custom.min.js"></script>
+
+<!-- Icons -->
+<!-- 32x32 -->
+<link rel="shortcut icon" href="http://caseywest.com/favicon.png">
+<!-- 57x57 (precomposed) for iPhone 3GS, pre-2011 iPod Touch and older Android devices -->
+<link rel="apple-touch-icon-precomposed" href="http://caseywest.com/images/apple-touch-icon-precomposed.png">
+<!-- 72x72 (precomposed) for 1st generation iPad, iPad 2 and iPad mini -->
+<link rel="apple-touch-icon-precomposed" sizes="72x72" href="http://caseywest.com/images/apple-touch-icon-72x72-precomposed.png">
+<!-- 114x114 (precomposed) for iPhone 4, 4S, 5 and post-2011 iPod Touch -->
+<link rel="apple-touch-icon-precomposed" sizes="114x114" href="http://caseywest.com/images/apple-touch-icon-114x114-precomposed.png">
+<!-- 144x144 (precomposed) for iPad 3rd and 4th generation -->
+<link rel="apple-touch-icon-precomposed" sizes="144x144" href="http://caseywest.com/images/apple-touch-icon-144x144-precomposed.png">
+
+
+
+</head>
+
+<body id="post" class="feature">
+
+<!--[if lt IE 9]><div class="upgrade"><strong><a href="http://whatbrowser.org/">Your browser is quite old!</strong> Why not upgrade to a different browser to better enjoy this site?</a></div><![endif]-->
+<nav id="dl-menu" class="dl-menuwrapper" role="navigation">
+	<button class="dl-trigger">Open Menu</button>
+	<ul class="dl-menu">
+		<li><a href="http://caseywest.com/">Home</a></li>
+		<li>
+			<a href="#">About</a>
+			<ul class="dl-submenu">
+				<li>
+					<img src="http://caseywest.com/images/avatar.jpg" alt="Casey West photo" class="author-photo">
+					<h4>Casey West</h4>
+					<p>I have a lot to say.</p>
+				</li>
+				<li><a href="http://caseywest.com/about/"><span class="btn btn-inverse">Learn More</span></a></li>
+				
+				<li>
+					<a href="http://twitter.com/caseywest"><i class="fa fa-twitter"></i> Twitter</a>
+				</li>
+				<li>
+					<a href="http://facebook.com/caseywest"><i class="fa fa-facebook"></i> Facebook</a>
+				</li>
+				<li>
+					<a href="https://google.com/+CaseyWest412"><i class="fa fa-google-plus"></i> Google+</a>
+				</li>
+				<li>
+					<a href="http://linkedin.com/in/caseywest"><i class="fa fa-linkedin"></i> LinkedIn</a>
+				</li>
+				<li>
+					<a href="http://github.com/cwest"><i class="fa fa-github"></i> GitHub</a>
+				</li>
+				
+				<li>
+					<a href="http://instagram.com/caseyrwest"><i class="fa fa-instagram"></i> Instagram</a>
+				</li>
+				<li>
+					<a href="http://www.flickr.com/photos/caseywest"><i class="fa fa-flickr"></i> Flickr</a>
+				</li>
+				
+			</ul><!-- /.dl-submenu -->
+		</li>
+		<li>
+			<a href="#">Posts</a>
+			<ul class="dl-submenu">
+				<li><a href="http://caseywest.com/posts/">All Posts</a></li>
+				<li><a href="http://caseywest.com/tags/">All Tags</a></li>
+			</ul>
+		</li>
+		
+	</ul><!-- /.dl-menu -->
+</nav><!-- /.dl-menuwrapper -->
+
+
+
+<div class="entry-header">
+  
+  <div class="entry-image">
+    <img src="http://caseywest.com/images/feature/feature-painted-pittsburgh.jpg" alt="Faster CI on Travis (and Docker) for Ruby (and Rails (and RuboCop))">
+  </div><!-- /.entry-image -->
+</div><!-- /.entry-header -->
+
+
+<div id="main" role="main">
+  <article class="hentry">
+    <header class="header-title">
+      <div class="header-title-wrap">
+        
+          <h1 class="entry-title"><a href="http://caseywest.com/faster-ci-on-travis-and-docker-for-ruby-and-rails-and-rubocop/" rel="bookmark" title="Faster CI on Travis (and Docker) for Ruby (and Rails (and RuboCop))">Faster CI on Travis (and Docker) for Ruby (and Rails (and RuboCop))</a></h1>
+        
+        <h2>January 06, 2015</h2>
+        
+        <p class="entry-reading-time">
+          <i class="fa fa-clock-o"></i>
+          
+          Reading time ~2 minutes
+        </p><!-- /.entry-reading-time -->
+        
+      </div><!-- /.header-title-wrap -->
+    </header>
+    <div class="entry-content">
+      <p>If you read <a href="/run-bundle-audit-from-rake/">my post on running bundle-audit from rake</a> you'll also know I run <a href="https://github.com/bbatsov/rubocop">RuboCop</a> as part of continuous integration in <a href="https://travis-ci.org">Travis CI</a>. Today I switched a project to run on Travis' <a href="http://blog.travis-ci.com/2014-12-17-faster-builds-with-container-based-infrastructure/">new docker infrastructure</a> and something hilarious happened.</p>
+
+<h1 id="running-travis-ci-on-docker">Running Travis CI on Docker</h1>
+
+<p>This part is super easy. Amazingly easy. Add this to your <code>.travis.yml</code> file:</p>
+
+<div><table class="CodeRay"><tr>
+  <td class="line-numbers"><pre><a href="#n1" name="n1">1</a>
+<a href="#n2" name="n2">2</a>
+<a href="#n3" name="n3">3</a>
+</pre></td>
+  <td class="code"><pre><span class="comment"># Docker Infrastructure</span>
+<span class="key">sudo</span>: <span class="string"><span class="content">false</span></span>
+<span class="key">cache</span>: <span class="string"><span class="content">bundler</span></span>
+</pre></td>
+</tr></table>
+</div>
+
+<p>The <code>sudo</code> key is the magic word to build your project in a Docker container. The <code>cache</code> key will enable <a href="http://bundler.io/">bundler</a> caching for your project.</p>
+
+<p>These two lines can speed up your build times by nearly eliminating startup costs. I went from 2.5 minutes to 24 seconds on builds which used the cache and archived images. I'm running <code>bundle-audit</code>, <code>brakeman</code>, <code>rubocop</code>, and <code>rspec</code> in 24 seconds. That is awesome!</p>
+
+<h1 id="the-funny-thing-is">The funny thing is…</h1>
+
+<p>The first run I had a little hiccup. <a href="https://github.com/bbatsov/rubocop">RuboCop</a> was doing its thing and, on this project, it only has 30 files to inspect. I know that because I just ran it locally and, yep, 30 files. In the Travis environment, however, it was scanning <strong>5320 files</strong>. That's probably wrong.</p>
+
+<p><span class="pullquote-right" data-pullquote="by enabling the `cache` in Travis I caused RuboCop to lose its mind">
+Turns out, by enabling the <code>cache</code> in Travis I caused RuboCop to lose its mind. How? Because of where the cache was stored. Travis put the cache in <code>vendor/bundle</code> which is in my Rails app directory and within sight of RuboCop. That's legit, but I don't actually want RuboCop to check any vendor code.
+</span></p>
+
+<p>Why was RuboCop doing that? Because I wanted to <code>Exclude</code> a few things in my Rails app—mostly generated code—so I had a <code>.rubocop.yml</code> file that looked a little like this:</p>
+
+<div><table class="CodeRay"><tr>
+  <td class="line-numbers"><pre><a href="#n1" name="n1">1</a>
+<a href="#n2" name="n2">2</a>
+<a href="#n3" name="n3">3</a>
+<a href="#n4" name="n4">4</a>
+<a href="#n5" name="n5">5</a>
+<a href="#n6" name="n6">6</a>
+<a href="#n7" name="n7">7</a>
+<a href="#n8" name="n8">8</a>
+<a href="#n9" name="n9">9</a>
+<strong><a href="#n10" name="n10">10</a></strong>
+</pre></td>
+  <td class="code"><pre><span class="key">require</span>: <span class="string"><span class="content">rubocop-rspec</span></span>
+<span class="key">inherit_from</span>: <span class="string"><span class="content">.rubocop_todo.yml</span></span>
+<span class="key">AllCops</span>:
+  <span class="key">Exclude</span>:
+    - <span class="string"><span class="content">'db/schema.rb'</span></span>
+    - <span class="string"><span class="content">'bin/**/*'</span></span>
+    - <span class="string"><span class="content">'config/initializers/devise.rb'</span></span>
+    - <span class="string"><span class="content">'config/initializers/simple_form*'</span></span>
+    - <span class="string"><span class="content">'db/migrate/*'</span></span>
+  <span class="key">RunRailsCops</span>: <span class="string"><span class="content">true</span></span>
+</pre></td>
+</tr></table>
+</div>
+
+<p>The <a href="https://github.com/bbatsov/rubocop/blob/master/config/default.yml#L28">default RuboCop configuration</a> <em>does</em> exclude vendor. I need that, too, but my <code>Exclude</code> above overrides the default, so it was gone.</p>
+
+<h1 id="the-simple-fix">The simple fix</h1>
+
+<p>Lets just add <code>vendor</code> back into the exclusion list:</p>
+
+<div><table class="CodeRay"><tr>
+  <td class="line-numbers"><pre><a href="#n1" name="n1">1</a>
+<a href="#n2" name="n2">2</a>
+<a href="#n3" name="n3">3</a>
+<a href="#n4" name="n4">4</a>
+<a href="#n5" name="n5">5</a>
+<a href="#n6" name="n6">6</a>
+<a href="#n7" name="n7">7</a>
+<a href="#n8" name="n8">8</a>
+<a href="#n9" name="n9">9</a>
+<strong><a href="#n10" name="n10">10</a></strong>
+<a href="#n11" name="n11">11</a>
+</pre></td>
+  <td class="code"><pre><span class="key">require</span>: <span class="string"><span class="content">rubocop-rspec</span></span>
+<span class="key">inherit_from</span>: <span class="string"><span class="content">.rubocop_todo.yml</span></span>
+<span class="key">AllCops</span>:
+  <span class="key">Exclude</span>:
+    - <span class="string"><span class="content">'db/schema.rb'</span></span>
+    - <span class="string"><span class="content">'bin/**/*'</span></span>
+    - <span class="string"><span class="content">'config/initializers/devise.rb'</span></span>
+    - <span class="string"><span class="content">'config/initializers/simple_form*'</span></span>
+    - <span class="string"><span class="content">'db/migrate/*'</span></span>
+    - <span class="string"><span class="content">'vendor/**/*'</span></span>
+  <span class="key">RunRailsCops</span>: <span class="string"><span class="content">true</span></span>
+</pre></td>
+</tr></table>
+</div>
+
+<p>Voila!</p>
+
+<p>Be careful when modifying RuboCop's configuration that you copy what you need to keep from the defaults, because defining an entry in your project will discard the them, not merge them.</p>
+
+
+      <footer class="entry-meta">
+        <span class="entry-tags"><a href="http://caseywest.com/tags/#ruby" title="Pages tagged ruby" class="tag">ruby</a><a href="http://caseywest.com/tags/#rails" title="Pages tagged rails" class="tag">rails</a><a href="http://caseywest.com/tags/#rubocop" title="Pages tagged rubocop" class="tag">rubocop</a><a href="http://caseywest.com/tags/#travis" title="Pages tagged travis" class="tag">travis</a><a href="http://caseywest.com/tags/#ci" title="Pages tagged ci" class="tag">ci</a></span>
+        <span><a href="http://caseywest.com/faster-ci-on-travis-and-docker-for-ruby-and-rails-and-rubocop/" rel="bookmark" title="Faster CI on Travis (and Docker) for Ruby (and Rails (and RuboCop))">Faster CI on Travis (and Docker) for Ruby (and Rails (and RuboCop))</a> was published on <span class="entry-date date published updated"><time datetime="2015-01-06T00:00:00-05:00">January 06, 2015</time></span></span>
+        (revised: <span class="entry-date date modified"><time datetime="2015-01-06 22:17:39 -0500">01/06/2015</time></span>)
+        <span class="author vcard"><span class="fn"><a href="http://caseywest.com/about/" title="About Casey West">Casey West</a></span></span>
+        <div class="social-share">
+  <ul class="socialcount socialcount-small inline-list">
+    <li class="facebook"><a href="https://www.facebook.com/sharer/sharer.php?u=Faster+CI+on+Travis+%28and+Docker%29+for+Ruby+%28and+Rails+%28and+RuboCop%29%29%20%E2%80%94%C2%A0http://caseywest.com/faster-ci-on-travis-and-docker-for-ruby-and-rails-and-rubocop/" title="Share on Facebook"><span class="count"><i class="fa fa-facebook-square"></i> Like</span></a></li>
+    <li class="twitter"><a href="https://twitter.com/intent/tweet?text=Faster+CI+on+Travis+%28and+Docker%29+for+Ruby+%28and+Rails+%28and+RuboCop%29%29%20%E2%80%94%C2%A0http://caseywest.com/faster-ci-on-travis-and-docker-for-ruby-and-rails-and-rubocop/" title="Share on Twitter"><span class="count"><i class="fa fa-twitter-square"></i> Tweet</span></a></li>
+    <li class="googleplus"><a href="https://plus.google.com/share?url=Faster+CI+on+Travis+%28and+Docker%29+for+Ruby+%28and+Rails+%28and+RuboCop%29%29%20%E2%80%94%C2%A0http://caseywest.com/faster-ci-on-travis-and-docker-for-ruby-and-rails-and-rubocop/" title="Share on Google Plus"><span class="count"><i class="fa fa-google-plus-square"></i> +1</span></a></li>
+  </ul>
+</div><!-- /.social-share -->
+
+      </footer>
+    </div><!-- /.entry-content -->
+    
+    <div class="read-more">
+  
+    <div class="read-more-header">
+      <a href="http://caseywest.com/theres-still-no-silver-bullet/" class="read-more-btn">Read More</a>
+    </div><!-- /.read-more-header -->
+    <div class="read-more-content">
+      <h3><a href="http://caseywest.com/theres-still-no-silver-bullet/" title="There's Still No Silver Bullet (2006)">There's Still No Silver Bullet (2006)</a></h3>
+      <p>A contemporary look on Brooks' essay No Silver Bullet: Essence and Accidents of Software Engineering <a href="http://caseywest.com/theres-still-no-silver-bullet/">Continue reading</a></p>
+    </div><!-- /.read-more-content -->
+  
+  <div class="read-more-list">
+    
+      <div class="list-item">
+        <h4><a href="http://caseywest.com/run-bundle-audit-from-rake/" title="Run bundle-audit from rake">Run bundle-audit from rake</a></h4>
+        <span>Published on January 03, 2015</span>
+      </div><!-- /.list-item -->
+    
+      <div class="list-item">
+        <h4><a href="http://caseywest.com/2014-s-podcast-recommendations/" title="2014's Podcast Recommendations">2014's Podcast Recommendations</a></h4>
+        <span>Published on December 31, 2014</span>
+      </div><!-- /.list-item -->
+    
+  </div><!-- /.read-more-list -->
+</div><!-- /.read-more -->
+
+  </article>
+</div><!-- /#main -->
+
+<div class="footer-wrapper">
+  <footer role="contentinfo">
+    <p><span>&copy; 2015 Casey West.</span></p>
+<p class="attribution"><span>Powered by <a href="http://jekyllrb.com" rel="nofollow">Jekyll</a> using the <a href="http://mademistakes.com/hpstr/" rel="notfollow">HPSTR Theme</a>.</span>
+
+  </footer>
+</div><!-- /.footer-wrapper -->
+
+<script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+<script>window.jQuery || document.write('<script src="http://caseywest.com/assets/js/vendor/jquery-1.9.1.min.js"><\/script>')</script>
+<script src="http://caseywest.com/assets/js/scripts.min.js"></script>
+
+
+<!-- Asynchronous Google Analytics snippet -->
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+    (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+    m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-57986008-1', 'auto');
+  ga('require', 'linkid', 'linkid.js');
+  ga('send', 'pageview');
+</script>
+
+
+
+
+<script type="text/javascript"
+    src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
+</script>
+
+
+</body>
+</html>
