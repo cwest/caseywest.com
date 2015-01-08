@@ -101,6 +101,7 @@ desc "Deploy to remote origin"
 task :deploy => [:check_git] do
   source_branch = 'source'
   deploy_branch = 'master'
+  system "git push origin \"#{source_branch}\""
   message = "Site updated at #{Time.now.utc}"
 
   system "bundle exec jekyll build"
