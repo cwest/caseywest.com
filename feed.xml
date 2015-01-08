@@ -4,7 +4,7 @@
 <generator uri="https://github.com/mojombo/jekyll">Jekyll</generator>
 <link rel="self" type="application/atom+xml" href="http://caseywest.com/feed.xml" />
 <link rel="alternate" type="text/html" href="http://caseywest.com" />
-<updated>2015-01-08T00:00:51-05:00</updated>
+<updated>2015-01-08T09:44:28-05:00</updated>
 <id>http://caseywest.com/</id>
 <author>
   <name>Casey West</name>
@@ -35,7 +35,7 @@
 
 &lt;p&gt;The trouble is I definitely don&#39;t want to install Peek on production, or in my test environments, and the &lt;a href=&quot;https://github.com/peek/peek/blob/master/README.md#usage&quot;&gt;peek usage&lt;/a&gt; instructions would, indeed, require me to do so for a few key reasons: initializers, routes, assets, and views. Using peek requires a few steps of setup in your application. Each of the areas I enumerated requires peek to be a loaded gem in the environment you&#39;re running on.&lt;/p&gt;
 
-&lt;p&gt;My first attempt to work around this involved wrapping calls with a &lt;a href=&quot;http://ruby-doc.org/docs/keywords/1.9/Object.html#method-i-defined-3F&quot;&gt;&lt;code&gt;defined?&lt;/code&gt;&lt;/a&gt; tests. For example, in &lt;code&gt;config/routes.rb&lt;/code&gt;:&lt;/p&gt;
+&lt;p&gt;My first attempt to work around this involved wrapping calls with a &lt;a href=&quot;http://ruby-doc.org/docs/keywords/1.9/Object.html#method-i-defined-3F&quot;&gt;&lt;code&gt;defined?&lt;/code&gt;&lt;/a&gt; test. For example, in &lt;code&gt;config/routes.rb&lt;/code&gt;:&lt;/p&gt;
 
 &lt;div&gt;&lt;table class=&quot;CodeRay&quot;&gt;&lt;tr&gt;
   &lt;td class=&quot;line-numbers&quot;&gt;&lt;pre&gt;&lt;a href=&quot;#n1&quot; name=&quot;n1&quot;&gt;1&lt;/a&gt;
@@ -312,7 +312,7 @@
     allow(helper).to receive(&lt;span class=&quot;symbol&quot;&gt;:current_user&lt;/span&gt;).and_return(anything)
   &lt;span class=&quot;keyword&quot;&gt;end&lt;/span&gt;
 
-  it &lt;span class=&quot;string&quot;&gt;&lt;span class=&quot;delimiter&quot;&gt;&#39;&lt;/span&gt;&lt;span class=&quot;content&quot;&gt;is not be enabled&lt;/span&gt;&lt;span class=&quot;delimiter&quot;&gt;&#39;&lt;/span&gt;&lt;/span&gt; &lt;span class=&quot;keyword&quot;&gt;do&lt;/span&gt;
+  it &lt;span class=&quot;string&quot;&gt;&lt;span class=&quot;delimiter&quot;&gt;&#39;&lt;/span&gt;&lt;span class=&quot;content&quot;&gt;is not enabled&lt;/span&gt;&lt;span class=&quot;delimiter&quot;&gt;&#39;&lt;/span&gt;&lt;/span&gt; &lt;span class=&quot;keyword&quot;&gt;do&lt;/span&gt;
     allow(&lt;span class=&quot;constant&quot;&gt;PeekBar&lt;/span&gt;).to receive(&lt;span class=&quot;symbol&quot;&gt;:enabled?&lt;/span&gt;).and_return(&lt;span class=&quot;predefined-constant&quot;&gt;false&lt;/span&gt;)
     expect(helper.peek_enabled?).to be(&lt;span class=&quot;predefined-constant&quot;&gt;false&lt;/span&gt;)
   &lt;span class=&quot;keyword&quot;&gt;end&lt;/span&gt;
@@ -418,11 +418,13 @@
 
 &lt;p&gt;By default &lt;code&gt;application.css&lt;/code&gt; and &lt;code&gt;application.js&lt;/code&gt; include all the CSS and JavaScript in their respective directory trees. That&#39;s achieved through the use of &lt;code&gt;require_tree .&lt;/code&gt; in each of those files.&lt;/p&gt;
 
-&lt;p&gt;Now that we&#39;ve created a couple assets to conditionally load we need to remove &lt;code&gt;require_tree&lt;/code&gt;. If you were relying on it, which I don&#39;t recommend for reasons beyond the scope of this essay, learn how to deal with it by reading the &lt;a href=&quot;http://guides.rubyonrails.org/asset_pipeline.html#manifest-files-and-directives&quot;&gt;Asset Pipeline Rails Guide&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;Now that we&#39;ve created a couple assets to conditionally load we need to remove &lt;code&gt;require_tree&lt;/code&gt;. If you don&#39;t remove it your default assets will try to include &lt;code&gt;peek_bar.*&lt;/code&gt; which will lead to the aforementioned failures on environments where peek is not installed.&lt;/p&gt;
+
+&lt;p&gt;If you were relying on it, which I don&#39;t recommend for reasons beyond the scope of this essay, learn how to deal with it by reading the &lt;a href=&quot;http://guides.rubyonrails.org/asset_pipeline.html#manifest-files-and-directives&quot;&gt;Asset Pipeline Rails Guide&lt;/a&gt;.&lt;/p&gt;
 
 &lt;h2 id=&quot;view-configuration&quot;&gt;View Configuration&lt;/h2&gt;
 
-&lt;p&gt;All this hard work for what? Now it&#39;s time to tie it all together in our layout view. I like [slim] so this is an extremely condensed version of my default layout, &lt;code&gt;app/views/layouts/application.html.slim&lt;/code&gt;.&lt;/p&gt;
+&lt;p&gt;All this hard work for what? Now it&#39;s time to tie it all together in our layout view. I like &lt;a href=&quot;http://slim-lang.com/&quot;&gt;slim&lt;/a&gt; so this is an extremely condensed version of my default layout, &lt;code&gt;app/views/layouts/application.html.slim&lt;/code&gt;.&lt;/p&gt;
 
 &lt;div&gt;&lt;table class=&quot;CodeRay&quot;&gt;&lt;tr&gt;
   &lt;td class=&quot;line-numbers&quot;&gt;&lt;pre&gt;&lt;a href=&quot;#n1&quot; name=&quot;n1&quot;&gt;1&lt;/a&gt;

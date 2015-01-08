@@ -155,7 +155,7 @@
 
 <p>The trouble is I definitely don't want to install Peek on production, or in my test environments, and the <a href="https://github.com/peek/peek/blob/master/README.md#usage">peek usage</a> instructions would, indeed, require me to do so for a few key reasons: initializers, routes, assets, and views. Using peek requires a few steps of setup in your application. Each of the areas I enumerated requires peek to be a loaded gem in the environment you're running on.</p>
 
-<p>My first attempt to work around this involved wrapping calls with a <a href="http://ruby-doc.org/docs/keywords/1.9/Object.html#method-i-defined-3F"><code>defined?</code></a> tests. For example, in <code>config/routes.rb</code>:</p>
+<p>My first attempt to work around this involved wrapping calls with a <a href="http://ruby-doc.org/docs/keywords/1.9/Object.html#method-i-defined-3F"><code>defined?</code></a> test. For example, in <code>config/routes.rb</code>:</p>
 
 <div><table class="CodeRay"><tr>
   <td class="line-numbers"><pre><a href="#n1" name="n1">1</a>
@@ -432,7 +432,7 @@
     allow(helper).to receive(<span class="symbol">:current_user</span>).and_return(anything)
   <span class="keyword">end</span>
 
-  it <span class="string"><span class="delimiter">'</span><span class="content">is not be enabled</span><span class="delimiter">'</span></span> <span class="keyword">do</span>
+  it <span class="string"><span class="delimiter">'</span><span class="content">is not enabled</span><span class="delimiter">'</span></span> <span class="keyword">do</span>
     allow(<span class="constant">PeekBar</span>).to receive(<span class="symbol">:enabled?</span>).and_return(<span class="predefined-constant">false</span>)
     expect(helper.peek_enabled?).to be(<span class="predefined-constant">false</span>)
   <span class="keyword">end</span>
@@ -538,11 +538,13 @@
 
 <p>By default <code>application.css</code> and <code>application.js</code> include all the CSS and JavaScript in their respective directory trees. That's achieved through the use of <code>require_tree .</code> in each of those files.</p>
 
-<p>Now that we've created a couple assets to conditionally load we need to remove <code>require_tree</code>. If you were relying on it, which I don't recommend for reasons beyond the scope of this essay, learn how to deal with it by reading the <a href="http://guides.rubyonrails.org/asset_pipeline.html#manifest-files-and-directives">Asset Pipeline Rails Guide</a>.</p>
+<p>Now that we've created a couple assets to conditionally load we need to remove <code>require_tree</code>. If you don't remove it your default assets will try to include <code>peek_bar.*</code> which will lead to the aforementioned failures on environments where peek is not installed.</p>
+
+<p>If you were relying on it, which I don't recommend for reasons beyond the scope of this essay, learn how to deal with it by reading the <a href="http://guides.rubyonrails.org/asset_pipeline.html#manifest-files-and-directives">Asset Pipeline Rails Guide</a>.</p>
 
 <h2 id="view-configuration">View Configuration</h2>
 
-<p>All this hard work for what? Now it's time to tie it all together in our layout view. I like [slim] so this is an extremely condensed version of my default layout, <code>app/views/layouts/application.html.slim</code>.</p>
+<p>All this hard work for what? Now it's time to tie it all together in our layout view. I like <a href="http://slim-lang.com/">slim</a> so this is an extremely condensed version of my default layout, <code>app/views/layouts/application.html.slim</code>.</p>
 
 <div><table class="CodeRay"><tr>
   <td class="line-numbers"><pre><a href="#n1" name="n1">1</a>
