@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Use Peek to Inspect Rails Responsibly"
+title: "Responsibly Use Peek to Inspect Rails"
 modified: 2015-01-07 21:51:33 -0500
 tags: [ruby, rails]
 description: Use these tips to keep Peek out of production.
