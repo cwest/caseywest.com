@@ -14,7 +14,9 @@ This gem puts a little bar on your pages which gives you all sorts of helpful in
 
 As you can see there is information about the branch you're on, performance metrics, database queries, caches, shared memory, and job queues in there. Read the documentation for [peek] on GitHub and find the plugins that work best for you. They're excellent.
 
-The trouble is I definitely don't want to install Peek on production, or in my test environments, and the [peek usage] instructions would, indeed, require me to do so for a few key reasons: initializers, routes, assets, and views. Using peek requires a few steps of setup in your application. Each of the areas I enumerated requires peek to be a loaded gem in the environment you're running on.
+{% pullquote %}
+The trouble is {" I definitely don't want to install Peek on production "}, or in my test environments, and the [peek usage] instructions would, indeed, require me to do so for a few key reasons: initializers, routes, assets, and views. Using peek requires a few steps of setup in your application. Each of the areas I enumerated requires peek to be a loaded gem in the environment you're running on.
+{% endpullquote %}
 
 My first attempt to work around this involved wrapping calls with a [`defined?`] test. For example, in `config/routes.rb`:
 
