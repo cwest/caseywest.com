@@ -16,7 +16,7 @@ As you can see there is information about the branch you're on, performance metr
 
 The trouble is I definitely don't want to install Peek on production, or in my test environments, and the [peek usage] instructions would, indeed, require me to do so for a few key reasons: initializers, routes, assets, and views. Using peek requires a few steps of setup in your application. Each of the areas I enumerated requires peek to be a loaded gem in the environment you're running on.
 
-My first attempt to work around this involved wrapping calls with a [`defined?`] tests. For example, in `config/routes.rb`:
+My first attempt to work around this involved wrapping calls with a [`defined?`] test. For example, in `config/routes.rb`:
 
 ~~~ruby
 mount Peek::Railtie => '/peek' if defined?(Peek)
@@ -166,7 +166,7 @@ RSpec.describe PeekBarHelper, type: :helper do
     allow(helper).to receive(:current_user).and_return(anything)
   end
 
-  it 'is not be enabled' do
+  it 'is not enabled' do
     allow(PeekBar).to receive(:enabled?).and_return(false)
     expect(helper.peek_enabled?).to be(false)
   end
@@ -236,7 +236,9 @@ end
 
 By default `application.css` and `application.js` include all the CSS and JavaScript in their respective directory trees. That's achieved through the use of `require_tree .` in each of those files.
 
-Now that we've created a couple assets to conditionally load we need to remove `require_tree`. If you were relying on it, which I don't recommend for reasons beyond the scope of this essay, learn how to deal with it by reading the [Asset Pipeline Rails Guide][asset-pipeline].
+Now that we've created a couple assets to conditionally load we need to remove `require_tree`. If you don't remove it your default assets will try to include `peek_bar.*` which will lead to the aforementioned failures on environments where peek is not installed.
+
+If you were relying on it, which I don't recommend for reasons beyond the scope of this essay, learn how to deal with it by reading the [Asset Pipeline Rails Guide][asset-pipeline].
 
 ## View Configuration
 
@@ -287,3 +289,4 @@ That `PeekBar` class really tied the room together, did it not?
 [rspec]: https://relishapp.com/rspec/rspec-rails/docs
 [asset-pipeline]: http://guides.rubyonrails.org/asset_pipeline.html#manifest-files-and-directives
 [CoffeeScript]: http://coffeescript.org/
+[slim]: http://slim-lang.com/
