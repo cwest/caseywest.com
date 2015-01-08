@@ -153,7 +153,9 @@
 
 <p>As you can see there is information about the branch you're on, performance metrics, database queries, caches, shared memory, and job queues in there. Read the documentation for <a href="https://github.com/peek/peek">peek</a> on GitHub and find the plugins that work best for you. They're excellent.</p>
 
-<p>The trouble is I definitely don't want to install Peek on production, or in my test environments, and the <a href="https://github.com/peek/peek/blob/master/README.md#usage">peek usage</a> instructions would, indeed, require me to do so for a few key reasons: initializers, routes, assets, and views. Using peek requires a few steps of setup in your application. Each of the areas I enumerated requires peek to be a loaded gem in the environment you're running on.</p>
+<p><span class="pullquote-right" data-pullquote="I definitely don&apos;t want to install Peek on production">
+The trouble is I definitely don't want to install Peek on production, or in my test environments, and the <a href="https://github.com/peek/peek/blob/master/README.md#usage">peek usage</a> instructions would, indeed, require me to do so for a few key reasons: initializers, routes, assets, and views. Using peek requires a few steps of setup in your application. Each of the areas I enumerated requires peek to be a loaded gem in the environment you're running on.
+</span></p>
 
 <p>My first attempt to work around this involved wrapping calls with a <a href="http://ruby-doc.org/docs/keywords/1.9/Object.html#method-i-defined-3F"><code>defined?</code></a> test. For example, in <code>config/routes.rb</code>:</p>
 
