@@ -138,6 +138,488 @@
 <article class="hentry">
   <header>
     <div class="entry-meta">
+      <span class="entry-date date published updated"><time datetime="2015-01-07T00:00:00-05:00"><a href="http://caseywest.com/use-peek-to-inspect-rails-responsibly/">January 07, 2015</a></time></span><span class="author vcard"><span class="fn"><a href="http://caseywest.com/about/" title="About Casey West">Casey West</a></span></span>
+      
+      <span class="entry-reading-time pull-right">
+        <i class="fa fa-clock-o"></i>
+        
+        Reading time ~10 minutes
+      </span><!-- /.entry-reading-time -->
+      
+    </div><!-- /.entry-meta -->
+    
+      <h1 class="entry-title"><a href="http://caseywest.com/use-peek-to-inspect-rails-responsibly/" rel="bookmark" title="Use Peek to Inspect Rails Responsibly" itemprop="url">Use Peek to Inspect Rails Responsibly</a></h1>
+    
+  </header>
+  <div class="entry-content">
+    <p>I <em>love</em> developing applications with the <a href="https://github.com/peek/peek">peek</a> gem. It's designed for development or staging environments; there are a few tricks if you don't want it on production or test environments.</p>
+
+<p>This gem puts a little bar on your pages which gives you all sorts of helpful information about the request you just made.</p>
+
+<p><img src="https://f.cloud.github.com/assets/79995/244991/03cee1fa-8a74-11e2-8e33-283cf1298a60.png" alt="peek screenshot" /></p>
+
+<p>As you can see there is information about the branch you're on, performance metrics, database queries, caches, shared memory, and job queues in there. Read the documentation for <a href="https://github.com/peek/peek">peek</a> on GitHub and find the plugins that work best for you. They're excellent.</p>
+
+<p>The trouble is I definitely don't want to install Peek on production, or in my test environments, and the <a href="https://github.com/peek/peek/blob/master/README.md#usage">peek usage</a> instructions would, indeed, require me to do so for a few key reasons: initializers, routes, assets, and views. Using peek requires a few steps of setup in your application. Each of the areas I enumerated requires peek to be a loaded gem in the environment you're running on.</p>
+
+<p>My first attempt to work around this involved wrapping calls with a <a href="http://ruby-doc.org/docs/keywords/1.9/Object.html#method-i-defined-3F"><code>defined?</code></a> tests. For example, in <code>config/routes.rb</code>:</p>
+
+<div><table class="CodeRay"><tr>
+  <td class="line-numbers"><pre><a href="#n1" name="n1">1</a>
+</pre></td>
+  <td class="code"><pre>mount <span class="constant">Peek</span>::<span class="constant">Railtie</span> =&gt; <span class="string"><span class="delimiter">'</span><span class="content">/peek</span><span class="delimiter">'</span></span> <span class="keyword">if</span> <span class="keyword">defined?</span>(<span class="constant">Peek</span>)
+</pre></td>
+</tr></table>
+</div>
+
+<p>To style and script peek bar you need some CSS and JavaScript assets as well, which are loaded through the asset pipeline. Problem is, if the gem isn't in your bundle those loads fail, and so does pre-compilation if you attempt it.</p>
+
+<p>Finally, your views should be checking the <code>peek_enabled?</code> method, which is defined by peek in your <code>ApplicationController</code> class. So, for example, when rendering the peek bar itself you should be doing this:</p>
+
+<div><table class="CodeRay"><tr>
+  <td class="line-numbers"><pre><a href="#n1" name="n1">1</a>
+<a href="#n2" name="n2">2</a>
+</pre></td>
+  <td class="code"><pre>body
+  = render <span class="string"><span class="delimiter">'</span><span class="content">peek/bar</span><span class="delimiter">'</span></span> <span class="keyword">if</span> peek_enabled?
+</pre></td>
+</tr></table>
+</div>
+
+<p>Again, if peek isn't in your Bundle, such as in the production environment, this render will fail.</p>
+
+<p>I'm not particularly enthusiastic about this situation, so here is my guide to using peek responsibly. There are enough moving parts I decided to use the Table of Contents.</p>
+
+<ul id="markdown-toc">
+  <li><a href="#gemfile"><code>Gemfile</code></a></li>
+  <li><a href="#peekbar-class"><code>PeekBar</code> Class</a>    <ul>
+      <li><a href="#definition">Definition</a></li>
+      <li><a href="#test">Test</a></li>
+      <li><a href="#initialization">Initialization</a></li>
+    </ul>
+  </li>
+  <li><a href="#peekbarhelper-module"><code>PeekBarHelper</code> Module</a>    <ul>
+      <li><a href="#definition-1">Definition</a></li>
+      <li><a href="#test-1">Test</a></li>
+    </ul>
+  </li>
+  <li><a href="#peek-initialization"><code>Peek</code> Initialization</a></li>
+  <li><a href="#assets">Assets</a>    <ul>
+      <li><a href="#css-and-javascript-definition">CSS and JavaScript Definition</a></li>
+      <li><a href="#initialization-1">Initialization</a></li>
+      <li><a href="#default-assets-gotcha">Default Assets Gotcha</a></li>
+    </ul>
+  </li>
+  <li><a href="#view-configuration">View Configuration</a></li>
+  <li><a href="#finally">Finally</a></li>
+</ul>
+
+<h2 id="gemfile"><code>Gemfile</code></h2>
+
+<p>Peek must be loaded into our environment. I'm loading it into my <code>:development</code> environment only, along with a list of Peek plugins I want to use.</p>
+
+<div><table class="CodeRay"><tr>
+  <td class="line-numbers"><pre><a href="#n1" name="n1">1</a>
+<a href="#n2" name="n2">2</a>
+<a href="#n3" name="n3">3</a>
+<a href="#n4" name="n4">4</a>
+<a href="#n5" name="n5">5</a>
+<a href="#n6" name="n6">6</a>
+<a href="#n7" name="n7">7</a>
+<a href="#n8" name="n8">8</a>
+</pre></td>
+  <td class="code"><pre>group <span class="symbol">:development</span> <span class="keyword">do</span>
+  <span class="comment"># Peek Bar</span>
+  gem <span class="string"><span class="delimiter">'</span><span class="content">peek</span><span class="delimiter">'</span></span>
+  gem <span class="string"><span class="delimiter">'</span><span class="content">peek-git</span><span class="delimiter">'</span></span>
+  gem <span class="string"><span class="delimiter">'</span><span class="content">peek-gc</span><span class="delimiter">'</span></span>
+  gem <span class="string"><span class="delimiter">'</span><span class="content">peek-performance_bar</span><span class="delimiter">'</span></span>
+  gem <span class="string"><span class="delimiter">'</span><span class="content">peek-pg</span><span class="delimiter">'</span></span>
+<span class="keyword">end</span>
+</pre></td>
+</tr></table>
+</div>
+
+<h2 id="peekbar-class"><code>PeekBar</code> Class</h2>
+
+<p>This class is meant to answer two questions:</p>
+
+<ol>
+  <li><em>Is <code>Peek</code> available for use?</em> This question is asked when we start and configure the application.</li>
+  <li><em>Should peek be enabled for this request?</em> This question is asked during requests. Specifically during view rendering for any view that incorporates peek, which is most likely a layout.</li>
+</ol>
+
+<h3 id="definition">Definition</h3>
+
+<p>I put this class in <code>lib/peek_bar.rb</code>.</p>
+
+<div><table class="CodeRay"><tr>
+  <td class="line-numbers"><pre><a href="#n1" name="n1">1</a>
+<a href="#n2" name="n2">2</a>
+<a href="#n3" name="n3">3</a>
+<a href="#n4" name="n4">4</a>
+<a href="#n5" name="n5">5</a>
+<a href="#n6" name="n6">6</a>
+<a href="#n7" name="n7">7</a>
+<a href="#n8" name="n8">8</a>
+<a href="#n9" name="n9">9</a>
+<strong><a href="#n10" name="n10">10</a></strong>
+<a href="#n11" name="n11">11</a>
+<a href="#n12" name="n12">12</a>
+</pre></td>
+  <td class="code"><pre><span class="keyword">class</span> <span class="class">PeekBar</span>
+  <span class="keyword">def</span> <span class="predefined-constant">self</span>.<span class="function">available?</span>
+    !<span class="keyword">defined?</span>(<span class="constant">Peek</span>).nil?
+  <span class="keyword">end</span>
+
+  <span class="keyword">def</span> <span class="predefined-constant">self</span>.<span class="function">enabled?</span>(current_user)
+    <span class="keyword">return</span> <span class="predefined-constant">false</span> <span class="keyword">unless</span> available?
+
+    <span class="comment"># The default test.</span>
+    <span class="string"><span class="delimiter">%w(</span><span class="content">development staging</span><span class="delimiter">)</span></span>.include? <span class="constant">Rails</span>.env
+  <span class="keyword">end</span>
+<span class="keyword">end</span>
+</pre></td>
+</tr></table>
+</div>
+
+<p>Here you can see we've encapsulated the <code>defined?</code> test into <code>PeekBar.available?</code>. We use it in <code>PeekBar.enabled?</code> as the first test.</p>
+
+<p>If peek is available, and we're in development or the <code>current_user</code> likes nerdy toys we enable peek.</p>
+
+<h3 id="test">Test</h3>
+
+<p>I use <a href="https://relishapp.com/rspec/rspec-rails/docs">rspec</a> for testing, so my spec is in <code>spec/lib/peek_bar_spec.rb</code>.</p>
+
+<div><table class="CodeRay"><tr>
+  <td class="line-numbers"><pre><a href="#n1" name="n1">1</a>
+<a href="#n2" name="n2">2</a>
+<a href="#n3" name="n3">3</a>
+<a href="#n4" name="n4">4</a>
+<a href="#n5" name="n5">5</a>
+<a href="#n6" name="n6">6</a>
+<a href="#n7" name="n7">7</a>
+<a href="#n8" name="n8">8</a>
+<a href="#n9" name="n9">9</a>
+<strong><a href="#n10" name="n10">10</a></strong>
+<a href="#n11" name="n11">11</a>
+<a href="#n12" name="n12">12</a>
+<a href="#n13" name="n13">13</a>
+<a href="#n14" name="n14">14</a>
+<a href="#n15" name="n15">15</a>
+<a href="#n16" name="n16">16</a>
+<a href="#n17" name="n17">17</a>
+<a href="#n18" name="n18">18</a>
+<a href="#n19" name="n19">19</a>
+<strong><a href="#n20" name="n20">20</a></strong>
+<a href="#n21" name="n21">21</a>
+<a href="#n22" name="n22">22</a>
+<a href="#n23" name="n23">23</a>
+<a href="#n24" name="n24">24</a>
+<a href="#n25" name="n25">25</a>
+<a href="#n26" name="n26">26</a>
+<a href="#n27" name="n27">27</a>
+<a href="#n28" name="n28">28</a>
+<a href="#n29" name="n29">29</a>
+<strong><a href="#n30" name="n30">30</a></strong>
+<a href="#n31" name="n31">31</a>
+<a href="#n32" name="n32">32</a>
+<a href="#n33" name="n33">33</a>
+</pre></td>
+  <td class="code"><pre>require <span class="string"><span class="delimiter">'</span><span class="content">rails_helper</span><span class="delimiter">'</span></span>
+
+<span class="constant">RSpec</span>.describe <span class="constant">PeekBar</span> <span class="keyword">do</span>
+  subject { described_class }
+
+  context <span class="string"><span class="delimiter">'</span><span class="content">without Peek</span><span class="delimiter">'</span></span> <span class="keyword">do</span>
+    before(<span class="symbol">:each</span>) <span class="keyword">do</span>
+      <span class="constant">Object</span>.send(<span class="symbol">:remove_const</span>, <span class="symbol">:Peek</span>) <span class="keyword">if</span> <span class="keyword">defined?</span>(<span class="constant">Peek</span>)
+    <span class="keyword">end</span>
+
+    it <span class="string"><span class="delimiter">&quot;</span><span class="content">isn't available</span><span class="delimiter">&quot;</span></span> <span class="keyword">do</span>
+      expect(subject.available?).to be(<span class="predefined-constant">false</span>)
+    <span class="keyword">end</span>
+
+    it <span class="string"><span class="delimiter">&quot;</span><span class="content">isn't enabled</span><span class="delimiter">&quot;</span></span> <span class="keyword">do</span>
+      expect(subject.enabled?(anything)).to be(<span class="predefined-constant">false</span>)
+    <span class="keyword">end</span>
+  <span class="keyword">end</span>
+
+  context <span class="string"><span class="delimiter">'</span><span class="content">with Peek</span><span class="delimiter">'</span></span> <span class="keyword">do</span>
+    before(<span class="symbol">:each</span>) { <span class="constant">Peek</span> = <span class="constant">Class</span>.new }
+    after(<span class="symbol">:each</span>) { <span class="constant">Object</span>.send(<span class="symbol">:remove_const</span>, <span class="symbol">:Peek</span>) }
+
+    it <span class="string"><span class="delimiter">'</span><span class="content">is available</span><span class="delimiter">'</span></span> <span class="keyword">do</span>
+      expect(subject.available?).to be(<span class="predefined-constant">true</span>)
+    <span class="keyword">end</span>
+
+    it <span class="string"><span class="delimiter">'</span><span class="content">is enabled</span><span class="delimiter">'</span></span> <span class="keyword">do</span>
+      allow(<span class="constant">Rails</span>.env).to receive(<span class="symbol">:development?</span>).and_return(<span class="predefined-constant">true</span>)
+      expect(subject.enabled?(anything)).to be(<span class="predefined-constant">true</span>)
+    <span class="keyword">end</span>
+  <span class="keyword">end</span>
+<span class="keyword">end</span>
+</pre></td>
+</tr></table>
+</div>
+
+<p>In order to ensure this test is isolated I take extra precautions to ensure the <code>Peek</code> constant isn't available to my tests unless I explicitly allow it.</p>
+
+<h3 id="initialization">Initialization</h3>
+
+<p>By default Rails doesn't load ruby code from the <code>lib/</code> directory, so lets be sure to tell it to. In <code>config/application.rb</code> add this:</p>
+
+<div><table class="CodeRay"><tr>
+  <td class="line-numbers"><pre><a href="#n1" name="n1">1</a>
+<a href="#n2" name="n2">2</a>
+<a href="#n3" name="n3">3</a>
+</pre></td>
+  <td class="code"><pre>config.autoload_paths += <span class="string"><span class="delimiter">%W(</span><span class="content">
+  </span><span class="inline"><span class="inline-delimiter">#{</span>config.root<span class="inline-delimiter">}</span></span><span class="content">/lib
+</span><span class="delimiter">)</span></span>
+</pre></td>
+</tr></table>
+</div>
+
+<h2 id="peekbarhelper-module"><code>PeekBarHelper</code> Module</h2>
+
+<p>As I said earlier peek implements a <code>peek_enabled?</code> method and suggests if you want to customize it define the method in your <code>ApplicationController</code> class. I recommend doing that in a helper class instead.</p>
+
+<p>We need to know if peek should be enabled and to verify that we also need to know if it's available. With the <code>PeekBar</code> class this is simple.</p>
+
+<h3 id="definition-1">Definition</h3>
+
+<p>In <code>app/helpers/peek_bar_helper.rb</code>.</p>
+
+<div><table class="CodeRay"><tr>
+  <td class="line-numbers"><pre><a href="#n1" name="n1">1</a>
+<a href="#n2" name="n2">2</a>
+<a href="#n3" name="n3">3</a>
+<a href="#n4" name="n4">4</a>
+<a href="#n5" name="n5">5</a>
+<a href="#n6" name="n6">6</a>
+</pre></td>
+  <td class="code"><pre><span class="keyword">module</span> <span class="class">PeekBarHelper</span>
+  <span class="comment"># Typical Peek Integration</span>
+  <span class="keyword">def</span> <span class="function">peek_enabled?</span>
+    <span class="constant">PeekBar</span>.enabled?(current_user)
+  <span class="keyword">end</span>
+<span class="keyword">end</span>
+</pre></td>
+</tr></table>
+</div>
+
+<h3 id="test-1">Test</h3>
+
+<p>Since we're programming responsibly here's a test for the helper. In <code>spec/helpers/peek_bar_helper_spec.rb</code>.</p>
+
+<div><table class="CodeRay"><tr>
+  <td class="line-numbers"><pre><a href="#n1" name="n1">1</a>
+<a href="#n2" name="n2">2</a>
+<a href="#n3" name="n3">3</a>
+<a href="#n4" name="n4">4</a>
+<a href="#n5" name="n5">5</a>
+<a href="#n6" name="n6">6</a>
+<a href="#n7" name="n7">7</a>
+<a href="#n8" name="n8">8</a>
+<a href="#n9" name="n9">9</a>
+<strong><a href="#n10" name="n10">10</a></strong>
+<a href="#n11" name="n11">11</a>
+<a href="#n12" name="n12">12</a>
+<a href="#n13" name="n13">13</a>
+<a href="#n14" name="n14">14</a>
+<a href="#n15" name="n15">15</a>
+<a href="#n16" name="n16">16</a>
+<a href="#n17" name="n17">17</a>
+</pre></td>
+  <td class="code"><pre>require <span class="string"><span class="delimiter">'</span><span class="content">rails_helper</span><span class="delimiter">'</span></span>
+
+<span class="constant">RSpec</span>.describe <span class="constant">PeekBarHelper</span>, <span class="key">type</span>: <span class="symbol">:helper</span> <span class="keyword">do</span>
+  before(<span class="symbol">:each</span>) <span class="keyword">do</span>
+    allow(helper).to receive(<span class="symbol">:current_user</span>).and_return(anything)
+  <span class="keyword">end</span>
+
+  it <span class="string"><span class="delimiter">'</span><span class="content">is not be enabled</span><span class="delimiter">'</span></span> <span class="keyword">do</span>
+    allow(<span class="constant">PeekBar</span>).to receive(<span class="symbol">:enabled?</span>).and_return(<span class="predefined-constant">false</span>)
+    expect(helper.peek_enabled?).to be(<span class="predefined-constant">false</span>)
+  <span class="keyword">end</span>
+
+  it <span class="string"><span class="delimiter">'</span><span class="content">is enabled</span><span class="delimiter">'</span></span> <span class="keyword">do</span>
+    allow(<span class="constant">PeekBar</span>).to receive(<span class="symbol">:enabled?</span>).and_return(<span class="predefined-constant">true</span>)
+    expect(helper.peek_enabled?).to be(<span class="predefined-constant">true</span>)
+  <span class="keyword">end</span>
+<span class="keyword">end</span>
+</pre></td>
+</tr></table>
+</div>
+
+<h2 id="peek-initialization"><code>Peek</code> Initialization</h2>
+
+<p>The peek documentation explains how to set up <code>config/initializers/peek.rb</code> to enable the plugins you've selected. We need to first test for the availability of peek like this:</p>
+
+<div><table class="CodeRay"><tr>
+  <td class="line-numbers"><pre><a href="#n1" name="n1">1</a>
+<a href="#n2" name="n2">2</a>
+<a href="#n3" name="n3">3</a>
+<a href="#n4" name="n4">4</a>
+<a href="#n5" name="n5">5</a>
+<a href="#n6" name="n6">6</a>
+</pre></td>
+  <td class="code"><pre><span class="keyword">if</span> <span class="constant">PeekBar</span>.available?
+  <span class="constant">Peek</span>.into <span class="constant">Peek</span>::<span class="constant">Views</span>::<span class="constant">Git</span>
+  <span class="constant">Peek</span>.into <span class="constant">Peek</span>::<span class="constant">Views</span>::<span class="constant">GC</span>
+  <span class="constant">Peek</span>.into <span class="constant">Peek</span>::<span class="constant">Views</span>::<span class="constant">PerformanceBar</span>
+  <span class="constant">Peek</span>.into <span class="constant">Peek</span>::<span class="constant">Views</span>::<span class="constant">PG</span>
+<span class="keyword">end</span>
+</pre></td>
+</tr></table>
+</div>
+
+<h2 id="assets">Assets</h2>
+
+<p>We don't want to load or pre-compile the peek assets unless we intend to use them. My recommended approach is to wrap their inclusion in a new set of CSS and JavaScript files. I use the asset pipeline, so that's how I'll be including the gem's assets.</p>
+
+<h3 id="css-and-javascript-definition">CSS and JavaScript Definition</h3>
+
+<p>CSS is in <code>app/assets/stylesheets/peek_bar.scss</code>.</p>
+
+<div><table class="CodeRay"><tr>
+  <td class="line-numbers"><pre><a href="#n1" name="n1">1</a>
+<a href="#n2" name="n2">2</a>
+<a href="#n3" name="n3">3</a>
+<a href="#n4" name="n4">4</a>
+<a href="#n5" name="n5">5</a>
+<a href="#n6" name="n6">6</a>
+<a href="#n7" name="n7">7</a>
+<a href="#n8" name="n8">8</a>
+<a href="#n9" name="n9">9</a>
+<strong><a href="#n10" name="n10">10</a></strong>
+<a href="#n11" name="n11">11</a>
+</pre></td>
+  <td class="code"><pre>//= <span class="tag">require</span> <span class="tag">peek</span>
+//= <span class="tag">require</span> <span class="tag">peek</span>/<span class="tag">views</span>/<span class="tag">performance_bar</span>
+
+// <span class="tag">Peek</span> <span class="tag">bar</span> <span class="tag">on</span> <span class="tag">bottom</span> <span class="tag">of</span> <span class="tag">page</span>.
+<span class="id">#peek</span> {
+  <span class="key">position</span>: <span class="value">fixed</span>;
+  <span class="key">bottom</span>:   <span class="float">0</span>;
+  <span class="key">left</span>:     <span class="float">0</span>;
+  <span class="key">right</span>:    <span class="float">0</span>;
+  <span class="key">z-index</span>:  <span class="float">999</span>;
+}
+</pre></td>
+</tr></table>
+</div>
+
+<p>I prefer <a href="http://coffeescript.org/">CoffeeScript</a> so I loaded the JavaScript in <code>app/assets/javascripts/peek_bar.js.coffee</code>.</p>
+
+<div><table class="CodeRay"><tr>
+  <td class="line-numbers"><pre><a href="#n1" name="n1">1</a>
+<a href="#n2" name="n2">2</a>
+</pre></td>
+  <td class="code"><pre>#= require peek
+#= require peek/views/performance_bar
+</pre></td>
+</tr></table>
+</div>
+
+<h3 id="initialization-1">Initialization</h3>
+
+<p>The asset pipeline complains if you don't tell it about additional assets you intend to include separately (see the next section on <a href="#view-configuration">View Configuration</a>). Thing is, we don't <em>always</em> intend to include them or pre-compile them in this case. Just like when we initialized peek itself we must check for its availability.</p>
+
+<p>Add this to <code>config/initializers/assets.rb</code>:</p>
+
+<div><table class="CodeRay"><tr>
+  <td class="line-numbers"><pre><a href="#n1" name="n1">1</a>
+<a href="#n2" name="n2">2</a>
+<a href="#n3" name="n3">3</a>
+</pre></td>
+  <td class="code"><pre><span class="keyword">if</span> <span class="constant">PeekBar</span>.available?
+  <span class="constant">Rails</span>.application.config.assets.precompile += <span class="string"><span class="delimiter">%w(</span><span class="content">peek_bar.css peek_bar.js</span><span class="delimiter">)</span></span>
+<span class="keyword">end</span>
+</pre></td>
+</tr></table>
+</div>
+
+<h3 id="default-assets-gotcha">Default Assets Gotcha</h3>
+
+<p>By default <code>application.css</code> and <code>application.js</code> include all the CSS and JavaScript in their respective directory trees. That's achieved through the use of <code>require_tree .</code> in each of those files.</p>
+
+<p>Now that we've created a couple assets to conditionally load we need to remove <code>require_tree</code>. If you were relying on it, which I don't recommend for reasons beyond the scope of this essay, learn how to deal with it by reading the <a href="http://guides.rubyonrails.org/asset_pipeline.html#manifest-files-and-directives">Asset Pipeline Rails Guide</a>.</p>
+
+<h2 id="view-configuration">View Configuration</h2>
+
+<p>All this hard work for what? Now it's time to tie it all together in our layout view. I like [slim] so this is an extremely condensed version of my default layout, <code>app/views/layouts/application.html.slim</code>.</p>
+
+<div><table class="CodeRay"><tr>
+  <td class="line-numbers"><pre><a href="#n1" name="n1">1</a>
+<a href="#n2" name="n2">2</a>
+<a href="#n3" name="n3">3</a>
+<a href="#n4" name="n4">4</a>
+<a href="#n5" name="n5">5</a>
+<a href="#n6" name="n6">6</a>
+<a href="#n7" name="n7">7</a>
+<a href="#n8" name="n8">8</a>
+<a href="#n9" name="n9">9</a>
+<strong><a href="#n10" name="n10">10</a></strong>
+<a href="#n11" name="n11">11</a>
+<a href="#n12" name="n12">12</a>
+<a href="#n13" name="n13">13</a>
+</pre></td>
+  <td class="code"><pre>doctype html
+html
+  head
+    = stylesheet_link_tag <span class="string"><span class="delimiter">'</span><span class="content">application</span><span class="delimiter">'</span></span>, <span class="key">media</span>: <span class="string"><span class="delimiter">'</span><span class="content">all</span><span class="delimiter">'</span></span>, <span class="string"><span class="delimiter">'</span><span class="content">data-turbolinks-track</span><span class="delimiter">'</span></span> =&gt; <span class="predefined-constant">true</span>
+    - <span class="keyword">if</span> peek_enabled?
+      = stylesheet_link_tag <span class="string"><span class="delimiter">'</span><span class="content">peek_bar</span><span class="delimiter">'</span></span>, <span class="key">media</span>: <span class="string"><span class="delimiter">'</span><span class="content">all</span><span class="delimiter">'</span></span>, <span class="string"><span class="delimiter">'</span><span class="content">data-turbolinks-track</span><span class="delimiter">'</span></span> =&gt; <span class="predefined-constant">true</span>
+    = csrf_meta_tags
+body
+  = render <span class="string"><span class="delimiter">'</span><span class="content">peek/bar</span><span class="delimiter">'</span></span> <span class="keyword">if</span> peek_enabled?
+  = <span class="keyword">yield</span>
+  = javascript_include_tag <span class="string"><span class="delimiter">'</span><span class="content">application</span><span class="delimiter">'</span></span>, <span class="string"><span class="delimiter">'</span><span class="content">data-turbolinks-track</span><span class="delimiter">'</span></span> =&gt; <span class="predefined-constant">true</span>
+  - <span class="keyword">if</span> peek_enabled?
+    = javascript_include_tag <span class="string"><span class="delimiter">'</span><span class="content">peek_bar</span><span class="delimiter">'</span></span>, <span class="string"><span class="delimiter">'</span><span class="content">data-turbolinks-track</span><span class="delimiter">'</span></span> =&gt; <span class="predefined-constant">true</span>
+</pre></td>
+</tr></table>
+</div>
+
+<h2 id="finally">Finally</h2>
+
+<p>Voila!</p>
+
+<p>At this point <a href="https://github.com/peek/peek">peek</a> is incorporated into my application in a robust, responsible way. Environments we didn't install it into operate perfectly without it, and the ones we do have an encapsulation to use for managing its inclusion in our interface.</p>
+
+<p>It was a little more work but it paid off. We have an excellent developer tool installed without hurting production.</p>
+
+<p>If we want to use peek in production with only staff accounts, for example, all we have to do is change the <code>Gemfile</code> to install peek in the <code>:production</code> group and adjust the <code>PeekBar.enabled?</code> method:</p>
+
+<div><table class="CodeRay"><tr>
+  <td class="line-numbers"><pre><a href="#n1" name="n1">1</a>
+<a href="#n2" name="n2">2</a>
+<a href="#n3" name="n3">3</a>
+<a href="#n4" name="n4">4</a>
+<a href="#n5" name="n5">5</a>
+</pre></td>
+  <td class="code"><pre><span class="keyword">def</span> <span class="predefined-constant">self</span>.<span class="function">enabled?</span>(current_user)
+  <span class="keyword">return</span> <span class="predefined-constant">false</span> <span class="keyword">unless</span> available?
+
+  <span class="constant">Rails</span>.env.development? || current_user.staff?
+<span class="keyword">end</span>
+</pre></td>
+</tr></table>
+</div>
+
+<p>That <code>PeekBar</code> class really tied the room together, did it not?</p>
+
+<iframe width="560" height="315" src="http://www.youtube.com/embed/ezQLP1dj_t8" allowfullscreen=""></iframe>
+
+
+  </div><!-- /.entry-content -->
+</article><!-- /.hentry -->
+
+<article class="hentry">
+  <header>
+    <div class="entry-meta">
       <span class="entry-date date published updated"><time datetime="2015-01-06T00:00:00-05:00"><a href="http://caseywest.com/faster-ci-on-travis-and-docker-for-ruby-and-rails-and-rubocop/">January 06, 2015</a></time></span><span class="author vcard"><span class="fn"><a href="http://caseywest.com/about/" title="About Casey West">Casey West</a></span></span>
       
       <span class="entry-reading-time pull-right">
@@ -609,38 +1091,6 @@ task <span class="key">default</span>: <span class="symbol">:test</span>
 
 <p>Scroll to the bottom of that page for podcast subscription links. <em>Warning: political alignment obvious.</em></p>
 
-
-  </div><!-- /.entry-content -->
-</article><!-- /.hentry -->
-
-<article class="hentry">
-  <header>
-    <div class="entry-meta">
-      <span class="entry-date date published updated"><time datetime="2014-12-30T00:00:00-05:00"><a href="http://caseywest.com/hootsuite-has-best-response-to-criticism/">December 30, 2014</a></time></span><span class="author vcard"><span class="fn"><a href="http://caseywest.com/about/" title="About Casey West">Casey West</a></span></span>
-      
-      <span class="entry-reading-time pull-right">
-        <i class="fa fa-clock-o"></i>
-        
-        Reading time ~1 minute
-      </span><!-- /.entry-reading-time -->
-      
-    </div><!-- /.entry-meta -->
-    
-      <h1 class="entry-title entry-link-post"><a href="http://caseywest.com/hootsuite-has-best-response-to-criticism/" rel="bookmark" title="Hootsuite Has Best Response to Criticism"><i class="entry-link-marker fa fa-hand-o-right"></i></a> <a href="https://www.youtube.com/watch?v=bXizarnDodE">Hootsuite Has Best Response to Criticism</a></h1>
-    
-  </header>
-  <div class="entry-content">
-    <iframe width="560" height="315" src="http://www.youtube.com/embed/bXizarnDodE" allowfullscreen=""></iframe>
-
-<p>This is the gold standard. Customers were unhappy. Hootsuite heard them, were awesomely transparent, and did something about it.</p>
-
-<p>I have a thing for transparency. I think it makes most situations better. It takes courage to be open about shortcomings, even as a team, and to address them in the open. What Hootsuite did here is wonderful, and can be applied to any software team's circumstances.</p>
-
-<p>Maybe you are one of many teams in a large company and you want to be more transparent than the current culture accepts, or maybe like Hootsuite it's your whole company. Either way I encourage you to have the courage to be as transparent as possible and get other people to join in. It's liberating, and it's much less work than the alternative.</p>
-
-<p>With this kind of response Hootsuite shows they're open and accepting of criticism and they'll do something about it. They proved it's safe to give them feedback. Encouraged, even. They now have a reputation for courage and conviction, and for caring more about what they do than protecting themselves. That's one hell of a great reputation to build.</p>
-
-<p>Their CEO, Ryan Holmes, wrote more about it <a href="https://www.linkedin.com/pulse/20141113221604-2967511--your-product-is-a-piece-of-sh-t-how-my-company-responded-to-this-tweet?trk=mp-reader-card">on LinkedIn.</a></p>
 
   </div><!-- /.entry-content -->
 </article><!-- /.hentry -->

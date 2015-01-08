@@ -4,13 +4,491 @@
 <generator uri="https://github.com/mojombo/jekyll">Jekyll</generator>
 <link rel="self" type="application/atom+xml" href="http://caseywest.com/feed.xml" />
 <link rel="alternate" type="text/html" href="http://caseywest.com" />
-<updated>2015-01-06T22:50:14-05:00</updated>
+<updated>2015-01-07T23:59:25-05:00</updated>
 <id>http://caseywest.com/</id>
 <author>
   <name>Casey West</name>
   <uri>http://caseywest.com/</uri>
   <email></email>
 </author>
+
+
+<entry>
+  <title type="html"><![CDATA[Use Peek to Inspect Rails Responsibly]]></title>
+ <link rel="alternate" type="text/html" href="http://caseywest.com/use-peek-to-inspect-rails-responsibly/" />
+  <id>http://caseywest.com/use-peek-to-inspect-rails-responsibly</id>
+  <updated>2015-01-07 21:51:33 -0500T00:00:00-00:00</updated>
+  <published>2015-01-07T00:00:00-05:00</published>
+  
+  <author>
+    <name>Casey West</name>
+    <uri>http://caseywest.com</uri>
+    <email></email>
+  </author>
+  <content type="html">&lt;p&gt;I &lt;em&gt;love&lt;/em&gt; developing applications with the &lt;a href=&quot;https://github.com/peek/peek&quot;&gt;peek&lt;/a&gt; gem. It&#39;s designed for development or staging environments; there are a few tricks if you don&#39;t want it on production or test environments.&lt;/p&gt;
+
+&lt;p&gt;This gem puts a little bar on your pages which gives you all sorts of helpful information about the request you just made.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;https://f.cloud.github.com/assets/79995/244991/03cee1fa-8a74-11e2-8e33-283cf1298a60.png&quot; alt=&quot;peek screenshot&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;As you can see there is information about the branch you&#39;re on, performance metrics, database queries, caches, shared memory, and job queues in there. Read the documentation for &lt;a href=&quot;https://github.com/peek/peek&quot;&gt;peek&lt;/a&gt; on GitHub and find the plugins that work best for you. They&#39;re excellent.&lt;/p&gt;
+
+&lt;p&gt;The trouble is I definitely don&#39;t want to install Peek on production, or in my test environments, and the &lt;a href=&quot;https://github.com/peek/peek/blob/master/README.md#usage&quot;&gt;peek usage&lt;/a&gt; instructions would, indeed, require me to do so for a few key reasons: initializers, routes, assets, and views. Using peek requires a few steps of setup in your application. Each of the areas I enumerated requires peek to be a loaded gem in the environment you&#39;re running on.&lt;/p&gt;
+
+&lt;p&gt;My first attempt to work around this involved wrapping calls with a &lt;a href=&quot;http://ruby-doc.org/docs/keywords/1.9/Object.html#method-i-defined-3F&quot;&gt;&lt;code&gt;defined?&lt;/code&gt;&lt;/a&gt; tests. For example, in &lt;code&gt;config/routes.rb&lt;/code&gt;:&lt;/p&gt;
+
+&lt;div&gt;&lt;table class=&quot;CodeRay&quot;&gt;&lt;tr&gt;
+  &lt;td class=&quot;line-numbers&quot;&gt;&lt;pre&gt;&lt;a href=&quot;#n1&quot; name=&quot;n1&quot;&gt;1&lt;/a&gt;
+&lt;/pre&gt;&lt;/td&gt;
+  &lt;td class=&quot;code&quot;&gt;&lt;pre&gt;mount &lt;span class=&quot;constant&quot;&gt;Peek&lt;/span&gt;::&lt;span class=&quot;constant&quot;&gt;Railtie&lt;/span&gt; =&amp;gt; &lt;span class=&quot;string&quot;&gt;&lt;span class=&quot;delimiter&quot;&gt;&#39;&lt;/span&gt;&lt;span class=&quot;content&quot;&gt;/peek&lt;/span&gt;&lt;span class=&quot;delimiter&quot;&gt;&#39;&lt;/span&gt;&lt;/span&gt; &lt;span class=&quot;keyword&quot;&gt;if&lt;/span&gt; &lt;span class=&quot;keyword&quot;&gt;defined?&lt;/span&gt;(&lt;span class=&quot;constant&quot;&gt;Peek&lt;/span&gt;)
+&lt;/pre&gt;&lt;/td&gt;
+&lt;/tr&gt;&lt;/table&gt;
+&lt;/div&gt;
+
+&lt;p&gt;To style and script peek bar you need some CSS and JavaScript assets as well, which are loaded through the asset pipeline. Problem is, if the gem isn&#39;t in your bundle those loads fail, and so does pre-compilation if you attempt it.&lt;/p&gt;
+
+&lt;p&gt;Finally, your views should be checking the &lt;code&gt;peek_enabled?&lt;/code&gt; method, which is defined by peek in your &lt;code&gt;ApplicationController&lt;/code&gt; class. So, for example, when rendering the peek bar itself you should be doing this:&lt;/p&gt;
+
+&lt;div&gt;&lt;table class=&quot;CodeRay&quot;&gt;&lt;tr&gt;
+  &lt;td class=&quot;line-numbers&quot;&gt;&lt;pre&gt;&lt;a href=&quot;#n1&quot; name=&quot;n1&quot;&gt;1&lt;/a&gt;
+&lt;a href=&quot;#n2&quot; name=&quot;n2&quot;&gt;2&lt;/a&gt;
+&lt;/pre&gt;&lt;/td&gt;
+  &lt;td class=&quot;code&quot;&gt;&lt;pre&gt;body
+  = render &lt;span class=&quot;string&quot;&gt;&lt;span class=&quot;delimiter&quot;&gt;&#39;&lt;/span&gt;&lt;span class=&quot;content&quot;&gt;peek/bar&lt;/span&gt;&lt;span class=&quot;delimiter&quot;&gt;&#39;&lt;/span&gt;&lt;/span&gt; &lt;span class=&quot;keyword&quot;&gt;if&lt;/span&gt; peek_enabled?
+&lt;/pre&gt;&lt;/td&gt;
+&lt;/tr&gt;&lt;/table&gt;
+&lt;/div&gt;
+
+&lt;p&gt;Again, if peek isn&#39;t in your Bundle, such as in the production environment, this render will fail.&lt;/p&gt;
+
+&lt;p&gt;I&#39;m not particularly enthusiastic about this situation, so here is my guide to using peek responsibly. There are enough moving parts I decided to use the Table of Contents.&lt;/p&gt;
+
+&lt;ul id=&quot;markdown-toc&quot;&gt;
+  &lt;li&gt;&lt;a href=&quot;#gemfile&quot;&gt;&lt;code&gt;Gemfile&lt;/code&gt;&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;#peekbar-class&quot;&gt;&lt;code&gt;PeekBar&lt;/code&gt; Class&lt;/a&gt;    &lt;ul&gt;
+      &lt;li&gt;&lt;a href=&quot;#definition&quot;&gt;Definition&lt;/a&gt;&lt;/li&gt;
+      &lt;li&gt;&lt;a href=&quot;#test&quot;&gt;Test&lt;/a&gt;&lt;/li&gt;
+      &lt;li&gt;&lt;a href=&quot;#initialization&quot;&gt;Initialization&lt;/a&gt;&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;#peekbarhelper-module&quot;&gt;&lt;code&gt;PeekBarHelper&lt;/code&gt; Module&lt;/a&gt;    &lt;ul&gt;
+      &lt;li&gt;&lt;a href=&quot;#definition-1&quot;&gt;Definition&lt;/a&gt;&lt;/li&gt;
+      &lt;li&gt;&lt;a href=&quot;#test-1&quot;&gt;Test&lt;/a&gt;&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;#peek-initialization&quot;&gt;&lt;code&gt;Peek&lt;/code&gt; Initialization&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;#assets&quot;&gt;Assets&lt;/a&gt;    &lt;ul&gt;
+      &lt;li&gt;&lt;a href=&quot;#css-and-javascript-definition&quot;&gt;CSS and JavaScript Definition&lt;/a&gt;&lt;/li&gt;
+      &lt;li&gt;&lt;a href=&quot;#initialization-1&quot;&gt;Initialization&lt;/a&gt;&lt;/li&gt;
+      &lt;li&gt;&lt;a href=&quot;#default-assets-gotcha&quot;&gt;Default Assets Gotcha&lt;/a&gt;&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;#view-configuration&quot;&gt;View Configuration&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;#finally&quot;&gt;Finally&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&quot;gemfile&quot;&gt;&lt;code&gt;Gemfile&lt;/code&gt;&lt;/h2&gt;
+
+&lt;p&gt;Peek must be loaded into our environment. I&#39;m loading it into my &lt;code&gt;:development&lt;/code&gt; environment only, along with a list of Peek plugins I want to use.&lt;/p&gt;
+
+&lt;div&gt;&lt;table class=&quot;CodeRay&quot;&gt;&lt;tr&gt;
+  &lt;td class=&quot;line-numbers&quot;&gt;&lt;pre&gt;&lt;a href=&quot;#n1&quot; name=&quot;n1&quot;&gt;1&lt;/a&gt;
+&lt;a href=&quot;#n2&quot; name=&quot;n2&quot;&gt;2&lt;/a&gt;
+&lt;a href=&quot;#n3&quot; name=&quot;n3&quot;&gt;3&lt;/a&gt;
+&lt;a href=&quot;#n4&quot; name=&quot;n4&quot;&gt;4&lt;/a&gt;
+&lt;a href=&quot;#n5&quot; name=&quot;n5&quot;&gt;5&lt;/a&gt;
+&lt;a href=&quot;#n6&quot; name=&quot;n6&quot;&gt;6&lt;/a&gt;
+&lt;a href=&quot;#n7&quot; name=&quot;n7&quot;&gt;7&lt;/a&gt;
+&lt;a href=&quot;#n8&quot; name=&quot;n8&quot;&gt;8&lt;/a&gt;
+&lt;/pre&gt;&lt;/td&gt;
+  &lt;td class=&quot;code&quot;&gt;&lt;pre&gt;group &lt;span class=&quot;symbol&quot;&gt;:development&lt;/span&gt; &lt;span class=&quot;keyword&quot;&gt;do&lt;/span&gt;
+  &lt;span class=&quot;comment&quot;&gt;# Peek Bar&lt;/span&gt;
+  gem &lt;span class=&quot;string&quot;&gt;&lt;span class=&quot;delimiter&quot;&gt;&#39;&lt;/span&gt;&lt;span class=&quot;content&quot;&gt;peek&lt;/span&gt;&lt;span class=&quot;delimiter&quot;&gt;&#39;&lt;/span&gt;&lt;/span&gt;
+  gem &lt;span class=&quot;string&quot;&gt;&lt;span class=&quot;delimiter&quot;&gt;&#39;&lt;/span&gt;&lt;span class=&quot;content&quot;&gt;peek-git&lt;/span&gt;&lt;span class=&quot;delimiter&quot;&gt;&#39;&lt;/span&gt;&lt;/span&gt;
+  gem &lt;span class=&quot;string&quot;&gt;&lt;span class=&quot;delimiter&quot;&gt;&#39;&lt;/span&gt;&lt;span class=&quot;content&quot;&gt;peek-gc&lt;/span&gt;&lt;span class=&quot;delimiter&quot;&gt;&#39;&lt;/span&gt;&lt;/span&gt;
+  gem &lt;span class=&quot;string&quot;&gt;&lt;span class=&quot;delimiter&quot;&gt;&#39;&lt;/span&gt;&lt;span class=&quot;content&quot;&gt;peek-performance_bar&lt;/span&gt;&lt;span class=&quot;delimiter&quot;&gt;&#39;&lt;/span&gt;&lt;/span&gt;
+  gem &lt;span class=&quot;string&quot;&gt;&lt;span class=&quot;delimiter&quot;&gt;&#39;&lt;/span&gt;&lt;span class=&quot;content&quot;&gt;peek-pg&lt;/span&gt;&lt;span class=&quot;delimiter&quot;&gt;&#39;&lt;/span&gt;&lt;/span&gt;
+&lt;span class=&quot;keyword&quot;&gt;end&lt;/span&gt;
+&lt;/pre&gt;&lt;/td&gt;
+&lt;/tr&gt;&lt;/table&gt;
+&lt;/div&gt;
+
+&lt;h2 id=&quot;peekbar-class&quot;&gt;&lt;code&gt;PeekBar&lt;/code&gt; Class&lt;/h2&gt;
+
+&lt;p&gt;This class is meant to answer two questions:&lt;/p&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;&lt;em&gt;Is &lt;code&gt;Peek&lt;/code&gt; available for use?&lt;/em&gt; This question is asked when we start and configure the application.&lt;/li&gt;
+  &lt;li&gt;&lt;em&gt;Should peek be enabled for this request?&lt;/em&gt; This question is asked during requests. Specifically during view rendering for any view that incorporates peek, which is most likely a layout.&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;h3 id=&quot;definition&quot;&gt;Definition&lt;/h3&gt;
+
+&lt;p&gt;I put this class in &lt;code&gt;lib/peek_bar.rb&lt;/code&gt;.&lt;/p&gt;
+
+&lt;div&gt;&lt;table class=&quot;CodeRay&quot;&gt;&lt;tr&gt;
+  &lt;td class=&quot;line-numbers&quot;&gt;&lt;pre&gt;&lt;a href=&quot;#n1&quot; name=&quot;n1&quot;&gt;1&lt;/a&gt;
+&lt;a href=&quot;#n2&quot; name=&quot;n2&quot;&gt;2&lt;/a&gt;
+&lt;a href=&quot;#n3&quot; name=&quot;n3&quot;&gt;3&lt;/a&gt;
+&lt;a href=&quot;#n4&quot; name=&quot;n4&quot;&gt;4&lt;/a&gt;
+&lt;a href=&quot;#n5&quot; name=&quot;n5&quot;&gt;5&lt;/a&gt;
+&lt;a href=&quot;#n6&quot; name=&quot;n6&quot;&gt;6&lt;/a&gt;
+&lt;a href=&quot;#n7&quot; name=&quot;n7&quot;&gt;7&lt;/a&gt;
+&lt;a href=&quot;#n8&quot; name=&quot;n8&quot;&gt;8&lt;/a&gt;
+&lt;a href=&quot;#n9&quot; name=&quot;n9&quot;&gt;9&lt;/a&gt;
+&lt;strong&gt;&lt;a href=&quot;#n10&quot; name=&quot;n10&quot;&gt;10&lt;/a&gt;&lt;/strong&gt;
+&lt;a href=&quot;#n11&quot; name=&quot;n11&quot;&gt;11&lt;/a&gt;
+&lt;a href=&quot;#n12&quot; name=&quot;n12&quot;&gt;12&lt;/a&gt;
+&lt;/pre&gt;&lt;/td&gt;
+  &lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;keyword&quot;&gt;class&lt;/span&gt; &lt;span class=&quot;class&quot;&gt;PeekBar&lt;/span&gt;
+  &lt;span class=&quot;keyword&quot;&gt;def&lt;/span&gt; &lt;span class=&quot;predefined-constant&quot;&gt;self&lt;/span&gt;.&lt;span class=&quot;function&quot;&gt;available?&lt;/span&gt;
+    !&lt;span class=&quot;keyword&quot;&gt;defined?&lt;/span&gt;(&lt;span class=&quot;constant&quot;&gt;Peek&lt;/span&gt;).nil?
+  &lt;span class=&quot;keyword&quot;&gt;end&lt;/span&gt;
+
+  &lt;span class=&quot;keyword&quot;&gt;def&lt;/span&gt; &lt;span class=&quot;predefined-constant&quot;&gt;self&lt;/span&gt;.&lt;span class=&quot;function&quot;&gt;enabled?&lt;/span&gt;(current_user)
+    &lt;span class=&quot;keyword&quot;&gt;return&lt;/span&gt; &lt;span class=&quot;predefined-constant&quot;&gt;false&lt;/span&gt; &lt;span class=&quot;keyword&quot;&gt;unless&lt;/span&gt; available?
+
+    &lt;span class=&quot;comment&quot;&gt;# The default test.&lt;/span&gt;
+    &lt;span class=&quot;string&quot;&gt;&lt;span class=&quot;delimiter&quot;&gt;%w(&lt;/span&gt;&lt;span class=&quot;content&quot;&gt;development staging&lt;/span&gt;&lt;span class=&quot;delimiter&quot;&gt;)&lt;/span&gt;&lt;/span&gt;.include? &lt;span class=&quot;constant&quot;&gt;Rails&lt;/span&gt;.env
+  &lt;span class=&quot;keyword&quot;&gt;end&lt;/span&gt;
+&lt;span class=&quot;keyword&quot;&gt;end&lt;/span&gt;
+&lt;/pre&gt;&lt;/td&gt;
+&lt;/tr&gt;&lt;/table&gt;
+&lt;/div&gt;
+
+&lt;p&gt;Here you can see we&#39;ve encapsulated the &lt;code&gt;defined?&lt;/code&gt; test into &lt;code&gt;PeekBar.available?&lt;/code&gt;. We use it in &lt;code&gt;PeekBar.enabled?&lt;/code&gt; as the first test.&lt;/p&gt;
+
+&lt;p&gt;If peek is available, and we&#39;re in development or the &lt;code&gt;current_user&lt;/code&gt; likes nerdy toys we enable peek.&lt;/p&gt;
+
+&lt;h3 id=&quot;test&quot;&gt;Test&lt;/h3&gt;
+
+&lt;p&gt;I use &lt;a href=&quot;https://relishapp.com/rspec/rspec-rails/docs&quot;&gt;rspec&lt;/a&gt; for testing, so my spec is in &lt;code&gt;spec/lib/peek_bar_spec.rb&lt;/code&gt;.&lt;/p&gt;
+
+&lt;div&gt;&lt;table class=&quot;CodeRay&quot;&gt;&lt;tr&gt;
+  &lt;td class=&quot;line-numbers&quot;&gt;&lt;pre&gt;&lt;a href=&quot;#n1&quot; name=&quot;n1&quot;&gt;1&lt;/a&gt;
+&lt;a href=&quot;#n2&quot; name=&quot;n2&quot;&gt;2&lt;/a&gt;
+&lt;a href=&quot;#n3&quot; name=&quot;n3&quot;&gt;3&lt;/a&gt;
+&lt;a href=&quot;#n4&quot; name=&quot;n4&quot;&gt;4&lt;/a&gt;
+&lt;a href=&quot;#n5&quot; name=&quot;n5&quot;&gt;5&lt;/a&gt;
+&lt;a href=&quot;#n6&quot; name=&quot;n6&quot;&gt;6&lt;/a&gt;
+&lt;a href=&quot;#n7&quot; name=&quot;n7&quot;&gt;7&lt;/a&gt;
+&lt;a href=&quot;#n8&quot; name=&quot;n8&quot;&gt;8&lt;/a&gt;
+&lt;a href=&quot;#n9&quot; name=&quot;n9&quot;&gt;9&lt;/a&gt;
+&lt;strong&gt;&lt;a href=&quot;#n10&quot; name=&quot;n10&quot;&gt;10&lt;/a&gt;&lt;/strong&gt;
+&lt;a href=&quot;#n11&quot; name=&quot;n11&quot;&gt;11&lt;/a&gt;
+&lt;a href=&quot;#n12&quot; name=&quot;n12&quot;&gt;12&lt;/a&gt;
+&lt;a href=&quot;#n13&quot; name=&quot;n13&quot;&gt;13&lt;/a&gt;
+&lt;a href=&quot;#n14&quot; name=&quot;n14&quot;&gt;14&lt;/a&gt;
+&lt;a href=&quot;#n15&quot; name=&quot;n15&quot;&gt;15&lt;/a&gt;
+&lt;a href=&quot;#n16&quot; name=&quot;n16&quot;&gt;16&lt;/a&gt;
+&lt;a href=&quot;#n17&quot; name=&quot;n17&quot;&gt;17&lt;/a&gt;
+&lt;a href=&quot;#n18&quot; name=&quot;n18&quot;&gt;18&lt;/a&gt;
+&lt;a href=&quot;#n19&quot; name=&quot;n19&quot;&gt;19&lt;/a&gt;
+&lt;strong&gt;&lt;a href=&quot;#n20&quot; name=&quot;n20&quot;&gt;20&lt;/a&gt;&lt;/strong&gt;
+&lt;a href=&quot;#n21&quot; name=&quot;n21&quot;&gt;21&lt;/a&gt;
+&lt;a href=&quot;#n22&quot; name=&quot;n22&quot;&gt;22&lt;/a&gt;
+&lt;a href=&quot;#n23&quot; name=&quot;n23&quot;&gt;23&lt;/a&gt;
+&lt;a href=&quot;#n24&quot; name=&quot;n24&quot;&gt;24&lt;/a&gt;
+&lt;a href=&quot;#n25&quot; name=&quot;n25&quot;&gt;25&lt;/a&gt;
+&lt;a href=&quot;#n26&quot; name=&quot;n26&quot;&gt;26&lt;/a&gt;
+&lt;a href=&quot;#n27&quot; name=&quot;n27&quot;&gt;27&lt;/a&gt;
+&lt;a href=&quot;#n28&quot; name=&quot;n28&quot;&gt;28&lt;/a&gt;
+&lt;a href=&quot;#n29&quot; name=&quot;n29&quot;&gt;29&lt;/a&gt;
+&lt;strong&gt;&lt;a href=&quot;#n30&quot; name=&quot;n30&quot;&gt;30&lt;/a&gt;&lt;/strong&gt;
+&lt;a href=&quot;#n31&quot; name=&quot;n31&quot;&gt;31&lt;/a&gt;
+&lt;a href=&quot;#n32&quot; name=&quot;n32&quot;&gt;32&lt;/a&gt;
+&lt;a href=&quot;#n33&quot; name=&quot;n33&quot;&gt;33&lt;/a&gt;
+&lt;/pre&gt;&lt;/td&gt;
+  &lt;td class=&quot;code&quot;&gt;&lt;pre&gt;require &lt;span class=&quot;string&quot;&gt;&lt;span class=&quot;delimiter&quot;&gt;&#39;&lt;/span&gt;&lt;span class=&quot;content&quot;&gt;rails_helper&lt;/span&gt;&lt;span class=&quot;delimiter&quot;&gt;&#39;&lt;/span&gt;&lt;/span&gt;
+
+&lt;span class=&quot;constant&quot;&gt;RSpec&lt;/span&gt;.describe &lt;span class=&quot;constant&quot;&gt;PeekBar&lt;/span&gt; &lt;span class=&quot;keyword&quot;&gt;do&lt;/span&gt;
+  subject { described_class }
+
+  context &lt;span class=&quot;string&quot;&gt;&lt;span class=&quot;delimiter&quot;&gt;&#39;&lt;/span&gt;&lt;span class=&quot;content&quot;&gt;without Peek&lt;/span&gt;&lt;span class=&quot;delimiter&quot;&gt;&#39;&lt;/span&gt;&lt;/span&gt; &lt;span class=&quot;keyword&quot;&gt;do&lt;/span&gt;
+    before(&lt;span class=&quot;symbol&quot;&gt;:each&lt;/span&gt;) &lt;span class=&quot;keyword&quot;&gt;do&lt;/span&gt;
+      &lt;span class=&quot;constant&quot;&gt;Object&lt;/span&gt;.send(&lt;span class=&quot;symbol&quot;&gt;:remove_const&lt;/span&gt;, &lt;span class=&quot;symbol&quot;&gt;:Peek&lt;/span&gt;) &lt;span class=&quot;keyword&quot;&gt;if&lt;/span&gt; &lt;span class=&quot;keyword&quot;&gt;defined?&lt;/span&gt;(&lt;span class=&quot;constant&quot;&gt;Peek&lt;/span&gt;)
+    &lt;span class=&quot;keyword&quot;&gt;end&lt;/span&gt;
+
+    it &lt;span class=&quot;string&quot;&gt;&lt;span class=&quot;delimiter&quot;&gt;&amp;quot;&lt;/span&gt;&lt;span class=&quot;content&quot;&gt;isn&#39;t available&lt;/span&gt;&lt;span class=&quot;delimiter&quot;&gt;&amp;quot;&lt;/span&gt;&lt;/span&gt; &lt;span class=&quot;keyword&quot;&gt;do&lt;/span&gt;
+      expect(subject.available?).to be(&lt;span class=&quot;predefined-constant&quot;&gt;false&lt;/span&gt;)
+    &lt;span class=&quot;keyword&quot;&gt;end&lt;/span&gt;
+
+    it &lt;span class=&quot;string&quot;&gt;&lt;span class=&quot;delimiter&quot;&gt;&amp;quot;&lt;/span&gt;&lt;span class=&quot;content&quot;&gt;isn&#39;t enabled&lt;/span&gt;&lt;span class=&quot;delimiter&quot;&gt;&amp;quot;&lt;/span&gt;&lt;/span&gt; &lt;span class=&quot;keyword&quot;&gt;do&lt;/span&gt;
+      expect(subject.enabled?(anything)).to be(&lt;span class=&quot;predefined-constant&quot;&gt;false&lt;/span&gt;)
+    &lt;span class=&quot;keyword&quot;&gt;end&lt;/span&gt;
+  &lt;span class=&quot;keyword&quot;&gt;end&lt;/span&gt;
+
+  context &lt;span class=&quot;string&quot;&gt;&lt;span class=&quot;delimiter&quot;&gt;&#39;&lt;/span&gt;&lt;span class=&quot;content&quot;&gt;with Peek&lt;/span&gt;&lt;span class=&quot;delimiter&quot;&gt;&#39;&lt;/span&gt;&lt;/span&gt; &lt;span class=&quot;keyword&quot;&gt;do&lt;/span&gt;
+    before(&lt;span class=&quot;symbol&quot;&gt;:each&lt;/span&gt;) { &lt;span class=&quot;constant&quot;&gt;Peek&lt;/span&gt; = &lt;span class=&quot;constant&quot;&gt;Class&lt;/span&gt;.new }
+    after(&lt;span class=&quot;symbol&quot;&gt;:each&lt;/span&gt;) { &lt;span class=&quot;constant&quot;&gt;Object&lt;/span&gt;.send(&lt;span class=&quot;symbol&quot;&gt;:remove_const&lt;/span&gt;, &lt;span class=&quot;symbol&quot;&gt;:Peek&lt;/span&gt;) }
+
+    it &lt;span class=&quot;string&quot;&gt;&lt;span class=&quot;delimiter&quot;&gt;&#39;&lt;/span&gt;&lt;span class=&quot;content&quot;&gt;is available&lt;/span&gt;&lt;span class=&quot;delimiter&quot;&gt;&#39;&lt;/span&gt;&lt;/span&gt; &lt;span class=&quot;keyword&quot;&gt;do&lt;/span&gt;
+      expect(subject.available?).to be(&lt;span class=&quot;predefined-constant&quot;&gt;true&lt;/span&gt;)
+    &lt;span class=&quot;keyword&quot;&gt;end&lt;/span&gt;
+
+    it &lt;span class=&quot;string&quot;&gt;&lt;span class=&quot;delimiter&quot;&gt;&#39;&lt;/span&gt;&lt;span class=&quot;content&quot;&gt;is enabled&lt;/span&gt;&lt;span class=&quot;delimiter&quot;&gt;&#39;&lt;/span&gt;&lt;/span&gt; &lt;span class=&quot;keyword&quot;&gt;do&lt;/span&gt;
+      allow(&lt;span class=&quot;constant&quot;&gt;Rails&lt;/span&gt;.env).to receive(&lt;span class=&quot;symbol&quot;&gt;:development?&lt;/span&gt;).and_return(&lt;span class=&quot;predefined-constant&quot;&gt;true&lt;/span&gt;)
+      expect(subject.enabled?(anything)).to be(&lt;span class=&quot;predefined-constant&quot;&gt;true&lt;/span&gt;)
+    &lt;span class=&quot;keyword&quot;&gt;end&lt;/span&gt;
+  &lt;span class=&quot;keyword&quot;&gt;end&lt;/span&gt;
+&lt;span class=&quot;keyword&quot;&gt;end&lt;/span&gt;
+&lt;/pre&gt;&lt;/td&gt;
+&lt;/tr&gt;&lt;/table&gt;
+&lt;/div&gt;
+
+&lt;p&gt;In order to ensure this test is isolated I take extra precautions to ensure the &lt;code&gt;Peek&lt;/code&gt; constant isn&#39;t available to my tests unless I explicitly allow it.&lt;/p&gt;
+
+&lt;h3 id=&quot;initialization&quot;&gt;Initialization&lt;/h3&gt;
+
+&lt;p&gt;By default Rails doesn&#39;t load ruby code from the &lt;code&gt;lib/&lt;/code&gt; directory, so lets be sure to tell it to. In &lt;code&gt;config/application.rb&lt;/code&gt; add this:&lt;/p&gt;
+
+&lt;div&gt;&lt;table class=&quot;CodeRay&quot;&gt;&lt;tr&gt;
+  &lt;td class=&quot;line-numbers&quot;&gt;&lt;pre&gt;&lt;a href=&quot;#n1&quot; name=&quot;n1&quot;&gt;1&lt;/a&gt;
+&lt;a href=&quot;#n2&quot; name=&quot;n2&quot;&gt;2&lt;/a&gt;
+&lt;a href=&quot;#n3&quot; name=&quot;n3&quot;&gt;3&lt;/a&gt;
+&lt;/pre&gt;&lt;/td&gt;
+  &lt;td class=&quot;code&quot;&gt;&lt;pre&gt;config.autoload_paths += &lt;span class=&quot;string&quot;&gt;&lt;span class=&quot;delimiter&quot;&gt;%W(&lt;/span&gt;&lt;span class=&quot;content&quot;&gt;
+  &lt;/span&gt;&lt;span class=&quot;inline&quot;&gt;&lt;span class=&quot;inline-delimiter&quot;&gt;#{&lt;/span&gt;config.root&lt;span class=&quot;inline-delimiter&quot;&gt;}&lt;/span&gt;&lt;/span&gt;&lt;span class=&quot;content&quot;&gt;/lib
+&lt;/span&gt;&lt;span class=&quot;delimiter&quot;&gt;)&lt;/span&gt;&lt;/span&gt;
+&lt;/pre&gt;&lt;/td&gt;
+&lt;/tr&gt;&lt;/table&gt;
+&lt;/div&gt;
+
+&lt;h2 id=&quot;peekbarhelper-module&quot;&gt;&lt;code&gt;PeekBarHelper&lt;/code&gt; Module&lt;/h2&gt;
+
+&lt;p&gt;As I said earlier peek implements a &lt;code&gt;peek_enabled?&lt;/code&gt; method and suggests if you want to customize it define the method in your &lt;code&gt;ApplicationController&lt;/code&gt; class. I recommend doing that in a helper class instead.&lt;/p&gt;
+
+&lt;p&gt;We need to know if peek should be enabled and to verify that we also need to know if it&#39;s available. With the &lt;code&gt;PeekBar&lt;/code&gt; class this is simple.&lt;/p&gt;
+
+&lt;h3 id=&quot;definition-1&quot;&gt;Definition&lt;/h3&gt;
+
+&lt;p&gt;In &lt;code&gt;app/helpers/peek_bar_helper.rb&lt;/code&gt;.&lt;/p&gt;
+
+&lt;div&gt;&lt;table class=&quot;CodeRay&quot;&gt;&lt;tr&gt;
+  &lt;td class=&quot;line-numbers&quot;&gt;&lt;pre&gt;&lt;a href=&quot;#n1&quot; name=&quot;n1&quot;&gt;1&lt;/a&gt;
+&lt;a href=&quot;#n2&quot; name=&quot;n2&quot;&gt;2&lt;/a&gt;
+&lt;a href=&quot;#n3&quot; name=&quot;n3&quot;&gt;3&lt;/a&gt;
+&lt;a href=&quot;#n4&quot; name=&quot;n4&quot;&gt;4&lt;/a&gt;
+&lt;a href=&quot;#n5&quot; name=&quot;n5&quot;&gt;5&lt;/a&gt;
+&lt;a href=&quot;#n6&quot; name=&quot;n6&quot;&gt;6&lt;/a&gt;
+&lt;/pre&gt;&lt;/td&gt;
+  &lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;keyword&quot;&gt;module&lt;/span&gt; &lt;span class=&quot;class&quot;&gt;PeekBarHelper&lt;/span&gt;
+  &lt;span class=&quot;comment&quot;&gt;# Typical Peek Integration&lt;/span&gt;
+  &lt;span class=&quot;keyword&quot;&gt;def&lt;/span&gt; &lt;span class=&quot;function&quot;&gt;peek_enabled?&lt;/span&gt;
+    &lt;span class=&quot;constant&quot;&gt;PeekBar&lt;/span&gt;.enabled?(current_user)
+  &lt;span class=&quot;keyword&quot;&gt;end&lt;/span&gt;
+&lt;span class=&quot;keyword&quot;&gt;end&lt;/span&gt;
+&lt;/pre&gt;&lt;/td&gt;
+&lt;/tr&gt;&lt;/table&gt;
+&lt;/div&gt;
+
+&lt;h3 id=&quot;test-1&quot;&gt;Test&lt;/h3&gt;
+
+&lt;p&gt;Since we&#39;re programming responsibly here&#39;s a test for the helper. In &lt;code&gt;spec/helpers/peek_bar_helper_spec.rb&lt;/code&gt;.&lt;/p&gt;
+
+&lt;div&gt;&lt;table class=&quot;CodeRay&quot;&gt;&lt;tr&gt;
+  &lt;td class=&quot;line-numbers&quot;&gt;&lt;pre&gt;&lt;a href=&quot;#n1&quot; name=&quot;n1&quot;&gt;1&lt;/a&gt;
+&lt;a href=&quot;#n2&quot; name=&quot;n2&quot;&gt;2&lt;/a&gt;
+&lt;a href=&quot;#n3&quot; name=&quot;n3&quot;&gt;3&lt;/a&gt;
+&lt;a href=&quot;#n4&quot; name=&quot;n4&quot;&gt;4&lt;/a&gt;
+&lt;a href=&quot;#n5&quot; name=&quot;n5&quot;&gt;5&lt;/a&gt;
+&lt;a href=&quot;#n6&quot; name=&quot;n6&quot;&gt;6&lt;/a&gt;
+&lt;a href=&quot;#n7&quot; name=&quot;n7&quot;&gt;7&lt;/a&gt;
+&lt;a href=&quot;#n8&quot; name=&quot;n8&quot;&gt;8&lt;/a&gt;
+&lt;a href=&quot;#n9&quot; name=&quot;n9&quot;&gt;9&lt;/a&gt;
+&lt;strong&gt;&lt;a href=&quot;#n10&quot; name=&quot;n10&quot;&gt;10&lt;/a&gt;&lt;/strong&gt;
+&lt;a href=&quot;#n11&quot; name=&quot;n11&quot;&gt;11&lt;/a&gt;
+&lt;a href=&quot;#n12&quot; name=&quot;n12&quot;&gt;12&lt;/a&gt;
+&lt;a href=&quot;#n13&quot; name=&quot;n13&quot;&gt;13&lt;/a&gt;
+&lt;a href=&quot;#n14&quot; name=&quot;n14&quot;&gt;14&lt;/a&gt;
+&lt;a href=&quot;#n15&quot; name=&quot;n15&quot;&gt;15&lt;/a&gt;
+&lt;a href=&quot;#n16&quot; name=&quot;n16&quot;&gt;16&lt;/a&gt;
+&lt;a href=&quot;#n17&quot; name=&quot;n17&quot;&gt;17&lt;/a&gt;
+&lt;/pre&gt;&lt;/td&gt;
+  &lt;td class=&quot;code&quot;&gt;&lt;pre&gt;require &lt;span class=&quot;string&quot;&gt;&lt;span class=&quot;delimiter&quot;&gt;&#39;&lt;/span&gt;&lt;span class=&quot;content&quot;&gt;rails_helper&lt;/span&gt;&lt;span class=&quot;delimiter&quot;&gt;&#39;&lt;/span&gt;&lt;/span&gt;
+
+&lt;span class=&quot;constant&quot;&gt;RSpec&lt;/span&gt;.describe &lt;span class=&quot;constant&quot;&gt;PeekBarHelper&lt;/span&gt;, &lt;span class=&quot;key&quot;&gt;type&lt;/span&gt;: &lt;span class=&quot;symbol&quot;&gt;:helper&lt;/span&gt; &lt;span class=&quot;keyword&quot;&gt;do&lt;/span&gt;
+  before(&lt;span class=&quot;symbol&quot;&gt;:each&lt;/span&gt;) &lt;span class=&quot;keyword&quot;&gt;do&lt;/span&gt;
+    allow(helper).to receive(&lt;span class=&quot;symbol&quot;&gt;:current_user&lt;/span&gt;).and_return(anything)
+  &lt;span class=&quot;keyword&quot;&gt;end&lt;/span&gt;
+
+  it &lt;span class=&quot;string&quot;&gt;&lt;span class=&quot;delimiter&quot;&gt;&#39;&lt;/span&gt;&lt;span class=&quot;content&quot;&gt;is not be enabled&lt;/span&gt;&lt;span class=&quot;delimiter&quot;&gt;&#39;&lt;/span&gt;&lt;/span&gt; &lt;span class=&quot;keyword&quot;&gt;do&lt;/span&gt;
+    allow(&lt;span class=&quot;constant&quot;&gt;PeekBar&lt;/span&gt;).to receive(&lt;span class=&quot;symbol&quot;&gt;:enabled?&lt;/span&gt;).and_return(&lt;span class=&quot;predefined-constant&quot;&gt;false&lt;/span&gt;)
+    expect(helper.peek_enabled?).to be(&lt;span class=&quot;predefined-constant&quot;&gt;false&lt;/span&gt;)
+  &lt;span class=&quot;keyword&quot;&gt;end&lt;/span&gt;
+
+  it &lt;span class=&quot;string&quot;&gt;&lt;span class=&quot;delimiter&quot;&gt;&#39;&lt;/span&gt;&lt;span class=&quot;content&quot;&gt;is enabled&lt;/span&gt;&lt;span class=&quot;delimiter&quot;&gt;&#39;&lt;/span&gt;&lt;/span&gt; &lt;span class=&quot;keyword&quot;&gt;do&lt;/span&gt;
+    allow(&lt;span class=&quot;constant&quot;&gt;PeekBar&lt;/span&gt;).to receive(&lt;span class=&quot;symbol&quot;&gt;:enabled?&lt;/span&gt;).and_return(&lt;span class=&quot;predefined-constant&quot;&gt;true&lt;/span&gt;)
+    expect(helper.peek_enabled?).to be(&lt;span class=&quot;predefined-constant&quot;&gt;true&lt;/span&gt;)
+  &lt;span class=&quot;keyword&quot;&gt;end&lt;/span&gt;
+&lt;span class=&quot;keyword&quot;&gt;end&lt;/span&gt;
+&lt;/pre&gt;&lt;/td&gt;
+&lt;/tr&gt;&lt;/table&gt;
+&lt;/div&gt;
+
+&lt;h2 id=&quot;peek-initialization&quot;&gt;&lt;code&gt;Peek&lt;/code&gt; Initialization&lt;/h2&gt;
+
+&lt;p&gt;The peek documentation explains how to set up &lt;code&gt;config/initializers/peek.rb&lt;/code&gt; to enable the plugins you&#39;ve selected. We need to first test for the availability of peek like this:&lt;/p&gt;
+
+&lt;div&gt;&lt;table class=&quot;CodeRay&quot;&gt;&lt;tr&gt;
+  &lt;td class=&quot;line-numbers&quot;&gt;&lt;pre&gt;&lt;a href=&quot;#n1&quot; name=&quot;n1&quot;&gt;1&lt;/a&gt;
+&lt;a href=&quot;#n2&quot; name=&quot;n2&quot;&gt;2&lt;/a&gt;
+&lt;a href=&quot;#n3&quot; name=&quot;n3&quot;&gt;3&lt;/a&gt;
+&lt;a href=&quot;#n4&quot; name=&quot;n4&quot;&gt;4&lt;/a&gt;
+&lt;a href=&quot;#n5&quot; name=&quot;n5&quot;&gt;5&lt;/a&gt;
+&lt;a href=&quot;#n6&quot; name=&quot;n6&quot;&gt;6&lt;/a&gt;
+&lt;/pre&gt;&lt;/td&gt;
+  &lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;keyword&quot;&gt;if&lt;/span&gt; &lt;span class=&quot;constant&quot;&gt;PeekBar&lt;/span&gt;.available?
+  &lt;span class=&quot;constant&quot;&gt;Peek&lt;/span&gt;.into &lt;span class=&quot;constant&quot;&gt;Peek&lt;/span&gt;::&lt;span class=&quot;constant&quot;&gt;Views&lt;/span&gt;::&lt;span class=&quot;constant&quot;&gt;Git&lt;/span&gt;
+  &lt;span class=&quot;constant&quot;&gt;Peek&lt;/span&gt;.into &lt;span class=&quot;constant&quot;&gt;Peek&lt;/span&gt;::&lt;span class=&quot;constant&quot;&gt;Views&lt;/span&gt;::&lt;span class=&quot;constant&quot;&gt;GC&lt;/span&gt;
+  &lt;span class=&quot;constant&quot;&gt;Peek&lt;/span&gt;.into &lt;span class=&quot;constant&quot;&gt;Peek&lt;/span&gt;::&lt;span class=&quot;constant&quot;&gt;Views&lt;/span&gt;::&lt;span class=&quot;constant&quot;&gt;PerformanceBar&lt;/span&gt;
+  &lt;span class=&quot;constant&quot;&gt;Peek&lt;/span&gt;.into &lt;span class=&quot;constant&quot;&gt;Peek&lt;/span&gt;::&lt;span class=&quot;constant&quot;&gt;Views&lt;/span&gt;::&lt;span class=&quot;constant&quot;&gt;PG&lt;/span&gt;
+&lt;span class=&quot;keyword&quot;&gt;end&lt;/span&gt;
+&lt;/pre&gt;&lt;/td&gt;
+&lt;/tr&gt;&lt;/table&gt;
+&lt;/div&gt;
+
+&lt;h2 id=&quot;assets&quot;&gt;Assets&lt;/h2&gt;
+
+&lt;p&gt;We don&#39;t want to load or pre-compile the peek assets unless we intend to use them. My recommended approach is to wrap their inclusion in a new set of CSS and JavaScript files. I use the asset pipeline, so that&#39;s how I&#39;ll be including the gem&#39;s assets.&lt;/p&gt;
+
+&lt;h3 id=&quot;css-and-javascript-definition&quot;&gt;CSS and JavaScript Definition&lt;/h3&gt;
+
+&lt;p&gt;CSS is in &lt;code&gt;app/assets/stylesheets/peek_bar.scss&lt;/code&gt;.&lt;/p&gt;
+
+&lt;div&gt;&lt;table class=&quot;CodeRay&quot;&gt;&lt;tr&gt;
+  &lt;td class=&quot;line-numbers&quot;&gt;&lt;pre&gt;&lt;a href=&quot;#n1&quot; name=&quot;n1&quot;&gt;1&lt;/a&gt;
+&lt;a href=&quot;#n2&quot; name=&quot;n2&quot;&gt;2&lt;/a&gt;
+&lt;a href=&quot;#n3&quot; name=&quot;n3&quot;&gt;3&lt;/a&gt;
+&lt;a href=&quot;#n4&quot; name=&quot;n4&quot;&gt;4&lt;/a&gt;
+&lt;a href=&quot;#n5&quot; name=&quot;n5&quot;&gt;5&lt;/a&gt;
+&lt;a href=&quot;#n6&quot; name=&quot;n6&quot;&gt;6&lt;/a&gt;
+&lt;a href=&quot;#n7&quot; name=&quot;n7&quot;&gt;7&lt;/a&gt;
+&lt;a href=&quot;#n8&quot; name=&quot;n8&quot;&gt;8&lt;/a&gt;
+&lt;a href=&quot;#n9&quot; name=&quot;n9&quot;&gt;9&lt;/a&gt;
+&lt;strong&gt;&lt;a href=&quot;#n10&quot; name=&quot;n10&quot;&gt;10&lt;/a&gt;&lt;/strong&gt;
+&lt;a href=&quot;#n11&quot; name=&quot;n11&quot;&gt;11&lt;/a&gt;
+&lt;/pre&gt;&lt;/td&gt;
+  &lt;td class=&quot;code&quot;&gt;&lt;pre&gt;//= &lt;span class=&quot;tag&quot;&gt;require&lt;/span&gt; &lt;span class=&quot;tag&quot;&gt;peek&lt;/span&gt;
+//= &lt;span class=&quot;tag&quot;&gt;require&lt;/span&gt; &lt;span class=&quot;tag&quot;&gt;peek&lt;/span&gt;/&lt;span class=&quot;tag&quot;&gt;views&lt;/span&gt;/&lt;span class=&quot;tag&quot;&gt;performance_bar&lt;/span&gt;
+
+// &lt;span class=&quot;tag&quot;&gt;Peek&lt;/span&gt; &lt;span class=&quot;tag&quot;&gt;bar&lt;/span&gt; &lt;span class=&quot;tag&quot;&gt;on&lt;/span&gt; &lt;span class=&quot;tag&quot;&gt;bottom&lt;/span&gt; &lt;span class=&quot;tag&quot;&gt;of&lt;/span&gt; &lt;span class=&quot;tag&quot;&gt;page&lt;/span&gt;.
+&lt;span class=&quot;id&quot;&gt;#peek&lt;/span&gt; {
+  &lt;span class=&quot;key&quot;&gt;position&lt;/span&gt;: &lt;span class=&quot;value&quot;&gt;fixed&lt;/span&gt;;
+  &lt;span class=&quot;key&quot;&gt;bottom&lt;/span&gt;:   &lt;span class=&quot;float&quot;&gt;0&lt;/span&gt;;
+  &lt;span class=&quot;key&quot;&gt;left&lt;/span&gt;:     &lt;span class=&quot;float&quot;&gt;0&lt;/span&gt;;
+  &lt;span class=&quot;key&quot;&gt;right&lt;/span&gt;:    &lt;span class=&quot;float&quot;&gt;0&lt;/span&gt;;
+  &lt;span class=&quot;key&quot;&gt;z-index&lt;/span&gt;:  &lt;span class=&quot;float&quot;&gt;999&lt;/span&gt;;
+}
+&lt;/pre&gt;&lt;/td&gt;
+&lt;/tr&gt;&lt;/table&gt;
+&lt;/div&gt;
+
+&lt;p&gt;I prefer &lt;a href=&quot;http://coffeescript.org/&quot;&gt;CoffeeScript&lt;/a&gt; so I loaded the JavaScript in &lt;code&gt;app/assets/javascripts/peek_bar.js.coffee&lt;/code&gt;.&lt;/p&gt;
+
+&lt;div&gt;&lt;table class=&quot;CodeRay&quot;&gt;&lt;tr&gt;
+  &lt;td class=&quot;line-numbers&quot;&gt;&lt;pre&gt;&lt;a href=&quot;#n1&quot; name=&quot;n1&quot;&gt;1&lt;/a&gt;
+&lt;a href=&quot;#n2&quot; name=&quot;n2&quot;&gt;2&lt;/a&gt;
+&lt;/pre&gt;&lt;/td&gt;
+  &lt;td class=&quot;code&quot;&gt;&lt;pre&gt;#= require peek
+#= require peek/views/performance_bar
+&lt;/pre&gt;&lt;/td&gt;
+&lt;/tr&gt;&lt;/table&gt;
+&lt;/div&gt;
+
+&lt;h3 id=&quot;initialization-1&quot;&gt;Initialization&lt;/h3&gt;
+
+&lt;p&gt;The asset pipeline complains if you don&#39;t tell it about additional assets you intend to include separately (see the next section on &lt;a href=&quot;#view-configuration&quot;&gt;View Configuration&lt;/a&gt;). Thing is, we don&#39;t &lt;em&gt;always&lt;/em&gt; intend to include them or pre-compile them in this case. Just like when we initialized peek itself we must check for its availability.&lt;/p&gt;
+
+&lt;p&gt;Add this to &lt;code&gt;config/initializers/assets.rb&lt;/code&gt;:&lt;/p&gt;
+
+&lt;div&gt;&lt;table class=&quot;CodeRay&quot;&gt;&lt;tr&gt;
+  &lt;td class=&quot;line-numbers&quot;&gt;&lt;pre&gt;&lt;a href=&quot;#n1&quot; name=&quot;n1&quot;&gt;1&lt;/a&gt;
+&lt;a href=&quot;#n2&quot; name=&quot;n2&quot;&gt;2&lt;/a&gt;
+&lt;a href=&quot;#n3&quot; name=&quot;n3&quot;&gt;3&lt;/a&gt;
+&lt;/pre&gt;&lt;/td&gt;
+  &lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;keyword&quot;&gt;if&lt;/span&gt; &lt;span class=&quot;constant&quot;&gt;PeekBar&lt;/span&gt;.available?
+  &lt;span class=&quot;constant&quot;&gt;Rails&lt;/span&gt;.application.config.assets.precompile += &lt;span class=&quot;string&quot;&gt;&lt;span class=&quot;delimiter&quot;&gt;%w(&lt;/span&gt;&lt;span class=&quot;content&quot;&gt;peek_bar.css peek_bar.js&lt;/span&gt;&lt;span class=&quot;delimiter&quot;&gt;)&lt;/span&gt;&lt;/span&gt;
+&lt;span class=&quot;keyword&quot;&gt;end&lt;/span&gt;
+&lt;/pre&gt;&lt;/td&gt;
+&lt;/tr&gt;&lt;/table&gt;
+&lt;/div&gt;
+
+&lt;h3 id=&quot;default-assets-gotcha&quot;&gt;Default Assets Gotcha&lt;/h3&gt;
+
+&lt;p&gt;By default &lt;code&gt;application.css&lt;/code&gt; and &lt;code&gt;application.js&lt;/code&gt; include all the CSS and JavaScript in their respective directory trees. That&#39;s achieved through the use of &lt;code&gt;require_tree .&lt;/code&gt; in each of those files.&lt;/p&gt;
+
+&lt;p&gt;Now that we&#39;ve created a couple assets to conditionally load we need to remove &lt;code&gt;require_tree&lt;/code&gt;. If you were relying on it, which I don&#39;t recommend for reasons beyond the scope of this essay, learn how to deal with it by reading the &lt;a href=&quot;http://guides.rubyonrails.org/asset_pipeline.html#manifest-files-and-directives&quot;&gt;Asset Pipeline Rails Guide&lt;/a&gt;.&lt;/p&gt;
+
+&lt;h2 id=&quot;view-configuration&quot;&gt;View Configuration&lt;/h2&gt;
+
+&lt;p&gt;All this hard work for what? Now it&#39;s time to tie it all together in our layout view. I like [slim] so this is an extremely condensed version of my default layout, &lt;code&gt;app/views/layouts/application.html.slim&lt;/code&gt;.&lt;/p&gt;
+
+&lt;div&gt;&lt;table class=&quot;CodeRay&quot;&gt;&lt;tr&gt;
+  &lt;td class=&quot;line-numbers&quot;&gt;&lt;pre&gt;&lt;a href=&quot;#n1&quot; name=&quot;n1&quot;&gt;1&lt;/a&gt;
+&lt;a href=&quot;#n2&quot; name=&quot;n2&quot;&gt;2&lt;/a&gt;
+&lt;a href=&quot;#n3&quot; name=&quot;n3&quot;&gt;3&lt;/a&gt;
+&lt;a href=&quot;#n4&quot; name=&quot;n4&quot;&gt;4&lt;/a&gt;
+&lt;a href=&quot;#n5&quot; name=&quot;n5&quot;&gt;5&lt;/a&gt;
+&lt;a href=&quot;#n6&quot; name=&quot;n6&quot;&gt;6&lt;/a&gt;
+&lt;a href=&quot;#n7&quot; name=&quot;n7&quot;&gt;7&lt;/a&gt;
+&lt;a href=&quot;#n8&quot; name=&quot;n8&quot;&gt;8&lt;/a&gt;
+&lt;a href=&quot;#n9&quot; name=&quot;n9&quot;&gt;9&lt;/a&gt;
+&lt;strong&gt;&lt;a href=&quot;#n10&quot; name=&quot;n10&quot;&gt;10&lt;/a&gt;&lt;/strong&gt;
+&lt;a href=&quot;#n11&quot; name=&quot;n11&quot;&gt;11&lt;/a&gt;
+&lt;a href=&quot;#n12&quot; name=&quot;n12&quot;&gt;12&lt;/a&gt;
+&lt;a href=&quot;#n13&quot; name=&quot;n13&quot;&gt;13&lt;/a&gt;
+&lt;/pre&gt;&lt;/td&gt;
+  &lt;td class=&quot;code&quot;&gt;&lt;pre&gt;doctype html
+html
+  head
+    = stylesheet_link_tag &lt;span class=&quot;string&quot;&gt;&lt;span class=&quot;delimiter&quot;&gt;&#39;&lt;/span&gt;&lt;span class=&quot;content&quot;&gt;application&lt;/span&gt;&lt;span class=&quot;delimiter&quot;&gt;&#39;&lt;/span&gt;&lt;/span&gt;, &lt;span class=&quot;key&quot;&gt;media&lt;/span&gt;: &lt;span class=&quot;string&quot;&gt;&lt;span class=&quot;delimiter&quot;&gt;&#39;&lt;/span&gt;&lt;span class=&quot;content&quot;&gt;all&lt;/span&gt;&lt;span class=&quot;delimiter&quot;&gt;&#39;&lt;/span&gt;&lt;/span&gt;, &lt;span class=&quot;string&quot;&gt;&lt;span class=&quot;delimiter&quot;&gt;&#39;&lt;/span&gt;&lt;span class=&quot;content&quot;&gt;data-turbolinks-track&lt;/span&gt;&lt;span class=&quot;delimiter&quot;&gt;&#39;&lt;/span&gt;&lt;/span&gt; =&amp;gt; &lt;span class=&quot;predefined-constant&quot;&gt;true&lt;/span&gt;
+    - &lt;span class=&quot;keyword&quot;&gt;if&lt;/span&gt; peek_enabled?
+      = stylesheet_link_tag &lt;span class=&quot;string&quot;&gt;&lt;span class=&quot;delimiter&quot;&gt;&#39;&lt;/span&gt;&lt;span class=&quot;content&quot;&gt;peek_bar&lt;/span&gt;&lt;span class=&quot;delimiter&quot;&gt;&#39;&lt;/span&gt;&lt;/span&gt;, &lt;span class=&quot;key&quot;&gt;media&lt;/span&gt;: &lt;span class=&quot;string&quot;&gt;&lt;span class=&quot;delimiter&quot;&gt;&#39;&lt;/span&gt;&lt;span class=&quot;content&quot;&gt;all&lt;/span&gt;&lt;span class=&quot;delimiter&quot;&gt;&#39;&lt;/span&gt;&lt;/span&gt;, &lt;span class=&quot;string&quot;&gt;&lt;span class=&quot;delimiter&quot;&gt;&#39;&lt;/span&gt;&lt;span class=&quot;content&quot;&gt;data-turbolinks-track&lt;/span&gt;&lt;span class=&quot;delimiter&quot;&gt;&#39;&lt;/span&gt;&lt;/span&gt; =&amp;gt; &lt;span class=&quot;predefined-constant&quot;&gt;true&lt;/span&gt;
+    = csrf_meta_tags
+body
+  = render &lt;span class=&quot;string&quot;&gt;&lt;span class=&quot;delimiter&quot;&gt;&#39;&lt;/span&gt;&lt;span class=&quot;content&quot;&gt;peek/bar&lt;/span&gt;&lt;span class=&quot;delimiter&quot;&gt;&#39;&lt;/span&gt;&lt;/span&gt; &lt;span class=&quot;keyword&quot;&gt;if&lt;/span&gt; peek_enabled?
+  = &lt;span class=&quot;keyword&quot;&gt;yield&lt;/span&gt;
+  = javascript_include_tag &lt;span class=&quot;string&quot;&gt;&lt;span class=&quot;delimiter&quot;&gt;&#39;&lt;/span&gt;&lt;span class=&quot;content&quot;&gt;application&lt;/span&gt;&lt;span class=&quot;delimiter&quot;&gt;&#39;&lt;/span&gt;&lt;/span&gt;, &lt;span class=&quot;string&quot;&gt;&lt;span class=&quot;delimiter&quot;&gt;&#39;&lt;/span&gt;&lt;span class=&quot;content&quot;&gt;data-turbolinks-track&lt;/span&gt;&lt;span class=&quot;delimiter&quot;&gt;&#39;&lt;/span&gt;&lt;/span&gt; =&amp;gt; &lt;span class=&quot;predefined-constant&quot;&gt;true&lt;/span&gt;
+  - &lt;span class=&quot;keyword&quot;&gt;if&lt;/span&gt; peek_enabled?
+    = javascript_include_tag &lt;span class=&quot;string&quot;&gt;&lt;span class=&quot;delimiter&quot;&gt;&#39;&lt;/span&gt;&lt;span class=&quot;content&quot;&gt;peek_bar&lt;/span&gt;&lt;span class=&quot;delimiter&quot;&gt;&#39;&lt;/span&gt;&lt;/span&gt;, &lt;span class=&quot;string&quot;&gt;&lt;span class=&quot;delimiter&quot;&gt;&#39;&lt;/span&gt;&lt;span class=&quot;content&quot;&gt;data-turbolinks-track&lt;/span&gt;&lt;span class=&quot;delimiter&quot;&gt;&#39;&lt;/span&gt;&lt;/span&gt; =&amp;gt; &lt;span class=&quot;predefined-constant&quot;&gt;true&lt;/span&gt;
+&lt;/pre&gt;&lt;/td&gt;
+&lt;/tr&gt;&lt;/table&gt;
+&lt;/div&gt;
+
+&lt;h2 id=&quot;finally&quot;&gt;Finally&lt;/h2&gt;
+
+&lt;p&gt;Voila!&lt;/p&gt;
+
+&lt;p&gt;At this point &lt;a href=&quot;https://github.com/peek/peek&quot;&gt;peek&lt;/a&gt; is incorporated into my application in a robust, responsible way. Environments we didn&#39;t install it into operate perfectly without it, and the ones we do have an encapsulation to use for managing its inclusion in our interface.&lt;/p&gt;
+
+&lt;p&gt;It was a little more work but it paid off. We have an excellent developer tool installed without hurting production.&lt;/p&gt;
+
+&lt;p&gt;If we want to use peek in production with only staff accounts, for example, all we have to do is change the &lt;code&gt;Gemfile&lt;/code&gt; to install peek in the &lt;code&gt;:production&lt;/code&gt; group and adjust the &lt;code&gt;PeekBar.enabled?&lt;/code&gt; method:&lt;/p&gt;
+
+&lt;div&gt;&lt;table class=&quot;CodeRay&quot;&gt;&lt;tr&gt;
+  &lt;td class=&quot;line-numbers&quot;&gt;&lt;pre&gt;&lt;a href=&quot;#n1&quot; name=&quot;n1&quot;&gt;1&lt;/a&gt;
+&lt;a href=&quot;#n2&quot; name=&quot;n2&quot;&gt;2&lt;/a&gt;
+&lt;a href=&quot;#n3&quot; name=&quot;n3&quot;&gt;3&lt;/a&gt;
+&lt;a href=&quot;#n4&quot; name=&quot;n4&quot;&gt;4&lt;/a&gt;
+&lt;a href=&quot;#n5&quot; name=&quot;n5&quot;&gt;5&lt;/a&gt;
+&lt;/pre&gt;&lt;/td&gt;
+  &lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;keyword&quot;&gt;def&lt;/span&gt; &lt;span class=&quot;predefined-constant&quot;&gt;self&lt;/span&gt;.&lt;span class=&quot;function&quot;&gt;enabled?&lt;/span&gt;(current_user)
+  &lt;span class=&quot;keyword&quot;&gt;return&lt;/span&gt; &lt;span class=&quot;predefined-constant&quot;&gt;false&lt;/span&gt; &lt;span class=&quot;keyword&quot;&gt;unless&lt;/span&gt; available?
+
+  &lt;span class=&quot;constant&quot;&gt;Rails&lt;/span&gt;.env.development? || current_user.staff?
+&lt;span class=&quot;keyword&quot;&gt;end&lt;/span&gt;
+&lt;/pre&gt;&lt;/td&gt;
+&lt;/tr&gt;&lt;/table&gt;
+&lt;/div&gt;
+
+&lt;p&gt;That &lt;code&gt;PeekBar&lt;/code&gt; class really tied the room together, did it not?&lt;/p&gt;
+
+&lt;iframe width=&quot;560&quot; height=&quot;315&quot; src=&quot;http://www.youtube.com/embed/ezQLP1dj_t8&quot; allowfullscreen=&quot;&quot;&gt;&lt;/iframe&gt;
+
+
+  &lt;p&gt;&lt;a href=&quot;http://caseywest.com/use-peek-to-inspect-rails-responsibly/&quot;&gt;Use Peek to Inspect Rails Responsibly&lt;/a&gt; was originally published by Casey West at &lt;a href=&quot;http://caseywest.com&quot;&gt;Corner of Weeping&lt;/a&gt; on January 07, 2015.&lt;/p&gt;</content>
+</entry>
 
 
 <entry>
