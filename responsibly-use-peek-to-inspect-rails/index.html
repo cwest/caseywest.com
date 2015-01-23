@@ -159,7 +159,7 @@ The trouble is I definitely don't want to install Peek on production, or in my t
 
 <p>My first attempt to work around this involved wrapping calls with a <a href="http://ruby-doc.org/docs/keywords/1.9/Object.html#method-i-defined-3F"><code>defined?</code></a> test. For example, in <code>config/routes.rb</code>:</p>
 
-<div><table class="CodeRay"><tr>
+<div class="highlighter-coderay"><table class="CodeRay"><tr>
   <td class="line-numbers"><pre><a href="#n1" name="n1">1</a>
 </pre></td>
   <td class="code"><pre>mount <span class="constant">Peek</span>::<span class="constant">Railtie</span> =&gt; <span class="string"><span class="delimiter">'</span><span class="content">/peek</span><span class="delimiter">'</span></span> <span class="keyword">if</span> <span class="keyword">defined?</span>(<span class="constant">Peek</span>)
@@ -171,7 +171,7 @@ The trouble is I definitely don't want to install Peek on production, or in my t
 
 <p>Finally, your views should be checking the <code>peek_enabled?</code> method, which is defined by peek in your <code>ApplicationController</code> class. So, for example, when rendering the peek bar itself you should be doing this:</p>
 
-<div><table class="CodeRay"><tr>
+<div class="highlighter-coderay"><table class="CodeRay"><tr>
   <td class="line-numbers"><pre><a href="#n1" name="n1">1</a>
 <a href="#n2" name="n2">2</a>
 </pre></td>
@@ -213,7 +213,7 @@ The trouble is I definitely don't want to install Peek on production, or in my t
 
 <p>Peek must be loaded into our environment. I'm loading it into my <code>:development</code> environment only, along with a list of Peek plugins I want to use.</p>
 
-<div><table class="CodeRay"><tr>
+<div class="highlighter-coderay"><table class="CodeRay"><tr>
   <td class="line-numbers"><pre><a href="#n1" name="n1">1</a>
 <a href="#n2" name="n2">2</a>
 <a href="#n3" name="n3">3</a>
@@ -248,7 +248,7 @@ The trouble is I definitely don't want to install Peek on production, or in my t
 
 <p>I put this class in <code>lib/peek_bar.rb</code>.</p>
 
-<div><table class="CodeRay"><tr>
+<div class="highlighter-coderay"><table class="CodeRay"><tr>
   <td class="line-numbers"><pre><a href="#n1" name="n1">1</a>
 <a href="#n2" name="n2">2</a>
 <a href="#n3" name="n3">3</a>
@@ -286,7 +286,7 @@ The trouble is I definitely don't want to install Peek on production, or in my t
 
 <p>I use <a href="https://relishapp.com/rspec/rspec-rails/docs">rspec</a> for testing, so my spec is in <code>spec/lib/peek_bar_spec.rb</code>.</p>
 
-<div><table class="CodeRay"><tr>
+<div class="highlighter-coderay"><table class="CodeRay"><tr>
   <td class="line-numbers"><pre><a href="#n1" name="n1">1</a>
 <a href="#n2" name="n2">2</a>
 <a href="#n3" name="n3">3</a>
@@ -364,7 +364,7 @@ The trouble is I definitely don't want to install Peek on production, or in my t
 
 <p>By default Rails doesn't load ruby code from the <code>lib/</code> directory, so lets be sure to tell it to. In <code>config/application.rb</code> add this:</p>
 
-<div><table class="CodeRay"><tr>
+<div class="highlighter-coderay"><table class="CodeRay"><tr>
   <td class="line-numbers"><pre><a href="#n1" name="n1">1</a>
 <a href="#n2" name="n2">2</a>
 <a href="#n3" name="n3">3</a>
@@ -386,7 +386,7 @@ The trouble is I definitely don't want to install Peek on production, or in my t
 
 <p>In <code>app/helpers/peek_bar_helper.rb</code>.</p>
 
-<div><table class="CodeRay"><tr>
+<div class="highlighter-coderay"><table class="CodeRay"><tr>
   <td class="line-numbers"><pre><a href="#n1" name="n1">1</a>
 <a href="#n2" name="n2">2</a>
 <a href="#n3" name="n3">3</a>
@@ -408,7 +408,7 @@ The trouble is I definitely don't want to install Peek on production, or in my t
 
 <p>Since we're programming responsibly here's a test for the helper. In <code>spec/helpers/peek_bar_helper_spec.rb</code>.</p>
 
-<div><table class="CodeRay"><tr>
+<div class="highlighter-coderay"><table class="CodeRay"><tr>
   <td class="line-numbers"><pre><a href="#n1" name="n1">1</a>
 <a href="#n2" name="n2">2</a>
 <a href="#n3" name="n3">3</a>
@@ -452,7 +452,7 @@ The trouble is I definitely don't want to install Peek on production, or in my t
 
 <p>The peek documentation explains how to set up <code>config/initializers/peek.rb</code> to enable the plugins you've selected. We need to first test for the availability of peek like this:</p>
 
-<div><table class="CodeRay"><tr>
+<div class="highlighter-coderay"><table class="CodeRay"><tr>
   <td class="line-numbers"><pre><a href="#n1" name="n1">1</a>
 <a href="#n2" name="n2">2</a>
 <a href="#n3" name="n3">3</a>
@@ -478,7 +478,7 @@ The trouble is I definitely don't want to install Peek on production, or in my t
 
 <p>CSS is in <code>app/assets/stylesheets/peek_bar.scss</code>.</p>
 
-<div><table class="CodeRay"><tr>
+<div class="highlighter-coderay"><table class="CodeRay"><tr>
   <td class="line-numbers"><pre><a href="#n1" name="n1">1</a>
 <a href="#n2" name="n2">2</a>
 <a href="#n3" name="n3">3</a>
@@ -508,7 +508,7 @@ The trouble is I definitely don't want to install Peek on production, or in my t
 
 <p>I prefer <a href="http://coffeescript.org/">CoffeeScript</a> so I loaded the JavaScript in <code>app/assets/javascripts/peek_bar.js.coffee</code>.</p>
 
-<div><table class="CodeRay"><tr>
+<div class="highlighter-coderay"><table class="CodeRay"><tr>
   <td class="line-numbers"><pre><a href="#n1" name="n1">1</a>
 <a href="#n2" name="n2">2</a>
 </pre></td>
@@ -524,7 +524,7 @@ The trouble is I definitely don't want to install Peek on production, or in my t
 
 <p>Add this to <code>config/initializers/assets.rb</code>:</p>
 
-<div><table class="CodeRay"><tr>
+<div class="highlighter-coderay"><table class="CodeRay"><tr>
   <td class="line-numbers"><pre><a href="#n1" name="n1">1</a>
 <a href="#n2" name="n2">2</a>
 <a href="#n3" name="n3">3</a>
@@ -548,7 +548,7 @@ The trouble is I definitely don't want to install Peek on production, or in my t
 
 <p>All this hard work for what? Now it's time to tie it all together in our layout view. I like <a href="http://slim-lang.com/">slim</a> so this is an extremely condensed version of my default layout, <code>app/views/layouts/application.html.slim</code>.</p>
 
-<div><table class="CodeRay"><tr>
+<div class="highlighter-coderay"><table class="CodeRay"><tr>
   <td class="line-numbers"><pre><a href="#n1" name="n1">1</a>
 <a href="#n2" name="n2">2</a>
 <a href="#n3" name="n3">3</a>
@@ -590,7 +590,7 @@ body
 
 <p>If we want to use peek in production with only staff accounts, for example, all we have to do is change the <code>Gemfile</code> to install peek in the <code>:production</code> group and adjust the <code>PeekBar.enabled?</code> method:</p>
 
-<div><table class="CodeRay"><tr>
+<div class="highlighter-coderay"><table class="CodeRay"><tr>
   <td class="line-numbers"><pre><a href="#n1" name="n1">1</a>
 <a href="#n2" name="n2">2</a>
 <a href="#n3" name="n3">3</a>
@@ -634,20 +634,20 @@ body
       <a href="http://caseywest.com/faster-ci-on-travis-and-docker-for-ruby-and-rails-and-rubocop/" class="read-more-btn">Read More</a>
     </div><!-- /.read-more-header -->
     <div class="read-more-content">
-      <h3><a href="http://caseywest.com/faster-ci-on-travis-and-docker-for-ruby-and-rails-and-rubocop/" title="Faster CI on Travis (and Docker) for Ruby (and Rails (and RuboCop))">Faster CI on Travis (and Docker) for Ruby (and Rails (and RuboCop))</a></h3>
-      <p>I made RuboCop lose its mind. <a href="http://caseywest.com/faster-ci-on-travis-and-docker-for-ruby-and-rails-and-rubocop/">Continue reading</a></p>
+      <h3><a href="http://caseywest.com/work-with-us-at-whitehat/" title="Work with us at WhiteHat">Work with us at WhiteHat</a></h3>
+      <p>Join our happy team of developers in Pittsburgh. <a href="http://caseywest.com/work-with-us-at-whitehat/">Continue reading</a></p>
     </div><!-- /.read-more-content -->
   
   <div class="read-more-list">
     
       <div class="list-item">
-        <h4><a href="http://caseywest.com/theres-still-no-silver-bullet/" title="There's Still No Silver Bullet (2006)">There's Still No Silver Bullet (2006)</a></h4>
-        <span>Published on January 04, 2015</span>
+        <h4><a href="http://caseywest.com/faster-ci-on-travis-and-docker-for-ruby-and-rails-and-rubocop/" title="Faster CI on Travis (and Docker) for Ruby (and Rails (and RuboCop))">Faster CI on Travis (and Docker) for Ruby (and Rails (and RuboCop))</a></h4>
+        <span>Published on January 06, 2015</span>
       </div><!-- /.list-item -->
     
       <div class="list-item">
-        <h4><a href="http://caseywest.com/run-bundle-audit-from-rake/" title="Run bundle-audit from rake">Run bundle-audit from rake</a></h4>
-        <span>Published on January 03, 2015</span>
+        <h4><a href="http://caseywest.com/theres-still-no-silver-bullet/" title="There's Still No Silver Bullet (2006)">There's Still No Silver Bullet (2006)</a></h4>
+        <span>Published on January 04, 2015</span>
       </div><!-- /.list-item -->
     
   </div><!-- /.read-more-list -->

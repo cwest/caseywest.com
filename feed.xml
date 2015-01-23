@@ -4,13 +4,196 @@
 <generator uri="https://github.com/mojombo/jekyll">Jekyll</generator>
 <link rel="self" type="application/atom+xml" href="http://caseywest.com/feed.xml" />
 <link rel="alternate" type="text/html" href="http://caseywest.com" />
-<updated>2015-01-08T11:57:47-05:00</updated>
+<updated>2015-01-23T15:36:22-05:00</updated>
 <id>http://caseywest.com/</id>
 <author>
   <name>Casey West</name>
   <uri>http://caseywest.com/</uri>
   <email></email>
 </author>
+
+
+<entry>
+  <title type="html"><![CDATA[Work with us at WhiteHat]]></title>
+ <link rel="alternate" type="text/html" href="http://caseywest.com/work-with-us-at-whitehat/" />
+  <id>http://caseywest.com/work-with-us-at-whitehat</id>
+  <updated>2015-01-23 12:09:15 -0500T00:00:00-00:00</updated>
+  <published>2015-01-23T00:00:00-05:00</published>
+  
+  <author>
+    <name>Casey West</name>
+    <uri>http://caseywest.com</uri>
+    <email></email>
+  </author>
+  <content type="html">&lt;p&gt;I work for &lt;a href=&quot;https://whitehatsec.com&quot;&gt;WhiteHat Security&lt;/a&gt; and I lead a team called &lt;a href=&quot;http://lotr.wikia.com/wiki/Shire&quot;&gt;The Shire&lt;/a&gt;. Our team primarily builds web applications in &lt;a href=&quot;https://www.ruby-lang.org/en/&quot;&gt;Ruby&lt;/a&gt; on &lt;a href=&quot;http://rubyonrails.org/&quot;&gt;Rails&lt;/a&gt; and we&#39;re based in &lt;a href=&quot;https://www.walkscore.com/score/liberty-ave-and-smithfield-st-pittsburgh-pa-15222&quot;&gt;downtown Pittsburgh&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;We&#39;re hiring a couple more developers to join our outstanding team. I&#39;m fortunate enough to work with some of the best people in Pittsburgh. Bright, curious, hilarious, and they&#39;re good hackers&lt;sup id=&quot;fnref:hackers&quot;&gt;&lt;a href=&quot;#fn:hackers&quot; class=&quot;footnote&quot;&gt;1&lt;/a&gt;&lt;/sup&gt;, too! We&#39;re interested in talking to programmers of all levels. Don&#39;t shy away if you are interested but have limited experience. We want to hire great people who put in the effort, and &lt;em&gt;you&lt;/em&gt; are hard enough to find as it is.&lt;/p&gt;
+
+&lt;p&gt;It&#39;s difficult to write a &lt;em&gt;&quot;please come work with me&quot;&lt;/em&gt; essay so here&#39;s my plan: I&#39;m going to tell you about our team culture, then about what we&#39;re looking for in a candidate. The method I&#39;m using is to post our internal team culture document verbatim, and our internal job position document. They&#39;re both on our team wiki, and editable by anyone on the team.&lt;/p&gt;
+
+&lt;p&gt;If you read all this and you&#39;d like to work with us please email me to talk about it. You can reach me at work with the following obfuscated email address:&lt;/p&gt;
+
+&lt;div class=&quot;highlighter-coderay&quot;&gt;&lt;table class=&quot;CodeRay&quot;&gt;&lt;tr&gt;
+  &lt;td class=&quot;line-numbers&quot;&gt;&lt;pre&gt;&lt;a href=&quot;#n1&quot; name=&quot;n1&quot;&gt;1&lt;/a&gt;
+&lt;a href=&quot;#n2&quot; name=&quot;n2&quot;&gt;2&lt;/a&gt;
+&lt;a href=&quot;#n3&quot; name=&quot;n3&quot;&gt;3&lt;/a&gt;
+&lt;a href=&quot;#n4&quot; name=&quot;n4&quot;&gt;4&lt;/a&gt;
+&lt;a href=&quot;#n5&quot; name=&quot;n5&quot;&gt;5&lt;/a&gt;
+&lt;a href=&quot;#n6&quot; name=&quot;n6&quot;&gt;6&lt;/a&gt;
+&lt;a href=&quot;#n7&quot; name=&quot;n7&quot;&gt;7&lt;/a&gt;
+&lt;a href=&quot;#n8&quot; name=&quot;n8&quot;&gt;8&lt;/a&gt;
+&lt;a href=&quot;#n9&quot; name=&quot;n9&quot;&gt;9&lt;/a&gt;
+&lt;strong&gt;&lt;a href=&quot;#n10&quot; name=&quot;n10&quot;&gt;10&lt;/a&gt;&lt;/strong&gt;
+&lt;a href=&quot;#n11&quot; name=&quot;n11&quot;&gt;11&lt;/a&gt;
+&lt;/pre&gt;&lt;/td&gt;
+  &lt;td class=&quot;code&quot;&gt;&lt;pre&gt;name    = &lt;span class=&quot;string&quot;&gt;&lt;span class=&quot;delimiter&quot;&gt;%w(&lt;/span&gt;&lt;span class=&quot;content&quot;&gt;Casey West&lt;/span&gt;&lt;span class=&quot;delimiter&quot;&gt;)&lt;/span&gt;&lt;/span&gt;
+company = &lt;span class=&quot;string&quot;&gt;&lt;span class=&quot;delimiter&quot;&gt;%q(&lt;/span&gt;&lt;span class=&quot;content&quot;&gt;WhiteHat Security&lt;/span&gt;&lt;span class=&quot;delimiter&quot;&gt;)&lt;/span&gt;&lt;/span&gt;
+email   = [
+  name.join(&lt;span class=&quot;string&quot;&gt;&lt;span class=&quot;delimiter&quot;&gt;&#39;&lt;/span&gt;&lt;span class=&quot;content&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;delimiter&quot;&gt;&#39;&lt;/span&gt;&lt;/span&gt;),
+  [
+    company.tr(&lt;span class=&quot;string&quot;&gt;&lt;span class=&quot;delimiter&quot;&gt;&#39;&lt;/span&gt;&lt;span class=&quot;content&quot;&gt; &lt;/span&gt;&lt;span class=&quot;delimiter&quot;&gt;&#39;&lt;/span&gt;&lt;/span&gt;,&lt;span class=&quot;string&quot;&gt;&lt;span class=&quot;delimiter&quot;&gt;&#39;&lt;/span&gt;&lt;span class=&quot;delimiter&quot;&gt;&#39;&lt;/span&gt;&lt;/span&gt;)[&lt;span class=&quot;integer&quot;&gt;0&lt;/span&gt;..&lt;span class=&quot;integer&quot;&gt;10&lt;/span&gt;],
+    &lt;span class=&quot;string&quot;&gt;&lt;span class=&quot;delimiter&quot;&gt;&#39;&lt;/span&gt;&lt;span class=&quot;content&quot;&gt;com&lt;/span&gt;&lt;span class=&quot;delimiter&quot;&gt;&#39;&lt;/span&gt;&lt;/span&gt;
+  ].join(&lt;span class=&quot;string&quot;&gt;&lt;span class=&quot;delimiter&quot;&gt;&#39;&lt;/span&gt;&lt;span class=&quot;content&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;delimiter&quot;&gt;&#39;&lt;/span&gt;&lt;/span&gt;)
+].join(&lt;span class=&quot;string&quot;&gt;&lt;span class=&quot;delimiter&quot;&gt;&#39;&lt;/span&gt;&lt;span class=&quot;content&quot;&gt;@&lt;/span&gt;&lt;span class=&quot;delimiter&quot;&gt;&#39;&lt;/span&gt;&lt;/span&gt;).downcase
+
+puts email
+&lt;/pre&gt;&lt;/td&gt;
+&lt;/tr&gt;&lt;/table&gt;
+&lt;/div&gt;
+
+&lt;p&gt;You can also find links to me on social media on the left if you&#39;d like to chat casually.&lt;/p&gt;
+
+&lt;h1 id=&quot;shire-culture&quot;&gt;Shire Culture&lt;/h1&gt;
+
+&lt;p&gt;The Shire operates under two guiding principles: &lt;strong&gt;trust&lt;/strong&gt; and &lt;strong&gt;transparency&lt;/strong&gt;. As a member of the team you are &lt;strong&gt;trusted to use the best ideas to do the most important work&lt;/strong&gt;. As a team we agree to be &lt;strong&gt;transparent in our work, our ideas, and our struggles&lt;/strong&gt;.&lt;/p&gt;
+
+&lt;p&gt;This means we are all accountable for the success of our work as a team. It doesn&#39;t matter what functional role you have, which skills you bring to the team when you start, or where you are located. If there&#39;s work that needs to be done we take responsibility for it, complete it, and ship it as a team.&lt;/p&gt;
+
+&lt;p&gt;If we succeed in our goals it&#39;s because we did it together. If we fail it&#39;s because we all failed together. Thankfully, failure is not terminal. We learn from it, adapt, and do better going forward.&lt;/p&gt;
+
+&lt;p&gt;This brings us to The Shire Motto: &lt;em&gt;If something is broken we fix it.&lt;/em&gt;&lt;/p&gt;
+
+&lt;p&gt;We don&#39;t put a ticket on another team&#39;s queue and wait around or complain. We do all the work we can to fix whatever is broken. We accept external roadblocks only when we are physically or administratively blocked, and we try to avoid those blockers in the future, too.&lt;/p&gt;
+
+&lt;p&gt;The Shire has adopted this attitude. Doing so has meant we&#39;ve accumulated a wealth of knowledge about much of the WhiteHat Architecture. Everything from the hardware we run on to the way we document our APIs.&lt;/p&gt;
+
+&lt;p&gt;&lt;span class=&quot;pullquote-right&quot; data-pullquote=&quot;We are not afraid of solving hard problems correctly, and we&amp;apos;re not afraid to spend the time getting things right.&quot;&gt;
+We are not afraid of solving hard problems correctly, and we&#39;re not afraid to spend the time getting things right. We’re not afraid to make good change anywhere in the company with whatever the right tool for the job is: technology, knowledge, experience, culture, or even a good hearty laugh.
+&lt;/span&gt;&lt;/p&gt;
+
+&lt;p&gt;With this understanding of our Shire culture it&#39;s clear to see what your role as a team member is: &lt;strong&gt;Get the job done. Do whatever it takes, and do it well.&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;We work at WhiteHat to meet customer needs with positive business outcomes.&lt;/p&gt;
+
+&lt;p&gt;Here are some things we don&#39;t work at WhiteHat to do:&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;Write beautiful code.&lt;/li&gt;
+  &lt;li&gt;Test everything.&lt;/li&gt;
+  &lt;li&gt;Make it pixel perfect.&lt;/li&gt;
+  &lt;li&gt;Handle every edge case.&lt;/li&gt;
+  &lt;li&gt;Document every process.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;&lt;em&gt;When we are doing well we get some of these for free, which is a wonderful thing,&lt;/em&gt; but they are not our primary objective.&lt;/p&gt;
+
+&lt;p&gt;We don&#39;t work beyond our physical limits. Each team member should work to maintain their health and happiness, and the team should hold each other accountable for that. If someone is burning out we should encourage them to rest. Take care of yourself and each other.&lt;/p&gt;
+
+&lt;p&gt;What does this mean for you, for each team member? Lets consider it by functional team, since we already understand we&#39;re all in this together, anyway.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Hackers&lt;/strong&gt;&lt;sup id=&quot;fnref:hackers:1&quot;&gt;&lt;a href=&quot;#fn:hackers&quot; class=&quot;footnote&quot;&gt;1&lt;/a&gt;&lt;/sup&gt;&lt;/p&gt;
+
+&lt;p&gt;You are the expert on the software we create. You know where it is, how it&#39;s organized, how it&#39;s tested, and how it&#39;s deployed. If a problem can be solved by writing some code you know how to do that and you will. If you don&#39;t know how—no problem—you will soon. You aren&#39;t afraid of a challenge. You&#39;re courageous!&lt;/p&gt;
+
+&lt;p&gt;You know how to test what the team has created. You collaborate with other team members regularly to share knowledge and ideas, and to work together to find the best way to do the work because, after all, the team is all responsible for it.&lt;/p&gt;
+
+&lt;p&gt;When you&#39;re concerned there&#39;s a problem you raise the issue openly, trust the team to respond, and get to work fixing it with the team.&lt;/p&gt;
+
+&lt;p&gt;You help others always, especially lending support in areas of your expertise. You take care to teach others what you know so we all learn and grow.&lt;/p&gt;
+
+&lt;p&gt;You know what to do next because you follow the team&#39;s progress. If ever you don&#39;t know you will soon because you&#39;ll ask. Nobody has to give you a detailed task list, though, because you&#39;re self motivated and will dig into the next unsolved problem.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Developers:&lt;/strong&gt; See &lt;strong&gt;Hackers&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Testers:&lt;/strong&gt; See &lt;strong&gt;Hackers&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Product Management and Design:&lt;/strong&gt; See &lt;strong&gt;Hackers&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Scrum Master:&lt;/strong&gt; See &lt;strong&gt;Hackers&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Interns:&lt;/strong&gt; See &lt;strong&gt;Hackers&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;These are the expectations the team has of every member. Regardless of your title or tenure this is your charge.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Everyone on The Shire is a hacker, so happy hacking!&lt;/strong&gt;&lt;/p&gt;
+
+&lt;h1 id=&quot;shire-hacker-job-description&quot;&gt;Shire Hacker Job Description&lt;/h1&gt;
+
+&lt;h2 id=&quot;about-us&quot;&gt;About Us&lt;/h2&gt;
+
+&lt;p&gt;WhiteHat Security helps prevent website attacks by providing the most complete
+Web security solution. We keep our customers safe in some of the most heavily
+regulated and attacked industries out there.&lt;/p&gt;
+
+&lt;p&gt;At WhiteHat we code and have fun. We&#39;re hacker culture&lt;sup id=&quot;fnref:hackers:2&quot;&gt;&lt;a href=&quot;#fn:hackers&quot; class=&quot;footnote&quot;&gt;1&lt;/a&gt;&lt;/sup&gt;. We&#39;re focused on
+delivering quality code every day and we do that by taking risks, staying
+flexible, and moving fast. Our work is challenging and our team is passionate
+about it. We&#39;re creative and dedicated.&lt;/p&gt;
+
+&lt;h2 id=&quot;position-summary&quot;&gt;Position Summary&lt;/h2&gt;
+
+&lt;p&gt;Do you want to be challenged by your job and overcome those challenges with
+awesome people? If you do we want you on the team!&lt;/p&gt;
+
+&lt;p&gt;We want full stack, modern web application developers: polyglots who use the
+right tool for the job. As a team member you will work on products that run our
+business. We need you to passionately champion great ideas, collaborate on a
+distributed team, and exercise unencumbered intellectual curiosity so we can
+ship fantastic software together.&lt;/p&gt;
+
+&lt;h2 id=&quot;desired-skills-and-experience&quot;&gt;Desired Skills and Experience&lt;/h2&gt;
+
+&lt;p&gt;A qualified candidate will:&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;Have experience writing applications that are secure and have to scale.&lt;/li&gt;
+  &lt;li&gt;Have experience with responsible development practices: writing unit and functional tests as part of development; writing maintainable, well structured code thoughtfully.&lt;/li&gt;
+  &lt;li&gt;Be comfortable working collaboratively with distributed teams.&lt;/li&gt;
+  &lt;li&gt;Have some exposure to the full stack: *nix, devops, automated systems, application development, javascript, CSS, and HTML5.&lt;/li&gt;
+  &lt;li&gt;Be fearless: you know how to find the answer and you&#39;re not afraid to take a risk and try things that might not work.&lt;/li&gt;
+  &lt;li&gt;Be a scientist: collect data and make informed decisions whenever possible.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;An ideal candidate will also:&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;Love beautiful code: elegant code is often the result of elegant solutions.&lt;/li&gt;
+  &lt;li&gt;Have extensive hands-on experience with web application frameworks such as Ruby on Rails, Django, or Express.&lt;/li&gt;
+  &lt;li&gt;Contribute to open source projects and participate in technical communities.&lt;/li&gt;
+  &lt;li&gt;Understand distributed architectures such as data sharding, service oriented architecture (SOA), and load balancing, and know when to use them.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;This position will likely be filled at our headquarters in Santa Clara, or our
+downtown Pittsburgh office. Remote work may be an option for an exceptional
+candidate with remote work experience outside the Bay Area or Pittsburgh. Please
+apply if you are an exceptional candidate!&lt;/p&gt;
+
+&lt;p&gt;Thank you for considering WhiteHat Security. When you apply please include your
+GitHub user ID and tell us which open source project really excites you right
+now, and why.&lt;/p&gt;
+
+&lt;p&gt;&lt;em&gt;WhiteHat Security is an equal employment opportunity company.&lt;/em&gt;&lt;/p&gt;
+
+&lt;div class=&quot;footnotes&quot;&gt;
+  &lt;ol&gt;
+    &lt;li id=&quot;fn:hackers&quot;&gt;
+      &lt;p&gt;&lt;em&gt;&quot;The act of engaging in activities (such as programming or other media) in a &lt;strong&gt;spirit of playfulness and exploration&lt;/strong&gt; is termed hacking. However the defining characteristic of a hacker is not the activities performed themselves (e.g. programming), but the manner in which it is done: &lt;strong&gt;Hacking entails some form of excellence, for example exploring the limits of what is possible, thereby doing something exciting and meaningful.&lt;/strong&gt;&quot;&lt;/em&gt; — &lt;a href=&quot;https://en.wikipedia.org/wiki/Hacker_(programmer_subculture)&quot;&gt;Hacker (programming subculture), Wikipedia&lt;/a&gt; &lt;a href=&quot;#fnref:hackers&quot; class=&quot;reversefootnote&quot;&gt;&amp;#8617;&lt;/a&gt; &lt;a href=&quot;#fnref:hackers:1&quot; class=&quot;reversefootnote&quot;&gt;&amp;#8617;&lt;sup&gt;2&lt;/sup&gt;&lt;/a&gt; &lt;a href=&quot;#fnref:hackers:2&quot; class=&quot;reversefootnote&quot;&gt;&amp;#8617;&lt;sup&gt;3&lt;/sup&gt;&lt;/a&gt;&lt;/p&gt;
+    &lt;/li&gt;
+  &lt;/ol&gt;
+&lt;/div&gt;
+
+  &lt;p&gt;&lt;a href=&quot;http://caseywest.com/work-with-us-at-whitehat/&quot;&gt;Work with us at WhiteHat&lt;/a&gt; was originally published by Casey West at &lt;a href=&quot;http://caseywest.com&quot;&gt;Corner of Weeping&lt;/a&gt; on January 23, 2015.&lt;/p&gt;</content>
+</entry>
 
 
 <entry>
@@ -39,7 +222,7 @@ The trouble is I definitely don&#39;t want to install Peek on production, or in 
 
 &lt;p&gt;My first attempt to work around this involved wrapping calls with a &lt;a href=&quot;http://ruby-doc.org/docs/keywords/1.9/Object.html#method-i-defined-3F&quot;&gt;&lt;code&gt;defined?&lt;/code&gt;&lt;/a&gt; test. For example, in &lt;code&gt;config/routes.rb&lt;/code&gt;:&lt;/p&gt;
 
-&lt;div&gt;&lt;table class=&quot;CodeRay&quot;&gt;&lt;tr&gt;
+&lt;div class=&quot;highlighter-coderay&quot;&gt;&lt;table class=&quot;CodeRay&quot;&gt;&lt;tr&gt;
   &lt;td class=&quot;line-numbers&quot;&gt;&lt;pre&gt;&lt;a href=&quot;#n1&quot; name=&quot;n1&quot;&gt;1&lt;/a&gt;
 &lt;/pre&gt;&lt;/td&gt;
   &lt;td class=&quot;code&quot;&gt;&lt;pre&gt;mount &lt;span class=&quot;constant&quot;&gt;Peek&lt;/span&gt;::&lt;span class=&quot;constant&quot;&gt;Railtie&lt;/span&gt; =&amp;gt; &lt;span class=&quot;string&quot;&gt;&lt;span class=&quot;delimiter&quot;&gt;&#39;&lt;/span&gt;&lt;span class=&quot;content&quot;&gt;/peek&lt;/span&gt;&lt;span class=&quot;delimiter&quot;&gt;&#39;&lt;/span&gt;&lt;/span&gt; &lt;span class=&quot;keyword&quot;&gt;if&lt;/span&gt; &lt;span class=&quot;keyword&quot;&gt;defined?&lt;/span&gt;(&lt;span class=&quot;constant&quot;&gt;Peek&lt;/span&gt;)
@@ -51,7 +234,7 @@ The trouble is I definitely don&#39;t want to install Peek on production, or in 
 
 &lt;p&gt;Finally, your views should be checking the &lt;code&gt;peek_enabled?&lt;/code&gt; method, which is defined by peek in your &lt;code&gt;ApplicationController&lt;/code&gt; class. So, for example, when rendering the peek bar itself you should be doing this:&lt;/p&gt;
 
-&lt;div&gt;&lt;table class=&quot;CodeRay&quot;&gt;&lt;tr&gt;
+&lt;div class=&quot;highlighter-coderay&quot;&gt;&lt;table class=&quot;CodeRay&quot;&gt;&lt;tr&gt;
   &lt;td class=&quot;line-numbers&quot;&gt;&lt;pre&gt;&lt;a href=&quot;#n1&quot; name=&quot;n1&quot;&gt;1&lt;/a&gt;
 &lt;a href=&quot;#n2&quot; name=&quot;n2&quot;&gt;2&lt;/a&gt;
 &lt;/pre&gt;&lt;/td&gt;
@@ -93,7 +276,7 @@ The trouble is I definitely don&#39;t want to install Peek on production, or in 
 
 &lt;p&gt;Peek must be loaded into our environment. I&#39;m loading it into my &lt;code&gt;:development&lt;/code&gt; environment only, along with a list of Peek plugins I want to use.&lt;/p&gt;
 
-&lt;div&gt;&lt;table class=&quot;CodeRay&quot;&gt;&lt;tr&gt;
+&lt;div class=&quot;highlighter-coderay&quot;&gt;&lt;table class=&quot;CodeRay&quot;&gt;&lt;tr&gt;
   &lt;td class=&quot;line-numbers&quot;&gt;&lt;pre&gt;&lt;a href=&quot;#n1&quot; name=&quot;n1&quot;&gt;1&lt;/a&gt;
 &lt;a href=&quot;#n2&quot; name=&quot;n2&quot;&gt;2&lt;/a&gt;
 &lt;a href=&quot;#n3&quot; name=&quot;n3&quot;&gt;3&lt;/a&gt;
@@ -128,7 +311,7 @@ The trouble is I definitely don&#39;t want to install Peek on production, or in 
 
 &lt;p&gt;I put this class in &lt;code&gt;lib/peek_bar.rb&lt;/code&gt;.&lt;/p&gt;
 
-&lt;div&gt;&lt;table class=&quot;CodeRay&quot;&gt;&lt;tr&gt;
+&lt;div class=&quot;highlighter-coderay&quot;&gt;&lt;table class=&quot;CodeRay&quot;&gt;&lt;tr&gt;
   &lt;td class=&quot;line-numbers&quot;&gt;&lt;pre&gt;&lt;a href=&quot;#n1&quot; name=&quot;n1&quot;&gt;1&lt;/a&gt;
 &lt;a href=&quot;#n2&quot; name=&quot;n2&quot;&gt;2&lt;/a&gt;
 &lt;a href=&quot;#n3&quot; name=&quot;n3&quot;&gt;3&lt;/a&gt;
@@ -166,7 +349,7 @@ The trouble is I definitely don&#39;t want to install Peek on production, or in 
 
 &lt;p&gt;I use &lt;a href=&quot;https://relishapp.com/rspec/rspec-rails/docs&quot;&gt;rspec&lt;/a&gt; for testing, so my spec is in &lt;code&gt;spec/lib/peek_bar_spec.rb&lt;/code&gt;.&lt;/p&gt;
 
-&lt;div&gt;&lt;table class=&quot;CodeRay&quot;&gt;&lt;tr&gt;
+&lt;div class=&quot;highlighter-coderay&quot;&gt;&lt;table class=&quot;CodeRay&quot;&gt;&lt;tr&gt;
   &lt;td class=&quot;line-numbers&quot;&gt;&lt;pre&gt;&lt;a href=&quot;#n1&quot; name=&quot;n1&quot;&gt;1&lt;/a&gt;
 &lt;a href=&quot;#n2&quot; name=&quot;n2&quot;&gt;2&lt;/a&gt;
 &lt;a href=&quot;#n3&quot; name=&quot;n3&quot;&gt;3&lt;/a&gt;
@@ -244,7 +427,7 @@ The trouble is I definitely don&#39;t want to install Peek on production, or in 
 
 &lt;p&gt;By default Rails doesn&#39;t load ruby code from the &lt;code&gt;lib/&lt;/code&gt; directory, so lets be sure to tell it to. In &lt;code&gt;config/application.rb&lt;/code&gt; add this:&lt;/p&gt;
 
-&lt;div&gt;&lt;table class=&quot;CodeRay&quot;&gt;&lt;tr&gt;
+&lt;div class=&quot;highlighter-coderay&quot;&gt;&lt;table class=&quot;CodeRay&quot;&gt;&lt;tr&gt;
   &lt;td class=&quot;line-numbers&quot;&gt;&lt;pre&gt;&lt;a href=&quot;#n1&quot; name=&quot;n1&quot;&gt;1&lt;/a&gt;
 &lt;a href=&quot;#n2&quot; name=&quot;n2&quot;&gt;2&lt;/a&gt;
 &lt;a href=&quot;#n3&quot; name=&quot;n3&quot;&gt;3&lt;/a&gt;
@@ -266,7 +449,7 @@ The trouble is I definitely don&#39;t want to install Peek on production, or in 
 
 &lt;p&gt;In &lt;code&gt;app/helpers/peek_bar_helper.rb&lt;/code&gt;.&lt;/p&gt;
 
-&lt;div&gt;&lt;table class=&quot;CodeRay&quot;&gt;&lt;tr&gt;
+&lt;div class=&quot;highlighter-coderay&quot;&gt;&lt;table class=&quot;CodeRay&quot;&gt;&lt;tr&gt;
   &lt;td class=&quot;line-numbers&quot;&gt;&lt;pre&gt;&lt;a href=&quot;#n1&quot; name=&quot;n1&quot;&gt;1&lt;/a&gt;
 &lt;a href=&quot;#n2&quot; name=&quot;n2&quot;&gt;2&lt;/a&gt;
 &lt;a href=&quot;#n3&quot; name=&quot;n3&quot;&gt;3&lt;/a&gt;
@@ -288,7 +471,7 @@ The trouble is I definitely don&#39;t want to install Peek on production, or in 
 
 &lt;p&gt;Since we&#39;re programming responsibly here&#39;s a test for the helper. In &lt;code&gt;spec/helpers/peek_bar_helper_spec.rb&lt;/code&gt;.&lt;/p&gt;
 
-&lt;div&gt;&lt;table class=&quot;CodeRay&quot;&gt;&lt;tr&gt;
+&lt;div class=&quot;highlighter-coderay&quot;&gt;&lt;table class=&quot;CodeRay&quot;&gt;&lt;tr&gt;
   &lt;td class=&quot;line-numbers&quot;&gt;&lt;pre&gt;&lt;a href=&quot;#n1&quot; name=&quot;n1&quot;&gt;1&lt;/a&gt;
 &lt;a href=&quot;#n2&quot; name=&quot;n2&quot;&gt;2&lt;/a&gt;
 &lt;a href=&quot;#n3&quot; name=&quot;n3&quot;&gt;3&lt;/a&gt;
@@ -332,7 +515,7 @@ The trouble is I definitely don&#39;t want to install Peek on production, or in 
 
 &lt;p&gt;The peek documentation explains how to set up &lt;code&gt;config/initializers/peek.rb&lt;/code&gt; to enable the plugins you&#39;ve selected. We need to first test for the availability of peek like this:&lt;/p&gt;
 
-&lt;div&gt;&lt;table class=&quot;CodeRay&quot;&gt;&lt;tr&gt;
+&lt;div class=&quot;highlighter-coderay&quot;&gt;&lt;table class=&quot;CodeRay&quot;&gt;&lt;tr&gt;
   &lt;td class=&quot;line-numbers&quot;&gt;&lt;pre&gt;&lt;a href=&quot;#n1&quot; name=&quot;n1&quot;&gt;1&lt;/a&gt;
 &lt;a href=&quot;#n2&quot; name=&quot;n2&quot;&gt;2&lt;/a&gt;
 &lt;a href=&quot;#n3&quot; name=&quot;n3&quot;&gt;3&lt;/a&gt;
@@ -358,7 +541,7 @@ The trouble is I definitely don&#39;t want to install Peek on production, or in 
 
 &lt;p&gt;CSS is in &lt;code&gt;app/assets/stylesheets/peek_bar.scss&lt;/code&gt;.&lt;/p&gt;
 
-&lt;div&gt;&lt;table class=&quot;CodeRay&quot;&gt;&lt;tr&gt;
+&lt;div class=&quot;highlighter-coderay&quot;&gt;&lt;table class=&quot;CodeRay&quot;&gt;&lt;tr&gt;
   &lt;td class=&quot;line-numbers&quot;&gt;&lt;pre&gt;&lt;a href=&quot;#n1&quot; name=&quot;n1&quot;&gt;1&lt;/a&gt;
 &lt;a href=&quot;#n2&quot; name=&quot;n2&quot;&gt;2&lt;/a&gt;
 &lt;a href=&quot;#n3&quot; name=&quot;n3&quot;&gt;3&lt;/a&gt;
@@ -388,7 +571,7 @@ The trouble is I definitely don&#39;t want to install Peek on production, or in 
 
 &lt;p&gt;I prefer &lt;a href=&quot;http://coffeescript.org/&quot;&gt;CoffeeScript&lt;/a&gt; so I loaded the JavaScript in &lt;code&gt;app/assets/javascripts/peek_bar.js.coffee&lt;/code&gt;.&lt;/p&gt;
 
-&lt;div&gt;&lt;table class=&quot;CodeRay&quot;&gt;&lt;tr&gt;
+&lt;div class=&quot;highlighter-coderay&quot;&gt;&lt;table class=&quot;CodeRay&quot;&gt;&lt;tr&gt;
   &lt;td class=&quot;line-numbers&quot;&gt;&lt;pre&gt;&lt;a href=&quot;#n1&quot; name=&quot;n1&quot;&gt;1&lt;/a&gt;
 &lt;a href=&quot;#n2&quot; name=&quot;n2&quot;&gt;2&lt;/a&gt;
 &lt;/pre&gt;&lt;/td&gt;
@@ -404,7 +587,7 @@ The trouble is I definitely don&#39;t want to install Peek on production, or in 
 
 &lt;p&gt;Add this to &lt;code&gt;config/initializers/assets.rb&lt;/code&gt;:&lt;/p&gt;
 
-&lt;div&gt;&lt;table class=&quot;CodeRay&quot;&gt;&lt;tr&gt;
+&lt;div class=&quot;highlighter-coderay&quot;&gt;&lt;table class=&quot;CodeRay&quot;&gt;&lt;tr&gt;
   &lt;td class=&quot;line-numbers&quot;&gt;&lt;pre&gt;&lt;a href=&quot;#n1&quot; name=&quot;n1&quot;&gt;1&lt;/a&gt;
 &lt;a href=&quot;#n2&quot; name=&quot;n2&quot;&gt;2&lt;/a&gt;
 &lt;a href=&quot;#n3&quot; name=&quot;n3&quot;&gt;3&lt;/a&gt;
@@ -428,7 +611,7 @@ The trouble is I definitely don&#39;t want to install Peek on production, or in 
 
 &lt;p&gt;All this hard work for what? Now it&#39;s time to tie it all together in our layout view. I like &lt;a href=&quot;http://slim-lang.com/&quot;&gt;slim&lt;/a&gt; so this is an extremely condensed version of my default layout, &lt;code&gt;app/views/layouts/application.html.slim&lt;/code&gt;.&lt;/p&gt;
 
-&lt;div&gt;&lt;table class=&quot;CodeRay&quot;&gt;&lt;tr&gt;
+&lt;div class=&quot;highlighter-coderay&quot;&gt;&lt;table class=&quot;CodeRay&quot;&gt;&lt;tr&gt;
   &lt;td class=&quot;line-numbers&quot;&gt;&lt;pre&gt;&lt;a href=&quot;#n1&quot; name=&quot;n1&quot;&gt;1&lt;/a&gt;
 &lt;a href=&quot;#n2&quot; name=&quot;n2&quot;&gt;2&lt;/a&gt;
 &lt;a href=&quot;#n3&quot; name=&quot;n3&quot;&gt;3&lt;/a&gt;
@@ -470,7 +653,7 @@ body
 
 &lt;p&gt;If we want to use peek in production with only staff accounts, for example, all we have to do is change the &lt;code&gt;Gemfile&lt;/code&gt; to install peek in the &lt;code&gt;:production&lt;/code&gt; group and adjust the &lt;code&gt;PeekBar.enabled?&lt;/code&gt; method:&lt;/p&gt;
 
-&lt;div&gt;&lt;table class=&quot;CodeRay&quot;&gt;&lt;tr&gt;
+&lt;div class=&quot;highlighter-coderay&quot;&gt;&lt;table class=&quot;CodeRay&quot;&gt;&lt;tr&gt;
   &lt;td class=&quot;line-numbers&quot;&gt;&lt;pre&gt;&lt;a href=&quot;#n1&quot; name=&quot;n1&quot;&gt;1&lt;/a&gt;
 &lt;a href=&quot;#n2&quot; name=&quot;n2&quot;&gt;2&lt;/a&gt;
 &lt;a href=&quot;#n3&quot; name=&quot;n3&quot;&gt;3&lt;/a&gt;
@@ -513,7 +696,7 @@ body
 
 &lt;p&gt;This part is super easy. Amazingly easy. Add this to your &lt;code&gt;.travis.yml&lt;/code&gt; file:&lt;/p&gt;
 
-&lt;div&gt;&lt;table class=&quot;CodeRay&quot;&gt;&lt;tr&gt;
+&lt;div class=&quot;highlighter-coderay&quot;&gt;&lt;table class=&quot;CodeRay&quot;&gt;&lt;tr&gt;
   &lt;td class=&quot;line-numbers&quot;&gt;&lt;pre&gt;&lt;a href=&quot;#n1&quot; name=&quot;n1&quot;&gt;1&lt;/a&gt;
 &lt;a href=&quot;#n2&quot; name=&quot;n2&quot;&gt;2&lt;/a&gt;
 &lt;a href=&quot;#n3&quot; name=&quot;n3&quot;&gt;3&lt;/a&gt;
@@ -539,7 +722,7 @@ Turns out, by enabling the &lt;code&gt;cache&lt;/code&gt; in Travis I caused Rub
 
 &lt;p&gt;Why was RuboCop doing that? Because I wanted to &lt;code&gt;Exclude&lt;/code&gt; a few things in my Rails app—mostly generated code—so I had a &lt;code&gt;.rubocop.yml&lt;/code&gt; file that looked a little like this:&lt;/p&gt;
 
-&lt;div&gt;&lt;table class=&quot;CodeRay&quot;&gt;&lt;tr&gt;
+&lt;div class=&quot;highlighter-coderay&quot;&gt;&lt;table class=&quot;CodeRay&quot;&gt;&lt;tr&gt;
   &lt;td class=&quot;line-numbers&quot;&gt;&lt;pre&gt;&lt;a href=&quot;#n1&quot; name=&quot;n1&quot;&gt;1&lt;/a&gt;
 &lt;a href=&quot;#n2&quot; name=&quot;n2&quot;&gt;2&lt;/a&gt;
 &lt;a href=&quot;#n3&quot; name=&quot;n3&quot;&gt;3&lt;/a&gt;
@@ -571,7 +754,7 @@ Turns out, by enabling the &lt;code&gt;cache&lt;/code&gt; in Travis I caused Rub
 
 &lt;p&gt;Lets just add &lt;code&gt;vendor&lt;/code&gt; back into the exclusion list:&lt;/p&gt;
 
-&lt;div&gt;&lt;table class=&quot;CodeRay&quot;&gt;&lt;tr&gt;
+&lt;div class=&quot;highlighter-coderay&quot;&gt;&lt;table class=&quot;CodeRay&quot;&gt;&lt;tr&gt;
   &lt;td class=&quot;line-numbers&quot;&gt;&lt;pre&gt;&lt;a href=&quot;#n1&quot; name=&quot;n1&quot;&gt;1&lt;/a&gt;
 &lt;a href=&quot;#n2&quot; name=&quot;n2&quot;&gt;2&lt;/a&gt;
 &lt;a href=&quot;#n3&quot; name=&quot;n3&quot;&gt;3&lt;/a&gt;
@@ -698,7 +881,7 @@ Turns out, by enabling the &lt;code&gt;cache&lt;/code&gt; in Travis I caused Rub
 
 &lt;p&gt;This is my &lt;code&gt;lib/tasks/bundle_audit.rake&lt;/code&gt; file.&lt;/p&gt;
 
-&lt;div&gt;&lt;table class=&quot;CodeRay&quot;&gt;&lt;tr&gt;
+&lt;div class=&quot;highlighter-coderay&quot;&gt;&lt;table class=&quot;CodeRay&quot;&gt;&lt;tr&gt;
   &lt;td class=&quot;line-numbers&quot;&gt;&lt;pre&gt;&lt;a href=&quot;#n1&quot; name=&quot;n1&quot;&gt;1&lt;/a&gt;
 &lt;a href=&quot;#n2&quot; name=&quot;n2&quot;&gt;2&lt;/a&gt;
 &lt;a href=&quot;#n3&quot; name=&quot;n3&quot;&gt;3&lt;/a&gt;
@@ -752,7 +935,7 @@ task &lt;span class=&quot;symbol&quot;&gt;:bundle_audit&lt;/span&gt; &lt;span cl
 
 &lt;p&gt;It defines a few rasks under the &lt;code&gt;bundle_audit&lt;/code&gt; namespace. Thanks to the modular Ruby code built on top of &lt;a href=&quot;http://whatisthor.com/&quot;&gt;thor&lt;/a&gt; I had no trouble tapping directly into the command-line implementation for &lt;code&gt;bundle-audit&lt;/code&gt;.&lt;/p&gt;
 
-&lt;div&gt;&lt;table class=&quot;CodeRay&quot;&gt;&lt;tr&gt;
+&lt;div class=&quot;highlighter-coderay&quot;&gt;&lt;table class=&quot;CodeRay&quot;&gt;&lt;tr&gt;
   &lt;td class=&quot;line-numbers&quot;&gt;&lt;pre&gt;&lt;a href=&quot;#n1&quot; name=&quot;n1&quot;&gt;1&lt;/a&gt;
 &lt;a href=&quot;#n2&quot; name=&quot;n2&quot;&gt;2&lt;/a&gt;
 &lt;a href=&quot;#n3&quot; name=&quot;n3&quot;&gt;3&lt;/a&gt;
@@ -768,7 +951,7 @@ rake bundle_audit:update  # Update bundle-audit database
 
 &lt;p&gt;Invocation is as easy as you can imagine. On the command-line:&lt;/p&gt;
 
-&lt;div&gt;&lt;table class=&quot;CodeRay&quot;&gt;&lt;tr&gt;
+&lt;div class=&quot;highlighter-coderay&quot;&gt;&lt;table class=&quot;CodeRay&quot;&gt;&lt;tr&gt;
   &lt;td class=&quot;line-numbers&quot;&gt;&lt;pre&gt;&lt;a href=&quot;#n1&quot; name=&quot;n1&quot;&gt;1&lt;/a&gt;
 &lt;a href=&quot;#n2&quot; name=&quot;n2&quot;&gt;2&lt;/a&gt;
 &lt;a href=&quot;#n3&quot; name=&quot;n3&quot;&gt;3&lt;/a&gt;
@@ -792,7 +975,7 @@ No unpatched versions found
 
 &lt;p&gt;I also incorporated the check into my &lt;code&gt;rake test&lt;/code&gt; task, because I want my tests to fail if I&#39;m shipping with vulnerable dependencies. Here&#39;s what I have going on in &lt;code&gt;lib/tasks/test.rake&lt;/code&gt;:&lt;/p&gt;
 
-&lt;div&gt;&lt;table class=&quot;CodeRay&quot;&gt;&lt;tr&gt;
+&lt;div class=&quot;highlighter-coderay&quot;&gt;&lt;table class=&quot;CodeRay&quot;&gt;&lt;tr&gt;
   &lt;td class=&quot;line-numbers&quot;&gt;&lt;pre&gt;&lt;a href=&quot;#n1&quot; name=&quot;n1&quot;&gt;1&lt;/a&gt;
 &lt;a href=&quot;#n2&quot; name=&quot;n2&quot;&gt;2&lt;/a&gt;
 &lt;a href=&quot;#n3&quot; name=&quot;n3&quot;&gt;3&lt;/a&gt;
@@ -1125,7 +1308,7 @@ task &lt;span class=&quot;key&quot;&gt;default&lt;/span&gt;: &lt;span class=&quo
   </author>
   <content type="html">&lt;p&gt;As most of us know by now it was Brian Kernighan who wrote the first known &lt;a href=&quot;https://en.wikipedia.org/wiki/%22Hello,_world!%22_program&quot;&gt;hello, world&lt;/a&gt; program:&lt;/p&gt;
 
-&lt;div&gt;&lt;table class=&quot;CodeRay&quot;&gt;&lt;tr&gt;
+&lt;div class=&quot;highlighter-coderay&quot;&gt;&lt;table class=&quot;CodeRay&quot;&gt;&lt;tr&gt;
   &lt;td class=&quot;line-numbers&quot;&gt;&lt;pre&gt;&lt;a href=&quot;#n1&quot; name=&quot;n1&quot;&gt;1&lt;/a&gt;
 &lt;a href=&quot;#n2&quot; name=&quot;n2&quot;&gt;2&lt;/a&gt;
 &lt;a href=&quot;#n3&quot; name=&quot;n3&quot;&gt;3&lt;/a&gt;
