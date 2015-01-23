@@ -171,7 +171,7 @@ company = <span class="string"><span class="delimiter">%q(</span><span class="co
 email   = [
   name.join(<span class="string"><span class="delimiter">'</span><span class="content">.</span><span class="delimiter">'</span></span>),
   [
-    company.tr(<span class="string"><span class="delimiter">'</span><span class="content"> </span><span class="delimiter">'</span></span>,<span class="string"><span class="delimiter">'</span><span class="delimiter">'</span></span>)[<span class="integer">0</span>..<span class="integer">10</span>],
+    company.tr(<span class="string"><span class="delimiter">'</span><span class="content"> </span><span class="delimiter">'</span></span>,<span class="string"><span class="delimiter">'</span><span class="delimiter">'</span></span>)[<span class="integer">0</span>..<span class="integer">10</span>], <span class="comment"># We go to 11. \o/</span>
     <span class="string"><span class="delimiter">'</span><span class="content">com</span><span class="delimiter">'</span></span>
   ].join(<span class="string"><span class="delimiter">'</span><span class="content">.</span><span class="delimiter">'</span></span>)
 ].join(<span class="string"><span class="delimiter">'</span><span class="content">@</span><span class="delimiter">'</span></span>).downcase
