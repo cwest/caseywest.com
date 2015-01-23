@@ -24,7 +24,7 @@ company = %q(WhiteHat Security)
 email   = [
   name.join('.'),
   [
-    company.tr(' ','')[0..10],
+    company.tr(' ','')[0..10], # We go to 11. \o/
     'com'
   ].join('.')
 ].join('@').downcase
