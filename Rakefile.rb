@@ -124,3 +124,8 @@ desc "Build and watch site in dev mode"
 task :dev do
   system "bundle exec jekyll build --watch --config _config.yml,_config-dev.yml"
 end
+
+desc "Build and watch site in ngrok mode"
+task :ngrok do
+  system "bundle exec jekyll serve --watch --config _config.yml,_config-ngrok.yml"
+end
