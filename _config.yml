@@ -76,6 +76,6 @@ defaults:
       path: ""
     values:
       image:
-        feature: feature/feature-painted-pittsburgh.jpg
+        feature: feature/santa-cruz-beach.jpg
       comments: false
 
