@@ -1,0 +1,322 @@
+                           Casey West - Résumé
+
+
+Contact Information:
+
+Casey West
+201 Catalpa Pl
+Pittsburgh, PA 15228
+USA
+
+Mobile Phone: +1.724.681.2000
+Email: casey@geeknest.com
+URL: http://caseywest.com
+URL: http://github.com/cwest
+URL: http://www.linkedin.com/in/caseywest
+
+
+Professional Summary:
+
+    I’m an expert end-to-end web application developer with over fifteen
+    years of hands-on, customer-facing experience. My specialty is
+    high-availability, maintainable, and scalable solutions with a focus
+    on usability for real people.
+    
+    I use my experience to empower product teams to deliver outstanding
+    results under difficult constraints. I do that by building teams
+    with a culture and tools that promote happiness and productivity.
+    
+
+Employment History:
+
+    UI Architect & DevOps Architect
+    WhiteHat Security
+    November 2012-Present
+    
+    Software Architect and team lead responsible for sweeping change and
+    modernization across the organization. Acted as a strong, hands on
+    technical lead and change agent to bring modern development tools
+    and processes into Engineering and affected positive change in IT,
+    development, QA, release, and design. I worked very effectively as a
+    technical leader while remote.
+    
+    Projects:
+    * Technical Leadership, Change Agent, Team Building, and HiringBuilt
+      and lead three teams: one DevOps and two Application development
+      teams. Hired the best talent available from within the company,
+      across departments, and from around the world. Implemented a
+      successful, modern hiring program which reduced waste, offered
+      high levels of confidence in fit of candidates for culture,
+      experience, and skill set. Hired eight engineers using my process.
+      Rebuilt the SDLC from the ground up to allow continuous delivery
+      with a streamlined, agile, lean process and a culture of trust and
+      shared responsibility. Made it successful by implementing
+      12-factor apps, an automated software delivery pipeline and
+      increased collaboration and transparency with GitHub Enterprise,
+      HipChat, and New Relic.
+    * DevOps, Developer Tools, Infrastructure, and AutomationLead a team
+      of DevOps engineers, known as Shire Ops. We quickly converted the
+      engineering organization from Subversion to GitHub Enterprise and
+      the open-source pull request collaboration process. While doing so
+      we rebuilt the SDLC and increased our releases per year by 300%.
+      We automated the delivery pipeline with Jenkins, Ansible, and
+      Docker, which opened the opportunity for continuous delivery.
+      Built the foundation that let us deploy easily to private data
+      centers, and AWS in Germany opening up Europe as a new market. We
+      were also able to upgrade our operating system by four major
+      revisions across all data centers without downtime or interruption
+      of the development process. Within a year Shire Ops took primary
+      responsibility for the delivery and health of production
+      operations in multiple data centers.
+    * Architecture and Software DevelopmentLead a team of software
+      engineers, known as Shire Apps. We are rebuilding our customer
+      facing web application from scratch using Ruby on Rails. Avoided
+      second system syndrome and redeveloped components one at a time by
+      embedding new functionality into the existing user interface. This
+      was seamless and allowed us to develop the next generation
+      interface iteratively. Drastically improved performance and
+      usability with each component we rebuilt. Created a culture of
+      high quality development while delivering business value; our
+      application was a joy to work on and easy to maintain. We did this
+      through prototyping, BDD, and refactoring.
+    
+    
+    Independent Software Consultant
+    Self Employed
+    March 2009-November2012
+    
+    Projects:
+    * Security Remediation and Modernization for Experian CheetahMail
+      Built static security analysis tools to find XSS and SQLi
+      vulnerabilities in large-scale Perl applications with minimal
+      false positives. Worked with a team of engineers on vulnerability
+      remediation. Helped rebuild core implementation using best
+      practices of modular, testable software design.
+    * Internal 360 Degree Review Service for Startup Company Created a
+      small team to quickly build and deliver a beautiful, feature rich
+      360 degree peer review tool which modeled the company's
+      organizational structure and managed the workflow of collecting
+      and responding to peer feedback. Integrated into their internal
+      SSO infrastructure and deployed behind their firewall with no
+      access to the system.
+    * Development and Architecture for a Preventitive Health Social
+      Startup Joined a small team of developers building a preventative
+      health social network with gamification of personal health goals.
+      Quickly implemented solutions to challenges created by prior
+      engineers' poorly tested work, and helped them get past critical
+      technical challenges to move forward and go to market.
+    * Realtime Geospatial Media Service for Technology Company Joined a
+      small team to architect and build a realtime software product for
+      live streaming video, video on demand, and photo sharing on a
+      closed network for use inside organizations. Application includes
+      geo-locating all media (live streams, video on demand, and photos)
+      as well as agents responsible for generating that media. Operators
+      of the system can view the status of all objects in the system in
+      realtime including locations, streaming, and new generated media.
+      Built application using Ruby on Rails 3, jQuery, CSS 3.0, advanced
+      KML, Google Maps API v3, HTTP Live Streaming (HLS), Real Time
+      Streaming Protocol (RTSP), VLC for transcoding, and MySQL
+      Geospatial Extensions. Web user interface optimized for desktop
+      and mobile clients.
+    * Social Network Optimization and Visualization for Startup Company
+      Completely overhauled the user experience, rebuilding the
+      workflow, visual design, and focus of the application. Rebuilt all
+      data visualizations using HTML 5, CSS 3.0, and jQuery for iPad
+      compatible charts and graphs, and interactive visualizations.
+      Rebuilt the in-app twitter client. Engineered visualizations and
+      workflows to have real-time update capabilities in most areas of
+      the application, with user control. Consulted the team on
+      direction and focus of features and design, and contributed to
+      project management and goal making.
+    * Jobs Graph Social Network for Startup Company Early-project
+      conceptualization and brainstorming, and later working with a
+      development team building functionality by glueing backend work to
+      design concepts. Built with Ruby on Rails 3 with jQuery. Developed
+      integrations with third-party from LinkedIn, Plancast, and
+      SlideShare.
+    * Data Cloud Dashboard for Technology Infrastructure Company
+      Developed a theme-able, dashboard interface on top of a RESTful
+      data cloud product developed internally. Used jQuery and modern
+      web techniques.
+    * Grants Management Software for a Non-profit Foundation Built
+      hGrant feed for display, filtering, and syndication in PHP using
+      Symfony. Co-architected and developed new Grants Management
+      software to facilitate the grant making workflow in the
+      organization. Developed in Ruby and JavaScript with Ruby on Rails
+      and jQuery. Built interactive, immersive dashboard interface from
+      client mockups making heavy use of CSS 3.0, jQuery, HTML 5, and
+      modern web design techniques.
+    * Data Visualization and Aggregation for a Non-profit Assumed
+      maintenance and continued development of Grantsfire. Developed in
+      Perl and JavaScript using Catalyst, jQuery, XSLT, Microformats,
+      OpenID, and MySQL. Improved performance; added data and
+      administrative tools, feed validation services, OpenID
+      integration; and performed sysadmin duties. Wrote the hGrant
+      Microformat Specification based on existing work, implementations,
+      and documentation.
+    * Social Network, Scoring System, and iPhone Development for Design
+      and Game Company Assumed maintenance and continued development of
+      XEOPlay, the online social network for the Tilt, an iPad and
+      iPhone game. Worked on performance benchmarks for the game on iOS
+      devices and improved in-game score keeping and leaderboards.
+    * Social Network and Online Game for a Civic Organization Developed
+      and deployed the Drive Less Challenge social network and gaming
+      tool for the 2010 challenge. Built with Ruby on Rails, Open ID,
+      Facebook Connect, and modern web design techniques.
+    * Volunteer Management System for Wikimedia Foundation Built
+      volunteer submission system to give thousands the opportunity to
+      participate in Wikimedia's strategic planning. Developed in Python
+      and JavaScript using Django and jQuery. The application is
+      internationalized (I18N) and localized (L10N) using Django, with
+      additional custom languages added according to client needs.
+      Performed system administration, including detailed Nagios service
+      monitors. Application integrates with MediaWiki using its web
+      service API.
+    
+    
+    Lead Software Engineer, Infrastructure & Architecture
+    CombineNet
+    February 2008-March 2009
+    
+    Lead Engineer with focus on infrastructure and web application
+    architectures.
+    
+    Achievements
+    * Managed engineering effort through a comprehensive, 10-month
+      infrastructure upgrade.
+    * Advanced unit testing among product engineers.
+    * Improved UX through RTE integration and Spreadsheet data
+      validation.
+    
+    
+    Lead Developer & VP Engineering
+    Socialtext
+    August 2005-February 2008
+    
+    Lead developer specializing in web application user interfaces.
+    Interim VP Engineering.
+    
+    Achievements
+    * Stepped up to be interim VP Engineering; lead engineering to meet
+      company strategy.
+    * Hired five senior software developers; managed twelve.
+    * Completed redesign of software which aided in funding.
+    * Lead R&D of new people oriented collaboration tools
+    * Collaborated on OSI Compliant Software Licence for SaaS, CPAL.
+    * Wikiwyg released on time, by Web 2.0 Conference, 2005.
+    
+    
+    Software Developer
+    pair Networks
+    July 2003-July 2005
+    
+    
+    Senior Systems Developer
+    DynDNS.org
+    August 2002-July 2003
+    
+    
+    Senior Software Engineer
+    Aaronsen Group
+    August 2001-August 2002
+    
+    
+    Software Engineer
+    Agnew Moyer Smith Inc
+    February 2000-August 2001
+    
+
+Community Involvement:
+
+    Co-organizer
+    Rails Girls Pittsburgh
+    
+    One of four organizers for this event which brought together local
+    and national Ruby on Rails experts to teach women and girls how to
+    program in a safe, friendly, supportive environment.
+    
+
+    Co-organizer
+    Yet Another Perl Conference
+    
+    One of four organizers for this annual conference. Designed and
+    implemented website, delivered keynotes, and organized social
+    events. 10th Anniversary.
+    
+
+    Co-organizer
+    Pittsburgh Perl Workshop
+    
+    One of four organizers for this annual conference. Designed and
+    implemented websites for each year, managed sponsors, delivered
+    keynotes, and organized social events.
+    
+
+    CPAN Author
+    Comprehensive Perl Archive Network
+    
+    Dozens of software libraries released as open source.
+    
+
+A short list of some things I know about.:
+
+  Languages
+  
+    * Ruby
+    * CoffeeScript/JavaScript
+    * Perl
+    * Python
+    * Haskell
+    * C
+    * PHP
+    * Shell
+    
+  Operating Systems
+  
+    * Mac OS X
+    * Linux (Ubuntu, Fedora)
+    * FreeBSD
+    * Windows
+    
+  Software & Libraries
+  
+    * Ruby on Rails 4
+    * Backbone/jQuery
+    * Ansible/Chef
+    * Catalyst
+    * nginx/Apache 2
+    * PostgreSQL/MySQL
+    * Redis/memcached
+    * Django
+    * Jekyll
+    
+  Standards
+  
+    * HTTP (REST)
+    * Realtime Web (WebSockets/PubSub)
+    * Email Protocols
+    * I18N
+    * L10N
+    * LDAP
+    
+  Process
+  
+    * Architecture and Design
+    * Team Leadership
+    * Agile/Lean/MVP Development
+    * Responsive/Mobile Applications
+    * Build Systems
+    * Operational Security
+    * Web Security
+    * Scalability
+    * Plugins and Extensibility
+    
+  Web Tools
+  
+    * HTML 5
+    * CSS 3.0/SASS/Less
+    * XML
+    * XPath
+    * XSL
+    * KML
+    
