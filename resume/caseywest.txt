@@ -270,8 +270,13 @@ A short list of some things I know about.:
     * PHP
     * Shell
     
-  Operating Systems
+  Services & OSes
   
+    * AWS
+    * Heroku
+    * New Relic
+    * Travis CI
+    * GitHub
     * Mac OS X
     * Linux (Ubuntu, Fedora)
     * FreeBSD
