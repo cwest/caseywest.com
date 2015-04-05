@@ -45,7 +45,7 @@ Employment History:
       and lead three teams: one DevOps and two Application development
       teams. Hired the best talent available from within the company,
       across departments, and from around the world. Implemented a
-      successful, modern hiring program which reduced waste, offered
+      successful, modern hiring program which reduced waste and offered
       high levels of confidence in fit of candidates for culture,
       experience, and skill set. Hired eight engineers using my process.
       Rebuilt the SDLC from the ground up to allow continuous delivery
