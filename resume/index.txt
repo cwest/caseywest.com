@@ -17,14 +17,13 @@ URL: http://www.linkedin.com/in/caseywest
 
 Professional Summary:
 
-    I’m an expert end-to-end web application developer with over fifteen
-    years of hands-on, customer-facing experience. My specialty is
-    high-availability, maintainable, and scalable solutions with a focus
-    on usability for real people.
+    Expert full stack web application developer. I specialize in
+    high-availability, maintainable, scalable solutions focused on
+    usability.
     
-    I use my experience to empower product teams to deliver outstanding
-    results under difficult constraints. I do that by building teams
-    with a culture and tools that promote happiness and productivity.
+    I empower product teams to deliver outstanding results under
+    difficult constraints by building teams with culture and tools that
+    promote happiness and productivity.
     
 
 Employment History:
