@@ -4,13 +4,135 @@
 <generator uri="https://github.com/mojombo/jekyll">Jekyll</generator>
 <link rel="self" type="application/atom+xml" href="http://caseywest.com/feed.xml" />
 <link rel="alternate" type="text/html" href="http://caseywest.com" />
-<updated>2015-04-07T14:06:48-04:00</updated>
+<updated>2015-04-12T13:38:01-04:00</updated>
 <id>http://caseywest.com/</id>
 <author>
   <name>Casey West</name>
   <uri>http://caseywest.com/</uri>
   <email></email>
 </author>
+
+
+<entry>
+  <title type="html"><![CDATA[A Call for More Tech Leadership]]></title>
+ <link rel="alternate" type="text/html" href="http://caseywest.com/a-call-for-more-tech-leadership/" />
+  <id>http://caseywest.com/a-call-for-more-tech-leadership</id>
+  <updated>2015-04-12 09:59:30 -0400T00:00:00-00:00</updated>
+  <published>2015-04-12T00:00:00-04:00</published>
+  
+  <author>
+    <name>Casey West</name>
+    <uri>http://caseywest.com</uri>
+    <email></email>
+  </author>
+  <content type="html">&lt;p&gt;Don&#39;t promote your most talented technologists into people management. Promote them into technical leadership roles instead. You&#39;ll keep happy, engaged leaders and avoid the perils of the &lt;a href=&quot;http://en.wikipedia.org/wiki/Peter_Principle&quot;&gt;Peter Principle&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;It&#39;s a common policy in hierarchical organizations to promote top performers into people management. Your best programmer comes up with great ideas, the team listens to her, she can fix anything. It&#39;s review time and what happens? She&#39;s offered a job in management. What are her new responsibilities? Paperwork, reviews, operational alignment summits, budgets. How much code is she writing now? Not much and she&#39;s probably miserable.&lt;/p&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;&quot;I don&#39;t want to stop coding.&quot; — Almost every good programmer, ever.&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;figure&gt;
+    &lt;img src=&quot;/images/for-posts/boss.jpg&quot; alt=&quot;A giant cup of I&#39;m the fucking boss.&quot; /&gt;
+    &lt;figcaption&gt;
+        This was a Christmas present from a member of my team in 2014.
+    &lt;/figcaption&gt;
+&lt;/figure&gt;
+
+&lt;p&gt;There&#39;s another alternative. Technical leadership. Here are some common tech leadership roles:&lt;/p&gt;
+
+&lt;dl&gt;
+  &lt;dt&gt;Lead Engineer&lt;/dt&gt;
+  &lt;dd&gt;You&#39;re coding everyday and helping others to code better, too. You have deep experience with the tools and technologies, as well as the problem domain, and use that to inform internal system design. You keep the code healthy.&lt;/dd&gt;
+  &lt;dt&gt;Software Architect&lt;/dt&gt;
+  &lt;dd&gt;You&#39;re designing the story arc of how this software fits into its problem domain. You have visibility into the long-term plans for the software and strong technical skills to work with engineering to build something that keeps the software focused. You keep the software healthy.&lt;/dd&gt;
+  &lt;dt&gt;CTO&lt;/dt&gt;
+  &lt;dd&gt;The most senior architect. You know what every product line is aiming for. You know how it fits into the long-term story of the product and the industry. You share this insight with your architects and leads to give them vital context for making great choices. You keep the company healthy.&lt;/dd&gt;
+&lt;/dl&gt;
+
+&lt;h2 id=&quot;this-is-the-intersection-of-technology-and-people&quot;&gt;This is the intersection of technology and people.&lt;/h2&gt;
+
+&lt;p&gt;&lt;span class=&quot;pullquote-right&quot; data-pullquote=&quot;You&amp;apos;re not managing people. You&amp;apos;re leading them.&quot;&gt;
+People are at the heart of tech leadership roles. It&#39;s a socio-technical role. &lt;a href=&quot;/your-software-is-made-of-people/&quot;&gt;Hacking on one and not the other will cause the performance of both to suffer.&lt;/a&gt; This is the critical glue missing from most engineering organizations where engineers are promoted to managers. This is where technical leadership plays its key role. You&#39;re not managing people. You&#39;re leading them.
+&lt;/span&gt;&lt;/p&gt;
+
+&lt;p&gt;Why is there a gap? Because newly-promoted managers now have too many jobs. Promoting a tech lead into a manager forces them into the problem of having too many roles. They&#39;ll either have to choose one or do both poorly for lack of time which will eventually force their hand into choosing people management. Why? Because &lt;em&gt;their&lt;/em&gt; boss is expecting them to do that role. Now there&#39;s a void in technical leadership.&lt;/p&gt;
+
+&lt;p&gt;In a healthy organization the tech lead, lets say a Principal Architect, and the people manager are a powerful pair. When they&#39;re working together the people on their team are taken care of at every level. The team is comfortable because they know what to build and why, and that they&#39;re building on the right path. They&#39;re also getting the individual attention of their manager.&lt;/p&gt;
+
+&lt;h2 id=&quot;tech-leadership-is-a-force-multiplier&quot;&gt;Tech leadership is a &lt;a href=&quot;https://en.wikipedia.org/wiki/Force_multiplication&quot;&gt;force multiplier&lt;/a&gt;.&lt;/h2&gt;
+
+&lt;p&gt;As a technical leader you aren&#39;t always writing code. If you&#39;re a recognized leader chances are you already know that. You spend a lot of time helping others. Teaching, mentoring, reviewing code, standing at the whiteboard and explaining the permissions model for the hundredth time. Or whatever…&lt;/p&gt;
+
+&lt;p&gt;You may not always be pressing many keys and causing an implementation to occur, but for the people who are you&#39;re a valuable asset. You help them do it better. You help them avoid the pitfalls and mistakes you&#39;ve already made five times in your career.&lt;/p&gt;
+
+&lt;p&gt;This work is vital to the health of an organization. It has a direct impact on productivity and happiness. You are helping each team member avoid pain and you&#39;re helping the organization avoid pain. How is this a force multiplier? The evidence is proven over time.&lt;/p&gt;
+
+&lt;p&gt;Applying the skill of technical leadership is a force multiplier in several ways. &lt;strong&gt;If any of the following apply to you, you might be a tech lead:&lt;/strong&gt;&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;Your experience helps engineers at all skill levels create solutions that last longer, are easier to maintain, and respond to change better. &lt;/li&gt;
+  &lt;li&gt;You&#39;ve thought through integration problems so there are fewer surprises. &lt;/li&gt;
+  &lt;li&gt;You understand the long-term goals for the software so your short-term solutions don&#39;t paint everyone into an architectural corner. &lt;/li&gt;
+  &lt;li&gt;Your team is constantly learning from you so retention rates are high because everyone is growing. &lt;/li&gt;
+  &lt;li&gt;When a customer is upset you can code up a solution which keeps they team focused on their planned work. &lt;/li&gt;
+  &lt;li&gt;You&#39;ve been planning ahead for the next big development effort and have five prototypes ready for comment by the time the team is ready so nobody feels lost in the face of a new challenge.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;This is how a technical leader is force multiplier: enhancing the attributes your organization to make it more effective than others.&lt;/p&gt;
+
+&lt;h2 id=&quot;lead-by-example&quot;&gt;Lead by example.&lt;/h2&gt;
+
+&lt;p&gt;Technical leadership the role best suited for my skill set. I was fortunate enough to have been supported by a fantastic people manager at my current company. With support I used everything in my technical leadership toolbox to build teams of outstanding engineers, create a culture for them to thrive in, write the story of our next great architectural revolution, and lead the team down that path.&lt;/p&gt;
+
+&lt;p&gt;I love this work. I&#39;m passionate about it. As a programmer who always wants to code I don&#39;t get to as much as I&#39;d like, but I still get to. As a leader I get to work directly on the problems getting in the way of my team, very real people-problems, and resolve them. I do that with the support of people management.&lt;/p&gt;
+
+&lt;p&gt;One of the core values in &lt;a href=&quot;/work-with-us-at-whitehat/&quot;&gt;my team culture&lt;/a&gt; is transparency. I&#39;ll exercise that by sharing a piece of my self evaluation from last fall. It&#39;s the part where I&#39;m supposed to say what I ought to work on for the next year. This is a high-level view of my approach to technical leadership:&lt;/p&gt;
+
+&lt;blockquote&gt;
+  &lt;h3 id=&quot;what-should-the-focus-be-for-the-next-review-period&quot;&gt;What should the focus be for the next review period?&lt;/h3&gt;
+
+  &lt;p&gt;I&#39;d will continue to focus on the areas I feel are the greatest value to WhiteHat. This has been my focus for the last year and will remain so. Specifically:&lt;/p&gt;
+
+  &lt;p&gt;&lt;strong&gt;Empower Others&lt;/strong&gt; — I will continue to create space and opportunity for the members of my team, my organization, and anyone in the company to contribute at their best level.&lt;/p&gt;
+
+  &lt;p&gt;&lt;strong&gt;Challenge Assumptions&lt;/strong&gt; — I will continue to challenge the things we do, how we do them, and why we do them in a relentless effort to eliminate waste in our organization.&lt;/p&gt;
+
+  &lt;p&gt;&lt;strong&gt;Eliminate Pain Points&lt;/strong&gt; — I will continue to learn about others&#39; work in order to find resolution for things that are difficult and painful in their daily work. I will empower my team to find ways to automate most of those pain points away, or challenge assumptions in our process and workflow which may have created them.&lt;/p&gt;
+
+  &lt;p&gt;&lt;strong&gt;Influence Culture&lt;/strong&gt; — I will continue to be the change I want to see at WhiteHat, and be myself with no bad politics or hidden agendas, in order to help create the culture of trust, learning, productivity, fun, and reward I want to work in; and that I want to recruit my friends to work in.&lt;/p&gt;
+
+  &lt;p&gt;&lt;strong&gt;Lead Technology and Architecture&lt;/strong&gt; — I will continue to be a leader, mentor, and teacher to my team members and organization members. I will take an active role in leading the development and design of our software and operational architectures to ensure we make aggressive strides toward modern, sustainable solutions that meet our customers&#39; needs.&lt;/p&gt;
+
+  &lt;p&gt;By this time next year I will have been successful if the Engineering organization is delivering high quality software that delights our customers.&lt;/p&gt;
+
+  &lt;p&gt;I expect my team to have delivered an infrastructure and web application framework that puts us in the position to aggressively compete in our market, to have delivered several key features which empower WhiteHat to make impressive advancements within our industry and in comparison to our key competitors.&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;h2 id=&quot;we-need-a-tech-leadership-track&quot;&gt;We need a tech leadership track.&lt;/h2&gt;
+
+&lt;p&gt;&lt;span class=&quot;pullquote-left&quot; data-pullquote=&quot;This is how you make technical leadership just as important as people management.&quot;&gt;
+I&#39;m sure you&#39;ve heard this before: &lt;em&gt;&quot;we&#39;re going to put you on the management track.&quot;&lt;/em&gt; The management track is a career advancement concept designed to mold high performers into managers. Within engineering we need a new, parallel track. We need a technical leadership track.&lt;/span&gt;&lt;/p&gt;
+
+&lt;p&gt;Top performers who want to remain technical and advance their career should have the option of advancing their career in this way. Organizations are in desperate need of highly qualified, deeply experienced leaders making strategic decisions for the health of their software.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;If you are a mid to senior level engineer&lt;/strong&gt; right now and you don&#39;t want to advance to management I want to encourage you to advance to technical leadership instead. Insist on a promotion to Lead Engineer, then Architect, then Principal Architect.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;If you run an engineering department&lt;/strong&gt; and want to offer career advancement that keeps your top performers engaged and happy don&#39;t force them into management. Create an advancement track designed to build a strong technical leadership pipeline. Your software will be better for it.&lt;/p&gt;
+
+&lt;p&gt;Find your best technologist and promote them to Director of Architecture. Your new Director should have people managers in her peer group. This creates space for the tech leaders in your organization to grow. Build your technical leadership team under her in the hierarchy, but let them keep working with the teams their leading in day-to-day work. This is how you make technical leadership just as important as people management.&lt;/p&gt;
+
+&lt;figure&gt;
+    &lt;img src=&quot;/images/for-posts/feet-up-boss.jpg&quot; alt=&quot;It&#39;s good to be back in the shire.&quot; /&gt;
+    &lt;figcaption&gt;
+        I &lt;strong&gt;am not&lt;/strong&gt; a manager but I love this mug.
+    &lt;/figcaption&gt;
+&lt;/figure&gt;
+
+
+  &lt;p&gt;&lt;a href=&quot;http://caseywest.com/a-call-for-more-tech-leadership/&quot;&gt;A Call for More Tech Leadership&lt;/a&gt; was originally published by Casey West at &lt;a href=&quot;http://caseywest.com&quot;&gt;The consensus-seeking architect.&lt;/a&gt; on April 12, 2015.&lt;/p&gt;</content>
+</entry>
 
 
 <entry>
@@ -25,7 +147,9 @@
     <uri>http://caseywest.com</uri>
     <email></email>
   </author>
-  <content type="html">&lt;p&gt;I work for &lt;a href=&quot;https://whitehatsec.com&quot;&gt;WhiteHat Security&lt;/a&gt; and I lead a team called &lt;a href=&quot;http://lotr.wikia.com/wiki/Shire&quot;&gt;The Shire&lt;/a&gt;. Our team primarily builds web applications in &lt;a href=&quot;https://www.ruby-lang.org/en/&quot;&gt;Ruby&lt;/a&gt; on &lt;a href=&quot;http://rubyonrails.org/&quot;&gt;Rails&lt;/a&gt; and we&#39;re based in &lt;a href=&quot;https://www.walkscore.com/score/liberty-ave-and-smithfield-st-pittsburgh-pa-15222&quot;&gt;downtown Pittsburgh&lt;/a&gt;.&lt;/p&gt;
+  <content type="html">&lt;p&gt;&lt;strong&gt;Update:&lt;/strong&gt; We are no longer looking for new team members in Pittsburgh.&lt;/p&gt;
+
+&lt;p&gt;I work for &lt;a href=&quot;https://whitehatsec.com&quot;&gt;WhiteHat Security&lt;/a&gt; and I lead a team called &lt;a href=&quot;http://lotr.wikia.com/wiki/Shire&quot;&gt;The Shire&lt;/a&gt;. Our team primarily builds web applications in &lt;a href=&quot;https://www.ruby-lang.org/en/&quot;&gt;Ruby&lt;/a&gt; on &lt;a href=&quot;http://rubyonrails.org/&quot;&gt;Rails&lt;/a&gt; and we&#39;re based in &lt;a href=&quot;https://www.walkscore.com/score/liberty-ave-and-smithfield-st-pittsburgh-pa-15222&quot;&gt;downtown Pittsburgh&lt;/a&gt;.&lt;/p&gt;
 
 &lt;p&gt;We&#39;re hiring a couple more developers to join our outstanding team. I&#39;m fortunate enough to work with some of the best people in Pittsburgh. Bright, curious, hilarious, and they&#39;re good hackers&lt;sup id=&quot;fnref:hackers&quot;&gt;&lt;a href=&quot;#fn:hackers&quot; class=&quot;footnote&quot;&gt;1&lt;/a&gt;&lt;/sup&gt;, too! We&#39;re interested in talking to programmers of all levels. Don&#39;t shy away if you are interested but have limited experience. We want to hire great people who put in the effort, and &lt;em&gt;you&lt;/em&gt; are hard enough to find as it is.&lt;/p&gt;
 
