@@ -13,6 +13,11 @@ gem 'ruby-oembed'
 
 require 'json'
 require 'open-uri'
-versions = JSON.parse(open('https://pages.github.com/versions.json').read)
+
+versions = begin
+  JSON.parse(open('https://pages.github.com/versions.json').read)
+rescue
+  {'github-pages' => nil}
+end
 
 gem 'github-pages', versions['github-pages']

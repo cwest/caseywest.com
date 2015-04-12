@@ -34,7 +34,11 @@ module Jekyll
       output = super
       if output =~ /\{"\s*(.+?)\s*"\}/m
         @quote = $1.gsub(/'/, '&apos;')
-        return %(<span class='pullquote-#{@align}' data-pullquote='#{@quote}'>#{output.gsub(/\{"\s*|\s*"\}/, '')}</span>)
+        paras = output.split(/\n{2,}/)
+          .map{|para| para.gsub(/\{"\s*|\s*"\}/, '')}
+        paras[0] = %(<span class='pullquote-#{@align}' data-pullquote='#{@quote}'>#{paras[0]}</span>)
+        return paras.join("\n\n")
+        # return %(<span class='pullquote-#{@align}' data-pullquote='#{@quote}'>#{output.gsub(/\{"\s*|\s*"\}/, '')}</span>)
       else
         return "Surround your pullquote like this {\" text to be quoted \"}"
       end
