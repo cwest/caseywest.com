@@ -10,6 +10,8 @@ image:
   creditlink: http://frozen0rb.deviantart.com/art/Ruby-gem-168801472
 ---
 
+**Update:** We are no longer looking for new team members in Pittsburgh.
+
 I work for [WhiteHat Security][whitehat] and I lead a team called [The Shire][shire]. Our team primarily builds web applications in [Ruby] on [Rails] and we're based in [downtown Pittsburgh][pittsburgh].
 
 We're hiring a couple more developers to join our outstanding team. I'm fortunate enough to work with some of the best people in Pittsburgh. Bright, curious, hilarious, and they're good hackers[^hackers], too! We're interested in talking to programmers of all levels. Don't shy away if you are interested but have limited experience. We want to hire great people who put in the effort, and _you_ are hard enough to find as it is.
