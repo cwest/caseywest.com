@@ -38,7 +38,7 @@ Employment History:
     
     Projects:
     * Technical Leadership, Change Agent, Team Building, and HiringBuilt
-      and lead three teams: one DevOps and two Application development
+      and led three teams: one DevOps and two Application development
       teams. Hired the best talent available from within the company,
       across departments, and from around the world. Implemented a
       successful, modern hiring program which reduced waste and offered
