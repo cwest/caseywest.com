@@ -146,6 +146,148 @@
 <article class="hentry">
   <header>
     <div class="entry-meta">
+      <span class="entry-date date published updated"><time datetime="2015-04-19T00:00:00-04:00"><a href="http://caseywest.com/technical-phone-screen-howto/">April 19, 2015</a></time></span><span class="author vcard"><span class="fn"><a href="http://caseywest.com/about/" title="About Casey West">Casey West</a></span></span>
+      
+      <span class="entry-reading-time pull-right">
+        <i class="fa fa-clock-o"></i>
+        
+        Reading time ~6 minutes
+      </span><!-- /.entry-reading-time -->
+      
+    </div><!-- /.entry-meta -->
+    
+      <h1 class="entry-title"><a href="http://caseywest.com/technical-phone-screen-howto/" rel="bookmark" title="Technical Phone Screen HOWTO" itemprop="url">Technical Phone Screen HOWTO</a></h1>
+    
+  </header>
+  <div class="entry-content">
+    <p>You have 30 minutes to guess at the capability and fit of an incoming candidate. How do you do that? You have to assess a few key areas quickly.</p>
+
+<p>Here are my tips for the person conducting the screening, written from the perspective of the inner monologue I have when I do phone screens.</p>
+
+<h2 id="preparation">Preparation</h2>
+
+<p>Skim the resume but mostly ignore it. If a recruiter was involved it's been re-arranged and re-worded to match keywords in your job posting anyway<sup id="fnref:resume"><a href="#fn:resume" class="footnote">1</a></sup>.</p>
+
+<h2 id="opening-questions">Opening Questions</h2>
+
+<blockquote>
+  <p>On your most recent project, which areas did you focus on and contribute to, and <strong>what did you have the most fun with?</strong></p>
+</blockquote>
+
+<p>I'm not asking you to read your resume to me. I've seen it (and mostly ignored it). What I'm looking for here is some technical detail of your contribution. Can you articulate what you actually do? I'm technical, and you're going to be working with me all the time, so I want to near you explain your work so I can understand it.</p>
+
+<p>Even more importantly, hopefully you have enjoyed <em>some</em> aspect of this project. Hopefully enough to tell me about it.</p>
+
+<blockquote>
+  <p><strong>Why <code>$company_i_work_for</code>?</strong></p>
+</blockquote>
+
+<p>I want you to have at least a passing interest in our company. If it's just, <em>"my recruiter told me you had an opening"</em> I'm much less interested in you. Do you know what we do? Have you at least seen our website?</p>
+
+<h2 id="continued-education">Continued Education</h2>
+
+<blockquote>
+  <p><strong>How do you keep up to date with the software landscape?</strong></p>
+</blockquote>
+
+<p>Do you read books or blogs, or subscribe to JavaScript Weekly? Do you listen to podcasts? If you don't show any interest in keeping yourself up to date this won't go well, because it means you'll allow our software to become stale, too. You don't need to be on the bleeding edge or anything, but please have read something related to your work recently.</p>
+
+<blockquote>
+  <p><strong>What is your favorite open source project?</strong> Anything is valid, from a library to a framework to something bigger.</p>
+</blockquote>
+
+<p>This is two-fold. First, I have a bias for open source and I want to hire for that bias. I have a strong bias for building software on top of excellent pre-existing work. <a href="http://en.wikipedia.org/wiki/Not_invented_here">Not Invented Here (NIH) syndrome</a> is bad news and I don't want to hire for it.</p>
+
+<p>Second, something brings you joy in the work you do, right? At some point you've used a tool and been like, "This is the beset thing in the world!" For me that tool is <a href="https://github.com/erkin/ponysay">ponysay</a>, obviously.</p>
+
+<h2 id="testing">Testing</h2>
+
+<blockquote>
+  <p><strong>How do you test your current project?</strong> Do you use BDD? Do you use CI? What's your preferred testing tool?</p>
+</blockquote>
+
+<p>Even if your current project has no tests, I want to hear you be unhappy about that. I want you to know what BDD means, and CI, and use them (or want to use them). Nearly every software context has multiple testing tools to choose from. JavaScript has QUnit, Jasmine, Mocha, and others. Which one do you prefer and why? Details mean you aren't reciting the manual.</p>
+
+<p>I'll be more specific on this one, because it trips up the folks who screen candidates and love testing: <strong>it isn't the candidate's fault if their company doesn't write automated tests so don't hold that against them.</strong></p>
+
+<h2 id="technical-knowledge">Technical Knowledge</h2>
+
+<blockquote>
+  <p><strong>What's your favorite feature of <code>$language_or_framework_you_have_used</code>?</strong> What's your least favorite?</p>
+</blockquote>
+
+<p><em>This question can use information gained from the resume, their recent project at work, or their favorite open source project.</em></p>
+
+<p>You should have answers to both. Something is good and something is bad, and I want to hear your opinion. Hopefully I'll even learn something new. If I disagree with you that'll be an interesting conversation for a couple minutes as we debate.</p>
+
+<blockquote>
+  <p><strong>Have you worked with <code>$language_or_framework_we_are_hiring_for</code>?</strong> Tell me about that.</p>
+</blockquote>
+
+<p>If you've already convinced me you're a polyglot with an open, curious mind, this question isn't as critical but it's still important. I will dig into the details with you about this a bit, and explore what you've been exposed to. This is something I know well, and I'll share with you some of our real challenges in this part of the conversation.</p>
+
+<p>What I'm hoping for is that when I share some of our challenges you have ideas, or questions, or both about how we're addressing them. This is particularly relevant to me, for this job, and it's your primary opportunity to convince me you can help.</p>
+
+<h2 id="tooling">Tooling</h2>
+
+<blockquote>
+  <p><strong>What's your favorite <code>git</code> feature?</strong></p>
+</blockquote>
+
+<p>I want you to know of git. You don't have to prefer it, but you should know of it. If you have only heard of it and had no exposure I'm sure something piqued your interest.</p>
+
+<p>My favorite is the <code>git commit --fixup; git rebase -i --autosquash</code> combo. If you have used SVN I'm sure you can at least tell me better merging is something you want?</p>
+
+<h2 id="development-process">Development Process</h2>
+
+<blockquote>
+  <p><strong>Have you worked on a software team recently? How was that?</strong></p>
+</blockquote>
+
+<p>Working on a team is essential. Having some experience means you're more likely to fit into our culture. If you've spent the last five years in a silo it may be hard to adjust to a highly collaborative environment.</p>
+
+<blockquote>
+  <p>Are you comfortable with agile software development? <strong>What does 'agile' mean to you?</strong></p>
+</blockquote>
+
+<p>Everyone is likely to say yes to the first question. I'm more interested in the answer to the second.</p>
+
+<blockquote>
+  <p>We use code review heavily as part of the development process. <strong>Are you comfortable with transparent, professional critique of your work?</strong> Are you comfortable giving it, too?</p>
+</blockquote>
+
+<p>This is important to us. Part of working on a team, and working with agility, is being highly collaborative and open to exploring ideas. Hesitation in response is ok, because I'm telling you we will criticize your work. However, I'm <em>not</em> telling you we will criticize <em>you</em>. I need to know you understand the difference.</p>
+
+<h2 id="closing-questions">Closing Questions</h2>
+
+<blockquote>
+  <p><strong>What do you want to do next?</strong> Obviously you're looking for a new gig, so what is it you <em>want</em> to be doing?</p>
+</blockquote>
+
+<p>I'm looking for some kind of interest in what you do all day. Enough that you have an idea of what you'd like to be doing next. Do you want to do DevOps? Management? Become a Senior-level developer? Learn Ruby?</p>
+
+<p>If you can't come up with anything then you haven't thought about it. Maybe you're going through the motions of finding a new job. Maybe you're just trying to leave a toxic, disgusting culture. That's OK. Sometimes the answer to this question is, <em>"I want to do the same thing I'm doing now, which I'm great at, for a new company."</em></p>
+
+<blockquote>
+  <p><strong>Do you have any questions for me?</strong></p>
+</blockquote>
+
+<p>Please ask me something, anything. If you have zero questions you aren't really that interested in working with me. There's no way I satisfied every curiosity in this short phone call.</p>
+
+<div class="footnotes">
+  <ol>
+    <li id="fn:resume">
+      <p>I am sad about this advice because I'm actually quite happy with <a href="/resume/">my resume</a> as a piece of writing. <a href="#fnref:resume" class="reversefootnote">&#8617;</a></p>
+    </li>
+  </ol>
+</div>
+
+  </div><!-- /.entry-content -->
+</article><!-- /.hentry -->
+
+<article class="hentry">
+  <header>
+    <div class="entry-meta">
       <span class="entry-date date published updated"><time datetime="2015-04-12T00:00:00-04:00"><a href="http://caseywest.com/a-call-for-more-tech-leadership/">April 12, 2015</a></time></span><span class="author vcard"><span class="fn"><a href="http://caseywest.com/about/" title="About Casey West">Casey West</a></span></span>
       
       <span class="entry-reading-time pull-right">
@@ -1057,82 +1199,6 @@ Turns out, by enabling the <code>cache</code> in Travis I caused RuboCop to lose
 
 <p>Be careful when modifying RuboCop's configuration that you copy what you need to keep from the defaults, because defining an entry in your project will discard the them, not merge them.</p>
 
-
-  </div><!-- /.entry-content -->
-</article><!-- /.hentry -->
-
-<article class="hentry">
-  <header>
-    <div class="entry-meta">
-      <span class="entry-date date published updated"><time datetime="2015-01-04T00:00:00-05:00"><a href="http://caseywest.com/theres-still-no-silver-bullet/">January 04, 2015</a></time></span><span class="author vcard"><span class="fn"><a href="http://caseywest.com/about/" title="About Casey West">Casey West</a></span></span>
-      
-      <span class="entry-reading-time pull-right">
-        <i class="fa fa-clock-o"></i>
-        
-        Reading time ~5 minutes
-      </span><!-- /.entry-reading-time -->
-      
-    </div><!-- /.entry-meta -->
-    
-      <h1 class="entry-title"><a href="http://caseywest.com/theres-still-no-silver-bullet/" rel="bookmark" title="There's Still No Silver Bullet (2006)" itemprop="url">There's Still No Silver Bullet (2006)</a></h1>
-    
-  </header>
-  <div class="entry-content">
-    <blockquote>
-  <p>Originally published by me on <a href="https://web.archive.org/web/20070729012936/http://blog.caseywest.com/2006/12/theres_still_no_silver_bullet_1.html">December 18, 2006</a> and reprinted here as-is.</p>
-</blockquote>
-
-<p>I recently read <a href="http://en.wikipedia.org/wiki/Fred_Brooks">Frederick P. Brooks, Jr.'s</a> essay <a href="http://faculty.salisbury.edu/~xswang/Research/Papers/SERelated/no-silver-bullet.pdf">No Silver Bullet: Essence and Accidents of Software Engineering</a>. Brooks wrote this paper 20 years ago and it still rings true today. I like the whole essay and encourage you to read it if you haven't already.</p>
-
-<p>Brooks is an <a href="http://www.brainyquote.com/quotes/authors/f/frederick_p_brooks_jr.html">oft quoted</a> writer. I'm going to indulge in the practice by pointing out a few things from this essay that I think will always be true.</p>
-
-<blockquote>
-  <p>Likewise, a scaling-up of a software entity is not merely a repetition of the same elements in larger sizes, it is necessarily an increase in the number of different elements. In most cases, the elements interact with each other in some nonlinear fashion, and the complexity of the whole increases much more than linearly.</p>
-
-  <p>The complexity of software is an essential property, not an accidental one. Hence, descriptions of a software entity that abstract away its complexity often abstract away its essence.</p>
-</blockquote>
-
-<p>I really like this, because today there are <a href="http://www.rubyonrails.org/">a lot</a> of <a href="http://www.djangoproject.com/">arguably excellent</a> <a href="http://www.turbogears.org/">attempts</a> to <a href="http://jifty.org/">abstract complexity</a> in <a href="http://www.ning.com/">modern application development</a>. Many software developers look to frameworks and application environments to manage the complexity of software development for them. These developers expect incredible gains in productivity by using a tool that makes building applications "really easy." Don't be fooled. Tools help you build things, yes, but don't expect to get a pony when you install Ruby on Rails (although, as it happens, you do get a pony when you install Jifty). Frameworks are not 100% tools, they're 80% tools. If they were 100% tools then you wouldn't be making applications you'd be writing configuration files. What kind of programmer writes configuration files for a fun?</p>
-
-<blockquote>
-  <p>In many cases, the software must conform because it is the most recent arrival on the scene. In others, it must conform because it is perceived as the most conformable. But in all cases, much complexity comes from conformation to other interfaces; this complexity cannot be simplified out by any redesign of the software alone.</p>
-</blockquote>
-
-<p>This most obvious form of complexity through conformity in web applications is browser compatibility. I don't think that is the scenario that takes the cake, however. Anything relating to or interfacing with email clients increases complexity in an extremely non-linear fashion. There are other issues, too, such as representing information for RSS and Atom feeds. A lot of cruft exists around the edges of software because it must conform to its environment. You cannot simplify conformity within your software alone.</p>
-
-<blockquote>
-  <p>In spite of progress in restricting and simplifying the structures of software, they remain inherently unvisualizable, and thus do not permit the mind to use some of its most powerful conceptual tools. This lack not only impedes the process of design within one mind, it severely hinders communication among minds.</p>
-</blockquote>
-
-<p>If you've ever worked with someone else when writing software you know this to be true. The inability to visualize software is a serious friction point between team members.</p>
-
-<p>When asked <a href="https://web.archive.org/web/20070712044136/http://www.stifflog.com//2006//10//16//stiff-asks-great-programmers-answer//">"What do you think makes some programmers 10 or 100 times more productive than othes?"</a> <a href="http://norvig.com/">Peter Norvig</a> answers, "The ability to fit the whole problem into their heads at one time." That's often a critical ability and it speaks to Brooks's admission that software design is hard enough within a single mind. <a href="http://www.loudthinking.com/">David Heinemeier Hansson</a> has a complimentary answer to the same question, "The ability to restate hard problems as easy ones." Having the ability to clearly communicate software design is important, yes. I would add to these answers, "The ability to explicitly articulate the design of complex software." Having these attributes brings you closer to making the invisible visible.</p>
-
-<p>Imagine how important these skills must be if you're building a geographically distributed team like <a href="http://37signals.com">37signals</a> or <a href="http://socialtext.com">Socialtext</a>? The lowest common denominator for being hired on these teams is likely expressed in the previous paragraph.</p>
-
-<blockquote>
-  <p>I do not believe we will find productivity magic here. Program verification is a very powerful concept, and it will be very important for such things as secure operating-system kernels. The technology does not promise, however, to save labor. Verifications are so much work that only a few substantial programs have ever been verified.</p>
-</blockquote>
-
-<p>20 years after writing this Brooks is still right. In context, Brooks is talking about "test first" methodologies here, asserting that testing during design and specification will not save you labor. He goes on:</p>
-
-<blockquote>
-  <p>More seriously, even perfect program verification can only establish that a program meets its specification. The hardest part of the software task is arriving at a complete and consistent specification, and much of the essence of building a program is in fact the debugging of the specification.</p>
-</blockquote>
-
-<p>In my opinion this statement is a key gem. I interpret this statement to be a nod to iterative development, suggesting that the imperfect art of testing our assumptions over time is a large part of the essence of software development. One could bastardize this as "release early, release often." I feel that's an oversimplification that leaves large room for error.</p>
-
-<p>Taking time to design software is critical. I agree with <a href="http://www.joelonsoftware.com/articles/fog0000000036.html">Joel</a> when he says "Programmers and software engineers who dive into code without writing a spec tend to think they're cool gunslingers, shooting from the hip. They're not. They are terribly unproductive. They write bad code and produce shoddy software, and they threaten their projects by taking giant risks which are completely uncalled for."</p>
-
-<p>Let's skip to the end, to the real message within the message of the essence of software development:</p>
-
-<blockquote>
-  <p>Hence, although I strongly support the technology-transfer and curriculumdevelopment efforts now under way, I think the most important single effort we can mount is to develop ways to grow great designers.</p>
-
-  <p>No software organization can ignore this challenge. Good managers, scarce though they be, are no scarcer than good designers. Great designers and great managers are both very rare. Most organizations spend considerable effort in finding and cultivating the management prospects; I know of none that spends equal effort in finding and developing the great designers upon whom the technical excellence of the products will ultimately depend.</p>
-</blockquote>
-
-<p>This, I believe, is the most important advancement since Brooks wrote his paper. Organizations have recognized the need to grow great software designers. As a result the pace of development and product creation has increased dramatically. The state of the world is much better now than 1986 but we still have a long way to go.</p>
 
   </div><!-- /.entry-content -->
 </article><!-- /.hentry -->

@@ -4,13 +4,151 @@
 <generator uri="https://github.com/mojombo/jekyll">Jekyll</generator>
 <link rel="self" type="application/atom+xml" href="http://caseywest.com/feed.xml" />
 <link rel="alternate" type="text/html" href="http://caseywest.com" />
-<updated>2015-04-12T23:25:35-04:00</updated>
+<updated>2015-04-19T16:41:50-04:00</updated>
 <id>http://caseywest.com/</id>
 <author>
   <name>Casey West</name>
   <uri>http://caseywest.com/</uri>
   <email></email>
 </author>
+
+
+<entry>
+  <title type="html"><![CDATA[Technical Phone Screen HOWTO]]></title>
+ <link rel="alternate" type="text/html" href="http://caseywest.com/technical-phone-screen-howto/" />
+  <id>http://caseywest.com/technical-phone-screen-howto</id>
+  <updated>2015-04-19 16:11:53 -0400T00:00:00-00:00</updated>
+  <published>2015-04-19T00:00:00-04:00</published>
+  
+  <author>
+    <name>Casey West</name>
+    <uri>http://caseywest.com</uri>
+    <email></email>
+  </author>
+  <content type="html">&lt;p&gt;You have 30 minutes to guess at the capability and fit of an incoming candidate. How do you do that? You have to assess a few key areas quickly.&lt;/p&gt;
+
+&lt;p&gt;Here are my tips for the person conducting the screening, written from the perspective of the inner monologue I have when I do phone screens.&lt;/p&gt;
+
+&lt;h2 id=&quot;preparation&quot;&gt;Preparation&lt;/h2&gt;
+
+&lt;p&gt;Skim the resume but mostly ignore it. If a recruiter was involved it&#39;s been re-arranged and re-worded to match keywords in your job posting anyway&lt;sup id=&quot;fnref:resume&quot;&gt;&lt;a href=&quot;#fn:resume&quot; class=&quot;footnote&quot;&gt;1&lt;/a&gt;&lt;/sup&gt;.&lt;/p&gt;
+
+&lt;h2 id=&quot;opening-questions&quot;&gt;Opening Questions&lt;/h2&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;On your most recent project, which areas did you focus on and contribute to, and &lt;strong&gt;what did you have the most fun with?&lt;/strong&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;I&#39;m not asking you to read your resume to me. I&#39;ve seen it (and mostly ignored it). What I&#39;m looking for here is some technical detail of your contribution. Can you articulate what you actually do? I&#39;m technical, and you&#39;re going to be working with me all the time, so I want to near you explain your work so I can understand it.&lt;/p&gt;
+
+&lt;p&gt;Even more importantly, hopefully you have enjoyed &lt;em&gt;some&lt;/em&gt; aspect of this project. Hopefully enough to tell me about it.&lt;/p&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;&lt;strong&gt;Why &lt;code&gt;$company_i_work_for&lt;/code&gt;?&lt;/strong&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;I want you to have at least a passing interest in our company. If it&#39;s just, &lt;em&gt;&quot;my recruiter told me you had an opening&quot;&lt;/em&gt; I&#39;m much less interested in you. Do you know what we do? Have you at least seen our website?&lt;/p&gt;
+
+&lt;h2 id=&quot;continued-education&quot;&gt;Continued Education&lt;/h2&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;&lt;strong&gt;How do you keep up to date with the software landscape?&lt;/strong&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;Do you read books or blogs, or subscribe to JavaScript Weekly? Do you listen to podcasts? If you don&#39;t show any interest in keeping yourself up to date this won&#39;t go well, because it means you&#39;ll allow our software to become stale, too. You don&#39;t need to be on the bleeding edge or anything, but please have read something related to your work recently.&lt;/p&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;&lt;strong&gt;What is your favorite open source project?&lt;/strong&gt; Anything is valid, from a library to a framework to something bigger.&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;This is two-fold. First, I have a bias for open source and I want to hire for that bias. I have a strong bias for building software on top of excellent pre-existing work. &lt;a href=&quot;http://en.wikipedia.org/wiki/Not_invented_here&quot;&gt;Not Invented Here (NIH) syndrome&lt;/a&gt; is bad news and I don&#39;t want to hire for it.&lt;/p&gt;
+
+&lt;p&gt;Second, something brings you joy in the work you do, right? At some point you&#39;ve used a tool and been like, &quot;This is the beset thing in the world!&quot; For me that tool is &lt;a href=&quot;https://github.com/erkin/ponysay&quot;&gt;ponysay&lt;/a&gt;, obviously.&lt;/p&gt;
+
+&lt;h2 id=&quot;testing&quot;&gt;Testing&lt;/h2&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;&lt;strong&gt;How do you test your current project?&lt;/strong&gt; Do you use BDD? Do you use CI? What&#39;s your preferred testing tool?&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;Even if your current project has no tests, I want to hear you be unhappy about that. I want you to know what BDD means, and CI, and use them (or want to use them). Nearly every software context has multiple testing tools to choose from. JavaScript has QUnit, Jasmine, Mocha, and others. Which one do you prefer and why? Details mean you aren&#39;t reciting the manual.&lt;/p&gt;
+
+&lt;p&gt;I&#39;ll be more specific on this one, because it trips up the folks who screen candidates and love testing: &lt;strong&gt;it isn&#39;t the candidate&#39;s fault if their company doesn&#39;t write automated tests so don&#39;t hold that against them.&lt;/strong&gt;&lt;/p&gt;
+
+&lt;h2 id=&quot;technical-knowledge&quot;&gt;Technical Knowledge&lt;/h2&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;&lt;strong&gt;What&#39;s your favorite feature of &lt;code&gt;$language_or_framework_you_have_used&lt;/code&gt;?&lt;/strong&gt; What&#39;s your least favorite?&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;&lt;em&gt;This question can use information gained from the resume, their recent project at work, or their favorite open source project.&lt;/em&gt;&lt;/p&gt;
+
+&lt;p&gt;You should have answers to both. Something is good and something is bad, and I want to hear your opinion. Hopefully I&#39;ll even learn something new. If I disagree with you that&#39;ll be an interesting conversation for a couple minutes as we debate.&lt;/p&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;&lt;strong&gt;Have you worked with &lt;code&gt;$language_or_framework_we_are_hiring_for&lt;/code&gt;?&lt;/strong&gt; Tell me about that.&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;If you&#39;ve already convinced me you&#39;re a polyglot with an open, curious mind, this question isn&#39;t as critical but it&#39;s still important. I will dig into the details with you about this a bit, and explore what you&#39;ve been exposed to. This is something I know well, and I&#39;ll share with you some of our real challenges in this part of the conversation.&lt;/p&gt;
+
+&lt;p&gt;What I&#39;m hoping for is that when I share some of our challenges you have ideas, or questions, or both about how we&#39;re addressing them. This is particularly relevant to me, for this job, and it&#39;s your primary opportunity to convince me you can help.&lt;/p&gt;
+
+&lt;h2 id=&quot;tooling&quot;&gt;Tooling&lt;/h2&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;&lt;strong&gt;What&#39;s your favorite &lt;code&gt;git&lt;/code&gt; feature?&lt;/strong&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;I want you to know of git. You don&#39;t have to prefer it, but you should know of it. If you have only heard of it and had no exposure I&#39;m sure something piqued your interest.&lt;/p&gt;
+
+&lt;p&gt;My favorite is the &lt;code&gt;git commit --fixup; git rebase -i --autosquash&lt;/code&gt; combo. If you have used SVN I&#39;m sure you can at least tell me better merging is something you want?&lt;/p&gt;
+
+&lt;h2 id=&quot;development-process&quot;&gt;Development Process&lt;/h2&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;&lt;strong&gt;Have you worked on a software team recently? How was that?&lt;/strong&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;Working on a team is essential. Having some experience means you&#39;re more likely to fit into our culture. If you&#39;ve spent the last five years in a silo it may be hard to adjust to a highly collaborative environment.&lt;/p&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;Are you comfortable with agile software development? &lt;strong&gt;What does &#39;agile&#39; mean to you?&lt;/strong&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;Everyone is likely to say yes to the first question. I&#39;m more interested in the answer to the second.&lt;/p&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;We use code review heavily as part of the development process. &lt;strong&gt;Are you comfortable with transparent, professional critique of your work?&lt;/strong&gt; Are you comfortable giving it, too?&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;This is important to us. Part of working on a team, and working with agility, is being highly collaborative and open to exploring ideas. Hesitation in response is ok, because I&#39;m telling you we will criticize your work. However, I&#39;m &lt;em&gt;not&lt;/em&gt; telling you we will criticize &lt;em&gt;you&lt;/em&gt;. I need to know you understand the difference.&lt;/p&gt;
+
+&lt;h2 id=&quot;closing-questions&quot;&gt;Closing Questions&lt;/h2&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;&lt;strong&gt;What do you want to do next?&lt;/strong&gt; Obviously you&#39;re looking for a new gig, so what is it you &lt;em&gt;want&lt;/em&gt; to be doing?&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;I&#39;m looking for some kind of interest in what you do all day. Enough that you have an idea of what you&#39;d like to be doing next. Do you want to do DevOps? Management? Become a Senior-level developer? Learn Ruby?&lt;/p&gt;
+
+&lt;p&gt;If you can&#39;t come up with anything then you haven&#39;t thought about it. Maybe you&#39;re going through the motions of finding a new job. Maybe you&#39;re just trying to leave a toxic, disgusting culture. That&#39;s OK. Sometimes the answer to this question is, &lt;em&gt;&quot;I want to do the same thing I&#39;m doing now, which I&#39;m great at, for a new company.&quot;&lt;/em&gt;&lt;/p&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;&lt;strong&gt;Do you have any questions for me?&lt;/strong&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;Please ask me something, anything. If you have zero questions you aren&#39;t really that interested in working with me. There&#39;s no way I satisfied every curiosity in this short phone call.&lt;/p&gt;
+
+&lt;div class=&quot;footnotes&quot;&gt;
+  &lt;ol&gt;
+    &lt;li id=&quot;fn:resume&quot;&gt;
+      &lt;p&gt;I am sad about this advice because I&#39;m actually quite happy with &lt;a href=&quot;/resume/&quot;&gt;my resume&lt;/a&gt; as a piece of writing. &lt;a href=&quot;#fnref:resume&quot; class=&quot;reversefootnote&quot;&gt;&amp;#8617;&lt;/a&gt;&lt;/p&gt;
+    &lt;/li&gt;
+  &lt;/ol&gt;
+&lt;/div&gt;
+
+  &lt;p&gt;&lt;a href=&quot;http://caseywest.com/technical-phone-screen-howto/&quot;&gt;Technical Phone Screen HOWTO&lt;/a&gt; was originally published by Casey West at &lt;a href=&quot;http://caseywest.com&quot;&gt;The consensus-seeking architect.&lt;/a&gt; on April 19, 2015.&lt;/p&gt;</content>
+</entry>
 
 
 <entry>
