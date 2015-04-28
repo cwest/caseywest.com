@@ -43,13 +43,13 @@ Employment History:
       across departments, and from around the world. Implemented a
       successful, modern hiring program which reduced waste and offered
       high levels of confidence in fit of candidates for culture,
-      experience, and skill set. Hired eight engineers using my process.
-      Rebuilt the SDLC from the ground up to allow continuous delivery
-      with a streamlined, agile, lean process and a culture of trust and
-      shared responsibility. Made it successful by implementing
-      12-factor apps, an automated software delivery pipeline and
-      increased collaboration and transparency with GitHub Enterprise,
-      HipChat, and New Relic.
+      experience, and skill set. Hired eight engineers and increased
+      engineering diversity using my process. Rebuilt the SDLC from the
+      ground up to allow continuous delivery with a streamlined, agile,
+      lean process and a culture of trust and shared responsibility.
+      Made it successful by implementing 12-factor apps, an automated
+      software delivery pipeline and increased collaboration and
+      transparency with GitHub Enterprise, HipChat, and New Relic.
     * DevOps, Developer Tools, Infrastructure, and AutomationLead a team
       of DevOps engineers, known as Shire Ops. We quickly converted the
       engineering organization from Subversion to GitHub Enterprise and
