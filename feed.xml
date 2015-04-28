@@ -4,7 +4,7 @@
 <generator uri="https://github.com/mojombo/jekyll">Jekyll</generator>
 <link rel="self" type="application/atom+xml" href="http://caseywest.com/feed.xml" />
 <link rel="alternate" type="text/html" href="http://caseywest.com" />
-<updated>2015-04-27T21:47:25-04:00</updated>
+<updated>2015-04-27T21:51:33-04:00</updated>
 <id>http://caseywest.com/</id>
 <author>
   <name>Casey West</name>
@@ -1114,7 +1114,7 @@ Turns out, by enabling the &lt;code&gt;cache&lt;/code&gt; in Travis I caused Rub
 &lt;p&gt;Let&#39;s skip to the end, to the real message within the message of the essence of software development:&lt;/p&gt;
 
 &lt;blockquote&gt;
-  &lt;p&gt;Hence, although I strongly support the technology-transfer and curriculumdevelopment efforts now under way, I think the most important single effort we can mount is to develop ways to grow great designers.&lt;/p&gt;
+  &lt;p&gt;Hence, although I strongly support the technology-transfer and curriculum development efforts now under way, I think the most important single effort we can mount is to develop ways to grow great designers.&lt;/p&gt;
 
   &lt;p&gt;No software organization can ignore this challenge. Good managers, scarce though they be, are no scarcer than good designers. Great designers and great managers are both very rare. Most organizations spend considerable effort in finding and cultivating the management prospects; I know of none that spends equal effort in finding and developing the great designers upon whom the technical excellence of the products will ultimately depend.&lt;/p&gt;
 &lt;/blockquote&gt;
