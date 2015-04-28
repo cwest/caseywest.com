@@ -57,7 +57,7 @@ Taking time to design software is critical. I agree with [Joel] when he says "Pr
 
 Let's skip to the end, to the real message within the message of the essence of software development:
 
-> Hence, although I strongly support the technology-transfer and curriculumdevelopment efforts now under way, I think the most important single effort we can mount is to develop ways to grow great designers.
+> Hence, although I strongly support the technology-transfer and curriculum development efforts now under way, I think the most important single effort we can mount is to develop ways to grow great designers.
 > 
 > No software organization can ignore this challenge. Good managers, scarce though they be, are no scarcer than good designers. Great designers and great managers are both very rare. Most organizations spend considerable effort in finding and cultivating the management prospects; I know of none that spends equal effort in finding and developing the great designers upon whom the technical excellence of the products will ultimately depend.
 
