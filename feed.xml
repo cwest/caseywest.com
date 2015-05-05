@@ -4,13 +4,124 @@
 <generator uri="https://github.com/mojombo/jekyll">Jekyll</generator>
 <link rel="self" type="application/atom+xml" href="http://caseywest.com/feed.xml" />
 <link rel="alternate" type="text/html" href="http://caseywest.com" />
-<updated>2015-04-27T21:51:33-04:00</updated>
+<updated>2015-05-04T22:04:49-04:00</updated>
 <id>http://caseywest.com/</id>
 <author>
   <name>Casey West</name>
   <uri>http://caseywest.com/</uri>
   <email></email>
 </author>
+
+
+<entry>
+  <title type="html"><![CDATA[The Help Timer]]></title>
+ <link rel="alternate" type="text/html" href="http://caseywest.com/the-help-timer/" />
+  <id>http://caseywest.com/the-help-timer</id>
+  <updated>2015-05-03 15:05:20 -0400T00:00:00-00:00</updated>
+  <published>2015-05-03T00:00:00-04:00</published>
+  
+  <author>
+    <name>Casey West</name>
+    <uri>http://caseywest.com</uri>
+    <email></email>
+  </author>
+  <content type="html">&lt;p&gt;Asking for help can be hard for some of us. For others it may come too quickly. Wait an hour&lt;sup id=&quot;fnref:anhour&quot;&gt;&lt;a href=&quot;#fn:anhour&quot; class=&quot;footnote&quot;&gt;1&lt;/a&gt;&lt;/sup&gt; to ask for help. No more, no less.&lt;/p&gt;
+
+&lt;p&gt;This is advice I give to my team members regardless of experience, background, or confidence level. There are two primary behaviors when asking for help. Waiting too long or not waiting long enough. These behaviors are opposite but the advice is the same: one hour. This is how it usually sounds.&lt;/p&gt;
+
+&lt;table&gt;
+  &lt;thead&gt;
+    &lt;tr&gt;
+      &lt;th style=&quot;text-align: left&quot;&gt;Head Banging&lt;/th&gt;
+      &lt;th style=&quot;text-align: left&quot;&gt;Hand Throwing&lt;/th&gt;
+    &lt;/tr&gt;
+  &lt;/thead&gt;
+  &lt;tbody&gt;
+    &lt;tr&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;I know you want to figure this out on your own. Given enough time you surely can. Try this:&lt;/td&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;I know you&#39;re confused. This is a new problem! You&#39;ve never done this before! Try this:&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt; &lt;/td&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt; &lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;&lt;em&gt;When you find yourself beating your head on the wall set a timer for an hour. When time is up ask for help immediately. We&#39;re here for you and you&#39;ll get that help and move on to the next challenge.&lt;/em&gt;&lt;/td&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;&lt;em&gt;When you find yourself giving up and throwing your hands in the air set a timer for an hour. When time is up ask for help immediately. We&#39;re here for you and you&#39;ll get that help and move on to the next challenge.&lt;/em&gt;&lt;/td&gt;
+    &lt;/tr&gt;
+  &lt;/tbody&gt;
+&lt;/table&gt;
+
+&lt;p&gt;It doesn&#39;t matter which stereotypical behavior you identify with. Whether you&#39;re giving in after an hour or forcing yourself to wait an hour it&#39;s time well spent.&lt;/p&gt;
+
+&lt;h3 id=&quot;the-benefit-of-waiting-one-hour&quot;&gt;The Benefit of Waiting One Hour&lt;/h3&gt;
+
+&lt;p&gt;You will read so much about the technologies, libraries, and protocols giving you trouble. Maybe you won&#39;t find the answer but you will learn a ton anyway and that knowledge has value.&lt;/p&gt;
+
+&lt;figure&gt;
+    &lt;img src=&quot;/images/for-posts/tabs.png&quot; alt=&quot;Tab overload!&quot; /&gt;
+    &lt;figcaption&gt;
+        This is what struggling for an hour looks like when you&#39;re doing it properly.
+    &lt;/figcaption&gt;
+&lt;/figure&gt;
+
+&lt;h3 id=&quot;the-benefit-of-asking-for-help&quot;&gt;The Benefit of Asking for Help&lt;/h3&gt;
+
+&lt;p&gt;There&#39;s an inflection point when struggle becomes spinning your wheels and wasted effort. There&#39;s no honor lost in stopping and asking for help. At some point it&#39;s time to bring other brains into this. Your team is your support system. Use them!&lt;/p&gt;
+
+&lt;figure&gt;
+    &lt;img src=&quot;/images/for-posts/tabs.png&quot; alt=&quot;Tab overload!&quot; /&gt;
+    &lt;figcaption&gt;
+        After an hour of your browser looking like this it&#39;s time to ask for help.
+    &lt;/figcaption&gt;
+&lt;/figure&gt;
+
+&lt;h3 id=&quot;making-it-safe&quot;&gt;Making it Safe&lt;/h3&gt;
+
+&lt;p&gt;&lt;em&gt;The Help Timer&lt;/em&gt; works best in a healthy environment. There&#39;s a give and take to it. If you wish a teammate would ask for help sooner, or another teammate would spend a little more time on the problem before asking for help, you have to do your part to make that a safe thing to do.&lt;/p&gt;
+
+&lt;p&gt;Practicing this approach to asking for help requires trust in your teammates. It&#39;s the foundation of any healthy team.&lt;sup id=&quot;fnref:fivedysfunctions&quot;&gt;&lt;a href=&quot;#fn:fivedysfunctions&quot; class=&quot;footnote&quot;&gt;2&lt;/a&gt;&lt;/sup&gt; Trust is built through practice. It&#39;s built through the continual reception of positive responses to acts of vulnerability.&lt;/p&gt;
+
+&lt;p&gt;When your teammate exhibits vulnerability you must respond positively.&lt;/p&gt;
+
+&lt;h3 id=&quot;an-act-of-vulnerability&quot;&gt;An Act of Vulnerability&lt;/h3&gt;
+
+&lt;p&gt;If this resonates with you it might feel uncomfortable. I get it. Asking for help is a vulnerable act. So is struggling! Being vulnerable can be hard, and it can feel alien, but it&#39;s worth it! I encourage you to watch the following &lt;a href=&quot;http://www.ted.com/talks/brene_brown_on_vulnerability&quot;&gt;excellent TED talk&lt;/a&gt; by &lt;a href=&quot;https://twitter.com/BreneBrown&quot;&gt;Brené Brown&lt;/a&gt; (&lt;a href=&quot;http://www.ted.com/talks/brene_brown_on_vulnerability/transcript?language=en&quot;&gt;full transcript.&lt;/a&gt;). She describes the benefits of embracing vulnerability.&lt;/p&gt;
+
+&lt;iframe src=&quot;https://embed-ssl.ted.com/talks/brene_brown_on_vulnerability.html&quot; width=&quot;640&quot; height=&quot;360&quot; frameborder=&quot;0&quot; scrolling=&quot;no&quot; webkitallowfullscreen=&quot;&quot; mozallowfullscreen=&quot;&quot; allowfullscreen=&quot;&quot;&gt;&lt;/iframe&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;&quot;There was only one variable that separated the people who have a strong sense of love and belonging and the people who really struggle for it. And that was, the people who have a strong sense of love and belonging believe they&#39;re worthy of love and belonging. That&#39;s it. They believe they&#39;re worthy.&quot;&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;table&gt;
+  &lt;thead&gt;
+    &lt;tr&gt;
+      &lt;th style=&quot;text-align: left&quot;&gt;Head Banging&lt;/th&gt;
+      &lt;th style=&quot;text-align: left&quot;&gt;Hand Throwing&lt;/th&gt;
+    &lt;/tr&gt;
+  &lt;/thead&gt;
+  &lt;tbody&gt;
+    &lt;tr&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;If you tried hard and still can&#39;t figure it out &lt;em&gt;it&#39;s okay and &lt;strong&gt;you are worthy&lt;/strong&gt; of help.&lt;/em&gt;&lt;/td&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;If you&#39;re lost even after looking at a bunch of maps &lt;em&gt;it&#39;s okay and &lt;strong&gt;you are worthy&lt;/strong&gt; of help.&lt;/em&gt;&lt;/td&gt;
+    &lt;/tr&gt;
+  &lt;/tbody&gt;
+&lt;/table&gt;
+
+&lt;div class=&quot;footnotes&quot;&gt;
+  &lt;ol&gt;
+    &lt;li id=&quot;fn:anhour&quot;&gt;
+      &lt;p&gt;It doesn&#39;t &lt;em&gt;have&lt;/em&gt; to be an hour. 30 minutes, a whole day… you pick. &lt;a href=&quot;#fnref:anhour&quot; class=&quot;reversefootnote&quot;&gt;&amp;#8617;&lt;/a&gt;&lt;/p&gt;
+    &lt;/li&gt;
+    &lt;li id=&quot;fn:fivedysfunctions&quot;&gt;
+      &lt;p&gt;I strongly recommend reading &lt;a href=&quot;https://en.wikipedia.org/wiki/The_Five_Dysfunctions_of_a_Team&quot;&gt;The Five Dysfunctions of a Team by Patrick Lencioni&lt;/a&gt;. When there&#39;s an absence of trust we aren&#39;t willing to be vulnerable within a group. Great culture builds on trust and vulnerability. &lt;a href=&quot;#fnref:fivedysfunctions&quot; class=&quot;reversefootnote&quot;&gt;&amp;#8617;&lt;/a&gt;&lt;/p&gt;
+    &lt;/li&gt;
+  &lt;/ol&gt;
+&lt;/div&gt;
+
+  &lt;p&gt;&lt;a href=&quot;http://caseywest.com/the-help-timer/&quot;&gt;The Help Timer&lt;/a&gt; was originally published by Casey West at &lt;a href=&quot;http://caseywest.com&quot;&gt;The consensus-seeking architect.&lt;/a&gt; on May 03, 2015.&lt;/p&gt;</content>
+</entry>
 
 
 <entry>
