@@ -152,6 +152,7 @@ svg:not(:root) {
 table {
   //width: 100%;
   td,th {
+    vertical-align: top;
     padding-right: 1.5em;
     &:last-child {
       padding-right: 0;
