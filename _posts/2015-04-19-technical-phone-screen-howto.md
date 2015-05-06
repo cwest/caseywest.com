@@ -18,7 +18,7 @@ Skim the resume but mostly ignore it. If a recruiter was involved it's been re-a
 
 > On your most recent project, which areas did you focus on and contribute to, and **what did you have the most fun with?**
 
-I'm not asking you to read your resume to me. I've seen it (and mostly ignored it). What I'm looking for here is some technical detail of your contribution. Can you articulate what you actually do? I'm technical, and you're going to be working with me all the time, so I want to near you explain your work so I can understand it.
+I'm not asking you to read your resume to me. I've seen it (and mostly ignored it). What I'm looking for here is some technical detail of your contribution. Can you articulate what you actually do? I'm technical, and you're going to be working with me all the time, so I want to hear you explain your work so I can understand it.
 
 Even more importantly, hopefully you have enjoyed _some_ aspect of this project. Hopefully enough to tell me about it.
 
