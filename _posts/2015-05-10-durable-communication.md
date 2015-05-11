@@ -149,7 +149,7 @@ Camera
 
 There are three important features of any effective audio/video communication tool: the ability to have one-on-one calls, the ability to conduct group conference calls, and the ability to do either in 60 seconds or less. This collection of features isn't always available in a single tool, and that's okay. Use a few if you have to. It'll pay off.
 
-Some options for deploying audio/video communication include [HipChat] \(one on one), [Webex], [talky], [sqwiggle], and [Google Hangouts].
+Some options for deploying audio/video communication include [HipChat] \(one on one), [Skype], [Webex], [talky], [sqwiggle], and [Google Hangouts].
 
 ## Screen Sharing
 
@@ -158,7 +158,7 @@ Remote pair programming... troublshooting... the hallway test...
 There are three important features are the same as for audio/video calls: one-on-one sharing, group sharing, and the ability to do either in 60 seconds or less.
 
 
-Some options for deploying screen sharing include [Screenhero] \(for [Slack]), [HipChat], and [Webex].
+Some options for deploying screen sharing include [Screenhero] \(for [Slack]), [HipChat], [join.me], and [Webex].
 
 ## Development Tools
 
@@ -184,9 +184,22 @@ More on commit messages:
 
 ### Code Review
 
-Written, asynchronous code review is a central part of any solid development cycle.
+Written, asynchronous code review is a central part of any solid development cycle. Don't take my word for it. From the excellent book, [Code Complete](http://www.amazon.com/Code-Complete-Practical-Handbook-Construction/dp/0735619670):
 
-[GitHub Pull Requests], [Gerrit], [ReviewBoard], [Code Collaborator]
+> …software testing alone has limited effectiveness -- the average defect detection rate is only 25 percent for unit testing, 35 percent for function testing, and 45 percent for integration testing. In contrast, **the average effectiveness of design and code inspections are 55 and 60 percent.** Case studies of review results have been impressive:
+>
+> * In a software-maintenance organization, 55 percent of one-line maintenance changes were in error before code reviews were introduced. After reviews were introduced, only 2 percent of the changes were in error. When all changes were considered, 95 percent were correct the first time after reviews were introduced. Before reviews were introduced, under 20 percent were correct the first time.
+> * In a group of 11 programs developed by the same group of people, the first 5 were developed without reviews. The remaining 6 were developed with reviews. After all the programs were released to production, the first 5 had an average of 4.5 errors per 100 lines of code. The 6 that had been inspected had an average of only 0.82 errors per 100. Reviews cut the errors by over 80 percent.
+> * The Aetna Insurance Company found 82 percent of the errors in a program by using inspections and was able to decrease its development resources by 20 percent.
+> * IBM's 500,000 line Orbit project used 11 levels of inspections. It was delivered early and had only about 1 percent of the errors that would normally be expected.
+> * A study of an organization at AT&T with more than 200 people reported a 14 percent increase in productivity and a 90 percent decrease in defects after the organization introduced reviews.
+> * Jet Propulsion Laboratories estimates that it saves about $25,000 per inspection by finding and fixing defects at an early stage.
+
+Copied from [Coding Horror's copy](http://blog.codinghorror.com/code-reviews-just-do-it/).
+
+Yes, you still need to write tests. Automated testing is not enough to find defects early. Combining them with code review is a winning strategy. Code review reduces defects, increases learning and knowledge sharing, and serves as a written artifact of technical decisions made over time.
+
+Some options for deploying code reviews include [GitHub Pull Requests], [Gerrit], [ReviewBoard], [Code Collaborator]
 
 ### Digital Agile Board
 
@@ -312,5 +325,7 @@ Durable communication tools and techniques not only scale well with your organiz
 [Google Calendar]: https://encrypted.google.com/calendar
 [Adam Savage]: https://twitter.com/donttrythis
 [Carol Nichols]: https://twitter.com/carols10cents
+[Skype]: http://skype.com/
+[join.me]: https://join.me/
 
 [^yagni]: This is [YAGNI] in action, in case you were wondering.
