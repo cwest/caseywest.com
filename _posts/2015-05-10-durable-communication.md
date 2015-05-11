@@ -124,6 +124,8 @@ ChatOps also helps introduce context into your conversations. It can be hard to 
 
 Some options for deploying ChatOps include [hubot] and [Lita]. [HipChat] and [Slack] also have a lot of built-in integrations with external services to provide the reporting aspects of ChatOps out of the box.
 
+More on ChatOps: [Carol Nichols], ["How is ChatOps Formed?"](http://slides.com/carolnichols/chatops#/) ([video](https://www.youtube.com/watch?v=BX-iT5xBaMY)).
+
 ## Audio/Video Communication
 
 Everyone should be able to have a phone call, or Internet equivalent, when they're at work. Voice is fine, usually, and video is higher bandwidth. Non-verbal communication is a huge part of human communication and it should absolutely be a part of your remote work environment. (Please don't make the joke about not wearing pants. It's not funny anymore.)
@@ -309,5 +311,6 @@ Durable communication tools and techniques not only scale well with your organiz
 [Exchange]: https://en.wikipedia.org/wiki/Microsoft_Exchange_Server
 [Google Calendar]: https://encrypted.google.com/calendar
 [Adam Savage]: https://twitter.com/donttrythis
+[Carol Nichols]: https://twitter.com/carols10cents
 
 [^yagni]: This is [YAGNI] in action, in case you were wondering.
