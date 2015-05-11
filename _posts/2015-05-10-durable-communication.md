@@ -8,7 +8,7 @@ description: It's not inherently harder to be a tech lead while remote or on a d
 
 It's not inherently harder to be a tech lead while remote or on a distributed team – it's more deliberate.
 
-I [tweeted] this sentiment recently along with the concept of _durable communication_. That phrase is inspired by data storage which is typical grouped into two categories: durable and ephemeral. I often hear people say it's harder to work remotely, and very hard to be in a leadership position remotely. It's said as common sense, an obvious truth. I think that's a cop out. I don't buy it for a second.
+I [tweeted] this sentiment recently along with the concept of _durable communication_. That phrase is inspired by data storage which is typically grouped into two categories: durable and ephemeral. I often hear people say it's harder to work remotely, and very hard to be in a leadership position remotely. It's said as common sense, an obvious truth. I think that's a cop out. I don't buy it for a second.
 
 _**Before we continue:** This post is about being a remote worker or working on a distributed team. I am convinced this is the path software organizations are rightly headed, and I'm determined to help you get there. If your organization has no remote workers, by choice or otherwise, or if you think remote work or remote leadership is out of the question this post may not be for you. That's cool. On the other hand, maybe it'll give you the tools, vocabulary, and confidence to give it a shot. Either way I look forward to hearing about it._
 
@@ -118,11 +118,11 @@ Some options for deploying a chat system include [HipChat], [Slack], [IRC], [Goo
 
 ### ChatOps
 
-ChatOps is the use of text chat tools for the transparent automation of business practices. It's so awesome it has a heading. Typically ChatOps is achieved by deploying a bot, which connects to your chat system, and can be programmed to do tasks for you. For example, it could build a new release, do a full deployment, pick a place for lunch, or find the perfect animated gif for the conversation. It's  fun and useful!
+[ChatOps] is the use of text chat tools for the transparent automation of business practices. It's so awesome it has a heading. Typically ChatOps is achieved by deploying a bot, which connects to your chat system, and can be programmed to do tasks for you. For example, it could build a new release, do a full deployment, pick a place for lunch, or find the perfect animated gif for the conversation. It's  fun and useful!
 
 ChatOps also helps introduce context into your conversations. It can be hard to know what's going on when you're on a distributed team and we can bridge that gap by doing some of that work right in a chat room where everyone can see it. No more wondering when a release is happening. You just saw someone start a release, and you just saw your bot report the release happened successfully.
 
-Some options for deploying ChatOps include [hubot] and [that other thing...]. [HipChat] and [Slack] also have a lot of built-in integrations with external services to provide the reporting aspects of ChatOps out of the box.
+Some options for deploying ChatOps include [hubot] and [Lita]. [HipChat] and [Slack] also have a lot of built-in integrations with external services to provide the reporting aspects of ChatOps out of the box.
 
 ## Audio/Video Communication
 
@@ -147,7 +147,7 @@ Camera
 
 There are three important features of any effective audio/video communication tool: the ability to have one-on-one calls, the ability to conduct group conference calls, and the ability to do either in 60 seconds or less. This collection of features isn't always available in a single tool, and that's okay. Use a few if you have to. It'll pay off.
 
-Some options for deploying audio/video communication include [HipChat] \(one on one), [Webex], [WebRTC], [that one with the funny name I think Buffer uses it...], and [Google Hangouts].
+Some options for deploying audio/video communication include [HipChat] \(one on one), [Webex], [talky], [sqwiggle], and [Google Hangouts].
 
 ## Screen Sharing
 
@@ -156,25 +156,43 @@ Remote pair programming... troublshooting... the hallway test...
 There are three important features are the same as for audio/video calls: one-on-one sharing, group sharing, and the ability to do either in 60 seconds or less.
 
 
-Some options for deploying screen sharing include [Screen Hero] \(for [Slack]), [HipChat], and [Webex].
+Some options for deploying screen sharing include [Screenhero] \(for [Slack]), [HipChat], and [Webex].
 
 ## Development Tools
 
 ### Commit Messages
 
-Talk about good commit messages. Link elsewhere.
+> "The only difference between science and screwing around is writing it down." – [Adam Savage], Mythbusters
+
+Commits are like emails to future developers. Please write good commit messages for our _future_ selves. 
+And not just ourselves, but any future developers working on this code. 
+
+_Think of it as time travel_. When [Marty wrote Doc that letter](http://backtothefuture.wikia.com/wiki/Marty%27s_letter), it wasn’t a cryptic, 
+short message he would only understand in-context. It wasn't simply a P.O. Box address for Doc to go find the details at. It was a clear description of the problem and solution. It was helpful as soon as it was read.
+
+_Commits are always in sync with the code_. This is awesome. 
+It means we can write documentation about our code without the worry of it getting stale. 
+That's better than comments, even. A commit message for a piece of code lasts exactly as 
+long as the code it's talking about lasts.
+
+More on commit messages:
+
+* Alex 'Skud' Bayley, ["Start Your Commit Message with a Verb"](http://infotrope.net/2013/08/24/start-your-commit-message-with-a-verb/)
+* Stephen Ball, ["Deliberate Git"](http://rakeroutes.com/blog/deliberate-git/) ([video](https://vimeo.com/72762735))
 
 ### Code Review
 
-[GitHub Pull Requests], [Gerrit], [ReviewBoard], [ccollab...]
+Written, asynchronous code review is a central part of any solid development cycle.
+
+[GitHub Pull Requests], [Gerrit], [ReviewBoard], [Code Collaborator]
 
 ### Digital Agile Board
 
-[Trello], [Pivotal Tracker], [JIRA's Agile PLugin], [Waffle], [GitHub Issues]
+[Trello], [Pivotal Tracker], [JIRA's Agile Plugin], [Waffle], [GitHub Issues]
 
 ## Collaborative Writing
 
-[Etherpad], [Google Docs], [GitHub Wiki], [Confluence]
+[Etherpad], [Hackpad], [Google Docs], [GitHub Wiki], [Confluence]
 
 ## File Store
 
@@ -228,7 +246,7 @@ A benefit to being co-located with your peers is they get to know you. They lear
 
 Remote co-workers don't have the luxury of osmosis. Our relationships grow over time through familiarity and comfort. The more we know someone the closer we feel. That's why it's important to share your personality. Share it a lot. How? Off topic.
 
-Every organization needs an Off Topic chat room. This is where the stream of nonsense we all spew every day goes to live. This is where you tell someone you're getting coffee, where you post pictures from last weekend's mountain biking adventure, or where you drop a link to the latest badass thing [Niel DeGrass Tyson] just said. Off Topic is a safe place to chat about whatever you want with your co-workers.
+Every organization needs an Off Topic chat room. This is where the stream of nonsense we all spew every day goes to live. This is where you tell someone you're getting coffee, where you post pictures from last weekend's mountain biking adventure, or where you drop a link to the latest badass thing [Neil deGrasse Tyson] just said. Off Topic is a safe place to chat about whatever you want with your co-workers.
 
 For those of you who lead remote or distributed organizations: (with the exception of offensive content) don't monitor or question the traffic in this room. There will probably be a lot of it, and if you've forgotten what it's like to build a thing you'll probably also wonder how these people get anything done all day. Don't worry about it. This is work. Instead of hearing it in the halls you're seeing it on the screen. No big deal.
 
@@ -255,5 +273,41 @@ Durable communication exhibits the same characteristics as accidental, convenien
 Durable communication tools and techniques not only scale well with your organization, they'll empower your organization scale well, too.
 
 [tweeted]: https://twitter.com/caseywest/status/597027263796912128
+[YAGNI]: https://en.wikipedia.org/wiki/YAGNI
+[Neil deGrasse Tyson]: https://twitter.com/neiltyson
+[HipChat]: https://www.hipchat.com/
+[Slack]: https://slack.com/
+[Screenhero]: https://screenhero.com/
+[IRC]: http://www.irc.org/
+[jabber]: http://www.jabber.org/
+[Google Hangouts]: http://www.google.com/hangouts/
+[hubot]: https://hubot.github.com/
+[ChatOps]: https://speakerdeck.com/jnewland/chatops-at-github
+[Lita]: https://www.lita.io/
+[Webex]: http://www.webex.com/
+[talky]: https://talky.io/
+[Sqwiggle]: https://www.sqwiggle.com/
+[Hackpad]: https://hackpad.com/
+[GitHub Pull Requests]: https://help.github.com/articles/using-pull-requests/
+[Gerrit]: https://code.google.com/p/gerrit/
+[ReviewBoard]: https://www.reviewboard.org/
+[Code Collaborator]: http://smartbear.com/product/collaborator/overview/
+[Trello]: http://trello.com/
+[Pivotal Tracker]: http://www.pivotaltracker.com/
+[Jira's Agile Plugin]: https://www.atlassian.com/software/jira/agile#!
+[Waffle]: https://waffle.io/
+[GitHub Issues]: https://github.com/blog/831-issues-2-0-the-next-generation
+[Etherpad]: http://etherpad.org/
+[Google Docs]: https://docs.google.com/
+[GitHub Wiki]: https://help.github.com/articles/about-github-wikis/
+[Confluence]: https://www.atlassian.com/software/confluence/#!
+[Dropbox]: http://dropbox.com/
+[Box]: https://www.box.com/
+[NFS]: https://en.wikipedia.org/wiki/Network_File_System_(protocol)
+[WebDav]: http://webdav.org/
+[Google Drive]: https://encrypted.google.com/drive/
+[Exchange]: https://en.wikipedia.org/wiki/Microsoft_Exchange_Server
+[Google Calendar]: https://encrypted.google.com/calendar
+[Adam Savage]: https://twitter.com/donttrythis
 
-[^yagni]: Link to YAGNI and a simple explanation...
+[^yagni]: This is [YAGNI] in action, in case you were wondering.
