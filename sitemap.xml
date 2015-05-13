@@ -1,108 +1,82 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9 http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd" xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
+    <loc>http://caseywest.com/durable-communication/</loc>
+    <lastmod>2015-05-10T00:00:00-04:00</lastmod>
+  </url>
+  <url>
     <loc>http://caseywest.com/the-help-timer/</loc>
     <lastmod>2015-05-03T00:00:00-04:00</lastmod>
-    <priority>0.8</priority>
   </url>
   <url>
     <loc>http://caseywest.com/technical-phone-screen-howto/</loc>
     <lastmod>2015-04-19T00:00:00-04:00</lastmod>
-    <priority>0.8</priority>
   </url>
   <url>
     <loc>http://caseywest.com/a-call-for-more-tech-leadership/</loc>
     <lastmod>2015-04-12T00:00:00-04:00</lastmod>
-    <priority>0.8</priority>
   </url>
   <url>
     <loc>http://caseywest.com/work-with-us-at-whitehat/</loc>
     <lastmod>2015-01-23T00:00:00-05:00</lastmod>
-    <priority>0.8</priority>
   </url>
   <url>
     <loc>http://caseywest.com/responsibly-use-peek-to-inspect-rails/</loc>
     <lastmod>2015-01-07T00:00:00-05:00</lastmod>
-    <priority>0.8</priority>
   </url>
   <url>
     <loc>http://caseywest.com/faster-ci-on-travis-and-docker-for-ruby-and-rails-and-rubocop/</loc>
     <lastmod>2015-01-06T00:00:00-05:00</lastmod>
-    <priority>0.8</priority>
   </url>
   <url>
     <loc>http://caseywest.com/theres-still-no-silver-bullet/</loc>
     <lastmod>2015-01-04T00:00:00-05:00</lastmod>
-    <priority>0.8</priority>
   </url>
   <url>
     <loc>http://caseywest.com/run-bundle-audit-from-rake/</loc>
     <lastmod>2015-01-03T00:00:00-05:00</lastmod>
-    <priority>0.8</priority>
   </url>
   <url>
     <loc>http://caseywest.com/2014-s-podcast-recommendations/</loc>
     <lastmod>2014-12-31T00:00:00-05:00</lastmod>
-    <priority>0.8</priority>
   </url>
   <url>
     <loc>http://caseywest.com/hootsuite-has-best-response-to-criticism/</loc>
     <lastmod>2014-12-30T00:00:00-05:00</lastmod>
-    <priority>0.8</priority>
   </url>
   <url>
     <loc>http://caseywest.com/integrated-tests-are-a-scam/</loc>
     <lastmod>2014-12-29T14:24:02-05:00</lastmod>
-    <priority>0.8</priority>
   </url>
   <url>
     <loc>http://caseywest.com/your-software-is-made-of-people/</loc>
     <lastmod>2014-12-24T10:00:22-05:00</lastmod>
-    <priority>0.8</priority>
   </url>
   <url>
     <loc>http://caseywest.com/hello-world/</loc>
     <lastmod>2014-12-24T09:40:52-05:00</lastmod>
-    <priority>0.8</priority>
   </url>
   <url>
     <loc>http://caseywest.com/404.html</loc>
-    <lastmod>2015-05-06T09:34:02-04:00</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.7</priority>
   </url>
   <url>
     <loc>http://caseywest.com/posts/</loc>
-    <lastmod>2015-05-06T09:34:02-04:00</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.7</priority>
   </url>
   <url>
     <loc>http://caseywest.com/tags/</loc>
-    <lastmod>2015-05-06T09:34:02-04:00</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.7</priority>
   </url>
   <url>
     <loc>http://caseywest.com/</loc>
-    <lastmod>2015-05-06T09:34:02-04:00</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>1.0</priority>
   </url>
   <url>
     <loc>http://caseywest.com/about/</loc>
-    <lastmod>2015-05-06T09:34:02-04:00</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.7</priority>
   </url>
   <url>
     <loc>http://caseywest.com/resume/caseywest.html</loc>
-    <lastmod>2015-05-04T22:04:50-04:00</lastmod>
-    <priority>0.6</priority>
+    <lastmod>2015-05-06T09:34:04-04:00</lastmod>
   </url>
   <url>
     <loc>http://caseywest.com/resume/index.html</loc>
-    <lastmod>2015-05-04T22:04:50-04:00</lastmod>
-    <priority>0.6</priority>
+    <lastmod>2015-05-06T09:34:04-04:00</lastmod>
   </url>
 </urlset>

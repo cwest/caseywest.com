@@ -4,13 +4,349 @@
 <generator uri="https://github.com/mojombo/jekyll">Jekyll</generator>
 <link rel="self" type="application/atom+xml" href="http://caseywest.com/feed.xml" />
 <link rel="alternate" type="text/html" href="http://caseywest.com" />
-<updated>2015-05-06T09:34:02-04:00</updated>
+<updated>2015-05-13T11:47:48-04:00</updated>
 <id>http://caseywest.com/</id>
 <author>
   <name>Casey West</name>
   <uri>http://caseywest.com/</uri>
   <email></email>
 </author>
+
+
+<entry>
+  <title type="html"><![CDATA[Durable Communication]]></title>
+ <link rel="alternate" type="text/html" href="http://caseywest.com/durable-communication/" />
+  <id>http://caseywest.com/durable-communication</id>
+  <updated>2015-05-10 18:32:22 -0400T00:00:00-00:00</updated>
+  <published>2015-05-10T00:00:00-04:00</published>
+  
+  <author>
+    <name>Casey West</name>
+    <uri>http://caseywest.com</uri>
+    <email></email>
+  </author>
+  <content type="html">&lt;p&gt;It&#39;s not inherently harder to be a tech lead while remote or on a distributed team – it&#39;s more deliberate.&lt;/p&gt;
+
+&lt;p&gt;I &lt;a href=&quot;https://twitter.com/caseywest/status/597027263796912128&quot;&gt;tweeted&lt;/a&gt; this sentiment recently along with the concept of &lt;em&gt;durable communication&lt;/em&gt;. That phrase is inspired by data storage which is typically grouped into two categories: durable and ephemeral. I often hear people say it&#39;s harder to work remotely, and very hard to be in a leadership position remotely. It&#39;s said as common sense, an obvious truth. I think that&#39;s a cop out. I don&#39;t buy it for a second.&lt;/p&gt;
+
+&lt;p&gt;&lt;em&gt;&lt;strong&gt;Before we continue:&lt;/strong&gt; This post is about being a remote worker or working on a distributed team. I am convinced this is the path software organizations are rightly headed, and I&#39;m determined to help you get there. If your organization has no remote workers, by choice or otherwise, or if you think remote work or remote leadership is out of the question this post may not be for you. That&#39;s cool. On the other hand, maybe it&#39;ll give you the tools, vocabulary, and confidence to give it a shot. Either way I look forward to hearing about it.&lt;/em&gt;&lt;/p&gt;
+
+&lt;!-- MarkdownTOC --&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;&lt;a href=&quot;#what-is-durable-communication&quot;&gt;What is Durable Communication?&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;#why-do-i-care&quot;&gt;Why do I care?&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;#effective-communication-saves-time&quot;&gt;Effective Communication Saves Time&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;#transparent-by-default&quot;&gt;Transparent by Default&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;#shared-responsibility&quot;&gt;Shared Responsibility&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;#change-_is_-hard&quot;&gt;Change &lt;em&gt;is&lt;/em&gt; Hard&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;#tools&quot;&gt;Tools&lt;/a&gt;
+    &lt;ul&gt;
+      &lt;li&gt;&lt;a href=&quot;#text-chat&quot;&gt;Text Chat&lt;/a&gt;
+        &lt;ul&gt;
+          &lt;li&gt;&lt;a href=&quot;#chatops&quot;&gt;ChatOps&lt;/a&gt;&lt;/li&gt;
+        &lt;/ul&gt;
+      &lt;/li&gt;
+      &lt;li&gt;&lt;a href=&quot;#audiovideo-communication&quot;&gt;Audio/Video Communication&lt;/a&gt;&lt;/li&gt;
+      &lt;li&gt;&lt;a href=&quot;#screen-sharing&quot;&gt;Screen Sharing&lt;/a&gt;&lt;/li&gt;
+      &lt;li&gt;&lt;a href=&quot;#development-tools&quot;&gt;Development Tools&lt;/a&gt;
+        &lt;ul&gt;
+          &lt;li&gt;&lt;a href=&quot;#commit-messages&quot;&gt;Commit Messages&lt;/a&gt;&lt;/li&gt;
+          &lt;li&gt;&lt;a href=&quot;#code-review&quot;&gt;Code Review&lt;/a&gt;&lt;/li&gt;
+          &lt;li&gt;&lt;a href=&quot;#digital-agile-board&quot;&gt;Digital Agile Board&lt;/a&gt;&lt;/li&gt;
+        &lt;/ul&gt;
+      &lt;/li&gt;
+      &lt;li&gt;&lt;a href=&quot;#collaborative-writing&quot;&gt;Collaborative Writing&lt;/a&gt;&lt;/li&gt;
+      &lt;li&gt;&lt;a href=&quot;#file-store&quot;&gt;File Store&lt;/a&gt;&lt;/li&gt;
+      &lt;li&gt;&lt;a href=&quot;#shared-calendar&quot;&gt;Shared Calendar&lt;/a&gt;&lt;/li&gt;
+      &lt;li&gt;&lt;a href=&quot;#email&quot;&gt;Email&lt;/a&gt;&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;#techniques&quot;&gt;Techniques&lt;/a&gt;
+    &lt;ul&gt;
+      &lt;li&gt;&lt;a href=&quot;#everyone-should-experience-remote&quot;&gt;Everyone Should Experience Remote&lt;/a&gt;&lt;/li&gt;
+      &lt;li&gt;&lt;a href=&quot;#face-time-onsite&quot;&gt;Face Time (Onsite)&lt;/a&gt;&lt;/li&gt;
+      &lt;li&gt;&lt;a href=&quot;#invite-remotes-to-hallway-conversation&quot;&gt;Invite Remotes to Hallway Conversation&lt;/a&gt;&lt;/li&gt;
+      &lt;li&gt;&lt;a href=&quot;#over-communicate&quot;&gt;Over Communicate&lt;/a&gt;
+        &lt;ul&gt;
+          &lt;li&gt;&lt;a href=&quot;#share-your-personality-off-topic&quot;&gt;Share Your Personality (Off Topic)&lt;/a&gt;&lt;/li&gt;
+          &lt;li&gt;&lt;a href=&quot;#have-a-visible-pulse&quot;&gt;Have a Visible Pulse&lt;/a&gt;&lt;/li&gt;
+        &lt;/ul&gt;
+      &lt;/li&gt;
+      &lt;li&gt;&lt;a href=&quot;#pick-a-timezone&quot;&gt;Pick a Timezone&lt;/a&gt;&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;#conways-law&quot;&gt;Conway&#39;s Law&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;!-- /MarkdownTOC --&gt;
+
+&lt;h1 id=&quot;what-is-durable-communication&quot;&gt;What is Durable Communication?&lt;/h1&gt;
+
+&lt;p&gt;Collaboration using deliberately inclusive, transparent, and reliable tools and techniques. It&#39;s the cornerstone of successful remote work.&lt;/p&gt;
+
+&lt;h1 id=&quot;why-do-i-care&quot;&gt;Why do I care?&lt;/h1&gt;
+
+&lt;p&gt;I currently lead three teams in a distributed engineering organization. One is entirely based in California, another entirely in Pennsylvania, and the third is split between those locations. If I&#39;m going to be successful it&#39;s critical to me, and to my teams, that we get communication right. I admit to being a change agent and this is one of the ways I&#39;ve changed the engineering organization. This essay describes how my teams communicate.&lt;/p&gt;
+
+&lt;h1 id=&quot;effective-communication-saves-time&quot;&gt;Effective Communication Saves Time&lt;/h1&gt;
+
+&lt;p&gt;Communication is more deliberate, it&#39;s more intentional, when you&#39;re remote and communicating effectively. In a distributed team where pockets of people are co-located it&#39;s easy to unintentionally make decisions and share facts. It happens in the kitchen or at lunch. When communicating with someone far away from you, physically, you have to choose to share. It&#39;s not an accident.&lt;/p&gt;
+
+&lt;p&gt;If you want to succeed at remote work it requires deliberate changes to the way your team communicates. It&#39;s a conscious choice to alter behaviors and culture to better suit a distributed group of people.&lt;/p&gt;
+
+&lt;p&gt;This is a skill which can be acquired. It takes practice. Here&#39;s the thing: it&#39;s no more effort than accidental communication and, in fact, it saves everyone time and energy in the long run when information is freely flowing in channels designed to share broadly.&lt;/p&gt;
+
+&lt;p&gt;Over time it becomes more comfortable to communicate in a shared space and you&#39;ll soon find yourself choosing that by default. You&#39;ll say, &lt;em&gt;&quot;I just learned something weird about our data schema. I&#39;ll tell you in our chat room.&quot;&lt;/em&gt; As you describe the oddity that is your data model, in the chat room, you&#39;re sharing with everyone regardless of physical location.&lt;/p&gt;
+
+&lt;h1 id=&quot;transparent-by-default&quot;&gt;Transparent by Default&lt;/h1&gt;
+
+&lt;p&gt;One of the most striking changes a team experiences when practicing durable communication is the substantial increase in their transparency. Most communication is in the open. It&#39;s archived and indexed. Anyone can read it.&lt;/p&gt;
+
+&lt;p&gt;It&#39;s like giving your team the super power of time travel. In three years someone is going to be asking, &lt;em&gt;&quot;Why the hell did we define an enum for this obviously boolean attribute and by the way querying it is timing out on large data sets?!&quot;&lt;/em&gt; They&#39;re going to search your chat archives, read commit history, find tickets, and learn that the attribute was supposed to have five values and was simplified three days before launch because otherwise we weren&#39;t going to finish&lt;sup id=&quot;fnref:yagni&quot;&gt;&lt;a href=&quot;#fn:yagni&quot; class=&quot;footnote&quot;&gt;1&lt;/a&gt;&lt;/sup&gt;.&lt;/p&gt;
+
+&lt;p&gt;Thank your lucky stars! All the engineers who worked on that feature have moved on to new opportunities and there&#39;s nobody left to ask in the hallway. Good thing your communication was durable. Always err on the side of transparency. It&#39;ll save your future ass.&lt;/p&gt;
+
+&lt;h1 id=&quot;shared-responsibility&quot;&gt;Shared Responsibility&lt;/h1&gt;
+
+&lt;p&gt;Responsibility for durable communication is shared among everyone in a distributed organization; everyone is accountable for their part in making collaboration maximally effective.&lt;/p&gt;
+
+&lt;dl&gt;
+  &lt;dt&gt;Your organization&lt;/dt&gt;
+  &lt;dd&gt;has a responsibility to provide a collection of tools to enable distributed collaboration.&lt;/dd&gt;
+  &lt;dt&gt;Your team&lt;/dt&gt;
+  &lt;dd&gt;has a collective responsibility to cultivate a culture built on the techniques of durable communication.&lt;/dd&gt;
+  &lt;dt&gt;You&lt;/dt&gt;
+  &lt;dd&gt;have a responsibility to provide continual feedback when communication is becoming ineffective.&lt;/dd&gt;
+  &lt;dd&gt; &lt;/dd&gt;
+  &lt;dd&gt;This may be during a conference call when two people are having a side conversation and suddenly you can&#39;t follow anything being said. &lt;em&gt;&quot;Excuse me, I can&#39;t follow multiple conversations at once. Can we do one at a time?&quot;&lt;/em&gt;&lt;/dd&gt;
+  &lt;dd&gt; &lt;/dd&gt;
+  &lt;dd&gt;It may be during a retrospective to highlight key decisions made beyond your visibility. &lt;em&gt;&quot;I was surprised to learn we decided on Elixir for the spike. If it was written down I didn&#39;t see it.&quot;&lt;/em&gt;&lt;/dd&gt;
+&lt;/dl&gt;
+
+&lt;h1 id=&quot;change-is-hard&quot;&gt;Change &lt;em&gt;is&lt;/em&gt; Hard&lt;/h1&gt;
+
+&lt;p&gt;If your organization is expanding from co-located to distributed it will come with growing pains. Once durable communication has been fully embraced it will feel effortless. Transition won&#39;t feel that way, and that&#39;s okay. Change requires additional effort and &lt;em&gt;that&lt;/em&gt; is hard, but it&#39;s effort spent going in the right direction so it&#39;s well spent.&lt;/p&gt;
+
+&lt;p&gt;What follows are concrete methods for reducing the pain of distributed work. It&#39;s tailored for teams building software.&lt;/p&gt;
+
+&lt;h1 id=&quot;tools&quot;&gt;Tools&lt;/h1&gt;
+
+&lt;p&gt;I&#39;m going to list a handful of options ranging from completely free to paid. These are things I know about. They aren&#39;t endorsements unless explicitly stated. In other words, you should do the cost/benefit analysis for your organization and choose wisely.&lt;/p&gt;
+
+&lt;h2 id=&quot;text-chat&quot;&gt;Text Chat&lt;/h2&gt;
+
+&lt;p&gt;This is the primary device for durable communication. In my experience it&#39;s the most critical tool in your collaboration toolbox. There are some specific features which make it invaluable, and any deployment should have them one way or another:&lt;/p&gt;
+
+&lt;dl&gt;
+  &lt;dt&gt;Archive&lt;/dt&gt;
+  &lt;dd&gt;An indexed, searchable archive is particularly important. This is a history of your teams&#39; informal communication and, just like in the hallway, a ton of knowledge sharing and key decisions are made here. You want to remember that.&lt;/dd&gt;
+  &lt;dt&gt;Group Chat&lt;/dt&gt;
+  &lt;dd&gt;It&#39;s not enough to have one-on-one chat capability, however…&lt;/dd&gt;
+  &lt;dt&gt;Private Chat&lt;/dt&gt;
+  &lt;dd&gt;it&#39;s also important for individuals to be able to communicate.&lt;/dd&gt;
+  &lt;dt&gt;Full Participation&lt;/dt&gt;
+  &lt;dd&gt;Everyone in your organization should be able to use it, and should be using it.&lt;/dd&gt;
+&lt;/dl&gt;
+
+&lt;p&gt;Try &lt;a href=&quot;https://www.hipchat.com/&quot;&gt;HipChat&lt;/a&gt;, &lt;a href=&quot;https://slack.com/&quot;&gt;Slack&lt;/a&gt;, &lt;a href=&quot;http://www.irc.org/&quot;&gt;IRC&lt;/a&gt;, &lt;a href=&quot;http://www.google.com/hangouts/&quot;&gt;Google Hangouts&lt;/a&gt;, or &lt;a href=&quot;http://www.jabber.org/&quot;&gt;jabber&lt;/a&gt;.&lt;/p&gt;
+
+&lt;h3 id=&quot;chatops&quot;&gt;ChatOps&lt;/h3&gt;
+
+&lt;p&gt;&lt;a href=&quot;https://speakerdeck.com/jnewland/chatops-at-github&quot;&gt;ChatOps&lt;/a&gt; is the use of text chat tools for the transparent automation of business practices. It&#39;s so awesome it has a heading. Typically ChatOps is achieved by deploying a bot, which connects to your chat system, and can be programmed to do tasks for you. For example, it could build a new release, do a full deployment, pick a place for lunch, or find the perfect animated GIF for the conversation. It&#39;s  fun and useful!&lt;/p&gt;
+
+&lt;p&gt;ChatOps also helps introduce context into your conversations. It can be hard to know what&#39;s going on when you&#39;re on a distributed team and we can bridge that gap by doing some of that work right in a chat room where everyone can see it. No more wondering when a release is happening. You just saw someone start a release, and you just saw your bot report the release happened successfully.&lt;/p&gt;
+
+&lt;p&gt;Try &lt;a href=&quot;https://hubot.github.com/&quot;&gt;hubot&lt;/a&gt; or &lt;a href=&quot;https://www.lita.io/&quot;&gt;Lita&lt;/a&gt;. &lt;a href=&quot;https://www.hipchat.com/&quot;&gt;HipChat&lt;/a&gt; and &lt;a href=&quot;https://slack.com/&quot;&gt;Slack&lt;/a&gt; also have a lot of built-in integrations with external services to provide the reporting aspects of ChatOps out of the box.&lt;/p&gt;
+
+&lt;p&gt;More on ChatOps: &lt;a href=&quot;https://twitter.com/carols10cents&quot;&gt;Carol Nichols&lt;/a&gt;, &lt;a href=&quot;http://slides.com/carolnichols/chatops#/&quot;&gt;&quot;How is ChatOps Formed?&quot;&lt;/a&gt; (&lt;a href=&quot;https://www.youtube.com/watch?v=BX-iT5xBaMY&quot;&gt;video&lt;/a&gt;).&lt;/p&gt;
+
+&lt;h2 id=&quot;audiovideo-communication&quot;&gt;Audio/Video Communication&lt;/h2&gt;
+
+&lt;p&gt;Everyone should be able to have a phone call, or Internet equivalent, when they&#39;re at work. Voice is fine, usually, and video is higher bandwidth. Non-verbal communication is a huge part of human communication and it should absolutely be a part of your remote work environment. (Please don&#39;t make the joke about not wearing pants. It&#39;s not funny anymore.)&lt;/p&gt;
+
+&lt;p&gt;This tool requires some hardware. It&#39;s necessary equipment to effectively do your job and your company should provide it or reimburse you for reasonable expenses.&lt;/p&gt;
+
+&lt;dl&gt;
+  &lt;dt&gt;Headphones&lt;/dt&gt;
+  &lt;dd&gt;Yes, you need headphones. Unless you&#39;re sharing audio with a room you should be waring headphones on a call or video chat. If you don&#39;t you run the risk of an audio feedback loop. Software is still spotty at avoiding this.&lt;/dd&gt;
+  &lt;dd&gt; &lt;/dd&gt;
+  &lt;dd&gt;The other reason for headphones is if you&#39;re working on a distributed team with pockets of co-located people there&#39;s a likelihood you&#39;ll end up on the same call as several people around you. There&#39;s nothing worse than hearing someone speak twice, on a slight delay, so it sounds like an echo. Oh, there is something worse: hearing &lt;em&gt;yourself&lt;/em&gt; when you&#39;re talking, on a slight delay.&lt;/dd&gt;
+  &lt;dt&gt;Microphone&lt;/dt&gt;
+  &lt;dd&gt;I recommend getting a set of headphones with a built-in microphone. A lot of the reasons for having one are the same as above.&lt;/dd&gt;
+  &lt;dd&gt; &lt;/dd&gt;
+  &lt;dd&gt;The times when this breaks down are meetings where most people are co-located and a lot of them are speaking. An example is standup with a couple remote workers and everyone else physically gathered. For these cases I recommend a microphone which can be passed around when someone is speaking. This serves two purposes: high quality audio for the speaker regardless of their location in the room, and it tends to force the group to speak one at a time.&lt;/dd&gt;
+  &lt;dt&gt;Camera&lt;/dt&gt;
+  &lt;dd&gt;Most laptops and all-in-one desktops come with cameras these days and they&#39;re usually good enough for these purposes.&lt;/dd&gt;
+  &lt;dd&gt; &lt;/dd&gt;
+  &lt;dd&gt;The times when this breaks down is conference room meetings, often with whiteboards, where a small number of participants are remote. If your company is fancy they can buy great solutions for this problem. A cheap option is an external camera which someone in the meeting can pan and zoom for you. Cheap and effective.&lt;/dd&gt;
+&lt;/dl&gt;
+
+&lt;p&gt;There are three important features of any effective audio/video communication tool: the ability to have one-on-one calls, the ability to conduct group conference calls, and the ability to do either in 60 seconds or less. This collection of features isn&#39;t always available in a single tool, and that&#39;s okay. Use a few if you have to. It&#39;ll pay off.&lt;/p&gt;
+
+&lt;p&gt;Try &lt;a href=&quot;https://www.hipchat.com/&quot;&gt;HipChat&lt;/a&gt; (one on one), &lt;a href=&quot;http://skype.com/&quot;&gt;Skype&lt;/a&gt;, &lt;a href=&quot;http://www.webex.com/&quot;&gt;Webex&lt;/a&gt;, &lt;a href=&quot;https://talky.io/&quot;&gt;talky&lt;/a&gt;, &lt;a href=&quot;https://www.sqwiggle.com/&quot;&gt;sqwiggle&lt;/a&gt;, or &lt;a href=&quot;http://www.google.com/hangouts/&quot;&gt;Google Hangouts&lt;/a&gt;.&lt;/p&gt;
+
+&lt;h2 id=&quot;screen-sharing&quot;&gt;Screen Sharing&lt;/h2&gt;
+
+&lt;p&gt;This is your fast-track to remote pair programming, troubleshooting, hallway testing, and collaborating with other disciplines. The important features are the same as for audio/video calls: one-on-one sharing, group sharing, and the ability to do either in 60 seconds or less.&lt;/p&gt;
+
+&lt;p&gt;Try &lt;a href=&quot;https://screenhero.com/&quot;&gt;Screenhero&lt;/a&gt; (for &lt;a href=&quot;https://slack.com/&quot;&gt;Slack&lt;/a&gt;), &lt;a href=&quot;https://www.hipchat.com/&quot;&gt;HipChat&lt;/a&gt;, &lt;a href=&quot;https://join.me/&quot;&gt;join.me&lt;/a&gt;, or &lt;a href=&quot;http://www.webex.com/&quot;&gt;Webex&lt;/a&gt;.&lt;/p&gt;
+
+&lt;h2 id=&quot;development-tools&quot;&gt;Development Tools&lt;/h2&gt;
+
+&lt;h3 id=&quot;commit-messages&quot;&gt;Commit Messages&lt;/h3&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;&quot;The only difference between science and screwing around is writing it down.&quot; – &lt;a href=&quot;https://twitter.com/donttrythis&quot;&gt;Adam Savage&lt;/a&gt;, Mythbusters&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;Commits are like emails to future developers. Please write good commit messages for our &lt;em&gt;future&lt;/em&gt; selves. 
+And not just ourselves, but any future developers working on this code. &lt;/p&gt;
+
+&lt;p&gt;&lt;em&gt;Think of it as time travel&lt;/em&gt;. When &lt;a href=&quot;http://backtothefuture.wikia.com/wiki/Marty%27s_letter&quot;&gt;Marty wrote Doc that letter&lt;/a&gt;, it wasn’t a cryptic, 
+short message he would only understand in-context. It wasn&#39;t simply a P.O. Box address for Doc to go find the details at. It was a clear description of the problem and solution. It was helpful as soon as it was read.&lt;/p&gt;
+
+&lt;p&gt;&lt;em&gt;Commits are always in sync with the code&lt;/em&gt;. This is awesome. 
+It means we can write documentation about our code without the worry of it getting stale. 
+That&#39;s better than comments, even. A commit message for a piece of code lasts exactly as 
+long as the code it&#39;s talking about lasts.&lt;/p&gt;
+
+&lt;p&gt;More on commit messages:&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;Alex &#39;Skud&#39; Bayley, &lt;a href=&quot;http://infotrope.net/2013/08/24/start-your-commit-message-with-a-verb/&quot;&gt;&quot;Start Your Commit Message with a Verb&quot;&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;Stephen Ball, &lt;a href=&quot;http://rakeroutes.com/blog/deliberate-git/&quot;&gt;&quot;Deliberate Git&quot;&lt;/a&gt; (&lt;a href=&quot;https://vimeo.com/72762735&quot;&gt;video&lt;/a&gt;)&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id=&quot;code-review&quot;&gt;Code Review&lt;/h3&gt;
+
+&lt;p&gt;Written, asynchronous code review is a central part of any solid development cycle. Don&#39;t take my word for it. From the excellent book, &lt;a href=&quot;http://www.amazon.com/Code-Complete-Practical-Handbook-Construction/dp/0735619670&quot;&gt;Code Complete&lt;/a&gt;:&lt;/p&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;…software testing alone has limited effectiveness – the average defect detection rate is only 25 percent for unit testing, 35 percent for function testing, and 45 percent for integration testing. In contrast, &lt;strong&gt;the average effectiveness of design and code inspections are 55 and 60 percent.&lt;/strong&gt; Case studies of review results have been impressive:&lt;/p&gt;
+
+  &lt;ul&gt;
+    &lt;li&gt;In a software-maintenance organization, 55 percent of one-line maintenance changes were in error before code reviews were introduced. After reviews were introduced, only 2 percent of the changes were in error. When all changes were considered, 95 percent were correct the first time after reviews were introduced. Before reviews were introduced, under 20 percent were correct the first time.&lt;/li&gt;
+    &lt;li&gt;In a group of 11 programs developed by the same group of people, the first 5 were developed without reviews. The remaining 6 were developed with reviews. After all the programs were released to production, the first 5 had an average of 4.5 errors per 100 lines of code. The 6 that had been inspected had an average of only 0.82 errors per 100. Reviews cut the errors by over 80 percent.&lt;/li&gt;
+    &lt;li&gt;The Aetna Insurance Company found 82 percent of the errors in a program by using inspections and was able to decrease its development resources by 20 percent.&lt;/li&gt;
+    &lt;li&gt;IBM&#39;s 500,000 line Orbit project used 11 levels of inspections. It was delivered early and had only about 1 percent of the errors that would normally be expected.&lt;/li&gt;
+    &lt;li&gt;A study of an organization at AT&amp;amp;T with more than 200 people reported a 14 percent increase in productivity and a 90 percent decrease in defects after the organization introduced reviews.&lt;/li&gt;
+    &lt;li&gt;Jet Propulsion Laboratories estimates that it saves about $25,000 per inspection by finding and fixing defects at an early stage.&lt;/li&gt;
+  &lt;/ul&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;Copied from &lt;a href=&quot;http://blog.codinghorror.com/code-reviews-just-do-it/&quot;&gt;Coding Horror&#39;s copy&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;Yes, you still need to write tests. Automated testing is not enough to find defects early. Combining them with code review is a winning strategy. Code review reduces defects, increases learning and knowledge sharing, and serves as a written artifact of technical decisions made over time.&lt;/p&gt;
+
+&lt;p&gt;Some options for deploying code reviews include &lt;a href=&quot;https://help.github.com/articles/using-pull-requests/&quot;&gt;GitHub Pull Requests&lt;/a&gt;, &lt;a href=&quot;https://code.google.com/p/gerrit/&quot;&gt;Gerrit&lt;/a&gt;, &lt;a href=&quot;https://www.reviewboard.org/&quot;&gt;ReviewBoard&lt;/a&gt;, &lt;a href=&quot;http://smartbear.com/product/collaborator/overview/&quot;&gt;Code Collaborator&lt;/a&gt;&lt;/p&gt;
+
+&lt;h3 id=&quot;digital-agile-board&quot;&gt;Digital Agile Board&lt;/h3&gt;
+
+&lt;p&gt;Sticky notes don&#39;t scale. I&#39;ll caution you here: this is not an opportunity to over-architect your development process. You need a few queues to understand the workload of each step in your development pipeline. This gives you insight into capacity and constraints, and provides a high-level picture of work in progress.&lt;/p&gt;
+
+&lt;p&gt;Try &lt;a href=&quot;http://trello.com/&quot;&gt;Trello&lt;/a&gt;, &lt;a href=&quot;http://www.pivotaltracker.com/&quot;&gt;Pivotal Tracker&lt;/a&gt;, &lt;a href=&quot;https://www.atlassian.com/software/jira/agile#!&quot;&gt;JIRA&#39;s Agile Plugin&lt;/a&gt;, &lt;a href=&quot;https://waffle.io/&quot;&gt;Waffle&lt;/a&gt;, or &lt;a href=&quot;https://github.com/blog/831-issues-2-0-the-next-generation&quot;&gt;GitHub Issues&lt;/a&gt;.&lt;/p&gt;
+
+&lt;h2 id=&quot;collaborative-writing&quot;&gt;Collaborative Writing&lt;/h2&gt;
+
+&lt;p&gt;Being able to take notes together in meetings is very powerful. A real-time document sharing tool brings people together in meetings and serves as a very powerful alternative to a whiteboard. Someone can decide to take live notes while others cleanup structure and edit behind them. Everyone can see the conversational history and it can be preserved for posterity.&lt;/p&gt;
+
+&lt;p&gt;Try &lt;a href=&quot;http://etherpad.org/&quot;&gt;Etherpad&lt;/a&gt;, &lt;a href=&quot;https://hackpad.com/&quot;&gt;Hackpad&lt;/a&gt;, &lt;a href=&quot;https://docs.google.com/&quot;&gt;Google Docs&lt;/a&gt;, &lt;a href=&quot;https://help.github.com/articles/about-github-wikis/&quot;&gt;GitHub Wiki&lt;/a&gt;, or &lt;a href=&quot;https://www.atlassian.com/software/confluence/#!&quot;&gt;Confluence&lt;/a&gt;.&lt;/p&gt;
+
+&lt;h2 id=&quot;file-store&quot;&gt;File Store&lt;/h2&gt;
+
+&lt;p&gt;Sharing large files is hard, still. Especially at work. It might be PSDs, PDFs, or OVAs. Making this easier will ease a common pain point of distributed teams. The solution you choose will depend on your particular risk profile.&lt;/p&gt;
+
+&lt;p&gt;Try &lt;a href=&quot;http://dropbox.com/&quot;&gt;Dropbox&lt;/a&gt;, &lt;a href=&quot;https://www.box.com/&quot;&gt;Box&lt;/a&gt;, &lt;a href=&quot;https://en.wikipedia.org/wiki/Network_File_System_(protocol)&quot;&gt;NFS&lt;/a&gt;, &lt;a href=&quot;http://webdav.org/&quot;&gt;WebDAV&lt;/a&gt;, or &lt;a href=&quot;https://encrypted.google.com/drive/&quot;&gt;Google Drive&lt;/a&gt;.&lt;/p&gt;
+
+&lt;h2 id=&quot;shared-calendar&quot;&gt;Shared Calendar&lt;/h2&gt;
+
+&lt;p&gt;Availability must be constantly communicated. Picking a time to get people together across locations and timezones can be a challenge. Shared calendars solve that problem. Frankly, I wish there were more options here. If you know of any solid alternatives I&#39;d love to hear about them.&lt;/p&gt;
+
+&lt;p&gt;Try &lt;a href=&quot;https://en.wikipedia.org/wiki/Microsoft_Exchange_Server&quot;&gt;Exchange&lt;/a&gt; or &lt;a href=&quot;https://encrypted.google.com/calendar&quot;&gt;Google Calendar&lt;/a&gt;.&lt;/p&gt;
+
+&lt;h2 id=&quot;email&quot;&gt;Email&lt;/h2&gt;
+
+&lt;p&gt;No, not really. Email is often one of the slowest, least effective means of collaboration and I don&#39;t recommend relying on it for that purpose. It does have a place, and I feel that place is in non-critical communication with no time pressure. For example, when you want to chat with someone who isn&#39;t &quot;in the office&quot; at that particular moment and it&#39;s not important enough to call them.&lt;/p&gt;
+
+&lt;p&gt;It&#39;s also an effective way to receive reports and notifications which, often, will lead you to the other collaboration tools mentioned in this document.&lt;/p&gt;
+
+&lt;p&gt;If you need a quick answer from a co-worker or team and you&#39;re starting to write an email I have this advice: &lt;strong&gt;stop.&lt;/strong&gt; You&#39;re about to waste time and introduce needless delay. I bet you&#39;ll get a faster answer on text chat.&lt;/p&gt;
+
+&lt;h1 id=&quot;techniques&quot;&gt;Techniques&lt;/h1&gt;
+
+&lt;h2 id=&quot;everyone-should-experience-remote&quot;&gt;Everyone Should Experience Remote&lt;/h2&gt;
+
+&lt;p&gt;At some point you should send every team member home, or to their local coffee shop, or into separated conference rooms to simulate being remote. Empathy is a great motivator, and if the folks at headquarters are having trouble adjusting to your remote workforce this is a fast-track way to help.&lt;/p&gt;
+
+&lt;p&gt;I love the idea of having everyone work from home (or wherever) every Friday. A policy like this tends to make people happy. They like it. However, it&#39;s not a big enough burden to change minds most of the time. It&#39;ll become your &quot;heads down day&quot; and the point of the exercise will be lost.&lt;/p&gt;
+
+&lt;p&gt;I recommend at least a full week. Everyone is remote. Meetings continue as scheduled. So do pair programming and planning sessions. Standup? Yes. Meetings with other departments? Yes, plan to dial in or video conference.&lt;/p&gt;
+
+&lt;p&gt;There&#39;s a higher-level business benefit to doing this regularly, too. It can serve as a good, real test of your operational business continuity plans. It&#39;s a sustained use of the tools you&#39;ve put in place for when your office burns to the ground. You are thinking about how to operate the company when your office is on fire, right?&lt;/p&gt;
+
+&lt;p&gt;There are team members for whom home is not a suitable work environment. Speaking as a dad who had toddlers I can tell you sometimes it just isn&#39;t going to be viable. Don&#39;t require everyone to be at home. For folks who can&#39;t they should be offered the option of renting a desk at a co-working space (to be expensed), or commandeering a conference room for the week. If they stay in the office, in a conference room, set a rule of no talking in person. Stay true to the simulation.&lt;/p&gt;
+
+&lt;h2 id=&quot;face-time-onsite&quot;&gt;Face Time (Onsite)&lt;/h2&gt;
+
+&lt;p&gt;Get people together. Relationships are best created in person and can be sustained remotely for a while. Minimum twice a year. Being together is too valuable to waste on business as usual. Close the laptops and get to know each other for a while.&lt;/p&gt;
+
+&lt;h2 id=&quot;invite-remotes-to-hallway-conversation&quot;&gt;Invite Remotes to Hallway Conversation&lt;/h2&gt;
+
+&lt;p&gt;It is inevitable, and still good and healthy, that you&#39;ll strike up an ad hoc conversation at your desk. It&#39;ll probably be about work, and chances are someone in another location is interested in that topic. This is a moment to invite them in. How do you do that when they&#39;re in another timezone? A few ways.&lt;/p&gt;
+
+&lt;p&gt;Invite them on video chat. This is the best. It&#39;s like you&#39;re right there in the room because your head is! Unplug your headphones so they can hear everyone and everyone can hear them. You can also invite them to audio, or you can all hop on chat and have the conversation in text. Video is still the highest bandwidth option and for that reason I recommend it.&lt;/p&gt;
+
+&lt;p&gt;If you work in an open office you&#39;re probably saying something I hear all the time, &lt;em&gt;&quot;but we&#39;ll need to find a conference room because it&#39;s rude to be on a call in the pit.&quot;&lt;/em&gt; No, it&#39;s not. It&#39;s no more rude than the conversation you&#39;re having right now. Will it surprise people? Yes, at first. They&#39;ll get over it. This is a stigma that should be eliminated. It&#39;s also what headphones were invented for.&lt;/p&gt;
+
+&lt;h2 id=&quot;over-communicate&quot;&gt;Over Communicate&lt;/h2&gt;
+
+&lt;p&gt;Your working relationships will benefit from the old adage &quot;always over-communicate&quot;, just like any relationship.&lt;/p&gt;
+
+&lt;h3 id=&quot;share-your-personality-off-topic&quot;&gt;Share Your Personality (Off Topic)&lt;/h3&gt;
+
+&lt;p&gt;A benefit to being co-located with your peers is they get to know you. They learn about your kids, your hobbies, and your affinity for mango flavored tea. Even if you never said anything about it out loud they&#39;d learn about you just from being nearby.&lt;/p&gt;
+
+&lt;p&gt;Remote co-workers don&#39;t have the luxury of osmosis. Our relationships grow over time through familiarity and comfort. The more we know someone the closer we feel. That&#39;s why it&#39;s important to share your personality. Share it a lot. How? Off topic.&lt;/p&gt;
+
+&lt;p&gt;Every organization needs an Off Topic chat room. This is where the stream of nonsense we all spew every day goes to live. This is where you tell someone you&#39;re getting coffee, where you post pictures from last weekend&#39;s mountain biking adventure, or where you drop a link to the latest badass thing &lt;a href=&quot;https://twitter.com/neiltyson&quot;&gt;Neil deGrasse Tyson&lt;/a&gt; just said. Off Topic is a safe place to chat about whatever you want with your co-workers.&lt;/p&gt;
+
+&lt;p&gt;You may end up with more off topic channels, for specific interests, than work-specific channels. That&#39;s ok! I see channels for music, cooking, exercise, and DIY often. Let this thrive and grow organically.&lt;/p&gt;
+
+&lt;p&gt;For those of you who lead remote or distributed organizations: (with the exception of offensive content) don&#39;t monitor or question the traffic in this room. There will probably be a lot of it, and if you&#39;ve forgotten what it&#39;s like to build a thing you&#39;ll probably also wonder how these people get anything done all day. Don&#39;t worry about it. This is work. Instead of hearing it in the halls you&#39;re seeing it on the screen. No big deal.&lt;/p&gt;
+
+&lt;h3 id=&quot;have-a-visible-pulse&quot;&gt;Have a Visible Pulse&lt;/h3&gt;
+
+&lt;p&gt;When you&#39;re remote it&#39;s your responsibility to exhibit a visible pulse. You may think nobody cares about every time you make a pot of coffee or push a branch, and you&#39;re probably right about that. What they do care about is knowing you&#39;re alive, there, and available when needed. Sending those seemingly useless messages is sending them a more important signal: you are reliable and okay.&lt;/p&gt;
+
+&lt;h2 id=&quot;pick-a-timezone&quot;&gt;Pick a Timezone&lt;/h2&gt;
+
+&lt;p&gt;Your company probably has a home office. It can be helpful to agree that its timezone is your &lt;em&gt;Standard Operating Time (SOT)&lt;/em&gt;. I&#39;ve employed this technique before and it works.&lt;/p&gt;
+
+&lt;p&gt;When is standup every day? &lt;em&gt;10am SOT&lt;/em&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;em&gt;I&#39;ll be leaving the office a little early today so reach be before 1PM SOT if you need anything.&lt;/em&gt;&lt;/p&gt;
+
+&lt;p&gt;When discussing time you should always be explicit about timezones. The &lt;em&gt;Standard Operating Time&lt;/em&gt; technique provides an generalized solution. Each individual can translate SOT to their native timezone. After a little practice it&#39;ll be second nature.&lt;/p&gt;
+
+&lt;h1 id=&quot;conways-law&quot;&gt;Conway&#39;s Law&lt;/h1&gt;
+
+&lt;p&gt;Durable communication exhibits the same characteristics as accidental, convenient communication in a co-located space. The powerful difference is how inclusive, transparent, and reliable it is. Durable communication tools and techniques not only scale well with your organization, they&#39;ll empower your organization scale well, too.&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;https://en.wikipedia.org/wiki/Conway%27s_Law&quot;&gt;Conway&#39;s law&lt;/a&gt; states that &lt;em&gt;&quot;organizations which design systems … are constrained to produce designs which are copies of the communication structures of these organizations&quot;&lt;/em&gt;.&lt;/p&gt;
+
+&lt;p&gt;The health and quality of your product will be a direct reflection of the health and quality of your organization. Take great care of your organization and it will pay off in your product.&lt;/p&gt;
+
+&lt;div class=&quot;footnotes&quot;&gt;
+  &lt;ol&gt;
+    &lt;li id=&quot;fn:yagni&quot;&gt;
+      &lt;p&gt;This is &lt;a href=&quot;https://en.wikipedia.org/wiki/YAGNI&quot;&gt;YAGNI&lt;/a&gt; in action, in case you were wondering. &lt;a href=&quot;#fnref:yagni&quot; class=&quot;reversefootnote&quot;&gt;&amp;#8617;&lt;/a&gt;&lt;/p&gt;
+    &lt;/li&gt;
+  &lt;/ol&gt;
+&lt;/div&gt;
+
+  &lt;p&gt;&lt;a href=&quot;http://caseywest.com/durable-communication/&quot;&gt;Durable Communication&lt;/a&gt; was originally published by Casey West at &lt;a href=&quot;http://caseywest.com&quot;&gt;The consensus-seeking architect.&lt;/a&gt; on May 10, 2015.&lt;/p&gt;</content>
+</entry>
 
 
 <entry>

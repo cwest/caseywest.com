@@ -146,6 +146,346 @@
 <article class="hentry">
   <header>
     <div class="entry-meta">
+      <span class="entry-date date published updated"><time datetime="2015-05-10T00:00:00-04:00"><a href="http://caseywest.com/durable-communication/">May 10, 2015</a></time></span><span class="author vcard"><span class="fn"><a href="http://caseywest.com/about/" title="About Casey West">Casey West</a></span></span>
+      
+      <span class="entry-reading-time pull-right">
+        <i class="fa fa-clock-o"></i>
+        
+        Reading time ~20 minutes
+      </span><!-- /.entry-reading-time -->
+      
+    </div><!-- /.entry-meta -->
+    
+      <h1 class="entry-title"><a href="http://caseywest.com/durable-communication/" rel="bookmark" title="Durable Communication" itemprop="url">Durable Communication</a></h1>
+    
+  </header>
+  <div class="entry-content">
+    <p>It's not inherently harder to be a tech lead while remote or on a distributed team – it's more deliberate.</p>
+
+<p>I <a href="https://twitter.com/caseywest/status/597027263796912128">tweeted</a> this sentiment recently along with the concept of <em>durable communication</em>. That phrase is inspired by data storage which is typically grouped into two categories: durable and ephemeral. I often hear people say it's harder to work remotely, and very hard to be in a leadership position remotely. It's said as common sense, an obvious truth. I think that's a cop out. I don't buy it for a second.</p>
+
+<p><em><strong>Before we continue:</strong> This post is about being a remote worker or working on a distributed team. I am convinced this is the path software organizations are rightly headed, and I'm determined to help you get there. If your organization has no remote workers, by choice or otherwise, or if you think remote work or remote leadership is out of the question this post may not be for you. That's cool. On the other hand, maybe it'll give you the tools, vocabulary, and confidence to give it a shot. Either way I look forward to hearing about it.</em></p>
+
+<!-- MarkdownTOC -->
+
+<ul>
+  <li><a href="#what-is-durable-communication">What is Durable Communication?</a></li>
+  <li><a href="#why-do-i-care">Why do I care?</a></li>
+  <li><a href="#effective-communication-saves-time">Effective Communication Saves Time</a></li>
+  <li><a href="#transparent-by-default">Transparent by Default</a></li>
+  <li><a href="#shared-responsibility">Shared Responsibility</a></li>
+  <li><a href="#change-_is_-hard">Change <em>is</em> Hard</a></li>
+  <li><a href="#tools">Tools</a>
+    <ul>
+      <li><a href="#text-chat">Text Chat</a>
+        <ul>
+          <li><a href="#chatops">ChatOps</a></li>
+        </ul>
+      </li>
+      <li><a href="#audiovideo-communication">Audio/Video Communication</a></li>
+      <li><a href="#screen-sharing">Screen Sharing</a></li>
+      <li><a href="#development-tools">Development Tools</a>
+        <ul>
+          <li><a href="#commit-messages">Commit Messages</a></li>
+          <li><a href="#code-review">Code Review</a></li>
+          <li><a href="#digital-agile-board">Digital Agile Board</a></li>
+        </ul>
+      </li>
+      <li><a href="#collaborative-writing">Collaborative Writing</a></li>
+      <li><a href="#file-store">File Store</a></li>
+      <li><a href="#shared-calendar">Shared Calendar</a></li>
+      <li><a href="#email">Email</a></li>
+    </ul>
+  </li>
+  <li><a href="#techniques">Techniques</a>
+    <ul>
+      <li><a href="#everyone-should-experience-remote">Everyone Should Experience Remote</a></li>
+      <li><a href="#face-time-onsite">Face Time (Onsite)</a></li>
+      <li><a href="#invite-remotes-to-hallway-conversation">Invite Remotes to Hallway Conversation</a></li>
+      <li><a href="#over-communicate">Over Communicate</a>
+        <ul>
+          <li><a href="#share-your-personality-off-topic">Share Your Personality (Off Topic)</a></li>
+          <li><a href="#have-a-visible-pulse">Have a Visible Pulse</a></li>
+        </ul>
+      </li>
+      <li><a href="#pick-a-timezone">Pick a Timezone</a></li>
+    </ul>
+  </li>
+  <li><a href="#conways-law">Conway's Law</a></li>
+</ul>
+
+<!-- /MarkdownTOC -->
+
+<h1 id="what-is-durable-communication">What is Durable Communication?</h1>
+
+<p>Collaboration using deliberately inclusive, transparent, and reliable tools and techniques. It's the cornerstone of successful remote work.</p>
+
+<h1 id="why-do-i-care">Why do I care?</h1>
+
+<p>I currently lead three teams in a distributed engineering organization. One is entirely based in California, another entirely in Pennsylvania, and the third is split between those locations. If I'm going to be successful it's critical to me, and to my teams, that we get communication right. I admit to being a change agent and this is one of the ways I've changed the engineering organization. This essay describes how my teams communicate.</p>
+
+<h1 id="effective-communication-saves-time">Effective Communication Saves Time</h1>
+
+<p>Communication is more deliberate, it's more intentional, when you're remote and communicating effectively. In a distributed team where pockets of people are co-located it's easy to unintentionally make decisions and share facts. It happens in the kitchen or at lunch. When communicating with someone far away from you, physically, you have to choose to share. It's not an accident.</p>
+
+<p>If you want to succeed at remote work it requires deliberate changes to the way your team communicates. It's a conscious choice to alter behaviors and culture to better suit a distributed group of people.</p>
+
+<p>This is a skill which can be acquired. It takes practice. Here's the thing: it's no more effort than accidental communication and, in fact, it saves everyone time and energy in the long run when information is freely flowing in channels designed to share broadly.</p>
+
+<p>Over time it becomes more comfortable to communicate in a shared space and you'll soon find yourself choosing that by default. You'll say, <em>"I just learned something weird about our data schema. I'll tell you in our chat room."</em> As you describe the oddity that is your data model, in the chat room, you're sharing with everyone regardless of physical location.</p>
+
+<h1 id="transparent-by-default">Transparent by Default</h1>
+
+<p>One of the most striking changes a team experiences when practicing durable communication is the substantial increase in their transparency. Most communication is in the open. It's archived and indexed. Anyone can read it.</p>
+
+<p>It's like giving your team the super power of time travel. In three years someone is going to be asking, <em>"Why the hell did we define an enum for this obviously boolean attribute and by the way querying it is timing out on large data sets?!"</em> They're going to search your chat archives, read commit history, find tickets, and learn that the attribute was supposed to have five values and was simplified three days before launch because otherwise we weren't going to finish<sup id="fnref:yagni"><a href="#fn:yagni" class="footnote">1</a></sup>.</p>
+
+<p>Thank your lucky stars! All the engineers who worked on that feature have moved on to new opportunities and there's nobody left to ask in the hallway. Good thing your communication was durable. Always err on the side of transparency. It'll save your future ass.</p>
+
+<h1 id="shared-responsibility">Shared Responsibility</h1>
+
+<p>Responsibility for durable communication is shared among everyone in a distributed organization; everyone is accountable for their part in making collaboration maximally effective.</p>
+
+<dl>
+  <dt>Your organization</dt>
+  <dd>has a responsibility to provide a collection of tools to enable distributed collaboration.</dd>
+  <dt>Your team</dt>
+  <dd>has a collective responsibility to cultivate a culture built on the techniques of durable communication.</dd>
+  <dt>You</dt>
+  <dd>have a responsibility to provide continual feedback when communication is becoming ineffective.</dd>
+  <dd> </dd>
+  <dd>This may be during a conference call when two people are having a side conversation and suddenly you can't follow anything being said. <em>"Excuse me, I can't follow multiple conversations at once. Can we do one at a time?"</em></dd>
+  <dd> </dd>
+  <dd>It may be during a retrospective to highlight key decisions made beyond your visibility. <em>"I was surprised to learn we decided on Elixir for the spike. If it was written down I didn't see it."</em></dd>
+</dl>
+
+<h1 id="change-is-hard">Change <em>is</em> Hard</h1>
+
+<p>If your organization is expanding from co-located to distributed it will come with growing pains. Once durable communication has been fully embraced it will feel effortless. Transition won't feel that way, and that's okay. Change requires additional effort and <em>that</em> is hard, but it's effort spent going in the right direction so it's well spent.</p>
+
+<p>What follows are concrete methods for reducing the pain of distributed work. It's tailored for teams building software.</p>
+
+<h1 id="tools">Tools</h1>
+
+<p>I'm going to list a handful of options ranging from completely free to paid. These are things I know about. They aren't endorsements unless explicitly stated. In other words, you should do the cost/benefit analysis for your organization and choose wisely.</p>
+
+<h2 id="text-chat">Text Chat</h2>
+
+<p>This is the primary device for durable communication. In my experience it's the most critical tool in your collaboration toolbox. There are some specific features which make it invaluable, and any deployment should have them one way or another:</p>
+
+<dl>
+  <dt>Archive</dt>
+  <dd>An indexed, searchable archive is particularly important. This is a history of your teams' informal communication and, just like in the hallway, a ton of knowledge sharing and key decisions are made here. You want to remember that.</dd>
+  <dt>Group Chat</dt>
+  <dd>It's not enough to have one-on-one chat capability, however…</dd>
+  <dt>Private Chat</dt>
+  <dd>it's also important for individuals to be able to communicate.</dd>
+  <dt>Full Participation</dt>
+  <dd>Everyone in your organization should be able to use it, and should be using it.</dd>
+</dl>
+
+<p>Try <a href="https://www.hipchat.com/">HipChat</a>, <a href="https://slack.com/">Slack</a>, <a href="http://www.irc.org/">IRC</a>, <a href="http://www.google.com/hangouts/">Google Hangouts</a>, or <a href="http://www.jabber.org/">jabber</a>.</p>
+
+<h3 id="chatops">ChatOps</h3>
+
+<p><a href="https://speakerdeck.com/jnewland/chatops-at-github">ChatOps</a> is the use of text chat tools for the transparent automation of business practices. It's so awesome it has a heading. Typically ChatOps is achieved by deploying a bot, which connects to your chat system, and can be programmed to do tasks for you. For example, it could build a new release, do a full deployment, pick a place for lunch, or find the perfect animated GIF for the conversation. It's  fun and useful!</p>
+
+<p>ChatOps also helps introduce context into your conversations. It can be hard to know what's going on when you're on a distributed team and we can bridge that gap by doing some of that work right in a chat room where everyone can see it. No more wondering when a release is happening. You just saw someone start a release, and you just saw your bot report the release happened successfully.</p>
+
+<p>Try <a href="https://hubot.github.com/">hubot</a> or <a href="https://www.lita.io/">Lita</a>. <a href="https://www.hipchat.com/">HipChat</a> and <a href="https://slack.com/">Slack</a> also have a lot of built-in integrations with external services to provide the reporting aspects of ChatOps out of the box.</p>
+
+<p>More on ChatOps: <a href="https://twitter.com/carols10cents">Carol Nichols</a>, <a href="http://slides.com/carolnichols/chatops#/">"How is ChatOps Formed?"</a> (<a href="https://www.youtube.com/watch?v=BX-iT5xBaMY">video</a>).</p>
+
+<h2 id="audiovideo-communication">Audio/Video Communication</h2>
+
+<p>Everyone should be able to have a phone call, or Internet equivalent, when they're at work. Voice is fine, usually, and video is higher bandwidth. Non-verbal communication is a huge part of human communication and it should absolutely be a part of your remote work environment. (Please don't make the joke about not wearing pants. It's not funny anymore.)</p>
+
+<p>This tool requires some hardware. It's necessary equipment to effectively do your job and your company should provide it or reimburse you for reasonable expenses.</p>
+
+<dl>
+  <dt>Headphones</dt>
+  <dd>Yes, you need headphones. Unless you're sharing audio with a room you should be waring headphones on a call or video chat. If you don't you run the risk of an audio feedback loop. Software is still spotty at avoiding this.</dd>
+  <dd> </dd>
+  <dd>The other reason for headphones is if you're working on a distributed team with pockets of co-located people there's a likelihood you'll end up on the same call as several people around you. There's nothing worse than hearing someone speak twice, on a slight delay, so it sounds like an echo. Oh, there is something worse: hearing <em>yourself</em> when you're talking, on a slight delay.</dd>
+  <dt>Microphone</dt>
+  <dd>I recommend getting a set of headphones with a built-in microphone. A lot of the reasons for having one are the same as above.</dd>
+  <dd> </dd>
+  <dd>The times when this breaks down are meetings where most people are co-located and a lot of them are speaking. An example is standup with a couple remote workers and everyone else physically gathered. For these cases I recommend a microphone which can be passed around when someone is speaking. This serves two purposes: high quality audio for the speaker regardless of their location in the room, and it tends to force the group to speak one at a time.</dd>
+  <dt>Camera</dt>
+  <dd>Most laptops and all-in-one desktops come with cameras these days and they're usually good enough for these purposes.</dd>
+  <dd> </dd>
+  <dd>The times when this breaks down is conference room meetings, often with whiteboards, where a small number of participants are remote. If your company is fancy they can buy great solutions for this problem. A cheap option is an external camera which someone in the meeting can pan and zoom for you. Cheap and effective.</dd>
+</dl>
+
+<p>There are three important features of any effective audio/video communication tool: the ability to have one-on-one calls, the ability to conduct group conference calls, and the ability to do either in 60 seconds or less. This collection of features isn't always available in a single tool, and that's okay. Use a few if you have to. It'll pay off.</p>
+
+<p>Try <a href="https://www.hipchat.com/">HipChat</a> (one on one), <a href="http://skype.com/">Skype</a>, <a href="http://www.webex.com/">Webex</a>, <a href="https://talky.io/">talky</a>, <a href="https://www.sqwiggle.com/">sqwiggle</a>, or <a href="http://www.google.com/hangouts/">Google Hangouts</a>.</p>
+
+<h2 id="screen-sharing">Screen Sharing</h2>
+
+<p>This is your fast-track to remote pair programming, troubleshooting, hallway testing, and collaborating with other disciplines. The important features are the same as for audio/video calls: one-on-one sharing, group sharing, and the ability to do either in 60 seconds or less.</p>
+
+<p>Try <a href="https://screenhero.com/">Screenhero</a> (for <a href="https://slack.com/">Slack</a>), <a href="https://www.hipchat.com/">HipChat</a>, <a href="https://join.me/">join.me</a>, or <a href="http://www.webex.com/">Webex</a>.</p>
+
+<h2 id="development-tools">Development Tools</h2>
+
+<h3 id="commit-messages">Commit Messages</h3>
+
+<blockquote>
+  <p>"The only difference between science and screwing around is writing it down." – <a href="https://twitter.com/donttrythis">Adam Savage</a>, Mythbusters</p>
+</blockquote>
+
+<p>Commits are like emails to future developers. Please write good commit messages for our <em>future</em> selves. 
+And not just ourselves, but any future developers working on this code. </p>
+
+<p><em>Think of it as time travel</em>. When <a href="http://backtothefuture.wikia.com/wiki/Marty%27s_letter">Marty wrote Doc that letter</a>, it wasn’t a cryptic, 
+short message he would only understand in-context. It wasn't simply a P.O. Box address for Doc to go find the details at. It was a clear description of the problem and solution. It was helpful as soon as it was read.</p>
+
+<p><em>Commits are always in sync with the code</em>. This is awesome. 
+It means we can write documentation about our code without the worry of it getting stale. 
+That's better than comments, even. A commit message for a piece of code lasts exactly as 
+long as the code it's talking about lasts.</p>
+
+<p>More on commit messages:</p>
+
+<ul>
+  <li>Alex 'Skud' Bayley, <a href="http://infotrope.net/2013/08/24/start-your-commit-message-with-a-verb/">"Start Your Commit Message with a Verb"</a></li>
+  <li>Stephen Ball, <a href="http://rakeroutes.com/blog/deliberate-git/">"Deliberate Git"</a> (<a href="https://vimeo.com/72762735">video</a>)</li>
+</ul>
+
+<h3 id="code-review">Code Review</h3>
+
+<p>Written, asynchronous code review is a central part of any solid development cycle. Don't take my word for it. From the excellent book, <a href="http://www.amazon.com/Code-Complete-Practical-Handbook-Construction/dp/0735619670">Code Complete</a>:</p>
+
+<blockquote>
+  <p>…software testing alone has limited effectiveness – the average defect detection rate is only 25 percent for unit testing, 35 percent for function testing, and 45 percent for integration testing. In contrast, <strong>the average effectiveness of design and code inspections are 55 and 60 percent.</strong> Case studies of review results have been impressive:</p>
+
+  <ul>
+    <li>In a software-maintenance organization, 55 percent of one-line maintenance changes were in error before code reviews were introduced. After reviews were introduced, only 2 percent of the changes were in error. When all changes were considered, 95 percent were correct the first time after reviews were introduced. Before reviews were introduced, under 20 percent were correct the first time.</li>
+    <li>In a group of 11 programs developed by the same group of people, the first 5 were developed without reviews. The remaining 6 were developed with reviews. After all the programs were released to production, the first 5 had an average of 4.5 errors per 100 lines of code. The 6 that had been inspected had an average of only 0.82 errors per 100. Reviews cut the errors by over 80 percent.</li>
+    <li>The Aetna Insurance Company found 82 percent of the errors in a program by using inspections and was able to decrease its development resources by 20 percent.</li>
+    <li>IBM's 500,000 line Orbit project used 11 levels of inspections. It was delivered early and had only about 1 percent of the errors that would normally be expected.</li>
+    <li>A study of an organization at AT&amp;T with more than 200 people reported a 14 percent increase in productivity and a 90 percent decrease in defects after the organization introduced reviews.</li>
+    <li>Jet Propulsion Laboratories estimates that it saves about $25,000 per inspection by finding and fixing defects at an early stage.</li>
+  </ul>
+</blockquote>
+
+<p>Copied from <a href="http://blog.codinghorror.com/code-reviews-just-do-it/">Coding Horror's copy</a>.</p>
+
+<p>Yes, you still need to write tests. Automated testing is not enough to find defects early. Combining them with code review is a winning strategy. Code review reduces defects, increases learning and knowledge sharing, and serves as a written artifact of technical decisions made over time.</p>
+
+<p>Some options for deploying code reviews include <a href="https://help.github.com/articles/using-pull-requests/">GitHub Pull Requests</a>, <a href="https://code.google.com/p/gerrit/">Gerrit</a>, <a href="https://www.reviewboard.org/">ReviewBoard</a>, <a href="http://smartbear.com/product/collaborator/overview/">Code Collaborator</a></p>
+
+<h3 id="digital-agile-board">Digital Agile Board</h3>
+
+<p>Sticky notes don't scale. I'll caution you here: this is not an opportunity to over-architect your development process. You need a few queues to understand the workload of each step in your development pipeline. This gives you insight into capacity and constraints, and provides a high-level picture of work in progress.</p>
+
+<p>Try <a href="http://trello.com/">Trello</a>, <a href="http://www.pivotaltracker.com/">Pivotal Tracker</a>, <a href="https://www.atlassian.com/software/jira/agile#!">JIRA's Agile Plugin</a>, <a href="https://waffle.io/">Waffle</a>, or <a href="https://github.com/blog/831-issues-2-0-the-next-generation">GitHub Issues</a>.</p>
+
+<h2 id="collaborative-writing">Collaborative Writing</h2>
+
+<p>Being able to take notes together in meetings is very powerful. A real-time document sharing tool brings people together in meetings and serves as a very powerful alternative to a whiteboard. Someone can decide to take live notes while others cleanup structure and edit behind them. Everyone can see the conversational history and it can be preserved for posterity.</p>
+
+<p>Try <a href="http://etherpad.org/">Etherpad</a>, <a href="https://hackpad.com/">Hackpad</a>, <a href="https://docs.google.com/">Google Docs</a>, <a href="https://help.github.com/articles/about-github-wikis/">GitHub Wiki</a>, or <a href="https://www.atlassian.com/software/confluence/#!">Confluence</a>.</p>
+
+<h2 id="file-store">File Store</h2>
+
+<p>Sharing large files is hard, still. Especially at work. It might be PSDs, PDFs, or OVAs. Making this easier will ease a common pain point of distributed teams. The solution you choose will depend on your particular risk profile.</p>
+
+<p>Try <a href="http://dropbox.com/">Dropbox</a>, <a href="https://www.box.com/">Box</a>, <a href="https://en.wikipedia.org/wiki/Network_File_System_(protocol)">NFS</a>, <a href="http://webdav.org/">WebDAV</a>, or <a href="https://encrypted.google.com/drive/">Google Drive</a>.</p>
+
+<h2 id="shared-calendar">Shared Calendar</h2>
+
+<p>Availability must be constantly communicated. Picking a time to get people together across locations and timezones can be a challenge. Shared calendars solve that problem. Frankly, I wish there were more options here. If you know of any solid alternatives I'd love to hear about them.</p>
+
+<p>Try <a href="https://en.wikipedia.org/wiki/Microsoft_Exchange_Server">Exchange</a> or <a href="https://encrypted.google.com/calendar">Google Calendar</a>.</p>
+
+<h2 id="email">Email</h2>
+
+<p>No, not really. Email is often one of the slowest, least effective means of collaboration and I don't recommend relying on it for that purpose. It does have a place, and I feel that place is in non-critical communication with no time pressure. For example, when you want to chat with someone who isn't "in the office" at that particular moment and it's not important enough to call them.</p>
+
+<p>It's also an effective way to receive reports and notifications which, often, will lead you to the other collaboration tools mentioned in this document.</p>
+
+<p>If you need a quick answer from a co-worker or team and you're starting to write an email I have this advice: <strong>stop.</strong> You're about to waste time and introduce needless delay. I bet you'll get a faster answer on text chat.</p>
+
+<h1 id="techniques">Techniques</h1>
+
+<h2 id="everyone-should-experience-remote">Everyone Should Experience Remote</h2>
+
+<p>At some point you should send every team member home, or to their local coffee shop, or into separated conference rooms to simulate being remote. Empathy is a great motivator, and if the folks at headquarters are having trouble adjusting to your remote workforce this is a fast-track way to help.</p>
+
+<p>I love the idea of having everyone work from home (or wherever) every Friday. A policy like this tends to make people happy. They like it. However, it's not a big enough burden to change minds most of the time. It'll become your "heads down day" and the point of the exercise will be lost.</p>
+
+<p>I recommend at least a full week. Everyone is remote. Meetings continue as scheduled. So do pair programming and planning sessions. Standup? Yes. Meetings with other departments? Yes, plan to dial in or video conference.</p>
+
+<p>There's a higher-level business benefit to doing this regularly, too. It can serve as a good, real test of your operational business continuity plans. It's a sustained use of the tools you've put in place for when your office burns to the ground. You are thinking about how to operate the company when your office is on fire, right?</p>
+
+<p>There are team members for whom home is not a suitable work environment. Speaking as a dad who had toddlers I can tell you sometimes it just isn't going to be viable. Don't require everyone to be at home. For folks who can't they should be offered the option of renting a desk at a co-working space (to be expensed), or commandeering a conference room for the week. If they stay in the office, in a conference room, set a rule of no talking in person. Stay true to the simulation.</p>
+
+<h2 id="face-time-onsite">Face Time (Onsite)</h2>
+
+<p>Get people together. Relationships are best created in person and can be sustained remotely for a while. Minimum twice a year. Being together is too valuable to waste on business as usual. Close the laptops and get to know each other for a while.</p>
+
+<h2 id="invite-remotes-to-hallway-conversation">Invite Remotes to Hallway Conversation</h2>
+
+<p>It is inevitable, and still good and healthy, that you'll strike up an ad hoc conversation at your desk. It'll probably be about work, and chances are someone in another location is interested in that topic. This is a moment to invite them in. How do you do that when they're in another timezone? A few ways.</p>
+
+<p>Invite them on video chat. This is the best. It's like you're right there in the room because your head is! Unplug your headphones so they can hear everyone and everyone can hear them. You can also invite them to audio, or you can all hop on chat and have the conversation in text. Video is still the highest bandwidth option and for that reason I recommend it.</p>
+
+<p>If you work in an open office you're probably saying something I hear all the time, <em>"but we'll need to find a conference room because it's rude to be on a call in the pit."</em> No, it's not. It's no more rude than the conversation you're having right now. Will it surprise people? Yes, at first. They'll get over it. This is a stigma that should be eliminated. It's also what headphones were invented for.</p>
+
+<h2 id="over-communicate">Over Communicate</h2>
+
+<p>Your working relationships will benefit from the old adage "always over-communicate", just like any relationship.</p>
+
+<h3 id="share-your-personality-off-topic">Share Your Personality (Off Topic)</h3>
+
+<p>A benefit to being co-located with your peers is they get to know you. They learn about your kids, your hobbies, and your affinity for mango flavored tea. Even if you never said anything about it out loud they'd learn about you just from being nearby.</p>
+
+<p>Remote co-workers don't have the luxury of osmosis. Our relationships grow over time through familiarity and comfort. The more we know someone the closer we feel. That's why it's important to share your personality. Share it a lot. How? Off topic.</p>
+
+<p>Every organization needs an Off Topic chat room. This is where the stream of nonsense we all spew every day goes to live. This is where you tell someone you're getting coffee, where you post pictures from last weekend's mountain biking adventure, or where you drop a link to the latest badass thing <a href="https://twitter.com/neiltyson">Neil deGrasse Tyson</a> just said. Off Topic is a safe place to chat about whatever you want with your co-workers.</p>
+
+<p>You may end up with more off topic channels, for specific interests, than work-specific channels. That's ok! I see channels for music, cooking, exercise, and DIY often. Let this thrive and grow organically.</p>
+
+<p>For those of you who lead remote or distributed organizations: (with the exception of offensive content) don't monitor or question the traffic in this room. There will probably be a lot of it, and if you've forgotten what it's like to build a thing you'll probably also wonder how these people get anything done all day. Don't worry about it. This is work. Instead of hearing it in the halls you're seeing it on the screen. No big deal.</p>
+
+<h3 id="have-a-visible-pulse">Have a Visible Pulse</h3>
+
+<p>When you're remote it's your responsibility to exhibit a visible pulse. You may think nobody cares about every time you make a pot of coffee or push a branch, and you're probably right about that. What they do care about is knowing you're alive, there, and available when needed. Sending those seemingly useless messages is sending them a more important signal: you are reliable and okay.</p>
+
+<h2 id="pick-a-timezone">Pick a Timezone</h2>
+
+<p>Your company probably has a home office. It can be helpful to agree that its timezone is your <em>Standard Operating Time (SOT)</em>. I've employed this technique before and it works.</p>
+
+<p>When is standup every day? <em>10am SOT</em></p>
+
+<p><em>I'll be leaving the office a little early today so reach be before 1PM SOT if you need anything.</em></p>
+
+<p>When discussing time you should always be explicit about timezones. The <em>Standard Operating Time</em> technique provides an generalized solution. Each individual can translate SOT to their native timezone. After a little practice it'll be second nature.</p>
+
+<h1 id="conways-law">Conway's Law</h1>
+
+<p>Durable communication exhibits the same characteristics as accidental, convenient communication in a co-located space. The powerful difference is how inclusive, transparent, and reliable it is. Durable communication tools and techniques not only scale well with your organization, they'll empower your organization scale well, too.</p>
+
+<p><a href="https://en.wikipedia.org/wiki/Conway%27s_Law">Conway's law</a> states that <em>"organizations which design systems … are constrained to produce designs which are copies of the communication structures of these organizations"</em>.</p>
+
+<p>The health and quality of your product will be a direct reflection of the health and quality of your organization. Take great care of your organization and it will pay off in your product.</p>
+
+<div class="footnotes">
+  <ol>
+    <li id="fn:yagni">
+      <p>This is <a href="https://en.wikipedia.org/wiki/YAGNI">YAGNI</a> in action, in case you were wondering. <a href="#fnref:yagni" class="reversefootnote">&#8617;</a></p>
+    </li>
+  </ol>
+</div>
+
+  </div><!-- /.entry-content -->
+</article><!-- /.hentry -->
+
+<article class="hentry">
+  <header>
+    <div class="entry-meta">
       <span class="entry-date date published updated"><time datetime="2015-05-03T00:00:00-04:00"><a href="http://caseywest.com/the-help-timer/">May 03, 2015</a></time></span><span class="author vcard"><span class="fn"><a href="http://caseywest.com/about/" title="About Casey West">Casey West</a></span></span>
       
       <span class="entry-reading-time pull-right">
@@ -711,492 +1051,6 @@ now, and why.</p>
     </li>
   </ol>
 </div>
-
-  </div><!-- /.entry-content -->
-</article><!-- /.hentry -->
-
-<article class="hentry">
-  <header>
-    <div class="entry-meta">
-      <span class="entry-date date published updated"><time datetime="2015-01-07T00:00:00-05:00"><a href="http://caseywest.com/responsibly-use-peek-to-inspect-rails/">January 07, 2015</a></time></span><span class="author vcard"><span class="fn"><a href="http://caseywest.com/about/" title="About Casey West">Casey West</a></span></span>
-      
-      <span class="entry-reading-time pull-right">
-        <i class="fa fa-clock-o"></i>
-        
-        Reading time ~10 minutes
-      </span><!-- /.entry-reading-time -->
-      
-    </div><!-- /.entry-meta -->
-    
-      <h1 class="entry-title"><a href="http://caseywest.com/responsibly-use-peek-to-inspect-rails/" rel="bookmark" title="Responsibly Use Peek to Inspect Rails" itemprop="url">Responsibly Use Peek to Inspect Rails</a></h1>
-    
-  </header>
-  <div class="entry-content">
-    <p>I <em>love</em> developing applications with the <a href="https://github.com/peek/peek">peek</a> gem. It's designed for development or staging environments; there are a few tricks if you don't want it on production or test environments.</p>
-
-<p>This gem puts a little bar on your pages which gives you all sorts of helpful information about the request you just made.</p>
-
-<p><img src="https://f.cloud.github.com/assets/79995/244991/03cee1fa-8a74-11e2-8e33-283cf1298a60.png" alt="peek screenshot" /></p>
-
-<p>As you can see there is information about the branch you're on, performance metrics, database queries, caches, shared memory, and job queues in there. Read the documentation for <a href="https://github.com/peek/peek">peek</a> on GitHub and find the plugins that work best for you. They're excellent.</p>
-
-<p><span class="pullquote-right" data-pullquote="I definitely don&apos;t want to install Peek on production">
-The trouble is I definitely don't want to install Peek on production, or in my test environments, and the <a href="https://github.com/peek/peek/blob/master/README.md#usage">peek usage</a> instructions would, indeed, require me to do so for a few key reasons: initializers, routes, assets, and views. Using peek requires a few steps of setup in your application. Each of the areas I enumerated requires peek to be a loaded gem in the environment you're running on.
-</span></p>
-
-<p>My first attempt to work around this involved wrapping calls with a <a href="http://ruby-doc.org/docs/keywords/1.9/Object.html#method-i-defined-3F"><code>defined?</code></a> test. For example, in <code>config/routes.rb</code>:</p>
-
-<div class="highlighter-coderay"><table class="CodeRay"><tr>
-  <td class="line-numbers"><pre><a href="#n1" name="n1">1</a>
-</pre></td>
-  <td class="code"><pre>mount <span class="constant">Peek</span>::<span class="constant">Railtie</span> =&gt; <span class="string"><span class="delimiter">'</span><span class="content">/peek</span><span class="delimiter">'</span></span> <span class="keyword">if</span> <span class="keyword">defined?</span>(<span class="constant">Peek</span>)
-</pre></td>
-</tr></table>
-</div>
-
-<p>To style and script peek bar you need some CSS and JavaScript assets as well, which are loaded through the asset pipeline. Problem is, if the gem isn't in your bundle those loads fail, and so does pre-compilation if you attempt it.</p>
-
-<p>Finally, your views should be checking the <code>peek_enabled?</code> method, which is defined by peek in your <code>ApplicationController</code> class. So, for example, when rendering the peek bar itself you should be doing this:</p>
-
-<div class="highlighter-coderay"><table class="CodeRay"><tr>
-  <td class="line-numbers"><pre><a href="#n1" name="n1">1</a>
-<a href="#n2" name="n2">2</a>
-</pre></td>
-  <td class="code"><pre>body
-  = render <span class="string"><span class="delimiter">'</span><span class="content">peek/bar</span><span class="delimiter">'</span></span> <span class="keyword">if</span> peek_enabled?
-</pre></td>
-</tr></table>
-</div>
-
-<p>Again, if peek isn't in your Bundle, such as in the production environment, this render will fail.</p>
-
-<p>I'm not particularly enthusiastic about this situation, so here is my guide to using peek responsibly. There are enough moving parts I decided to use the Table of Contents.</p>
-
-<ul id="markdown-toc">
-  <li><a href="#gemfile"><code>Gemfile</code></a></li>
-  <li><a href="#peekbar-class"><code>PeekBar</code> Class</a>    <ul>
-      <li><a href="#definition">Definition</a></li>
-      <li><a href="#test">Test</a></li>
-      <li><a href="#initialization">Initialization</a></li>
-    </ul>
-  </li>
-  <li><a href="#peekbarhelper-module"><code>PeekBarHelper</code> Module</a>    <ul>
-      <li><a href="#definition-1">Definition</a></li>
-      <li><a href="#test-1">Test</a></li>
-    </ul>
-  </li>
-  <li><a href="#peek-initialization"><code>Peek</code> Initialization</a></li>
-  <li><a href="#assets">Assets</a>    <ul>
-      <li><a href="#css-and-javascript-definition">CSS and JavaScript Definition</a></li>
-      <li><a href="#initialization-1">Initialization</a></li>
-      <li><a href="#default-assets-gotcha">Default Assets Gotcha</a></li>
-    </ul>
-  </li>
-  <li><a href="#view-configuration">View Configuration</a></li>
-  <li><a href="#finally">Finally</a></li>
-</ul>
-
-<h2 id="gemfile"><code>Gemfile</code></h2>
-
-<p>Peek must be loaded into our environment. I'm loading it into my <code>:development</code> environment only, along with a list of Peek plugins I want to use.</p>
-
-<div class="highlighter-coderay"><table class="CodeRay"><tr>
-  <td class="line-numbers"><pre><a href="#n1" name="n1">1</a>
-<a href="#n2" name="n2">2</a>
-<a href="#n3" name="n3">3</a>
-<a href="#n4" name="n4">4</a>
-<a href="#n5" name="n5">5</a>
-<a href="#n6" name="n6">6</a>
-<a href="#n7" name="n7">7</a>
-<a href="#n8" name="n8">8</a>
-</pre></td>
-  <td class="code"><pre>group <span class="symbol">:development</span> <span class="keyword">do</span>
-  <span class="comment"># Peek Bar</span>
-  gem <span class="string"><span class="delimiter">'</span><span class="content">peek</span><span class="delimiter">'</span></span>
-  gem <span class="string"><span class="delimiter">'</span><span class="content">peek-git</span><span class="delimiter">'</span></span>
-  gem <span class="string"><span class="delimiter">'</span><span class="content">peek-gc</span><span class="delimiter">'</span></span>
-  gem <span class="string"><span class="delimiter">'</span><span class="content">peek-performance_bar</span><span class="delimiter">'</span></span>
-  gem <span class="string"><span class="delimiter">'</span><span class="content">peek-pg</span><span class="delimiter">'</span></span>
-<span class="keyword">end</span>
-</pre></td>
-</tr></table>
-</div>
-
-<h2 id="peekbar-class"><code>PeekBar</code> Class</h2>
-
-<p>This class is meant to answer two questions:</p>
-
-<ol>
-  <li><em>Is <code>Peek</code> available for use?</em> This question is asked when we start and configure the application.</li>
-  <li><em>Should peek be enabled for this request?</em> This question is asked during requests. Specifically during view rendering for any view that incorporates peek, which is most likely a layout.</li>
-</ol>
-
-<h3 id="definition">Definition</h3>
-
-<p>I put this class in <code>lib/peek_bar.rb</code>.</p>
-
-<div class="highlighter-coderay"><table class="CodeRay"><tr>
-  <td class="line-numbers"><pre><a href="#n1" name="n1">1</a>
-<a href="#n2" name="n2">2</a>
-<a href="#n3" name="n3">3</a>
-<a href="#n4" name="n4">4</a>
-<a href="#n5" name="n5">5</a>
-<a href="#n6" name="n6">6</a>
-<a href="#n7" name="n7">7</a>
-<a href="#n8" name="n8">8</a>
-<a href="#n9" name="n9">9</a>
-<strong><a href="#n10" name="n10">10</a></strong>
-<a href="#n11" name="n11">11</a>
-<a href="#n12" name="n12">12</a>
-</pre></td>
-  <td class="code"><pre><span class="keyword">class</span> <span class="class">PeekBar</span>
-  <span class="keyword">def</span> <span class="predefined-constant">self</span>.<span class="function">available?</span>
-    !<span class="keyword">defined?</span>(<span class="constant">Peek</span>).nil?
-  <span class="keyword">end</span>
-
-  <span class="keyword">def</span> <span class="predefined-constant">self</span>.<span class="function">enabled?</span>(current_user)
-    <span class="keyword">return</span> <span class="predefined-constant">false</span> <span class="keyword">unless</span> available?
-
-    <span class="comment"># The default test.</span>
-    <span class="string"><span class="delimiter">%w(</span><span class="content">development staging</span><span class="delimiter">)</span></span>.include? <span class="constant">Rails</span>.env
-  <span class="keyword">end</span>
-<span class="keyword">end</span>
-</pre></td>
-</tr></table>
-</div>
-
-<p>Here you can see we've encapsulated the <code>defined?</code> test into <code>PeekBar.available?</code>. We use it in <code>PeekBar.enabled?</code> as the first test.</p>
-
-<p>If peek is available, and we're in development or the <code>current_user</code> likes nerdy toys we enable peek.</p>
-
-<h3 id="test">Test</h3>
-
-<p>I use <a href="https://relishapp.com/rspec/rspec-rails/docs">rspec</a> for testing, so my spec is in <code>spec/lib/peek_bar_spec.rb</code>.</p>
-
-<div class="highlighter-coderay"><table class="CodeRay"><tr>
-  <td class="line-numbers"><pre><a href="#n1" name="n1">1</a>
-<a href="#n2" name="n2">2</a>
-<a href="#n3" name="n3">3</a>
-<a href="#n4" name="n4">4</a>
-<a href="#n5" name="n5">5</a>
-<a href="#n6" name="n6">6</a>
-<a href="#n7" name="n7">7</a>
-<a href="#n8" name="n8">8</a>
-<a href="#n9" name="n9">9</a>
-<strong><a href="#n10" name="n10">10</a></strong>
-<a href="#n11" name="n11">11</a>
-<a href="#n12" name="n12">12</a>
-<a href="#n13" name="n13">13</a>
-<a href="#n14" name="n14">14</a>
-<a href="#n15" name="n15">15</a>
-<a href="#n16" name="n16">16</a>
-<a href="#n17" name="n17">17</a>
-<a href="#n18" name="n18">18</a>
-<a href="#n19" name="n19">19</a>
-<strong><a href="#n20" name="n20">20</a></strong>
-<a href="#n21" name="n21">21</a>
-<a href="#n22" name="n22">22</a>
-<a href="#n23" name="n23">23</a>
-<a href="#n24" name="n24">24</a>
-<a href="#n25" name="n25">25</a>
-<a href="#n26" name="n26">26</a>
-<a href="#n27" name="n27">27</a>
-<a href="#n28" name="n28">28</a>
-<a href="#n29" name="n29">29</a>
-<strong><a href="#n30" name="n30">30</a></strong>
-<a href="#n31" name="n31">31</a>
-<a href="#n32" name="n32">32</a>
-<a href="#n33" name="n33">33</a>
-</pre></td>
-  <td class="code"><pre>require <span class="string"><span class="delimiter">'</span><span class="content">rails_helper</span><span class="delimiter">'</span></span>
-
-<span class="constant">RSpec</span>.describe <span class="constant">PeekBar</span> <span class="keyword">do</span>
-  subject { described_class }
-
-  context <span class="string"><span class="delimiter">'</span><span class="content">without Peek</span><span class="delimiter">'</span></span> <span class="keyword">do</span>
-    before(<span class="symbol">:each</span>) <span class="keyword">do</span>
-      <span class="constant">Object</span>.send(<span class="symbol">:remove_const</span>, <span class="symbol">:Peek</span>) <span class="keyword">if</span> <span class="keyword">defined?</span>(<span class="constant">Peek</span>)
-    <span class="keyword">end</span>
-
-    it <span class="string"><span class="delimiter">&quot;</span><span class="content">isn't available</span><span class="delimiter">&quot;</span></span> <span class="keyword">do</span>
-      expect(subject.available?).to be(<span class="predefined-constant">false</span>)
-    <span class="keyword">end</span>
-
-    it <span class="string"><span class="delimiter">&quot;</span><span class="content">isn't enabled</span><span class="delimiter">&quot;</span></span> <span class="keyword">do</span>
-      expect(subject.enabled?(anything)).to be(<span class="predefined-constant">false</span>)
-    <span class="keyword">end</span>
-  <span class="keyword">end</span>
-
-  context <span class="string"><span class="delimiter">'</span><span class="content">with Peek</span><span class="delimiter">'</span></span> <span class="keyword">do</span>
-    before(<span class="symbol">:each</span>) { <span class="constant">Peek</span> = <span class="constant">Class</span>.new }
-    after(<span class="symbol">:each</span>) { <span class="constant">Object</span>.send(<span class="symbol">:remove_const</span>, <span class="symbol">:Peek</span>) }
-
-    it <span class="string"><span class="delimiter">'</span><span class="content">is available</span><span class="delimiter">'</span></span> <span class="keyword">do</span>
-      expect(subject.available?).to be(<span class="predefined-constant">true</span>)
-    <span class="keyword">end</span>
-
-    it <span class="string"><span class="delimiter">'</span><span class="content">is enabled</span><span class="delimiter">'</span></span> <span class="keyword">do</span>
-      allow(<span class="constant">Rails</span>.env).to receive(<span class="symbol">:development?</span>).and_return(<span class="predefined-constant">true</span>)
-      expect(subject.enabled?(anything)).to be(<span class="predefined-constant">true</span>)
-    <span class="keyword">end</span>
-  <span class="keyword">end</span>
-<span class="keyword">end</span>
-</pre></td>
-</tr></table>
-</div>
-
-<p>In order to ensure this test is isolated I take extra precautions to ensure the <code>Peek</code> constant isn't available to my tests unless I explicitly allow it.</p>
-
-<h3 id="initialization">Initialization</h3>
-
-<p>By default Rails doesn't load ruby code from the <code>lib/</code> directory, so lets be sure to tell it to. In <code>config/application.rb</code> add this:</p>
-
-<div class="highlighter-coderay"><table class="CodeRay"><tr>
-  <td class="line-numbers"><pre><a href="#n1" name="n1">1</a>
-<a href="#n2" name="n2">2</a>
-<a href="#n3" name="n3">3</a>
-</pre></td>
-  <td class="code"><pre>config.autoload_paths += <span class="string"><span class="delimiter">%W(</span><span class="content">
-  </span><span class="inline"><span class="inline-delimiter">#{</span>config.root<span class="inline-delimiter">}</span></span><span class="content">/lib
-</span><span class="delimiter">)</span></span>
-</pre></td>
-</tr></table>
-</div>
-
-<h2 id="peekbarhelper-module"><code>PeekBarHelper</code> Module</h2>
-
-<p>As I said earlier peek implements a <code>peek_enabled?</code> method and suggests if you want to customize it define the method in your <code>ApplicationController</code> class. I recommend doing that in a helper class instead.</p>
-
-<p>We need to know if peek should be enabled and to verify that we also need to know if it's available. With the <code>PeekBar</code> class this is simple.</p>
-
-<h3 id="definition-1">Definition</h3>
-
-<p>In <code>app/helpers/peek_bar_helper.rb</code>.</p>
-
-<div class="highlighter-coderay"><table class="CodeRay"><tr>
-  <td class="line-numbers"><pre><a href="#n1" name="n1">1</a>
-<a href="#n2" name="n2">2</a>
-<a href="#n3" name="n3">3</a>
-<a href="#n4" name="n4">4</a>
-<a href="#n5" name="n5">5</a>
-<a href="#n6" name="n6">6</a>
-</pre></td>
-  <td class="code"><pre><span class="keyword">module</span> <span class="class">PeekBarHelper</span>
-  <span class="comment"># Typical Peek Integration</span>
-  <span class="keyword">def</span> <span class="function">peek_enabled?</span>
-    <span class="constant">PeekBar</span>.enabled?(current_user)
-  <span class="keyword">end</span>
-<span class="keyword">end</span>
-</pre></td>
-</tr></table>
-</div>
-
-<h3 id="test-1">Test</h3>
-
-<p>Since we're programming responsibly here's a test for the helper. In <code>spec/helpers/peek_bar_helper_spec.rb</code>.</p>
-
-<div class="highlighter-coderay"><table class="CodeRay"><tr>
-  <td class="line-numbers"><pre><a href="#n1" name="n1">1</a>
-<a href="#n2" name="n2">2</a>
-<a href="#n3" name="n3">3</a>
-<a href="#n4" name="n4">4</a>
-<a href="#n5" name="n5">5</a>
-<a href="#n6" name="n6">6</a>
-<a href="#n7" name="n7">7</a>
-<a href="#n8" name="n8">8</a>
-<a href="#n9" name="n9">9</a>
-<strong><a href="#n10" name="n10">10</a></strong>
-<a href="#n11" name="n11">11</a>
-<a href="#n12" name="n12">12</a>
-<a href="#n13" name="n13">13</a>
-<a href="#n14" name="n14">14</a>
-<a href="#n15" name="n15">15</a>
-<a href="#n16" name="n16">16</a>
-<a href="#n17" name="n17">17</a>
-</pre></td>
-  <td class="code"><pre>require <span class="string"><span class="delimiter">'</span><span class="content">rails_helper</span><span class="delimiter">'</span></span>
-
-<span class="constant">RSpec</span>.describe <span class="constant">PeekBarHelper</span>, <span class="key">type</span>: <span class="symbol">:helper</span> <span class="keyword">do</span>
-  before(<span class="symbol">:each</span>) <span class="keyword">do</span>
-    allow(helper).to receive(<span class="symbol">:current_user</span>).and_return(anything)
-  <span class="keyword">end</span>
-
-  it <span class="string"><span class="delimiter">'</span><span class="content">is not enabled</span><span class="delimiter">'</span></span> <span class="keyword">do</span>
-    allow(<span class="constant">PeekBar</span>).to receive(<span class="symbol">:enabled?</span>).and_return(<span class="predefined-constant">false</span>)
-    expect(helper.peek_enabled?).to be(<span class="predefined-constant">false</span>)
-  <span class="keyword">end</span>
-
-  it <span class="string"><span class="delimiter">'</span><span class="content">is enabled</span><span class="delimiter">'</span></span> <span class="keyword">do</span>
-    allow(<span class="constant">PeekBar</span>).to receive(<span class="symbol">:enabled?</span>).and_return(<span class="predefined-constant">true</span>)
-    expect(helper.peek_enabled?).to be(<span class="predefined-constant">true</span>)
-  <span class="keyword">end</span>
-<span class="keyword">end</span>
-</pre></td>
-</tr></table>
-</div>
-
-<h2 id="peek-initialization"><code>Peek</code> Initialization</h2>
-
-<p>The peek documentation explains how to set up <code>config/initializers/peek.rb</code> to enable the plugins you've selected. We need to first test for the availability of peek like this:</p>
-
-<div class="highlighter-coderay"><table class="CodeRay"><tr>
-  <td class="line-numbers"><pre><a href="#n1" name="n1">1</a>
-<a href="#n2" name="n2">2</a>
-<a href="#n3" name="n3">3</a>
-<a href="#n4" name="n4">4</a>
-<a href="#n5" name="n5">5</a>
-<a href="#n6" name="n6">6</a>
-</pre></td>
-  <td class="code"><pre><span class="keyword">if</span> <span class="constant">PeekBar</span>.available?
-  <span class="constant">Peek</span>.into <span class="constant">Peek</span>::<span class="constant">Views</span>::<span class="constant">Git</span>
-  <span class="constant">Peek</span>.into <span class="constant">Peek</span>::<span class="constant">Views</span>::<span class="constant">GC</span>
-  <span class="constant">Peek</span>.into <span class="constant">Peek</span>::<span class="constant">Views</span>::<span class="constant">PerformanceBar</span>
-  <span class="constant">Peek</span>.into <span class="constant">Peek</span>::<span class="constant">Views</span>::<span class="constant">PG</span>
-<span class="keyword">end</span>
-</pre></td>
-</tr></table>
-</div>
-
-<h2 id="assets">Assets</h2>
-
-<p>We don't want to load or pre-compile the peek assets unless we intend to use them. My recommended approach is to wrap their inclusion in a new set of CSS and JavaScript files. I use the asset pipeline, so that's how I'll be including the gem's assets.</p>
-
-<h3 id="css-and-javascript-definition">CSS and JavaScript Definition</h3>
-
-<p>CSS is in <code>app/assets/stylesheets/peek_bar.scss</code>.</p>
-
-<div class="highlighter-coderay"><table class="CodeRay"><tr>
-  <td class="line-numbers"><pre><a href="#n1" name="n1">1</a>
-<a href="#n2" name="n2">2</a>
-<a href="#n3" name="n3">3</a>
-<a href="#n4" name="n4">4</a>
-<a href="#n5" name="n5">5</a>
-<a href="#n6" name="n6">6</a>
-<a href="#n7" name="n7">7</a>
-<a href="#n8" name="n8">8</a>
-<a href="#n9" name="n9">9</a>
-<strong><a href="#n10" name="n10">10</a></strong>
-<a href="#n11" name="n11">11</a>
-</pre></td>
-  <td class="code"><pre>//= <span class="tag">require</span> <span class="tag">peek</span>
-//= <span class="tag">require</span> <span class="tag">peek</span>/<span class="tag">views</span>/<span class="tag">performance_bar</span>
-
-// <span class="tag">Peek</span> <span class="tag">bar</span> <span class="tag">on</span> <span class="tag">bottom</span> <span class="tag">of</span> <span class="tag">page</span>.
-<span class="id">#peek</span> {
-  <span class="key">position</span>: <span class="value">fixed</span>;
-  <span class="key">bottom</span>:   <span class="float">0</span>;
-  <span class="key">left</span>:     <span class="float">0</span>;
-  <span class="key">right</span>:    <span class="float">0</span>;
-  <span class="key">z-index</span>:  <span class="float">999</span>;
-}
-</pre></td>
-</tr></table>
-</div>
-
-<p>I prefer <a href="http://coffeescript.org/">CoffeeScript</a> so I loaded the JavaScript in <code>app/assets/javascripts/peek_bar.js.coffee</code>.</p>
-
-<div class="highlighter-coderay"><table class="CodeRay"><tr>
-  <td class="line-numbers"><pre><a href="#n1" name="n1">1</a>
-<a href="#n2" name="n2">2</a>
-</pre></td>
-  <td class="code"><pre>#= require peek
-#= require peek/views/performance_bar
-</pre></td>
-</tr></table>
-</div>
-
-<h3 id="initialization-1">Initialization</h3>
-
-<p>The asset pipeline complains if you don't tell it about additional assets you intend to include separately (see the next section on <a href="#view-configuration">View Configuration</a>). Thing is, we don't <em>always</em> intend to include them or pre-compile them in this case. Just like when we initialized peek itself we must check for its availability.</p>
-
-<p>Add this to <code>config/initializers/assets.rb</code>:</p>
-
-<div class="highlighter-coderay"><table class="CodeRay"><tr>
-  <td class="line-numbers"><pre><a href="#n1" name="n1">1</a>
-<a href="#n2" name="n2">2</a>
-<a href="#n3" name="n3">3</a>
-</pre></td>
-  <td class="code"><pre><span class="keyword">if</span> <span class="constant">PeekBar</span>.available?
-  <span class="constant">Rails</span>.application.config.assets.precompile += <span class="string"><span class="delimiter">%w(</span><span class="content">peek_bar.css peek_bar.js</span><span class="delimiter">)</span></span>
-<span class="keyword">end</span>
-</pre></td>
-</tr></table>
-</div>
-
-<h3 id="default-assets-gotcha">Default Assets Gotcha</h3>
-
-<p>By default <code>application.css</code> and <code>application.js</code> include all the CSS and JavaScript in their respective directory trees. That's achieved through the use of <code>require_tree .</code> in each of those files.</p>
-
-<p>Now that we've created a couple assets to conditionally load we need to remove <code>require_tree</code>. If you don't remove it your default assets will try to include <code>peek_bar.*</code> which will lead to the aforementioned failures on environments where peek is not installed.</p>
-
-<p>If you were relying on it, which I don't recommend for reasons beyond the scope of this essay, learn how to deal with it by reading the <a href="http://guides.rubyonrails.org/asset_pipeline.html#manifest-files-and-directives">Asset Pipeline Rails Guide</a>.</p>
-
-<h2 id="view-configuration">View Configuration</h2>
-
-<p>All this hard work for what? Now it's time to tie it all together in our layout view. I like <a href="http://slim-lang.com/">slim</a> so this is an extremely condensed version of my default layout, <code>app/views/layouts/application.html.slim</code>.</p>
-
-<div class="highlighter-coderay"><table class="CodeRay"><tr>
-  <td class="line-numbers"><pre><a href="#n1" name="n1">1</a>
-<a href="#n2" name="n2">2</a>
-<a href="#n3" name="n3">3</a>
-<a href="#n4" name="n4">4</a>
-<a href="#n5" name="n5">5</a>
-<a href="#n6" name="n6">6</a>
-<a href="#n7" name="n7">7</a>
-<a href="#n8" name="n8">8</a>
-<a href="#n9" name="n9">9</a>
-<strong><a href="#n10" name="n10">10</a></strong>
-<a href="#n11" name="n11">11</a>
-<a href="#n12" name="n12">12</a>
-<a href="#n13" name="n13">13</a>
-</pre></td>
-  <td class="code"><pre>doctype html
-html
-  head
-    = stylesheet_link_tag <span class="string"><span class="delimiter">'</span><span class="content">application</span><span class="delimiter">'</span></span>, <span class="key">media</span>: <span class="string"><span class="delimiter">'</span><span class="content">all</span><span class="delimiter">'</span></span>, <span class="string"><span class="delimiter">'</span><span class="content">data-turbolinks-track</span><span class="delimiter">'</span></span> =&gt; <span class="predefined-constant">true</span>
-    - <span class="keyword">if</span> peek_enabled?
-      = stylesheet_link_tag <span class="string"><span class="delimiter">'</span><span class="content">peek_bar</span><span class="delimiter">'</span></span>, <span class="key">media</span>: <span class="string"><span class="delimiter">'</span><span class="content">all</span><span class="delimiter">'</span></span>, <span class="string"><span class="delimiter">'</span><span class="content">data-turbolinks-track</span><span class="delimiter">'</span></span> =&gt; <span class="predefined-constant">true</span>
-    = csrf_meta_tags
-body
-  = render <span class="string"><span class="delimiter">'</span><span class="content">peek/bar</span><span class="delimiter">'</span></span> <span class="keyword">if</span> peek_enabled?
-  = <span class="keyword">yield</span>
-  = javascript_include_tag <span class="string"><span class="delimiter">'</span><span class="content">application</span><span class="delimiter">'</span></span>, <span class="string"><span class="delimiter">'</span><span class="content">data-turbolinks-track</span><span class="delimiter">'</span></span> =&gt; <span class="predefined-constant">true</span>
-  - <span class="keyword">if</span> peek_enabled?
-    = javascript_include_tag <span class="string"><span class="delimiter">'</span><span class="content">peek_bar</span><span class="delimiter">'</span></span>, <span class="string"><span class="delimiter">'</span><span class="content">data-turbolinks-track</span><span class="delimiter">'</span></span> =&gt; <span class="predefined-constant">true</span>
-</pre></td>
-</tr></table>
-</div>
-
-<h2 id="finally">Finally</h2>
-
-<p>Voila!</p>
-
-<p>At this point <a href="https://github.com/peek/peek">peek</a> is incorporated into my application in a robust, responsible way. Environments we didn't install it into operate perfectly without it, and the ones we do have an encapsulation to use for managing its inclusion in our interface.</p>
-
-<p>It was a little more work but it paid off. We have an excellent developer tool installed without hurting production.</p>
-
-<p>If we want to use peek in production with only staff accounts, for example, all we have to do is change the <code>Gemfile</code> to install peek in the <code>:production</code> group and adjust the <code>PeekBar.enabled?</code> method:</p>
-
-<div class="highlighter-coderay"><table class="CodeRay"><tr>
-  <td class="line-numbers"><pre><a href="#n1" name="n1">1</a>
-<a href="#n2" name="n2">2</a>
-<a href="#n3" name="n3">3</a>
-<a href="#n4" name="n4">4</a>
-<a href="#n5" name="n5">5</a>
-</pre></td>
-  <td class="code"><pre><span class="keyword">def</span> <span class="predefined-constant">self</span>.<span class="function">enabled?</span>(current_user)
-  <span class="keyword">return</span> <span class="predefined-constant">false</span> <span class="keyword">unless</span> available?
-
-  <span class="constant">Rails</span>.env.development? || current_user.staff?
-<span class="keyword">end</span>
-</pre></td>
-</tr></table>
-</div>
-
-<p>That <code>PeekBar</code> class really tied the room together, did it not?</p>
-
-<iframe width="560" height="315" src="http://www.youtube.com/embed/ezQLP1dj_t8" allowfullscreen=""></iframe>
-
 
   </div><!-- /.entry-content -->
 </article><!-- /.hentry -->
