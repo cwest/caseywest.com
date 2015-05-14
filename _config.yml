@@ -77,6 +77,6 @@ defaults:
       path: ""
     values:
       image:
-        feature: feature/santa-cruz-beach.jpg
+        feature: feature/lights.jpg
       comments: false
 
