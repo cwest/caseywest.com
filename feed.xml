@@ -4,7 +4,7 @@
 <generator uri="https://github.com/mojombo/jekyll">Jekyll</generator>
 <link rel="self" type="application/atom+xml" href="http://caseywest.com/feed.xml" />
 <link rel="alternate" type="text/html" href="http://caseywest.com" />
-<updated>2015-05-13T11:47:48-04:00</updated>
+<updated>2015-05-14T10:03:42-04:00</updated>
 <id>http://caseywest.com/</id>
 <author>
   <name>Casey West</name>
@@ -27,7 +27,7 @@
   </author>
   <content type="html">&lt;p&gt;It&#39;s not inherently harder to be a tech lead while remote or on a distributed team – it&#39;s more deliberate.&lt;/p&gt;
 
-&lt;p&gt;I &lt;a href=&quot;https://twitter.com/caseywest/status/597027263796912128&quot;&gt;tweeted&lt;/a&gt; this sentiment recently along with the concept of &lt;em&gt;durable communication&lt;/em&gt;. That phrase is inspired by data storage which is typically grouped into two categories: durable and ephemeral. I often hear people say it&#39;s harder to work remotely, and very hard to be in a leadership position remotely. It&#39;s said as common sense, an obvious truth. I think that&#39;s a cop out. I don&#39;t buy it for a second.&lt;/p&gt;
+&lt;p&gt;I &lt;a href=&quot;https://twitter.com/caseywest/status/597027263796912128&quot;&gt;tweeted&lt;/a&gt; this sentiment recently along with the concept of &lt;em&gt;durable communication&lt;/em&gt;. That phrase is inspired by data storage which is typically grouped into two categories: durable and ephemeral. I often hear people say it&#39;s &lt;em&gt;obviously&lt;/em&gt; harder to work remotely, and very hard to be in a leadership position remotely. I think that&#39;s a cop out. I don&#39;t buy it for a second.&lt;/p&gt;
 
 &lt;p&gt;&lt;em&gt;&lt;strong&gt;Before we continue:&lt;/strong&gt; This post is about being a remote worker or working on a distributed team. I am convinced this is the path software organizations are rightly headed, and I&#39;m determined to help you get there. If your organization has no remote workers, by choice or otherwise, or if you think remote work or remote leadership is out of the question this post may not be for you. That&#39;s cool. On the other hand, maybe it&#39;ll give you the tools, vocabulary, and confidence to give it a shot. Either way I look forward to hearing about it.&lt;/em&gt;&lt;/p&gt;
 
@@ -53,7 +53,7 @@
         &lt;ul&gt;
           &lt;li&gt;&lt;a href=&quot;#commit-messages&quot;&gt;Commit Messages&lt;/a&gt;&lt;/li&gt;
           &lt;li&gt;&lt;a href=&quot;#code-review&quot;&gt;Code Review&lt;/a&gt;&lt;/li&gt;
-          &lt;li&gt;&lt;a href=&quot;#digital-agile-board&quot;&gt;Digital Agile Board&lt;/a&gt;&lt;/li&gt;
+          &lt;li&gt;&lt;a href=&quot;#digital-progress-board&quot;&gt;Digital Progress Board&lt;/a&gt;&lt;/li&gt;
         &lt;/ul&gt;
       &lt;/li&gt;
       &lt;li&gt;&lt;a href=&quot;#collaborative-writing&quot;&gt;Collaborative Writing&lt;/a&gt;&lt;/li&gt;
@@ -87,11 +87,11 @@
 
 &lt;h1 id=&quot;why-do-i-care&quot;&gt;Why do I care?&lt;/h1&gt;
 
-&lt;p&gt;I currently lead three teams in a distributed engineering organization. One is entirely based in California, another entirely in Pennsylvania, and the third is split between those locations. If I&#39;m going to be successful it&#39;s critical to me, and to my teams, that we get communication right. I admit to being a change agent and this is one of the ways I&#39;ve changed the engineering organization. This essay describes how my teams communicate.&lt;/p&gt;
+&lt;p&gt;I currently lead three teams in a distributed engineering organization. One is entirely based in California, another entirely in Pennsylvania, and the third is split between those locations. If I&#39;m going to be successful as a leader it&#39;s critical that we that we get communication right. I admit to being a change agent and this is one of the ways I&#39;ve changed the engineering organization. This essay describes how my teams communicate.&lt;/p&gt;
 
 &lt;h1 id=&quot;effective-communication-saves-time&quot;&gt;Effective Communication Saves Time&lt;/h1&gt;
 
-&lt;p&gt;Communication is more deliberate, it&#39;s more intentional, when you&#39;re remote and communicating effectively. In a distributed team where pockets of people are co-located it&#39;s easy to unintentionally make decisions and share facts. It happens in the kitchen or at lunch. When communicating with someone far away from you, physically, you have to choose to share. It&#39;s not an accident.&lt;/p&gt;
+&lt;p&gt;Communication is more deliberate and intentional when you&#39;re remote and communicating effectively. In a distributed team where pockets of people are co-located it&#39;s easy to unintentionally make decisions and share facts only with team members who are in the same physical location. It happens in the kitchen or at lunch. When communicating with someone far away from you, physically, you have to choose to share. It&#39;s not an accident.&lt;/p&gt;
 
 &lt;p&gt;If you want to succeed at remote work it requires deliberate changes to the way your team communicates. It&#39;s a conscious choice to alter behaviors and culture to better suit a distributed group of people.&lt;/p&gt;
 
@@ -169,7 +169,7 @@
 
 &lt;dl&gt;
   &lt;dt&gt;Headphones&lt;/dt&gt;
-  &lt;dd&gt;Yes, you need headphones. Unless you&#39;re sharing audio with a room you should be waring headphones on a call or video chat. If you don&#39;t you run the risk of an audio feedback loop. Software is still spotty at avoiding this.&lt;/dd&gt;
+  &lt;dd&gt;Yes, you need headphones. Unless you&#39;re sharing audio with a room you should be wearing headphones on a call or video chat. If you don&#39;t you run the risk of an audio feedback loop. Software is still spotty at avoiding this.&lt;/dd&gt;
   &lt;dd&gt; &lt;/dd&gt;
   &lt;dd&gt;The other reason for headphones is if you&#39;re working on a distributed team with pockets of co-located people there&#39;s a likelihood you&#39;ll end up on the same call as several people around you. There&#39;s nothing worse than hearing someone speak twice, on a slight delay, so it sounds like an echo. Oh, there is something worse: hearing &lt;em&gt;yourself&lt;/em&gt; when you&#39;re talking, on a slight delay.&lt;/dd&gt;
   &lt;dt&gt;Microphone&lt;/dt&gt;
@@ -184,7 +184,7 @@
 
 &lt;p&gt;There are three important features of any effective audio/video communication tool: the ability to have one-on-one calls, the ability to conduct group conference calls, and the ability to do either in 60 seconds or less. This collection of features isn&#39;t always available in a single tool, and that&#39;s okay. Use a few if you have to. It&#39;ll pay off.&lt;/p&gt;
 
-&lt;p&gt;Try &lt;a href=&quot;https://www.hipchat.com/&quot;&gt;HipChat&lt;/a&gt; (one on one), &lt;a href=&quot;http://skype.com/&quot;&gt;Skype&lt;/a&gt;, &lt;a href=&quot;http://www.webex.com/&quot;&gt;Webex&lt;/a&gt;, &lt;a href=&quot;https://talky.io/&quot;&gt;talky&lt;/a&gt;, &lt;a href=&quot;https://www.sqwiggle.com/&quot;&gt;sqwiggle&lt;/a&gt;, or &lt;a href=&quot;http://www.google.com/hangouts/&quot;&gt;Google Hangouts&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;Try &lt;a href=&quot;https://www.hipchat.com/&quot;&gt;HipChat&lt;/a&gt; (one on one), &lt;a href=&quot;http://skype.com/&quot;&gt;Skype&lt;/a&gt;, &lt;a href=&quot;http://zoom.us/&quot;&gt;Zoom&lt;/a&gt;, &lt;a href=&quot;http://www.webex.com/&quot;&gt;Webex&lt;/a&gt;, &lt;a href=&quot;https://talky.io/&quot;&gt;talky&lt;/a&gt;, &lt;a href=&quot;https://www.sqwiggle.com/&quot;&gt;sqwiggle&lt;/a&gt;, or &lt;a href=&quot;http://www.google.com/hangouts/&quot;&gt;Google Hangouts&lt;/a&gt;.&lt;/p&gt;
 
 &lt;h2 id=&quot;screen-sharing&quot;&gt;Screen Sharing&lt;/h2&gt;
 
@@ -241,7 +241,7 @@ long as the code it&#39;s talking about lasts.&lt;/p&gt;
 
 &lt;p&gt;Some options for deploying code reviews include &lt;a href=&quot;https://help.github.com/articles/using-pull-requests/&quot;&gt;GitHub Pull Requests&lt;/a&gt;, &lt;a href=&quot;https://code.google.com/p/gerrit/&quot;&gt;Gerrit&lt;/a&gt;, &lt;a href=&quot;https://www.reviewboard.org/&quot;&gt;ReviewBoard&lt;/a&gt;, &lt;a href=&quot;http://smartbear.com/product/collaborator/overview/&quot;&gt;Code Collaborator&lt;/a&gt;&lt;/p&gt;
 
-&lt;h3 id=&quot;digital-agile-board&quot;&gt;Digital Agile Board&lt;/h3&gt;
+&lt;h3 id=&quot;digital-progress-board&quot;&gt;Digital Progress Board&lt;/h3&gt;
 
 &lt;p&gt;Sticky notes don&#39;t scale. I&#39;ll caution you here: this is not an opportunity to over-architect your development process. You need a few queues to understand the workload of each step in your development pipeline. This gives you insight into capacity and constraints, and provides a high-level picture of work in progress.&lt;/p&gt;
 
@@ -250,6 +250,8 @@ long as the code it&#39;s talking about lasts.&lt;/p&gt;
 &lt;h2 id=&quot;collaborative-writing&quot;&gt;Collaborative Writing&lt;/h2&gt;
 
 &lt;p&gt;Being able to take notes together in meetings is very powerful. A real-time document sharing tool brings people together in meetings and serves as a very powerful alternative to a whiteboard. Someone can decide to take live notes while others cleanup structure and edit behind them. Everyone can see the conversational history and it can be preserved for posterity.&lt;/p&gt;
+
+&lt;p&gt;Preservation should take place elsewhere. These tools usually aren&#39;t good choices for long-term, curated document stores. Instead it may make sense to copy your artifacts from here to a story, or a &lt;code&gt;README&lt;/code&gt;, or a specific document under a &lt;code&gt;docs/&lt;/code&gt; directory in a repository.&lt;/p&gt;
 
 &lt;p&gt;Try &lt;a href=&quot;http://etherpad.org/&quot;&gt;Etherpad&lt;/a&gt;, &lt;a href=&quot;https://hackpad.com/&quot;&gt;Hackpad&lt;/a&gt;, &lt;a href=&quot;https://docs.google.com/&quot;&gt;Google Docs&lt;/a&gt;, &lt;a href=&quot;https://help.github.com/articles/about-github-wikis/&quot;&gt;GitHub Wiki&lt;/a&gt;, or &lt;a href=&quot;https://www.atlassian.com/software/confluence/#!&quot;&gt;Confluence&lt;/a&gt;.&lt;/p&gt;
 
@@ -311,7 +313,7 @@ long as the code it&#39;s talking about lasts.&lt;/p&gt;
 
 &lt;p&gt;Every organization needs an Off Topic chat room. This is where the stream of nonsense we all spew every day goes to live. This is where you tell someone you&#39;re getting coffee, where you post pictures from last weekend&#39;s mountain biking adventure, or where you drop a link to the latest badass thing &lt;a href=&quot;https://twitter.com/neiltyson&quot;&gt;Neil deGrasse Tyson&lt;/a&gt; just said. Off Topic is a safe place to chat about whatever you want with your co-workers.&lt;/p&gt;
 
-&lt;p&gt;You may end up with more off topic channels, for specific interests, than work-specific channels. That&#39;s ok! I see channels for music, cooking, exercise, and DIY often. Let this thrive and grow organically.&lt;/p&gt;
+&lt;p&gt;You may end up with more off topic channels, for specific interests, than work-specific channels. That&#39;s okay! I see channels for music, cooking, exercise, and DIY often. Let this thrive and grow organically.&lt;/p&gt;
 
 &lt;p&gt;For those of you who lead remote or distributed organizations: (with the exception of offensive content) don&#39;t monitor or question the traffic in this room. There will probably be a lot of it, and if you&#39;ve forgotten what it&#39;s like to build a thing you&#39;ll probably also wonder how these people get anything done all day. Don&#39;t worry about it. This is work. Instead of hearing it in the halls you&#39;re seeing it on the screen. No big deal.&lt;/p&gt;
 
