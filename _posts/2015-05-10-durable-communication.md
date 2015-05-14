@@ -8,7 +8,7 @@ description: It's not inherently harder to be a tech lead while remote or on a d
 
 It's not inherently harder to be a tech lead while remote or on a distributed team – it's more deliberate.
 
-I [tweeted] this sentiment recently along with the concept of _durable communication_. That phrase is inspired by data storage which is typically grouped into two categories: durable and ephemeral. I often hear people say it's harder to work remotely, and very hard to be in a leadership position remotely. It's said as common sense, an obvious truth. I think that's a cop out. I don't buy it for a second.
+I [tweeted] this sentiment recently along with the concept of _durable communication_. That phrase is inspired by data storage which is typically grouped into two categories: durable and ephemeral. I often hear people say it's _obviously_ harder to work remotely, and very hard to be in a leadership position remotely. I think that's a cop out. I don't buy it for a second.
 
 _**Before we continue:** This post is about being a remote worker or working on a distributed team. I am convinced this is the path software organizations are rightly headed, and I'm determined to help you get there. If your organization has no remote workers, by choice or otherwise, or if you think remote work or remote leadership is out of the question this post may not be for you. That's cool. On the other hand, maybe it'll give you the tools, vocabulary, and confidence to give it a shot. Either way I look forward to hearing about it._
 
@@ -28,7 +28,7 @@ _**Before we continue:** This post is about being a remote worker or working on 
     - [Development Tools](#development-tools)
         - [Commit Messages](#commit-messages)
         - [Code Review](#code-review)
-        - [Digital Agile Board](#digital-agile-board)
+        - [Digital Progress Board](#digital-progress-board)
     - [Collaborative Writing](#collaborative-writing)
     - [File Store](#file-store)
     - [Shared Calendar](#shared-calendar)
@@ -51,11 +51,11 @@ Collaboration using deliberately inclusive, transparent, and reliable tools and 
 
 # Why do I care?
 
-I currently lead three teams in a distributed engineering organization. One is entirely based in California, another entirely in Pennsylvania, and the third is split between those locations. If I'm going to be successful it's critical to me, and to my teams, that we get communication right. I admit to being a change agent and this is one of the ways I've changed the engineering organization. This essay describes how my teams communicate.
+I currently lead three teams in a distributed engineering organization. One is entirely based in California, another entirely in Pennsylvania, and the third is split between those locations. If I'm going to be successful as a leader it's critical that we that we get communication right. I admit to being a change agent and this is one of the ways I've changed the engineering organization. This essay describes how my teams communicate.
 
 # Effective Communication Saves Time
 
-Communication is more deliberate, it's more intentional, when you're remote and communicating effectively. In a distributed team where pockets of people are co-located it's easy to unintentionally make decisions and share facts. It happens in the kitchen or at lunch. When communicating with someone far away from you, physically, you have to choose to share. It's not an accident.
+Communication is more deliberate and intentional when you're remote and communicating effectively. In a distributed team where pockets of people are co-located it's easy to unintentionally make decisions and share facts only with team members who are in the same physical location. It happens in the kitchen or at lunch. When communicating with someone far away from you, physically, you have to choose to share. It's not an accident.
 
 If you want to succeed at remote work it requires deliberate changes to the way your team communicates. It's a conscious choice to alter behaviors and culture to better suit a distributed group of people.
 
@@ -133,7 +133,7 @@ Everyone should be able to have a phone call, or Internet equivalent, when they'
 This tool requires some hardware. It's necessary equipment to effectively do your job and your company should provide it or reimburse you for reasonable expenses.
 
 Headphones
-: Yes, you need headphones. Unless you're sharing audio with a room you should be waring headphones on a call or video chat. If you don't you run the risk of an audio feedback loop. Software is still spotty at avoiding this.
+: Yes, you need headphones. Unless you're sharing audio with a room you should be wearing headphones on a call or video chat. If you don't you run the risk of an audio feedback loop. Software is still spotty at avoiding this.
 : &nbsp;
 : The other reason for headphones is if you're working on a distributed team with pockets of co-located people there's a likelihood you'll end up on the same call as several people around you. There's nothing worse than hearing someone speak twice, on a slight delay, so it sounds like an echo. Oh, there is something worse: hearing _yourself_ when you're talking, on a slight delay.
 
@@ -149,7 +149,7 @@ Camera
 
 There are three important features of any effective audio/video communication tool: the ability to have one-on-one calls, the ability to conduct group conference calls, and the ability to do either in 60 seconds or less. This collection of features isn't always available in a single tool, and that's okay. Use a few if you have to. It'll pay off.
 
-Try [HipChat] \(one on one), [Skype], [Webex], [talky], [sqwiggle], or [Google Hangouts].
+Try [HipChat] \(one on one), [Skype], [Zoom], [Webex], [talky], [sqwiggle], or [Google Hangouts].
 
 ## Screen Sharing
 
@@ -199,7 +199,7 @@ Yes, you still need to write tests. Automated testing is not enough to find defe
 
 Some options for deploying code reviews include [GitHub Pull Requests], [Gerrit], [ReviewBoard], [Code Collaborator]
 
-### Digital Agile Board
+### Digital Progress Board
 
 Sticky notes don't scale. I'll caution you here: this is not an opportunity to over-architect your development process. You need a few queues to understand the workload of each step in your development pipeline. This gives you insight into capacity and constraints, and provides a high-level picture of work in progress.
 
@@ -208,6 +208,8 @@ Try [Trello], [Pivotal Tracker], [JIRA's Agile Plugin], [Waffle], or [GitHub Iss
 ## Collaborative Writing
 
 Being able to take notes together in meetings is very powerful. A real-time document sharing tool brings people together in meetings and serves as a very powerful alternative to a whiteboard. Someone can decide to take live notes while others cleanup structure and edit behind them. Everyone can see the conversational history and it can be preserved for posterity.
+
+Preservation should take place elsewhere. These tools usually aren't good choices for long-term, curated document stores. Instead it may make sense to copy your artifacts from here to a story, or a `README`, or a specific document under a `docs/` directory in a repository.
 
 Try [Etherpad], [Hackpad], [Google Docs], [GitHub Wiki], or [Confluence].
 
@@ -269,7 +271,7 @@ Remote co-workers don't have the luxury of osmosis. Our relationships grow over 
 
 Every organization needs an Off Topic chat room. This is where the stream of nonsense we all spew every day goes to live. This is where you tell someone you're getting coffee, where you post pictures from last weekend's mountain biking adventure, or where you drop a link to the latest badass thing [Neil deGrasse Tyson] just said. Off Topic is a safe place to chat about whatever you want with your co-workers.
 
-You may end up with more off topic channels, for specific interests, than work-specific channels. That's ok! I see channels for music, cooking, exercise, and DIY often. Let this thrive and grow organically.
+You may end up with more off topic channels, for specific interests, than work-specific channels. That's okay! I see channels for music, cooking, exercise, and DIY often. Let this thrive and grow organically.
 
 For those of you who lead remote or distributed organizations: (with the exception of offensive content) don't monitor or question the traffic in this room. There will probably be a lot of it, and if you've forgotten what it's like to build a thing you'll probably also wonder how these people get anything done all day. Don't worry about it. This is work. Instead of hearing it in the halls you're seeing it on the screen. No big deal.
 
@@ -336,5 +338,6 @@ The health and quality of your product will be a direct reflection of the health
 [Carol Nichols]: https://twitter.com/carols10cents
 [Skype]: http://skype.com/
 [join.me]: https://join.me/
+[Zoom]: http://zoom.us/
 
 [^yagni]: This is [YAGNI] in action, in case you were wondering.
