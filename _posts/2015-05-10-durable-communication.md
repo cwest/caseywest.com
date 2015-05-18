@@ -205,6 +205,8 @@ Sticky notes don't scale. I'll caution you here: this is not an opportunity to o
 
 Try [Trello], [Pivotal Tracker], [JIRA's Agile Plugin], [Waffle], or [GitHub Issues].
 
+More on code review: [Derek Prior](https://twitter.com/derekprior), ["Implementing a Strong Code-Review Culture" (video)](http://confreaks.tv/videos/railsconf2015-implementing-a-strong-code-review-culture).
+
 ## Collaborative Writing
 
 Being able to take notes together in meetings is very powerful. A real-time document sharing tool brings people together in meetings and serves as a very powerful alternative to a whiteboard. Someone can decide to take live notes while others cleanup structure and edit behind them. Everyone can see the conversational history and it can be preserved for posterity.
