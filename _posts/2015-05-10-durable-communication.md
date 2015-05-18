@@ -199,13 +199,13 @@ Yes, you still need to write tests. Automated testing is not enough to find defe
 
 Some options for deploying code reviews include [GitHub Pull Requests], [Gerrit], [ReviewBoard], [Code Collaborator]
 
+More on code review: [Derek Prior](https://twitter.com/derekprior), ["Implementing a Strong Code-Review Culture" (video)](http://confreaks.tv/videos/railsconf2015-implementing-a-strong-code-review-culture).
+
 ### Digital Progress Board
 
 Sticky notes don't scale. I'll caution you here: this is not an opportunity to over-architect your development process. You need a few queues to understand the workload of each step in your development pipeline. This gives you insight into capacity and constraints, and provides a high-level picture of work in progress.
 
 Try [Trello], [Pivotal Tracker], [JIRA's Agile Plugin], [Waffle], or [GitHub Issues].
-
-More on code review: [Derek Prior](https://twitter.com/derekprior), ["Implementing a Strong Code-Review Culture" (video)](http://confreaks.tv/videos/railsconf2015-implementing-a-strong-code-review-culture).
 
 ## Collaborative Writing
 
