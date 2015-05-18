@@ -4,7 +4,7 @@
 <generator uri="https://github.com/mojombo/jekyll">Jekyll</generator>
 <link rel="self" type="application/atom+xml" href="http://caseywest.com/feed.xml" />
 <link rel="alternate" type="text/html" href="http://caseywest.com" />
-<updated>2015-05-17T21:18:22-04:00</updated>
+<updated>2015-05-17T21:19:39-04:00</updated>
 <id>http://caseywest.com/</id>
 <author>
   <name>Casey West</name>
@@ -241,13 +241,13 @@ long as the code it&#39;s talking about lasts.&lt;/p&gt;
 
 &lt;p&gt;Some options for deploying code reviews include &lt;a href=&quot;https://help.github.com/articles/using-pull-requests/&quot;&gt;GitHub Pull Requests&lt;/a&gt;, &lt;a href=&quot;https://code.google.com/p/gerrit/&quot;&gt;Gerrit&lt;/a&gt;, &lt;a href=&quot;https://www.reviewboard.org/&quot;&gt;ReviewBoard&lt;/a&gt;, &lt;a href=&quot;http://smartbear.com/product/collaborator/overview/&quot;&gt;Code Collaborator&lt;/a&gt;&lt;/p&gt;
 
+&lt;p&gt;More on code review: &lt;a href=&quot;https://twitter.com/derekprior&quot;&gt;Derek Prior&lt;/a&gt;, &lt;a href=&quot;http://confreaks.tv/videos/railsconf2015-implementing-a-strong-code-review-culture&quot;&gt;&quot;Implementing a Strong Code-Review Culture&quot; (video)&lt;/a&gt;.&lt;/p&gt;
+
 &lt;h3 id=&quot;digital-progress-board&quot;&gt;Digital Progress Board&lt;/h3&gt;
 
 &lt;p&gt;Sticky notes don&#39;t scale. I&#39;ll caution you here: this is not an opportunity to over-architect your development process. You need a few queues to understand the workload of each step in your development pipeline. This gives you insight into capacity and constraints, and provides a high-level picture of work in progress.&lt;/p&gt;
 
 &lt;p&gt;Try &lt;a href=&quot;http://trello.com/&quot;&gt;Trello&lt;/a&gt;, &lt;a href=&quot;http://www.pivotaltracker.com/&quot;&gt;Pivotal Tracker&lt;/a&gt;, &lt;a href=&quot;https://www.atlassian.com/software/jira/agile#!&quot;&gt;JIRA&#39;s Agile Plugin&lt;/a&gt;, &lt;a href=&quot;https://waffle.io/&quot;&gt;Waffle&lt;/a&gt;, or &lt;a href=&quot;https://github.com/blog/831-issues-2-0-the-next-generation&quot;&gt;GitHub Issues&lt;/a&gt;.&lt;/p&gt;
-
-&lt;p&gt;More on code review: &lt;a href=&quot;https://twitter.com/derekprior&quot;&gt;Derek Prior&lt;/a&gt;, &lt;a href=&quot;http://confreaks.tv/videos/railsconf2015-implementing-a-strong-code-review-culture&quot;&gt;&quot;Implementing a Strong Code-Review Culture&quot; (video)&lt;/a&gt;.&lt;/p&gt;
 
 &lt;h2 id=&quot;collaborative-writing&quot;&gt;Collaborative Writing&lt;/h2&gt;
 
