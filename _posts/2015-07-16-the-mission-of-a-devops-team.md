@@ -35,7 +35,7 @@ If your company has created a dedicated "DevOps team" it signals one of two like
 1. Things are already on fire and you're trying to catch up because you're late, or
 2. You haven't realized that DevOps is a practice, like "agile", and your implementation of the concepts may be faulty.
 
-I do have experience building DevOps teams (responding to scenario #1, everything is on fire) and the goal of that team is always to pay the up-front investment in modernizing the software delivery pipeline. Once the investment is paid thier role is to empower engineers to run the software they create themselves, and to enable operators to avoid fires in production and get a good night's sleep. Once that equilibrium is reached it's time to move on to work which genuinely creates business value.
+I have built DevOps teams (responding to scenario #1, everything is on fire) and the goal of that team is always to pay the up-front investment in modernizing the software delivery pipeline. Once the investment is paid thier role is to empower engineers to run the software they create themselves, and to enable operators to avoid fires in production and get a good night's sleep. Once that equilibrium is reached it's time to move on to work which genuinely creates business value.
 
 If your organization has a long-lived "DevOps team" and the idea is they'll always be around, how is that different from "throwing it over the wall?" In this case it's just a second wall to an intermediary team between IT and engineering, and it isn't really a good long-term strategy. It can, however, get you over the initial changes required to embrace the DevOps ideal of "you built it, you run it."
 
