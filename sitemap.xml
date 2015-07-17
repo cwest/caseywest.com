@@ -1,6 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9 http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd" xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
+    <loc>http://caseywest.com/the-mission-of-a-devops-team/</loc>
+    <lastmod>2015-07-16T00:00:00-04:00</lastmod>
+  </url>
+  <url>
     <loc>http://caseywest.com/trust-and-consequences/</loc>
     <lastmod>2015-05-19T00:00:00-04:00</lastmod>
   </url>
@@ -76,11 +80,20 @@
     <loc>http://caseywest.com/about/</loc>
   </url>
   <url>
+    <loc>http://caseywest.com/page2/</loc>
+  </url>
+  <url>
+    <loc>http://caseywest.com/page3/</loc>
+  </url>
+  <url>
+    <loc>http://caseywest.com/page4/</loc>
+  </url>
+  <url>
     <loc>http://caseywest.com/resume/caseywest.html</loc>
-    <lastmod>2015-06-17T08:28:00-04:00</lastmod>
+    <lastmod>2015-06-17T08:49:11-04:00</lastmod>
   </url>
   <url>
     <loc>http://caseywest.com/resume/index.html</loc>
-    <lastmod>2015-06-17T08:28:00-04:00</lastmod>
+    <lastmod>2015-06-17T08:49:11-04:00</lastmod>
   </url>
 </urlset>
