@@ -33,7 +33,7 @@ The same applies to the practice of DevOps. I suggest:
 If your company has created a dedicated "DevOps team" it signals one of two likely scenarios:
 
 1. Things are already on fire and you're trying to catch up because you're late, or
-2. You haven't realized that DevOps is a practice, like "agile", and your implementation of the concepts is likely faulty.
+2. You haven't realized that DevOps is a practice, like "agile", and your implementation of the concepts may be faulty.
 
 I do have experience building DevOps teams (responding to scenario #1, everything is on fire) and the goal of that team is always to pay the up-front investment in modernizing the software delivery pipeline. Once the investment is paid thier role is to empower engineers to run the software they create themselves, and to enable operators to avoid fires in production and get a good night's sleep. Once that equilibrium is reached it's time to move on to work which genuinely creates business value.
 
