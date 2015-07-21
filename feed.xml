@@ -4,7 +4,7 @@
 <generator uri="https://github.com/mojombo/jekyll">Jekyll</generator>
 <link rel="self" type="application/atom+xml" href="http://caseywest.com/feed.xml" />
 <link rel="alternate" type="text/html" href="http://caseywest.com" />
-<updated>2015-07-18T21:20:53-04:00</updated>
+<updated>2015-07-21T18:18:42-04:00</updated>
 <id>http://caseywest.com/</id>
 <author>
   <name>Casey West</name>
@@ -62,7 +62,7 @@
 
 &lt;p&gt;If your organization has a long-lived &quot;DevOps team&quot; and the idea is they&#39;ll always be around, how is that different from &quot;throwing it over the wall?&quot; In this case it&#39;s just a second wall to an intermediary team between IT and engineering, and it isn&#39;t really a good long-term strategy. It can, however, get you over the initial changes required to embrace the DevOps ideal of &quot;you built it, you run it.&quot;&lt;/p&gt;
 
-&lt;p&gt;It isn&#39;t a negative that DevOps teams are created. The rational for their existence is often quite positive, just that the implementation isn&#39;t quite as polished and inline with the intent of the DevOps movement. It should be seen as a short-term tactic and you need to have a long-term strategy. Your DevOps team will never generate business value directly, so your sustained investment isn&#39;t wise.&lt;/p&gt;
+&lt;p&gt;It isn&#39;t a negative that DevOps teams are created. The rationale for their existence is often quite positive, just that the implementation isn&#39;t quite as polished and inline with the intent of the DevOps movement. It should be seen as a short-term tactic and you need to have a long-term strategy. Your DevOps team will never generate business value directly, so your sustained investment isn&#39;t wise.&lt;/p&gt;
 
 &lt;p&gt;The reduction of &lt;a href=&quot;the time it takes to create and deliver business value&quot;&gt;cycle time&lt;/a&gt; is, without question, a strategic advantage. Your dedicated DevOps team can get you from waterfall to agility much faster, and reduce cycle time drastically, which is a significant improvement in the short term. As the health of your architecture improves, and isn&#39;t materially affected by modification (deployment), the value gained by sustained investment in a DevOps team goes down. &lt;strong&gt;This is good.&lt;/strong&gt;&lt;/p&gt;
 
