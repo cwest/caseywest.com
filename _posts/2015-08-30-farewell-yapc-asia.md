@@ -17,7 +17,7 @@ Most of the talks I went to were English-language based. I saw excellent talks o
 
 Since I was speaking in English the conference provided live translation into Japense. It was an incredible experience. I felt like a diplomat, especially during Q&A when questions in Japanese were translated into English so I could understand them. The translators were wonderful and I'm very thankful they were available.
 
-Finally, thank you to [Diasuke Maki][diasuke] for inviting me to speak this year!
+Finally, thank you to [Daisuke Maki][daisuke] for inviting me to speak this year!
 
 [kubernetes]: http://yapcasia.org/2015/talk/show/e19fe827-13c1-11e5-aca1-525412004261
 [docker]: http://yapcasia.org/2015/talk/show/21cb8176-065b-11e5-9492-79c97d574c3a
@@ -27,7 +27,7 @@ Finally, thank you to [Diasuke Maki][diasuke] for inviting me to speak this year
 [posture for engineers]: http://yapcasia.org/2015/talk/show/e466d60a-11db-11e5-b07b-d7f07d574c3a
 
 [marylou]: http://blog.maryloulenhart.com/yapcasia-2015/
-[diasuke]: https://medium.com/@lestrrat/the-10th-and-final-yapc-asia-tokyo-6bf15dae1ab4
+[daisuke]: https://medium.com/@lestrrat/the-10th-and-final-yapc-asia-tokyo-6bf15dae1ab4
 [yapcasia]: http://yapcasia.org/2015/
 
 [mytalk]: http://yapcasia.org/2015/talk/show/a06d9970-0d7b-11e5-aaf9-67dc7d574c3a
