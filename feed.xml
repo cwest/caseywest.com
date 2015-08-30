@@ -4,7 +4,7 @@
 <generator uri="https://github.com/mojombo/jekyll">Jekyll</generator>
 <link rel="self" type="application/atom+xml" href="http://caseywest.com/feed.xml" />
 <link rel="alternate" type="text/html" href="http://caseywest.com" />
-<updated>2015-08-29T23:34:37-04:00</updated>
+<updated>2015-08-29T23:36:35-04:00</updated>
 <id>http://caseywest.com/</id>
 <author>
   <name>Casey West</name>
@@ -34,6 +34,8 @@
 &lt;iframe width=&quot;560&quot; height=&quot;315&quot; src=&quot;http://www.youtube.com/embed/FhPHVEGY-6A&quot; allowfullscreen=&quot;&quot;&gt;&lt;/iframe&gt;
 
 &lt;p&gt;Since I was speaking in English the conference provided live translation into Japense. It was an incredible experience. I felt like a diplomat, especially during Q&amp;amp;A when questions in Japanese were translated into English so I could understand them. The translators were wonderful and I&#39;m very thankful they were available.&lt;/p&gt;
+
+&lt;p&gt;Finally, thank you to &lt;a href=&quot;https://medium.com/@lestrrat/the-10th-and-final-yapc-asia-tokyo-6bf15dae1ab4&quot;&gt;Diasuke Maki&lt;/a&gt; for inviting me to speak this year!&lt;/p&gt;
 
 
   &lt;p&gt;&lt;a href=&quot;http://caseywest.com/farewell-yapc-asia/&quot;&gt;Farewell YAPC::Asia&lt;/a&gt; was originally published by Casey West at &lt;a href=&quot;http://caseywest.com&quot;&gt;The consensus-seeking architect.&lt;/a&gt; on August 30, 2015.&lt;/p&gt;</content>
