@@ -9,7 +9,7 @@ image:
 
 I was honored to speak at [YAPC::Asia 2015][yapcasia] in August. It was a well-organized conference, and the attendees and speakers were all friendly and fun.
 
-Most of the talks I went to were English-language based. I saw excellent talks on [kubernetes], [docker], [refactoring], [golang], and [lattice]. Fellow Pittsburgh engineer [Marylou Lenhart][maryou] also spoke at the conference about [posture for engineers], and I'll be trying to do my _cat/cow_ stretches regularly.
+Most of the talks I went to were English-language based. I saw excellent talks on [kubernetes], [docker], [refactoring], [golang], and [lattice]. Fellow Pittsburgh engineer [Marylou Lenhart][marylou] also spoke at the conference about [posture for engineers], and I'll be trying to do my _cat/cow_ stretches regularly.
 
 [My talk][mytalk] was about working remotely and working on distributed teams. It was based on my writing on [durable communication]. I got a lot of excellent questions after my talk and at the official dinner, and the feedback was quite positive. My [slides][myslides] are online and the oragnizing team has already posted the [video][myvideo]:
 
