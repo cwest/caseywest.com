@@ -17,6 +17,8 @@ Most of the talks I went to were English-language based. I saw excellent talks o
 
 Since I was speaking in English the conference provided live translation into Japense. It was an incredible experience. I felt like a diplomat, especially during Q&A when questions in Japanese were translated into English so I could understand them. The translators were wonderful and I'm very thankful they were available.
 
+Finally, thank you to [Diasuke Maki][diasuke] for inviting me to speak this year!
+
 [kubernetes]: http://yapcasia.org/2015/talk/show/e19fe827-13c1-11e5-aca1-525412004261
 [docker]: http://yapcasia.org/2015/talk/show/21cb8176-065b-11e5-9492-79c97d574c3a
 [refactoring]: http://yapcasia.org/2015/talk/show/bd04b86c-f9de-11e4-b996-8ab37d574c3a
