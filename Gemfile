@@ -15,7 +15,7 @@ require 'json'
 require 'open-uri'
 
 versions = begin
-  JSON.parse(open('https://pages.github.com/versions.json').read)
+  JSON.parse(open('https://pages.github.com/versions.json', open_timeout: 1).read)
 rescue
   {'github-pages' => nil}
 end
