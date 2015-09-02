@@ -385,8 +385,22 @@ body {
 			$entry-link-marker-font-size: 32px;
 			position: absolute;
 			display: inline-block;
-			left: ($entry-link-marker-font-size/4*-1) - $entry-link-marker-font-size;
 			line-height: $doc-line-height / $doc-font-size * $entry-link-marker-font-size;
+			@media #{$small} {
+				$entry-link-marker-font-size: 16px;
+				font-size: $entry-link-marker-font-size;
+				left: ($entry-link-marker-font-size - 4) * -1;
+			}
+			@media #{$medium} {
+				$entry-link-marker-font-size: 24px;
+				font-size: $entry-link-marker-font-size;
+				left: $entry-link-marker-font-size * -1;
+			}
+			@media #{$large} {
+				$entry-link-marker-font-size: 32px;
+				font-size: $entry-link-marker-font-size;
+				left: ($entry-link-marker-font-size/4*-1) - $entry-link-marker-font-size;
+			}
 		}
 	}
 }
