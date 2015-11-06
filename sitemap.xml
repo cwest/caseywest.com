@@ -1,6 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9 http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd" xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
+    <loc>http://caseywest.com/redefining-culture-fit/</loc>
+    <lastmod>2015-11-06T00:00:00-05:00</lastmod>
+  </url>
+  <url>
     <loc>http://caseywest.com/the-cloud-native-future/</loc>
     <lastmod>2015-09-02T00:00:00-04:00</lastmod>
   </url>
@@ -88,24 +92,15 @@
     <loc>http://caseywest.com/about/</loc>
   </url>
   <url>
-    <loc>http://caseywest.com/page2/</loc>
-  </url>
-  <url>
-    <loc>http://caseywest.com/page3/</loc>
-  </url>
-  <url>
-    <loc>http://caseywest.com/page4/</loc>
-  </url>
-  <url>
     <loc>http://caseywest.com/googlebe8cfa5486200190.html</loc>
-    <lastmod>2015-08-31T10:52:32-04:00</lastmod>
+    <lastmod>2015-09-03T15:26:45-04:00</lastmod>
   </url>
   <url>
     <loc>http://caseywest.com/resume/caseywest.html</loc>
-    <lastmod>2015-08-31T10:52:32-04:00</lastmod>
+    <lastmod>2015-09-03T15:26:45-04:00</lastmod>
   </url>
   <url>
     <loc>http://caseywest.com/resume/index.html</loc>
-    <lastmod>2015-08-31T10:52:32-04:00</lastmod>
+    <lastmod>2015-09-03T15:26:45-04:00</lastmod>
   </url>
 </urlset>

@@ -4,13 +4,75 @@
 <generator uri="https://github.com/mojombo/jekyll">Jekyll</generator>
 <link rel="self" type="application/atom+xml" href="http://caseywest.com/feed.xml" />
 <link rel="alternate" type="text/html" href="http://caseywest.com" />
-<updated>2015-09-03T15:26:43-04:00</updated>
+<updated>2015-11-06T15:05:37-05:00</updated>
 <id>http://caseywest.com/</id>
 <author>
   <name>Casey West</name>
   <uri>http://caseywest.com/</uri>
   <email></email>
 </author>
+
+
+<entry>
+  <title type="html"><![CDATA[Redefining Culture Fit]]></title>
+ <link rel="alternate" type="text/html" href="http://caseywest.com/redefining-culture-fit/" />
+  <id>http://caseywest.com/redefining-culture-fit</id>
+  <updated>2015-11-06 08:36:52 -0500T00:00:00-00:00</updated>
+  <published>2015-11-06T00:00:00-05:00</published>
+  
+  <author>
+    <name>Casey West</name>
+    <uri>http://caseywest.com</uri>
+    <email></email>
+  </author>
+  <content type="html">&lt;p&gt;I prefer values which connect us deeply over rituals and traditions only some of us are able to enjoy.&lt;/p&gt;
+
+&lt;h2 id=&quot;culture-fit-is-broken&quot;&gt;Culture fit is broken.&lt;/h2&gt;
+
+&lt;p&gt;The words we use to describe culture matter. We talk about the rituals and traditions we enjoy together. In agile software development one of the traditions we like is standups. Some of our rituals include drinking coffee and alcohol. It&#39;s very important to us. I&#39;m a self-described &quot;beverage enthusiast&quot; so I&#39;m no stranger to these rituals. These are ways to bring some people together, but when we&#39;re creatively building something we must dig deeper to describe what we value in our collaborative interactions.&lt;/p&gt;
+
+&lt;p&gt;&lt;span class=&quot;pullquote-left&quot; data-pullquote=&quot;Never in the history of my career has my ability to drink beer made me better at solving a business problem.&quot;&gt;
+Here are some rituals and traditions that might bring us together. &lt;em&gt;&quot;She doesn&#39;t like SVN either,&quot;&lt;/em&gt; perhaps at an interview, convinces us she&#39;s likeminded. Do you enjoy ping pong? At &lt;a href=&quot;http://pivotal.io&quot;&gt;Pivotal&lt;/a&gt; we play a lot of ping pong. I&#39;m not excited about it, I&#39;m not very good at it, but ping pong doesn&#39;t make me good at my job. I enjoy drinking great beer socially! Never in the history of my career has my ability to drink beer made me better at solving a business problem. I would venture a guess that&#39;s true for you, too.
+&lt;/span&gt;&lt;/p&gt;
+
+&lt;p&gt;That&#39;s too superficial. Let&#39;s think more deeply about the values which really bind us together when we&#39;re creative and building things.&lt;/p&gt;
+
+&lt;h2 id=&quot;what-do-you-value&quot;&gt;What do you value?&lt;/h2&gt;
+
+&lt;p&gt;Here are some values which shape the my decisions about which organizations and communities I create with.&lt;/p&gt;
+
+&lt;p&gt;I value &lt;em&gt;blame-free failure&lt;/em&gt;. I value working with people who are willing to take risks, in an organization that&#39;s willing to take risks. If I can take big risks there might be big rewards, but there might also be big mistakes, and that&#39;s ok. I want to work with people who are comfortable with that. I value &lt;em&gt;growth through mistakes&lt;/em&gt; which are, often, our best learning opportunities.&lt;/p&gt;
+
+&lt;p&gt;&lt;span class=&quot;pullquote-right&quot; data-pullquote=&quot;My idea of work-life balance is not the same as yours and that&amp;apos;s ok.&quot;&gt;
+I love &lt;em&gt;sharing.&lt;/em&gt; I like sharing success, responsibility, work, and time. Most of all I love sharing ideas, and working with people who are constantly putting their ideas out there.&lt;/span&gt;&lt;/p&gt;
+
+&lt;p&gt;I mentioned taking risks and making mistakes. I value working with people tell me how they feel about the work I&#39;ve done, let me know the good and the bad, so I can grow from that. I want to provide the same for others. I value &lt;em&gt;continuous learning&lt;/em&gt; through &lt;em&gt;continuous feedback.&lt;/em&gt; I don&#39;t want problems to pile up on each other and become big.&lt;/p&gt;
+
+&lt;p&gt;I like &lt;em&gt;balance.&lt;/em&gt; My idea of work-life balance is not the same as yours and that&#39;s ok. I have children, not everyone has children, but I can&#39;t work 16 hours a day even though I love what I do. Maybe you can and that works for you but we should try to build a culture that can support both lifestyles, and more.&lt;/p&gt;
+
+&lt;p&gt;These are some of things that really bind us together when we&#39;re working, they really matter. But when we&#39;re in an interview or considering what sort of community to build we tend to focus on whether or not we enjoyed coffee or had a good time at lunch. That&#39;s not really deep enough to build a strong community.&lt;/p&gt;
+
+&lt;h2 id=&quot;seek-value-fit&quot;&gt;Seek value fit.&lt;/h2&gt;
+
+&lt;p&gt;Consider how our values, the core principles of our character, fit together when building a community and working with one another. Not everyone likes coffee. Not everyone likes beer. Not every can pop off to the pub after work to make critical business decisions over a pint, so maybe we shouldn&#39;t be doing that.&lt;/p&gt;
+
+&lt;p&gt;&lt;span class=&quot;pullquote-left&quot; data-pullquote=&quot;Hegemony isn&amp;apos;t an accident.&quot;&gt;
+This boils down to being deliberate about how we make decisions, and how we work together. Hegemony isn&#39;t an accident. If you aren&#39;t being deliberate about what values bring people in your community together then you&#39;re likely to end up with a community of people who are all the same. It&#39;s possible you will look different, or be different genders, but you&#39;re more likely to have the same experiences and lifestyles. This doesn&#39;t translate into a deeper level of inclusion.
+&lt;/span&gt;&lt;/p&gt;
+
+&lt;p&gt;Consider the way our values bring us together rather than the rituals and traditions we occassionally enjoy.&lt;/p&gt;
+
+&lt;h2 id=&quot;seek-inclusion&quot;&gt;Seek inclusion.&lt;/h2&gt;
+
+&lt;p&gt;Rituals and traditions are helpful but superficial ways to bring people together. Unfortunately they only bring some people together. By all means have a good time at Whiskey Friday—I will—but don&#39;t fool yourself into thinking it&#39;s an inclusive event. In fact if everyone in your organization raises a glass at Whiskey Friday you&#39;ve created a culutre of rituals, not values, and that homogeneous culture is not diverse enough for me.&lt;/p&gt;
+
+&lt;h2 id=&quot;thank-you&quot;&gt;Thank you.&lt;/h2&gt;
+
+&lt;p&gt;Thanks to the organizers of Ignite Velocity 2015 New York, the Pittsburgh Perl Workshop 2015, OSDC 2015, and Cloud Foundry Summit Berlin 2015 for giving me five minutes to talk about this at each of your events. I gave this talk four times in three weeks on three different continents. Recordings from &lt;a href=&quot;https://www.youtube.com/watch?v=Kcmv-h2J3HQ&quot;&gt;Velocity&lt;/a&gt; and &lt;a href=&quot;https://www.youtube.com/watch?v=BXv9KpYrW0w&quot;&gt;OSDC&lt;/a&gt; are available as are &lt;a href=&quot;https://speakerdeck.com/caseywest/redefining-culture-fit&quot;&gt;the slides&lt;/a&gt;.&lt;/p&gt;
+
+
+  &lt;p&gt;&lt;a href=&quot;http://caseywest.com/redefining-culture-fit/&quot;&gt;Redefining Culture Fit&lt;/a&gt; was originally published by Casey West at &lt;a href=&quot;http://caseywest.com&quot;&gt;The consensus-seeking architect.&lt;/a&gt; on November 06, 2015.&lt;/p&gt;</content>
+</entry>
 
 
 <entry>
