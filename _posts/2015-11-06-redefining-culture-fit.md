@@ -4,9 +4,9 @@ title: "Redefining Culture Fit"
 modified: 2015-11-06 14:36:52 +0100
 tags: [culture, inclusion]
 image:
-  feature:
-  credit:
-  creditlink:
+  feature: feature/culture.jpg
+  credit: ecstaticist
+  creditlink: https://www.flickr.com/photos/ecstaticist/3640870862/in/photolist-7FcqqL-6xJq4y-6WBTTs-7DUhei-5qyXoi-66RqpX-7CCYcr
 ---
 
 I prefer values which connect us deeply over rituals and traditions only some of us are able to enjoy.
@@ -55,6 +55,6 @@ Rituals and traditions are helpful but superficial ways to bring people together
 
 Thanks to the organizers of Ignite Velocity 2015 New York, the Pittsburgh Perl Workshop 2015, OSDC 2015, and Cloud Foundry Summit Berlin 2015 for giving me five minutes to talk about this at each of your events. I gave this talk four times in three weeks on three different continents. Recordings from [Velocity] and [OSDC] are available as are [the slides].
 
-[Velocity]: ...
-[OSDC]: ...
-[the slides]: ...
+[Velocity]: https://www.youtube.com/watch?v=Kcmv-h2J3HQ
+[OSDC]: https://www.youtube.com/watch?v=BXv9KpYrW0w
+[the slides]: https://speakerdeck.com/caseywest/redefining-culture-fit

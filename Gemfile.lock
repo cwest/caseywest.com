@@ -160,7 +160,7 @@ PLATFORMS
 
 DEPENDENCIES
   coderay
-  github-pages (= 39)
+  github-pages
   jekyll
   jekyll-sitemap
   json
@@ -173,4 +173,4 @@ DEPENDENCIES
   stringex
 
 BUNDLED WITH
-   1.10.3
+   1.10.6
