@@ -160,7 +160,7 @@ PLATFORMS
 
 DEPENDENCIES
   coderay
-  github-pages
+  github-pages (= 39)
   jekyll
   jekyll-sitemap
   json
