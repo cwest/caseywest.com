@@ -3,14 +3,14 @@ layout: post
 title: "Work with us at WhiteHat"
 modified: 2015-01-23 12:09:15 -0500
 tags: [hiring, work, whitehat, happiness]
-description: Join our happy team of developers in Pittsburgh.
+description: Hire the members of this team or even the whole team!
 image:
   feature: feature/ruby.jpg
   credit: frozen0rb
   creditlink: http://frozen0rb.deviantart.com/art/Ruby-gem-168801472
 ---
 
-**Update:** We are no longer looking for new team members in Pittsburgh.
+**Update:** I no longer work at WhiteHat and neither does this team. [Hire them!](https://twitter.com/caseywest/status/663814141497376768)
 
 I work for [WhiteHat Security][whitehat] and I lead a team called [The Shire][shire]. Our team primarily builds web applications in [Ruby] on [Rails] and we're based in [downtown Pittsburgh][pittsburgh].
 
