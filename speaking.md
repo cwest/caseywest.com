@@ -8,7 +8,7 @@ tags: [speaking, events, talks, meetups, conferences, travel]
 
 ## Speaking at Your Event
 
-I'd love to, thanks! ;-)
+I'd love to, thanks! :D
 
 See my schedule below for existing commitments. If you'd like me to speak feel free to reach out to me [on twitter](http://twitter.com/caseywest) or the medium of your preference. My speaker bio and headshot are [here](/about/). Let's do great work together!
 
