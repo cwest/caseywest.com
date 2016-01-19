@@ -1,6 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9 http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd" xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
+    <loc>http://caseywest.com/speaking-at-your-event/</loc>
+    <lastmod>2016-01-19T00:00:00-05:00</lastmod>
+  </url>
+  <url>
     <loc>http://caseywest.com/redefining-culture-fit/</loc>
     <lastmod>2015-11-06T00:00:00-05:00</lastmod>
   </url>
@@ -80,27 +84,30 @@
     <loc>http://caseywest.com/404.html</loc>
   </url>
   <url>
+    <loc>http://caseywest.com/</loc>
+  </url>
+  <url>
     <loc>http://caseywest.com/posts/</loc>
   </url>
   <url>
     <loc>http://caseywest.com/tags/</loc>
   </url>
   <url>
-    <loc>http://caseywest.com/</loc>
-  </url>
-  <url>
     <loc>http://caseywest.com/about/</loc>
   </url>
   <url>
+    <loc>http://caseywest.com/speaking/</loc>
+  </url>
+  <url>
     <loc>http://caseywest.com/googlebe8cfa5486200190.html</loc>
-    <lastmod>2015-12-01T15:33:03-05:00</lastmod>
+    <lastmod>2015-12-01T15:34:38-05:00</lastmod>
   </url>
   <url>
     <loc>http://caseywest.com/resume/caseywest.html</loc>
-    <lastmod>2015-12-01T15:33:03-05:00</lastmod>
+    <lastmod>2015-12-01T15:34:38-05:00</lastmod>
   </url>
   <url>
     <loc>http://caseywest.com/resume/index.html</loc>
-    <lastmod>2015-12-01T15:33:03-05:00</lastmod>
+    <lastmod>2015-12-01T15:34:38-05:00</lastmod>
   </url>
 </urlset>

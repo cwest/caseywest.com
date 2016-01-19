@@ -4,13 +4,33 @@
 <generator uri="https://github.com/mojombo/jekyll">Jekyll</generator>
 <link rel="self" type="application/atom+xml" href="http://caseywest.com/feed.xml" />
 <link rel="alternate" type="text/html" href="http://caseywest.com" />
-<updated>2015-12-01T15:34:36-05:00</updated>
+<updated>2016-01-19T15:23:33-05:00</updated>
 <id>http://caseywest.com/</id>
 <author>
   <name>Casey West</name>
   <uri>http://caseywest.com/</uri>
   <email></email>
 </author>
+
+
+<entry>
+  <title type="html"><![CDATA[Speaking at Your Event]]></title>
+ <link rel="alternate" type="text/html" href="http://caseywest.com/speaking-at-your-event/" />
+  <id>http://caseywest.com/speaking-at-your-event</id>
+  <updated>2016-01-19 15:20:31 -0500T00:00:00-00:00</updated>
+  <published>2016-01-19T00:00:00-05:00</published>
+  
+  <author>
+    <name>Casey West</name>
+    <uri>http://caseywest.com</uri>
+    <email></email>
+  </author>
+  <content type="html">&lt;p&gt;My speaking schedule is getting complicated this year so &lt;a href=&quot;/speaking&quot;&gt;I made a page to keep track&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;I enjoy speaking to people, so if you run a meetup or conference, consider having me speak at it and you&#39;ll be added to my fancy page!&lt;/p&gt;
+
+  &lt;p&gt;&lt;a href=&quot;http://caseywest.com/speaking-at-your-event/&quot;&gt;Speaking at Your Event&lt;/a&gt; was originally published by Casey West at &lt;a href=&quot;http://caseywest.com&quot;&gt;The consensus-seeking architect.&lt;/a&gt; on January 19, 2016.&lt;/p&gt;</content>
+</entry>
 
 
 <entry>
@@ -414,7 +434,7 @@ This boils down to being deliberate about how we make decisions, and how we work
 &lt;/blockquote&gt;
 
 &lt;p&gt;Commits are like emails to future developers. Please write good commit messages for our &lt;em&gt;future&lt;/em&gt; selves. 
-And not just ourselves, but any future developers working on this code. &lt;/p&gt;
+And not just ourselves, but any future developers working on this code.&lt;/p&gt;
 
 &lt;p&gt;&lt;em&gt;Think of it as time travel&lt;/em&gt;. When &lt;a href=&quot;http://backtothefuture.wikia.com/wiki/Marty%27s_letter&quot;&gt;Marty wrote Doc that letter&lt;/a&gt;, it wasn’t a cryptic, 
 short message he would only understand in-context. It wasn&#39;t simply a P.O. Box address for Doc to go find the details at. It was a clear description of the problem and solution. It was helpful as soon as it was read.&lt;/p&gt;
@@ -874,11 +894,11 @@ People are at the heart of tech leadership roles. It&#39;s a socio-technical rol
 &lt;p&gt;Applying the skill of technical leadership is a force multiplier in several ways. &lt;strong&gt;If any of the following apply to you, you might be a tech lead:&lt;/strong&gt;&lt;/p&gt;
 
 &lt;ul&gt;
-  &lt;li&gt;Your experience helps engineers at all skill levels create solutions that last longer, are easier to maintain, and respond to change better. &lt;/li&gt;
-  &lt;li&gt;You&#39;ve thought through integration problems so there are fewer surprises. &lt;/li&gt;
-  &lt;li&gt;You understand the long-term goals for the software so your short-term solutions don&#39;t paint everyone into an architectural corner. &lt;/li&gt;
-  &lt;li&gt;Your team is constantly learning from you so retention rates are high because everyone is growing. &lt;/li&gt;
-  &lt;li&gt;When a customer is upset you can code up a solution which keeps the team focused on their planned work. &lt;/li&gt;
+  &lt;li&gt;Your experience helps engineers at all skill levels create solutions that last longer, are easier to maintain, and respond to change better.&lt;/li&gt;
+  &lt;li&gt;You&#39;ve thought through integration problems so there are fewer surprises.&lt;/li&gt;
+  &lt;li&gt;You understand the long-term goals for the software so your short-term solutions don&#39;t paint everyone into an architectural corner.&lt;/li&gt;
+  &lt;li&gt;Your team is constantly learning from you so retention rates are high because everyone is growing.&lt;/li&gt;
+  &lt;li&gt;When a customer is upset you can code up a solution which keeps the team focused on their planned work.&lt;/li&gt;
   &lt;li&gt;You&#39;ve been planning ahead for the next big development effort — have five prototypes ready for comment by the time the team is ready — so nobody feels lost in the face of a new challenge.&lt;/li&gt;
 &lt;/ul&gt;
 
@@ -1175,27 +1195,27 @@ The trouble is I definitely don&#39;t want to install Peek on production, or in 
 &lt;p&gt;I&#39;m not particularly enthusiastic about this situation, so here is my guide to using peek responsibly. There are enough moving parts I decided to use the Table of Contents.&lt;/p&gt;
 
 &lt;ul id=&quot;markdown-toc&quot;&gt;
-  &lt;li&gt;&lt;a href=&quot;#gemfile&quot;&gt;&lt;code&gt;Gemfile&lt;/code&gt;&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;#peekbar-class&quot;&gt;&lt;code&gt;PeekBar&lt;/code&gt; Class&lt;/a&gt;    &lt;ul&gt;
-      &lt;li&gt;&lt;a href=&quot;#definition&quot;&gt;Definition&lt;/a&gt;&lt;/li&gt;
-      &lt;li&gt;&lt;a href=&quot;#test&quot;&gt;Test&lt;/a&gt;&lt;/li&gt;
-      &lt;li&gt;&lt;a href=&quot;#initialization&quot;&gt;Initialization&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;#gemfile&quot; id=&quot;markdown-toc-gemfile&quot;&gt;&lt;code&gt;Gemfile&lt;/code&gt;&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;#peekbar-class&quot; id=&quot;markdown-toc-peekbar-class&quot;&gt;&lt;code&gt;PeekBar&lt;/code&gt; Class&lt;/a&gt;    &lt;ul&gt;
+      &lt;li&gt;&lt;a href=&quot;#definition&quot; id=&quot;markdown-toc-definition&quot;&gt;Definition&lt;/a&gt;&lt;/li&gt;
+      &lt;li&gt;&lt;a href=&quot;#test&quot; id=&quot;markdown-toc-test&quot;&gt;Test&lt;/a&gt;&lt;/li&gt;
+      &lt;li&gt;&lt;a href=&quot;#initialization&quot; id=&quot;markdown-toc-initialization&quot;&gt;Initialization&lt;/a&gt;&lt;/li&gt;
     &lt;/ul&gt;
   &lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;#peekbarhelper-module&quot;&gt;&lt;code&gt;PeekBarHelper&lt;/code&gt; Module&lt;/a&gt;    &lt;ul&gt;
-      &lt;li&gt;&lt;a href=&quot;#definition-1&quot;&gt;Definition&lt;/a&gt;&lt;/li&gt;
-      &lt;li&gt;&lt;a href=&quot;#test-1&quot;&gt;Test&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;#peekbarhelper-module&quot; id=&quot;markdown-toc-peekbarhelper-module&quot;&gt;&lt;code&gt;PeekBarHelper&lt;/code&gt; Module&lt;/a&gt;    &lt;ul&gt;
+      &lt;li&gt;&lt;a href=&quot;#definition-1&quot; id=&quot;markdown-toc-definition-1&quot;&gt;Definition&lt;/a&gt;&lt;/li&gt;
+      &lt;li&gt;&lt;a href=&quot;#test-1&quot; id=&quot;markdown-toc-test-1&quot;&gt;Test&lt;/a&gt;&lt;/li&gt;
     &lt;/ul&gt;
   &lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;#peek-initialization&quot;&gt;&lt;code&gt;Peek&lt;/code&gt; Initialization&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;#assets&quot;&gt;Assets&lt;/a&gt;    &lt;ul&gt;
-      &lt;li&gt;&lt;a href=&quot;#css-and-javascript-definition&quot;&gt;CSS and JavaScript Definition&lt;/a&gt;&lt;/li&gt;
-      &lt;li&gt;&lt;a href=&quot;#initialization-1&quot;&gt;Initialization&lt;/a&gt;&lt;/li&gt;
-      &lt;li&gt;&lt;a href=&quot;#default-assets-gotcha&quot;&gt;Default Assets Gotcha&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;#peek-initialization&quot; id=&quot;markdown-toc-peek-initialization&quot;&gt;&lt;code&gt;Peek&lt;/code&gt; Initialization&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;#assets&quot; id=&quot;markdown-toc-assets&quot;&gt;Assets&lt;/a&gt;    &lt;ul&gt;
+      &lt;li&gt;&lt;a href=&quot;#css-and-javascript-definition&quot; id=&quot;markdown-toc-css-and-javascript-definition&quot;&gt;CSS and JavaScript Definition&lt;/a&gt;&lt;/li&gt;
+      &lt;li&gt;&lt;a href=&quot;#initialization-1&quot; id=&quot;markdown-toc-initialization-1&quot;&gt;Initialization&lt;/a&gt;&lt;/li&gt;
+      &lt;li&gt;&lt;a href=&quot;#default-assets-gotcha&quot; id=&quot;markdown-toc-default-assets-gotcha&quot;&gt;Default Assets Gotcha&lt;/a&gt;&lt;/li&gt;
     &lt;/ul&gt;
   &lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;#view-configuration&quot;&gt;View Configuration&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;#finally&quot;&gt;Finally&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;#view-configuration&quot; id=&quot;markdown-toc-view-configuration&quot;&gt;View Configuration&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;#finally&quot; id=&quot;markdown-toc-finally&quot;&gt;Finally&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
 
 &lt;h2 id=&quot;gemfile&quot;&gt;&lt;code&gt;Gemfile&lt;/code&gt;&lt;/h2&gt;
@@ -1974,27 +1994,27 @@ task &lt;span class=&quot;key&quot;&gt;default&lt;/span&gt;: &lt;span class=&quo
 &lt;p&gt;My recommendations are all audio-only because I&#39;m often listening during a commute, shower, walk, or as I&#39;m falling asleep. What did I miss?&lt;/p&gt;
 
 &lt;ul id=&quot;markdown-toc&quot;&gt;
-  &lt;li&gt;&lt;a href=&quot;#storytelling&quot;&gt;Storytelling&lt;/a&gt;    &lt;ul&gt;
-      &lt;li&gt;&lt;a href=&quot;#serialhttpserialpodcastorg-by-this-american-life&quot;&gt;&lt;a href=&quot;http://serialpodcast.org/&quot;&gt;Serial&lt;/a&gt; by This American Life&lt;/a&gt;&lt;/li&gt;
-      &lt;li&gt;&lt;a href=&quot;#this-american-lifehttpwwwthisamericanlifeorgpodcast&quot;&gt;&lt;a href=&quot;http://www.thisamericanlife.org/podcast&quot;&gt;This American Life&lt;/a&gt;&lt;/a&gt;&lt;/li&gt;
-      &lt;li&gt;&lt;a href=&quot;#welcome-to-night-valehttppodbayfmshow536258179-by-commonplace-bookshttpcommonplacebookscom&quot;&gt;&lt;a href=&quot;http://podbay.fm/show/536258179&quot;&gt;Welcome to Night Vale&lt;/a&gt; by &lt;a href=&quot;http://commonplacebooks.com/&quot;&gt;Commonplace Books&lt;/a&gt;&lt;/a&gt;&lt;/li&gt;
-      &lt;li&gt;&lt;a href=&quot;#radiolabhttpwwwradiolaborgseriespodcasts-by-wnychttpwwwwnycorg&quot;&gt;&lt;a href=&quot;http://www.radiolab.org/series/podcasts/&quot;&gt;Radiolab&lt;/a&gt; by &lt;a href=&quot;http://www.wnyc.org/&quot;&gt;WNYC&lt;/a&gt;&lt;/a&gt;&lt;/li&gt;
-      &lt;li&gt;&lt;a href=&quot;#reply-allhttpgimletmediacomshowreply-all-by-gimlet-media&quot;&gt;&lt;a href=&quot;http://gimletmedia.com/show/reply-all/&quot;&gt;Reply All&lt;/a&gt; by Gimlet Media&lt;/a&gt;&lt;/li&gt;
-      &lt;li&gt;&lt;a href=&quot;#startuphttpgimletmediacomshowstartup-by-gimlet-mediahttpgimletmediacom&quot;&gt;&lt;a href=&quot;http://gimletmedia.com/show/startup/&quot;&gt;StartUp&lt;/a&gt; by &lt;a href=&quot;http://gimletmedia.com/&quot;&gt;Gimlet Media&lt;/a&gt;&lt;/a&gt;&lt;/li&gt;
-      &lt;li&gt;&lt;a href=&quot;#selected-shortshttpwwwselectedshortsorgpodcast-by-pri&quot;&gt;&lt;a href=&quot;http://www.selectedshorts.org/podcast/&quot;&gt;Selected Shorts&lt;/a&gt; by PRI&lt;/a&gt;&lt;/li&gt;
-      &lt;li&gt;&lt;a href=&quot;#ted-radio-hourhttpwwwnprorgrsspodcastpodcastdetailphpsiteid151446218-by-npr&quot;&gt;&lt;a href=&quot;http://www.npr.org/rss/podcast/podcast_detail.php?siteId=151446218&quot;&gt;TED Radio Hour&lt;/a&gt; by NPR&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;#storytelling&quot; id=&quot;markdown-toc-storytelling&quot;&gt;Storytelling&lt;/a&gt;    &lt;ul&gt;
+      &lt;li&gt;&lt;a href=&quot;#serialhttpserialpodcastorg-by-this-american-life&quot; id=&quot;markdown-toc-serialhttpserialpodcastorg-by-this-american-life&quot;&gt;&lt;a href=&quot;http://serialpodcast.org/&quot;&gt;Serial&lt;/a&gt; by This American Life&lt;/a&gt;&lt;/li&gt;
+      &lt;li&gt;&lt;a href=&quot;#this-american-lifehttpwwwthisamericanlifeorgpodcast&quot; id=&quot;markdown-toc-this-american-lifehttpwwwthisamericanlifeorgpodcast&quot;&gt;&lt;a href=&quot;http://www.thisamericanlife.org/podcast&quot;&gt;This American Life&lt;/a&gt;&lt;/a&gt;&lt;/li&gt;
+      &lt;li&gt;&lt;a href=&quot;#welcome-to-night-valehttppodbayfmshow536258179-by-commonplace-bookshttpcommonplacebookscom&quot; id=&quot;markdown-toc-welcome-to-night-valehttppodbayfmshow536258179-by-commonplace-bookshttpcommonplacebookscom&quot;&gt;&lt;a href=&quot;http://podbay.fm/show/536258179&quot;&gt;Welcome to Night Vale&lt;/a&gt; by &lt;a href=&quot;http://commonplacebooks.com/&quot;&gt;Commonplace Books&lt;/a&gt;&lt;/a&gt;&lt;/li&gt;
+      &lt;li&gt;&lt;a href=&quot;#radiolabhttpwwwradiolaborgseriespodcasts-by-wnychttpwwwwnycorg&quot; id=&quot;markdown-toc-radiolabhttpwwwradiolaborgseriespodcasts-by-wnychttpwwwwnycorg&quot;&gt;&lt;a href=&quot;http://www.radiolab.org/series/podcasts/&quot;&gt;Radiolab&lt;/a&gt; by &lt;a href=&quot;http://www.wnyc.org/&quot;&gt;WNYC&lt;/a&gt;&lt;/a&gt;&lt;/li&gt;
+      &lt;li&gt;&lt;a href=&quot;#reply-allhttpgimletmediacomshowreply-all-by-gimlet-media&quot; id=&quot;markdown-toc-reply-allhttpgimletmediacomshowreply-all-by-gimlet-media&quot;&gt;&lt;a href=&quot;http://gimletmedia.com/show/reply-all/&quot;&gt;Reply All&lt;/a&gt; by Gimlet Media&lt;/a&gt;&lt;/li&gt;
+      &lt;li&gt;&lt;a href=&quot;#startuphttpgimletmediacomshowstartup-by-gimlet-mediahttpgimletmediacom&quot; id=&quot;markdown-toc-startuphttpgimletmediacomshowstartup-by-gimlet-mediahttpgimletmediacom&quot;&gt;&lt;a href=&quot;http://gimletmedia.com/show/startup/&quot;&gt;StartUp&lt;/a&gt; by &lt;a href=&quot;http://gimletmedia.com/&quot;&gt;Gimlet Media&lt;/a&gt;&lt;/a&gt;&lt;/li&gt;
+      &lt;li&gt;&lt;a href=&quot;#selected-shortshttpwwwselectedshortsorgpodcast-by-pri&quot; id=&quot;markdown-toc-selected-shortshttpwwwselectedshortsorgpodcast-by-pri&quot;&gt;&lt;a href=&quot;http://www.selectedshorts.org/podcast/&quot;&gt;Selected Shorts&lt;/a&gt; by PRI&lt;/a&gt;&lt;/li&gt;
+      &lt;li&gt;&lt;a href=&quot;#ted-radio-hourhttpwwwnprorgrsspodcastpodcastdetailphpsiteid151446218-by-npr&quot; id=&quot;markdown-toc-ted-radio-hourhttpwwwnprorgrsspodcastpodcastdetailphpsiteid151446218-by-npr&quot;&gt;&lt;a href=&quot;http://www.npr.org/rss/podcast/podcast_detail.php?siteId=151446218&quot;&gt;TED Radio Hour&lt;/a&gt; by NPR&lt;/a&gt;&lt;/li&gt;
     &lt;/ul&gt;
   &lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;#ideas&quot;&gt;Ideas&lt;/a&gt;    &lt;ul&gt;
-      &lt;li&gt;&lt;a href=&quot;#ted-talks-audiohttpsitunesapplecomuspodcasttedtalks-audioid160904630&quot;&gt;&lt;a href=&quot;https://itunes.apple.com/us/podcast/tedtalks-audio/id160904630&quot;&gt;TED Talks Audio&lt;/a&gt;&lt;/a&gt;&lt;/li&gt;
-      &lt;li&gt;&lt;a href=&quot;#ruby5httpruby5envylabscom&quot;&gt;&lt;a href=&quot;http://ruby5.envylabs.com/&quot;&gt;Ruby5&lt;/a&gt;&lt;/a&gt;&lt;/li&gt;
-      &lt;li&gt;&lt;a href=&quot;#the-ruby-rogueshttpdevchattvruby-rogues-by-devchattvhttpdevchattv&quot;&gt;&lt;a href=&quot;http://devchat.tv/ruby-rogues&quot;&gt;The Ruby Rogues&lt;/a&gt; by &lt;a href=&quot;http://devchat.tv/&quot;&gt;DevChat.TV&lt;/a&gt;&lt;/a&gt;&lt;/li&gt;
-      &lt;li&gt;&lt;a href=&quot;#the-changeloghttpthechangelogcom&quot;&gt;&lt;a href=&quot;http://thechangelog.com/&quot;&gt;The ChangeLog&lt;/a&gt;&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;#ideas&quot; id=&quot;markdown-toc-ideas&quot;&gt;Ideas&lt;/a&gt;    &lt;ul&gt;
+      &lt;li&gt;&lt;a href=&quot;#ted-talks-audiohttpsitunesapplecomuspodcasttedtalks-audioid160904630&quot; id=&quot;markdown-toc-ted-talks-audiohttpsitunesapplecomuspodcasttedtalks-audioid160904630&quot;&gt;&lt;a href=&quot;https://itunes.apple.com/us/podcast/tedtalks-audio/id160904630&quot;&gt;TED Talks Audio&lt;/a&gt;&lt;/a&gt;&lt;/li&gt;
+      &lt;li&gt;&lt;a href=&quot;#ruby5httpruby5envylabscom&quot; id=&quot;markdown-toc-ruby5httpruby5envylabscom&quot;&gt;&lt;a href=&quot;http://ruby5.envylabs.com/&quot;&gt;Ruby5&lt;/a&gt;&lt;/a&gt;&lt;/li&gt;
+      &lt;li&gt;&lt;a href=&quot;#the-ruby-rogueshttpdevchattvruby-rogues-by-devchattvhttpdevchattv&quot; id=&quot;markdown-toc-the-ruby-rogueshttpdevchattvruby-rogues-by-devchattvhttpdevchattv&quot;&gt;&lt;a href=&quot;http://devchat.tv/ruby-rogues&quot;&gt;The Ruby Rogues&lt;/a&gt; by &lt;a href=&quot;http://devchat.tv/&quot;&gt;DevChat.TV&lt;/a&gt;&lt;/a&gt;&lt;/li&gt;
+      &lt;li&gt;&lt;a href=&quot;#the-changeloghttpthechangelogcom&quot; id=&quot;markdown-toc-the-changeloghttpthechangelogcom&quot;&gt;&lt;a href=&quot;http://thechangelog.com/&quot;&gt;The ChangeLog&lt;/a&gt;&lt;/a&gt;&lt;/li&gt;
     &lt;/ul&gt;
   &lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;#current-events&quot;&gt;Current Events&lt;/a&gt;    &lt;ul&gt;
-      &lt;li&gt;&lt;a href=&quot;#wait-wait-dont-tell-mehttpwwwnprorgrsspodcastpodcastdetailphpsiteid344098540-by-npr&quot;&gt;&lt;a href=&quot;http://www.npr.org/rss/podcast/podcast_detail.php?siteId=344098540&quot;&gt;Wait Wait… Don&#39;t Tell Me!&lt;/a&gt; by NPR&lt;/a&gt;&lt;/li&gt;
-      &lt;li&gt;&lt;a href=&quot;#the-rachel-maddow-showhttpwwwnbcnewscomid8132577tget-podcasts-nbc-news-msnbc-tv-nbcnewscomvksl4rf8v8-on-msnbc&quot;&gt;&lt;a href=&quot;http://www.nbcnews.com/id/8132577/t/get-podcasts-nbc-news-msnbc-tv-nbcnewscom/#.VKSL_4rF8v8&quot;&gt;The Rachel Maddow Show&lt;/a&gt; on MSNBC&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;#current-events&quot; id=&quot;markdown-toc-current-events&quot;&gt;Current Events&lt;/a&gt;    &lt;ul&gt;
+      &lt;li&gt;&lt;a href=&quot;#wait-wait-dont-tell-mehttpwwwnprorgrsspodcastpodcastdetailphpsiteid344098540-by-npr&quot; id=&quot;markdown-toc-wait-wait-dont-tell-mehttpwwwnprorgrsspodcastpodcastdetailphpsiteid344098540-by-npr&quot;&gt;&lt;a href=&quot;http://www.npr.org/rss/podcast/podcast_detail.php?siteId=344098540&quot;&gt;Wait Wait… Don&#39;t Tell Me!&lt;/a&gt; by NPR&lt;/a&gt;&lt;/li&gt;
+      &lt;li&gt;&lt;a href=&quot;#the-rachel-maddow-showhttpwwwnbcnewscomid8132577tget-podcasts-nbc-news-msnbc-tv-nbcnewscomvksl4rf8v8-on-msnbc&quot; id=&quot;markdown-toc-the-rachel-maddow-showhttpwwwnbcnewscomid8132577tget-podcasts-nbc-news-msnbc-tv-nbcnewscomvksl4rf8v8-on-msnbc&quot;&gt;&lt;a href=&quot;http://www.nbcnews.com/id/8132577/t/get-podcasts-nbc-news-msnbc-tv-nbcnewscom/#.VKSL_4rF8v8&quot;&gt;The Rachel Maddow Show&lt;/a&gt; on MSNBC&lt;/a&gt;&lt;/li&gt;
     &lt;/ul&gt;
   &lt;/li&gt;
 &lt;/ul&gt;
@@ -2120,7 +2140,7 @@ task &lt;span class=&quot;key&quot;&gt;default&lt;/span&gt;: &lt;span class=&quo
 
 &lt;p&gt;&lt;a href=&quot;http://www.jbrains.ca/&quot;&gt;J.B. Rainsberger&lt;/a&gt; describes the problem well. If your project has a monolithic, external test suite which relies on the entire architecture to run you are in this special hell right now. The clearest representation I can think of is his explanation of how many tests you&#39;d have to write to get value out of an &lt;em&gt;integrated tests&lt;/em&gt; versus &lt;em&gt;isolated tests&lt;/em&gt;&lt;sup id=&quot;fnref:isolated_tests&quot;&gt;&lt;a href=&quot;#fn:isolated_tests&quot; class=&quot;footnote&quot;&gt;2&lt;/a&gt;&lt;/sup&gt;.&lt;/p&gt;
 
-&lt;p&gt;A software architecture with a few interconnected components (lets say, for example: a database, REST API, UI, Job Queue) requires tests for each function of each component. If we&#39;re relying on &lt;em&gt;integrated tests&lt;/em&gt; we have to write tests to exercise every function of every component, and every combination of connections between every function of every component. As you write that software you need to write &lt;script type=&quot;math/tex&quot;&gt; O(n!) &lt;/script&gt; integrated tests. You can&#39;t write that many tests. You don&#39;t have enough time to write enough tests to have confidence in that system. That&#39;s scary. &lt;strong&gt;That&#39;s impossible.&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;A software architecture with a few interconnected components (lets say, for example: a database, REST API, UI, Job Queue) requires tests for each function of each component. If we&#39;re relying on &lt;em&gt;integrated tests&lt;/em&gt; we have to write tests to exercise every function of every component, and every combination of connections between every function of every component. As you write that software you need to write &lt;script type=&quot;math/tex&quot;&gt;O(n!)&lt;/script&gt; integrated tests. You can&#39;t write that many tests. You don&#39;t have enough time to write enough tests to have confidence in that system. That&#39;s scary. &lt;strong&gt;That&#39;s impossible.&lt;/strong&gt;&lt;/p&gt;
 
 &lt;h2 id=&quot;the-cycle&quot;&gt;The cycle.&lt;/h2&gt;
 
@@ -2130,7 +2150,7 @@ task &lt;span class=&quot;key&quot;&gt;default&lt;/span&gt;: &lt;span class=&quo
 
 &lt;h2 id=&quot;what-should-you-do-about-this&quot;&gt;What should you do about this?&lt;/h2&gt;
 
-&lt;p&gt;There is a strong correlation between large numbers of integrated tests and design problems. Integrated tests don&#39;t offer any pressure to improve our designs. Isolated tests do. Stop pretending integrated tests are helping you. Write isolated tests. &lt;/p&gt;
+&lt;p&gt;There is a strong correlation between large numbers of integrated tests and design problems. Integrated tests don&#39;t offer any pressure to improve our designs. Isolated tests do. Stop pretending integrated tests are helping you. Write isolated tests.&lt;/p&gt;
 
 &lt;p&gt;To quote J.B.:&lt;/p&gt;
 
@@ -2138,7 +2158,7 @@ task &lt;span class=&quot;key&quot;&gt;default&lt;/span&gt;: &lt;span class=&quo
 &lt;em&gt;The real benefit of isolated tests — testing one function at a time — is that those tests put tremendous pressure on our designs. Those tests are the ones that make it most clear where our design problems are. &lt;strong&gt;Remember that the whole point of test driven development is not to do testing; it&#39;s to learn about the quality of our design.&lt;/strong&gt; We use the theory that if our design has problems then the tests will be hard to write. The tests will be hard to understand. It&#39;ll be difficult to write these small, isolated tests to check one thing at a time.&lt;/em&gt;
 &lt;/span&gt;&lt;/p&gt;
 
-&lt;p&gt;If you have more &lt;em&gt;isolated tests&lt;/em&gt; than &lt;em&gt;integrated tests&lt;/em&gt; chances are you have a decent design with clear interfaces and contracts between collaborating systems. This path is cheaper, faster, less likely to allow mistakes, and provides high-bandwith feedback on the quality of your software design. As you write this software you need to write &lt;script type=&quot;math/tex&quot;&gt; O(n) &lt;/script&gt; isolated tests.&lt;/p&gt;
+&lt;p&gt;If you have more &lt;em&gt;isolated tests&lt;/em&gt; than &lt;em&gt;integrated tests&lt;/em&gt; chances are you have a decent design with clear interfaces and contracts between collaborating systems. This path is cheaper, faster, less likely to allow mistakes, and provides high-bandwith feedback on the quality of your software design. As you write this software you need to write &lt;script type=&quot;math/tex&quot;&gt;O(n)&lt;/script&gt; isolated tests.&lt;/p&gt;
 
 &lt;p&gt;You don&#39;t have to multiply the code paths in your system to get thorough coverage, you can just add them. You go from a combinatorial explosion of tests-to-code-paths to a linear increase in tests. &lt;strong&gt;That&#39;s possible.&lt;/strong&gt;&lt;/p&gt;
 

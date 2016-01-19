@@ -120,6 +120,11 @@
 	    
 	        
 	    
+	    <li><a href="http://caseywest.com/speaking" >Speaking</a></li>
+	  
+	    
+	        
+	    
 	    <li><a href="http://caseywest.com/resume" >Résumé</a></li>
 	  
 	</ul><!-- /.dl-menu -->
@@ -170,7 +175,7 @@
 
 <p><a href="http://www.jbrains.ca/">J.B. Rainsberger</a> describes the problem well. If your project has a monolithic, external test suite which relies on the entire architecture to run you are in this special hell right now. The clearest representation I can think of is his explanation of how many tests you'd have to write to get value out of an <em>integrated tests</em> versus <em>isolated tests</em><sup id="fnref:isolated_tests"><a href="#fn:isolated_tests" class="footnote">2</a></sup>.</p>
 
-<p>A software architecture with a few interconnected components (lets say, for example: a database, REST API, UI, Job Queue) requires tests for each function of each component. If we're relying on <em>integrated tests</em> we have to write tests to exercise every function of every component, and every combination of connections between every function of every component. As you write that software you need to write <script type="math/tex"> O(n!) </script> integrated tests. You can't write that many tests. You don't have enough time to write enough tests to have confidence in that system. That's scary. <strong>That's impossible.</strong></p>
+<p>A software architecture with a few interconnected components (lets say, for example: a database, REST API, UI, Job Queue) requires tests for each function of each component. If we're relying on <em>integrated tests</em> we have to write tests to exercise every function of every component, and every combination of connections between every function of every component. As you write that software you need to write <script type="math/tex">O(n!)</script> integrated tests. You can't write that many tests. You don't have enough time to write enough tests to have confidence in that system. That's scary. <strong>That's impossible.</strong></p>
 
 <h2 id="the-cycle">The cycle.</h2>
 
@@ -180,7 +185,7 @@
 
 <h2 id="what-should-you-do-about-this">What should you do about this?</h2>
 
-<p>There is a strong correlation between large numbers of integrated tests and design problems. Integrated tests don't offer any pressure to improve our designs. Isolated tests do. Stop pretending integrated tests are helping you. Write isolated tests. </p>
+<p>There is a strong correlation between large numbers of integrated tests and design problems. Integrated tests don't offer any pressure to improve our designs. Isolated tests do. Stop pretending integrated tests are helping you. Write isolated tests.</p>
 
 <p>To quote J.B.:</p>
 
@@ -188,7 +193,7 @@
 <em>The real benefit of isolated tests — testing one function at a time — is that those tests put tremendous pressure on our designs. Those tests are the ones that make it most clear where our design problems are. <strong>Remember that the whole point of test driven development is not to do testing; it's to learn about the quality of our design.</strong> We use the theory that if our design has problems then the tests will be hard to write. The tests will be hard to understand. It'll be difficult to write these small, isolated tests to check one thing at a time.</em>
 </span></p>
 
-<p>If you have more <em>isolated tests</em> than <em>integrated tests</em> chances are you have a decent design with clear interfaces and contracts between collaborating systems. This path is cheaper, faster, less likely to allow mistakes, and provides high-bandwith feedback on the quality of your software design. As you write this software you need to write <script type="math/tex"> O(n) </script> isolated tests.</p>
+<p>If you have more <em>isolated tests</em> than <em>integrated tests</em> chances are you have a decent design with clear interfaces and contracts between collaborating systems. This path is cheaper, faster, less likely to allow mistakes, and provides high-bandwith feedback on the quality of your software design. As you write this software you need to write <script type="math/tex">O(n)</script> isolated tests.</p>
 
 <p>You don't have to multiply the code paths in your system to get thorough coverage, you can just add them. You go from a combinatorial explosion of tests-to-code-paths to a linear increase in tests. <strong>That's possible.</strong></p>
 
@@ -233,20 +238,20 @@
       <a href="http://caseywest.com/your-software-is-made-of-people/" class="read-more-btn">Read More</a>
     </div><!-- /.read-more-header -->
     <div class="read-more-content">
-      <h3><a href="http://caseywest.com/redefining-culture-fit/" title="Redefining Culture Fit">Redefining Culture Fit</a></h3>
-      <p>I prefer values which connect us deeply over rituals and traditions only some of us are able to enjoy.[Velocity]: https://www.youtube.com...&hellip; <a href="http://caseywest.com/redefining-culture-fit/">Continue reading</a></p>
+      <h3><a href="http://caseywest.com/speaking-at-your-event/" title="Speaking at Your Event">Speaking at Your Event</a></h3>
+      <p>My speaking schedule is getting complicated this year so [I made a page to keep track](/speaking).&hellip; <a href="http://caseywest.com/speaking-at-your-event/">Continue reading</a></p>
     </div><!-- /.read-more-content -->
   
   <div class="read-more-list">
     
       <div class="list-item">
-        <h4><a href="http://caseywest.com/the-cloud-native-future/" title="The cloud-native future">The cloud-native future</a></h4>
-        <span>Published on September 02, 2015</span>
+        <h4><a href="http://caseywest.com/redefining-culture-fit/" title="Redefining Culture Fit">Redefining Culture Fit</a></h4>
+        <span>Published on November 06, 2015</span>
       </div><!-- /.list-item -->
     
       <div class="list-item">
-        <h4><a href="http://caseywest.com/farewell-yapc-asia/" title="Farewell YAPC::Asia">Farewell YAPC::Asia</a></h4>
-        <span>Published on August 30, 2015</span>
+        <h4><a href="http://caseywest.com/the-cloud-native-future/" title="The cloud-native future">The cloud-native future</a></h4>
+        <span>Published on September 02, 2015</span>
       </div><!-- /.list-item -->
     
   </div><!-- /.read-more-list -->
@@ -257,7 +262,7 @@
 
 <div class="footer-wrapper">
   <footer role="contentinfo">
-    <p><span>&copy; 2015 Casey West.</span></p>
+    <p><span>&copy; 2016 Casey West.</span></p>
 <p class="attribution"><span>Powered by <a href="http://jekyllrb.com" rel="nofollow">Jekyll</a> using the <a href="http://mademistakes.com/hpstr/" rel="notfollow">HPSTR Theme</a>.</span>
 
   </footer>
