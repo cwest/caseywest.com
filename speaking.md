@@ -49,7 +49,9 @@ Hosting a meetup? Want a speaker? Contact me!
 
 ### March 16: _TBD_ in Portland, OR
 
-### March 17: _TBD_ in Seattle, WA
+### March 17: [Seattle Cloud Foundry Meetup]
+
+Talk: [How Do Platforms Work?](http://www.meetup.com/SeattleCloudFoundry/events/228069459/)
 
 ---
 
@@ -81,7 +83,7 @@ Talk: [How Platforms Work](http://www.codemash.org/session/managing-containerize
 ([slides](https://speakerdeck.com/caseywest/how-platforms-work-codemash-2016), [video](https://www.youtube.com/watch?v=8QOi4VFhSl8))
 
 
-
+[Seattle Cloud Foundry Meetup]: http://www.meetup.com/SeattleCloudFoundry/
 [Software Architecture Conference]: http://conferences.oreilly.com/software-architecture/engineering-business-us
 [abstractions.io]: http://abstractions.io
 [CF Summit]: http://santaclara2016.cfsummit.com/
