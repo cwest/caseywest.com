@@ -118,12 +118,8 @@
 		</li>
 		
 	    
-	        
-	    
 	    <li><a href="http://caseywest.com/speaking" >Speaking</a></li>
 	  
-	    
-	        
 	    
 	    <li><a href="http://caseywest.com/resume" >Résumé</a></li>
 	  
@@ -152,7 +148,7 @@
         <p class="entry-reading-time">
           <i class="fa fa-clock-o"></i>
           
-          Reading time ~10 minutes
+          Reading time ~11 minutes
         </p><!-- /.entry-reading-time -->
         
       </div><!-- /.header-title-wrap -->
@@ -172,26 +168,21 @@ The trouble is I definitely don't want to install Peek on production, or in my t
 
 <p>My first attempt to work around this involved wrapping calls with a <a href="http://ruby-doc.org/docs/keywords/1.9/Object.html#method-i-defined-3F"><code>defined?</code></a> test. For example, in <code>config/routes.rb</code>:</p>
 
-<div class="highlighter-coderay"><table class="CodeRay"><tr>
-  <td class="line-numbers"><pre><a href="#n1" name="n1">1</a>
-</pre></td>
-  <td class="code"><pre>mount <span class="constant">Peek</span>::<span class="constant">Railtie</span> =&gt; <span class="string"><span class="delimiter">'</span><span class="content">/peek</span><span class="delimiter">'</span></span> <span class="keyword">if</span> <span class="keyword">defined?</span>(<span class="constant">Peek</span>)
-</pre></td>
-</tr></table>
+<div class="language-ruby highlighter-coderay"><div class="CodeRay">
+  <div class="code"><pre><span class="line-numbers"><a href="#n1" name="n1">1</a></span>mount <span style="color:#036;font-weight:bold">Peek</span>::<span style="color:#036;font-weight:bold">Railtie</span> =&gt; <span style="background-color:hsla(0,100%,50%,0.05)"><span style="color:#710">'</span><span style="color:#D20">/peek</span><span style="color:#710">'</span></span> <span style="color:#080;font-weight:bold">if</span> <span style="color:#080;font-weight:bold">defined?</span>(<span style="color:#036;font-weight:bold">Peek</span>)
+</pre></div>
+</div>
 </div>
 
 <p>To style and script peek bar you need some CSS and JavaScript assets as well, which are loaded through the asset pipeline. Problem is, if the gem isn't in your bundle those loads fail, and so does pre-compilation if you attempt it.</p>
 
 <p>Finally, your views should be checking the <code>peek_enabled?</code> method, which is defined by peek in your <code>ApplicationController</code> class. So, for example, when rendering the peek bar itself you should be doing this:</p>
 
-<div class="highlighter-coderay"><table class="CodeRay"><tr>
-  <td class="line-numbers"><pre><a href="#n1" name="n1">1</a>
-<a href="#n2" name="n2">2</a>
-</pre></td>
-  <td class="code"><pre>body
-  = render <span class="string"><span class="delimiter">'</span><span class="content">peek/bar</span><span class="delimiter">'</span></span> <span class="keyword">if</span> peek_enabled?
-</pre></td>
-</tr></table>
+<div class="language-haml highlighter-coderay"><div class="CodeRay">
+  <div class="code"><pre><span class="line-numbers"><a href="#n1" name="n1">1</a></span>body
+<span class="line-numbers"><a href="#n2" name="n2">2</a></span>  = render <span style="background-color:hsla(0,100%,50%,0.05)"><span style="color:#710">'</span><span style="color:#D20">peek/bar</span><span style="color:#710">'</span></span> <span style="color:#080;font-weight:bold">if</span> peek_enabled?
+</pre></div>
+</div>
 </div>
 
 <p>Again, if peek isn't in your Bundle, such as in the production environment, this render will fail.</p>
@@ -226,26 +217,17 @@ The trouble is I definitely don't want to install Peek on production, or in my t
 
 <p>Peek must be loaded into our environment. I'm loading it into my <code>:development</code> environment only, along with a list of Peek plugins I want to use.</p>
 
-<div class="highlighter-coderay"><table class="CodeRay"><tr>
-  <td class="line-numbers"><pre><a href="#n1" name="n1">1</a>
-<a href="#n2" name="n2">2</a>
-<a href="#n3" name="n3">3</a>
-<a href="#n4" name="n4">4</a>
-<a href="#n5" name="n5">5</a>
-<a href="#n6" name="n6">6</a>
-<a href="#n7" name="n7">7</a>
-<a href="#n8" name="n8">8</a>
-</pre></td>
-  <td class="code"><pre>group <span class="symbol">:development</span> <span class="keyword">do</span>
-  <span class="comment"># Peek Bar</span>
-  gem <span class="string"><span class="delimiter">'</span><span class="content">peek</span><span class="delimiter">'</span></span>
-  gem <span class="string"><span class="delimiter">'</span><span class="content">peek-git</span><span class="delimiter">'</span></span>
-  gem <span class="string"><span class="delimiter">'</span><span class="content">peek-gc</span><span class="delimiter">'</span></span>
-  gem <span class="string"><span class="delimiter">'</span><span class="content">peek-performance_bar</span><span class="delimiter">'</span></span>
-  gem <span class="string"><span class="delimiter">'</span><span class="content">peek-pg</span><span class="delimiter">'</span></span>
-<span class="keyword">end</span>
-</pre></td>
-</tr></table>
+<div class="language-ruby highlighter-coderay"><div class="CodeRay">
+  <div class="code"><pre><span class="line-numbers"><a href="#n1" name="n1">1</a></span>group <span style="color:#A60">:development</span> <span style="color:#080;font-weight:bold">do</span>
+<span class="line-numbers"><a href="#n2" name="n2">2</a></span>  <span style="color:#777"># Peek Bar</span>
+<span class="line-numbers"><a href="#n3" name="n3">3</a></span>  gem <span style="background-color:hsla(0,100%,50%,0.05)"><span style="color:#710">'</span><span style="color:#D20">peek</span><span style="color:#710">'</span></span>
+<span class="line-numbers"><a href="#n4" name="n4">4</a></span>  gem <span style="background-color:hsla(0,100%,50%,0.05)"><span style="color:#710">'</span><span style="color:#D20">peek-git</span><span style="color:#710">'</span></span>
+<span class="line-numbers"><a href="#n5" name="n5">5</a></span>  gem <span style="background-color:hsla(0,100%,50%,0.05)"><span style="color:#710">'</span><span style="color:#D20">peek-gc</span><span style="color:#710">'</span></span>
+<span class="line-numbers"><a href="#n6" name="n6">6</a></span>  gem <span style="background-color:hsla(0,100%,50%,0.05)"><span style="color:#710">'</span><span style="color:#D20">peek-performance_bar</span><span style="color:#710">'</span></span>
+<span class="line-numbers"><a href="#n7" name="n7">7</a></span>  gem <span style="background-color:hsla(0,100%,50%,0.05)"><span style="color:#710">'</span><span style="color:#D20">peek-pg</span><span style="color:#710">'</span></span>
+<span class="line-numbers"><a href="#n8" name="n8">8</a></span><span style="color:#080;font-weight:bold">end</span>
+</pre></div>
+</div>
 </div>
 
 <h2 id="peekbar-class"><code>PeekBar</code> Class</h2>
@@ -261,34 +243,21 @@ The trouble is I definitely don't want to install Peek on production, or in my t
 
 <p>I put this class in <code>lib/peek_bar.rb</code>.</p>
 
-<div class="highlighter-coderay"><table class="CodeRay"><tr>
-  <td class="line-numbers"><pre><a href="#n1" name="n1">1</a>
-<a href="#n2" name="n2">2</a>
-<a href="#n3" name="n3">3</a>
-<a href="#n4" name="n4">4</a>
-<a href="#n5" name="n5">5</a>
-<a href="#n6" name="n6">6</a>
-<a href="#n7" name="n7">7</a>
-<a href="#n8" name="n8">8</a>
-<a href="#n9" name="n9">9</a>
-<strong><a href="#n10" name="n10">10</a></strong>
-<a href="#n11" name="n11">11</a>
-<a href="#n12" name="n12">12</a>
-</pre></td>
-  <td class="code"><pre><span class="keyword">class</span> <span class="class">PeekBar</span>
-  <span class="keyword">def</span> <span class="predefined-constant">self</span>.<span class="function">available?</span>
-    !<span class="keyword">defined?</span>(<span class="constant">Peek</span>).nil?
-  <span class="keyword">end</span>
-
-  <span class="keyword">def</span> <span class="predefined-constant">self</span>.<span class="function">enabled?</span>(current_user)
-    <span class="keyword">return</span> <span class="predefined-constant">false</span> <span class="keyword">unless</span> available?
-
-    <span class="comment"># The default test.</span>
-    <span class="string"><span class="delimiter">%w(</span><span class="content">development staging</span><span class="delimiter">)</span></span>.include? <span class="constant">Rails</span>.env
-  <span class="keyword">end</span>
-<span class="keyword">end</span>
-</pre></td>
-</tr></table>
+<div class="language-ruby highlighter-coderay"><div class="CodeRay">
+  <div class="code"><pre><span class="line-numbers"> <a href="#n1" name="n1">1</a></span><span style="color:#080;font-weight:bold">class</span> <span style="color:#B06;font-weight:bold">PeekBar</span>
+<span class="line-numbers"> <a href="#n2" name="n2">2</a></span>  <span style="color:#080;font-weight:bold">def</span> <span style="color:#069">self</span>.<span style="color:#06B;font-weight:bold">available?</span>
+<span class="line-numbers"> <a href="#n3" name="n3">3</a></span>    !<span style="color:#080;font-weight:bold">defined?</span>(<span style="color:#036;font-weight:bold">Peek</span>).nil?
+<span class="line-numbers"> <a href="#n4" name="n4">4</a></span>  <span style="color:#080;font-weight:bold">end</span>
+<span class="line-numbers"> <a href="#n5" name="n5">5</a></span>
+<span class="line-numbers"> <a href="#n6" name="n6">6</a></span>  <span style="color:#080;font-weight:bold">def</span> <span style="color:#069">self</span>.<span style="color:#06B;font-weight:bold">enabled?</span>(current_user)
+<span class="line-numbers"> <a href="#n7" name="n7">7</a></span>    <span style="color:#080;font-weight:bold">return</span> <span style="color:#069">false</span> <span style="color:#080;font-weight:bold">unless</span> available?
+<span class="line-numbers"> <a href="#n8" name="n8">8</a></span>
+<span class="line-numbers"> <a href="#n9" name="n9">9</a></span>    <span style="color:#777"># The default test.</span>
+<span class="line-numbers"><strong><a href="#n10" name="n10">10</a></strong></span>    <span style="background-color:hsla(0,100%,50%,0.05)"><span style="color:#710">%w(</span><span style="color:#D20">development staging</span><span style="color:#710">)</span></span>.include? <span style="color:#036;font-weight:bold">Rails</span>.env
+<span class="line-numbers"><a href="#n11" name="n11">11</a></span>  <span style="color:#080;font-weight:bold">end</span>
+<span class="line-numbers"><a href="#n12" name="n12">12</a></span><span style="color:#080;font-weight:bold">end</span>
+</pre></div>
+</div>
 </div>
 
 <p>Here you can see we've encapsulated the <code>defined?</code> test into <code>PeekBar.available?</code>. We use it in <code>PeekBar.enabled?</code> as the first test.</p>
@@ -299,76 +268,42 @@ The trouble is I definitely don't want to install Peek on production, or in my t
 
 <p>I use <a href="https://relishapp.com/rspec/rspec-rails/docs">rspec</a> for testing, so my spec is in <code>spec/lib/peek_bar_spec.rb</code>.</p>
 
-<div class="highlighter-coderay"><table class="CodeRay"><tr>
-  <td class="line-numbers"><pre><a href="#n1" name="n1">1</a>
-<a href="#n2" name="n2">2</a>
-<a href="#n3" name="n3">3</a>
-<a href="#n4" name="n4">4</a>
-<a href="#n5" name="n5">5</a>
-<a href="#n6" name="n6">6</a>
-<a href="#n7" name="n7">7</a>
-<a href="#n8" name="n8">8</a>
-<a href="#n9" name="n9">9</a>
-<strong><a href="#n10" name="n10">10</a></strong>
-<a href="#n11" name="n11">11</a>
-<a href="#n12" name="n12">12</a>
-<a href="#n13" name="n13">13</a>
-<a href="#n14" name="n14">14</a>
-<a href="#n15" name="n15">15</a>
-<a href="#n16" name="n16">16</a>
-<a href="#n17" name="n17">17</a>
-<a href="#n18" name="n18">18</a>
-<a href="#n19" name="n19">19</a>
-<strong><a href="#n20" name="n20">20</a></strong>
-<a href="#n21" name="n21">21</a>
-<a href="#n22" name="n22">22</a>
-<a href="#n23" name="n23">23</a>
-<a href="#n24" name="n24">24</a>
-<a href="#n25" name="n25">25</a>
-<a href="#n26" name="n26">26</a>
-<a href="#n27" name="n27">27</a>
-<a href="#n28" name="n28">28</a>
-<a href="#n29" name="n29">29</a>
-<strong><a href="#n30" name="n30">30</a></strong>
-<a href="#n31" name="n31">31</a>
-<a href="#n32" name="n32">32</a>
-<a href="#n33" name="n33">33</a>
-</pre></td>
-  <td class="code"><pre>require <span class="string"><span class="delimiter">'</span><span class="content">rails_helper</span><span class="delimiter">'</span></span>
-
-<span class="constant">RSpec</span>.describe <span class="constant">PeekBar</span> <span class="keyword">do</span>
-  subject { described_class }
-
-  context <span class="string"><span class="delimiter">'</span><span class="content">without Peek</span><span class="delimiter">'</span></span> <span class="keyword">do</span>
-    before(<span class="symbol">:each</span>) <span class="keyword">do</span>
-      <span class="constant">Object</span>.send(<span class="symbol">:remove_const</span>, <span class="symbol">:Peek</span>) <span class="keyword">if</span> <span class="keyword">defined?</span>(<span class="constant">Peek</span>)
-    <span class="keyword">end</span>
-
-    it <span class="string"><span class="delimiter">&quot;</span><span class="content">isn't available</span><span class="delimiter">&quot;</span></span> <span class="keyword">do</span>
-      expect(subject.available?).to be(<span class="predefined-constant">false</span>)
-    <span class="keyword">end</span>
-
-    it <span class="string"><span class="delimiter">&quot;</span><span class="content">isn't enabled</span><span class="delimiter">&quot;</span></span> <span class="keyword">do</span>
-      expect(subject.enabled?(anything)).to be(<span class="predefined-constant">false</span>)
-    <span class="keyword">end</span>
-  <span class="keyword">end</span>
-
-  context <span class="string"><span class="delimiter">'</span><span class="content">with Peek</span><span class="delimiter">'</span></span> <span class="keyword">do</span>
-    before(<span class="symbol">:each</span>) { <span class="constant">Peek</span> = <span class="constant">Class</span>.new }
-    after(<span class="symbol">:each</span>) { <span class="constant">Object</span>.send(<span class="symbol">:remove_const</span>, <span class="symbol">:Peek</span>) }
-
-    it <span class="string"><span class="delimiter">'</span><span class="content">is available</span><span class="delimiter">'</span></span> <span class="keyword">do</span>
-      expect(subject.available?).to be(<span class="predefined-constant">true</span>)
-    <span class="keyword">end</span>
-
-    it <span class="string"><span class="delimiter">'</span><span class="content">is enabled</span><span class="delimiter">'</span></span> <span class="keyword">do</span>
-      allow(<span class="constant">Rails</span>.env).to receive(<span class="symbol">:development?</span>).and_return(<span class="predefined-constant">true</span>)
-      expect(subject.enabled?(anything)).to be(<span class="predefined-constant">true</span>)
-    <span class="keyword">end</span>
-  <span class="keyword">end</span>
-<span class="keyword">end</span>
-</pre></td>
-</tr></table>
+<div class="language-ruby highlighter-coderay"><div class="CodeRay">
+  <div class="code"><pre><span class="line-numbers"> <a href="#n1" name="n1">1</a></span>require <span style="background-color:hsla(0,100%,50%,0.05)"><span style="color:#710">'</span><span style="color:#D20">rails_helper</span><span style="color:#710">'</span></span>
+<span class="line-numbers"> <a href="#n2" name="n2">2</a></span>
+<span class="line-numbers"> <a href="#n3" name="n3">3</a></span><span style="color:#036;font-weight:bold">RSpec</span>.describe <span style="color:#036;font-weight:bold">PeekBar</span> <span style="color:#080;font-weight:bold">do</span>
+<span class="line-numbers"> <a href="#n4" name="n4">4</a></span>  subject { described_class }
+<span class="line-numbers"> <a href="#n5" name="n5">5</a></span>
+<span class="line-numbers"> <a href="#n6" name="n6">6</a></span>  context <span style="background-color:hsla(0,100%,50%,0.05)"><span style="color:#710">'</span><span style="color:#D20">without Peek</span><span style="color:#710">'</span></span> <span style="color:#080;font-weight:bold">do</span>
+<span class="line-numbers"> <a href="#n7" name="n7">7</a></span>    before(<span style="color:#A60">:each</span>) <span style="color:#080;font-weight:bold">do</span>
+<span class="line-numbers"> <a href="#n8" name="n8">8</a></span>      <span style="color:#036;font-weight:bold">Object</span>.send(<span style="color:#A60">:remove_const</span>, <span style="color:#A60">:Peek</span>) <span style="color:#080;font-weight:bold">if</span> <span style="color:#080;font-weight:bold">defined?</span>(<span style="color:#036;font-weight:bold">Peek</span>)
+<span class="line-numbers"> <a href="#n9" name="n9">9</a></span>    <span style="color:#080;font-weight:bold">end</span>
+<span class="line-numbers"><strong><a href="#n10" name="n10">10</a></strong></span>
+<span class="line-numbers"><a href="#n11" name="n11">11</a></span>    it <span style="background-color:hsla(0,100%,50%,0.05)"><span style="color:#710">&quot;</span><span style="color:#D20">isn't available</span><span style="color:#710">&quot;</span></span> <span style="color:#080;font-weight:bold">do</span>
+<span class="line-numbers"><a href="#n12" name="n12">12</a></span>      expect(subject.available?).to be(<span style="color:#069">false</span>)
+<span class="line-numbers"><a href="#n13" name="n13">13</a></span>    <span style="color:#080;font-weight:bold">end</span>
+<span class="line-numbers"><a href="#n14" name="n14">14</a></span>
+<span class="line-numbers"><a href="#n15" name="n15">15</a></span>    it <span style="background-color:hsla(0,100%,50%,0.05)"><span style="color:#710">&quot;</span><span style="color:#D20">isn't enabled</span><span style="color:#710">&quot;</span></span> <span style="color:#080;font-weight:bold">do</span>
+<span class="line-numbers"><a href="#n16" name="n16">16</a></span>      expect(subject.enabled?(anything)).to be(<span style="color:#069">false</span>)
+<span class="line-numbers"><a href="#n17" name="n17">17</a></span>    <span style="color:#080;font-weight:bold">end</span>
+<span class="line-numbers"><a href="#n18" name="n18">18</a></span>  <span style="color:#080;font-weight:bold">end</span>
+<span class="line-numbers"><a href="#n19" name="n19">19</a></span>
+<span class="line-numbers"><strong><a href="#n20" name="n20">20</a></strong></span>  context <span style="background-color:hsla(0,100%,50%,0.05)"><span style="color:#710">'</span><span style="color:#D20">with Peek</span><span style="color:#710">'</span></span> <span style="color:#080;font-weight:bold">do</span>
+<span class="line-numbers"><a href="#n21" name="n21">21</a></span>    before(<span style="color:#A60">:each</span>) { <span style="color:#036;font-weight:bold">Peek</span> = <span style="color:#036;font-weight:bold">Class</span>.new }
+<span class="line-numbers"><a href="#n22" name="n22">22</a></span>    after(<span style="color:#A60">:each</span>) { <span style="color:#036;font-weight:bold">Object</span>.send(<span style="color:#A60">:remove_const</span>, <span style="color:#A60">:Peek</span>) }
+<span class="line-numbers"><a href="#n23" name="n23">23</a></span>
+<span class="line-numbers"><a href="#n24" name="n24">24</a></span>    it <span style="background-color:hsla(0,100%,50%,0.05)"><span style="color:#710">'</span><span style="color:#D20">is available</span><span style="color:#710">'</span></span> <span style="color:#080;font-weight:bold">do</span>
+<span class="line-numbers"><a href="#n25" name="n25">25</a></span>      expect(subject.available?).to be(<span style="color:#069">true</span>)
+<span class="line-numbers"><a href="#n26" name="n26">26</a></span>    <span style="color:#080;font-weight:bold">end</span>
+<span class="line-numbers"><a href="#n27" name="n27">27</a></span>
+<span class="line-numbers"><a href="#n28" name="n28">28</a></span>    it <span style="background-color:hsla(0,100%,50%,0.05)"><span style="color:#710">'</span><span style="color:#D20">is enabled</span><span style="color:#710">'</span></span> <span style="color:#080;font-weight:bold">do</span>
+<span class="line-numbers"><a href="#n29" name="n29">29</a></span>      allow(<span style="color:#036;font-weight:bold">Rails</span>.env).to receive(<span style="color:#A60">:development?</span>).and_return(<span style="color:#069">true</span>)
+<span class="line-numbers"><strong><a href="#n30" name="n30">30</a></strong></span>      expect(subject.enabled?(anything)).to be(<span style="color:#069">true</span>)
+<span class="line-numbers"><a href="#n31" name="n31">31</a></span>    <span style="color:#080;font-weight:bold">end</span>
+<span class="line-numbers"><a href="#n32" name="n32">32</a></span>  <span style="color:#080;font-weight:bold">end</span>
+<span class="line-numbers"><a href="#n33" name="n33">33</a></span><span style="color:#080;font-weight:bold">end</span>
+</pre></div>
+</div>
 </div>
 
 <p>In order to ensure this test is isolated I take extra precautions to ensure the <code>Peek</code> constant isn't available to my tests unless I explicitly allow it.</p>
@@ -377,16 +312,12 @@ The trouble is I definitely don't want to install Peek on production, or in my t
 
 <p>By default Rails doesn't load ruby code from the <code>lib/</code> directory, so lets be sure to tell it to. In <code>config/application.rb</code> add this:</p>
 
-<div class="highlighter-coderay"><table class="CodeRay"><tr>
-  <td class="line-numbers"><pre><a href="#n1" name="n1">1</a>
-<a href="#n2" name="n2">2</a>
-<a href="#n3" name="n3">3</a>
-</pre></td>
-  <td class="code"><pre>config.autoload_paths += <span class="string"><span class="delimiter">%W(</span><span class="content">
-  </span><span class="inline"><span class="inline-delimiter">#{</span>config.root<span class="inline-delimiter">}</span></span><span class="content">/lib
-</span><span class="delimiter">)</span></span>
-</pre></td>
-</tr></table>
+<div class="language-ruby highlighter-coderay"><div class="CodeRay">
+  <div class="code"><pre><span class="line-numbers"><a href="#n1" name="n1">1</a></span>config.autoload_paths += <span style="background-color:hsla(0,100%,50%,0.05)"><span style="color:#710">%W(</span><span style="color:#D20"></span></span>
+<span class="line-numbers"><a href="#n2" name="n2">2</a></span><span style="background-color:hsla(0,100%,50%,0.05)"><span style="color:#D20">  </span><span style="background-color:hsla(0,0%,0%,0.07);color:black"><span style="font-weight:bold;color:#666">#{</span>config.root<span style="font-weight:bold;color:#666">}</span></span><span style="color:#D20">/lib</span></span>
+<span class="line-numbers"><a href="#n3" name="n3">3</a></span><span style="background-color:hsla(0,100%,50%,0.05)"><span style="color:#D20"></span><span style="color:#710">)</span></span>
+</pre></div>
+</div>
 </div>
 
 <h2 id="peekbarhelper-module"><code>PeekBarHelper</code> Module</h2>
@@ -399,88 +330,56 @@ The trouble is I definitely don't want to install Peek on production, or in my t
 
 <p>In <code>app/helpers/peek_bar_helper.rb</code>.</p>
 
-<div class="highlighter-coderay"><table class="CodeRay"><tr>
-  <td class="line-numbers"><pre><a href="#n1" name="n1">1</a>
-<a href="#n2" name="n2">2</a>
-<a href="#n3" name="n3">3</a>
-<a href="#n4" name="n4">4</a>
-<a href="#n5" name="n5">5</a>
-<a href="#n6" name="n6">6</a>
-</pre></td>
-  <td class="code"><pre><span class="keyword">module</span> <span class="class">PeekBarHelper</span>
-  <span class="comment"># Typical Peek Integration</span>
-  <span class="keyword">def</span> <span class="function">peek_enabled?</span>
-    <span class="constant">PeekBar</span>.enabled?(current_user)
-  <span class="keyword">end</span>
-<span class="keyword">end</span>
-</pre></td>
-</tr></table>
+<div class="language-ruby highlighter-coderay"><div class="CodeRay">
+  <div class="code"><pre><span class="line-numbers"><a href="#n1" name="n1">1</a></span><span style="color:#080;font-weight:bold">module</span> <span style="color:#B06;font-weight:bold">PeekBarHelper</span>
+<span class="line-numbers"><a href="#n2" name="n2">2</a></span>  <span style="color:#777"># Typical Peek Integration</span>
+<span class="line-numbers"><a href="#n3" name="n3">3</a></span>  <span style="color:#080;font-weight:bold">def</span> <span style="color:#06B;font-weight:bold">peek_enabled?</span>
+<span class="line-numbers"><a href="#n4" name="n4">4</a></span>    <span style="color:#036;font-weight:bold">PeekBar</span>.enabled?(current_user)
+<span class="line-numbers"><a href="#n5" name="n5">5</a></span>  <span style="color:#080;font-weight:bold">end</span>
+<span class="line-numbers"><a href="#n6" name="n6">6</a></span><span style="color:#080;font-weight:bold">end</span>
+</pre></div>
+</div>
 </div>
 
 <h3 id="test-1">Test</h3>
 
 <p>Since we're programming responsibly here's a test for the helper. In <code>spec/helpers/peek_bar_helper_spec.rb</code>.</p>
 
-<div class="highlighter-coderay"><table class="CodeRay"><tr>
-  <td class="line-numbers"><pre><a href="#n1" name="n1">1</a>
-<a href="#n2" name="n2">2</a>
-<a href="#n3" name="n3">3</a>
-<a href="#n4" name="n4">4</a>
-<a href="#n5" name="n5">5</a>
-<a href="#n6" name="n6">6</a>
-<a href="#n7" name="n7">7</a>
-<a href="#n8" name="n8">8</a>
-<a href="#n9" name="n9">9</a>
-<strong><a href="#n10" name="n10">10</a></strong>
-<a href="#n11" name="n11">11</a>
-<a href="#n12" name="n12">12</a>
-<a href="#n13" name="n13">13</a>
-<a href="#n14" name="n14">14</a>
-<a href="#n15" name="n15">15</a>
-<a href="#n16" name="n16">16</a>
-<a href="#n17" name="n17">17</a>
-</pre></td>
-  <td class="code"><pre>require <span class="string"><span class="delimiter">'</span><span class="content">rails_helper</span><span class="delimiter">'</span></span>
-
-<span class="constant">RSpec</span>.describe <span class="constant">PeekBarHelper</span>, <span class="key">type</span>: <span class="symbol">:helper</span> <span class="keyword">do</span>
-  before(<span class="symbol">:each</span>) <span class="keyword">do</span>
-    allow(helper).to receive(<span class="symbol">:current_user</span>).and_return(anything)
-  <span class="keyword">end</span>
-
-  it <span class="string"><span class="delimiter">'</span><span class="content">is not enabled</span><span class="delimiter">'</span></span> <span class="keyword">do</span>
-    allow(<span class="constant">PeekBar</span>).to receive(<span class="symbol">:enabled?</span>).and_return(<span class="predefined-constant">false</span>)
-    expect(helper.peek_enabled?).to be(<span class="predefined-constant">false</span>)
-  <span class="keyword">end</span>
-
-  it <span class="string"><span class="delimiter">'</span><span class="content">is enabled</span><span class="delimiter">'</span></span> <span class="keyword">do</span>
-    allow(<span class="constant">PeekBar</span>).to receive(<span class="symbol">:enabled?</span>).and_return(<span class="predefined-constant">true</span>)
-    expect(helper.peek_enabled?).to be(<span class="predefined-constant">true</span>)
-  <span class="keyword">end</span>
-<span class="keyword">end</span>
-</pre></td>
-</tr></table>
+<div class="language-ruby highlighter-coderay"><div class="CodeRay">
+  <div class="code"><pre><span class="line-numbers"> <a href="#n1" name="n1">1</a></span>require <span style="background-color:hsla(0,100%,50%,0.05)"><span style="color:#710">'</span><span style="color:#D20">rails_helper</span><span style="color:#710">'</span></span>
+<span class="line-numbers"> <a href="#n2" name="n2">2</a></span>
+<span class="line-numbers"> <a href="#n3" name="n3">3</a></span><span style="color:#036;font-weight:bold">RSpec</span>.describe <span style="color:#036;font-weight:bold">PeekBarHelper</span>, <span style="color:#606">type</span>: <span style="color:#A60">:helper</span> <span style="color:#080;font-weight:bold">do</span>
+<span class="line-numbers"> <a href="#n4" name="n4">4</a></span>  before(<span style="color:#A60">:each</span>) <span style="color:#080;font-weight:bold">do</span>
+<span class="line-numbers"> <a href="#n5" name="n5">5</a></span>    allow(helper).to receive(<span style="color:#A60">:current_user</span>).and_return(anything)
+<span class="line-numbers"> <a href="#n6" name="n6">6</a></span>  <span style="color:#080;font-weight:bold">end</span>
+<span class="line-numbers"> <a href="#n7" name="n7">7</a></span>
+<span class="line-numbers"> <a href="#n8" name="n8">8</a></span>  it <span style="background-color:hsla(0,100%,50%,0.05)"><span style="color:#710">'</span><span style="color:#D20">is not enabled</span><span style="color:#710">'</span></span> <span style="color:#080;font-weight:bold">do</span>
+<span class="line-numbers"> <a href="#n9" name="n9">9</a></span>    allow(<span style="color:#036;font-weight:bold">PeekBar</span>).to receive(<span style="color:#A60">:enabled?</span>).and_return(<span style="color:#069">false</span>)
+<span class="line-numbers"><strong><a href="#n10" name="n10">10</a></strong></span>    expect(helper.peek_enabled?).to be(<span style="color:#069">false</span>)
+<span class="line-numbers"><a href="#n11" name="n11">11</a></span>  <span style="color:#080;font-weight:bold">end</span>
+<span class="line-numbers"><a href="#n12" name="n12">12</a></span>
+<span class="line-numbers"><a href="#n13" name="n13">13</a></span>  it <span style="background-color:hsla(0,100%,50%,0.05)"><span style="color:#710">'</span><span style="color:#D20">is enabled</span><span style="color:#710">'</span></span> <span style="color:#080;font-weight:bold">do</span>
+<span class="line-numbers"><a href="#n14" name="n14">14</a></span>    allow(<span style="color:#036;font-weight:bold">PeekBar</span>).to receive(<span style="color:#A60">:enabled?</span>).and_return(<span style="color:#069">true</span>)
+<span class="line-numbers"><a href="#n15" name="n15">15</a></span>    expect(helper.peek_enabled?).to be(<span style="color:#069">true</span>)
+<span class="line-numbers"><a href="#n16" name="n16">16</a></span>  <span style="color:#080;font-weight:bold">end</span>
+<span class="line-numbers"><a href="#n17" name="n17">17</a></span><span style="color:#080;font-weight:bold">end</span>
+</pre></div>
+</div>
 </div>
 
 <h2 id="peek-initialization"><code>Peek</code> Initialization</h2>
 
 <p>The peek documentation explains how to set up <code>config/initializers/peek.rb</code> to enable the plugins you've selected. We need to first test for the availability of peek like this:</p>
 
-<div class="highlighter-coderay"><table class="CodeRay"><tr>
-  <td class="line-numbers"><pre><a href="#n1" name="n1">1</a>
-<a href="#n2" name="n2">2</a>
-<a href="#n3" name="n3">3</a>
-<a href="#n4" name="n4">4</a>
-<a href="#n5" name="n5">5</a>
-<a href="#n6" name="n6">6</a>
-</pre></td>
-  <td class="code"><pre><span class="keyword">if</span> <span class="constant">PeekBar</span>.available?
-  <span class="constant">Peek</span>.into <span class="constant">Peek</span>::<span class="constant">Views</span>::<span class="constant">Git</span>
-  <span class="constant">Peek</span>.into <span class="constant">Peek</span>::<span class="constant">Views</span>::<span class="constant">GC</span>
-  <span class="constant">Peek</span>.into <span class="constant">Peek</span>::<span class="constant">Views</span>::<span class="constant">PerformanceBar</span>
-  <span class="constant">Peek</span>.into <span class="constant">Peek</span>::<span class="constant">Views</span>::<span class="constant">PG</span>
-<span class="keyword">end</span>
-</pre></td>
-</tr></table>
+<div class="language-ruby highlighter-coderay"><div class="CodeRay">
+  <div class="code"><pre><span class="line-numbers"><a href="#n1" name="n1">1</a></span><span style="color:#080;font-weight:bold">if</span> <span style="color:#036;font-weight:bold">PeekBar</span>.available?
+<span class="line-numbers"><a href="#n2" name="n2">2</a></span>  <span style="color:#036;font-weight:bold">Peek</span>.into <span style="color:#036;font-weight:bold">Peek</span>::<span style="color:#036;font-weight:bold">Views</span>::<span style="color:#036;font-weight:bold">Git</span>
+<span class="line-numbers"><a href="#n3" name="n3">3</a></span>  <span style="color:#036;font-weight:bold">Peek</span>.into <span style="color:#036;font-weight:bold">Peek</span>::<span style="color:#036;font-weight:bold">Views</span>::<span style="color:#036;font-weight:bold">GC</span>
+<span class="line-numbers"><a href="#n4" name="n4">4</a></span>  <span style="color:#036;font-weight:bold">Peek</span>.into <span style="color:#036;font-weight:bold">Peek</span>::<span style="color:#036;font-weight:bold">Views</span>::<span style="color:#036;font-weight:bold">PerformanceBar</span>
+<span class="line-numbers"><a href="#n5" name="n5">5</a></span>  <span style="color:#036;font-weight:bold">Peek</span>.into <span style="color:#036;font-weight:bold">Peek</span>::<span style="color:#036;font-weight:bold">Views</span>::<span style="color:#036;font-weight:bold">PG</span>
+<span class="line-numbers"><a href="#n6" name="n6">6</a></span><span style="color:#080;font-weight:bold">end</span>
+</pre></div>
+</div>
 </div>
 
 <h2 id="assets">Assets</h2>
@@ -491,44 +390,29 @@ The trouble is I definitely don't want to install Peek on production, or in my t
 
 <p>CSS is in <code>app/assets/stylesheets/peek_bar.scss</code>.</p>
 
-<div class="highlighter-coderay"><table class="CodeRay"><tr>
-  <td class="line-numbers"><pre><a href="#n1" name="n1">1</a>
-<a href="#n2" name="n2">2</a>
-<a href="#n3" name="n3">3</a>
-<a href="#n4" name="n4">4</a>
-<a href="#n5" name="n5">5</a>
-<a href="#n6" name="n6">6</a>
-<a href="#n7" name="n7">7</a>
-<a href="#n8" name="n8">8</a>
-<a href="#n9" name="n9">9</a>
-<strong><a href="#n10" name="n10">10</a></strong>
-<a href="#n11" name="n11">11</a>
-</pre></td>
-  <td class="code"><pre>//= <span class="tag">require</span> <span class="tag">peek</span>
-//= <span class="tag">require</span> <span class="tag">peek</span>/<span class="tag">views</span>/<span class="tag">performance_bar</span>
-
-// <span class="tag">Peek</span> <span class="tag">bar</span> <span class="tag">on</span> <span class="tag">bottom</span> <span class="tag">of</span> <span class="tag">page</span>.
-<span class="id">#peek</span> {
-  <span class="key">position</span>: <span class="value">fixed</span>;
-  <span class="key">bottom</span>:   <span class="float">0</span>;
-  <span class="key">left</span>:     <span class="float">0</span>;
-  <span class="key">right</span>:    <span class="float">0</span>;
-  <span class="key">z-index</span>:  <span class="float">999</span>;
-}
-</pre></td>
-</tr></table>
+<div class="language-css highlighter-coderay"><div class="CodeRay">
+  <div class="code"><pre><span class="line-numbers"> <a href="#n1" name="n1">1</a></span>//= <span style="color:#070;font-weight:bold">require</span> <span style="color:#070;font-weight:bold">peek</span>
+<span class="line-numbers"> <a href="#n2" name="n2">2</a></span>//= <span style="color:#070;font-weight:bold">require</span> <span style="color:#070;font-weight:bold">peek</span>/<span style="color:#070;font-weight:bold">views</span>/<span style="color:#070;font-weight:bold">performance_bar</span>
+<span class="line-numbers"> <a href="#n3" name="n3">3</a></span>
+<span class="line-numbers"> <a href="#n4" name="n4">4</a></span>// <span style="color:#070;font-weight:bold">Peek</span> <span style="color:#070;font-weight:bold">bar</span> <span style="color:#070;font-weight:bold">on</span> <span style="color:#070;font-weight:bold">bottom</span> <span style="color:#070;font-weight:bold">of</span> <span style="color:#070;font-weight:bold">page</span>.
+<span class="line-numbers"> <a href="#n5" name="n5">5</a></span><span style="color:#33D;font-weight:bold">#peek</span> {
+<span class="line-numbers"> <a href="#n6" name="n6">6</a></span>  <span style="color:#606">position</span>: <span style="color:#088">fixed</span>;
+<span class="line-numbers"> <a href="#n7" name="n7">7</a></span>  <span style="color:#606">bottom</span>:   <span style="color:#60E">0</span>;
+<span class="line-numbers"> <a href="#n8" name="n8">8</a></span>  <span style="color:#606">left</span>:     <span style="color:#60E">0</span>;
+<span class="line-numbers"> <a href="#n9" name="n9">9</a></span>  <span style="color:#606">right</span>:    <span style="color:#60E">0</span>;
+<span class="line-numbers"><strong><a href="#n10" name="n10">10</a></strong></span>  <span style="color:#606">z-index</span>:  <span style="color:#60E">999</span>;
+<span class="line-numbers"><a href="#n11" name="n11">11</a></span>}
+</pre></div>
+</div>
 </div>
 
 <p>I prefer <a href="http://coffeescript.org/">CoffeeScript</a> so I loaded the JavaScript in <code>app/assets/javascripts/peek_bar.js.coffee</code>.</p>
 
-<div class="highlighter-coderay"><table class="CodeRay"><tr>
-  <td class="line-numbers"><pre><a href="#n1" name="n1">1</a>
-<a href="#n2" name="n2">2</a>
-</pre></td>
-  <td class="code"><pre>#= require peek
-#= require peek/views/performance_bar
-</pre></td>
-</tr></table>
+<div class="language-coffee highlighter-coderay"><div class="CodeRay">
+  <div class="code"><pre><span class="line-numbers"><a href="#n1" name="n1">1</a></span>#= require peek
+<span class="line-numbers"><a href="#n2" name="n2">2</a></span>#= require peek/views/performance_bar
+</pre></div>
+</div>
 </div>
 
 <h3 id="initialization-1">Initialization</h3>
@@ -537,16 +421,12 @@ The trouble is I definitely don't want to install Peek on production, or in my t
 
 <p>Add this to <code>config/initializers/assets.rb</code>:</p>
 
-<div class="highlighter-coderay"><table class="CodeRay"><tr>
-  <td class="line-numbers"><pre><a href="#n1" name="n1">1</a>
-<a href="#n2" name="n2">2</a>
-<a href="#n3" name="n3">3</a>
-</pre></td>
-  <td class="code"><pre><span class="keyword">if</span> <span class="constant">PeekBar</span>.available?
-  <span class="constant">Rails</span>.application.config.assets.precompile += <span class="string"><span class="delimiter">%w(</span><span class="content">peek_bar.css peek_bar.js</span><span class="delimiter">)</span></span>
-<span class="keyword">end</span>
-</pre></td>
-</tr></table>
+<div class="language-ruby highlighter-coderay"><div class="CodeRay">
+  <div class="code"><pre><span class="line-numbers"><a href="#n1" name="n1">1</a></span><span style="color:#080;font-weight:bold">if</span> <span style="color:#036;font-weight:bold">PeekBar</span>.available?
+<span class="line-numbers"><a href="#n2" name="n2">2</a></span>  <span style="color:#036;font-weight:bold">Rails</span>.application.config.assets.precompile += <span style="background-color:hsla(0,100%,50%,0.05)"><span style="color:#710">%w(</span><span style="color:#D20">peek_bar.css peek_bar.js</span><span style="color:#710">)</span></span>
+<span class="line-numbers"><a href="#n3" name="n3">3</a></span><span style="color:#080;font-weight:bold">end</span>
+</pre></div>
+</div>
 </div>
 
 <h3 id="default-assets-gotcha">Default Assets Gotcha</h3>
@@ -561,36 +441,22 @@ The trouble is I definitely don't want to install Peek on production, or in my t
 
 <p>All this hard work for what? Now it's time to tie it all together in our layout view. I like <a href="http://slim-lang.com/">slim</a> so this is an extremely condensed version of my default layout, <code>app/views/layouts/application.html.slim</code>.</p>
 
-<div class="highlighter-coderay"><table class="CodeRay"><tr>
-  <td class="line-numbers"><pre><a href="#n1" name="n1">1</a>
-<a href="#n2" name="n2">2</a>
-<a href="#n3" name="n3">3</a>
-<a href="#n4" name="n4">4</a>
-<a href="#n5" name="n5">5</a>
-<a href="#n6" name="n6">6</a>
-<a href="#n7" name="n7">7</a>
-<a href="#n8" name="n8">8</a>
-<a href="#n9" name="n9">9</a>
-<strong><a href="#n10" name="n10">10</a></strong>
-<a href="#n11" name="n11">11</a>
-<a href="#n12" name="n12">12</a>
-<a href="#n13" name="n13">13</a>
-</pre></td>
-  <td class="code"><pre>doctype html
-html
-  head
-    = stylesheet_link_tag <span class="string"><span class="delimiter">'</span><span class="content">application</span><span class="delimiter">'</span></span>, <span class="key">media</span>: <span class="string"><span class="delimiter">'</span><span class="content">all</span><span class="delimiter">'</span></span>, <span class="string"><span class="delimiter">'</span><span class="content">data-turbolinks-track</span><span class="delimiter">'</span></span> =&gt; <span class="predefined-constant">true</span>
-    - <span class="keyword">if</span> peek_enabled?
-      = stylesheet_link_tag <span class="string"><span class="delimiter">'</span><span class="content">peek_bar</span><span class="delimiter">'</span></span>, <span class="key">media</span>: <span class="string"><span class="delimiter">'</span><span class="content">all</span><span class="delimiter">'</span></span>, <span class="string"><span class="delimiter">'</span><span class="content">data-turbolinks-track</span><span class="delimiter">'</span></span> =&gt; <span class="predefined-constant">true</span>
-    = csrf_meta_tags
-body
-  = render <span class="string"><span class="delimiter">'</span><span class="content">peek/bar</span><span class="delimiter">'</span></span> <span class="keyword">if</span> peek_enabled?
-  = <span class="keyword">yield</span>
-  = javascript_include_tag <span class="string"><span class="delimiter">'</span><span class="content">application</span><span class="delimiter">'</span></span>, <span class="string"><span class="delimiter">'</span><span class="content">data-turbolinks-track</span><span class="delimiter">'</span></span> =&gt; <span class="predefined-constant">true</span>
-  - <span class="keyword">if</span> peek_enabled?
-    = javascript_include_tag <span class="string"><span class="delimiter">'</span><span class="content">peek_bar</span><span class="delimiter">'</span></span>, <span class="string"><span class="delimiter">'</span><span class="content">data-turbolinks-track</span><span class="delimiter">'</span></span> =&gt; <span class="predefined-constant">true</span>
-</pre></td>
-</tr></table>
+<div class="language-haml highlighter-coderay"><div class="CodeRay">
+  <div class="code"><pre><span class="line-numbers"> <a href="#n1" name="n1">1</a></span>doctype html
+<span class="line-numbers"> <a href="#n2" name="n2">2</a></span>html
+<span class="line-numbers"> <a href="#n3" name="n3">3</a></span>  head
+<span class="line-numbers"> <a href="#n4" name="n4">4</a></span>    = stylesheet_link_tag <span style="background-color:hsla(0,100%,50%,0.05)"><span style="color:#710">'</span><span style="color:#D20">application</span><span style="color:#710">'</span></span>, <span style="color:#606">media</span>: <span style="background-color:hsla(0,100%,50%,0.05)"><span style="color:#710">'</span><span style="color:#D20">all</span><span style="color:#710">'</span></span>, <span style="background-color:hsla(0,100%,50%,0.05)"><span style="color:#710">'</span><span style="color:#D20">data-turbolinks-track</span><span style="color:#710">'</span></span> =&gt; <span style="color:#069">true</span>
+<span class="line-numbers"> <a href="#n5" name="n5">5</a></span>    - <span style="color:#080;font-weight:bold">if</span> peek_enabled?
+<span class="line-numbers"> <a href="#n6" name="n6">6</a></span>      = stylesheet_link_tag <span style="background-color:hsla(0,100%,50%,0.05)"><span style="color:#710">'</span><span style="color:#D20">peek_bar</span><span style="color:#710">'</span></span>, <span style="color:#606">media</span>: <span style="background-color:hsla(0,100%,50%,0.05)"><span style="color:#710">'</span><span style="color:#D20">all</span><span style="color:#710">'</span></span>, <span style="background-color:hsla(0,100%,50%,0.05)"><span style="color:#710">'</span><span style="color:#D20">data-turbolinks-track</span><span style="color:#710">'</span></span> =&gt; <span style="color:#069">true</span>
+<span class="line-numbers"> <a href="#n7" name="n7">7</a></span>    = csrf_meta_tags
+<span class="line-numbers"> <a href="#n8" name="n8">8</a></span>body
+<span class="line-numbers"> <a href="#n9" name="n9">9</a></span>  = render <span style="background-color:hsla(0,100%,50%,0.05)"><span style="color:#710">'</span><span style="color:#D20">peek/bar</span><span style="color:#710">'</span></span> <span style="color:#080;font-weight:bold">if</span> peek_enabled?
+<span class="line-numbers"><strong><a href="#n10" name="n10">10</a></strong></span>  = <span style="color:#080;font-weight:bold">yield</span>
+<span class="line-numbers"><a href="#n11" name="n11">11</a></span>  = javascript_include_tag <span style="background-color:hsla(0,100%,50%,0.05)"><span style="color:#710">'</span><span style="color:#D20">application</span><span style="color:#710">'</span></span>, <span style="background-color:hsla(0,100%,50%,0.05)"><span style="color:#710">'</span><span style="color:#D20">data-turbolinks-track</span><span style="color:#710">'</span></span> =&gt; <span style="color:#069">true</span>
+<span class="line-numbers"><a href="#n12" name="n12">12</a></span>  - <span style="color:#080;font-weight:bold">if</span> peek_enabled?
+<span class="line-numbers"><a href="#n13" name="n13">13</a></span>    = javascript_include_tag <span style="background-color:hsla(0,100%,50%,0.05)"><span style="color:#710">'</span><span style="color:#D20">peek_bar</span><span style="color:#710">'</span></span>, <span style="background-color:hsla(0,100%,50%,0.05)"><span style="color:#710">'</span><span style="color:#D20">data-turbolinks-track</span><span style="color:#710">'</span></span> =&gt; <span style="color:#069">true</span>
+</pre></div>
+</div>
 </div>
 
 <h2 id="finally">Finally</h2>
@@ -603,20 +469,14 @@ body
 
 <p>If we want to use peek in production with only staff accounts, for example, all we have to do is change the <code>Gemfile</code> to install peek in the <code>:production</code> group and adjust the <code>PeekBar.enabled?</code> method:</p>
 
-<div class="highlighter-coderay"><table class="CodeRay"><tr>
-  <td class="line-numbers"><pre><a href="#n1" name="n1">1</a>
-<a href="#n2" name="n2">2</a>
-<a href="#n3" name="n3">3</a>
-<a href="#n4" name="n4">4</a>
-<a href="#n5" name="n5">5</a>
-</pre></td>
-  <td class="code"><pre><span class="keyword">def</span> <span class="predefined-constant">self</span>.<span class="function">enabled?</span>(current_user)
-  <span class="keyword">return</span> <span class="predefined-constant">false</span> <span class="keyword">unless</span> available?
-
-  <span class="constant">Rails</span>.env.development? || current_user.staff?
-<span class="keyword">end</span>
-</pre></td>
-</tr></table>
+<div class="language-ruby highlighter-coderay"><div class="CodeRay">
+  <div class="code"><pre><span class="line-numbers"><a href="#n1" name="n1">1</a></span><span style="color:#080;font-weight:bold">def</span> <span style="color:#069">self</span>.<span style="color:#06B;font-weight:bold">enabled?</span>(current_user)
+<span class="line-numbers"><a href="#n2" name="n2">2</a></span>  <span style="color:#080;font-weight:bold">return</span> <span style="color:#069">false</span> <span style="color:#080;font-weight:bold">unless</span> available?
+<span class="line-numbers"><a href="#n3" name="n3">3</a></span>
+<span class="line-numbers"><a href="#n4" name="n4">4</a></span>  <span style="color:#036;font-weight:bold">Rails</span>.env.development? || current_user.staff?
+<span class="line-numbers"><a href="#n5" name="n5">5</a></span><span style="color:#080;font-weight:bold">end</span>
+</pre></div>
+</div>
 </div>
 
 <p>That <code>PeekBar</code> class really tied the room together, did it not?</p>
@@ -648,7 +508,7 @@ body
     </div><!-- /.read-more-header -->
     <div class="read-more-content">
       <h3><a href="http://caseywest.com/speaking-at-your-event/" title="Speaking at Your Event">Speaking at Your Event</a></h3>
-      <p>My speaking schedule is getting complicated this year so [I made a page to keep track](/speaking).&hellip; <a href="http://caseywest.com/speaking-at-your-event/">Continue reading</a></p>
+      <p>My speaking schedule is getting complicated this year so I made a page to keep track.&hellip; <a href="http://caseywest.com/speaking-at-your-event/">Continue reading</a></p>
     </div><!-- /.read-more-content -->
   
   <div class="read-more-list">

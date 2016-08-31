@@ -4,7 +4,6 @@
 Contact Information:
 
 Casey West
-PittsburghPAUSA
 
 Email: casey@geeknest.com
 URL: http://caseywest.com
@@ -14,20 +13,37 @@ URL: http://www.linkedin.com/in/caseywest
 
 Professional Summary:
 
-    Expert full stack web application developer. I specialize in
-    high-availability, maintainable, scalable solutions focused on
-    usability.
+    I specialize in high-availability, maintainable, scalable solutions
+    with a focus on developer, community, and user experience.
     
-    I empower product teams to deliver outstanding results under
-    difficult constraints by building teams with culture and tools that
-    promote happiness and productivity.
+    I empower teams to deliver outstanding results under difficult
+    constraints by building teams with culture and tools that promote
+    happiness and productivity.
     
 
 Employment History:
 
+    Principle Technologist for Cloud Foundry
+    Pivotal
+    June 2015-Present
+    
+    Technical advocate for Pivotal's open source and commercial products
+    including Cloud Foundry, Concourse CI, PCFDev, and Spring Boot.
+    Community ambassador for the Cloud Foundry Foundation.
+    
+    International speaker on software engineering, software
+    architecture, devops, platforms, continuous delivery, and modern
+    infrastructure giving hundreds of talks, tutorials, and training
+    sessions per year.
+    
+    Advisor to global fortune 2000 and United States F500 companies
+    delivering business value with Pivotal's software, tools, and
+    techniques.
+    
+    
     UI Architect & DevOps Architect
     WhiteHat Security
-    November 2012-Present
+    November 2012-June2015
     
     Software Architect and team lead responsible for sweeping change and
     modernization across the organization. Acted as a strong, hands on

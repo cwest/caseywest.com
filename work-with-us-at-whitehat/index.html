@@ -118,12 +118,8 @@
 		</li>
 		
 	    
-	        
-	    
 	    <li><a href="http://caseywest.com/speaking" >Speaking</a></li>
 	  
-	    
-	        
 	    
 	    <li><a href="http://caseywest.com/resume" >Résumé</a></li>
 	  
@@ -152,7 +148,7 @@
         <p class="entry-reading-time">
           <i class="fa fa-clock-o"></i>
           
-          Reading time ~7 minutes
+          Reading time ~8 minutes
         </p><!-- /.entry-reading-time -->
         
       </div><!-- /.header-title-wrap -->
@@ -168,32 +164,20 @@
 
 <p>If you read all this and you'd like to work with us please email me to talk about it. You can reach me at work with the following obfuscated email address:</p>
 
-<div class="highlighter-coderay"><table class="CodeRay"><tr>
-  <td class="line-numbers"><pre><a href="#n1" name="n1">1</a>
-<a href="#n2" name="n2">2</a>
-<a href="#n3" name="n3">3</a>
-<a href="#n4" name="n4">4</a>
-<a href="#n5" name="n5">5</a>
-<a href="#n6" name="n6">6</a>
-<a href="#n7" name="n7">7</a>
-<a href="#n8" name="n8">8</a>
-<a href="#n9" name="n9">9</a>
-<strong><a href="#n10" name="n10">10</a></strong>
-<a href="#n11" name="n11">11</a>
-</pre></td>
-  <td class="code"><pre>name    = <span class="string"><span class="delimiter">%w(</span><span class="content">Casey West</span><span class="delimiter">)</span></span>
-company = <span class="string"><span class="delimiter">%q(</span><span class="content">WhiteHat Security</span><span class="delimiter">)</span></span>
-email   = [
-  name.join(<span class="string"><span class="delimiter">'</span><span class="content">.</span><span class="delimiter">'</span></span>),
-  [
-    company.tr(<span class="string"><span class="delimiter">'</span><span class="content"> </span><span class="delimiter">'</span></span>,<span class="string"><span class="delimiter">'</span><span class="delimiter">'</span></span>)[<span class="integer">0</span>..<span class="integer">10</span>], <span class="comment"># We go to 11. \o/</span>
-    <span class="string"><span class="delimiter">'</span><span class="content">com</span><span class="delimiter">'</span></span>
-  ].join(<span class="string"><span class="delimiter">'</span><span class="content">.</span><span class="delimiter">'</span></span>)
-].join(<span class="string"><span class="delimiter">'</span><span class="content">@</span><span class="delimiter">'</span></span>).downcase
-
-puts email
-</pre></td>
-</tr></table>
+<div class="language-ruby highlighter-coderay"><div class="CodeRay">
+  <div class="code"><pre><span class="line-numbers"> <a href="#n1" name="n1">1</a></span>name    = <span style="background-color:hsla(0,100%,50%,0.05)"><span style="color:#710">%w(</span><span style="color:#D20">Casey West</span><span style="color:#710">)</span></span>
+<span class="line-numbers"> <a href="#n2" name="n2">2</a></span>company = <span style="background-color:hsla(0,100%,50%,0.05)"><span style="color:#710">%q(</span><span style="color:#D20">WhiteHat Security</span><span style="color:#710">)</span></span>
+<span class="line-numbers"> <a href="#n3" name="n3">3</a></span>email   = [
+<span class="line-numbers"> <a href="#n4" name="n4">4</a></span>  name.join(<span style="background-color:hsla(0,100%,50%,0.05)"><span style="color:#710">'</span><span style="color:#D20">.</span><span style="color:#710">'</span></span>),
+<span class="line-numbers"> <a href="#n5" name="n5">5</a></span>  [
+<span class="line-numbers"> <a href="#n6" name="n6">6</a></span>    company.tr(<span style="background-color:hsla(0,100%,50%,0.05)"><span style="color:#710">'</span><span style="color:#D20"> </span><span style="color:#710">'</span></span>,<span style="background-color:hsla(0,100%,50%,0.05)"><span style="color:#710">'</span><span style="color:#710">'</span></span>)[<span style="color:#00D">0</span>..<span style="color:#00D">10</span>], <span style="color:#777"># We go to 11. \o/</span>
+<span class="line-numbers"> <a href="#n7" name="n7">7</a></span>    <span style="background-color:hsla(0,100%,50%,0.05)"><span style="color:#710">'</span><span style="color:#D20">com</span><span style="color:#710">'</span></span>
+<span class="line-numbers"> <a href="#n8" name="n8">8</a></span>  ].join(<span style="background-color:hsla(0,100%,50%,0.05)"><span style="color:#710">'</span><span style="color:#D20">.</span><span style="color:#710">'</span></span>)
+<span class="line-numbers"> <a href="#n9" name="n9">9</a></span>].join(<span style="background-color:hsla(0,100%,50%,0.05)"><span style="color:#710">'</span><span style="color:#D20">@</span><span style="color:#710">'</span></span>).downcase
+<span class="line-numbers"><strong><a href="#n10" name="n10">10</a></strong></span>
+<span class="line-numbers"><a href="#n11" name="n11">11</a></span>puts email
+</pre></div>
+</div>
 </div>
 
 <p>You can also find links to me on social media on the left if you'd like to chat casually.</p>
@@ -351,7 +335,7 @@ now, and why.</p>
     </div><!-- /.read-more-header -->
     <div class="read-more-content">
       <h3><a href="http://caseywest.com/speaking-at-your-event/" title="Speaking at Your Event">Speaking at Your Event</a></h3>
-      <p>My speaking schedule is getting complicated this year so [I made a page to keep track](/speaking).&hellip; <a href="http://caseywest.com/speaking-at-your-event/">Continue reading</a></p>
+      <p>My speaking schedule is getting complicated this year so I made a page to keep track.&hellip; <a href="http://caseywest.com/speaking-at-your-event/">Continue reading</a></p>
     </div><!-- /.read-more-content -->
   
   <div class="read-more-list">
