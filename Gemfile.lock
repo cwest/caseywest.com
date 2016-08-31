@@ -162,6 +162,7 @@ DEPENDENCIES
   coderay
   github-pages (= 93)
   jekyll
+  jekyll-paginate
   jekyll-sitemap
   json
   octopress (~> 3.0.0.rc.12)
