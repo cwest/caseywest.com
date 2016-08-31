@@ -13,7 +13,7 @@ URL: http://www.linkedin.com/in/caseywest
 
 Professional Summary:
 
-    I specialize in high-availability, maintainable, scalable solutions
+    I specialize in highly available, maintainable, scalable solutions
     with a focus on developer, community, and user experience.
     
     I empower teams to deliver outstanding results under difficult
