@@ -23,7 +23,7 @@ Professional Summary:
 
 Employment History:
 
-    Principle Technologist for Cloud Foundry
+    Principal Technologist for Cloud Foundry
     Pivotal
     June 2015-Present
     
