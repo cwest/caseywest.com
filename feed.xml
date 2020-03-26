@@ -4,7 +4,7 @@
 <generator uri="https://github.com/mojombo/jekyll">Jekyll</generator>
 <link rel="self" type="application/atom+xml" href="http://caseywest.com/feed.xml" />
 <link rel="alternate" type="text/html" href="http://caseywest.com" />
-<updated>2016-10-25T16:11:01-04:00</updated>
+<updated>2020-03-26T10:55:20-04:00</updated>
 <id>http://caseywest.com/</id>
 <author>
   <name>Casey West</name>
@@ -14,30 +14,10 @@
 
 
 <entry>
-  <title type="html"><![CDATA[Speaking at Your Event]]></title>
- <link rel="alternate" type="text/html" href="http://caseywest.com/speaking-at-your-event/" />
-  <id>http://caseywest.com/speaking-at-your-event</id>
-  <updated>2016-01-19 15:20:31 -0500T00:00:00-00:00</updated>
-  <published>2016-01-19T00:00:00-05:00</published>
-  
-  <author>
-    <name>Casey West</name>
-    <uri>http://caseywest.com</uri>
-    <email></email>
-  </author>
-  <content type="html">&lt;p&gt;My speaking schedule is getting complicated this year so &lt;a href=&quot;/speaking&quot;&gt;I made a page to keep track&lt;/a&gt;.&lt;/p&gt;
-
-&lt;p&gt;I enjoy speaking to people, so if you run a meetup or conference, consider having me speak at it and you'll be added to my fancy page!&lt;/p&gt;
-
-  &lt;p&gt;&lt;a href=&quot;http://caseywest.com/speaking-at-your-event/&quot;&gt;Speaking at Your Event&lt;/a&gt; was originally published by Casey West at &lt;a href=&quot;http://caseywest.com&quot;&gt;The consensus-seeking architect.&lt;/a&gt; on January 19, 2016.&lt;/p&gt;</content>
-</entry>
-
-
-<entry>
   <title type="html"><![CDATA[Redefining Culture Fit]]></title>
  <link rel="alternate" type="text/html" href="http://caseywest.com/redefining-culture-fit/" />
   <id>http://caseywest.com/redefining-culture-fit</id>
-  <updated>2015-11-06 08:36:52 -0500T00:00:00-00:00</updated>
+  <updated>2015-11-06 14:36:52 +0100T00:00:00-00:00</updated>
   <published>2015-11-06T00:00:00-05:00</published>
   
   <author>
@@ -99,7 +79,7 @@ This boils down to being deliberate about how we make decisions, and how we work
   <title type="html"><![CDATA[The cloud-native future]]></title>
  <link rel="alternate" type="text/html" href="http://radar.oreilly.com/2015/08/the-cloud-native-future.html" />
   <id>http://caseywest.com/the-cloud-native-future</id>
-  <updated>2015-09-02 08:10:34 -0400T00:00:00-00:00</updated>
+  <updated>2015-09-02 21:10:34 +0900T00:00:00-00:00</updated>
   <published>2015-09-02T00:00:00-04:00</published>
   
   <author>
@@ -121,7 +101,7 @@ This boils down to being deliberate about how we make decisions, and how we work
   <title type="html"><![CDATA[Farewell YAPC::Asia]]></title>
  <link rel="alternate" type="text/html" href="http://caseywest.com/farewell-yapc-asia/" />
   <id>http://caseywest.com/farewell-yapc-asia</id>
-  <updated>2015-08-29 19:30:59 -0400T00:00:00-00:00</updated>
+  <updated>2015-08-30 08:30:59 +0900T00:00:00-00:00</updated>
   <published>2015-08-30T00:00:00-04:00</published>
   
   <author>
@@ -577,7 +557,7 @@ long as the code it's talking about lasts.&lt;/p&gt;
 &lt;div class=&quot;footnotes&quot;&gt;
   &lt;ol&gt;
     &lt;li id=&quot;fn:yagni&quot;&gt;
-      &lt;p&gt;This is &lt;a href=&quot;https://en.wikipedia.org/wiki/YAGNI&quot;&gt;YAGNI&lt;/a&gt; in action, in case you were wondering. &lt;a href=&quot;#fnref:yagni&quot; class=&quot;reversefootnote&quot;&gt;&amp;#8617;&lt;/a&gt;&lt;/p&gt;
+      &lt;p&gt;This is &lt;a href=&quot;https://en.wikipedia.org/wiki/YAGNI&quot;&gt;YAGNI&lt;/a&gt; in action, in case you were wondering. &lt;a href=&quot;#fnref:yagni&quot; class=&quot;reversefootnote&quot;&gt;&amp;#8617;&lt;/a&gt;&lt;/p&gt;
     &lt;/li&gt;
   &lt;/ol&gt;
 &lt;/div&gt;
@@ -685,10 +665,10 @@ long as the code it's talking about lasts.&lt;/p&gt;
 &lt;div class=&quot;footnotes&quot;&gt;
   &lt;ol&gt;
     &lt;li id=&quot;fn:anhour&quot;&gt;
-      &lt;p&gt;It doesn't &lt;em&gt;have&lt;/em&gt; to be an hour. 30 minutes, a whole day… you pick. &lt;a href=&quot;#fnref:anhour&quot; class=&quot;reversefootnote&quot;&gt;&amp;#8617;&lt;/a&gt;&lt;/p&gt;
+      &lt;p&gt;It doesn't &lt;em&gt;have&lt;/em&gt; to be an hour. 30 minutes, a whole day… you pick. &lt;a href=&quot;#fnref:anhour&quot; class=&quot;reversefootnote&quot;&gt;&amp;#8617;&lt;/a&gt;&lt;/p&gt;
     &lt;/li&gt;
     &lt;li id=&quot;fn:fivedysfunctions&quot;&gt;
-      &lt;p&gt;I strongly recommend reading &lt;a href=&quot;https://en.wikipedia.org/wiki/The_Five_Dysfunctions_of_a_Team&quot;&gt;The Five Dysfunctions of a Team by Patrick Lencioni&lt;/a&gt;. When there's an absence of trust we aren't willing to be vulnerable within a group. Great culture builds on trust and vulnerability. &lt;a href=&quot;#fnref:fivedysfunctions&quot; class=&quot;reversefootnote&quot;&gt;&amp;#8617;&lt;/a&gt;&lt;/p&gt;
+      &lt;p&gt;I strongly recommend reading &lt;a href=&quot;https://en.wikipedia.org/wiki/The_Five_Dysfunctions_of_a_Team&quot;&gt;The Five Dysfunctions of a Team by Patrick Lencioni&lt;/a&gt;. When there's an absence of trust we aren't willing to be vulnerable within a group. Great culture builds on trust and vulnerability. &lt;a href=&quot;#fnref:fivedysfunctions&quot; class=&quot;reversefootnote&quot;&gt;&amp;#8617;&lt;/a&gt;&lt;/p&gt;
     &lt;/li&gt;
   &lt;/ol&gt;
 &lt;/div&gt;
@@ -826,7 +806,7 @@ long as the code it's talking about lasts.&lt;/p&gt;
 &lt;div class=&quot;footnotes&quot;&gt;
   &lt;ol&gt;
     &lt;li id=&quot;fn:resume&quot;&gt;
-      &lt;p&gt;I am sad about this advice because I'm actually quite happy with &lt;a href=&quot;/resume/&quot;&gt;my resume&lt;/a&gt; as a piece of writing. &lt;a href=&quot;#fnref:resume&quot; class=&quot;reversefootnote&quot;&gt;&amp;#8617;&lt;/a&gt;&lt;/p&gt;
+      &lt;p&gt;I am sad about this advice because I'm actually quite happy with &lt;a href=&quot;/resume/&quot;&gt;my resume&lt;/a&gt; as a piece of writing. &lt;a href=&quot;#fnref:resume&quot; class=&quot;reversefootnote&quot;&gt;&amp;#8617;&lt;/a&gt;&lt;/p&gt;
     &lt;/li&gt;
   &lt;/ol&gt;
 &lt;/div&gt;
@@ -979,20 +959,32 @@ I'm sure you've heard this before: &lt;em&gt;&quot;we're going to put you on the
 
 &lt;p&gt;If you read all this and you'd like to work with us please email me to talk about it. You can reach me at work with the following obfuscated email address:&lt;/p&gt;
 
-&lt;div class=&quot;language-ruby highlighter-coderay&quot;&gt;&lt;div class=&quot;CodeRay&quot;&gt;
-  &lt;div class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line-numbers&quot;&gt; &lt;a href=&quot;#n1&quot; name=&quot;n1&quot;&gt;1&lt;/a&gt;&lt;/span&gt;name    = &lt;span style=&quot;background-color:hsla(0,100%,50%,0.05)&quot;&gt;&lt;span style=&quot;color:#710&quot;&gt;%w(&lt;/span&gt;&lt;span style=&quot;color:#D20&quot;&gt;Casey West&lt;/span&gt;&lt;span style=&quot;color:#710&quot;&gt;)&lt;/span&gt;&lt;/span&gt;
-&lt;span class=&quot;line-numbers&quot;&gt; &lt;a href=&quot;#n2&quot; name=&quot;n2&quot;&gt;2&lt;/a&gt;&lt;/span&gt;company = &lt;span style=&quot;background-color:hsla(0,100%,50%,0.05)&quot;&gt;&lt;span style=&quot;color:#710&quot;&gt;%q(&lt;/span&gt;&lt;span style=&quot;color:#D20&quot;&gt;WhiteHat Security&lt;/span&gt;&lt;span style=&quot;color:#710&quot;&gt;)&lt;/span&gt;&lt;/span&gt;
-&lt;span class=&quot;line-numbers&quot;&gt; &lt;a href=&quot;#n3&quot; name=&quot;n3&quot;&gt;3&lt;/a&gt;&lt;/span&gt;email   = [
-&lt;span class=&quot;line-numbers&quot;&gt; &lt;a href=&quot;#n4&quot; name=&quot;n4&quot;&gt;4&lt;/a&gt;&lt;/span&gt;  name.join(&lt;span style=&quot;background-color:hsla(0,100%,50%,0.05)&quot;&gt;&lt;span style=&quot;color:#710&quot;&gt;'&lt;/span&gt;&lt;span style=&quot;color:#D20&quot;&gt;.&lt;/span&gt;&lt;span style=&quot;color:#710&quot;&gt;'&lt;/span&gt;&lt;/span&gt;),
-&lt;span class=&quot;line-numbers&quot;&gt; &lt;a href=&quot;#n5&quot; name=&quot;n5&quot;&gt;5&lt;/a&gt;&lt;/span&gt;  [
-&lt;span class=&quot;line-numbers&quot;&gt; &lt;a href=&quot;#n6&quot; name=&quot;n6&quot;&gt;6&lt;/a&gt;&lt;/span&gt;    company.tr(&lt;span style=&quot;background-color:hsla(0,100%,50%,0.05)&quot;&gt;&lt;span style=&quot;color:#710&quot;&gt;'&lt;/span&gt;&lt;span style=&quot;color:#D20&quot;&gt; &lt;/span&gt;&lt;span style=&quot;color:#710&quot;&gt;'&lt;/span&gt;&lt;/span&gt;,&lt;span style=&quot;background-color:hsla(0,100%,50%,0.05)&quot;&gt;&lt;span style=&quot;color:#710&quot;&gt;'&lt;/span&gt;&lt;span style=&quot;color:#710&quot;&gt;'&lt;/span&gt;&lt;/span&gt;)[&lt;span style=&quot;color:#00D&quot;&gt;0&lt;/span&gt;..&lt;span style=&quot;color:#00D&quot;&gt;10&lt;/span&gt;], &lt;span style=&quot;color:#777&quot;&gt;# We go to 11. \o/&lt;/span&gt;
-&lt;span class=&quot;line-numbers&quot;&gt; &lt;a href=&quot;#n7&quot; name=&quot;n7&quot;&gt;7&lt;/a&gt;&lt;/span&gt;    &lt;span style=&quot;background-color:hsla(0,100%,50%,0.05)&quot;&gt;&lt;span style=&quot;color:#710&quot;&gt;'&lt;/span&gt;&lt;span style=&quot;color:#D20&quot;&gt;com&lt;/span&gt;&lt;span style=&quot;color:#710&quot;&gt;'&lt;/span&gt;&lt;/span&gt;
-&lt;span class=&quot;line-numbers&quot;&gt; &lt;a href=&quot;#n8&quot; name=&quot;n8&quot;&gt;8&lt;/a&gt;&lt;/span&gt;  ].join(&lt;span style=&quot;background-color:hsla(0,100%,50%,0.05)&quot;&gt;&lt;span style=&quot;color:#710&quot;&gt;'&lt;/span&gt;&lt;span style=&quot;color:#D20&quot;&gt;.&lt;/span&gt;&lt;span style=&quot;color:#710&quot;&gt;'&lt;/span&gt;&lt;/span&gt;)
-&lt;span class=&quot;line-numbers&quot;&gt; &lt;a href=&quot;#n9&quot; name=&quot;n9&quot;&gt;9&lt;/a&gt;&lt;/span&gt;].join(&lt;span style=&quot;background-color:hsla(0,100%,50%,0.05)&quot;&gt;&lt;span style=&quot;color:#710&quot;&gt;'&lt;/span&gt;&lt;span style=&quot;color:#D20&quot;&gt;@&lt;/span&gt;&lt;span style=&quot;color:#710&quot;&gt;'&lt;/span&gt;&lt;/span&gt;).downcase
-&lt;span class=&quot;line-numbers&quot;&gt;&lt;strong&gt;&lt;a href=&quot;#n10&quot; name=&quot;n10&quot;&gt;10&lt;/a&gt;&lt;/strong&gt;&lt;/span&gt;
-&lt;span class=&quot;line-numbers&quot;&gt;&lt;a href=&quot;#n11&quot; name=&quot;n11&quot;&gt;11&lt;/a&gt;&lt;/span&gt;puts email
-&lt;/pre&gt;&lt;/div&gt;
-&lt;/div&gt;
+&lt;div class=&quot;language-ruby highlighter-coderay&quot;&gt;&lt;table class=&quot;CodeRay&quot;&gt;&lt;tr&gt;
+  &lt;td class=&quot;line-numbers&quot;&gt;&lt;pre&gt;&lt;a href=&quot;#n1&quot; name=&quot;n1&quot;&gt;1&lt;/a&gt;
+&lt;a href=&quot;#n2&quot; name=&quot;n2&quot;&gt;2&lt;/a&gt;
+&lt;a href=&quot;#n3&quot; name=&quot;n3&quot;&gt;3&lt;/a&gt;
+&lt;a href=&quot;#n4&quot; name=&quot;n4&quot;&gt;4&lt;/a&gt;
+&lt;a href=&quot;#n5&quot; name=&quot;n5&quot;&gt;5&lt;/a&gt;
+&lt;a href=&quot;#n6&quot; name=&quot;n6&quot;&gt;6&lt;/a&gt;
+&lt;a href=&quot;#n7&quot; name=&quot;n7&quot;&gt;7&lt;/a&gt;
+&lt;a href=&quot;#n8&quot; name=&quot;n8&quot;&gt;8&lt;/a&gt;
+&lt;a href=&quot;#n9&quot; name=&quot;n9&quot;&gt;9&lt;/a&gt;
+&lt;strong&gt;&lt;a href=&quot;#n10&quot; name=&quot;n10&quot;&gt;10&lt;/a&gt;&lt;/strong&gt;
+&lt;a href=&quot;#n11&quot; name=&quot;n11&quot;&gt;11&lt;/a&gt;
+&lt;/pre&gt;&lt;/td&gt;
+  &lt;td class=&quot;code&quot;&gt;&lt;pre&gt;name    = &lt;span class=&quot;string&quot;&gt;&lt;span class=&quot;delimiter&quot;&gt;%w(&lt;/span&gt;&lt;span class=&quot;content&quot;&gt;Casey West&lt;/span&gt;&lt;span class=&quot;delimiter&quot;&gt;)&lt;/span&gt;&lt;/span&gt;
+company = &lt;span class=&quot;string&quot;&gt;&lt;span class=&quot;delimiter&quot;&gt;%q(&lt;/span&gt;&lt;span class=&quot;content&quot;&gt;WhiteHat Security&lt;/span&gt;&lt;span class=&quot;delimiter&quot;&gt;)&lt;/span&gt;&lt;/span&gt;
+email   = [
+  name.join(&lt;span class=&quot;string&quot;&gt;&lt;span class=&quot;delimiter&quot;&gt;'&lt;/span&gt;&lt;span class=&quot;content&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;delimiter&quot;&gt;'&lt;/span&gt;&lt;/span&gt;),
+  [
+    company.tr(&lt;span class=&quot;string&quot;&gt;&lt;span class=&quot;delimiter&quot;&gt;'&lt;/span&gt;&lt;span class=&quot;content&quot;&gt; &lt;/span&gt;&lt;span class=&quot;delimiter&quot;&gt;'&lt;/span&gt;&lt;/span&gt;,&lt;span class=&quot;string&quot;&gt;&lt;span class=&quot;delimiter&quot;&gt;'&lt;/span&gt;&lt;span class=&quot;delimiter&quot;&gt;'&lt;/span&gt;&lt;/span&gt;)[&lt;span class=&quot;integer&quot;&gt;0&lt;/span&gt;..&lt;span class=&quot;integer&quot;&gt;10&lt;/span&gt;], &lt;span class=&quot;comment&quot;&gt;# We go to 11. \o/&lt;/span&gt;
+    &lt;span class=&quot;string&quot;&gt;&lt;span class=&quot;delimiter&quot;&gt;'&lt;/span&gt;&lt;span class=&quot;content&quot;&gt;com&lt;/span&gt;&lt;span class=&quot;delimiter&quot;&gt;'&lt;/span&gt;&lt;/span&gt;
+  ].join(&lt;span class=&quot;string&quot;&gt;&lt;span class=&quot;delimiter&quot;&gt;'&lt;/span&gt;&lt;span class=&quot;content&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;delimiter&quot;&gt;'&lt;/span&gt;&lt;/span&gt;)
+].join(&lt;span class=&quot;string&quot;&gt;&lt;span class=&quot;delimiter&quot;&gt;'&lt;/span&gt;&lt;span class=&quot;content&quot;&gt;@&lt;/span&gt;&lt;span class=&quot;delimiter&quot;&gt;'&lt;/span&gt;&lt;/span&gt;).downcase
+
+puts email
+&lt;/pre&gt;&lt;/td&gt;
+&lt;/tr&gt;&lt;/table&gt;
 &lt;/div&gt;
 
 &lt;p&gt;You can also find links to me on social media on the left if you'd like to chat casually.&lt;/p&gt;
@@ -1121,7 +1113,7 @@ now, and why.&lt;/p&gt;
 &lt;div class=&quot;footnotes&quot;&gt;
   &lt;ol&gt;
     &lt;li id=&quot;fn:hackers&quot;&gt;
-      &lt;p&gt;&lt;em&gt;&quot;The act of engaging in activities (such as programming or other media) in a &lt;strong&gt;spirit of playfulness and exploration&lt;/strong&gt; is termed hacking. However the defining characteristic of a hacker is not the activities performed themselves (e.g. programming), but the manner in which it is done: &lt;strong&gt;Hacking entails some form of excellence, for example exploring the limits of what is possible, thereby doing something exciting and meaningful.&lt;/strong&gt;&quot;&lt;/em&gt; — &lt;a href=&quot;https://en.wikipedia.org/wiki/Hacker_(programmer_subculture)&quot;&gt;Hacker (programming subculture), Wikipedia&lt;/a&gt; &lt;a href=&quot;#fnref:hackers&quot; class=&quot;reversefootnote&quot;&gt;&amp;#8617;&lt;/a&gt; &lt;a href=&quot;#fnref:hackers:1&quot; class=&quot;reversefootnote&quot;&gt;&amp;#8617;&lt;sup&gt;2&lt;/sup&gt;&lt;/a&gt; &lt;a href=&quot;#fnref:hackers:2&quot; class=&quot;reversefootnote&quot;&gt;&amp;#8617;&lt;sup&gt;3&lt;/sup&gt;&lt;/a&gt;&lt;/p&gt;
+      &lt;p&gt;&lt;em&gt;&quot;The act of engaging in activities (such as programming or other media) in a &lt;strong&gt;spirit of playfulness and exploration&lt;/strong&gt; is termed hacking. However the defining characteristic of a hacker is not the activities performed themselves (e.g. programming), but the manner in which it is done: &lt;strong&gt;Hacking entails some form of excellence, for example exploring the limits of what is possible, thereby doing something exciting and meaningful.&lt;/strong&gt;&quot;&lt;/em&gt; — &lt;a href=&quot;https://en.wikipedia.org/wiki/Hacker_(programmer_subculture)&quot;&gt;Hacker (programming subculture), Wikipedia&lt;/a&gt; &lt;a href=&quot;#fnref:hackers&quot; class=&quot;reversefootnote&quot;&gt;&amp;#8617;&lt;/a&gt; &lt;a href=&quot;#fnref:hackers:1&quot; class=&quot;reversefootnote&quot;&gt;&amp;#8617;&lt;sup&gt;2&lt;/sup&gt;&lt;/a&gt; &lt;a href=&quot;#fnref:hackers:2&quot; class=&quot;reversefootnote&quot;&gt;&amp;#8617;&lt;sup&gt;3&lt;/sup&gt;&lt;/a&gt;&lt;/p&gt;
     &lt;/li&gt;
   &lt;/ol&gt;
 &lt;/div&gt;
@@ -1156,21 +1148,26 @@ The trouble is I definitely don't want to install Peek on production, or in my t
 
 &lt;p&gt;My first attempt to work around this involved wrapping calls with a &lt;a href=&quot;http://ruby-doc.org/docs/keywords/1.9/Object.html#method-i-defined-3F&quot;&gt;&lt;code&gt;defined?&lt;/code&gt;&lt;/a&gt; test. For example, in &lt;code&gt;config/routes.rb&lt;/code&gt;:&lt;/p&gt;
 
-&lt;div class=&quot;language-ruby highlighter-coderay&quot;&gt;&lt;div class=&quot;CodeRay&quot;&gt;
-  &lt;div class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line-numbers&quot;&gt;&lt;a href=&quot;#n1&quot; name=&quot;n1&quot;&gt;1&lt;/a&gt;&lt;/span&gt;mount &lt;span style=&quot;color:#036;font-weight:bold&quot;&gt;Peek&lt;/span&gt;::&lt;span style=&quot;color:#036;font-weight:bold&quot;&gt;Railtie&lt;/span&gt; =&amp;gt; &lt;span style=&quot;background-color:hsla(0,100%,50%,0.05)&quot;&gt;&lt;span style=&quot;color:#710&quot;&gt;'&lt;/span&gt;&lt;span style=&quot;color:#D20&quot;&gt;/peek&lt;/span&gt;&lt;span style=&quot;color:#710&quot;&gt;'&lt;/span&gt;&lt;/span&gt; &lt;span style=&quot;color:#080;font-weight:bold&quot;&gt;if&lt;/span&gt; &lt;span style=&quot;color:#080;font-weight:bold&quot;&gt;defined?&lt;/span&gt;(&lt;span style=&quot;color:#036;font-weight:bold&quot;&gt;Peek&lt;/span&gt;)
-&lt;/pre&gt;&lt;/div&gt;
-&lt;/div&gt;
+&lt;div class=&quot;language-ruby highlighter-coderay&quot;&gt;&lt;table class=&quot;CodeRay&quot;&gt;&lt;tr&gt;
+  &lt;td class=&quot;line-numbers&quot;&gt;&lt;pre&gt;&lt;a href=&quot;#n1&quot; name=&quot;n1&quot;&gt;1&lt;/a&gt;
+&lt;/pre&gt;&lt;/td&gt;
+  &lt;td class=&quot;code&quot;&gt;&lt;pre&gt;mount &lt;span class=&quot;constant&quot;&gt;Peek&lt;/span&gt;::&lt;span class=&quot;constant&quot;&gt;Railtie&lt;/span&gt; =&amp;gt; &lt;span class=&quot;string&quot;&gt;&lt;span class=&quot;delimiter&quot;&gt;'&lt;/span&gt;&lt;span class=&quot;content&quot;&gt;/peek&lt;/span&gt;&lt;span class=&quot;delimiter&quot;&gt;'&lt;/span&gt;&lt;/span&gt; &lt;span class=&quot;keyword&quot;&gt;if&lt;/span&gt; &lt;span class=&quot;keyword&quot;&gt;defined?&lt;/span&gt;(&lt;span class=&quot;constant&quot;&gt;Peek&lt;/span&gt;)
+&lt;/pre&gt;&lt;/td&gt;
+&lt;/tr&gt;&lt;/table&gt;
 &lt;/div&gt;
 
 &lt;p&gt;To style and script peek bar you need some CSS and JavaScript assets as well, which are loaded through the asset pipeline. Problem is, if the gem isn't in your bundle those loads fail, and so does pre-compilation if you attempt it.&lt;/p&gt;
 
 &lt;p&gt;Finally, your views should be checking the &lt;code&gt;peek_enabled?&lt;/code&gt; method, which is defined by peek in your &lt;code&gt;ApplicationController&lt;/code&gt; class. So, for example, when rendering the peek bar itself you should be doing this:&lt;/p&gt;
 
-&lt;div class=&quot;language-haml highlighter-coderay&quot;&gt;&lt;div class=&quot;CodeRay&quot;&gt;
-  &lt;div class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line-numbers&quot;&gt;&lt;a href=&quot;#n1&quot; name=&quot;n1&quot;&gt;1&lt;/a&gt;&lt;/span&gt;body
-&lt;span class=&quot;line-numbers&quot;&gt;&lt;a href=&quot;#n2&quot; name=&quot;n2&quot;&gt;2&lt;/a&gt;&lt;/span&gt;  = render &lt;span style=&quot;background-color:hsla(0,100%,50%,0.05)&quot;&gt;&lt;span style=&quot;color:#710&quot;&gt;'&lt;/span&gt;&lt;span style=&quot;color:#D20&quot;&gt;peek/bar&lt;/span&gt;&lt;span style=&quot;color:#710&quot;&gt;'&lt;/span&gt;&lt;/span&gt; &lt;span style=&quot;color:#080;font-weight:bold&quot;&gt;if&lt;/span&gt; peek_enabled?
-&lt;/pre&gt;&lt;/div&gt;
-&lt;/div&gt;
+&lt;div class=&quot;language-haml highlighter-coderay&quot;&gt;&lt;table class=&quot;CodeRay&quot;&gt;&lt;tr&gt;
+  &lt;td class=&quot;line-numbers&quot;&gt;&lt;pre&gt;&lt;a href=&quot;#n1&quot; name=&quot;n1&quot;&gt;1&lt;/a&gt;
+&lt;a href=&quot;#n2&quot; name=&quot;n2&quot;&gt;2&lt;/a&gt;
+&lt;/pre&gt;&lt;/td&gt;
+  &lt;td class=&quot;code&quot;&gt;&lt;pre&gt;body
+  = render &lt;span class=&quot;string&quot;&gt;&lt;span class=&quot;delimiter&quot;&gt;'&lt;/span&gt;&lt;span class=&quot;content&quot;&gt;peek/bar&lt;/span&gt;&lt;span class=&quot;delimiter&quot;&gt;'&lt;/span&gt;&lt;/span&gt; &lt;span class=&quot;keyword&quot;&gt;if&lt;/span&gt; peek_enabled?
+&lt;/pre&gt;&lt;/td&gt;
+&lt;/tr&gt;&lt;/table&gt;
 &lt;/div&gt;
 
 &lt;p&gt;Again, if peek isn't in your Bundle, such as in the production environment, this render will fail.&lt;/p&gt;
@@ -1205,17 +1202,26 @@ The trouble is I definitely don't want to install Peek on production, or in my t
 
 &lt;p&gt;Peek must be loaded into our environment. I'm loading it into my &lt;code&gt;:development&lt;/code&gt; environment only, along with a list of Peek plugins I want to use.&lt;/p&gt;
 
-&lt;div class=&quot;language-ruby highlighter-coderay&quot;&gt;&lt;div class=&quot;CodeRay&quot;&gt;
-  &lt;div class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line-numbers&quot;&gt;&lt;a href=&quot;#n1&quot; name=&quot;n1&quot;&gt;1&lt;/a&gt;&lt;/span&gt;group &lt;span style=&quot;color:#A60&quot;&gt;:development&lt;/span&gt; &lt;span style=&quot;color:#080;font-weight:bold&quot;&gt;do&lt;/span&gt;
-&lt;span class=&quot;line-numbers&quot;&gt;&lt;a href=&quot;#n2&quot; name=&quot;n2&quot;&gt;2&lt;/a&gt;&lt;/span&gt;  &lt;span style=&quot;color:#777&quot;&gt;# Peek Bar&lt;/span&gt;
-&lt;span class=&quot;line-numbers&quot;&gt;&lt;a href=&quot;#n3&quot; name=&quot;n3&quot;&gt;3&lt;/a&gt;&lt;/span&gt;  gem &lt;span style=&quot;background-color:hsla(0,100%,50%,0.05)&quot;&gt;&lt;span style=&quot;color:#710&quot;&gt;'&lt;/span&gt;&lt;span style=&quot;color:#D20&quot;&gt;peek&lt;/span&gt;&lt;span style=&quot;color:#710&quot;&gt;'&lt;/span&gt;&lt;/span&gt;
-&lt;span class=&quot;line-numbers&quot;&gt;&lt;a href=&quot;#n4&quot; name=&quot;n4&quot;&gt;4&lt;/a&gt;&lt;/span&gt;  gem &lt;span style=&quot;background-color:hsla(0,100%,50%,0.05)&quot;&gt;&lt;span style=&quot;color:#710&quot;&gt;'&lt;/span&gt;&lt;span style=&quot;color:#D20&quot;&gt;peek-git&lt;/span&gt;&lt;span style=&quot;color:#710&quot;&gt;'&lt;/span&gt;&lt;/span&gt;
-&lt;span class=&quot;line-numbers&quot;&gt;&lt;a href=&quot;#n5&quot; name=&quot;n5&quot;&gt;5&lt;/a&gt;&lt;/span&gt;  gem &lt;span style=&quot;background-color:hsla(0,100%,50%,0.05)&quot;&gt;&lt;span style=&quot;color:#710&quot;&gt;'&lt;/span&gt;&lt;span style=&quot;color:#D20&quot;&gt;peek-gc&lt;/span&gt;&lt;span style=&quot;color:#710&quot;&gt;'&lt;/span&gt;&lt;/span&gt;
-&lt;span class=&quot;line-numbers&quot;&gt;&lt;a href=&quot;#n6&quot; name=&quot;n6&quot;&gt;6&lt;/a&gt;&lt;/span&gt;  gem &lt;span style=&quot;background-color:hsla(0,100%,50%,0.05)&quot;&gt;&lt;span style=&quot;color:#710&quot;&gt;'&lt;/span&gt;&lt;span style=&quot;color:#D20&quot;&gt;peek-performance_bar&lt;/span&gt;&lt;span style=&quot;color:#710&quot;&gt;'&lt;/span&gt;&lt;/span&gt;
-&lt;span class=&quot;line-numbers&quot;&gt;&lt;a href=&quot;#n7&quot; name=&quot;n7&quot;&gt;7&lt;/a&gt;&lt;/span&gt;  gem &lt;span style=&quot;background-color:hsla(0,100%,50%,0.05)&quot;&gt;&lt;span style=&quot;color:#710&quot;&gt;'&lt;/span&gt;&lt;span style=&quot;color:#D20&quot;&gt;peek-pg&lt;/span&gt;&lt;span style=&quot;color:#710&quot;&gt;'&lt;/span&gt;&lt;/span&gt;
-&lt;span class=&quot;line-numbers&quot;&gt;&lt;a href=&quot;#n8&quot; name=&quot;n8&quot;&gt;8&lt;/a&gt;&lt;/span&gt;&lt;span style=&quot;color:#080;font-weight:bold&quot;&gt;end&lt;/span&gt;
-&lt;/pre&gt;&lt;/div&gt;
-&lt;/div&gt;
+&lt;div class=&quot;language-ruby highlighter-coderay&quot;&gt;&lt;table class=&quot;CodeRay&quot;&gt;&lt;tr&gt;
+  &lt;td class=&quot;line-numbers&quot;&gt;&lt;pre&gt;&lt;a href=&quot;#n1&quot; name=&quot;n1&quot;&gt;1&lt;/a&gt;
+&lt;a href=&quot;#n2&quot; name=&quot;n2&quot;&gt;2&lt;/a&gt;
+&lt;a href=&quot;#n3&quot; name=&quot;n3&quot;&gt;3&lt;/a&gt;
+&lt;a href=&quot;#n4&quot; name=&quot;n4&quot;&gt;4&lt;/a&gt;
+&lt;a href=&quot;#n5&quot; name=&quot;n5&quot;&gt;5&lt;/a&gt;
+&lt;a href=&quot;#n6&quot; name=&quot;n6&quot;&gt;6&lt;/a&gt;
+&lt;a href=&quot;#n7&quot; name=&quot;n7&quot;&gt;7&lt;/a&gt;
+&lt;a href=&quot;#n8&quot; name=&quot;n8&quot;&gt;8&lt;/a&gt;
+&lt;/pre&gt;&lt;/td&gt;
+  &lt;td class=&quot;code&quot;&gt;&lt;pre&gt;group &lt;span class=&quot;symbol&quot;&gt;:development&lt;/span&gt; &lt;span class=&quot;keyword&quot;&gt;do&lt;/span&gt;
+  &lt;span class=&quot;comment&quot;&gt;# Peek Bar&lt;/span&gt;
+  gem &lt;span class=&quot;string&quot;&gt;&lt;span class=&quot;delimiter&quot;&gt;'&lt;/span&gt;&lt;span class=&quot;content&quot;&gt;peek&lt;/span&gt;&lt;span class=&quot;delimiter&quot;&gt;'&lt;/span&gt;&lt;/span&gt;
+  gem &lt;span class=&quot;string&quot;&gt;&lt;span class=&quot;delimiter&quot;&gt;'&lt;/span&gt;&lt;span class=&quot;content&quot;&gt;peek-git&lt;/span&gt;&lt;span class=&quot;delimiter&quot;&gt;'&lt;/span&gt;&lt;/span&gt;
+  gem &lt;span class=&quot;string&quot;&gt;&lt;span class=&quot;delimiter&quot;&gt;'&lt;/span&gt;&lt;span class=&quot;content&quot;&gt;peek-gc&lt;/span&gt;&lt;span class=&quot;delimiter&quot;&gt;'&lt;/span&gt;&lt;/span&gt;
+  gem &lt;span class=&quot;string&quot;&gt;&lt;span class=&quot;delimiter&quot;&gt;'&lt;/span&gt;&lt;span class=&quot;content&quot;&gt;peek-performance_bar&lt;/span&gt;&lt;span class=&quot;delimiter&quot;&gt;'&lt;/span&gt;&lt;/span&gt;
+  gem &lt;span class=&quot;string&quot;&gt;&lt;span class=&quot;delimiter&quot;&gt;'&lt;/span&gt;&lt;span class=&quot;content&quot;&gt;peek-pg&lt;/span&gt;&lt;span class=&quot;delimiter&quot;&gt;'&lt;/span&gt;&lt;/span&gt;
+&lt;span class=&quot;keyword&quot;&gt;end&lt;/span&gt;
+&lt;/pre&gt;&lt;/td&gt;
+&lt;/tr&gt;&lt;/table&gt;
 &lt;/div&gt;
 
 &lt;h2 id=&quot;peekbar-class&quot;&gt;&lt;code&gt;PeekBar&lt;/code&gt; Class&lt;/h2&gt;
@@ -1231,21 +1237,34 @@ The trouble is I definitely don't want to install Peek on production, or in my t
 
 &lt;p&gt;I put this class in &lt;code&gt;lib/peek_bar.rb&lt;/code&gt;.&lt;/p&gt;
 
-&lt;div class=&quot;language-ruby highlighter-coderay&quot;&gt;&lt;div class=&quot;CodeRay&quot;&gt;
-  &lt;div class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line-numbers&quot;&gt; &lt;a href=&quot;#n1&quot; name=&quot;n1&quot;&gt;1&lt;/a&gt;&lt;/span&gt;&lt;span style=&quot;color:#080;font-weight:bold&quot;&gt;class&lt;/span&gt; &lt;span style=&quot;color:#B06;font-weight:bold&quot;&gt;PeekBar&lt;/span&gt;
-&lt;span class=&quot;line-numbers&quot;&gt; &lt;a href=&quot;#n2&quot; name=&quot;n2&quot;&gt;2&lt;/a&gt;&lt;/span&gt;  &lt;span style=&quot;color:#080;font-weight:bold&quot;&gt;def&lt;/span&gt; &lt;span style=&quot;color:#069&quot;&gt;self&lt;/span&gt;.&lt;span style=&quot;color:#06B;font-weight:bold&quot;&gt;available?&lt;/span&gt;
-&lt;span class=&quot;line-numbers&quot;&gt; &lt;a href=&quot;#n3&quot; name=&quot;n3&quot;&gt;3&lt;/a&gt;&lt;/span&gt;    !&lt;span style=&quot;color:#080;font-weight:bold&quot;&gt;defined?&lt;/span&gt;(&lt;span style=&quot;color:#036;font-weight:bold&quot;&gt;Peek&lt;/span&gt;).nil?
-&lt;span class=&quot;line-numbers&quot;&gt; &lt;a href=&quot;#n4&quot; name=&quot;n4&quot;&gt;4&lt;/a&gt;&lt;/span&gt;  &lt;span style=&quot;color:#080;font-weight:bold&quot;&gt;end&lt;/span&gt;
-&lt;span class=&quot;line-numbers&quot;&gt; &lt;a href=&quot;#n5&quot; name=&quot;n5&quot;&gt;5&lt;/a&gt;&lt;/span&gt;
-&lt;span class=&quot;line-numbers&quot;&gt; &lt;a href=&quot;#n6&quot; name=&quot;n6&quot;&gt;6&lt;/a&gt;&lt;/span&gt;  &lt;span style=&quot;color:#080;font-weight:bold&quot;&gt;def&lt;/span&gt; &lt;span style=&quot;color:#069&quot;&gt;self&lt;/span&gt;.&lt;span style=&quot;color:#06B;font-weight:bold&quot;&gt;enabled?&lt;/span&gt;(current_user)
-&lt;span class=&quot;line-numbers&quot;&gt; &lt;a href=&quot;#n7&quot; name=&quot;n7&quot;&gt;7&lt;/a&gt;&lt;/span&gt;    &lt;span style=&quot;color:#080;font-weight:bold&quot;&gt;return&lt;/span&gt; &lt;span style=&quot;color:#069&quot;&gt;false&lt;/span&gt; &lt;span style=&quot;color:#080;font-weight:bold&quot;&gt;unless&lt;/span&gt; available?
-&lt;span class=&quot;line-numbers&quot;&gt; &lt;a href=&quot;#n8&quot; name=&quot;n8&quot;&gt;8&lt;/a&gt;&lt;/span&gt;
-&lt;span class=&quot;line-numbers&quot;&gt; &lt;a href=&quot;#n9&quot; name=&quot;n9&quot;&gt;9&lt;/a&gt;&lt;/span&gt;    &lt;span style=&quot;color:#777&quot;&gt;# The default test.&lt;/span&gt;
-&lt;span class=&quot;line-numbers&quot;&gt;&lt;strong&gt;&lt;a href=&quot;#n10&quot; name=&quot;n10&quot;&gt;10&lt;/a&gt;&lt;/strong&gt;&lt;/span&gt;    &lt;span style=&quot;background-color:hsla(0,100%,50%,0.05)&quot;&gt;&lt;span style=&quot;color:#710&quot;&gt;%w(&lt;/span&gt;&lt;span style=&quot;color:#D20&quot;&gt;development staging&lt;/span&gt;&lt;span style=&quot;color:#710&quot;&gt;)&lt;/span&gt;&lt;/span&gt;.include? &lt;span style=&quot;color:#036;font-weight:bold&quot;&gt;Rails&lt;/span&gt;.env
-&lt;span class=&quot;line-numbers&quot;&gt;&lt;a href=&quot;#n11&quot; name=&quot;n11&quot;&gt;11&lt;/a&gt;&lt;/span&gt;  &lt;span style=&quot;color:#080;font-weight:bold&quot;&gt;end&lt;/span&gt;
-&lt;span class=&quot;line-numbers&quot;&gt;&lt;a href=&quot;#n12&quot; name=&quot;n12&quot;&gt;12&lt;/a&gt;&lt;/span&gt;&lt;span style=&quot;color:#080;font-weight:bold&quot;&gt;end&lt;/span&gt;
-&lt;/pre&gt;&lt;/div&gt;
-&lt;/div&gt;
+&lt;div class=&quot;language-ruby highlighter-coderay&quot;&gt;&lt;table class=&quot;CodeRay&quot;&gt;&lt;tr&gt;
+  &lt;td class=&quot;line-numbers&quot;&gt;&lt;pre&gt;&lt;a href=&quot;#n1&quot; name=&quot;n1&quot;&gt;1&lt;/a&gt;
+&lt;a href=&quot;#n2&quot; name=&quot;n2&quot;&gt;2&lt;/a&gt;
+&lt;a href=&quot;#n3&quot; name=&quot;n3&quot;&gt;3&lt;/a&gt;
+&lt;a href=&quot;#n4&quot; name=&quot;n4&quot;&gt;4&lt;/a&gt;
+&lt;a href=&quot;#n5&quot; name=&quot;n5&quot;&gt;5&lt;/a&gt;
+&lt;a href=&quot;#n6&quot; name=&quot;n6&quot;&gt;6&lt;/a&gt;
+&lt;a href=&quot;#n7&quot; name=&quot;n7&quot;&gt;7&lt;/a&gt;
+&lt;a href=&quot;#n8&quot; name=&quot;n8&quot;&gt;8&lt;/a&gt;
+&lt;a href=&quot;#n9&quot; name=&quot;n9&quot;&gt;9&lt;/a&gt;
+&lt;strong&gt;&lt;a href=&quot;#n10&quot; name=&quot;n10&quot;&gt;10&lt;/a&gt;&lt;/strong&gt;
+&lt;a href=&quot;#n11&quot; name=&quot;n11&quot;&gt;11&lt;/a&gt;
+&lt;a href=&quot;#n12&quot; name=&quot;n12&quot;&gt;12&lt;/a&gt;
+&lt;/pre&gt;&lt;/td&gt;
+  &lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;keyword&quot;&gt;class&lt;/span&gt; &lt;span class=&quot;class&quot;&gt;PeekBar&lt;/span&gt;
+  &lt;span class=&quot;keyword&quot;&gt;def&lt;/span&gt; &lt;span class=&quot;predefined-constant&quot;&gt;self&lt;/span&gt;.&lt;span class=&quot;function&quot;&gt;available?&lt;/span&gt;
+    !&lt;span class=&quot;keyword&quot;&gt;defined?&lt;/span&gt;(&lt;span class=&quot;constant&quot;&gt;Peek&lt;/span&gt;).nil?
+  &lt;span class=&quot;keyword&quot;&gt;end&lt;/span&gt;
+
+  &lt;span class=&quot;keyword&quot;&gt;def&lt;/span&gt; &lt;span class=&quot;predefined-constant&quot;&gt;self&lt;/span&gt;.&lt;span class=&quot;function&quot;&gt;enabled?&lt;/span&gt;(current_user)
+    &lt;span class=&quot;keyword&quot;&gt;return&lt;/span&gt; &lt;span class=&quot;predefined-constant&quot;&gt;false&lt;/span&gt; &lt;span class=&quot;keyword&quot;&gt;unless&lt;/span&gt; available?
+
+    &lt;span class=&quot;comment&quot;&gt;# The default test.&lt;/span&gt;
+    &lt;span class=&quot;string&quot;&gt;&lt;span class=&quot;delimiter&quot;&gt;%w(&lt;/span&gt;&lt;span class=&quot;content&quot;&gt;development staging&lt;/span&gt;&lt;span class=&quot;delimiter&quot;&gt;)&lt;/span&gt;&lt;/span&gt;.include? &lt;span class=&quot;constant&quot;&gt;Rails&lt;/span&gt;.env
+  &lt;span class=&quot;keyword&quot;&gt;end&lt;/span&gt;
+&lt;span class=&quot;keyword&quot;&gt;end&lt;/span&gt;
+&lt;/pre&gt;&lt;/td&gt;
+&lt;/tr&gt;&lt;/table&gt;
 &lt;/div&gt;
 
 &lt;p&gt;Here you can see we've encapsulated the &lt;code&gt;defined?&lt;/code&gt; test into &lt;code&gt;PeekBar.available?&lt;/code&gt;. We use it in &lt;code&gt;PeekBar.enabled?&lt;/code&gt; as the first test.&lt;/p&gt;
@@ -1256,42 +1275,76 @@ The trouble is I definitely don't want to install Peek on production, or in my t
 
 &lt;p&gt;I use &lt;a href=&quot;https://relishapp.com/rspec/rspec-rails/docs&quot;&gt;rspec&lt;/a&gt; for testing, so my spec is in &lt;code&gt;spec/lib/peek_bar_spec.rb&lt;/code&gt;.&lt;/p&gt;
 
-&lt;div class=&quot;language-ruby highlighter-coderay&quot;&gt;&lt;div class=&quot;CodeRay&quot;&gt;
-  &lt;div class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line-numbers&quot;&gt; &lt;a href=&quot;#n1&quot; name=&quot;n1&quot;&gt;1&lt;/a&gt;&lt;/span&gt;require &lt;span style=&quot;background-color:hsla(0,100%,50%,0.05)&quot;&gt;&lt;span style=&quot;color:#710&quot;&gt;'&lt;/span&gt;&lt;span style=&quot;color:#D20&quot;&gt;rails_helper&lt;/span&gt;&lt;span style=&quot;color:#710&quot;&gt;'&lt;/span&gt;&lt;/span&gt;
-&lt;span class=&quot;line-numbers&quot;&gt; &lt;a href=&quot;#n2&quot; name=&quot;n2&quot;&gt;2&lt;/a&gt;&lt;/span&gt;
-&lt;span class=&quot;line-numbers&quot;&gt; &lt;a href=&quot;#n3&quot; name=&quot;n3&quot;&gt;3&lt;/a&gt;&lt;/span&gt;&lt;span style=&quot;color:#036;font-weight:bold&quot;&gt;RSpec&lt;/span&gt;.describe &lt;span style=&quot;color:#036;font-weight:bold&quot;&gt;PeekBar&lt;/span&gt; &lt;span style=&quot;color:#080;font-weight:bold&quot;&gt;do&lt;/span&gt;
-&lt;span class=&quot;line-numbers&quot;&gt; &lt;a href=&quot;#n4&quot; name=&quot;n4&quot;&gt;4&lt;/a&gt;&lt;/span&gt;  subject { described_class }
-&lt;span class=&quot;line-numbers&quot;&gt; &lt;a href=&quot;#n5&quot; name=&quot;n5&quot;&gt;5&lt;/a&gt;&lt;/span&gt;
-&lt;span class=&quot;line-numbers&quot;&gt; &lt;a href=&quot;#n6&quot; name=&quot;n6&quot;&gt;6&lt;/a&gt;&lt;/span&gt;  context &lt;span style=&quot;background-color:hsla(0,100%,50%,0.05)&quot;&gt;&lt;span style=&quot;color:#710&quot;&gt;'&lt;/span&gt;&lt;span style=&quot;color:#D20&quot;&gt;without Peek&lt;/span&gt;&lt;span style=&quot;color:#710&quot;&gt;'&lt;/span&gt;&lt;/span&gt; &lt;span style=&quot;color:#080;font-weight:bold&quot;&gt;do&lt;/span&gt;
-&lt;span class=&quot;line-numbers&quot;&gt; &lt;a href=&quot;#n7&quot; name=&quot;n7&quot;&gt;7&lt;/a&gt;&lt;/span&gt;    before(&lt;span style=&quot;color:#A60&quot;&gt;:each&lt;/span&gt;) &lt;span style=&quot;color:#080;font-weight:bold&quot;&gt;do&lt;/span&gt;
-&lt;span class=&quot;line-numbers&quot;&gt; &lt;a href=&quot;#n8&quot; name=&quot;n8&quot;&gt;8&lt;/a&gt;&lt;/span&gt;      &lt;span style=&quot;color:#036;font-weight:bold&quot;&gt;Object&lt;/span&gt;.send(&lt;span style=&quot;color:#A60&quot;&gt;:remove_const&lt;/span&gt;, &lt;span style=&quot;color:#A60&quot;&gt;:Peek&lt;/span&gt;) &lt;span style=&quot;color:#080;font-weight:bold&quot;&gt;if&lt;/span&gt; &lt;span style=&quot;color:#080;font-weight:bold&quot;&gt;defined?&lt;/span&gt;(&lt;span style=&quot;color:#036;font-weight:bold&quot;&gt;Peek&lt;/span&gt;)
-&lt;span class=&quot;line-numbers&quot;&gt; &lt;a href=&quot;#n9&quot; name=&quot;n9&quot;&gt;9&lt;/a&gt;&lt;/span&gt;    &lt;span style=&quot;color:#080;font-weight:bold&quot;&gt;end&lt;/span&gt;
-&lt;span class=&quot;line-numbers&quot;&gt;&lt;strong&gt;&lt;a href=&quot;#n10&quot; name=&quot;n10&quot;&gt;10&lt;/a&gt;&lt;/strong&gt;&lt;/span&gt;
-&lt;span class=&quot;line-numbers&quot;&gt;&lt;a href=&quot;#n11&quot; name=&quot;n11&quot;&gt;11&lt;/a&gt;&lt;/span&gt;    it &lt;span style=&quot;background-color:hsla(0,100%,50%,0.05)&quot;&gt;&lt;span style=&quot;color:#710&quot;&gt;&amp;quot;&lt;/span&gt;&lt;span style=&quot;color:#D20&quot;&gt;isn't available&lt;/span&gt;&lt;span style=&quot;color:#710&quot;&gt;&amp;quot;&lt;/span&gt;&lt;/span&gt; &lt;span style=&quot;color:#080;font-weight:bold&quot;&gt;do&lt;/span&gt;
-&lt;span class=&quot;line-numbers&quot;&gt;&lt;a href=&quot;#n12&quot; name=&quot;n12&quot;&gt;12&lt;/a&gt;&lt;/span&gt;      expect(subject.available?).to be(&lt;span style=&quot;color:#069&quot;&gt;false&lt;/span&gt;)
-&lt;span class=&quot;line-numbers&quot;&gt;&lt;a href=&quot;#n13&quot; name=&quot;n13&quot;&gt;13&lt;/a&gt;&lt;/span&gt;    &lt;span style=&quot;color:#080;font-weight:bold&quot;&gt;end&lt;/span&gt;
-&lt;span class=&quot;line-numbers&quot;&gt;&lt;a href=&quot;#n14&quot; name=&quot;n14&quot;&gt;14&lt;/a&gt;&lt;/span&gt;
-&lt;span class=&quot;line-numbers&quot;&gt;&lt;a href=&quot;#n15&quot; name=&quot;n15&quot;&gt;15&lt;/a&gt;&lt;/span&gt;    it &lt;span style=&quot;background-color:hsla(0,100%,50%,0.05)&quot;&gt;&lt;span style=&quot;color:#710&quot;&gt;&amp;quot;&lt;/span&gt;&lt;span style=&quot;color:#D20&quot;&gt;isn't enabled&lt;/span&gt;&lt;span style=&quot;color:#710&quot;&gt;&amp;quot;&lt;/span&gt;&lt;/span&gt; &lt;span style=&quot;color:#080;font-weight:bold&quot;&gt;do&lt;/span&gt;
-&lt;span class=&quot;line-numbers&quot;&gt;&lt;a href=&quot;#n16&quot; name=&quot;n16&quot;&gt;16&lt;/a&gt;&lt;/span&gt;      expect(subject.enabled?(anything)).to be(&lt;span style=&quot;color:#069&quot;&gt;false&lt;/span&gt;)
-&lt;span class=&quot;line-numbers&quot;&gt;&lt;a href=&quot;#n17&quot; name=&quot;n17&quot;&gt;17&lt;/a&gt;&lt;/span&gt;    &lt;span style=&quot;color:#080;font-weight:bold&quot;&gt;end&lt;/span&gt;
-&lt;span class=&quot;line-numbers&quot;&gt;&lt;a href=&quot;#n18&quot; name=&quot;n18&quot;&gt;18&lt;/a&gt;&lt;/span&gt;  &lt;span style=&quot;color:#080;font-weight:bold&quot;&gt;end&lt;/span&gt;
-&lt;span class=&quot;line-numbers&quot;&gt;&lt;a href=&quot;#n19&quot; name=&quot;n19&quot;&gt;19&lt;/a&gt;&lt;/span&gt;
-&lt;span class=&quot;line-numbers&quot;&gt;&lt;strong&gt;&lt;a href=&quot;#n20&quot; name=&quot;n20&quot;&gt;20&lt;/a&gt;&lt;/strong&gt;&lt;/span&gt;  context &lt;span style=&quot;background-color:hsla(0,100%,50%,0.05)&quot;&gt;&lt;span style=&quot;color:#710&quot;&gt;'&lt;/span&gt;&lt;span style=&quot;color:#D20&quot;&gt;with Peek&lt;/span&gt;&lt;span style=&quot;color:#710&quot;&gt;'&lt;/span&gt;&lt;/span&gt; &lt;span style=&quot;color:#080;font-weight:bold&quot;&gt;do&lt;/span&gt;
-&lt;span class=&quot;line-numbers&quot;&gt;&lt;a href=&quot;#n21&quot; name=&quot;n21&quot;&gt;21&lt;/a&gt;&lt;/span&gt;    before(&lt;span style=&quot;color:#A60&quot;&gt;:each&lt;/span&gt;) { &lt;span style=&quot;color:#036;font-weight:bold&quot;&gt;Peek&lt;/span&gt; = &lt;span style=&quot;color:#036;font-weight:bold&quot;&gt;Class&lt;/span&gt;.new }
-&lt;span class=&quot;line-numbers&quot;&gt;&lt;a href=&quot;#n22&quot; name=&quot;n22&quot;&gt;22&lt;/a&gt;&lt;/span&gt;    after(&lt;span style=&quot;color:#A60&quot;&gt;:each&lt;/span&gt;) { &lt;span style=&quot;color:#036;font-weight:bold&quot;&gt;Object&lt;/span&gt;.send(&lt;span style=&quot;color:#A60&quot;&gt;:remove_const&lt;/span&gt;, &lt;span style=&quot;color:#A60&quot;&gt;:Peek&lt;/span&gt;) }
-&lt;span class=&quot;line-numbers&quot;&gt;&lt;a href=&quot;#n23&quot; name=&quot;n23&quot;&gt;23&lt;/a&gt;&lt;/span&gt;
-&lt;span class=&quot;line-numbers&quot;&gt;&lt;a href=&quot;#n24&quot; name=&quot;n24&quot;&gt;24&lt;/a&gt;&lt;/span&gt;    it &lt;span style=&quot;background-color:hsla(0,100%,50%,0.05)&quot;&gt;&lt;span style=&quot;color:#710&quot;&gt;'&lt;/span&gt;&lt;span style=&quot;color:#D20&quot;&gt;is available&lt;/span&gt;&lt;span style=&quot;color:#710&quot;&gt;'&lt;/span&gt;&lt;/span&gt; &lt;span style=&quot;color:#080;font-weight:bold&quot;&gt;do&lt;/span&gt;
-&lt;span class=&quot;line-numbers&quot;&gt;&lt;a href=&quot;#n25&quot; name=&quot;n25&quot;&gt;25&lt;/a&gt;&lt;/span&gt;      expect(subject.available?).to be(&lt;span style=&quot;color:#069&quot;&gt;true&lt;/span&gt;)
-&lt;span class=&quot;line-numbers&quot;&gt;&lt;a href=&quot;#n26&quot; name=&quot;n26&quot;&gt;26&lt;/a&gt;&lt;/span&gt;    &lt;span style=&quot;color:#080;font-weight:bold&quot;&gt;end&lt;/span&gt;
-&lt;span class=&quot;line-numbers&quot;&gt;&lt;a href=&quot;#n27&quot; name=&quot;n27&quot;&gt;27&lt;/a&gt;&lt;/span&gt;
-&lt;span class=&quot;line-numbers&quot;&gt;&lt;a href=&quot;#n28&quot; name=&quot;n28&quot;&gt;28&lt;/a&gt;&lt;/span&gt;    it &lt;span style=&quot;background-color:hsla(0,100%,50%,0.05)&quot;&gt;&lt;span style=&quot;color:#710&quot;&gt;'&lt;/span&gt;&lt;span style=&quot;color:#D20&quot;&gt;is enabled&lt;/span&gt;&lt;span style=&quot;color:#710&quot;&gt;'&lt;/span&gt;&lt;/span&gt; &lt;span style=&quot;color:#080;font-weight:bold&quot;&gt;do&lt;/span&gt;
-&lt;span class=&quot;line-numbers&quot;&gt;&lt;a href=&quot;#n29&quot; name=&quot;n29&quot;&gt;29&lt;/a&gt;&lt;/span&gt;      allow(&lt;span style=&quot;color:#036;font-weight:bold&quot;&gt;Rails&lt;/span&gt;.env).to receive(&lt;span style=&quot;color:#A60&quot;&gt;:development?&lt;/span&gt;).and_return(&lt;span style=&quot;color:#069&quot;&gt;true&lt;/span&gt;)
-&lt;span class=&quot;line-numbers&quot;&gt;&lt;strong&gt;&lt;a href=&quot;#n30&quot; name=&quot;n30&quot;&gt;30&lt;/a&gt;&lt;/strong&gt;&lt;/span&gt;      expect(subject.enabled?(anything)).to be(&lt;span style=&quot;color:#069&quot;&gt;true&lt;/span&gt;)
-&lt;span class=&quot;line-numbers&quot;&gt;&lt;a href=&quot;#n31&quot; name=&quot;n31&quot;&gt;31&lt;/a&gt;&lt;/span&gt;    &lt;span style=&quot;color:#080;font-weight:bold&quot;&gt;end&lt;/span&gt;
-&lt;span class=&quot;line-numbers&quot;&gt;&lt;a href=&quot;#n32&quot; name=&quot;n32&quot;&gt;32&lt;/a&gt;&lt;/span&gt;  &lt;span style=&quot;color:#080;font-weight:bold&quot;&gt;end&lt;/span&gt;
-&lt;span class=&quot;line-numbers&quot;&gt;&lt;a href=&quot;#n33&quot; name=&quot;n33&quot;&gt;33&lt;/a&gt;&lt;/span&gt;&lt;span style=&quot;color:#080;font-weight:bold&quot;&gt;end&lt;/span&gt;
-&lt;/pre&gt;&lt;/div&gt;
-&lt;/div&gt;
+&lt;div class=&quot;language-ruby highlighter-coderay&quot;&gt;&lt;table class=&quot;CodeRay&quot;&gt;&lt;tr&gt;
+  &lt;td class=&quot;line-numbers&quot;&gt;&lt;pre&gt;&lt;a href=&quot;#n1&quot; name=&quot;n1&quot;&gt;1&lt;/a&gt;
+&lt;a href=&quot;#n2&quot; name=&quot;n2&quot;&gt;2&lt;/a&gt;
+&lt;a href=&quot;#n3&quot; name=&quot;n3&quot;&gt;3&lt;/a&gt;
+&lt;a href=&quot;#n4&quot; name=&quot;n4&quot;&gt;4&lt;/a&gt;
+&lt;a href=&quot;#n5&quot; name=&quot;n5&quot;&gt;5&lt;/a&gt;
+&lt;a href=&quot;#n6&quot; name=&quot;n6&quot;&gt;6&lt;/a&gt;
+&lt;a href=&quot;#n7&quot; name=&quot;n7&quot;&gt;7&lt;/a&gt;
+&lt;a href=&quot;#n8&quot; name=&quot;n8&quot;&gt;8&lt;/a&gt;
+&lt;a href=&quot;#n9&quot; name=&quot;n9&quot;&gt;9&lt;/a&gt;
+&lt;strong&gt;&lt;a href=&quot;#n10&quot; name=&quot;n10&quot;&gt;10&lt;/a&gt;&lt;/strong&gt;
+&lt;a href=&quot;#n11&quot; name=&quot;n11&quot;&gt;11&lt;/a&gt;
+&lt;a href=&quot;#n12&quot; name=&quot;n12&quot;&gt;12&lt;/a&gt;
+&lt;a href=&quot;#n13&quot; name=&quot;n13&quot;&gt;13&lt;/a&gt;
+&lt;a href=&quot;#n14&quot; name=&quot;n14&quot;&gt;14&lt;/a&gt;
+&lt;a href=&quot;#n15&quot; name=&quot;n15&quot;&gt;15&lt;/a&gt;
+&lt;a href=&quot;#n16&quot; name=&quot;n16&quot;&gt;16&lt;/a&gt;
+&lt;a href=&quot;#n17&quot; name=&quot;n17&quot;&gt;17&lt;/a&gt;
+&lt;a href=&quot;#n18&quot; name=&quot;n18&quot;&gt;18&lt;/a&gt;
+&lt;a href=&quot;#n19&quot; name=&quot;n19&quot;&gt;19&lt;/a&gt;
+&lt;strong&gt;&lt;a href=&quot;#n20&quot; name=&quot;n20&quot;&gt;20&lt;/a&gt;&lt;/strong&gt;
+&lt;a href=&quot;#n21&quot; name=&quot;n21&quot;&gt;21&lt;/a&gt;
+&lt;a href=&quot;#n22&quot; name=&quot;n22&quot;&gt;22&lt;/a&gt;
+&lt;a href=&quot;#n23&quot; name=&quot;n23&quot;&gt;23&lt;/a&gt;
+&lt;a href=&quot;#n24&quot; name=&quot;n24&quot;&gt;24&lt;/a&gt;
+&lt;a href=&quot;#n25&quot; name=&quot;n25&quot;&gt;25&lt;/a&gt;
+&lt;a href=&quot;#n26&quot; name=&quot;n26&quot;&gt;26&lt;/a&gt;
+&lt;a href=&quot;#n27&quot; name=&quot;n27&quot;&gt;27&lt;/a&gt;
+&lt;a href=&quot;#n28&quot; name=&quot;n28&quot;&gt;28&lt;/a&gt;
+&lt;a href=&quot;#n29&quot; name=&quot;n29&quot;&gt;29&lt;/a&gt;
+&lt;strong&gt;&lt;a href=&quot;#n30&quot; name=&quot;n30&quot;&gt;30&lt;/a&gt;&lt;/strong&gt;
+&lt;a href=&quot;#n31&quot; name=&quot;n31&quot;&gt;31&lt;/a&gt;
+&lt;a href=&quot;#n32&quot; name=&quot;n32&quot;&gt;32&lt;/a&gt;
+&lt;a href=&quot;#n33&quot; name=&quot;n33&quot;&gt;33&lt;/a&gt;
+&lt;/pre&gt;&lt;/td&gt;
+  &lt;td class=&quot;code&quot;&gt;&lt;pre&gt;require &lt;span class=&quot;string&quot;&gt;&lt;span class=&quot;delimiter&quot;&gt;'&lt;/span&gt;&lt;span class=&quot;content&quot;&gt;rails_helper&lt;/span&gt;&lt;span class=&quot;delimiter&quot;&gt;'&lt;/span&gt;&lt;/span&gt;
+
+&lt;span class=&quot;constant&quot;&gt;RSpec&lt;/span&gt;.describe &lt;span class=&quot;constant&quot;&gt;PeekBar&lt;/span&gt; &lt;span class=&quot;keyword&quot;&gt;do&lt;/span&gt;
+  subject { described_class }
+
+  context &lt;span class=&quot;string&quot;&gt;&lt;span class=&quot;delimiter&quot;&gt;'&lt;/span&gt;&lt;span class=&quot;content&quot;&gt;without Peek&lt;/span&gt;&lt;span class=&quot;delimiter&quot;&gt;'&lt;/span&gt;&lt;/span&gt; &lt;span class=&quot;keyword&quot;&gt;do&lt;/span&gt;
+    before(&lt;span class=&quot;symbol&quot;&gt;:each&lt;/span&gt;) &lt;span class=&quot;keyword&quot;&gt;do&lt;/span&gt;
+      &lt;span class=&quot;constant&quot;&gt;Object&lt;/span&gt;.send(&lt;span class=&quot;symbol&quot;&gt;:remove_const&lt;/span&gt;, &lt;span class=&quot;symbol&quot;&gt;:Peek&lt;/span&gt;) &lt;span class=&quot;keyword&quot;&gt;if&lt;/span&gt; &lt;span class=&quot;keyword&quot;&gt;defined?&lt;/span&gt;(&lt;span class=&quot;constant&quot;&gt;Peek&lt;/span&gt;)
+    &lt;span class=&quot;keyword&quot;&gt;end&lt;/span&gt;
+
+    it &lt;span class=&quot;string&quot;&gt;&lt;span class=&quot;delimiter&quot;&gt;&amp;quot;&lt;/span&gt;&lt;span class=&quot;content&quot;&gt;isn't available&lt;/span&gt;&lt;span class=&quot;delimiter&quot;&gt;&amp;quot;&lt;/span&gt;&lt;/span&gt; &lt;span class=&quot;keyword&quot;&gt;do&lt;/span&gt;
+      expect(subject.available?).to be(&lt;span class=&quot;predefined-constant&quot;&gt;false&lt;/span&gt;)
+    &lt;span class=&quot;keyword&quot;&gt;end&lt;/span&gt;
+
+    it &lt;span class=&quot;string&quot;&gt;&lt;span class=&quot;delimiter&quot;&gt;&amp;quot;&lt;/span&gt;&lt;span class=&quot;content&quot;&gt;isn't enabled&lt;/span&gt;&lt;span class=&quot;delimiter&quot;&gt;&amp;quot;&lt;/span&gt;&lt;/span&gt; &lt;span class=&quot;keyword&quot;&gt;do&lt;/span&gt;
+      expect(subject.enabled?(anything)).to be(&lt;span class=&quot;predefined-constant&quot;&gt;false&lt;/span&gt;)
+    &lt;span class=&quot;keyword&quot;&gt;end&lt;/span&gt;
+  &lt;span class=&quot;keyword&quot;&gt;end&lt;/span&gt;
+
+  context &lt;span class=&quot;string&quot;&gt;&lt;span class=&quot;delimiter&quot;&gt;'&lt;/span&gt;&lt;span class=&quot;content&quot;&gt;with Peek&lt;/span&gt;&lt;span class=&quot;delimiter&quot;&gt;'&lt;/span&gt;&lt;/span&gt; &lt;span class=&quot;keyword&quot;&gt;do&lt;/span&gt;
+    before(&lt;span class=&quot;symbol&quot;&gt;:each&lt;/span&gt;) { &lt;span class=&quot;constant&quot;&gt;Peek&lt;/span&gt; = &lt;span class=&quot;constant&quot;&gt;Class&lt;/span&gt;.new }
+    after(&lt;span class=&quot;symbol&quot;&gt;:each&lt;/span&gt;) { &lt;span class=&quot;constant&quot;&gt;Object&lt;/span&gt;.send(&lt;span class=&quot;symbol&quot;&gt;:remove_const&lt;/span&gt;, &lt;span class=&quot;symbol&quot;&gt;:Peek&lt;/span&gt;) }
+
+    it &lt;span class=&quot;string&quot;&gt;&lt;span class=&quot;delimiter&quot;&gt;'&lt;/span&gt;&lt;span class=&quot;content&quot;&gt;is available&lt;/span&gt;&lt;span class=&quot;delimiter&quot;&gt;'&lt;/span&gt;&lt;/span&gt; &lt;span class=&quot;keyword&quot;&gt;do&lt;/span&gt;
+      expect(subject.available?).to be(&lt;span class=&quot;predefined-constant&quot;&gt;true&lt;/span&gt;)
+    &lt;span class=&quot;keyword&quot;&gt;end&lt;/span&gt;
+
+    it &lt;span class=&quot;string&quot;&gt;&lt;span class=&quot;delimiter&quot;&gt;'&lt;/span&gt;&lt;span class=&quot;content&quot;&gt;is enabled&lt;/span&gt;&lt;span class=&quot;delimiter&quot;&gt;'&lt;/span&gt;&lt;/span&gt; &lt;span class=&quot;keyword&quot;&gt;do&lt;/span&gt;
+      allow(&lt;span class=&quot;constant&quot;&gt;Rails&lt;/span&gt;.env).to receive(&lt;span class=&quot;symbol&quot;&gt;:development?&lt;/span&gt;).and_return(&lt;span class=&quot;predefined-constant&quot;&gt;true&lt;/span&gt;)
+      expect(subject.enabled?(anything)).to be(&lt;span class=&quot;predefined-constant&quot;&gt;true&lt;/span&gt;)
+    &lt;span class=&quot;keyword&quot;&gt;end&lt;/span&gt;
+  &lt;span class=&quot;keyword&quot;&gt;end&lt;/span&gt;
+&lt;span class=&quot;keyword&quot;&gt;end&lt;/span&gt;
+&lt;/pre&gt;&lt;/td&gt;
+&lt;/tr&gt;&lt;/table&gt;
 &lt;/div&gt;
 
 &lt;p&gt;In order to ensure this test is isolated I take extra precautions to ensure the &lt;code&gt;Peek&lt;/code&gt; constant isn't available to my tests unless I explicitly allow it.&lt;/p&gt;
@@ -1300,12 +1353,16 @@ The trouble is I definitely don't want to install Peek on production, or in my t
 
 &lt;p&gt;By default Rails doesn't load ruby code from the &lt;code&gt;lib/&lt;/code&gt; directory, so lets be sure to tell it to. In &lt;code&gt;config/application.rb&lt;/code&gt; add this:&lt;/p&gt;
 
-&lt;div class=&quot;language-ruby highlighter-coderay&quot;&gt;&lt;div class=&quot;CodeRay&quot;&gt;
-  &lt;div class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line-numbers&quot;&gt;&lt;a href=&quot;#n1&quot; name=&quot;n1&quot;&gt;1&lt;/a&gt;&lt;/span&gt;config.autoload_paths += &lt;span style=&quot;background-color:hsla(0,100%,50%,0.05)&quot;&gt;&lt;span style=&quot;color:#710&quot;&gt;%W(&lt;/span&gt;&lt;span style=&quot;color:#D20&quot;&gt;&lt;/span&gt;&lt;/span&gt;
-&lt;span class=&quot;line-numbers&quot;&gt;&lt;a href=&quot;#n2&quot; name=&quot;n2&quot;&gt;2&lt;/a&gt;&lt;/span&gt;&lt;span style=&quot;background-color:hsla(0,100%,50%,0.05)&quot;&gt;&lt;span style=&quot;color:#D20&quot;&gt;  &lt;/span&gt;&lt;span style=&quot;background-color:hsla(0,0%,0%,0.07);color:black&quot;&gt;&lt;span style=&quot;font-weight:bold;color:#666&quot;&gt;#{&lt;/span&gt;config.root&lt;span style=&quot;font-weight:bold;color:#666&quot;&gt;}&lt;/span&gt;&lt;/span&gt;&lt;span style=&quot;color:#D20&quot;&gt;/lib&lt;/span&gt;&lt;/span&gt;
-&lt;span class=&quot;line-numbers&quot;&gt;&lt;a href=&quot;#n3&quot; name=&quot;n3&quot;&gt;3&lt;/a&gt;&lt;/span&gt;&lt;span style=&quot;background-color:hsla(0,100%,50%,0.05)&quot;&gt;&lt;span style=&quot;color:#D20&quot;&gt;&lt;/span&gt;&lt;span style=&quot;color:#710&quot;&gt;)&lt;/span&gt;&lt;/span&gt;
-&lt;/pre&gt;&lt;/div&gt;
-&lt;/div&gt;
+&lt;div class=&quot;language-ruby highlighter-coderay&quot;&gt;&lt;table class=&quot;CodeRay&quot;&gt;&lt;tr&gt;
+  &lt;td class=&quot;line-numbers&quot;&gt;&lt;pre&gt;&lt;a href=&quot;#n1&quot; name=&quot;n1&quot;&gt;1&lt;/a&gt;
+&lt;a href=&quot;#n2&quot; name=&quot;n2&quot;&gt;2&lt;/a&gt;
+&lt;a href=&quot;#n3&quot; name=&quot;n3&quot;&gt;3&lt;/a&gt;
+&lt;/pre&gt;&lt;/td&gt;
+  &lt;td class=&quot;code&quot;&gt;&lt;pre&gt;config.autoload_paths += &lt;span class=&quot;string&quot;&gt;&lt;span class=&quot;delimiter&quot;&gt;%W(&lt;/span&gt;&lt;span class=&quot;content&quot;&gt;
+  &lt;/span&gt;&lt;span class=&quot;inline&quot;&gt;&lt;span class=&quot;inline-delimiter&quot;&gt;#{&lt;/span&gt;config.root&lt;span class=&quot;inline-delimiter&quot;&gt;}&lt;/span&gt;&lt;/span&gt;&lt;span class=&quot;content&quot;&gt;/lib
+&lt;/span&gt;&lt;span class=&quot;delimiter&quot;&gt;)&lt;/span&gt;&lt;/span&gt;
+&lt;/pre&gt;&lt;/td&gt;
+&lt;/tr&gt;&lt;/table&gt;
 &lt;/div&gt;
 
 &lt;h2 id=&quot;peekbarhelper-module&quot;&gt;&lt;code&gt;PeekBarHelper&lt;/code&gt; Module&lt;/h2&gt;
@@ -1318,56 +1375,88 @@ The trouble is I definitely don't want to install Peek on production, or in my t
 
 &lt;p&gt;In &lt;code&gt;app/helpers/peek_bar_helper.rb&lt;/code&gt;.&lt;/p&gt;
 
-&lt;div class=&quot;language-ruby highlighter-coderay&quot;&gt;&lt;div class=&quot;CodeRay&quot;&gt;
-  &lt;div class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line-numbers&quot;&gt;&lt;a href=&quot;#n1&quot; name=&quot;n1&quot;&gt;1&lt;/a&gt;&lt;/span&gt;&lt;span style=&quot;color:#080;font-weight:bold&quot;&gt;module&lt;/span&gt; &lt;span style=&quot;color:#B06;font-weight:bold&quot;&gt;PeekBarHelper&lt;/span&gt;
-&lt;span class=&quot;line-numbers&quot;&gt;&lt;a href=&quot;#n2&quot; name=&quot;n2&quot;&gt;2&lt;/a&gt;&lt;/span&gt;  &lt;span style=&quot;color:#777&quot;&gt;# Typical Peek Integration&lt;/span&gt;
-&lt;span class=&quot;line-numbers&quot;&gt;&lt;a href=&quot;#n3&quot; name=&quot;n3&quot;&gt;3&lt;/a&gt;&lt;/span&gt;  &lt;span style=&quot;color:#080;font-weight:bold&quot;&gt;def&lt;/span&gt; &lt;span style=&quot;color:#06B;font-weight:bold&quot;&gt;peek_enabled?&lt;/span&gt;
-&lt;span class=&quot;line-numbers&quot;&gt;&lt;a href=&quot;#n4&quot; name=&quot;n4&quot;&gt;4&lt;/a&gt;&lt;/span&gt;    &lt;span style=&quot;color:#036;font-weight:bold&quot;&gt;PeekBar&lt;/span&gt;.enabled?(current_user)
-&lt;span class=&quot;line-numbers&quot;&gt;&lt;a href=&quot;#n5&quot; name=&quot;n5&quot;&gt;5&lt;/a&gt;&lt;/span&gt;  &lt;span style=&quot;color:#080;font-weight:bold&quot;&gt;end&lt;/span&gt;
-&lt;span class=&quot;line-numbers&quot;&gt;&lt;a href=&quot;#n6&quot; name=&quot;n6&quot;&gt;6&lt;/a&gt;&lt;/span&gt;&lt;span style=&quot;color:#080;font-weight:bold&quot;&gt;end&lt;/span&gt;
-&lt;/pre&gt;&lt;/div&gt;
-&lt;/div&gt;
+&lt;div class=&quot;language-ruby highlighter-coderay&quot;&gt;&lt;table class=&quot;CodeRay&quot;&gt;&lt;tr&gt;
+  &lt;td class=&quot;line-numbers&quot;&gt;&lt;pre&gt;&lt;a href=&quot;#n1&quot; name=&quot;n1&quot;&gt;1&lt;/a&gt;
+&lt;a href=&quot;#n2&quot; name=&quot;n2&quot;&gt;2&lt;/a&gt;
+&lt;a href=&quot;#n3&quot; name=&quot;n3&quot;&gt;3&lt;/a&gt;
+&lt;a href=&quot;#n4&quot; name=&quot;n4&quot;&gt;4&lt;/a&gt;
+&lt;a href=&quot;#n5&quot; name=&quot;n5&quot;&gt;5&lt;/a&gt;
+&lt;a href=&quot;#n6&quot; name=&quot;n6&quot;&gt;6&lt;/a&gt;
+&lt;/pre&gt;&lt;/td&gt;
+  &lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;keyword&quot;&gt;module&lt;/span&gt; &lt;span class=&quot;class&quot;&gt;PeekBarHelper&lt;/span&gt;
+  &lt;span class=&quot;comment&quot;&gt;# Typical Peek Integration&lt;/span&gt;
+  &lt;span class=&quot;keyword&quot;&gt;def&lt;/span&gt; &lt;span class=&quot;function&quot;&gt;peek_enabled?&lt;/span&gt;
+    &lt;span class=&quot;constant&quot;&gt;PeekBar&lt;/span&gt;.enabled?(current_user)
+  &lt;span class=&quot;keyword&quot;&gt;end&lt;/span&gt;
+&lt;span class=&quot;keyword&quot;&gt;end&lt;/span&gt;
+&lt;/pre&gt;&lt;/td&gt;
+&lt;/tr&gt;&lt;/table&gt;
 &lt;/div&gt;
 
 &lt;h3 id=&quot;test-1&quot;&gt;Test&lt;/h3&gt;
 
 &lt;p&gt;Since we're programming responsibly here's a test for the helper. In &lt;code&gt;spec/helpers/peek_bar_helper_spec.rb&lt;/code&gt;.&lt;/p&gt;
 
-&lt;div class=&quot;language-ruby highlighter-coderay&quot;&gt;&lt;div class=&quot;CodeRay&quot;&gt;
-  &lt;div class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line-numbers&quot;&gt; &lt;a href=&quot;#n1&quot; name=&quot;n1&quot;&gt;1&lt;/a&gt;&lt;/span&gt;require &lt;span style=&quot;background-color:hsla(0,100%,50%,0.05)&quot;&gt;&lt;span style=&quot;color:#710&quot;&gt;'&lt;/span&gt;&lt;span style=&quot;color:#D20&quot;&gt;rails_helper&lt;/span&gt;&lt;span style=&quot;color:#710&quot;&gt;'&lt;/span&gt;&lt;/span&gt;
-&lt;span class=&quot;line-numbers&quot;&gt; &lt;a href=&quot;#n2&quot; name=&quot;n2&quot;&gt;2&lt;/a&gt;&lt;/span&gt;
-&lt;span class=&quot;line-numbers&quot;&gt; &lt;a href=&quot;#n3&quot; name=&quot;n3&quot;&gt;3&lt;/a&gt;&lt;/span&gt;&lt;span style=&quot;color:#036;font-weight:bold&quot;&gt;RSpec&lt;/span&gt;.describe &lt;span style=&quot;color:#036;font-weight:bold&quot;&gt;PeekBarHelper&lt;/span&gt;, &lt;span style=&quot;color:#606&quot;&gt;type&lt;/span&gt;: &lt;span style=&quot;color:#A60&quot;&gt;:helper&lt;/span&gt; &lt;span style=&quot;color:#080;font-weight:bold&quot;&gt;do&lt;/span&gt;
-&lt;span class=&quot;line-numbers&quot;&gt; &lt;a href=&quot;#n4&quot; name=&quot;n4&quot;&gt;4&lt;/a&gt;&lt;/span&gt;  before(&lt;span style=&quot;color:#A60&quot;&gt;:each&lt;/span&gt;) &lt;span style=&quot;color:#080;font-weight:bold&quot;&gt;do&lt;/span&gt;
-&lt;span class=&quot;line-numbers&quot;&gt; &lt;a href=&quot;#n5&quot; name=&quot;n5&quot;&gt;5&lt;/a&gt;&lt;/span&gt;    allow(helper).to receive(&lt;span style=&quot;color:#A60&quot;&gt;:current_user&lt;/span&gt;).and_return(anything)
-&lt;span class=&quot;line-numbers&quot;&gt; &lt;a href=&quot;#n6&quot; name=&quot;n6&quot;&gt;6&lt;/a&gt;&lt;/span&gt;  &lt;span style=&quot;color:#080;font-weight:bold&quot;&gt;end&lt;/span&gt;
-&lt;span class=&quot;line-numbers&quot;&gt; &lt;a href=&quot;#n7&quot; name=&quot;n7&quot;&gt;7&lt;/a&gt;&lt;/span&gt;
-&lt;span class=&quot;line-numbers&quot;&gt; &lt;a href=&quot;#n8&quot; name=&quot;n8&quot;&gt;8&lt;/a&gt;&lt;/span&gt;  it &lt;span style=&quot;background-color:hsla(0,100%,50%,0.05)&quot;&gt;&lt;span style=&quot;color:#710&quot;&gt;'&lt;/span&gt;&lt;span style=&quot;color:#D20&quot;&gt;is not enabled&lt;/span&gt;&lt;span style=&quot;color:#710&quot;&gt;'&lt;/span&gt;&lt;/span&gt; &lt;span style=&quot;color:#080;font-weight:bold&quot;&gt;do&lt;/span&gt;
-&lt;span class=&quot;line-numbers&quot;&gt; &lt;a href=&quot;#n9&quot; name=&quot;n9&quot;&gt;9&lt;/a&gt;&lt;/span&gt;    allow(&lt;span style=&quot;color:#036;font-weight:bold&quot;&gt;PeekBar&lt;/span&gt;).to receive(&lt;span style=&quot;color:#A60&quot;&gt;:enabled?&lt;/span&gt;).and_return(&lt;span style=&quot;color:#069&quot;&gt;false&lt;/span&gt;)
-&lt;span class=&quot;line-numbers&quot;&gt;&lt;strong&gt;&lt;a href=&quot;#n10&quot; name=&quot;n10&quot;&gt;10&lt;/a&gt;&lt;/strong&gt;&lt;/span&gt;    expect(helper.peek_enabled?).to be(&lt;span style=&quot;color:#069&quot;&gt;false&lt;/span&gt;)
-&lt;span class=&quot;line-numbers&quot;&gt;&lt;a href=&quot;#n11&quot; name=&quot;n11&quot;&gt;11&lt;/a&gt;&lt;/span&gt;  &lt;span style=&quot;color:#080;font-weight:bold&quot;&gt;end&lt;/span&gt;
-&lt;span class=&quot;line-numbers&quot;&gt;&lt;a href=&quot;#n12&quot; name=&quot;n12&quot;&gt;12&lt;/a&gt;&lt;/span&gt;
-&lt;span class=&quot;line-numbers&quot;&gt;&lt;a href=&quot;#n13&quot; name=&quot;n13&quot;&gt;13&lt;/a&gt;&lt;/span&gt;  it &lt;span style=&quot;background-color:hsla(0,100%,50%,0.05)&quot;&gt;&lt;span style=&quot;color:#710&quot;&gt;'&lt;/span&gt;&lt;span style=&quot;color:#D20&quot;&gt;is enabled&lt;/span&gt;&lt;span style=&quot;color:#710&quot;&gt;'&lt;/span&gt;&lt;/span&gt; &lt;span style=&quot;color:#080;font-weight:bold&quot;&gt;do&lt;/span&gt;
-&lt;span class=&quot;line-numbers&quot;&gt;&lt;a href=&quot;#n14&quot; name=&quot;n14&quot;&gt;14&lt;/a&gt;&lt;/span&gt;    allow(&lt;span style=&quot;color:#036;font-weight:bold&quot;&gt;PeekBar&lt;/span&gt;).to receive(&lt;span style=&quot;color:#A60&quot;&gt;:enabled?&lt;/span&gt;).and_return(&lt;span style=&quot;color:#069&quot;&gt;true&lt;/span&gt;)
-&lt;span class=&quot;line-numbers&quot;&gt;&lt;a href=&quot;#n15&quot; name=&quot;n15&quot;&gt;15&lt;/a&gt;&lt;/span&gt;    expect(helper.peek_enabled?).to be(&lt;span style=&quot;color:#069&quot;&gt;true&lt;/span&gt;)
-&lt;span class=&quot;line-numbers&quot;&gt;&lt;a href=&quot;#n16&quot; name=&quot;n16&quot;&gt;16&lt;/a&gt;&lt;/span&gt;  &lt;span style=&quot;color:#080;font-weight:bold&quot;&gt;end&lt;/span&gt;
-&lt;span class=&quot;line-numbers&quot;&gt;&lt;a href=&quot;#n17&quot; name=&quot;n17&quot;&gt;17&lt;/a&gt;&lt;/span&gt;&lt;span style=&quot;color:#080;font-weight:bold&quot;&gt;end&lt;/span&gt;
-&lt;/pre&gt;&lt;/div&gt;
-&lt;/div&gt;
+&lt;div class=&quot;language-ruby highlighter-coderay&quot;&gt;&lt;table class=&quot;CodeRay&quot;&gt;&lt;tr&gt;
+  &lt;td class=&quot;line-numbers&quot;&gt;&lt;pre&gt;&lt;a href=&quot;#n1&quot; name=&quot;n1&quot;&gt;1&lt;/a&gt;
+&lt;a href=&quot;#n2&quot; name=&quot;n2&quot;&gt;2&lt;/a&gt;
+&lt;a href=&quot;#n3&quot; name=&quot;n3&quot;&gt;3&lt;/a&gt;
+&lt;a href=&quot;#n4&quot; name=&quot;n4&quot;&gt;4&lt;/a&gt;
+&lt;a href=&quot;#n5&quot; name=&quot;n5&quot;&gt;5&lt;/a&gt;
+&lt;a href=&quot;#n6&quot; name=&quot;n6&quot;&gt;6&lt;/a&gt;
+&lt;a href=&quot;#n7&quot; name=&quot;n7&quot;&gt;7&lt;/a&gt;
+&lt;a href=&quot;#n8&quot; name=&quot;n8&quot;&gt;8&lt;/a&gt;
+&lt;a href=&quot;#n9&quot; name=&quot;n9&quot;&gt;9&lt;/a&gt;
+&lt;strong&gt;&lt;a href=&quot;#n10&quot; name=&quot;n10&quot;&gt;10&lt;/a&gt;&lt;/strong&gt;
+&lt;a href=&quot;#n11&quot; name=&quot;n11&quot;&gt;11&lt;/a&gt;
+&lt;a href=&quot;#n12&quot; name=&quot;n12&quot;&gt;12&lt;/a&gt;
+&lt;a href=&quot;#n13&quot; name=&quot;n13&quot;&gt;13&lt;/a&gt;
+&lt;a href=&quot;#n14&quot; name=&quot;n14&quot;&gt;14&lt;/a&gt;
+&lt;a href=&quot;#n15&quot; name=&quot;n15&quot;&gt;15&lt;/a&gt;
+&lt;a href=&quot;#n16&quot; name=&quot;n16&quot;&gt;16&lt;/a&gt;
+&lt;a href=&quot;#n17&quot; name=&quot;n17&quot;&gt;17&lt;/a&gt;
+&lt;/pre&gt;&lt;/td&gt;
+  &lt;td class=&quot;code&quot;&gt;&lt;pre&gt;require &lt;span class=&quot;string&quot;&gt;&lt;span class=&quot;delimiter&quot;&gt;'&lt;/span&gt;&lt;span class=&quot;content&quot;&gt;rails_helper&lt;/span&gt;&lt;span class=&quot;delimiter&quot;&gt;'&lt;/span&gt;&lt;/span&gt;
+
+&lt;span class=&quot;constant&quot;&gt;RSpec&lt;/span&gt;.describe &lt;span class=&quot;constant&quot;&gt;PeekBarHelper&lt;/span&gt;, &lt;span class=&quot;key&quot;&gt;type&lt;/span&gt;: &lt;span class=&quot;symbol&quot;&gt;:helper&lt;/span&gt; &lt;span class=&quot;keyword&quot;&gt;do&lt;/span&gt;
+  before(&lt;span class=&quot;symbol&quot;&gt;:each&lt;/span&gt;) &lt;span class=&quot;keyword&quot;&gt;do&lt;/span&gt;
+    allow(helper).to receive(&lt;span class=&quot;symbol&quot;&gt;:current_user&lt;/span&gt;).and_return(anything)
+  &lt;span class=&quot;keyword&quot;&gt;end&lt;/span&gt;
+
+  it &lt;span class=&quot;string&quot;&gt;&lt;span class=&quot;delimiter&quot;&gt;'&lt;/span&gt;&lt;span class=&quot;content&quot;&gt;is not enabled&lt;/span&gt;&lt;span class=&quot;delimiter&quot;&gt;'&lt;/span&gt;&lt;/span&gt; &lt;span class=&quot;keyword&quot;&gt;do&lt;/span&gt;
+    allow(&lt;span class=&quot;constant&quot;&gt;PeekBar&lt;/span&gt;).to receive(&lt;span class=&quot;symbol&quot;&gt;:enabled?&lt;/span&gt;).and_return(&lt;span class=&quot;predefined-constant&quot;&gt;false&lt;/span&gt;)
+    expect(helper.peek_enabled?).to be(&lt;span class=&quot;predefined-constant&quot;&gt;false&lt;/span&gt;)
+  &lt;span class=&quot;keyword&quot;&gt;end&lt;/span&gt;
+
+  it &lt;span class=&quot;string&quot;&gt;&lt;span class=&quot;delimiter&quot;&gt;'&lt;/span&gt;&lt;span class=&quot;content&quot;&gt;is enabled&lt;/span&gt;&lt;span class=&quot;delimiter&quot;&gt;'&lt;/span&gt;&lt;/span&gt; &lt;span class=&quot;keyword&quot;&gt;do&lt;/span&gt;
+    allow(&lt;span class=&quot;constant&quot;&gt;PeekBar&lt;/span&gt;).to receive(&lt;span class=&quot;symbol&quot;&gt;:enabled?&lt;/span&gt;).and_return(&lt;span class=&quot;predefined-constant&quot;&gt;true&lt;/span&gt;)
+    expect(helper.peek_enabled?).to be(&lt;span class=&quot;predefined-constant&quot;&gt;true&lt;/span&gt;)
+  &lt;span class=&quot;keyword&quot;&gt;end&lt;/span&gt;
+&lt;span class=&quot;keyword&quot;&gt;end&lt;/span&gt;
+&lt;/pre&gt;&lt;/td&gt;
+&lt;/tr&gt;&lt;/table&gt;
 &lt;/div&gt;
 
 &lt;h2 id=&quot;peek-initialization&quot;&gt;&lt;code&gt;Peek&lt;/code&gt; Initialization&lt;/h2&gt;
 
 &lt;p&gt;The peek documentation explains how to set up &lt;code&gt;config/initializers/peek.rb&lt;/code&gt; to enable the plugins you've selected. We need to first test for the availability of peek like this:&lt;/p&gt;
 
-&lt;div class=&quot;language-ruby highlighter-coderay&quot;&gt;&lt;div class=&quot;CodeRay&quot;&gt;
-  &lt;div class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line-numbers&quot;&gt;&lt;a href=&quot;#n1&quot; name=&quot;n1&quot;&gt;1&lt;/a&gt;&lt;/span&gt;&lt;span style=&quot;color:#080;font-weight:bold&quot;&gt;if&lt;/span&gt; &lt;span style=&quot;color:#036;font-weight:bold&quot;&gt;PeekBar&lt;/span&gt;.available?
-&lt;span class=&quot;line-numbers&quot;&gt;&lt;a href=&quot;#n2&quot; name=&quot;n2&quot;&gt;2&lt;/a&gt;&lt;/span&gt;  &lt;span style=&quot;color:#036;font-weight:bold&quot;&gt;Peek&lt;/span&gt;.into &lt;span style=&quot;color:#036;font-weight:bold&quot;&gt;Peek&lt;/span&gt;::&lt;span style=&quot;color:#036;font-weight:bold&quot;&gt;Views&lt;/span&gt;::&lt;span style=&quot;color:#036;font-weight:bold&quot;&gt;Git&lt;/span&gt;
-&lt;span class=&quot;line-numbers&quot;&gt;&lt;a href=&quot;#n3&quot; name=&quot;n3&quot;&gt;3&lt;/a&gt;&lt;/span&gt;  &lt;span style=&quot;color:#036;font-weight:bold&quot;&gt;Peek&lt;/span&gt;.into &lt;span style=&quot;color:#036;font-weight:bold&quot;&gt;Peek&lt;/span&gt;::&lt;span style=&quot;color:#036;font-weight:bold&quot;&gt;Views&lt;/span&gt;::&lt;span style=&quot;color:#036;font-weight:bold&quot;&gt;GC&lt;/span&gt;
-&lt;span class=&quot;line-numbers&quot;&gt;&lt;a href=&quot;#n4&quot; name=&quot;n4&quot;&gt;4&lt;/a&gt;&lt;/span&gt;  &lt;span style=&quot;color:#036;font-weight:bold&quot;&gt;Peek&lt;/span&gt;.into &lt;span style=&quot;color:#036;font-weight:bold&quot;&gt;Peek&lt;/span&gt;::&lt;span style=&quot;color:#036;font-weight:bold&quot;&gt;Views&lt;/span&gt;::&lt;span style=&quot;color:#036;font-weight:bold&quot;&gt;PerformanceBar&lt;/span&gt;
-&lt;span class=&quot;line-numbers&quot;&gt;&lt;a href=&quot;#n5&quot; name=&quot;n5&quot;&gt;5&lt;/a&gt;&lt;/span&gt;  &lt;span style=&quot;color:#036;font-weight:bold&quot;&gt;Peek&lt;/span&gt;.into &lt;span style=&quot;color:#036;font-weight:bold&quot;&gt;Peek&lt;/span&gt;::&lt;span style=&quot;color:#036;font-weight:bold&quot;&gt;Views&lt;/span&gt;::&lt;span style=&quot;color:#036;font-weight:bold&quot;&gt;PG&lt;/span&gt;
-&lt;span class=&quot;line-numbers&quot;&gt;&lt;a href=&quot;#n6&quot; name=&quot;n6&quot;&gt;6&lt;/a&gt;&lt;/span&gt;&lt;span style=&quot;color:#080;font-weight:bold&quot;&gt;end&lt;/span&gt;
-&lt;/pre&gt;&lt;/div&gt;
-&lt;/div&gt;
+&lt;div class=&quot;language-ruby highlighter-coderay&quot;&gt;&lt;table class=&quot;CodeRay&quot;&gt;&lt;tr&gt;
+  &lt;td class=&quot;line-numbers&quot;&gt;&lt;pre&gt;&lt;a href=&quot;#n1&quot; name=&quot;n1&quot;&gt;1&lt;/a&gt;
+&lt;a href=&quot;#n2&quot; name=&quot;n2&quot;&gt;2&lt;/a&gt;
+&lt;a href=&quot;#n3&quot; name=&quot;n3&quot;&gt;3&lt;/a&gt;
+&lt;a href=&quot;#n4&quot; name=&quot;n4&quot;&gt;4&lt;/a&gt;
+&lt;a href=&quot;#n5&quot; name=&quot;n5&quot;&gt;5&lt;/a&gt;
+&lt;a href=&quot;#n6&quot; name=&quot;n6&quot;&gt;6&lt;/a&gt;
+&lt;/pre&gt;&lt;/td&gt;
+  &lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;keyword&quot;&gt;if&lt;/span&gt; &lt;span class=&quot;constant&quot;&gt;PeekBar&lt;/span&gt;.available?
+  &lt;span class=&quot;constant&quot;&gt;Peek&lt;/span&gt;.into &lt;span class=&quot;constant&quot;&gt;Peek&lt;/span&gt;::&lt;span class=&quot;constant&quot;&gt;Views&lt;/span&gt;::&lt;span class=&quot;constant&quot;&gt;Git&lt;/span&gt;
+  &lt;span class=&quot;constant&quot;&gt;Peek&lt;/span&gt;.into &lt;span class=&quot;constant&quot;&gt;Peek&lt;/span&gt;::&lt;span class=&quot;constant&quot;&gt;Views&lt;/span&gt;::&lt;span class=&quot;constant&quot;&gt;GC&lt;/span&gt;
+  &lt;span class=&quot;constant&quot;&gt;Peek&lt;/span&gt;.into &lt;span class=&quot;constant&quot;&gt;Peek&lt;/span&gt;::&lt;span class=&quot;constant&quot;&gt;Views&lt;/span&gt;::&lt;span class=&quot;constant&quot;&gt;PerformanceBar&lt;/span&gt;
+  &lt;span class=&quot;constant&quot;&gt;Peek&lt;/span&gt;.into &lt;span class=&quot;constant&quot;&gt;Peek&lt;/span&gt;::&lt;span class=&quot;constant&quot;&gt;Views&lt;/span&gt;::&lt;span class=&quot;constant&quot;&gt;PG&lt;/span&gt;
+&lt;span class=&quot;keyword&quot;&gt;end&lt;/span&gt;
+&lt;/pre&gt;&lt;/td&gt;
+&lt;/tr&gt;&lt;/table&gt;
 &lt;/div&gt;
 
 &lt;h2 id=&quot;assets&quot;&gt;Assets&lt;/h2&gt;
@@ -1378,29 +1467,44 @@ The trouble is I definitely don't want to install Peek on production, or in my t
 
 &lt;p&gt;CSS is in &lt;code&gt;app/assets/stylesheets/peek_bar.scss&lt;/code&gt;.&lt;/p&gt;
 
-&lt;div class=&quot;language-css highlighter-coderay&quot;&gt;&lt;div class=&quot;CodeRay&quot;&gt;
-  &lt;div class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line-numbers&quot;&gt; &lt;a href=&quot;#n1&quot; name=&quot;n1&quot;&gt;1&lt;/a&gt;&lt;/span&gt;//= &lt;span style=&quot;color:#070;font-weight:bold&quot;&gt;require&lt;/span&gt; &lt;span style=&quot;color:#070;font-weight:bold&quot;&gt;peek&lt;/span&gt;
-&lt;span class=&quot;line-numbers&quot;&gt; &lt;a href=&quot;#n2&quot; name=&quot;n2&quot;&gt;2&lt;/a&gt;&lt;/span&gt;//= &lt;span style=&quot;color:#070;font-weight:bold&quot;&gt;require&lt;/span&gt; &lt;span style=&quot;color:#070;font-weight:bold&quot;&gt;peek&lt;/span&gt;/&lt;span style=&quot;color:#070;font-weight:bold&quot;&gt;views&lt;/span&gt;/&lt;span style=&quot;color:#070;font-weight:bold&quot;&gt;performance_bar&lt;/span&gt;
-&lt;span class=&quot;line-numbers&quot;&gt; &lt;a href=&quot;#n3&quot; name=&quot;n3&quot;&gt;3&lt;/a&gt;&lt;/span&gt;
-&lt;span class=&quot;line-numbers&quot;&gt; &lt;a href=&quot;#n4&quot; name=&quot;n4&quot;&gt;4&lt;/a&gt;&lt;/span&gt;// &lt;span style=&quot;color:#070;font-weight:bold&quot;&gt;Peek&lt;/span&gt; &lt;span style=&quot;color:#070;font-weight:bold&quot;&gt;bar&lt;/span&gt; &lt;span style=&quot;color:#070;font-weight:bold&quot;&gt;on&lt;/span&gt; &lt;span style=&quot;color:#070;font-weight:bold&quot;&gt;bottom&lt;/span&gt; &lt;span style=&quot;color:#070;font-weight:bold&quot;&gt;of&lt;/span&gt; &lt;span style=&quot;color:#070;font-weight:bold&quot;&gt;page&lt;/span&gt;.
-&lt;span class=&quot;line-numbers&quot;&gt; &lt;a href=&quot;#n5&quot; name=&quot;n5&quot;&gt;5&lt;/a&gt;&lt;/span&gt;&lt;span style=&quot;color:#33D;font-weight:bold&quot;&gt;#peek&lt;/span&gt; {
-&lt;span class=&quot;line-numbers&quot;&gt; &lt;a href=&quot;#n6&quot; name=&quot;n6&quot;&gt;6&lt;/a&gt;&lt;/span&gt;  &lt;span style=&quot;color:#606&quot;&gt;position&lt;/span&gt;: &lt;span style=&quot;color:#088&quot;&gt;fixed&lt;/span&gt;;
-&lt;span class=&quot;line-numbers&quot;&gt; &lt;a href=&quot;#n7&quot; name=&quot;n7&quot;&gt;7&lt;/a&gt;&lt;/span&gt;  &lt;span style=&quot;color:#606&quot;&gt;bottom&lt;/span&gt;:   &lt;span style=&quot;color:#60E&quot;&gt;0&lt;/span&gt;;
-&lt;span class=&quot;line-numbers&quot;&gt; &lt;a href=&quot;#n8&quot; name=&quot;n8&quot;&gt;8&lt;/a&gt;&lt;/span&gt;  &lt;span style=&quot;color:#606&quot;&gt;left&lt;/span&gt;:     &lt;span style=&quot;color:#60E&quot;&gt;0&lt;/span&gt;;
-&lt;span class=&quot;line-numbers&quot;&gt; &lt;a href=&quot;#n9&quot; name=&quot;n9&quot;&gt;9&lt;/a&gt;&lt;/span&gt;  &lt;span style=&quot;color:#606&quot;&gt;right&lt;/span&gt;:    &lt;span style=&quot;color:#60E&quot;&gt;0&lt;/span&gt;;
-&lt;span class=&quot;line-numbers&quot;&gt;&lt;strong&gt;&lt;a href=&quot;#n10&quot; name=&quot;n10&quot;&gt;10&lt;/a&gt;&lt;/strong&gt;&lt;/span&gt;  &lt;span style=&quot;color:#606&quot;&gt;z-index&lt;/span&gt;:  &lt;span style=&quot;color:#60E&quot;&gt;999&lt;/span&gt;;
-&lt;span class=&quot;line-numbers&quot;&gt;&lt;a href=&quot;#n11&quot; name=&quot;n11&quot;&gt;11&lt;/a&gt;&lt;/span&gt;}
-&lt;/pre&gt;&lt;/div&gt;
-&lt;/div&gt;
+&lt;div class=&quot;language-css highlighter-coderay&quot;&gt;&lt;table class=&quot;CodeRay&quot;&gt;&lt;tr&gt;
+  &lt;td class=&quot;line-numbers&quot;&gt;&lt;pre&gt;&lt;a href=&quot;#n1&quot; name=&quot;n1&quot;&gt;1&lt;/a&gt;
+&lt;a href=&quot;#n2&quot; name=&quot;n2&quot;&gt;2&lt;/a&gt;
+&lt;a href=&quot;#n3&quot; name=&quot;n3&quot;&gt;3&lt;/a&gt;
+&lt;a href=&quot;#n4&quot; name=&quot;n4&quot;&gt;4&lt;/a&gt;
+&lt;a href=&quot;#n5&quot; name=&quot;n5&quot;&gt;5&lt;/a&gt;
+&lt;a href=&quot;#n6&quot; name=&quot;n6&quot;&gt;6&lt;/a&gt;
+&lt;a href=&quot;#n7&quot; name=&quot;n7&quot;&gt;7&lt;/a&gt;
+&lt;a href=&quot;#n8&quot; name=&quot;n8&quot;&gt;8&lt;/a&gt;
+&lt;a href=&quot;#n9&quot; name=&quot;n9&quot;&gt;9&lt;/a&gt;
+&lt;strong&gt;&lt;a href=&quot;#n10&quot; name=&quot;n10&quot;&gt;10&lt;/a&gt;&lt;/strong&gt;
+&lt;a href=&quot;#n11&quot; name=&quot;n11&quot;&gt;11&lt;/a&gt;
+&lt;/pre&gt;&lt;/td&gt;
+  &lt;td class=&quot;code&quot;&gt;&lt;pre&gt;//= &lt;span class=&quot;tag&quot;&gt;require&lt;/span&gt; &lt;span class=&quot;tag&quot;&gt;peek&lt;/span&gt;
+//= &lt;span class=&quot;tag&quot;&gt;require&lt;/span&gt; &lt;span class=&quot;tag&quot;&gt;peek&lt;/span&gt;/&lt;span class=&quot;tag&quot;&gt;views&lt;/span&gt;/&lt;span class=&quot;tag&quot;&gt;performance_bar&lt;/span&gt;
+
+// &lt;span class=&quot;tag&quot;&gt;Peek&lt;/span&gt; &lt;span class=&quot;tag&quot;&gt;bar&lt;/span&gt; &lt;span class=&quot;tag&quot;&gt;on&lt;/span&gt; &lt;span class=&quot;tag&quot;&gt;bottom&lt;/span&gt; &lt;span class=&quot;tag&quot;&gt;of&lt;/span&gt; &lt;span class=&quot;tag&quot;&gt;page&lt;/span&gt;.
+&lt;span class=&quot;id&quot;&gt;#peek&lt;/span&gt; {
+  &lt;span class=&quot;key&quot;&gt;position&lt;/span&gt;: &lt;span class=&quot;value&quot;&gt;fixed&lt;/span&gt;;
+  &lt;span class=&quot;key&quot;&gt;bottom&lt;/span&gt;:   &lt;span class=&quot;float&quot;&gt;0&lt;/span&gt;;
+  &lt;span class=&quot;key&quot;&gt;left&lt;/span&gt;:     &lt;span class=&quot;float&quot;&gt;0&lt;/span&gt;;
+  &lt;span class=&quot;key&quot;&gt;right&lt;/span&gt;:    &lt;span class=&quot;float&quot;&gt;0&lt;/span&gt;;
+  &lt;span class=&quot;key&quot;&gt;z-index&lt;/span&gt;:  &lt;span class=&quot;float&quot;&gt;999&lt;/span&gt;;
+}
+&lt;/pre&gt;&lt;/td&gt;
+&lt;/tr&gt;&lt;/table&gt;
 &lt;/div&gt;
 
 &lt;p&gt;I prefer &lt;a href=&quot;http://coffeescript.org/&quot;&gt;CoffeeScript&lt;/a&gt; so I loaded the JavaScript in &lt;code&gt;app/assets/javascripts/peek_bar.js.coffee&lt;/code&gt;.&lt;/p&gt;
 
-&lt;div class=&quot;language-coffee highlighter-coderay&quot;&gt;&lt;div class=&quot;CodeRay&quot;&gt;
-  &lt;div class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line-numbers&quot;&gt;&lt;a href=&quot;#n1&quot; name=&quot;n1&quot;&gt;1&lt;/a&gt;&lt;/span&gt;#= require peek
-&lt;span class=&quot;line-numbers&quot;&gt;&lt;a href=&quot;#n2&quot; name=&quot;n2&quot;&gt;2&lt;/a&gt;&lt;/span&gt;#= require peek/views/performance_bar
-&lt;/pre&gt;&lt;/div&gt;
-&lt;/div&gt;
+&lt;div class=&quot;language-coffee highlighter-coderay&quot;&gt;&lt;table class=&quot;CodeRay&quot;&gt;&lt;tr&gt;
+  &lt;td class=&quot;line-numbers&quot;&gt;&lt;pre&gt;&lt;a href=&quot;#n1&quot; name=&quot;n1&quot;&gt;1&lt;/a&gt;
+&lt;a href=&quot;#n2&quot; name=&quot;n2&quot;&gt;2&lt;/a&gt;
+&lt;/pre&gt;&lt;/td&gt;
+  &lt;td class=&quot;code&quot;&gt;&lt;pre&gt;#= require peek
+#= require peek/views/performance_bar
+&lt;/pre&gt;&lt;/td&gt;
+&lt;/tr&gt;&lt;/table&gt;
 &lt;/div&gt;
 
 &lt;h3 id=&quot;initialization-1&quot;&gt;Initialization&lt;/h3&gt;
@@ -1409,12 +1513,16 @@ The trouble is I definitely don't want to install Peek on production, or in my t
 
 &lt;p&gt;Add this to &lt;code&gt;config/initializers/assets.rb&lt;/code&gt;:&lt;/p&gt;
 
-&lt;div class=&quot;language-ruby highlighter-coderay&quot;&gt;&lt;div class=&quot;CodeRay&quot;&gt;
-  &lt;div class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line-numbers&quot;&gt;&lt;a href=&quot;#n1&quot; name=&quot;n1&quot;&gt;1&lt;/a&gt;&lt;/span&gt;&lt;span style=&quot;color:#080;font-weight:bold&quot;&gt;if&lt;/span&gt; &lt;span style=&quot;color:#036;font-weight:bold&quot;&gt;PeekBar&lt;/span&gt;.available?
-&lt;span class=&quot;line-numbers&quot;&gt;&lt;a href=&quot;#n2&quot; name=&quot;n2&quot;&gt;2&lt;/a&gt;&lt;/span&gt;  &lt;span style=&quot;color:#036;font-weight:bold&quot;&gt;Rails&lt;/span&gt;.application.config.assets.precompile += &lt;span style=&quot;background-color:hsla(0,100%,50%,0.05)&quot;&gt;&lt;span style=&quot;color:#710&quot;&gt;%w(&lt;/span&gt;&lt;span style=&quot;color:#D20&quot;&gt;peek_bar.css peek_bar.js&lt;/span&gt;&lt;span style=&quot;color:#710&quot;&gt;)&lt;/span&gt;&lt;/span&gt;
-&lt;span class=&quot;line-numbers&quot;&gt;&lt;a href=&quot;#n3&quot; name=&quot;n3&quot;&gt;3&lt;/a&gt;&lt;/span&gt;&lt;span style=&quot;color:#080;font-weight:bold&quot;&gt;end&lt;/span&gt;
-&lt;/pre&gt;&lt;/div&gt;
-&lt;/div&gt;
+&lt;div class=&quot;language-ruby highlighter-coderay&quot;&gt;&lt;table class=&quot;CodeRay&quot;&gt;&lt;tr&gt;
+  &lt;td class=&quot;line-numbers&quot;&gt;&lt;pre&gt;&lt;a href=&quot;#n1&quot; name=&quot;n1&quot;&gt;1&lt;/a&gt;
+&lt;a href=&quot;#n2&quot; name=&quot;n2&quot;&gt;2&lt;/a&gt;
+&lt;a href=&quot;#n3&quot; name=&quot;n3&quot;&gt;3&lt;/a&gt;
+&lt;/pre&gt;&lt;/td&gt;
+  &lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;keyword&quot;&gt;if&lt;/span&gt; &lt;span class=&quot;constant&quot;&gt;PeekBar&lt;/span&gt;.available?
+  &lt;span class=&quot;constant&quot;&gt;Rails&lt;/span&gt;.application.config.assets.precompile += &lt;span class=&quot;string&quot;&gt;&lt;span class=&quot;delimiter&quot;&gt;%w(&lt;/span&gt;&lt;span class=&quot;content&quot;&gt;peek_bar.css peek_bar.js&lt;/span&gt;&lt;span class=&quot;delimiter&quot;&gt;)&lt;/span&gt;&lt;/span&gt;
+&lt;span class=&quot;keyword&quot;&gt;end&lt;/span&gt;
+&lt;/pre&gt;&lt;/td&gt;
+&lt;/tr&gt;&lt;/table&gt;
 &lt;/div&gt;
 
 &lt;h3 id=&quot;default-assets-gotcha&quot;&gt;Default Assets Gotcha&lt;/h3&gt;
@@ -1429,22 +1537,36 @@ The trouble is I definitely don't want to install Peek on production, or in my t
 
 &lt;p&gt;All this hard work for what? Now it's time to tie it all together in our layout view. I like &lt;a href=&quot;http://slim-lang.com/&quot;&gt;slim&lt;/a&gt; so this is an extremely condensed version of my default layout, &lt;code&gt;app/views/layouts/application.html.slim&lt;/code&gt;.&lt;/p&gt;
 
-&lt;div class=&quot;language-haml highlighter-coderay&quot;&gt;&lt;div class=&quot;CodeRay&quot;&gt;
-  &lt;div class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line-numbers&quot;&gt; &lt;a href=&quot;#n1&quot; name=&quot;n1&quot;&gt;1&lt;/a&gt;&lt;/span&gt;doctype html
-&lt;span class=&quot;line-numbers&quot;&gt; &lt;a href=&quot;#n2&quot; name=&quot;n2&quot;&gt;2&lt;/a&gt;&lt;/span&gt;html
-&lt;span class=&quot;line-numbers&quot;&gt; &lt;a href=&quot;#n3&quot; name=&quot;n3&quot;&gt;3&lt;/a&gt;&lt;/span&gt;  head
-&lt;span class=&quot;line-numbers&quot;&gt; &lt;a href=&quot;#n4&quot; name=&quot;n4&quot;&gt;4&lt;/a&gt;&lt;/span&gt;    = stylesheet_link_tag &lt;span style=&quot;background-color:hsla(0,100%,50%,0.05)&quot;&gt;&lt;span style=&quot;color:#710&quot;&gt;'&lt;/span&gt;&lt;span style=&quot;color:#D20&quot;&gt;application&lt;/span&gt;&lt;span style=&quot;color:#710&quot;&gt;'&lt;/span&gt;&lt;/span&gt;, &lt;span style=&quot;color:#606&quot;&gt;media&lt;/span&gt;: &lt;span style=&quot;background-color:hsla(0,100%,50%,0.05)&quot;&gt;&lt;span style=&quot;color:#710&quot;&gt;'&lt;/span&gt;&lt;span style=&quot;color:#D20&quot;&gt;all&lt;/span&gt;&lt;span style=&quot;color:#710&quot;&gt;'&lt;/span&gt;&lt;/span&gt;, &lt;span style=&quot;background-color:hsla(0,100%,50%,0.05)&quot;&gt;&lt;span style=&quot;color:#710&quot;&gt;'&lt;/span&gt;&lt;span style=&quot;color:#D20&quot;&gt;data-turbolinks-track&lt;/span&gt;&lt;span style=&quot;color:#710&quot;&gt;'&lt;/span&gt;&lt;/span&gt; =&amp;gt; &lt;span style=&quot;color:#069&quot;&gt;true&lt;/span&gt;
-&lt;span class=&quot;line-numbers&quot;&gt; &lt;a href=&quot;#n5&quot; name=&quot;n5&quot;&gt;5&lt;/a&gt;&lt;/span&gt;    - &lt;span style=&quot;color:#080;font-weight:bold&quot;&gt;if&lt;/span&gt; peek_enabled?
-&lt;span class=&quot;line-numbers&quot;&gt; &lt;a href=&quot;#n6&quot; name=&quot;n6&quot;&gt;6&lt;/a&gt;&lt;/span&gt;      = stylesheet_link_tag &lt;span style=&quot;background-color:hsla(0,100%,50%,0.05)&quot;&gt;&lt;span style=&quot;color:#710&quot;&gt;'&lt;/span&gt;&lt;span style=&quot;color:#D20&quot;&gt;peek_bar&lt;/span&gt;&lt;span style=&quot;color:#710&quot;&gt;'&lt;/span&gt;&lt;/span&gt;, &lt;span style=&quot;color:#606&quot;&gt;media&lt;/span&gt;: &lt;span style=&quot;background-color:hsla(0,100%,50%,0.05)&quot;&gt;&lt;span style=&quot;color:#710&quot;&gt;'&lt;/span&gt;&lt;span style=&quot;color:#D20&quot;&gt;all&lt;/span&gt;&lt;span style=&quot;color:#710&quot;&gt;'&lt;/span&gt;&lt;/span&gt;, &lt;span style=&quot;background-color:hsla(0,100%,50%,0.05)&quot;&gt;&lt;span style=&quot;color:#710&quot;&gt;'&lt;/span&gt;&lt;span style=&quot;color:#D20&quot;&gt;data-turbolinks-track&lt;/span&gt;&lt;span style=&quot;color:#710&quot;&gt;'&lt;/span&gt;&lt;/span&gt; =&amp;gt; &lt;span style=&quot;color:#069&quot;&gt;true&lt;/span&gt;
-&lt;span class=&quot;line-numbers&quot;&gt; &lt;a href=&quot;#n7&quot; name=&quot;n7&quot;&gt;7&lt;/a&gt;&lt;/span&gt;    = csrf_meta_tags
-&lt;span class=&quot;line-numbers&quot;&gt; &lt;a href=&quot;#n8&quot; name=&quot;n8&quot;&gt;8&lt;/a&gt;&lt;/span&gt;body
-&lt;span class=&quot;line-numbers&quot;&gt; &lt;a href=&quot;#n9&quot; name=&quot;n9&quot;&gt;9&lt;/a&gt;&lt;/span&gt;  = render &lt;span style=&quot;background-color:hsla(0,100%,50%,0.05)&quot;&gt;&lt;span style=&quot;color:#710&quot;&gt;'&lt;/span&gt;&lt;span style=&quot;color:#D20&quot;&gt;peek/bar&lt;/span&gt;&lt;span style=&quot;color:#710&quot;&gt;'&lt;/span&gt;&lt;/span&gt; &lt;span style=&quot;color:#080;font-weight:bold&quot;&gt;if&lt;/span&gt; peek_enabled?
-&lt;span class=&quot;line-numbers&quot;&gt;&lt;strong&gt;&lt;a href=&quot;#n10&quot; name=&quot;n10&quot;&gt;10&lt;/a&gt;&lt;/strong&gt;&lt;/span&gt;  = &lt;span style=&quot;color:#080;font-weight:bold&quot;&gt;yield&lt;/span&gt;
-&lt;span class=&quot;line-numbers&quot;&gt;&lt;a href=&quot;#n11&quot; name=&quot;n11&quot;&gt;11&lt;/a&gt;&lt;/span&gt;  = javascript_include_tag &lt;span style=&quot;background-color:hsla(0,100%,50%,0.05)&quot;&gt;&lt;span style=&quot;color:#710&quot;&gt;'&lt;/span&gt;&lt;span style=&quot;color:#D20&quot;&gt;application&lt;/span&gt;&lt;span style=&quot;color:#710&quot;&gt;'&lt;/span&gt;&lt;/span&gt;, &lt;span style=&quot;background-color:hsla(0,100%,50%,0.05)&quot;&gt;&lt;span style=&quot;color:#710&quot;&gt;'&lt;/span&gt;&lt;span style=&quot;color:#D20&quot;&gt;data-turbolinks-track&lt;/span&gt;&lt;span style=&quot;color:#710&quot;&gt;'&lt;/span&gt;&lt;/span&gt; =&amp;gt; &lt;span style=&quot;color:#069&quot;&gt;true&lt;/span&gt;
-&lt;span class=&quot;line-numbers&quot;&gt;&lt;a href=&quot;#n12&quot; name=&quot;n12&quot;&gt;12&lt;/a&gt;&lt;/span&gt;  - &lt;span style=&quot;color:#080;font-weight:bold&quot;&gt;if&lt;/span&gt; peek_enabled?
-&lt;span class=&quot;line-numbers&quot;&gt;&lt;a href=&quot;#n13&quot; name=&quot;n13&quot;&gt;13&lt;/a&gt;&lt;/span&gt;    = javascript_include_tag &lt;span style=&quot;background-color:hsla(0,100%,50%,0.05)&quot;&gt;&lt;span style=&quot;color:#710&quot;&gt;'&lt;/span&gt;&lt;span style=&quot;color:#D20&quot;&gt;peek_bar&lt;/span&gt;&lt;span style=&quot;color:#710&quot;&gt;'&lt;/span&gt;&lt;/span&gt;, &lt;span style=&quot;background-color:hsla(0,100%,50%,0.05)&quot;&gt;&lt;span style=&quot;color:#710&quot;&gt;'&lt;/span&gt;&lt;span style=&quot;color:#D20&quot;&gt;data-turbolinks-track&lt;/span&gt;&lt;span style=&quot;color:#710&quot;&gt;'&lt;/span&gt;&lt;/span&gt; =&amp;gt; &lt;span style=&quot;color:#069&quot;&gt;true&lt;/span&gt;
-&lt;/pre&gt;&lt;/div&gt;
-&lt;/div&gt;
+&lt;div class=&quot;language-haml highlighter-coderay&quot;&gt;&lt;table class=&quot;CodeRay&quot;&gt;&lt;tr&gt;
+  &lt;td class=&quot;line-numbers&quot;&gt;&lt;pre&gt;&lt;a href=&quot;#n1&quot; name=&quot;n1&quot;&gt;1&lt;/a&gt;
+&lt;a href=&quot;#n2&quot; name=&quot;n2&quot;&gt;2&lt;/a&gt;
+&lt;a href=&quot;#n3&quot; name=&quot;n3&quot;&gt;3&lt;/a&gt;
+&lt;a href=&quot;#n4&quot; name=&quot;n4&quot;&gt;4&lt;/a&gt;
+&lt;a href=&quot;#n5&quot; name=&quot;n5&quot;&gt;5&lt;/a&gt;
+&lt;a href=&quot;#n6&quot; name=&quot;n6&quot;&gt;6&lt;/a&gt;
+&lt;a href=&quot;#n7&quot; name=&quot;n7&quot;&gt;7&lt;/a&gt;
+&lt;a href=&quot;#n8&quot; name=&quot;n8&quot;&gt;8&lt;/a&gt;
+&lt;a href=&quot;#n9&quot; name=&quot;n9&quot;&gt;9&lt;/a&gt;
+&lt;strong&gt;&lt;a href=&quot;#n10&quot; name=&quot;n10&quot;&gt;10&lt;/a&gt;&lt;/strong&gt;
+&lt;a href=&quot;#n11&quot; name=&quot;n11&quot;&gt;11&lt;/a&gt;
+&lt;a href=&quot;#n12&quot; name=&quot;n12&quot;&gt;12&lt;/a&gt;
+&lt;a href=&quot;#n13&quot; name=&quot;n13&quot;&gt;13&lt;/a&gt;
+&lt;/pre&gt;&lt;/td&gt;
+  &lt;td class=&quot;code&quot;&gt;&lt;pre&gt;doctype html
+html
+  head
+    = stylesheet_link_tag &lt;span class=&quot;string&quot;&gt;&lt;span class=&quot;delimiter&quot;&gt;'&lt;/span&gt;&lt;span class=&quot;content&quot;&gt;application&lt;/span&gt;&lt;span class=&quot;delimiter&quot;&gt;'&lt;/span&gt;&lt;/span&gt;, &lt;span class=&quot;key&quot;&gt;media&lt;/span&gt;: &lt;span class=&quot;string&quot;&gt;&lt;span class=&quot;delimiter&quot;&gt;'&lt;/span&gt;&lt;span class=&quot;content&quot;&gt;all&lt;/span&gt;&lt;span class=&quot;delimiter&quot;&gt;'&lt;/span&gt;&lt;/span&gt;, &lt;span class=&quot;string&quot;&gt;&lt;span class=&quot;delimiter&quot;&gt;'&lt;/span&gt;&lt;span class=&quot;content&quot;&gt;data-turbolinks-track&lt;/span&gt;&lt;span class=&quot;delimiter&quot;&gt;'&lt;/span&gt;&lt;/span&gt; =&amp;gt; &lt;span class=&quot;predefined-constant&quot;&gt;true&lt;/span&gt;
+    - &lt;span class=&quot;keyword&quot;&gt;if&lt;/span&gt; peek_enabled?
+      = stylesheet_link_tag &lt;span class=&quot;string&quot;&gt;&lt;span class=&quot;delimiter&quot;&gt;'&lt;/span&gt;&lt;span class=&quot;content&quot;&gt;peek_bar&lt;/span&gt;&lt;span class=&quot;delimiter&quot;&gt;'&lt;/span&gt;&lt;/span&gt;, &lt;span class=&quot;key&quot;&gt;media&lt;/span&gt;: &lt;span class=&quot;string&quot;&gt;&lt;span class=&quot;delimiter&quot;&gt;'&lt;/span&gt;&lt;span class=&quot;content&quot;&gt;all&lt;/span&gt;&lt;span class=&quot;delimiter&quot;&gt;'&lt;/span&gt;&lt;/span&gt;, &lt;span class=&quot;string&quot;&gt;&lt;span class=&quot;delimiter&quot;&gt;'&lt;/span&gt;&lt;span class=&quot;content&quot;&gt;data-turbolinks-track&lt;/span&gt;&lt;span class=&quot;delimiter&quot;&gt;'&lt;/span&gt;&lt;/span&gt; =&amp;gt; &lt;span class=&quot;predefined-constant&quot;&gt;true&lt;/span&gt;
+    = csrf_meta_tags
+body
+  = render &lt;span class=&quot;string&quot;&gt;&lt;span class=&quot;delimiter&quot;&gt;'&lt;/span&gt;&lt;span class=&quot;content&quot;&gt;peek/bar&lt;/span&gt;&lt;span class=&quot;delimiter&quot;&gt;'&lt;/span&gt;&lt;/span&gt; &lt;span class=&quot;keyword&quot;&gt;if&lt;/span&gt; peek_enabled?
+  = &lt;span class=&quot;keyword&quot;&gt;yield&lt;/span&gt;
+  = javascript_include_tag &lt;span class=&quot;string&quot;&gt;&lt;span class=&quot;delimiter&quot;&gt;'&lt;/span&gt;&lt;span class=&quot;content&quot;&gt;application&lt;/span&gt;&lt;span class=&quot;delimiter&quot;&gt;'&lt;/span&gt;&lt;/span&gt;, &lt;span class=&quot;string&quot;&gt;&lt;span class=&quot;delimiter&quot;&gt;'&lt;/span&gt;&lt;span class=&quot;content&quot;&gt;data-turbolinks-track&lt;/span&gt;&lt;span class=&quot;delimiter&quot;&gt;'&lt;/span&gt;&lt;/span&gt; =&amp;gt; &lt;span class=&quot;predefined-constant&quot;&gt;true&lt;/span&gt;
+  - &lt;span class=&quot;keyword&quot;&gt;if&lt;/span&gt; peek_enabled?
+    = javascript_include_tag &lt;span class=&quot;string&quot;&gt;&lt;span class=&quot;delimiter&quot;&gt;'&lt;/span&gt;&lt;span class=&quot;content&quot;&gt;peek_bar&lt;/span&gt;&lt;span class=&quot;delimiter&quot;&gt;'&lt;/span&gt;&lt;/span&gt;, &lt;span class=&quot;string&quot;&gt;&lt;span class=&quot;delimiter&quot;&gt;'&lt;/span&gt;&lt;span class=&quot;content&quot;&gt;data-turbolinks-track&lt;/span&gt;&lt;span class=&quot;delimiter&quot;&gt;'&lt;/span&gt;&lt;/span&gt; =&amp;gt; &lt;span class=&quot;predefined-constant&quot;&gt;true&lt;/span&gt;
+&lt;/pre&gt;&lt;/td&gt;
+&lt;/tr&gt;&lt;/table&gt;
 &lt;/div&gt;
 
 &lt;h2 id=&quot;finally&quot;&gt;Finally&lt;/h2&gt;
@@ -1457,14 +1579,20 @@ The trouble is I definitely don't want to install Peek on production, or in my t
 
 &lt;p&gt;If we want to use peek in production with only staff accounts, for example, all we have to do is change the &lt;code&gt;Gemfile&lt;/code&gt; to install peek in the &lt;code&gt;:production&lt;/code&gt; group and adjust the &lt;code&gt;PeekBar.enabled?&lt;/code&gt; method:&lt;/p&gt;
 
-&lt;div class=&quot;language-ruby highlighter-coderay&quot;&gt;&lt;div class=&quot;CodeRay&quot;&gt;
-  &lt;div class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line-numbers&quot;&gt;&lt;a href=&quot;#n1&quot; name=&quot;n1&quot;&gt;1&lt;/a&gt;&lt;/span&gt;&lt;span style=&quot;color:#080;font-weight:bold&quot;&gt;def&lt;/span&gt; &lt;span style=&quot;color:#069&quot;&gt;self&lt;/span&gt;.&lt;span style=&quot;color:#06B;font-weight:bold&quot;&gt;enabled?&lt;/span&gt;(current_user)
-&lt;span class=&quot;line-numbers&quot;&gt;&lt;a href=&quot;#n2&quot; name=&quot;n2&quot;&gt;2&lt;/a&gt;&lt;/span&gt;  &lt;span style=&quot;color:#080;font-weight:bold&quot;&gt;return&lt;/span&gt; &lt;span style=&quot;color:#069&quot;&gt;false&lt;/span&gt; &lt;span style=&quot;color:#080;font-weight:bold&quot;&gt;unless&lt;/span&gt; available?
-&lt;span class=&quot;line-numbers&quot;&gt;&lt;a href=&quot;#n3&quot; name=&quot;n3&quot;&gt;3&lt;/a&gt;&lt;/span&gt;
-&lt;span class=&quot;line-numbers&quot;&gt;&lt;a href=&quot;#n4&quot; name=&quot;n4&quot;&gt;4&lt;/a&gt;&lt;/span&gt;  &lt;span style=&quot;color:#036;font-weight:bold&quot;&gt;Rails&lt;/span&gt;.env.development? || current_user.staff?
-&lt;span class=&quot;line-numbers&quot;&gt;&lt;a href=&quot;#n5&quot; name=&quot;n5&quot;&gt;5&lt;/a&gt;&lt;/span&gt;&lt;span style=&quot;color:#080;font-weight:bold&quot;&gt;end&lt;/span&gt;
-&lt;/pre&gt;&lt;/div&gt;
-&lt;/div&gt;
+&lt;div class=&quot;language-ruby highlighter-coderay&quot;&gt;&lt;table class=&quot;CodeRay&quot;&gt;&lt;tr&gt;
+  &lt;td class=&quot;line-numbers&quot;&gt;&lt;pre&gt;&lt;a href=&quot;#n1&quot; name=&quot;n1&quot;&gt;1&lt;/a&gt;
+&lt;a href=&quot;#n2&quot; name=&quot;n2&quot;&gt;2&lt;/a&gt;
+&lt;a href=&quot;#n3&quot; name=&quot;n3&quot;&gt;3&lt;/a&gt;
+&lt;a href=&quot;#n4&quot; name=&quot;n4&quot;&gt;4&lt;/a&gt;
+&lt;a href=&quot;#n5&quot; name=&quot;n5&quot;&gt;5&lt;/a&gt;
+&lt;/pre&gt;&lt;/td&gt;
+  &lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;keyword&quot;&gt;def&lt;/span&gt; &lt;span class=&quot;predefined-constant&quot;&gt;self&lt;/span&gt;.&lt;span class=&quot;function&quot;&gt;enabled?&lt;/span&gt;(current_user)
+  &lt;span class=&quot;keyword&quot;&gt;return&lt;/span&gt; &lt;span class=&quot;predefined-constant&quot;&gt;false&lt;/span&gt; &lt;span class=&quot;keyword&quot;&gt;unless&lt;/span&gt; available?
+
+  &lt;span class=&quot;constant&quot;&gt;Rails&lt;/span&gt;.env.development? || current_user.staff?
+&lt;span class=&quot;keyword&quot;&gt;end&lt;/span&gt;
+&lt;/pre&gt;&lt;/td&gt;
+&lt;/tr&gt;&lt;/table&gt;
 &lt;/div&gt;
 
 &lt;p&gt;That &lt;code&gt;PeekBar&lt;/code&gt; class really tied the room together, did it not?&lt;/p&gt;
@@ -1494,12 +1622,16 @@ The trouble is I definitely don't want to install Peek on production, or in my t
 
 &lt;p&gt;This part is super easy. Amazingly easy. Add this to your &lt;code&gt;.travis.yml&lt;/code&gt; file:&lt;/p&gt;
 
-&lt;div class=&quot;language-yaml highlighter-coderay&quot;&gt;&lt;div class=&quot;CodeRay&quot;&gt;
-  &lt;div class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line-numbers&quot;&gt;&lt;a href=&quot;#n1&quot; name=&quot;n1&quot;&gt;1&lt;/a&gt;&lt;/span&gt;&lt;span style=&quot;color:#777&quot;&gt;# Docker Infrastructure&lt;/span&gt;
-&lt;span class=&quot;line-numbers&quot;&gt;&lt;a href=&quot;#n2&quot; name=&quot;n2&quot;&gt;2&lt;/a&gt;&lt;/span&gt;&lt;span style=&quot;color:#606&quot;&gt;sudo&lt;/span&gt;: &lt;span style=&quot;background-color:hsla(0,100%,50%,0.05)&quot;&gt;&lt;span style=&quot;color:#D20&quot;&gt;false&lt;/span&gt;&lt;/span&gt;
-&lt;span class=&quot;line-numbers&quot;&gt;&lt;a href=&quot;#n3&quot; name=&quot;n3&quot;&gt;3&lt;/a&gt;&lt;/span&gt;&lt;span style=&quot;color:#606&quot;&gt;cache&lt;/span&gt;: &lt;span style=&quot;background-color:hsla(0,100%,50%,0.05)&quot;&gt;&lt;span style=&quot;color:#D20&quot;&gt;bundler&lt;/span&gt;&lt;/span&gt;
-&lt;/pre&gt;&lt;/div&gt;
-&lt;/div&gt;
+&lt;div class=&quot;language-yaml highlighter-coderay&quot;&gt;&lt;table class=&quot;CodeRay&quot;&gt;&lt;tr&gt;
+  &lt;td class=&quot;line-numbers&quot;&gt;&lt;pre&gt;&lt;a href=&quot;#n1&quot; name=&quot;n1&quot;&gt;1&lt;/a&gt;
+&lt;a href=&quot;#n2&quot; name=&quot;n2&quot;&gt;2&lt;/a&gt;
+&lt;a href=&quot;#n3&quot; name=&quot;n3&quot;&gt;3&lt;/a&gt;
+&lt;/pre&gt;&lt;/td&gt;
+  &lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;comment&quot;&gt;# Docker Infrastructure&lt;/span&gt;
+&lt;span class=&quot;key&quot;&gt;sudo&lt;/span&gt;: &lt;span class=&quot;string&quot;&gt;&lt;span class=&quot;content&quot;&gt;false&lt;/span&gt;&lt;/span&gt;
+&lt;span class=&quot;key&quot;&gt;cache&lt;/span&gt;: &lt;span class=&quot;string&quot;&gt;&lt;span class=&quot;content&quot;&gt;bundler&lt;/span&gt;&lt;/span&gt;
+&lt;/pre&gt;&lt;/td&gt;
+&lt;/tr&gt;&lt;/table&gt;
 &lt;/div&gt;
 
 &lt;p&gt;The &lt;code&gt;sudo&lt;/code&gt; key is the magic word to build your project in a Docker container. The &lt;code&gt;cache&lt;/code&gt; key will enable &lt;a href=&quot;http://bundler.io/&quot;&gt;bundler&lt;/a&gt; caching for your project.&lt;/p&gt;
@@ -1516,19 +1648,30 @@ Turns out, by enabling the &lt;code&gt;cache&lt;/code&gt; in Travis I caused Rub
 
 &lt;p&gt;Why was RuboCop doing that? Because I wanted to &lt;code&gt;Exclude&lt;/code&gt; a few things in my Rails app—mostly generated code—so I had a &lt;code&gt;.rubocop.yml&lt;/code&gt; file that looked a little like this:&lt;/p&gt;
 
-&lt;div class=&quot;language-yaml highlighter-coderay&quot;&gt;&lt;div class=&quot;CodeRay&quot;&gt;
-  &lt;div class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line-numbers&quot;&gt; &lt;a href=&quot;#n1&quot; name=&quot;n1&quot;&gt;1&lt;/a&gt;&lt;/span&gt;&lt;span style=&quot;color:#606&quot;&gt;require&lt;/span&gt;: &lt;span style=&quot;background-color:hsla(0,100%,50%,0.05)&quot;&gt;&lt;span style=&quot;color:#D20&quot;&gt;rubocop-rspec&lt;/span&gt;&lt;/span&gt;
-&lt;span class=&quot;line-numbers&quot;&gt; &lt;a href=&quot;#n2&quot; name=&quot;n2&quot;&gt;2&lt;/a&gt;&lt;/span&gt;&lt;span style=&quot;color:#606&quot;&gt;inherit_from&lt;/span&gt;: &lt;span style=&quot;background-color:hsla(0,100%,50%,0.05)&quot;&gt;&lt;span style=&quot;color:#D20&quot;&gt;.rubocop_todo.yml&lt;/span&gt;&lt;/span&gt;
-&lt;span class=&quot;line-numbers&quot;&gt; &lt;a href=&quot;#n3&quot; name=&quot;n3&quot;&gt;3&lt;/a&gt;&lt;/span&gt;&lt;span style=&quot;color:#606&quot;&gt;AllCops&lt;/span&gt;:
-&lt;span class=&quot;line-numbers&quot;&gt; &lt;a href=&quot;#n4&quot; name=&quot;n4&quot;&gt;4&lt;/a&gt;&lt;/span&gt;  &lt;span style=&quot;color:#606&quot;&gt;Exclude&lt;/span&gt;:
-&lt;span class=&quot;line-numbers&quot;&gt; &lt;a href=&quot;#n5&quot; name=&quot;n5&quot;&gt;5&lt;/a&gt;&lt;/span&gt;    - &lt;span style=&quot;background-color:hsla(0,100%,50%,0.05)&quot;&gt;&lt;span style=&quot;color:#D20&quot;&gt;'db/schema.rb'&lt;/span&gt;&lt;/span&gt;
-&lt;span class=&quot;line-numbers&quot;&gt; &lt;a href=&quot;#n6&quot; name=&quot;n6&quot;&gt;6&lt;/a&gt;&lt;/span&gt;    - &lt;span style=&quot;background-color:hsla(0,100%,50%,0.05)&quot;&gt;&lt;span style=&quot;color:#D20&quot;&gt;'bin/**/*'&lt;/span&gt;&lt;/span&gt;
-&lt;span class=&quot;line-numbers&quot;&gt; &lt;a href=&quot;#n7&quot; name=&quot;n7&quot;&gt;7&lt;/a&gt;&lt;/span&gt;    - &lt;span style=&quot;background-color:hsla(0,100%,50%,0.05)&quot;&gt;&lt;span style=&quot;color:#D20&quot;&gt;'config/initializers/devise.rb'&lt;/span&gt;&lt;/span&gt;
-&lt;span class=&quot;line-numbers&quot;&gt; &lt;a href=&quot;#n8&quot; name=&quot;n8&quot;&gt;8&lt;/a&gt;&lt;/span&gt;    - &lt;span style=&quot;background-color:hsla(0,100%,50%,0.05)&quot;&gt;&lt;span style=&quot;color:#D20&quot;&gt;'config/initializers/simple_form*'&lt;/span&gt;&lt;/span&gt;
-&lt;span class=&quot;line-numbers&quot;&gt; &lt;a href=&quot;#n9&quot; name=&quot;n9&quot;&gt;9&lt;/a&gt;&lt;/span&gt;    - &lt;span style=&quot;background-color:hsla(0,100%,50%,0.05)&quot;&gt;&lt;span style=&quot;color:#D20&quot;&gt;'db/migrate/*'&lt;/span&gt;&lt;/span&gt;
-&lt;span class=&quot;line-numbers&quot;&gt;&lt;strong&gt;&lt;a href=&quot;#n10&quot; name=&quot;n10&quot;&gt;10&lt;/a&gt;&lt;/strong&gt;&lt;/span&gt;  &lt;span style=&quot;color:#606&quot;&gt;RunRailsCops&lt;/span&gt;: &lt;span style=&quot;background-color:hsla(0,100%,50%,0.05)&quot;&gt;&lt;span style=&quot;color:#D20&quot;&gt;true&lt;/span&gt;&lt;/span&gt;
-&lt;/pre&gt;&lt;/div&gt;
-&lt;/div&gt;
+&lt;div class=&quot;language-yaml highlighter-coderay&quot;&gt;&lt;table class=&quot;CodeRay&quot;&gt;&lt;tr&gt;
+  &lt;td class=&quot;line-numbers&quot;&gt;&lt;pre&gt;&lt;a href=&quot;#n1&quot; name=&quot;n1&quot;&gt;1&lt;/a&gt;
+&lt;a href=&quot;#n2&quot; name=&quot;n2&quot;&gt;2&lt;/a&gt;
+&lt;a href=&quot;#n3&quot; name=&quot;n3&quot;&gt;3&lt;/a&gt;
+&lt;a href=&quot;#n4&quot; name=&quot;n4&quot;&gt;4&lt;/a&gt;
+&lt;a href=&quot;#n5&quot; name=&quot;n5&quot;&gt;5&lt;/a&gt;
+&lt;a href=&quot;#n6&quot; name=&quot;n6&quot;&gt;6&lt;/a&gt;
+&lt;a href=&quot;#n7&quot; name=&quot;n7&quot;&gt;7&lt;/a&gt;
+&lt;a href=&quot;#n8&quot; name=&quot;n8&quot;&gt;8&lt;/a&gt;
+&lt;a href=&quot;#n9&quot; name=&quot;n9&quot;&gt;9&lt;/a&gt;
+&lt;strong&gt;&lt;a href=&quot;#n10&quot; name=&quot;n10&quot;&gt;10&lt;/a&gt;&lt;/strong&gt;
+&lt;/pre&gt;&lt;/td&gt;
+  &lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;key&quot;&gt;require&lt;/span&gt;: &lt;span class=&quot;string&quot;&gt;&lt;span class=&quot;content&quot;&gt;rubocop-rspec&lt;/span&gt;&lt;/span&gt;
+&lt;span class=&quot;key&quot;&gt;inherit_from&lt;/span&gt;: &lt;span class=&quot;string&quot;&gt;&lt;span class=&quot;content&quot;&gt;.rubocop_todo.yml&lt;/span&gt;&lt;/span&gt;
+&lt;span class=&quot;key&quot;&gt;AllCops&lt;/span&gt;:
+  &lt;span class=&quot;key&quot;&gt;Exclude&lt;/span&gt;:
+    - &lt;span class=&quot;string&quot;&gt;&lt;span class=&quot;content&quot;&gt;'db/schema.rb'&lt;/span&gt;&lt;/span&gt;
+    - &lt;span class=&quot;string&quot;&gt;&lt;span class=&quot;content&quot;&gt;'bin/**/*'&lt;/span&gt;&lt;/span&gt;
+    - &lt;span class=&quot;string&quot;&gt;&lt;span class=&quot;content&quot;&gt;'config/initializers/devise.rb'&lt;/span&gt;&lt;/span&gt;
+    - &lt;span class=&quot;string&quot;&gt;&lt;span class=&quot;content&quot;&gt;'config/initializers/simple_form*'&lt;/span&gt;&lt;/span&gt;
+    - &lt;span class=&quot;string&quot;&gt;&lt;span class=&quot;content&quot;&gt;'db/migrate/*'&lt;/span&gt;&lt;/span&gt;
+  &lt;span class=&quot;key&quot;&gt;RunRailsCops&lt;/span&gt;: &lt;span class=&quot;string&quot;&gt;&lt;span class=&quot;content&quot;&gt;true&lt;/span&gt;&lt;/span&gt;
+&lt;/pre&gt;&lt;/td&gt;
+&lt;/tr&gt;&lt;/table&gt;
 &lt;/div&gt;
 
 &lt;p&gt;The &lt;a href=&quot;https://github.com/bbatsov/rubocop/blob/master/config/default.yml#L28&quot;&gt;default RuboCop configuration&lt;/a&gt; &lt;em&gt;does&lt;/em&gt; exclude vendor. I need that, too, but my &lt;code&gt;Exclude&lt;/code&gt; above overrides the default, so it was gone.&lt;/p&gt;
@@ -1537,20 +1680,32 @@ Turns out, by enabling the &lt;code&gt;cache&lt;/code&gt; in Travis I caused Rub
 
 &lt;p&gt;Lets just add &lt;code&gt;vendor&lt;/code&gt; back into the exclusion list:&lt;/p&gt;
 
-&lt;div class=&quot;language-yaml highlighter-coderay&quot;&gt;&lt;div class=&quot;CodeRay&quot;&gt;
-  &lt;div class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line-numbers&quot;&gt; &lt;a href=&quot;#n1&quot; name=&quot;n1&quot;&gt;1&lt;/a&gt;&lt;/span&gt;&lt;span style=&quot;color:#606&quot;&gt;require&lt;/span&gt;: &lt;span style=&quot;background-color:hsla(0,100%,50%,0.05)&quot;&gt;&lt;span style=&quot;color:#D20&quot;&gt;rubocop-rspec&lt;/span&gt;&lt;/span&gt;
-&lt;span class=&quot;line-numbers&quot;&gt; &lt;a href=&quot;#n2&quot; name=&quot;n2&quot;&gt;2&lt;/a&gt;&lt;/span&gt;&lt;span style=&quot;color:#606&quot;&gt;inherit_from&lt;/span&gt;: &lt;span style=&quot;background-color:hsla(0,100%,50%,0.05)&quot;&gt;&lt;span style=&quot;color:#D20&quot;&gt;.rubocop_todo.yml&lt;/span&gt;&lt;/span&gt;
-&lt;span class=&quot;line-numbers&quot;&gt; &lt;a href=&quot;#n3&quot; name=&quot;n3&quot;&gt;3&lt;/a&gt;&lt;/span&gt;&lt;span style=&quot;color:#606&quot;&gt;AllCops&lt;/span&gt;:
-&lt;span class=&quot;line-numbers&quot;&gt; &lt;a href=&quot;#n4&quot; name=&quot;n4&quot;&gt;4&lt;/a&gt;&lt;/span&gt;  &lt;span style=&quot;color:#606&quot;&gt;Exclude&lt;/span&gt;:
-&lt;span class=&quot;line-numbers&quot;&gt; &lt;a href=&quot;#n5&quot; name=&quot;n5&quot;&gt;5&lt;/a&gt;&lt;/span&gt;    - &lt;span style=&quot;background-color:hsla(0,100%,50%,0.05)&quot;&gt;&lt;span style=&quot;color:#D20&quot;&gt;'db/schema.rb'&lt;/span&gt;&lt;/span&gt;
-&lt;span class=&quot;line-numbers&quot;&gt; &lt;a href=&quot;#n6&quot; name=&quot;n6&quot;&gt;6&lt;/a&gt;&lt;/span&gt;    - &lt;span style=&quot;background-color:hsla(0,100%,50%,0.05)&quot;&gt;&lt;span style=&quot;color:#D20&quot;&gt;'bin/**/*'&lt;/span&gt;&lt;/span&gt;
-&lt;span class=&quot;line-numbers&quot;&gt; &lt;a href=&quot;#n7&quot; name=&quot;n7&quot;&gt;7&lt;/a&gt;&lt;/span&gt;    - &lt;span style=&quot;background-color:hsla(0,100%,50%,0.05)&quot;&gt;&lt;span style=&quot;color:#D20&quot;&gt;'config/initializers/devise.rb'&lt;/span&gt;&lt;/span&gt;
-&lt;span class=&quot;line-numbers&quot;&gt; &lt;a href=&quot;#n8&quot; name=&quot;n8&quot;&gt;8&lt;/a&gt;&lt;/span&gt;    - &lt;span style=&quot;background-color:hsla(0,100%,50%,0.05)&quot;&gt;&lt;span style=&quot;color:#D20&quot;&gt;'config/initializers/simple_form*'&lt;/span&gt;&lt;/span&gt;
-&lt;span class=&quot;line-numbers&quot;&gt; &lt;a href=&quot;#n9&quot; name=&quot;n9&quot;&gt;9&lt;/a&gt;&lt;/span&gt;    - &lt;span style=&quot;background-color:hsla(0,100%,50%,0.05)&quot;&gt;&lt;span style=&quot;color:#D20&quot;&gt;'db/migrate/*'&lt;/span&gt;&lt;/span&gt;
-&lt;span class=&quot;line-numbers&quot;&gt;&lt;strong&gt;&lt;a href=&quot;#n10&quot; name=&quot;n10&quot;&gt;10&lt;/a&gt;&lt;/strong&gt;&lt;/span&gt;    - &lt;span style=&quot;background-color:hsla(0,100%,50%,0.05)&quot;&gt;&lt;span style=&quot;color:#D20&quot;&gt;'vendor/**/*'&lt;/span&gt;&lt;/span&gt;
-&lt;span class=&quot;line-numbers&quot;&gt;&lt;a href=&quot;#n11&quot; name=&quot;n11&quot;&gt;11&lt;/a&gt;&lt;/span&gt;  &lt;span style=&quot;color:#606&quot;&gt;RunRailsCops&lt;/span&gt;: &lt;span style=&quot;background-color:hsla(0,100%,50%,0.05)&quot;&gt;&lt;span style=&quot;color:#D20&quot;&gt;true&lt;/span&gt;&lt;/span&gt;
-&lt;/pre&gt;&lt;/div&gt;
-&lt;/div&gt;
+&lt;div class=&quot;language-yaml highlighter-coderay&quot;&gt;&lt;table class=&quot;CodeRay&quot;&gt;&lt;tr&gt;
+  &lt;td class=&quot;line-numbers&quot;&gt;&lt;pre&gt;&lt;a href=&quot;#n1&quot; name=&quot;n1&quot;&gt;1&lt;/a&gt;
+&lt;a href=&quot;#n2&quot; name=&quot;n2&quot;&gt;2&lt;/a&gt;
+&lt;a href=&quot;#n3&quot; name=&quot;n3&quot;&gt;3&lt;/a&gt;
+&lt;a href=&quot;#n4&quot; name=&quot;n4&quot;&gt;4&lt;/a&gt;
+&lt;a href=&quot;#n5&quot; name=&quot;n5&quot;&gt;5&lt;/a&gt;
+&lt;a href=&quot;#n6&quot; name=&quot;n6&quot;&gt;6&lt;/a&gt;
+&lt;a href=&quot;#n7&quot; name=&quot;n7&quot;&gt;7&lt;/a&gt;
+&lt;a href=&quot;#n8&quot; name=&quot;n8&quot;&gt;8&lt;/a&gt;
+&lt;a href=&quot;#n9&quot; name=&quot;n9&quot;&gt;9&lt;/a&gt;
+&lt;strong&gt;&lt;a href=&quot;#n10&quot; name=&quot;n10&quot;&gt;10&lt;/a&gt;&lt;/strong&gt;
+&lt;a href=&quot;#n11&quot; name=&quot;n11&quot;&gt;11&lt;/a&gt;
+&lt;/pre&gt;&lt;/td&gt;
+  &lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;key&quot;&gt;require&lt;/span&gt;: &lt;span class=&quot;string&quot;&gt;&lt;span class=&quot;content&quot;&gt;rubocop-rspec&lt;/span&gt;&lt;/span&gt;
+&lt;span class=&quot;key&quot;&gt;inherit_from&lt;/span&gt;: &lt;span class=&quot;string&quot;&gt;&lt;span class=&quot;content&quot;&gt;.rubocop_todo.yml&lt;/span&gt;&lt;/span&gt;
+&lt;span class=&quot;key&quot;&gt;AllCops&lt;/span&gt;:
+  &lt;span class=&quot;key&quot;&gt;Exclude&lt;/span&gt;:
+    - &lt;span class=&quot;string&quot;&gt;&lt;span class=&quot;content&quot;&gt;'db/schema.rb'&lt;/span&gt;&lt;/span&gt;
+    - &lt;span class=&quot;string&quot;&gt;&lt;span class=&quot;content&quot;&gt;'bin/**/*'&lt;/span&gt;&lt;/span&gt;
+    - &lt;span class=&quot;string&quot;&gt;&lt;span class=&quot;content&quot;&gt;'config/initializers/devise.rb'&lt;/span&gt;&lt;/span&gt;
+    - &lt;span class=&quot;string&quot;&gt;&lt;span class=&quot;content&quot;&gt;'config/initializers/simple_form*'&lt;/span&gt;&lt;/span&gt;
+    - &lt;span class=&quot;string&quot;&gt;&lt;span class=&quot;content&quot;&gt;'db/migrate/*'&lt;/span&gt;&lt;/span&gt;
+    - &lt;span class=&quot;string&quot;&gt;&lt;span class=&quot;content&quot;&gt;'vendor/**/*'&lt;/span&gt;&lt;/span&gt;
+  &lt;span class=&quot;key&quot;&gt;RunRailsCops&lt;/span&gt;: &lt;span class=&quot;string&quot;&gt;&lt;span class=&quot;content&quot;&gt;true&lt;/span&gt;&lt;/span&gt;
+&lt;/pre&gt;&lt;/td&gt;
+&lt;/tr&gt;&lt;/table&gt;
 &lt;/div&gt;
 
 &lt;p&gt;Voila!&lt;/p&gt;
@@ -1652,88 +1807,148 @@ Turns out, by enabling the &lt;code&gt;cache&lt;/code&gt; in Travis I caused Rub
 
 &lt;p&gt;This is my &lt;code&gt;lib/tasks/bundle_audit.rake&lt;/code&gt; file.&lt;/p&gt;
 
-&lt;div class=&quot;language-ruby highlighter-coderay&quot;&gt;&lt;div class=&quot;CodeRay&quot;&gt;
-  &lt;div class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line-numbers&quot;&gt; &lt;a href=&quot;#n1&quot; name=&quot;n1&quot;&gt;1&lt;/a&gt;&lt;/span&gt;require &lt;span style=&quot;background-color:hsla(0,100%,50%,0.05)&quot;&gt;&lt;span style=&quot;color:#710&quot;&gt;'&lt;/span&gt;&lt;span style=&quot;color:#D20&quot;&gt;bundler/audit/cli&lt;/span&gt;&lt;span style=&quot;color:#710&quot;&gt;'&lt;/span&gt;&lt;/span&gt;
-&lt;span class=&quot;line-numbers&quot;&gt; &lt;a href=&quot;#n2&quot; name=&quot;n2&quot;&gt;2&lt;/a&gt;&lt;/span&gt;
-&lt;span class=&quot;line-numbers&quot;&gt; &lt;a href=&quot;#n3&quot; name=&quot;n3&quot;&gt;3&lt;/a&gt;&lt;/span&gt;namespace &lt;span style=&quot;color:#A60&quot;&gt;:bundle_audit&lt;/span&gt; &lt;span style=&quot;color:#080;font-weight:bold&quot;&gt;do&lt;/span&gt;
-&lt;span class=&quot;line-numbers&quot;&gt; &lt;a href=&quot;#n4&quot; name=&quot;n4&quot;&gt;4&lt;/a&gt;&lt;/span&gt;  desc &lt;span style=&quot;background-color:hsla(0,100%,50%,0.05)&quot;&gt;&lt;span style=&quot;color:#710&quot;&gt;'&lt;/span&gt;&lt;span style=&quot;color:#D20&quot;&gt;Update bundle-audit database&lt;/span&gt;&lt;span style=&quot;color:#710&quot;&gt;'&lt;/span&gt;&lt;/span&gt;
-&lt;span class=&quot;line-numbers&quot;&gt; &lt;a href=&quot;#n5&quot; name=&quot;n5&quot;&gt;5&lt;/a&gt;&lt;/span&gt;  task &lt;span style=&quot;color:#A60&quot;&gt;:update&lt;/span&gt; &lt;span style=&quot;color:#080;font-weight:bold&quot;&gt;do&lt;/span&gt;
-&lt;span class=&quot;line-numbers&quot;&gt; &lt;a href=&quot;#n6&quot; name=&quot;n6&quot;&gt;6&lt;/a&gt;&lt;/span&gt;    &lt;span style=&quot;color:#036;font-weight:bold&quot;&gt;Bundler&lt;/span&gt;::&lt;span style=&quot;color:#036;font-weight:bold&quot;&gt;Audit&lt;/span&gt;::&lt;span style=&quot;color:#036;font-weight:bold&quot;&gt;CLI&lt;/span&gt;.new.update
-&lt;span class=&quot;line-numbers&quot;&gt; &lt;a href=&quot;#n7&quot; name=&quot;n7&quot;&gt;7&lt;/a&gt;&lt;/span&gt;  &lt;span style=&quot;color:#080;font-weight:bold&quot;&gt;end&lt;/span&gt;
-&lt;span class=&quot;line-numbers&quot;&gt; &lt;a href=&quot;#n8&quot; name=&quot;n8&quot;&gt;8&lt;/a&gt;&lt;/span&gt;
-&lt;span class=&quot;line-numbers&quot;&gt; &lt;a href=&quot;#n9&quot; name=&quot;n9&quot;&gt;9&lt;/a&gt;&lt;/span&gt;  desc &lt;span style=&quot;background-color:hsla(0,100%,50%,0.05)&quot;&gt;&lt;span style=&quot;color:#710&quot;&gt;'&lt;/span&gt;&lt;span style=&quot;color:#D20&quot;&gt;Check gems for vulns using bundle-audit&lt;/span&gt;&lt;span style=&quot;color:#710&quot;&gt;'&lt;/span&gt;&lt;/span&gt;
-&lt;span class=&quot;line-numbers&quot;&gt;&lt;strong&gt;&lt;a href=&quot;#n10&quot; name=&quot;n10&quot;&gt;10&lt;/a&gt;&lt;/strong&gt;&lt;/span&gt;  task &lt;span style=&quot;color:#A60&quot;&gt;:check&lt;/span&gt; &lt;span style=&quot;color:#080;font-weight:bold&quot;&gt;do&lt;/span&gt;
-&lt;span class=&quot;line-numbers&quot;&gt;&lt;a href=&quot;#n11&quot; name=&quot;n11&quot;&gt;11&lt;/a&gt;&lt;/span&gt;    &lt;span style=&quot;color:#036;font-weight:bold&quot;&gt;Bundler&lt;/span&gt;::&lt;span style=&quot;color:#036;font-weight:bold&quot;&gt;Audit&lt;/span&gt;::&lt;span style=&quot;color:#036;font-weight:bold&quot;&gt;CLI&lt;/span&gt;.new.check
-&lt;span class=&quot;line-numbers&quot;&gt;&lt;a href=&quot;#n12&quot; name=&quot;n12&quot;&gt;12&lt;/a&gt;&lt;/span&gt;  &lt;span style=&quot;color:#080;font-weight:bold&quot;&gt;end&lt;/span&gt;
-&lt;span class=&quot;line-numbers&quot;&gt;&lt;a href=&quot;#n13&quot; name=&quot;n13&quot;&gt;13&lt;/a&gt;&lt;/span&gt;
-&lt;span class=&quot;line-numbers&quot;&gt;&lt;a href=&quot;#n14&quot; name=&quot;n14&quot;&gt;14&lt;/a&gt;&lt;/span&gt;  desc &lt;span style=&quot;background-color:hsla(0,100%,50%,0.05)&quot;&gt;&lt;span style=&quot;color:#710&quot;&gt;'&lt;/span&gt;&lt;span style=&quot;color:#D20&quot;&gt;Update vulns database and check gems using bundle-audit&lt;/span&gt;&lt;span style=&quot;color:#710&quot;&gt;'&lt;/span&gt;&lt;/span&gt;
-&lt;span class=&quot;line-numbers&quot;&gt;&lt;a href=&quot;#n15&quot; name=&quot;n15&quot;&gt;15&lt;/a&gt;&lt;/span&gt;  task &lt;span style=&quot;color:#A60&quot;&gt;:run&lt;/span&gt; &lt;span style=&quot;color:#080;font-weight:bold&quot;&gt;do&lt;/span&gt;
-&lt;span class=&quot;line-numbers&quot;&gt;&lt;a href=&quot;#n16&quot; name=&quot;n16&quot;&gt;16&lt;/a&gt;&lt;/span&gt;    &lt;span style=&quot;color:#036;font-weight:bold&quot;&gt;Rake&lt;/span&gt;::&lt;span style=&quot;color:#036;font-weight:bold&quot;&gt;Task&lt;/span&gt;[&lt;span style=&quot;background-color:hsla(0,100%,50%,0.05)&quot;&gt;&lt;span style=&quot;color:#710&quot;&gt;'&lt;/span&gt;&lt;span style=&quot;color:#D20&quot;&gt;bundle_audit:update&lt;/span&gt;&lt;span style=&quot;color:#710&quot;&gt;'&lt;/span&gt;&lt;/span&gt;].invoke
-&lt;span class=&quot;line-numbers&quot;&gt;&lt;a href=&quot;#n17&quot; name=&quot;n17&quot;&gt;17&lt;/a&gt;&lt;/span&gt;    &lt;span style=&quot;color:#036;font-weight:bold&quot;&gt;Rake&lt;/span&gt;::&lt;span style=&quot;color:#036;font-weight:bold&quot;&gt;Task&lt;/span&gt;[&lt;span style=&quot;background-color:hsla(0,100%,50%,0.05)&quot;&gt;&lt;span style=&quot;color:#710&quot;&gt;'&lt;/span&gt;&lt;span style=&quot;color:#D20&quot;&gt;bundle_audit:check&lt;/span&gt;&lt;span style=&quot;color:#710&quot;&gt;'&lt;/span&gt;&lt;/span&gt;].invoke
-&lt;span class=&quot;line-numbers&quot;&gt;&lt;a href=&quot;#n18&quot; name=&quot;n18&quot;&gt;18&lt;/a&gt;&lt;/span&gt;  &lt;span style=&quot;color:#080;font-weight:bold&quot;&gt;end&lt;/span&gt;
-&lt;span class=&quot;line-numbers&quot;&gt;&lt;a href=&quot;#n19&quot; name=&quot;n19&quot;&gt;19&lt;/a&gt;&lt;/span&gt;&lt;span style=&quot;color:#080;font-weight:bold&quot;&gt;end&lt;/span&gt;
-&lt;span class=&quot;line-numbers&quot;&gt;&lt;strong&gt;&lt;a href=&quot;#n20&quot; name=&quot;n20&quot;&gt;20&lt;/a&gt;&lt;/strong&gt;&lt;/span&gt;
-&lt;span class=&quot;line-numbers&quot;&gt;&lt;a href=&quot;#n21&quot; name=&quot;n21&quot;&gt;21&lt;/a&gt;&lt;/span&gt;task &lt;span style=&quot;color:#A60&quot;&gt;:bundle_audit&lt;/span&gt; &lt;span style=&quot;color:#080;font-weight:bold&quot;&gt;do&lt;/span&gt;
-&lt;span class=&quot;line-numbers&quot;&gt;&lt;a href=&quot;#n22&quot; name=&quot;n22&quot;&gt;22&lt;/a&gt;&lt;/span&gt;  &lt;span style=&quot;color:#036;font-weight:bold&quot;&gt;Rake&lt;/span&gt;::&lt;span style=&quot;color:#036;font-weight:bold&quot;&gt;Task&lt;/span&gt;[&lt;span style=&quot;background-color:hsla(0,100%,50%,0.05)&quot;&gt;&lt;span style=&quot;color:#710&quot;&gt;'&lt;/span&gt;&lt;span style=&quot;color:#D20&quot;&gt;bundle_audit:run&lt;/span&gt;&lt;span style=&quot;color:#710&quot;&gt;'&lt;/span&gt;&lt;/span&gt;].invoke
-&lt;span class=&quot;line-numbers&quot;&gt;&lt;a href=&quot;#n23&quot; name=&quot;n23&quot;&gt;23&lt;/a&gt;&lt;/span&gt;&lt;span style=&quot;color:#080;font-weight:bold&quot;&gt;end&lt;/span&gt;
-&lt;/pre&gt;&lt;/div&gt;
-&lt;/div&gt;
+&lt;div class=&quot;language-ruby highlighter-coderay&quot;&gt;&lt;table class=&quot;CodeRay&quot;&gt;&lt;tr&gt;
+  &lt;td class=&quot;line-numbers&quot;&gt;&lt;pre&gt;&lt;a href=&quot;#n1&quot; name=&quot;n1&quot;&gt;1&lt;/a&gt;
+&lt;a href=&quot;#n2&quot; name=&quot;n2&quot;&gt;2&lt;/a&gt;
+&lt;a href=&quot;#n3&quot; name=&quot;n3&quot;&gt;3&lt;/a&gt;
+&lt;a href=&quot;#n4&quot; name=&quot;n4&quot;&gt;4&lt;/a&gt;
+&lt;a href=&quot;#n5&quot; name=&quot;n5&quot;&gt;5&lt;/a&gt;
+&lt;a href=&quot;#n6&quot; name=&quot;n6&quot;&gt;6&lt;/a&gt;
+&lt;a href=&quot;#n7&quot; name=&quot;n7&quot;&gt;7&lt;/a&gt;
+&lt;a href=&quot;#n8&quot; name=&quot;n8&quot;&gt;8&lt;/a&gt;
+&lt;a href=&quot;#n9&quot; name=&quot;n9&quot;&gt;9&lt;/a&gt;
+&lt;strong&gt;&lt;a href=&quot;#n10&quot; name=&quot;n10&quot;&gt;10&lt;/a&gt;&lt;/strong&gt;
+&lt;a href=&quot;#n11&quot; name=&quot;n11&quot;&gt;11&lt;/a&gt;
+&lt;a href=&quot;#n12&quot; name=&quot;n12&quot;&gt;12&lt;/a&gt;
+&lt;a href=&quot;#n13&quot; name=&quot;n13&quot;&gt;13&lt;/a&gt;
+&lt;a href=&quot;#n14&quot; name=&quot;n14&quot;&gt;14&lt;/a&gt;
+&lt;a href=&quot;#n15&quot; name=&quot;n15&quot;&gt;15&lt;/a&gt;
+&lt;a href=&quot;#n16&quot; name=&quot;n16&quot;&gt;16&lt;/a&gt;
+&lt;a href=&quot;#n17&quot; name=&quot;n17&quot;&gt;17&lt;/a&gt;
+&lt;a href=&quot;#n18&quot; name=&quot;n18&quot;&gt;18&lt;/a&gt;
+&lt;a href=&quot;#n19&quot; name=&quot;n19&quot;&gt;19&lt;/a&gt;
+&lt;strong&gt;&lt;a href=&quot;#n20&quot; name=&quot;n20&quot;&gt;20&lt;/a&gt;&lt;/strong&gt;
+&lt;a href=&quot;#n21&quot; name=&quot;n21&quot;&gt;21&lt;/a&gt;
+&lt;a href=&quot;#n22&quot; name=&quot;n22&quot;&gt;22&lt;/a&gt;
+&lt;a href=&quot;#n23&quot; name=&quot;n23&quot;&gt;23&lt;/a&gt;
+&lt;/pre&gt;&lt;/td&gt;
+  &lt;td class=&quot;code&quot;&gt;&lt;pre&gt;require &lt;span class=&quot;string&quot;&gt;&lt;span class=&quot;delimiter&quot;&gt;'&lt;/span&gt;&lt;span class=&quot;content&quot;&gt;bundler/audit/cli&lt;/span&gt;&lt;span class=&quot;delimiter&quot;&gt;'&lt;/span&gt;&lt;/span&gt;
+
+namespace &lt;span class=&quot;symbol&quot;&gt;:bundle_audit&lt;/span&gt; &lt;span class=&quot;keyword&quot;&gt;do&lt;/span&gt;
+  desc &lt;span class=&quot;string&quot;&gt;&lt;span class=&quot;delimiter&quot;&gt;'&lt;/span&gt;&lt;span class=&quot;content&quot;&gt;Update bundle-audit database&lt;/span&gt;&lt;span class=&quot;delimiter&quot;&gt;'&lt;/span&gt;&lt;/span&gt;
+  task &lt;span class=&quot;symbol&quot;&gt;:update&lt;/span&gt; &lt;span class=&quot;keyword&quot;&gt;do&lt;/span&gt;
+    &lt;span class=&quot;constant&quot;&gt;Bundler&lt;/span&gt;::&lt;span class=&quot;constant&quot;&gt;Audit&lt;/span&gt;::&lt;span class=&quot;constant&quot;&gt;CLI&lt;/span&gt;.new.update
+  &lt;span class=&quot;keyword&quot;&gt;end&lt;/span&gt;
+
+  desc &lt;span class=&quot;string&quot;&gt;&lt;span class=&quot;delimiter&quot;&gt;'&lt;/span&gt;&lt;span class=&quot;content&quot;&gt;Check gems for vulns using bundle-audit&lt;/span&gt;&lt;span class=&quot;delimiter&quot;&gt;'&lt;/span&gt;&lt;/span&gt;
+  task &lt;span class=&quot;symbol&quot;&gt;:check&lt;/span&gt; &lt;span class=&quot;keyword&quot;&gt;do&lt;/span&gt;
+    &lt;span class=&quot;constant&quot;&gt;Bundler&lt;/span&gt;::&lt;span class=&quot;constant&quot;&gt;Audit&lt;/span&gt;::&lt;span class=&quot;constant&quot;&gt;CLI&lt;/span&gt;.new.check
+  &lt;span class=&quot;keyword&quot;&gt;end&lt;/span&gt;
+
+  desc &lt;span class=&quot;string&quot;&gt;&lt;span class=&quot;delimiter&quot;&gt;'&lt;/span&gt;&lt;span class=&quot;content&quot;&gt;Update vulns database and check gems using bundle-audit&lt;/span&gt;&lt;span class=&quot;delimiter&quot;&gt;'&lt;/span&gt;&lt;/span&gt;
+  task &lt;span class=&quot;symbol&quot;&gt;:run&lt;/span&gt; &lt;span class=&quot;keyword&quot;&gt;do&lt;/span&gt;
+    &lt;span class=&quot;constant&quot;&gt;Rake&lt;/span&gt;::&lt;span class=&quot;constant&quot;&gt;Task&lt;/span&gt;[&lt;span class=&quot;string&quot;&gt;&lt;span class=&quot;delimiter&quot;&gt;'&lt;/span&gt;&lt;span class=&quot;content&quot;&gt;bundle_audit:update&lt;/span&gt;&lt;span class=&quot;delimiter&quot;&gt;'&lt;/span&gt;&lt;/span&gt;].invoke
+    &lt;span class=&quot;constant&quot;&gt;Rake&lt;/span&gt;::&lt;span class=&quot;constant&quot;&gt;Task&lt;/span&gt;[&lt;span class=&quot;string&quot;&gt;&lt;span class=&quot;delimiter&quot;&gt;'&lt;/span&gt;&lt;span class=&quot;content&quot;&gt;bundle_audit:check&lt;/span&gt;&lt;span class=&quot;delimiter&quot;&gt;'&lt;/span&gt;&lt;/span&gt;].invoke
+  &lt;span class=&quot;keyword&quot;&gt;end&lt;/span&gt;
+&lt;span class=&quot;keyword&quot;&gt;end&lt;/span&gt;
+
+task &lt;span class=&quot;symbol&quot;&gt;:bundle_audit&lt;/span&gt; &lt;span class=&quot;keyword&quot;&gt;do&lt;/span&gt;
+  &lt;span class=&quot;constant&quot;&gt;Rake&lt;/span&gt;::&lt;span class=&quot;constant&quot;&gt;Task&lt;/span&gt;[&lt;span class=&quot;string&quot;&gt;&lt;span class=&quot;delimiter&quot;&gt;'&lt;/span&gt;&lt;span class=&quot;content&quot;&gt;bundle_audit:run&lt;/span&gt;&lt;span class=&quot;delimiter&quot;&gt;'&lt;/span&gt;&lt;/span&gt;].invoke
+&lt;span class=&quot;keyword&quot;&gt;end&lt;/span&gt;
+&lt;/pre&gt;&lt;/td&gt;
+&lt;/tr&gt;&lt;/table&gt;
 &lt;/div&gt;
 
 &lt;p&gt;It defines a few rasks under the &lt;code&gt;bundle_audit&lt;/code&gt; namespace. Thanks to the modular Ruby code built on top of &lt;a href=&quot;http://whatisthor.com/&quot;&gt;thor&lt;/a&gt; I had no trouble tapping directly into the command-line implementation for &lt;code&gt;bundle-audit&lt;/code&gt;.&lt;/p&gt;
 
-&lt;div class=&quot;language-console highlighter-coderay&quot;&gt;&lt;div class=&quot;CodeRay&quot;&gt;
-  &lt;div class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line-numbers&quot;&gt;&lt;a href=&quot;#n1&quot; name=&quot;n1&quot;&gt;1&lt;/a&gt;&lt;/span&gt;$ rake -T bundle_audit
-&lt;span class=&quot;line-numbers&quot;&gt;&lt;a href=&quot;#n2&quot; name=&quot;n2&quot;&gt;2&lt;/a&gt;&lt;/span&gt;rake bundle_audit:check   # Check gems for vulns using bundle-audit
-&lt;span class=&quot;line-numbers&quot;&gt;&lt;a href=&quot;#n3&quot; name=&quot;n3&quot;&gt;3&lt;/a&gt;&lt;/span&gt;rake bundle_audit:run     # Update vulns database and check gems using bundle-audit
-&lt;span class=&quot;line-numbers&quot;&gt;&lt;a href=&quot;#n4&quot; name=&quot;n4&quot;&gt;4&lt;/a&gt;&lt;/span&gt;rake bundle_audit:update  # Update bundle-audit database
-&lt;/pre&gt;&lt;/div&gt;
-&lt;/div&gt;
+&lt;div class=&quot;language-console highlighter-coderay&quot;&gt;&lt;table class=&quot;CodeRay&quot;&gt;&lt;tr&gt;
+  &lt;td class=&quot;line-numbers&quot;&gt;&lt;pre&gt;&lt;a href=&quot;#n1&quot; name=&quot;n1&quot;&gt;1&lt;/a&gt;
+&lt;a href=&quot;#n2&quot; name=&quot;n2&quot;&gt;2&lt;/a&gt;
+&lt;a href=&quot;#n3&quot; name=&quot;n3&quot;&gt;3&lt;/a&gt;
+&lt;a href=&quot;#n4&quot; name=&quot;n4&quot;&gt;4&lt;/a&gt;
+&lt;/pre&gt;&lt;/td&gt;
+  &lt;td class=&quot;code&quot;&gt;&lt;pre&gt;$ rake -T bundle_audit
+rake bundle_audit:check   # Check gems for vulns using bundle-audit
+rake bundle_audit:run     # Update vulns database and check gems using bundle-audit
+rake bundle_audit:update  # Update bundle-audit database
+&lt;/pre&gt;&lt;/td&gt;
+&lt;/tr&gt;&lt;/table&gt;
 &lt;/div&gt;
 
 &lt;p&gt;Invocation is as easy as you can imagine. On the command-line:&lt;/p&gt;
 
-&lt;div class=&quot;language-console highlighter-coderay&quot;&gt;&lt;div class=&quot;CodeRay&quot;&gt;
-  &lt;div class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line-numbers&quot;&gt;&lt;a href=&quot;#n1&quot; name=&quot;n1&quot;&gt;1&lt;/a&gt;&lt;/span&gt;$ rake bundle_audit:run
-&lt;span class=&quot;line-numbers&quot;&gt;&lt;a href=&quot;#n2&quot; name=&quot;n2&quot;&gt;2&lt;/a&gt;&lt;/span&gt;Updating ruby-advisory-db ...
-&lt;span class=&quot;line-numbers&quot;&gt;&lt;a href=&quot;#n3&quot; name=&quot;n3&quot;&gt;3&lt;/a&gt;&lt;/span&gt;From https://github.com/rubysec/ruby-advisory-db
-&lt;span class=&quot;line-numbers&quot;&gt;&lt;a href=&quot;#n4&quot; name=&quot;n4&quot;&gt;4&lt;/a&gt;&lt;/span&gt; * branch            master     -&amp;gt; FETCH_HEAD
-&lt;span class=&quot;line-numbers&quot;&gt;&lt;a href=&quot;#n5&quot; name=&quot;n5&quot;&gt;5&lt;/a&gt;&lt;/span&gt;Already up-to-date.
-&lt;span class=&quot;line-numbers&quot;&gt;&lt;a href=&quot;#n6&quot; name=&quot;n6&quot;&gt;6&lt;/a&gt;&lt;/span&gt;ruby-advisory-db: 108 advisories
-&lt;span class=&quot;line-numbers&quot;&gt;&lt;a href=&quot;#n7&quot; name=&quot;n7&quot;&gt;7&lt;/a&gt;&lt;/span&gt;No unpatched versions found
-&lt;/pre&gt;&lt;/div&gt;
-&lt;/div&gt;
+&lt;div class=&quot;language-console highlighter-coderay&quot;&gt;&lt;table class=&quot;CodeRay&quot;&gt;&lt;tr&gt;
+  &lt;td class=&quot;line-numbers&quot;&gt;&lt;pre&gt;&lt;a href=&quot;#n1&quot; name=&quot;n1&quot;&gt;1&lt;/a&gt;
+&lt;a href=&quot;#n2&quot; name=&quot;n2&quot;&gt;2&lt;/a&gt;
+&lt;a href=&quot;#n3&quot; name=&quot;n3&quot;&gt;3&lt;/a&gt;
+&lt;a href=&quot;#n4&quot; name=&quot;n4&quot;&gt;4&lt;/a&gt;
+&lt;a href=&quot;#n5&quot; name=&quot;n5&quot;&gt;5&lt;/a&gt;
+&lt;a href=&quot;#n6&quot; name=&quot;n6&quot;&gt;6&lt;/a&gt;
+&lt;a href=&quot;#n7&quot; name=&quot;n7&quot;&gt;7&lt;/a&gt;
+&lt;/pre&gt;&lt;/td&gt;
+  &lt;td class=&quot;code&quot;&gt;&lt;pre&gt;$ rake bundle_audit:run
+Updating ruby-advisory-db ...
+From https://github.com/rubysec/ruby-advisory-db
+ * branch            master     -&amp;gt; FETCH_HEAD
+Already up-to-date.
+ruby-advisory-db: 108 advisories
+No unpatched versions found
+&lt;/pre&gt;&lt;/td&gt;
+&lt;/tr&gt;&lt;/table&gt;
 &lt;/div&gt;
 
 &lt;p&gt;As you can see this does two things. First, it updates your local copy of the &lt;a href=&quot;https://github.com/rubysec/ruby-advisory-db&quot;&gt;ruby-advisory-db&lt;/a&gt;. Then it scans your gem dependency graph looking for unpatched dependencies. What you see above is the output when everything is OK.&lt;/p&gt;
 
 &lt;p&gt;I also incorporated the check into my &lt;code&gt;rake test&lt;/code&gt; task, because I want my tests to fail if I'm shipping with vulnerable dependencies. Here's what I have going on in &lt;code&gt;lib/tasks/test.rake&lt;/code&gt;:&lt;/p&gt;
 
-&lt;div class=&quot;language-ruby highlighter-coderay&quot;&gt;&lt;div class=&quot;CodeRay&quot;&gt;
-  &lt;div class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line-numbers&quot;&gt; &lt;a href=&quot;#n1&quot; name=&quot;n1&quot;&gt;1&lt;/a&gt;&lt;/span&gt;&lt;span style=&quot;color:#777&quot;&gt;# Remove the Rails defaults.&lt;/span&gt;
-&lt;span class=&quot;line-numbers&quot;&gt; &lt;a href=&quot;#n2&quot; name=&quot;n2&quot;&gt;2&lt;/a&gt;&lt;/span&gt;&lt;span style=&quot;color:#036;font-weight:bold&quot;&gt;Rake&lt;/span&gt;::&lt;span style=&quot;color:#036;font-weight:bold&quot;&gt;Task&lt;/span&gt;[&lt;span style=&quot;background-color:hsla(0,100%,50%,0.05)&quot;&gt;&lt;span style=&quot;color:#710&quot;&gt;'&lt;/span&gt;&lt;span style=&quot;color:#D20&quot;&gt;test:all&lt;/span&gt;&lt;span style=&quot;color:#710&quot;&gt;'&lt;/span&gt;&lt;/span&gt;].clear
-&lt;span class=&quot;line-numbers&quot;&gt; &lt;a href=&quot;#n3&quot; name=&quot;n3&quot;&gt;3&lt;/a&gt;&lt;/span&gt;&lt;span style=&quot;color:#036;font-weight:bold&quot;&gt;Rake&lt;/span&gt;::&lt;span style=&quot;color:#036;font-weight:bold&quot;&gt;Task&lt;/span&gt;[&lt;span style=&quot;background-color:hsla(0,100%,50%,0.05)&quot;&gt;&lt;span style=&quot;color:#710&quot;&gt;'&lt;/span&gt;&lt;span style=&quot;color:#D20&quot;&gt;test:all:db&lt;/span&gt;&lt;span style=&quot;color:#710&quot;&gt;'&lt;/span&gt;&lt;/span&gt;].clear
-&lt;span class=&quot;line-numbers&quot;&gt; &lt;a href=&quot;#n4&quot; name=&quot;n4&quot;&gt;4&lt;/a&gt;&lt;/span&gt;&lt;span style=&quot;color:#036;font-weight:bold&quot;&gt;Rake&lt;/span&gt;::&lt;span style=&quot;color:#036;font-weight:bold&quot;&gt;Task&lt;/span&gt;[&lt;span style=&quot;background-color:hsla(0,100%,50%,0.05)&quot;&gt;&lt;span style=&quot;color:#710&quot;&gt;'&lt;/span&gt;&lt;span style=&quot;color:#D20&quot;&gt;test:db&lt;/span&gt;&lt;span style=&quot;color:#710&quot;&gt;'&lt;/span&gt;&lt;/span&gt;].clear
-&lt;span class=&quot;line-numbers&quot;&gt; &lt;a href=&quot;#n5&quot; name=&quot;n5&quot;&gt;5&lt;/a&gt;&lt;/span&gt;&lt;span style=&quot;color:#036;font-weight:bold&quot;&gt;Rake&lt;/span&gt;::&lt;span style=&quot;color:#036;font-weight:bold&quot;&gt;Task&lt;/span&gt;[&lt;span style=&quot;background-color:hsla(0,100%,50%,0.05)&quot;&gt;&lt;span style=&quot;color:#710&quot;&gt;'&lt;/span&gt;&lt;span style=&quot;color:#D20&quot;&gt;test&lt;/span&gt;&lt;span style=&quot;color:#710&quot;&gt;'&lt;/span&gt;&lt;/span&gt;].clear
-&lt;span class=&quot;line-numbers&quot;&gt; &lt;a href=&quot;#n6&quot; name=&quot;n6&quot;&gt;6&lt;/a&gt;&lt;/span&gt;
-&lt;span class=&quot;line-numbers&quot;&gt; &lt;a href=&quot;#n7&quot; name=&quot;n7&quot;&gt;7&lt;/a&gt;&lt;/span&gt;namespace &lt;span style=&quot;color:#A60&quot;&gt;:test&lt;/span&gt; &lt;span style=&quot;color:#080;font-weight:bold&quot;&gt;do&lt;/span&gt;
-&lt;span class=&quot;line-numbers&quot;&gt; &lt;a href=&quot;#n8&quot; name=&quot;n8&quot;&gt;8&lt;/a&gt;&lt;/span&gt;  desc &lt;span style=&quot;background-color:hsla(0,100%,50%,0.05)&quot;&gt;&lt;span style=&quot;color:#710&quot;&gt;'&lt;/span&gt;&lt;span style=&quot;color:#D20&quot;&gt;Run all tests&lt;/span&gt;&lt;span style=&quot;color:#710&quot;&gt;'&lt;/span&gt;&lt;/span&gt;
-&lt;span class=&quot;line-numbers&quot;&gt; &lt;a href=&quot;#n9&quot; name=&quot;n9&quot;&gt;9&lt;/a&gt;&lt;/span&gt;  task &lt;span style=&quot;color:#606&quot;&gt;all&lt;/span&gt;: &lt;span style=&quot;color:#A60&quot;&gt;:environment&lt;/span&gt; &lt;span style=&quot;color:#080;font-weight:bold&quot;&gt;do&lt;/span&gt;
-&lt;span class=&quot;line-numbers&quot;&gt;&lt;strong&gt;&lt;a href=&quot;#n10&quot; name=&quot;n10&quot;&gt;10&lt;/a&gt;&lt;/strong&gt;&lt;/span&gt;    &lt;span style=&quot;color:#036;font-weight:bold&quot;&gt;Rake&lt;/span&gt;::&lt;span style=&quot;color:#036;font-weight:bold&quot;&gt;Task&lt;/span&gt;[&lt;span style=&quot;background-color:hsla(0,100%,50%,0.05)&quot;&gt;&lt;span style=&quot;color:#710&quot;&gt;'&lt;/span&gt;&lt;span style=&quot;color:#D20&quot;&gt;bundle_audit&lt;/span&gt;&lt;span style=&quot;color:#710&quot;&gt;'&lt;/span&gt;&lt;/span&gt;].invoke
-&lt;span class=&quot;line-numbers&quot;&gt;&lt;a href=&quot;#n11&quot; name=&quot;n11&quot;&gt;11&lt;/a&gt;&lt;/span&gt;    &lt;span style=&quot;color:#036;font-weight:bold&quot;&gt;Rake&lt;/span&gt;::&lt;span style=&quot;color:#036;font-weight:bold&quot;&gt;Task&lt;/span&gt;[&lt;span style=&quot;background-color:hsla(0,100%,50%,0.05)&quot;&gt;&lt;span style=&quot;color:#710&quot;&gt;'&lt;/span&gt;&lt;span style=&quot;color:#D20&quot;&gt;brakeman:run&lt;/span&gt;&lt;span style=&quot;color:#710&quot;&gt;'&lt;/span&gt;&lt;/span&gt;].invoke
-&lt;span class=&quot;line-numbers&quot;&gt;&lt;a href=&quot;#n12&quot; name=&quot;n12&quot;&gt;12&lt;/a&gt;&lt;/span&gt;    &lt;span style=&quot;color:#036;font-weight:bold&quot;&gt;Rake&lt;/span&gt;::&lt;span style=&quot;color:#036;font-weight:bold&quot;&gt;Task&lt;/span&gt;[&lt;span style=&quot;background-color:hsla(0,100%,50%,0.05)&quot;&gt;&lt;span style=&quot;color:#710&quot;&gt;'&lt;/span&gt;&lt;span style=&quot;color:#D20&quot;&gt;rubocop&lt;/span&gt;&lt;span style=&quot;color:#710&quot;&gt;'&lt;/span&gt;&lt;/span&gt;].invoke
-&lt;span class=&quot;line-numbers&quot;&gt;&lt;a href=&quot;#n13&quot; name=&quot;n13&quot;&gt;13&lt;/a&gt;&lt;/span&gt;    &lt;span style=&quot;color:#036;font-weight:bold&quot;&gt;Rake&lt;/span&gt;::&lt;span style=&quot;color:#036;font-weight:bold&quot;&gt;Task&lt;/span&gt;[&lt;span style=&quot;background-color:hsla(0,100%,50%,0.05)&quot;&gt;&lt;span style=&quot;color:#710&quot;&gt;'&lt;/span&gt;&lt;span style=&quot;color:#D20&quot;&gt;spec&lt;/span&gt;&lt;span style=&quot;color:#710&quot;&gt;'&lt;/span&gt;&lt;/span&gt;].invoke
-&lt;span class=&quot;line-numbers&quot;&gt;&lt;a href=&quot;#n14&quot; name=&quot;n14&quot;&gt;14&lt;/a&gt;&lt;/span&gt;  &lt;span style=&quot;color:#080;font-weight:bold&quot;&gt;end&lt;/span&gt;
-&lt;span class=&quot;line-numbers&quot;&gt;&lt;a href=&quot;#n15&quot; name=&quot;n15&quot;&gt;15&lt;/a&gt;&lt;/span&gt;&lt;span style=&quot;color:#080;font-weight:bold&quot;&gt;end&lt;/span&gt;
-&lt;span class=&quot;line-numbers&quot;&gt;&lt;a href=&quot;#n16&quot; name=&quot;n16&quot;&gt;16&lt;/a&gt;&lt;/span&gt;
-&lt;span class=&quot;line-numbers&quot;&gt;&lt;a href=&quot;#n17&quot; name=&quot;n17&quot;&gt;17&lt;/a&gt;&lt;/span&gt;task &lt;span style=&quot;color:#A60&quot;&gt;:test&lt;/span&gt; &lt;span style=&quot;color:#080;font-weight:bold&quot;&gt;do&lt;/span&gt;
-&lt;span class=&quot;line-numbers&quot;&gt;&lt;a href=&quot;#n18&quot; name=&quot;n18&quot;&gt;18&lt;/a&gt;&lt;/span&gt;  &lt;span style=&quot;color:#036;font-weight:bold&quot;&gt;Rake&lt;/span&gt;::&lt;span style=&quot;color:#036;font-weight:bold&quot;&gt;Task&lt;/span&gt;[&lt;span style=&quot;background-color:hsla(0,100%,50%,0.05)&quot;&gt;&lt;span style=&quot;color:#710&quot;&gt;'&lt;/span&gt;&lt;span style=&quot;color:#D20&quot;&gt;test:all&lt;/span&gt;&lt;span style=&quot;color:#710&quot;&gt;'&lt;/span&gt;&lt;/span&gt;].invoke
-&lt;span class=&quot;line-numbers&quot;&gt;&lt;a href=&quot;#n19&quot; name=&quot;n19&quot;&gt;19&lt;/a&gt;&lt;/span&gt;&lt;span style=&quot;color:#080;font-weight:bold&quot;&gt;end&lt;/span&gt;
-&lt;span class=&quot;line-numbers&quot;&gt;&lt;strong&gt;&lt;a href=&quot;#n20&quot; name=&quot;n20&quot;&gt;20&lt;/a&gt;&lt;/strong&gt;&lt;/span&gt;
-&lt;span class=&quot;line-numbers&quot;&gt;&lt;a href=&quot;#n21&quot; name=&quot;n21&quot;&gt;21&lt;/a&gt;&lt;/span&gt;&lt;span style=&quot;color:#777&quot;&gt;# Running `rake` should run all my tests.&lt;/span&gt;
-&lt;span class=&quot;line-numbers&quot;&gt;&lt;a href=&quot;#n22&quot; name=&quot;n22&quot;&gt;22&lt;/a&gt;&lt;/span&gt;task &lt;span style=&quot;color:#606&quot;&gt;default&lt;/span&gt;: &lt;span style=&quot;color:#A60&quot;&gt;:test&lt;/span&gt;
-&lt;/pre&gt;&lt;/div&gt;
-&lt;/div&gt;
+&lt;div class=&quot;language-ruby highlighter-coderay&quot;&gt;&lt;table class=&quot;CodeRay&quot;&gt;&lt;tr&gt;
+  &lt;td class=&quot;line-numbers&quot;&gt;&lt;pre&gt;&lt;a href=&quot;#n1&quot; name=&quot;n1&quot;&gt;1&lt;/a&gt;
+&lt;a href=&quot;#n2&quot; name=&quot;n2&quot;&gt;2&lt;/a&gt;
+&lt;a href=&quot;#n3&quot; name=&quot;n3&quot;&gt;3&lt;/a&gt;
+&lt;a href=&quot;#n4&quot; name=&quot;n4&quot;&gt;4&lt;/a&gt;
+&lt;a href=&quot;#n5&quot; name=&quot;n5&quot;&gt;5&lt;/a&gt;
+&lt;a href=&quot;#n6&quot; name=&quot;n6&quot;&gt;6&lt;/a&gt;
+&lt;a href=&quot;#n7&quot; name=&quot;n7&quot;&gt;7&lt;/a&gt;
+&lt;a href=&quot;#n8&quot; name=&quot;n8&quot;&gt;8&lt;/a&gt;
+&lt;a href=&quot;#n9&quot; name=&quot;n9&quot;&gt;9&lt;/a&gt;
+&lt;strong&gt;&lt;a href=&quot;#n10&quot; name=&quot;n10&quot;&gt;10&lt;/a&gt;&lt;/strong&gt;
+&lt;a href=&quot;#n11&quot; name=&quot;n11&quot;&gt;11&lt;/a&gt;
+&lt;a href=&quot;#n12&quot; name=&quot;n12&quot;&gt;12&lt;/a&gt;
+&lt;a href=&quot;#n13&quot; name=&quot;n13&quot;&gt;13&lt;/a&gt;
+&lt;a href=&quot;#n14&quot; name=&quot;n14&quot;&gt;14&lt;/a&gt;
+&lt;a href=&quot;#n15&quot; name=&quot;n15&quot;&gt;15&lt;/a&gt;
+&lt;a href=&quot;#n16&quot; name=&quot;n16&quot;&gt;16&lt;/a&gt;
+&lt;a href=&quot;#n17&quot; name=&quot;n17&quot;&gt;17&lt;/a&gt;
+&lt;a href=&quot;#n18&quot; name=&quot;n18&quot;&gt;18&lt;/a&gt;
+&lt;a href=&quot;#n19&quot; name=&quot;n19&quot;&gt;19&lt;/a&gt;
+&lt;strong&gt;&lt;a href=&quot;#n20&quot; name=&quot;n20&quot;&gt;20&lt;/a&gt;&lt;/strong&gt;
+&lt;a href=&quot;#n21&quot; name=&quot;n21&quot;&gt;21&lt;/a&gt;
+&lt;a href=&quot;#n22&quot; name=&quot;n22&quot;&gt;22&lt;/a&gt;
+&lt;/pre&gt;&lt;/td&gt;
+  &lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;comment&quot;&gt;# Remove the Rails defaults.&lt;/span&gt;
+&lt;span class=&quot;constant&quot;&gt;Rake&lt;/span&gt;::&lt;span class=&quot;constant&quot;&gt;Task&lt;/span&gt;[&lt;span class=&quot;string&quot;&gt;&lt;span class=&quot;delimiter&quot;&gt;'&lt;/span&gt;&lt;span class=&quot;content&quot;&gt;test:all&lt;/span&gt;&lt;span class=&quot;delimiter&quot;&gt;'&lt;/span&gt;&lt;/span&gt;].clear
+&lt;span class=&quot;constant&quot;&gt;Rake&lt;/span&gt;::&lt;span class=&quot;constant&quot;&gt;Task&lt;/span&gt;[&lt;span class=&quot;string&quot;&gt;&lt;span class=&quot;delimiter&quot;&gt;'&lt;/span&gt;&lt;span class=&quot;content&quot;&gt;test:all:db&lt;/span&gt;&lt;span class=&quot;delimiter&quot;&gt;'&lt;/span&gt;&lt;/span&gt;].clear
+&lt;span class=&quot;constant&quot;&gt;Rake&lt;/span&gt;::&lt;span class=&quot;constant&quot;&gt;Task&lt;/span&gt;[&lt;span class=&quot;string&quot;&gt;&lt;span class=&quot;delimiter&quot;&gt;'&lt;/span&gt;&lt;span class=&quot;content&quot;&gt;test:db&lt;/span&gt;&lt;span class=&quot;delimiter&quot;&gt;'&lt;/span&gt;&lt;/span&gt;].clear
+&lt;span class=&quot;constant&quot;&gt;Rake&lt;/span&gt;::&lt;span class=&quot;constant&quot;&gt;Task&lt;/span&gt;[&lt;span class=&quot;string&quot;&gt;&lt;span class=&quot;delimiter&quot;&gt;'&lt;/span&gt;&lt;span class=&quot;content&quot;&gt;test&lt;/span&gt;&lt;span class=&quot;delimiter&quot;&gt;'&lt;/span&gt;&lt;/span&gt;].clear
+
+namespace &lt;span class=&quot;symbol&quot;&gt;:test&lt;/span&gt; &lt;span class=&quot;keyword&quot;&gt;do&lt;/span&gt;
+  desc &lt;span class=&quot;string&quot;&gt;&lt;span class=&quot;delimiter&quot;&gt;'&lt;/span&gt;&lt;span class=&quot;content&quot;&gt;Run all tests&lt;/span&gt;&lt;span class=&quot;delimiter&quot;&gt;'&lt;/span&gt;&lt;/span&gt;
+  task &lt;span class=&quot;key&quot;&gt;all&lt;/span&gt;: &lt;span class=&quot;symbol&quot;&gt;:environment&lt;/span&gt; &lt;span class=&quot;keyword&quot;&gt;do&lt;/span&gt;
+    &lt;span class=&quot;constant&quot;&gt;Rake&lt;/span&gt;::&lt;span class=&quot;constant&quot;&gt;Task&lt;/span&gt;[&lt;span class=&quot;string&quot;&gt;&lt;span class=&quot;delimiter&quot;&gt;'&lt;/span&gt;&lt;span class=&quot;content&quot;&gt;bundle_audit&lt;/span&gt;&lt;span class=&quot;delimiter&quot;&gt;'&lt;/span&gt;&lt;/span&gt;].invoke
+    &lt;span class=&quot;constant&quot;&gt;Rake&lt;/span&gt;::&lt;span class=&quot;constant&quot;&gt;Task&lt;/span&gt;[&lt;span class=&quot;string&quot;&gt;&lt;span class=&quot;delimiter&quot;&gt;'&lt;/span&gt;&lt;span class=&quot;content&quot;&gt;brakeman:run&lt;/span&gt;&lt;span class=&quot;delimiter&quot;&gt;'&lt;/span&gt;&lt;/span&gt;].invoke
+    &lt;span class=&quot;constant&quot;&gt;Rake&lt;/span&gt;::&lt;span class=&quot;constant&quot;&gt;Task&lt;/span&gt;[&lt;span class=&quot;string&quot;&gt;&lt;span class=&quot;delimiter&quot;&gt;'&lt;/span&gt;&lt;span class=&quot;content&quot;&gt;rubocop&lt;/span&gt;&lt;span class=&quot;delimiter&quot;&gt;'&lt;/span&gt;&lt;/span&gt;].invoke
+    &lt;span class=&quot;constant&quot;&gt;Rake&lt;/span&gt;::&lt;span class=&quot;constant&quot;&gt;Task&lt;/span&gt;[&lt;span class=&quot;string&quot;&gt;&lt;span class=&quot;delimiter&quot;&gt;'&lt;/span&gt;&lt;span class=&quot;content&quot;&gt;spec&lt;/span&gt;&lt;span class=&quot;delimiter&quot;&gt;'&lt;/span&gt;&lt;/span&gt;].invoke
+  &lt;span class=&quot;keyword&quot;&gt;end&lt;/span&gt;
+&lt;span class=&quot;keyword&quot;&gt;end&lt;/span&gt;
+
+task &lt;span class=&quot;symbol&quot;&gt;:test&lt;/span&gt; &lt;span class=&quot;keyword&quot;&gt;do&lt;/span&gt;
+  &lt;span class=&quot;constant&quot;&gt;Rake&lt;/span&gt;::&lt;span class=&quot;constant&quot;&gt;Task&lt;/span&gt;[&lt;span class=&quot;string&quot;&gt;&lt;span class=&quot;delimiter&quot;&gt;'&lt;/span&gt;&lt;span class=&quot;content&quot;&gt;test:all&lt;/span&gt;&lt;span class=&quot;delimiter&quot;&gt;'&lt;/span&gt;&lt;/span&gt;].invoke
+&lt;span class=&quot;keyword&quot;&gt;end&lt;/span&gt;
+
+&lt;span class=&quot;comment&quot;&gt;# Running `rake` should run all my tests.&lt;/span&gt;
+task &lt;span class=&quot;key&quot;&gt;default&lt;/span&gt;: &lt;span class=&quot;symbol&quot;&gt;:test&lt;/span&gt;
+&lt;/pre&gt;&lt;/td&gt;
+&lt;/tr&gt;&lt;/table&gt;
 &lt;/div&gt;
 
 &lt;p&gt;Since this is part of my testing expectations I can also rest easy because my continuous integration tool has my back on every change, too.&lt;/p&gt;
@@ -1760,89 +1975,89 @@ Turns out, by enabling the &lt;code&gt;cache&lt;/code&gt; in Travis I caused Rub
 
 &lt;ul id=&quot;markdown-toc&quot;&gt;
   &lt;li&gt;&lt;a href=&quot;#storytelling&quot; id=&quot;markdown-toc-storytelling&quot;&gt;Storytelling&lt;/a&gt;    &lt;ul&gt;
-      &lt;li&gt;&lt;a href=&quot;#serialhttpserialpodcastorg-by-this-american-life&quot; id=&quot;markdown-toc-serialhttpserialpodcastorg-by-this-american-life&quot;&gt;&lt;a href=&quot;http://serialpodcast.org/&quot;&gt;Serial&lt;/a&gt; by This American Life&lt;/a&gt;&lt;/li&gt;
-      &lt;li&gt;&lt;a href=&quot;#this-american-lifehttpwwwthisamericanlifeorgpodcast&quot; id=&quot;markdown-toc-this-american-lifehttpwwwthisamericanlifeorgpodcast&quot;&gt;&lt;a href=&quot;http://www.thisamericanlife.org/podcast&quot;&gt;This American Life&lt;/a&gt;&lt;/a&gt;&lt;/li&gt;
-      &lt;li&gt;&lt;a href=&quot;#welcome-to-night-valehttppodbayfmshow536258179-by-commonplace-bookshttpcommonplacebookscom&quot; id=&quot;markdown-toc-welcome-to-night-valehttppodbayfmshow536258179-by-commonplace-bookshttpcommonplacebookscom&quot;&gt;&lt;a href=&quot;http://podbay.fm/show/536258179&quot;&gt;Welcome to Night Vale&lt;/a&gt; by &lt;a href=&quot;http://commonplacebooks.com/&quot;&gt;Commonplace Books&lt;/a&gt;&lt;/a&gt;&lt;/li&gt;
-      &lt;li&gt;&lt;a href=&quot;#radiolabhttpwwwradiolaborgseriespodcasts-by-wnychttpwwwwnycorg&quot; id=&quot;markdown-toc-radiolabhttpwwwradiolaborgseriespodcasts-by-wnychttpwwwwnycorg&quot;&gt;&lt;a href=&quot;http://www.radiolab.org/series/podcasts/&quot;&gt;Radiolab&lt;/a&gt; by &lt;a href=&quot;http://www.wnyc.org/&quot;&gt;WNYC&lt;/a&gt;&lt;/a&gt;&lt;/li&gt;
-      &lt;li&gt;&lt;a href=&quot;#reply-allhttpgimletmediacomshowreply-all-by-gimlet-media&quot; id=&quot;markdown-toc-reply-allhttpgimletmediacomshowreply-all-by-gimlet-media&quot;&gt;&lt;a href=&quot;http://gimletmedia.com/show/reply-all/&quot;&gt;Reply All&lt;/a&gt; by Gimlet Media&lt;/a&gt;&lt;/li&gt;
-      &lt;li&gt;&lt;a href=&quot;#startuphttpgimletmediacomshowstartup-by-gimlet-mediahttpgimletmediacom&quot; id=&quot;markdown-toc-startuphttpgimletmediacomshowstartup-by-gimlet-mediahttpgimletmediacom&quot;&gt;&lt;a href=&quot;http://gimletmedia.com/show/startup/&quot;&gt;StartUp&lt;/a&gt; by &lt;a href=&quot;http://gimletmedia.com/&quot;&gt;Gimlet Media&lt;/a&gt;&lt;/a&gt;&lt;/li&gt;
-      &lt;li&gt;&lt;a href=&quot;#selected-shortshttpwwwselectedshortsorgpodcast-by-pri&quot; id=&quot;markdown-toc-selected-shortshttpwwwselectedshortsorgpodcast-by-pri&quot;&gt;&lt;a href=&quot;http://www.selectedshorts.org/podcast/&quot;&gt;Selected Shorts&lt;/a&gt; by PRI&lt;/a&gt;&lt;/li&gt;
-      &lt;li&gt;&lt;a href=&quot;#ted-radio-hourhttpwwwnprorgrsspodcastpodcastdetailphpsiteid151446218-by-npr&quot; id=&quot;markdown-toc-ted-radio-hourhttpwwwnprorgrsspodcastpodcastdetailphpsiteid151446218-by-npr&quot;&gt;&lt;a href=&quot;http://www.npr.org/rss/podcast/podcast_detail.php?siteId=151446218&quot;&gt;TED Radio Hour&lt;/a&gt; by NPR&lt;/a&gt;&lt;/li&gt;
+      &lt;li&gt;&lt;a href=&quot;#serial-by-this-american-life&quot; id=&quot;markdown-toc-serial-by-this-american-life&quot;&gt;Serial by This American Life&lt;/a&gt;&lt;/li&gt;
+      &lt;li&gt;&lt;a href=&quot;#this-american-life&quot; id=&quot;markdown-toc-this-american-life&quot;&gt;This American Life&lt;/a&gt;&lt;/li&gt;
+      &lt;li&gt;&lt;a href=&quot;#welcome-to-night-vale-by-commonplace-books&quot; id=&quot;markdown-toc-welcome-to-night-vale-by-commonplace-books&quot;&gt;Welcome to Night Vale by Commonplace Books&lt;/a&gt;&lt;/li&gt;
+      &lt;li&gt;&lt;a href=&quot;#radiolab-by-wnyc&quot; id=&quot;markdown-toc-radiolab-by-wnyc&quot;&gt;Radiolab by WNYC&lt;/a&gt;&lt;/li&gt;
+      &lt;li&gt;&lt;a href=&quot;#reply-all-by-gimlet-media&quot; id=&quot;markdown-toc-reply-all-by-gimlet-media&quot;&gt;Reply All by Gimlet Media&lt;/a&gt;&lt;/li&gt;
+      &lt;li&gt;&lt;a href=&quot;#startup-by-gimlet-media&quot; id=&quot;markdown-toc-startup-by-gimlet-media&quot;&gt;StartUp by Gimlet Media&lt;/a&gt;&lt;/li&gt;
+      &lt;li&gt;&lt;a href=&quot;#selected-shorts-by-pri&quot; id=&quot;markdown-toc-selected-shorts-by-pri&quot;&gt;Selected Shorts by PRI&lt;/a&gt;&lt;/li&gt;
+      &lt;li&gt;&lt;a href=&quot;#ted-radio-hour-by-npr&quot; id=&quot;markdown-toc-ted-radio-hour-by-npr&quot;&gt;TED Radio Hour by NPR&lt;/a&gt;&lt;/li&gt;
     &lt;/ul&gt;
   &lt;/li&gt;
   &lt;li&gt;&lt;a href=&quot;#ideas&quot; id=&quot;markdown-toc-ideas&quot;&gt;Ideas&lt;/a&gt;    &lt;ul&gt;
-      &lt;li&gt;&lt;a href=&quot;#ted-talks-audiohttpsitunesapplecomuspodcasttedtalks-audioid160904630&quot; id=&quot;markdown-toc-ted-talks-audiohttpsitunesapplecomuspodcasttedtalks-audioid160904630&quot;&gt;&lt;a href=&quot;https://itunes.apple.com/us/podcast/tedtalks-audio/id160904630&quot;&gt;TED Talks Audio&lt;/a&gt;&lt;/a&gt;&lt;/li&gt;
-      &lt;li&gt;&lt;a href=&quot;#ruby5httpruby5envylabscom&quot; id=&quot;markdown-toc-ruby5httpruby5envylabscom&quot;&gt;&lt;a href=&quot;http://ruby5.envylabs.com/&quot;&gt;Ruby5&lt;/a&gt;&lt;/a&gt;&lt;/li&gt;
-      &lt;li&gt;&lt;a href=&quot;#the-ruby-rogueshttpdevchattvruby-rogues-by-devchattvhttpdevchattv&quot; id=&quot;markdown-toc-the-ruby-rogueshttpdevchattvruby-rogues-by-devchattvhttpdevchattv&quot;&gt;&lt;a href=&quot;http://devchat.tv/ruby-rogues&quot;&gt;The Ruby Rogues&lt;/a&gt; by &lt;a href=&quot;http://devchat.tv/&quot;&gt;DevChat.TV&lt;/a&gt;&lt;/a&gt;&lt;/li&gt;
-      &lt;li&gt;&lt;a href=&quot;#the-changeloghttpthechangelogcom&quot; id=&quot;markdown-toc-the-changeloghttpthechangelogcom&quot;&gt;&lt;a href=&quot;http://thechangelog.com/&quot;&gt;The ChangeLog&lt;/a&gt;&lt;/a&gt;&lt;/li&gt;
+      &lt;li&gt;&lt;a href=&quot;#ted-talks-audio&quot; id=&quot;markdown-toc-ted-talks-audio&quot;&gt;TED Talks Audio&lt;/a&gt;&lt;/li&gt;
+      &lt;li&gt;&lt;a href=&quot;#ruby5&quot; id=&quot;markdown-toc-ruby5&quot;&gt;Ruby5&lt;/a&gt;&lt;/li&gt;
+      &lt;li&gt;&lt;a href=&quot;#the-ruby-rogues-by-devchattv&quot; id=&quot;markdown-toc-the-ruby-rogues-by-devchattv&quot;&gt;The Ruby Rogues by DevChat.TV&lt;/a&gt;&lt;/li&gt;
+      &lt;li&gt;&lt;a href=&quot;#the-changelog&quot; id=&quot;markdown-toc-the-changelog&quot;&gt;The ChangeLog&lt;/a&gt;&lt;/li&gt;
     &lt;/ul&gt;
   &lt;/li&gt;
   &lt;li&gt;&lt;a href=&quot;#current-events&quot; id=&quot;markdown-toc-current-events&quot;&gt;Current Events&lt;/a&gt;    &lt;ul&gt;
-      &lt;li&gt;&lt;a href=&quot;#wait-wait-dont-tell-mehttpwwwnprorgrsspodcastpodcastdetailphpsiteid344098540-by-npr&quot; id=&quot;markdown-toc-wait-wait-dont-tell-mehttpwwwnprorgrsspodcastpodcastdetailphpsiteid344098540-by-npr&quot;&gt;&lt;a href=&quot;http://www.npr.org/rss/podcast/podcast_detail.php?siteId=344098540&quot;&gt;Wait Wait… Don't Tell Me!&lt;/a&gt; by NPR&lt;/a&gt;&lt;/li&gt;
-      &lt;li&gt;&lt;a href=&quot;#the-rachel-maddow-showhttpwwwnbcnewscomid8132577tget-podcasts-nbc-news-msnbc-tv-nbcnewscomvksl4rf8v8-on-msnbc&quot; id=&quot;markdown-toc-the-rachel-maddow-showhttpwwwnbcnewscomid8132577tget-podcasts-nbc-news-msnbc-tv-nbcnewscomvksl4rf8v8-on-msnbc&quot;&gt;&lt;a href=&quot;http://www.nbcnews.com/id/8132577/t/get-podcasts-nbc-news-msnbc-tv-nbcnewscom/#.VKSL_4rF8v8&quot;&gt;The Rachel Maddow Show&lt;/a&gt; on MSNBC&lt;/a&gt;&lt;/li&gt;
+      &lt;li&gt;&lt;a href=&quot;#wait-wait-dont-tell-me-by-npr&quot; id=&quot;markdown-toc-wait-wait-dont-tell-me-by-npr&quot;&gt;Wait Wait… Don't Tell Me! by NPR&lt;/a&gt;&lt;/li&gt;
+      &lt;li&gt;&lt;a href=&quot;#the-rachel-maddow-show-on-msnbc&quot; id=&quot;markdown-toc-the-rachel-maddow-show-on-msnbc&quot;&gt;The Rachel Maddow Show on MSNBC&lt;/a&gt;&lt;/li&gt;
     &lt;/ul&gt;
   &lt;/li&gt;
 &lt;/ul&gt;
 
 &lt;h1 id=&quot;storytelling&quot;&gt;Storytelling&lt;/h1&gt;
 
-&lt;h2 id=&quot;serialhttpserialpodcastorg-by-this-american-life&quot;&gt;&lt;a href=&quot;http://serialpodcast.org/&quot;&gt;Serial&lt;/a&gt; by This American Life&lt;/h2&gt;
+&lt;h2 id=&quot;serial-by-this-american-life&quot;&gt;&lt;a href=&quot;http://serialpodcast.org/&quot;&gt;Serial&lt;/a&gt; by This American Life&lt;/h2&gt;
 
 &lt;p&gt;This is obviously the breakout show of the year and it definitely got to me. &lt;a href=&quot;https://firstlook.org/theintercept/2014/12/29/exclusive-interview-jay-wilds-star-witness-adnan-syed-serial-case-pt-1/&quot;&gt;The post-series interview with Jay&lt;/a&gt; definitely keeps the mystery alive.&lt;/p&gt;
 
-&lt;h2 id=&quot;this-american-lifehttpwwwthisamericanlifeorgpodcast&quot;&gt;&lt;a href=&quot;http://www.thisamericanlife.org/podcast&quot;&gt;This American Life&lt;/a&gt;&lt;/h2&gt;
+&lt;h2 id=&quot;this-american-life&quot;&gt;&lt;a href=&quot;http://www.thisamericanlife.org/podcast&quot;&gt;This American Life&lt;/a&gt;&lt;/h2&gt;
 
 &lt;p&gt;An essential standard.&lt;/p&gt;
 
-&lt;h2 id=&quot;welcome-to-night-valehttppodbayfmshow536258179-by-commonplace-bookshttpcommonplacebookscom&quot;&gt;&lt;a href=&quot;http://podbay.fm/show/536258179&quot;&gt;Welcome to Night Vale&lt;/a&gt; by &lt;a href=&quot;http://commonplacebooks.com/&quot;&gt;Commonplace Books&lt;/a&gt;&lt;/h2&gt;
+&lt;h2 id=&quot;welcome-to-night-vale-by-commonplace-books&quot;&gt;&lt;a href=&quot;http://podbay.fm/show/536258179&quot;&gt;Welcome to Night Vale&lt;/a&gt; by &lt;a href=&quot;http://commonplacebooks.com/&quot;&gt;Commonplace Books&lt;/a&gt;&lt;/h2&gt;
 
 &lt;p&gt;A slightly creepy news cast about a slightly creepy town. Goodnight, Night Vale. Goodnight.&lt;/p&gt;
 
-&lt;h2 id=&quot;radiolabhttpwwwradiolaborgseriespodcasts-by-wnychttpwwwwnycorg&quot;&gt;&lt;a href=&quot;http://www.radiolab.org/series/podcasts/&quot;&gt;Radiolab&lt;/a&gt; by &lt;a href=&quot;http://www.wnyc.org/&quot;&gt;WNYC&lt;/a&gt;&lt;/h2&gt;
+&lt;h2 id=&quot;radiolab-by-wnyc&quot;&gt;&lt;a href=&quot;http://www.radiolab.org/series/podcasts/&quot;&gt;Radiolab&lt;/a&gt; by &lt;a href=&quot;http://www.wnyc.org/&quot;&gt;WNYC&lt;/a&gt;&lt;/h2&gt;
 
 &lt;p&gt;Great storytelling on a wide range of subjects.&lt;/p&gt;
 
-&lt;h2 id=&quot;reply-allhttpgimletmediacomshowreply-all-by-gimlet-media&quot;&gt;&lt;a href=&quot;http://gimletmedia.com/show/reply-all/&quot;&gt;Reply All&lt;/a&gt; by Gimlet Media&lt;/h2&gt;
+&lt;h2 id=&quot;reply-all-by-gimlet-media&quot;&gt;&lt;a href=&quot;http://gimletmedia.com/show/reply-all/&quot;&gt;Reply All&lt;/a&gt; by Gimlet Media&lt;/h2&gt;
 
 &lt;p&gt;Like it says, a show about the Internet. Fascinating stories about how the Internet shapes us and how we shape it.&lt;/p&gt;
 
-&lt;h2 id=&quot;startuphttpgimletmediacomshowstartup-by-gimlet-mediahttpgimletmediacom&quot;&gt;&lt;a href=&quot;http://gimletmedia.com/show/startup/&quot;&gt;StartUp&lt;/a&gt; by &lt;a href=&quot;http://gimletmedia.com/&quot;&gt;Gimlet Media&lt;/a&gt;&lt;/h2&gt;
+&lt;h2 id=&quot;startup-by-gimlet-media&quot;&gt;&lt;a href=&quot;http://gimletmedia.com/show/startup/&quot;&gt;StartUp&lt;/a&gt; by &lt;a href=&quot;http://gimletmedia.com/&quot;&gt;Gimlet Media&lt;/a&gt;&lt;/h2&gt;
 
 &lt;p&gt;A series (like Serial) of episodes recording the journey of one entrepreneur trying to start up.&lt;/p&gt;
 
-&lt;h2 id=&quot;selected-shortshttpwwwselectedshortsorgpodcast-by-pri&quot;&gt;&lt;a href=&quot;http://www.selectedshorts.org/podcast/&quot;&gt;Selected Shorts&lt;/a&gt; by PRI&lt;/h2&gt;
+&lt;h2 id=&quot;selected-shorts-by-pri&quot;&gt;&lt;a href=&quot;http://www.selectedshorts.org/podcast/&quot;&gt;Selected Shorts&lt;/a&gt; by PRI&lt;/h2&gt;
 
 &lt;p&gt;Short fiction read by actors. Makes me feel like the golden age of radio might still have a place.&lt;/p&gt;
 
-&lt;h2 id=&quot;ted-radio-hourhttpwwwnprorgrsspodcastpodcastdetailphpsiteid151446218-by-npr&quot;&gt;&lt;a href=&quot;http://www.npr.org/rss/podcast/podcast_detail.php?siteId=151446218&quot;&gt;TED Radio Hour&lt;/a&gt; by NPR&lt;/h2&gt;
+&lt;h2 id=&quot;ted-radio-hour-by-npr&quot;&gt;&lt;a href=&quot;http://www.npr.org/rss/podcast/podcast_detail.php?siteId=151446218&quot;&gt;TED Radio Hour&lt;/a&gt; by NPR&lt;/h2&gt;
 
 &lt;p&gt;This is an excellent mashup between TED talks and storytelling, often going behind the scenes or deeper into subjects presented at TED events.&lt;/p&gt;
 
 &lt;h1 id=&quot;ideas&quot;&gt;Ideas&lt;/h1&gt;
 
-&lt;h2 id=&quot;ted-talks-audiohttpsitunesapplecomuspodcasttedtalks-audioid160904630&quot;&gt;&lt;a href=&quot;https://itunes.apple.com/us/podcast/tedtalks-audio/id160904630&quot;&gt;TED Talks Audio&lt;/a&gt;&lt;/h2&gt;
+&lt;h2 id=&quot;ted-talks-audio&quot;&gt;&lt;a href=&quot;https://itunes.apple.com/us/podcast/tedtalks-audio/id160904630&quot;&gt;TED Talks Audio&lt;/a&gt;&lt;/h2&gt;
 
 &lt;p&gt;These folks are so awesome they compiled all the episodes available into a &lt;a href=&quot;http://blog.ted.com/2010/06/17/audio_podcasts/&quot;&gt;Google Spreadsheet&lt;/a&gt;. I prefer the audio format for listening on the go, but each episode does suggest &lt;em&gt;&quot;This talk contains powerful visuals.&quot;&lt;/em&gt;&lt;/p&gt;
 
-&lt;h2 id=&quot;ruby5httpruby5envylabscom&quot;&gt;&lt;a href=&quot;http://ruby5.envylabs.com/&quot;&gt;Ruby5&lt;/a&gt;&lt;/h2&gt;
+&lt;h2 id=&quot;ruby5&quot;&gt;&lt;a href=&quot;http://ruby5.envylabs.com/&quot;&gt;Ruby5&lt;/a&gt;&lt;/h2&gt;
 
 &lt;p&gt;Get five minutes of curated news about the Ruby and Ruby on Rails community twice a week (Tuesdays and Fridays).&lt;/p&gt;
 
-&lt;h2 id=&quot;the-ruby-rogueshttpdevchattvruby-rogues-by-devchattvhttpdevchattv&quot;&gt;&lt;a href=&quot;http://devchat.tv/ruby-rogues&quot;&gt;The Ruby Rogues&lt;/a&gt; by &lt;a href=&quot;http://devchat.tv/&quot;&gt;DevChat.TV&lt;/a&gt;&lt;/h2&gt;
+&lt;h2 id=&quot;the-ruby-rogues-by-devchattv&quot;&gt;&lt;a href=&quot;http://devchat.tv/ruby-rogues&quot;&gt;The Ruby Rogues&lt;/a&gt; by &lt;a href=&quot;http://devchat.tv/&quot;&gt;DevChat.TV&lt;/a&gt;&lt;/h2&gt;
 
 &lt;p&gt;I have to be honest: this is hit or miss. In the last few months, though, it's been more hits than misses. I like the regulars on the show and someday I hope to be grilled by them about technical leadership. If I am so lucky…&lt;/p&gt;
 
-&lt;h2 id=&quot;the-changeloghttpthechangelogcom&quot;&gt;&lt;a href=&quot;http://thechangelog.com/&quot;&gt;The ChangeLog&lt;/a&gt;&lt;/h2&gt;
+&lt;h2 id=&quot;the-changelog&quot;&gt;&lt;a href=&quot;http://thechangelog.com/&quot;&gt;The ChangeLog&lt;/a&gt;&lt;/h2&gt;
 
 &lt;p&gt;I like how polyglot this podcast is. Lots of communities get play including, for the first time, Perl just a couple weeks ago. Their [website] also has a nice link blog of interesting open source projects. Keep an eye on it.&lt;/p&gt;
 
 &lt;h1 id=&quot;current-events&quot;&gt;Current Events&lt;/h1&gt;
 
-&lt;h2 id=&quot;wait-wait-dont-tell-mehttpwwwnprorgrsspodcastpodcastdetailphpsiteid344098540-by-npr&quot;&gt;&lt;a href=&quot;http://www.npr.org/rss/podcast/podcast_detail.php?siteId=344098540&quot;&gt;Wait Wait… Don't Tell Me!&lt;/a&gt; by NPR&lt;/h2&gt;
+&lt;h2 id=&quot;wait-wait-dont-tell-me-by-npr&quot;&gt;&lt;a href=&quot;http://www.npr.org/rss/podcast/podcast_detail.php?siteId=344098540&quot;&gt;Wait Wait… Don't Tell Me!&lt;/a&gt; by NPR&lt;/h2&gt;
 
 &lt;p&gt;Family favorite every weekend.&lt;/p&gt;
 
-&lt;h2 id=&quot;the-rachel-maddow-showhttpwwwnbcnewscomid8132577tget-podcasts-nbc-news-msnbc-tv-nbcnewscomvksl4rf8v8-on-msnbc&quot;&gt;&lt;a href=&quot;http://www.nbcnews.com/id/8132577/t/get-podcasts-nbc-news-msnbc-tv-nbcnewscom/#.VKSL_4rF8v8&quot;&gt;The Rachel Maddow Show&lt;/a&gt; on MSNBC&lt;/h2&gt;
+&lt;h2 id=&quot;the-rachel-maddow-show-on-msnbc&quot;&gt;&lt;a href=&quot;http://www.nbcnews.com/id/8132577/t/get-podcasts-nbc-news-msnbc-tv-nbcnewscom/#.VKSL_4rF8v8&quot;&gt;The Rachel Maddow Show&lt;/a&gt; on MSNBC&lt;/h2&gt;
 
 &lt;p&gt;Scroll to the bottom of that page for podcast subscription links. &lt;em&gt;Warning: political alignment obvious.&lt;/em&gt;&lt;/p&gt;
 
@@ -1934,13 +2149,13 @@ Turns out, by enabling the &lt;code&gt;cache&lt;/code&gt; in Travis I caused Rub
 &lt;div class=&quot;footnotes&quot;&gt;
   &lt;ol&gt;
     &lt;li id=&quot;fn:integrated_tests&quot;&gt;
-      &lt;p&gt;Not to be confused with &lt;em&gt;integration tests&lt;/em&gt; (referred to in this talk as &lt;em&gt;collaboration tests&lt;/em&gt;). Integrated tests require a complete, integrated architecture to run. &lt;em&gt;Integration tests&lt;/em&gt; simply test the collaboration between independent components. &lt;a href=&quot;#fnref:integrated_tests&quot; class=&quot;reversefootnote&quot;&gt;&amp;#8617;&lt;/a&gt;&lt;/p&gt;
+      &lt;p&gt;Not to be confused with &lt;em&gt;integration tests&lt;/em&gt; (referred to in this talk as &lt;em&gt;collaboration tests&lt;/em&gt;). Integrated tests require a complete, integrated architecture to run. &lt;em&gt;Integration tests&lt;/em&gt; simply test the collaboration between independent components. &lt;a href=&quot;#fnref:integrated_tests&quot; class=&quot;reversefootnote&quot;&gt;&amp;#8617;&lt;/a&gt;&lt;/p&gt;
     &lt;/li&gt;
     &lt;li id=&quot;fn:isolated_tests&quot;&gt;
-      &lt;p&gt;&lt;em&gt;Isolated tests&lt;/em&gt; is a good name for tests operating on a specific function within a software architecture which exercise that function directly, in isolation, independent of any external collaborators in the architecture. &lt;a href=&quot;#fnref:isolated_tests&quot; class=&quot;reversefootnote&quot;&gt;&amp;#8617;&lt;/a&gt;&lt;/p&gt;
+      &lt;p&gt;&lt;em&gt;Isolated tests&lt;/em&gt; is a good name for tests operating on a specific function within a software architecture which exercise that function directly, in isolation, independent of any external collaborators in the architecture. &lt;a href=&quot;#fnref:isolated_tests&quot; class=&quot;reversefootnote&quot;&gt;&amp;#8617;&lt;/a&gt;&lt;/p&gt;
     &lt;/li&gt;
     &lt;li id=&quot;fn:mistake&quot;&gt;
-      &lt;p&gt;Sometimes we call these defects or bugs; I agree with the speaker that's too abstract. It's a human error (more likely a series of human errors). Everywhere else in the world we call those mistakes. &lt;a href=&quot;#fnref:mistake&quot; class=&quot;reversefootnote&quot;&gt;&amp;#8617;&lt;/a&gt;&lt;/p&gt;
+      &lt;p&gt;Sometimes we call these defects or bugs; I agree with the speaker that's too abstract. It's a human error (more likely a series of human errors). Everywhere else in the world we call those mistakes. &lt;a href=&quot;#fnref:mistake&quot; class=&quot;reversefootnote&quot;&gt;&amp;#8617;&lt;/a&gt;&lt;/p&gt;
     &lt;/li&gt;
   &lt;/ol&gt;
 &lt;/div&gt;
@@ -2019,12 +2234,16 @@ Turns out, by enabling the &lt;code&gt;cache&lt;/code&gt; in Travis I caused Rub
   </author>
   <content type="html">&lt;p&gt;As most of us know by now it was Brian Kernighan who wrote the first known &lt;a href=&quot;https://en.wikipedia.org/wiki/%22Hello,_world!%22_program&quot;&gt;hello, world&lt;/a&gt; program:&lt;/p&gt;
 
-&lt;div class=&quot;language-c highlighter-coderay&quot;&gt;&lt;div class=&quot;CodeRay&quot;&gt;
-  &lt;div class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line-numbers&quot;&gt;&lt;a href=&quot;#n1&quot; name=&quot;n1&quot;&gt;1&lt;/a&gt;&lt;/span&gt;main( ) {
-&lt;span class=&quot;line-numbers&quot;&gt;&lt;a href=&quot;#n2&quot; name=&quot;n2&quot;&gt;2&lt;/a&gt;&lt;/span&gt;        printf(&lt;span style=&quot;background-color:hsla(0,100%,50%,0.05)&quot;&gt;&lt;span style=&quot;color:#710&quot;&gt;&amp;quot;&lt;/span&gt;&lt;span style=&quot;color:#D20&quot;&gt;hello, world&lt;/span&gt;&lt;span style=&quot;color:#710&quot;&gt;&amp;quot;&lt;/span&gt;&lt;/span&gt;);
-&lt;span class=&quot;line-numbers&quot;&gt;&lt;a href=&quot;#n3&quot; name=&quot;n3&quot;&gt;3&lt;/a&gt;&lt;/span&gt;}
-&lt;/pre&gt;&lt;/div&gt;
-&lt;/div&gt;
+&lt;div class=&quot;language-c highlighter-coderay&quot;&gt;&lt;table class=&quot;CodeRay&quot;&gt;&lt;tr&gt;
+  &lt;td class=&quot;line-numbers&quot;&gt;&lt;pre&gt;&lt;a href=&quot;#n1&quot; name=&quot;n1&quot;&gt;1&lt;/a&gt;
+&lt;a href=&quot;#n2&quot; name=&quot;n2&quot;&gt;2&lt;/a&gt;
+&lt;a href=&quot;#n3&quot; name=&quot;n3&quot;&gt;3&lt;/a&gt;
+&lt;/pre&gt;&lt;/td&gt;
+  &lt;td class=&quot;code&quot;&gt;&lt;pre&gt;main( ) {
+        printf(&lt;span class=&quot;string&quot;&gt;&lt;span class=&quot;delimiter&quot;&gt;&amp;quot;&lt;/span&gt;&lt;span class=&quot;content&quot;&gt;hello, world&lt;/span&gt;&lt;span class=&quot;delimiter&quot;&gt;&amp;quot;&lt;/span&gt;&lt;/span&gt;);
+}
+&lt;/pre&gt;&lt;/td&gt;
+&lt;/tr&gt;&lt;/table&gt;
 &lt;/div&gt;
 
 &lt;p&gt;Hello, world!&lt;/p&gt;

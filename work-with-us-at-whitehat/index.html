@@ -118,9 +118,6 @@
 		</li>
 		
 	    
-	    <li><a href="http://caseywest.com/speaking" >Speaking</a></li>
-	  
-	    
 	    <li><a href="http://caseywest.com/resume" >Résumé</a></li>
 	  
 	</ul><!-- /.dl-menu -->
@@ -148,7 +145,7 @@
         <p class="entry-reading-time">
           <i class="fa fa-clock-o"></i>
           
-          Reading time ~8 minutes
+          Reading time ~7 minutes
         </p><!-- /.entry-reading-time -->
         
       </div><!-- /.header-title-wrap -->
@@ -164,20 +161,32 @@
 
 <p>If you read all this and you'd like to work with us please email me to talk about it. You can reach me at work with the following obfuscated email address:</p>
 
-<div class="language-ruby highlighter-coderay"><div class="CodeRay">
-  <div class="code"><pre><span class="line-numbers"> <a href="#n1" name="n1">1</a></span>name    = <span style="background-color:hsla(0,100%,50%,0.05)"><span style="color:#710">%w(</span><span style="color:#D20">Casey West</span><span style="color:#710">)</span></span>
-<span class="line-numbers"> <a href="#n2" name="n2">2</a></span>company = <span style="background-color:hsla(0,100%,50%,0.05)"><span style="color:#710">%q(</span><span style="color:#D20">WhiteHat Security</span><span style="color:#710">)</span></span>
-<span class="line-numbers"> <a href="#n3" name="n3">3</a></span>email   = [
-<span class="line-numbers"> <a href="#n4" name="n4">4</a></span>  name.join(<span style="background-color:hsla(0,100%,50%,0.05)"><span style="color:#710">'</span><span style="color:#D20">.</span><span style="color:#710">'</span></span>),
-<span class="line-numbers"> <a href="#n5" name="n5">5</a></span>  [
-<span class="line-numbers"> <a href="#n6" name="n6">6</a></span>    company.tr(<span style="background-color:hsla(0,100%,50%,0.05)"><span style="color:#710">'</span><span style="color:#D20"> </span><span style="color:#710">'</span></span>,<span style="background-color:hsla(0,100%,50%,0.05)"><span style="color:#710">'</span><span style="color:#710">'</span></span>)[<span style="color:#00D">0</span>..<span style="color:#00D">10</span>], <span style="color:#777"># We go to 11. \o/</span>
-<span class="line-numbers"> <a href="#n7" name="n7">7</a></span>    <span style="background-color:hsla(0,100%,50%,0.05)"><span style="color:#710">'</span><span style="color:#D20">com</span><span style="color:#710">'</span></span>
-<span class="line-numbers"> <a href="#n8" name="n8">8</a></span>  ].join(<span style="background-color:hsla(0,100%,50%,0.05)"><span style="color:#710">'</span><span style="color:#D20">.</span><span style="color:#710">'</span></span>)
-<span class="line-numbers"> <a href="#n9" name="n9">9</a></span>].join(<span style="background-color:hsla(0,100%,50%,0.05)"><span style="color:#710">'</span><span style="color:#D20">@</span><span style="color:#710">'</span></span>).downcase
-<span class="line-numbers"><strong><a href="#n10" name="n10">10</a></strong></span>
-<span class="line-numbers"><a href="#n11" name="n11">11</a></span>puts email
-</pre></div>
-</div>
+<div class="language-ruby highlighter-coderay"><table class="CodeRay"><tr>
+  <td class="line-numbers"><pre><a href="#n1" name="n1">1</a>
+<a href="#n2" name="n2">2</a>
+<a href="#n3" name="n3">3</a>
+<a href="#n4" name="n4">4</a>
+<a href="#n5" name="n5">5</a>
+<a href="#n6" name="n6">6</a>
+<a href="#n7" name="n7">7</a>
+<a href="#n8" name="n8">8</a>
+<a href="#n9" name="n9">9</a>
+<strong><a href="#n10" name="n10">10</a></strong>
+<a href="#n11" name="n11">11</a>
+</pre></td>
+  <td class="code"><pre>name    = <span class="string"><span class="delimiter">%w(</span><span class="content">Casey West</span><span class="delimiter">)</span></span>
+company = <span class="string"><span class="delimiter">%q(</span><span class="content">WhiteHat Security</span><span class="delimiter">)</span></span>
+email   = [
+  name.join(<span class="string"><span class="delimiter">'</span><span class="content">.</span><span class="delimiter">'</span></span>),
+  [
+    company.tr(<span class="string"><span class="delimiter">'</span><span class="content"> </span><span class="delimiter">'</span></span>,<span class="string"><span class="delimiter">'</span><span class="delimiter">'</span></span>)[<span class="integer">0</span>..<span class="integer">10</span>], <span class="comment"># We go to 11. \o/</span>
+    <span class="string"><span class="delimiter">'</span><span class="content">com</span><span class="delimiter">'</span></span>
+  ].join(<span class="string"><span class="delimiter">'</span><span class="content">.</span><span class="delimiter">'</span></span>)
+].join(<span class="string"><span class="delimiter">'</span><span class="content">@</span><span class="delimiter">'</span></span>).downcase
+
+puts email
+</pre></td>
+</tr></table>
 </div>
 
 <p>You can also find links to me on social media on the left if you'd like to chat casually.</p>
@@ -306,7 +315,7 @@ now, and why.</p>
 <div class="footnotes">
   <ol>
     <li id="fn:hackers">
-      <p><em>"The act of engaging in activities (such as programming or other media) in a <strong>spirit of playfulness and exploration</strong> is termed hacking. However the defining characteristic of a hacker is not the activities performed themselves (e.g. programming), but the manner in which it is done: <strong>Hacking entails some form of excellence, for example exploring the limits of what is possible, thereby doing something exciting and meaningful.</strong>"</em> — <a href="https://en.wikipedia.org/wiki/Hacker_(programmer_subculture)">Hacker (programming subculture), Wikipedia</a> <a href="#fnref:hackers" class="reversefootnote">&#8617;</a> <a href="#fnref:hackers:1" class="reversefootnote">&#8617;<sup>2</sup></a> <a href="#fnref:hackers:2" class="reversefootnote">&#8617;<sup>3</sup></a></p>
+      <p><em>"The act of engaging in activities (such as programming or other media) in a <strong>spirit of playfulness and exploration</strong> is termed hacking. However the defining characteristic of a hacker is not the activities performed themselves (e.g. programming), but the manner in which it is done: <strong>Hacking entails some form of excellence, for example exploring the limits of what is possible, thereby doing something exciting and meaningful.</strong>"</em> — <a href="https://en.wikipedia.org/wiki/Hacker_(programmer_subculture)">Hacker (programming subculture), Wikipedia</a> <a href="#fnref:hackers" class="reversefootnote">&#8617;</a> <a href="#fnref:hackers:1" class="reversefootnote">&#8617;<sup>2</sup></a> <a href="#fnref:hackers:2" class="reversefootnote">&#8617;<sup>3</sup></a></p>
     </li>
   </ol>
 </div>
@@ -319,9 +328,9 @@ now, and why.</p>
         <div class="social-share">
   <ul class="socialcount socialcount-small inline-list">
     <li class="reddit"><a href="https://www.reddit.com/submit?url=http://caseywest.com/work-with-us-at-whitehat/&title=Work+with+us+at+WhiteHat" title="Submit on Reddit"><span class="count"><i class="fa fa-reddit-square"></i> Submit</span></a></li>
-    <li class="twitter"><a href="https://twitter.com/intent/tweet?text=Work+with+us+at+WhiteHat%20%E2%80%94%C2%A0http://caseywest.com/work-with-us-at-whitehat/" title="Share on Twitter"><span class="count"><i class="fa fa-twitter-square"></i> Tweet</span></a></li>
-    <li class="facebook"><a href="https://www.facebook.com/sharer/sharer.php?u=Work+with+us+at+WhiteHat%20%E2%80%94%C2%A0http://caseywest.com/work-with-us-at-whitehat/" title="Share on Facebook"><span class="count"><i class="fa fa-facebook-square"></i> Like</span></a></li>
-    <li class="googleplus"><a href="https://plus.google.com/share?url=Work+with+us+at+WhiteHat%20%E2%80%94%C2%A0http://caseywest.com/work-with-us-at-whitehat/" title="Share on Google Plus"><span class="count"><i class="fa fa-google-plus-square"></i> +1</span></a></li>
+    <li class="twitter"><a href="https://twitter.com/intent/tweet?text=Work+with+us+at+WhiteHat%20%E2%80%94%20http://caseywest.com/work-with-us-at-whitehat/" title="Share on Twitter"><span class="count"><i class="fa fa-twitter-square"></i> Tweet</span></a></li>
+    <li class="facebook"><a href="https://www.facebook.com/sharer/sharer.php?u=Work+with+us+at+WhiteHat%20%E2%80%94%20http://caseywest.com/work-with-us-at-whitehat/" title="Share on Facebook"><span class="count"><i class="fa fa-facebook-square"></i> Like</span></a></li>
+    <li class="googleplus"><a href="https://plus.google.com/share?url=Work+with+us+at+WhiteHat%20%E2%80%94%20http://caseywest.com/work-with-us-at-whitehat/" title="Share on Google Plus"><span class="count"><i class="fa fa-google-plus-square"></i> +1</span></a></li>
   </ul>
 </div><!-- /.social-share -->
 
@@ -334,20 +343,20 @@ now, and why.</p>
       <a href="http://caseywest.com/responsibly-use-peek-to-inspect-rails/" class="read-more-btn">Read More</a>
     </div><!-- /.read-more-header -->
     <div class="read-more-content">
-      <h3><a href="http://caseywest.com/speaking-at-your-event/" title="Speaking at Your Event">Speaking at Your Event</a></h3>
-      <p>My speaking schedule is getting complicated this year so I made a page to keep track.&hellip; <a href="http://caseywest.com/speaking-at-your-event/">Continue reading</a></p>
+      <h3><a href="http://caseywest.com/redefining-culture-fit/" title="Redefining Culture Fit">Redefining Culture Fit</a></h3>
+      <p>I prefer values which connect us deeply over rituals and traditions only some of us are able to enjoy.&hellip; <a href="http://caseywest.com/redefining-culture-fit/">Continue reading</a></p>
     </div><!-- /.read-more-content -->
   
   <div class="read-more-list">
     
       <div class="list-item">
-        <h4><a href="http://caseywest.com/redefining-culture-fit/" title="Redefining Culture Fit">Redefining Culture Fit</a></h4>
-        <span>Published on November 06, 2015</span>
+        <h4><a href="http://caseywest.com/the-cloud-native-future/" title="The cloud-native future">The cloud-native future</a></h4>
+        <span>Published on September 02, 2015</span>
       </div><!-- /.list-item -->
     
       <div class="list-item">
-        <h4><a href="http://caseywest.com/the-cloud-native-future/" title="The cloud-native future">The cloud-native future</a></h4>
-        <span>Published on September 02, 2015</span>
+        <h4><a href="http://caseywest.com/farewell-yapc-asia/" title="Farewell YAPC::Asia">Farewell YAPC::Asia</a></h4>
+        <span>Published on August 30, 2015</span>
       </div><!-- /.list-item -->
     
   </div><!-- /.read-more-list -->
@@ -358,7 +367,7 @@ now, and why.</p>
 
 <div class="footer-wrapper">
   <footer role="contentinfo">
-    <p><span>&copy; 2016 Casey West.</span></p>
+    <p><span>&copy; 2020 Casey West.</span></p>
 <p class="attribution"><span>Powered by <a href="http://jekyllrb.com" rel="nofollow">Jekyll</a> using the <a href="http://mademistakes.com/hpstr/" rel="notfollow">HPSTR Theme</a>.</span>
 
   </footer>

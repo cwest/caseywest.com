@@ -118,9 +118,6 @@
 		</li>
 		
 	    
-	    <li><a href="http://caseywest.com/speaking" >Speaking</a></li>
-	  
-	    
 	    <li><a href="http://caseywest.com/resume" >Résumé</a></li>
 	  
 	</ul><!-- /.dl-menu -->
@@ -160,12 +157,16 @@
 
 <p>This part is super easy. Amazingly easy. Add this to your <code>.travis.yml</code> file:</p>
 
-<div class="language-yaml highlighter-coderay"><div class="CodeRay">
-  <div class="code"><pre><span class="line-numbers"><a href="#n1" name="n1">1</a></span><span style="color:#777"># Docker Infrastructure</span>
-<span class="line-numbers"><a href="#n2" name="n2">2</a></span><span style="color:#606">sudo</span>: <span style="background-color:hsla(0,100%,50%,0.05)"><span style="color:#D20">false</span></span>
-<span class="line-numbers"><a href="#n3" name="n3">3</a></span><span style="color:#606">cache</span>: <span style="background-color:hsla(0,100%,50%,0.05)"><span style="color:#D20">bundler</span></span>
-</pre></div>
-</div>
+<div class="language-yaml highlighter-coderay"><table class="CodeRay"><tr>
+  <td class="line-numbers"><pre><a href="#n1" name="n1">1</a>
+<a href="#n2" name="n2">2</a>
+<a href="#n3" name="n3">3</a>
+</pre></td>
+  <td class="code"><pre><span class="comment"># Docker Infrastructure</span>
+<span class="key">sudo</span>: <span class="string"><span class="content">false</span></span>
+<span class="key">cache</span>: <span class="string"><span class="content">bundler</span></span>
+</pre></td>
+</tr></table>
 </div>
 
 <p>The <code>sudo</code> key is the magic word to build your project in a Docker container. The <code>cache</code> key will enable <a href="http://bundler.io/">bundler</a> caching for your project.</p>
@@ -182,19 +183,30 @@ Turns out, by enabling the <code>cache</code> in Travis I caused RuboCop to lose
 
 <p>Why was RuboCop doing that? Because I wanted to <code>Exclude</code> a few things in my Rails app—mostly generated code—so I had a <code>.rubocop.yml</code> file that looked a little like this:</p>
 
-<div class="language-yaml highlighter-coderay"><div class="CodeRay">
-  <div class="code"><pre><span class="line-numbers"> <a href="#n1" name="n1">1</a></span><span style="color:#606">require</span>: <span style="background-color:hsla(0,100%,50%,0.05)"><span style="color:#D20">rubocop-rspec</span></span>
-<span class="line-numbers"> <a href="#n2" name="n2">2</a></span><span style="color:#606">inherit_from</span>: <span style="background-color:hsla(0,100%,50%,0.05)"><span style="color:#D20">.rubocop_todo.yml</span></span>
-<span class="line-numbers"> <a href="#n3" name="n3">3</a></span><span style="color:#606">AllCops</span>:
-<span class="line-numbers"> <a href="#n4" name="n4">4</a></span>  <span style="color:#606">Exclude</span>:
-<span class="line-numbers"> <a href="#n5" name="n5">5</a></span>    - <span style="background-color:hsla(0,100%,50%,0.05)"><span style="color:#D20">'db/schema.rb'</span></span>
-<span class="line-numbers"> <a href="#n6" name="n6">6</a></span>    - <span style="background-color:hsla(0,100%,50%,0.05)"><span style="color:#D20">'bin/**/*'</span></span>
-<span class="line-numbers"> <a href="#n7" name="n7">7</a></span>    - <span style="background-color:hsla(0,100%,50%,0.05)"><span style="color:#D20">'config/initializers/devise.rb'</span></span>
-<span class="line-numbers"> <a href="#n8" name="n8">8</a></span>    - <span style="background-color:hsla(0,100%,50%,0.05)"><span style="color:#D20">'config/initializers/simple_form*'</span></span>
-<span class="line-numbers"> <a href="#n9" name="n9">9</a></span>    - <span style="background-color:hsla(0,100%,50%,0.05)"><span style="color:#D20">'db/migrate/*'</span></span>
-<span class="line-numbers"><strong><a href="#n10" name="n10">10</a></strong></span>  <span style="color:#606">RunRailsCops</span>: <span style="background-color:hsla(0,100%,50%,0.05)"><span style="color:#D20">true</span></span>
-</pre></div>
-</div>
+<div class="language-yaml highlighter-coderay"><table class="CodeRay"><tr>
+  <td class="line-numbers"><pre><a href="#n1" name="n1">1</a>
+<a href="#n2" name="n2">2</a>
+<a href="#n3" name="n3">3</a>
+<a href="#n4" name="n4">4</a>
+<a href="#n5" name="n5">5</a>
+<a href="#n6" name="n6">6</a>
+<a href="#n7" name="n7">7</a>
+<a href="#n8" name="n8">8</a>
+<a href="#n9" name="n9">9</a>
+<strong><a href="#n10" name="n10">10</a></strong>
+</pre></td>
+  <td class="code"><pre><span class="key">require</span>: <span class="string"><span class="content">rubocop-rspec</span></span>
+<span class="key">inherit_from</span>: <span class="string"><span class="content">.rubocop_todo.yml</span></span>
+<span class="key">AllCops</span>:
+  <span class="key">Exclude</span>:
+    - <span class="string"><span class="content">'db/schema.rb'</span></span>
+    - <span class="string"><span class="content">'bin/**/*'</span></span>
+    - <span class="string"><span class="content">'config/initializers/devise.rb'</span></span>
+    - <span class="string"><span class="content">'config/initializers/simple_form*'</span></span>
+    - <span class="string"><span class="content">'db/migrate/*'</span></span>
+  <span class="key">RunRailsCops</span>: <span class="string"><span class="content">true</span></span>
+</pre></td>
+</tr></table>
 </div>
 
 <p>The <a href="https://github.com/bbatsov/rubocop/blob/master/config/default.yml#L28">default RuboCop configuration</a> <em>does</em> exclude vendor. I need that, too, but my <code>Exclude</code> above overrides the default, so it was gone.</p>
@@ -203,20 +215,32 @@ Turns out, by enabling the <code>cache</code> in Travis I caused RuboCop to lose
 
 <p>Lets just add <code>vendor</code> back into the exclusion list:</p>
 
-<div class="language-yaml highlighter-coderay"><div class="CodeRay">
-  <div class="code"><pre><span class="line-numbers"> <a href="#n1" name="n1">1</a></span><span style="color:#606">require</span>: <span style="background-color:hsla(0,100%,50%,0.05)"><span style="color:#D20">rubocop-rspec</span></span>
-<span class="line-numbers"> <a href="#n2" name="n2">2</a></span><span style="color:#606">inherit_from</span>: <span style="background-color:hsla(0,100%,50%,0.05)"><span style="color:#D20">.rubocop_todo.yml</span></span>
-<span class="line-numbers"> <a href="#n3" name="n3">3</a></span><span style="color:#606">AllCops</span>:
-<span class="line-numbers"> <a href="#n4" name="n4">4</a></span>  <span style="color:#606">Exclude</span>:
-<span class="line-numbers"> <a href="#n5" name="n5">5</a></span>    - <span style="background-color:hsla(0,100%,50%,0.05)"><span style="color:#D20">'db/schema.rb'</span></span>
-<span class="line-numbers"> <a href="#n6" name="n6">6</a></span>    - <span style="background-color:hsla(0,100%,50%,0.05)"><span style="color:#D20">'bin/**/*'</span></span>
-<span class="line-numbers"> <a href="#n7" name="n7">7</a></span>    - <span style="background-color:hsla(0,100%,50%,0.05)"><span style="color:#D20">'config/initializers/devise.rb'</span></span>
-<span class="line-numbers"> <a href="#n8" name="n8">8</a></span>    - <span style="background-color:hsla(0,100%,50%,0.05)"><span style="color:#D20">'config/initializers/simple_form*'</span></span>
-<span class="line-numbers"> <a href="#n9" name="n9">9</a></span>    - <span style="background-color:hsla(0,100%,50%,0.05)"><span style="color:#D20">'db/migrate/*'</span></span>
-<span class="line-numbers"><strong><a href="#n10" name="n10">10</a></strong></span>    - <span style="background-color:hsla(0,100%,50%,0.05)"><span style="color:#D20">'vendor/**/*'</span></span>
-<span class="line-numbers"><a href="#n11" name="n11">11</a></span>  <span style="color:#606">RunRailsCops</span>: <span style="background-color:hsla(0,100%,50%,0.05)"><span style="color:#D20">true</span></span>
-</pre></div>
-</div>
+<div class="language-yaml highlighter-coderay"><table class="CodeRay"><tr>
+  <td class="line-numbers"><pre><a href="#n1" name="n1">1</a>
+<a href="#n2" name="n2">2</a>
+<a href="#n3" name="n3">3</a>
+<a href="#n4" name="n4">4</a>
+<a href="#n5" name="n5">5</a>
+<a href="#n6" name="n6">6</a>
+<a href="#n7" name="n7">7</a>
+<a href="#n8" name="n8">8</a>
+<a href="#n9" name="n9">9</a>
+<strong><a href="#n10" name="n10">10</a></strong>
+<a href="#n11" name="n11">11</a>
+</pre></td>
+  <td class="code"><pre><span class="key">require</span>: <span class="string"><span class="content">rubocop-rspec</span></span>
+<span class="key">inherit_from</span>: <span class="string"><span class="content">.rubocop_todo.yml</span></span>
+<span class="key">AllCops</span>:
+  <span class="key">Exclude</span>:
+    - <span class="string"><span class="content">'db/schema.rb'</span></span>
+    - <span class="string"><span class="content">'bin/**/*'</span></span>
+    - <span class="string"><span class="content">'config/initializers/devise.rb'</span></span>
+    - <span class="string"><span class="content">'config/initializers/simple_form*'</span></span>
+    - <span class="string"><span class="content">'db/migrate/*'</span></span>
+    - <span class="string"><span class="content">'vendor/**/*'</span></span>
+  <span class="key">RunRailsCops</span>: <span class="string"><span class="content">true</span></span>
+</pre></td>
+</tr></table>
 </div>
 
 <p>Voila!</p>
@@ -232,9 +256,9 @@ Turns out, by enabling the <code>cache</code> in Travis I caused RuboCop to lose
         <div class="social-share">
   <ul class="socialcount socialcount-small inline-list">
     <li class="reddit"><a href="https://www.reddit.com/submit?url=http://caseywest.com/faster-ci-on-travis-and-docker-for-ruby-and-rails-and-rubocop/&title=Faster+CI+on+Travis+%28and+Docker%29+for+Ruby+%28and+Rails+%28and+RuboCop%29%29" title="Submit on Reddit"><span class="count"><i class="fa fa-reddit-square"></i> Submit</span></a></li>
-    <li class="twitter"><a href="https://twitter.com/intent/tweet?text=Faster+CI+on+Travis+%28and+Docker%29+for+Ruby+%28and+Rails+%28and+RuboCop%29%29%20%E2%80%94%C2%A0http://caseywest.com/faster-ci-on-travis-and-docker-for-ruby-and-rails-and-rubocop/" title="Share on Twitter"><span class="count"><i class="fa fa-twitter-square"></i> Tweet</span></a></li>
-    <li class="facebook"><a href="https://www.facebook.com/sharer/sharer.php?u=Faster+CI+on+Travis+%28and+Docker%29+for+Ruby+%28and+Rails+%28and+RuboCop%29%29%20%E2%80%94%C2%A0http://caseywest.com/faster-ci-on-travis-and-docker-for-ruby-and-rails-and-rubocop/" title="Share on Facebook"><span class="count"><i class="fa fa-facebook-square"></i> Like</span></a></li>
-    <li class="googleplus"><a href="https://plus.google.com/share?url=Faster+CI+on+Travis+%28and+Docker%29+for+Ruby+%28and+Rails+%28and+RuboCop%29%29%20%E2%80%94%C2%A0http://caseywest.com/faster-ci-on-travis-and-docker-for-ruby-and-rails-and-rubocop/" title="Share on Google Plus"><span class="count"><i class="fa fa-google-plus-square"></i> +1</span></a></li>
+    <li class="twitter"><a href="https://twitter.com/intent/tweet?text=Faster+CI+on+Travis+%28and+Docker%29+for+Ruby+%28and+Rails+%28and+RuboCop%29%29%20%E2%80%94%20http://caseywest.com/faster-ci-on-travis-and-docker-for-ruby-and-rails-and-rubocop/" title="Share on Twitter"><span class="count"><i class="fa fa-twitter-square"></i> Tweet</span></a></li>
+    <li class="facebook"><a href="https://www.facebook.com/sharer/sharer.php?u=Faster+CI+on+Travis+%28and+Docker%29+for+Ruby+%28and+Rails+%28and+RuboCop%29%29%20%E2%80%94%20http://caseywest.com/faster-ci-on-travis-and-docker-for-ruby-and-rails-and-rubocop/" title="Share on Facebook"><span class="count"><i class="fa fa-facebook-square"></i> Like</span></a></li>
+    <li class="googleplus"><a href="https://plus.google.com/share?url=Faster+CI+on+Travis+%28and+Docker%29+for+Ruby+%28and+Rails+%28and+RuboCop%29%29%20%E2%80%94%20http://caseywest.com/faster-ci-on-travis-and-docker-for-ruby-and-rails-and-rubocop/" title="Share on Google Plus"><span class="count"><i class="fa fa-google-plus-square"></i> +1</span></a></li>
   </ul>
 </div><!-- /.social-share -->
 
@@ -247,20 +271,20 @@ Turns out, by enabling the <code>cache</code> in Travis I caused RuboCop to lose
       <a href="http://caseywest.com/theres-still-no-silver-bullet/" class="read-more-btn">Read More</a>
     </div><!-- /.read-more-header -->
     <div class="read-more-content">
-      <h3><a href="http://caseywest.com/speaking-at-your-event/" title="Speaking at Your Event">Speaking at Your Event</a></h3>
-      <p>My speaking schedule is getting complicated this year so I made a page to keep track.&hellip; <a href="http://caseywest.com/speaking-at-your-event/">Continue reading</a></p>
+      <h3><a href="http://caseywest.com/redefining-culture-fit/" title="Redefining Culture Fit">Redefining Culture Fit</a></h3>
+      <p>I prefer values which connect us deeply over rituals and traditions only some of us are able to enjoy.&hellip; <a href="http://caseywest.com/redefining-culture-fit/">Continue reading</a></p>
     </div><!-- /.read-more-content -->
   
   <div class="read-more-list">
     
       <div class="list-item">
-        <h4><a href="http://caseywest.com/redefining-culture-fit/" title="Redefining Culture Fit">Redefining Culture Fit</a></h4>
-        <span>Published on November 06, 2015</span>
+        <h4><a href="http://caseywest.com/the-cloud-native-future/" title="The cloud-native future">The cloud-native future</a></h4>
+        <span>Published on September 02, 2015</span>
       </div><!-- /.list-item -->
     
       <div class="list-item">
-        <h4><a href="http://caseywest.com/the-cloud-native-future/" title="The cloud-native future">The cloud-native future</a></h4>
-        <span>Published on September 02, 2015</span>
+        <h4><a href="http://caseywest.com/farewell-yapc-asia/" title="Farewell YAPC::Asia">Farewell YAPC::Asia</a></h4>
+        <span>Published on August 30, 2015</span>
       </div><!-- /.list-item -->
     
   </div><!-- /.read-more-list -->
@@ -271,7 +295,7 @@ Turns out, by enabling the <code>cache</code> in Travis I caused RuboCop to lose
 
 <div class="footer-wrapper">
   <footer role="contentinfo">
-    <p><span>&copy; 2016 Casey West.</span></p>
+    <p><span>&copy; 2020 Casey West.</span></p>
 <p class="attribution"><span>Powered by <a href="http://jekyllrb.com" rel="nofollow">Jekyll</a> using the <a href="http://mademistakes.com/hpstr/" rel="notfollow">HPSTR Theme</a>.</span>
 
   </footer>
