@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom" xml:lang="en">
-<title type="text">The consensus-seeking architect.</title>
+<title type="text">I'm Casey West.</title>
 <generator uri="https://github.com/mojombo/jekyll">Jekyll</generator>
 <link rel="self" type="application/atom+xml" href="http://caseywest.com/feed.xml" />
 <link rel="alternate" type="text/html" href="http://caseywest.com" />
-<updated>2020-03-26T10:55:20-04:00</updated>
+<updated>2020-03-26T12:14:55-04:00</updated>
 <id>http://caseywest.com/</id>
 <author>
   <name>Casey West</name>
@@ -71,7 +71,7 @@ This boils down to being deliberate about how we make decisions, and how we work
 &lt;p&gt;Thanks to the organizers of Ignite Velocity 2015 New York, the Pittsburgh Perl Workshop 2015, OSDC 2015, and Cloud Foundry Summit Berlin 2015 for giving me five minutes to talk about this at each of your events. I gave this talk four times in three weeks on three different continents. Recordings from &lt;a href=&quot;https://www.youtube.com/watch?v=Kcmv-h2J3HQ&quot;&gt;Velocity&lt;/a&gt; and &lt;a href=&quot;https://www.youtube.com/watch?v=BXv9KpYrW0w&quot;&gt;OSDC&lt;/a&gt; are available as are &lt;a href=&quot;https://speakerdeck.com/caseywest/redefining-culture-fit&quot;&gt;the slides&lt;/a&gt;.&lt;/p&gt;
 
 
-  &lt;p&gt;&lt;a href=&quot;http://caseywest.com/redefining-culture-fit/&quot;&gt;Redefining Culture Fit&lt;/a&gt; was originally published by Casey West at &lt;a href=&quot;http://caseywest.com&quot;&gt;The consensus-seeking architect.&lt;/a&gt; on November 06, 2015.&lt;/p&gt;</content>
+  &lt;p&gt;&lt;a href=&quot;http://caseywest.com/redefining-culture-fit/&quot;&gt;Redefining Culture Fit&lt;/a&gt; was originally published by Casey West at &lt;a href=&quot;http://caseywest.com&quot;&gt;I'm Casey West.&lt;/a&gt; on November 06, 2015.&lt;/p&gt;</content>
 </entry>
 
 
@@ -93,7 +93,7 @@ This boils down to being deliberate about how we make decisions, and how we work
 
 &lt;p&gt;A piece I wrote on what it means to be cloud-native.&lt;/p&gt;
 
-  &lt;p&gt;&lt;a href=&quot;http://caseywest.com/the-cloud-native-future/&quot;&gt;The cloud-native future&lt;/a&gt; was originally published by Casey West at &lt;a href=&quot;http://caseywest.com&quot;&gt;The consensus-seeking architect.&lt;/a&gt; on September 02, 2015.&lt;/p&gt;</content>
+  &lt;p&gt;&lt;a href=&quot;http://caseywest.com/the-cloud-native-future/&quot;&gt;The cloud-native future&lt;/a&gt; was originally published by Casey West at &lt;a href=&quot;http://caseywest.com&quot;&gt;I'm Casey West.&lt;/a&gt; on September 02, 2015.&lt;/p&gt;</content>
 </entry>
 
 
@@ -122,7 +122,7 @@ This boils down to being deliberate about how we make decisions, and how we work
 &lt;p&gt;Finally, thank you to &lt;a href=&quot;https://medium.com/@lestrrat/the-10th-and-final-yapc-asia-tokyo-6bf15dae1ab4&quot;&gt;Daisuke Maki&lt;/a&gt; for inviting me to speak this year!&lt;/p&gt;
 
 
-  &lt;p&gt;&lt;a href=&quot;http://caseywest.com/farewell-yapc-asia/&quot;&gt;Farewell YAPC::Asia&lt;/a&gt; was originally published by Casey West at &lt;a href=&quot;http://caseywest.com&quot;&gt;The consensus-seeking architect.&lt;/a&gt; on August 30, 2015.&lt;/p&gt;</content>
+  &lt;p&gt;&lt;a href=&quot;http://caseywest.com/farewell-yapc-asia/&quot;&gt;Farewell YAPC::Asia&lt;/a&gt; was originally published by Casey West at &lt;a href=&quot;http://caseywest.com&quot;&gt;I'm Casey West.&lt;/a&gt; on August 30, 2015.&lt;/p&gt;</content>
 </entry>
 
 
@@ -188,7 +188,7 @@ This boils down to being deliberate about how we make decisions, and how we work
 &lt;p&gt;Don't focus on operating your business. Focus on building it.&lt;/p&gt;
 
 
-  &lt;p&gt;&lt;a href=&quot;http://caseywest.com/the-mission-of-a-devops-team/&quot;&gt;The Mission of a DevOps Team&lt;/a&gt; was originally published by Casey West at &lt;a href=&quot;http://caseywest.com&quot;&gt;The consensus-seeking architect.&lt;/a&gt; on July 16, 2015.&lt;/p&gt;</content>
+  &lt;p&gt;&lt;a href=&quot;http://caseywest.com/the-mission-of-a-devops-team/&quot;&gt;The Mission of a DevOps Team&lt;/a&gt; was originally published by Casey West at &lt;a href=&quot;http://caseywest.com&quot;&gt;I'm Casey West.&lt;/a&gt; on July 16, 2015.&lt;/p&gt;</content>
 </entry>
 
 
@@ -222,7 +222,7 @@ This boils down to being deliberate about how we make decisions, and how we work
   &lt;p&gt;When we feel safe trust will emerge. This is what the foundations of leadership really are. The reason we call someone leader is because they choose to go first. They choose to extend trust first, even before there are any signs they should. The willingness to express empathy before anyone else.&lt;/p&gt;
 &lt;/blockquote&gt;
 
-  &lt;p&gt;&lt;a href=&quot;http://caseywest.com/trust-and-consequences/&quot;&gt;Trust and Consequences&lt;/a&gt; was originally published by Casey West at &lt;a href=&quot;http://caseywest.com&quot;&gt;The consensus-seeking architect.&lt;/a&gt; on May 19, 2015.&lt;/p&gt;</content>
+  &lt;p&gt;&lt;a href=&quot;http://caseywest.com/trust-and-consequences/&quot;&gt;Trust and Consequences&lt;/a&gt; was originally published by Casey West at &lt;a href=&quot;http://caseywest.com&quot;&gt;I'm Casey West.&lt;/a&gt; on May 19, 2015.&lt;/p&gt;</content>
 </entry>
 
 
@@ -562,7 +562,7 @@ long as the code it's talking about lasts.&lt;/p&gt;
   &lt;/ol&gt;
 &lt;/div&gt;
 
-  &lt;p&gt;&lt;a href=&quot;http://caseywest.com/durable-communication/&quot;&gt;Durable Communication&lt;/a&gt; was originally published by Casey West at &lt;a href=&quot;http://caseywest.com&quot;&gt;The consensus-seeking architect.&lt;/a&gt; on May 10, 2015.&lt;/p&gt;</content>
+  &lt;p&gt;&lt;a href=&quot;http://caseywest.com/durable-communication/&quot;&gt;Durable Communication&lt;/a&gt; was originally published by Casey West at &lt;a href=&quot;http://caseywest.com&quot;&gt;I'm Casey West.&lt;/a&gt; on May 10, 2015.&lt;/p&gt;</content>
 </entry>
 
 
@@ -673,7 +673,7 @@ long as the code it's talking about lasts.&lt;/p&gt;
   &lt;/ol&gt;
 &lt;/div&gt;
 
-  &lt;p&gt;&lt;a href=&quot;http://caseywest.com/the-help-timer/&quot;&gt;The Help Timer&lt;/a&gt; was originally published by Casey West at &lt;a href=&quot;http://caseywest.com&quot;&gt;The consensus-seeking architect.&lt;/a&gt; on May 03, 2015.&lt;/p&gt;</content>
+  &lt;p&gt;&lt;a href=&quot;http://caseywest.com/the-help-timer/&quot;&gt;The Help Timer&lt;/a&gt; was originally published by Casey West at &lt;a href=&quot;http://caseywest.com&quot;&gt;I'm Casey West.&lt;/a&gt; on May 03, 2015.&lt;/p&gt;</content>
 </entry>
 
 
@@ -811,7 +811,7 @@ long as the code it's talking about lasts.&lt;/p&gt;
   &lt;/ol&gt;
 &lt;/div&gt;
 
-  &lt;p&gt;&lt;a href=&quot;http://caseywest.com/technical-phone-screen-howto/&quot;&gt;Technical Phone Screen HOWTO&lt;/a&gt; was originally published by Casey West at &lt;a href=&quot;http://caseywest.com&quot;&gt;The consensus-seeking architect.&lt;/a&gt; on April 19, 2015.&lt;/p&gt;</content>
+  &lt;p&gt;&lt;a href=&quot;http://caseywest.com/technical-phone-screen-howto/&quot;&gt;Technical Phone Screen HOWTO&lt;/a&gt; was originally published by Casey West at &lt;a href=&quot;http://caseywest.com&quot;&gt;I'm Casey West.&lt;/a&gt; on April 19, 2015.&lt;/p&gt;</content>
 </entry>
 
 
@@ -933,7 +933,7 @@ I'm sure you've heard this before: &lt;em&gt;&quot;we're going to put you on the
 &lt;/figure&gt;
 
 
-  &lt;p&gt;&lt;a href=&quot;http://caseywest.com/a-call-for-more-tech-leadership/&quot;&gt;A Call for More Tech Leadership&lt;/a&gt; was originally published by Casey West at &lt;a href=&quot;http://caseywest.com&quot;&gt;The consensus-seeking architect.&lt;/a&gt; on April 12, 2015.&lt;/p&gt;</content>
+  &lt;p&gt;&lt;a href=&quot;http://caseywest.com/a-call-for-more-tech-leadership/&quot;&gt;A Call for More Tech Leadership&lt;/a&gt; was originally published by Casey West at &lt;a href=&quot;http://caseywest.com&quot;&gt;I'm Casey West.&lt;/a&gt; on April 12, 2015.&lt;/p&gt;</content>
 </entry>
 
 
@@ -1118,7 +1118,7 @@ now, and why.&lt;/p&gt;
   &lt;/ol&gt;
 &lt;/div&gt;
 
-  &lt;p&gt;&lt;a href=&quot;http://caseywest.com/work-with-us-at-whitehat/&quot;&gt;Work with us at WhiteHat&lt;/a&gt; was originally published by Casey West at &lt;a href=&quot;http://caseywest.com&quot;&gt;The consensus-seeking architect.&lt;/a&gt; on January 23, 2015.&lt;/p&gt;</content>
+  &lt;p&gt;&lt;a href=&quot;http://caseywest.com/work-with-us-at-whitehat/&quot;&gt;Work with us at WhiteHat&lt;/a&gt; was originally published by Casey West at &lt;a href=&quot;http://caseywest.com&quot;&gt;I'm Casey West.&lt;/a&gt; on January 23, 2015.&lt;/p&gt;</content>
 </entry>
 
 
@@ -1600,7 +1600,7 @@ body
 &lt;iframe width=&quot;560&quot; height=&quot;315&quot; src=&quot;http://www.youtube.com/embed/ezQLP1dj_t8&quot; allowfullscreen=&quot;&quot;&gt;&lt;/iframe&gt;
 
 
-  &lt;p&gt;&lt;a href=&quot;http://caseywest.com/responsibly-use-peek-to-inspect-rails/&quot;&gt;Responsibly Use Peek to Inspect Rails&lt;/a&gt; was originally published by Casey West at &lt;a href=&quot;http://caseywest.com&quot;&gt;The consensus-seeking architect.&lt;/a&gt; on January 07, 2015.&lt;/p&gt;</content>
+  &lt;p&gt;&lt;a href=&quot;http://caseywest.com/responsibly-use-peek-to-inspect-rails/&quot;&gt;Responsibly Use Peek to Inspect Rails&lt;/a&gt; was originally published by Casey West at &lt;a href=&quot;http://caseywest.com&quot;&gt;I'm Casey West.&lt;/a&gt; on January 07, 2015.&lt;/p&gt;</content>
 </entry>
 
 
@@ -1713,7 +1713,7 @@ Turns out, by enabling the &lt;code&gt;cache&lt;/code&gt; in Travis I caused Rub
 &lt;p&gt;Be careful when modifying RuboCop's configuration that you copy what you need to keep from the defaults, because defining an entry in your project will discard the them, not merge them.&lt;/p&gt;
 
 
-  &lt;p&gt;&lt;a href=&quot;http://caseywest.com/faster-ci-on-travis-and-docker-for-ruby-and-rails-and-rubocop/&quot;&gt;Faster CI on Travis (and Docker) for Ruby (and Rails (and RuboCop))&lt;/a&gt; was originally published by Casey West at &lt;a href=&quot;http://caseywest.com&quot;&gt;The consensus-seeking architect.&lt;/a&gt; on January 06, 2015.&lt;/p&gt;</content>
+  &lt;p&gt;&lt;a href=&quot;http://caseywest.com/faster-ci-on-travis-and-docker-for-ruby-and-rails-and-rubocop/&quot;&gt;Faster CI on Travis (and Docker) for Ruby (and Rails (and RuboCop))&lt;/a&gt; was originally published by Casey West at &lt;a href=&quot;http://caseywest.com&quot;&gt;I'm Casey West.&lt;/a&gt; on January 06, 2015.&lt;/p&gt;</content>
 </entry>
 
 
@@ -1785,7 +1785,7 @@ Turns out, by enabling the &lt;code&gt;cache&lt;/code&gt; in Travis I caused Rub
 
 &lt;p&gt;This, I believe, is the most important advancement since Brooks wrote his paper. Organizations have recognized the need to grow great software designers. As a result the pace of development and product creation has increased dramatically. The state of the world is much better now than 1986 but we still have a long way to go.&lt;/p&gt;
 
-  &lt;p&gt;&lt;a href=&quot;http://caseywest.com/theres-still-no-silver-bullet/&quot;&gt;There's Still No Silver Bullet (2006)&lt;/a&gt; was originally published by Casey West at &lt;a href=&quot;http://caseywest.com&quot;&gt;The consensus-seeking architect.&lt;/a&gt; on January 04, 2015.&lt;/p&gt;</content>
+  &lt;p&gt;&lt;a href=&quot;http://caseywest.com/theres-still-no-silver-bullet/&quot;&gt;There's Still No Silver Bullet (2006)&lt;/a&gt; was originally published by Casey West at &lt;a href=&quot;http://caseywest.com&quot;&gt;I'm Casey West.&lt;/a&gt; on January 04, 2015.&lt;/p&gt;</content>
 </entry>
 
 
@@ -1953,7 +1953,7 @@ task &lt;span class=&quot;key&quot;&gt;default&lt;/span&gt;: &lt;span class=&quo
 
 &lt;p&gt;Since this is part of my testing expectations I can also rest easy because my continuous integration tool has my back on every change, too.&lt;/p&gt;
 
-  &lt;p&gt;&lt;a href=&quot;http://caseywest.com/run-bundle-audit-from-rake/&quot;&gt;Run bundle-audit from rake&lt;/a&gt; was originally published by Casey West at &lt;a href=&quot;http://caseywest.com&quot;&gt;The consensus-seeking architect.&lt;/a&gt; on January 03, 2015.&lt;/p&gt;</content>
+  &lt;p&gt;&lt;a href=&quot;http://caseywest.com/run-bundle-audit-from-rake/&quot;&gt;Run bundle-audit from rake&lt;/a&gt; was originally published by Casey West at &lt;a href=&quot;http://caseywest.com&quot;&gt;I'm Casey West.&lt;/a&gt; on January 03, 2015.&lt;/p&gt;</content>
 </entry>
 
 
@@ -2062,7 +2062,7 @@ task &lt;span class=&quot;key&quot;&gt;default&lt;/span&gt;: &lt;span class=&quo
 &lt;p&gt;Scroll to the bottom of that page for podcast subscription links. &lt;em&gt;Warning: political alignment obvious.&lt;/em&gt;&lt;/p&gt;
 
 
-  &lt;p&gt;&lt;a href=&quot;http://caseywest.com/2014-s-podcast-recommendations/&quot;&gt;2014's Podcast Recommendations&lt;/a&gt; was originally published by Casey West at &lt;a href=&quot;http://caseywest.com&quot;&gt;The consensus-seeking architect.&lt;/a&gt; on December 31, 2014.&lt;/p&gt;</content>
+  &lt;p&gt;&lt;a href=&quot;http://caseywest.com/2014-s-podcast-recommendations/&quot;&gt;2014's Podcast Recommendations&lt;/a&gt; was originally published by Casey West at &lt;a href=&quot;http://caseywest.com&quot;&gt;I'm Casey West.&lt;/a&gt; on December 31, 2014.&lt;/p&gt;</content>
 </entry>
 
 
@@ -2090,7 +2090,7 @@ task &lt;span class=&quot;key&quot;&gt;default&lt;/span&gt;: &lt;span class=&quo
 
 &lt;p&gt;Their CEO, Ryan Holmes, wrote more about it &lt;a href=&quot;https://www.linkedin.com/pulse/20141113221604-2967511--your-product-is-a-piece-of-sh-t-how-my-company-responded-to-this-tweet?trk=mp-reader-card&quot;&gt;on LinkedIn.&lt;/a&gt;&lt;/p&gt;
 
-  &lt;p&gt;&lt;a href=&quot;http://caseywest.com/hootsuite-has-best-response-to-criticism/&quot;&gt;Hootsuite Has Best Response to Criticism&lt;/a&gt; was originally published by Casey West at &lt;a href=&quot;http://caseywest.com&quot;&gt;The consensus-seeking architect.&lt;/a&gt; on December 30, 2014.&lt;/p&gt;</content>
+  &lt;p&gt;&lt;a href=&quot;http://caseywest.com/hootsuite-has-best-response-to-criticism/&quot;&gt;Hootsuite Has Best Response to Criticism&lt;/a&gt; was originally published by Casey West at &lt;a href=&quot;http://caseywest.com&quot;&gt;I'm Casey West.&lt;/a&gt; on December 30, 2014.&lt;/p&gt;</content>
 </entry>
 
 
@@ -2160,7 +2160,7 @@ task &lt;span class=&quot;key&quot;&gt;default&lt;/span&gt;: &lt;span class=&quo
   &lt;/ol&gt;
 &lt;/div&gt;
 
-  &lt;p&gt;&lt;a href=&quot;http://caseywest.com/integrated-tests-are-a-scam/&quot;&gt;Integrated Tests Are a Scam&lt;/a&gt; was originally published by Casey West at &lt;a href=&quot;http://caseywest.com&quot;&gt;The consensus-seeking architect.&lt;/a&gt; on December 29, 2014.&lt;/p&gt;</content>
+  &lt;p&gt;&lt;a href=&quot;http://caseywest.com/integrated-tests-are-a-scam/&quot;&gt;Integrated Tests Are a Scam&lt;/a&gt; was originally published by Casey West at &lt;a href=&quot;http://caseywest.com&quot;&gt;I'm Casey West.&lt;/a&gt; on December 29, 2014.&lt;/p&gt;</content>
 </entry>
 
 
@@ -2217,7 +2217,7 @@ task &lt;span class=&quot;key&quot;&gt;default&lt;/span&gt;: &lt;span class=&quo
 
 &lt;p&gt;Half the company was looking for a quick technical fix that would make it all better. The other half wanted to add process to over come the social issues. It was obvious to me we would have to fix both if we really wanted to solve the problem. Any solution that ignored the fact that we were a socio-technical organization was lacking.&lt;/p&gt;
 
-  &lt;p&gt;&lt;a href=&quot;http://caseywest.com/your-software-is-made-of-people/&quot;&gt;Your Software Is Made of People&lt;/a&gt; was originally published by Casey West at &lt;a href=&quot;http://caseywest.com&quot;&gt;The consensus-seeking architect.&lt;/a&gt; on December 24, 2014.&lt;/p&gt;</content>
+  &lt;p&gt;&lt;a href=&quot;http://caseywest.com/your-software-is-made-of-people/&quot;&gt;Your Software Is Made of People&lt;/a&gt; was originally published by Casey West at &lt;a href=&quot;http://caseywest.com&quot;&gt;I'm Casey West.&lt;/a&gt; on December 24, 2014.&lt;/p&gt;</content>
 </entry>
 
 
@@ -2248,7 +2248,7 @@ task &lt;span class=&quot;key&quot;&gt;default&lt;/span&gt;: &lt;span class=&quo
 
 &lt;p&gt;Hello, world!&lt;/p&gt;
 
-  &lt;p&gt;&lt;a href=&quot;http://caseywest.com/hello-world/&quot;&gt;hello, world&lt;/a&gt; was originally published by Casey West at &lt;a href=&quot;http://caseywest.com&quot;&gt;The consensus-seeking architect.&lt;/a&gt; on December 24, 2014.&lt;/p&gt;</content>
+  &lt;p&gt;&lt;a href=&quot;http://caseywest.com/hello-world/&quot;&gt;hello, world&lt;/a&gt; was originally published by Casey West at &lt;a href=&quot;http://caseywest.com&quot;&gt;I'm Casey West.&lt;/a&gt; on December 24, 2014.&lt;/p&gt;</content>
 </entry>
 
 </feed>
