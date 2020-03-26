@@ -16,7 +16,8 @@ Cheers,
 
 ## Professional Biography
 
-Working in Internet infrastructure, web app security, and design taught Casey to be a paranoid, UX-oriented, problem solving Internet plumber; his earliest contributions to Perl live to this day on your Mac. Casey’s speaking and writing ranges from open source communities and culture to technical architecture and automation tips and tricks. Casey West wears the mantle of Principal Technologist focused on Pivotal’s Cloud Foundry Platform and lives in Pittsburgh raising three sarcastic children.
+Casey West is an Architecture Advocate, and Lead for Enterprise Developer Advocacy at Google Cloud. For the last five years Casey has advised engineering and operations teams at the world’s largest companies on modern architecture, development, and delivery practices. His twenty year career has spanned information security, application platforms, internet infrastructure, enterprise collaboration, ISPs, and design firms. Thanks to early Open Source contributions every Mac has his name and email address on it. Casey lives in production with three dependent services and enjoys rock climbing, acrobatics, and yoga when incoming requests are low.
+
 
 ## Headshot
 
