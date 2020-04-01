@@ -1,0 +1,386 @@
+<!doctype html>
+<!--[if lt IE 7]><html class="no-js lt-ie9 lt-ie8 lt-ie7" lang="en"> <![endif]-->
+<!--[if (IE 7)&!(IEMobile)]><html class="no-js lt-ie9 lt-ie8" lang="en"><![endif]-->
+<!--[if (IE 8)&!(IEMobile)]><html class="no-js lt-ie9" lang="en"><![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en"><!--<![endif]-->
+<head>
+<meta charset="utf-8">
+<title>Run a Minecraft Bedrock Server on Kubernetes &#8211; I'm Casey West</title>
+<meta name="description" content="Run Minecraft Bedrock Server on Kubernetes reliably with persistent storage.">
+<meta name="keywords" content="kubernetes, minecraft, bedrock, googlecloud">
+
+<!-- Twitter Cards -->
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:image" content="http://caseywest.com/images/feature/minecraft-bedrock-server.png">
+
+<meta name="twitter:title" content="Run a Minecraft Bedrock Server on Kubernetes">
+<meta name="twitter:description" content="Run Minecraft Bedrock Server on Kubernetes reliably with persistent storage.">
+<meta name="twitter:creator" content="@caseywest">
+
+<!-- Open Graph -->
+<meta property="og:locale" content="en_US">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Run a Minecraft Bedrock Server on Kubernetes">
+<meta property="og:description" content="Run Minecraft Bedrock Server on Kubernetes reliably with persistent storage.">
+<meta property="og:url" content="http://caseywest.com/run-minecraft-server-on-kubernetes/">
+<meta property="og:site_name" content="I'm Casey West">
+
+
+
+
+
+<link rel="canonical" href="http://caseywest.com/run-minecraft-server-on-kubernetes/">
+<link href="http://caseywest.com/feed.xml" type="application/atom+xml" rel="alternate" title="I'm Casey West Feed">
+<link rel="author" href="https://google.com/+CaseyWest412?rel=author">
+
+<!-- http://t.co/dKP3o1e -->
+<meta name="HandheldFriendly" content="True">
+<meta name="MobileOptimized" content="320">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<!-- For all browsers -->
+<link rel="stylesheet" href="http://caseywest.com/assets/css/main.css">
+<!-- Webfonts -->
+<link href="//fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,700,300italic,400italic|Source+Code+Pro" rel="stylesheet" type="text/css">
+
+<meta http-equiv="cleartype" content="on">
+
+<!-- Load Modernizr -->
+<script src="http://caseywest.com/assets/js/vendor/modernizr-2.6.2.custom.min.js"></script>
+
+<!-- Icons -->
+<!-- 32x32 -->
+<link rel="shortcut icon" href="http://caseywest.com/favicon.png">
+<!-- 57x57 (precomposed) for iPhone 3GS, pre-2011 iPod Touch and older Android devices -->
+<link rel="apple-touch-icon-precomposed" href="http://caseywest.com/images/apple-touch-icon-precomposed.png">
+<!-- 72x72 (precomposed) for 1st generation iPad, iPad 2 and iPad mini -->
+<link rel="apple-touch-icon-precomposed" sizes="72x72" href="http://caseywest.com/images/apple-touch-icon-72x72-precomposed.png">
+<!-- 114x114 (precomposed) for iPhone 4, 4S, 5 and post-2011 iPod Touch -->
+<link rel="apple-touch-icon-precomposed" sizes="114x114" href="http://caseywest.com/images/apple-touch-icon-114x114-precomposed.png">
+<!-- 144x144 (precomposed) for iPad 3rd and 4th generation -->
+<link rel="apple-touch-icon-precomposed" sizes="144x144" href="http://caseywest.com/images/apple-touch-icon-144x144-precomposed.png">
+
+
+
+</head>
+
+<body id="post" class="feature">
+
+<!--[if lt IE 9]><div class="upgrade"><strong><a href="http://whatbrowser.org/">Your browser is quite old!</strong> Why not upgrade to a different browser to better enjoy this site?</a></div><![endif]-->
+<nav id="dl-menu" class="dl-menuwrapper" role="navigation">
+	<button class="dl-trigger">Open Menu</button>
+	<ul class="dl-menu">
+		<li><a href="http://caseywest.com/">Home</a></li>
+		<li>
+			<a href="#">About</a>
+			<ul class="dl-submenu">
+				<li>
+					<img src="http://caseywest.com/images/avatar.jpg" alt="Casey West photo" class="author-photo">
+					<h4>Casey West</h4>
+					<p>Handstands and technical leadership.</p>
+				</li>
+				<li><a href="http://caseywest.com/about/"><span class="btn btn-inverse">Learn More</span></a></li>
+				
+				<li>
+					<a href="http://twitter.com/caseywest"><i class="fa fa-twitter"></i> Twitter</a>
+				</li>
+				<li>
+					<a href="http://github.com/cwest"><i class="fa fa-github"></i> GitHub</a>
+				</li>
+				<li>
+					<a href="http://angel.co/caseywest"><i class="fa fa-angellist"></i> AngelList</a>
+				</li>
+				<li>
+					<a href="http://linkedin.com/in/caseywest"><i class="fa fa-linkedin"></i> LinkedIn</a>
+				</li>
+				<li>
+					<a href="http://facebook.com/caseywest"><i class="fa fa-facebook"></i> Facebook</a>
+				</li>
+				<li>
+					<a href="https://google.com/+CaseyWest412"><i class="fa fa-google-plus"></i> Google+</a>
+				</li>
+				
+				<li>
+					<a href="http://instagram.com/caseyrwest"><i class="fa fa-instagram"></i> Instagram</a>
+				</li>
+				<li>
+					<a href="http://www.flickr.com/photos/caseywest"><i class="fa fa-flickr"></i> Flickr</a>
+				</li>
+				
+			</ul><!-- /.dl-submenu -->
+		</li>
+		<li>
+			<a href="#">Posts</a>
+			<ul class="dl-submenu">
+				<li><a href="http://caseywest.com/posts/">All Posts</a></li>
+				<li><a href="http://caseywest.com/tags/">All Tags</a></li>
+			</ul>
+		</li>
+		
+	    
+	    <li><a href="http://caseywest.com/resume" >Résumé</a></li>
+	  
+	</ul><!-- /.dl-menu -->
+</nav><!-- /.dl-menuwrapper -->
+
+
+
+<div class="entry-header">
+  <div class="image-credit">Image source: Casey West Jr</div><!-- /.image-credit -->
+  <div class="entry-image">
+    <img src="http://caseywest.com/images/feature/minecraft-bedrock-server.png" alt="Run a Minecraft Bedrock Server on Kubernetes">
+  </div><!-- /.entry-image -->
+</div><!-- /.entry-header -->
+
+
+<div id="main" role="main">
+  <article class="hentry">
+    <header class="header-title">
+      <div class="header-title-wrap">
+        
+          <h1 class="entry-title"><a href="http://caseywest.com/run-minecraft-server-on-kubernetes/" rel="bookmark" title="Run a Minecraft Bedrock Server on Kubernetes">Run a Minecraft Bedrock Server on Kubernetes</a></h1>
+        
+        <h2>March 26, 2020</h2>
+        
+        <p class="entry-reading-time">
+          <i class="fa fa-clock-o"></i>
+          
+          Reading time ~5 minutes
+        </p><!-- /.entry-reading-time -->
+        
+      </div><!-- /.header-title-wrap -->
+    </header>
+    <div class="entry-content">
+      <p>Do you, your kids, or your friends enjoy playing Minecraft on their Xbox, Windows PC, or mobile phones? If so this tutorial helps you get a Minecraft Bedrock server running reliabily on Kubernetes. Bedrock is the version which supports all platforms that aren't Java Edition<sup id="fnref:0"><a href="#fn:0" class="footnote">1</a></sup>.</p>
+
+<h1 id="prerequisites">Prerequisites</h1>
+
+<p>This quick guide uses <a href="https://cloud.google.com">Google Cloud Platform</a> to spin up a small managed <a href="https://kubernetes.io">Kubernetes</a> cluster on <a href="https://cloud.google.com/kubernetes-engine/">GKE</a> to run a <a href="https://www.minecraft.net/en-us/download/server/bedrock/">Minecraft Bedrock Server</a>. I'm going to use <a href="https://console.cloud.google.com">Cloud Shell</a> as my client which gives me the following prerequisites out of the box:</p>
+
+<ul>
+  <li>The <a href="https://cloud.google.com/sdk">gcloud</a> SDK.</li>
+  <li><a href="https://kubernetes.io/docs/tasks/tools/install-kubectl/">kubectl</a> to interact with a Kubernetes cluster.</li>
+</ul>
+
+<p>If you want to use GCP you can get started pretty quickly by cloning the gist repo with this handy link. I recommend opening it in a new tab.</p>
+
+<p><a href="https://ssh.cloud.google.com/cloudshell/editor?cloudshell_git_repo=https://gist.github.com/884a95684acfa05b10c1c2545290f903.git"><img src="https://gstatic.com/cloudssh/images/open-btn.svg" alt="Open in Cloud Shell" /></a></p>
+
+<h1 id="create-your-cluster">Create Your Cluster</h1>
+
+<p>This cluster has one node (virtual machine) to run your bedrock server. If you want to deploy multiple servers, for instance one for each of your children so they don't PvP in game or IRL, you might want to change this config a little to add more nodes or change the node size.</p>
+
+<p>The most important choices you'll make here are node size and zone placement.</p>
+
+<dl>
+  <dt>Node Size</dt>
+  <dd>You can review all <a href="https://cloud.google.com/compute/vm-instance-pricing#general-purpose_machine_type_family">GCE instance pricing</a> before committing. I'm choosing a server that, at the time of this writing, costs about $56USD/month.</dd>
+  <dt>Zone Placement</dt>
+  <dd>It's recommended you choose a zone in a region that's close to you geographically. Take a look at our <a href="https://cloud.google.com/compute/docs/regions-zones#locations">locations</a> in the docs.</dd>
+</dl>
+
+<p>Also note the CPU and Memory resource requests. The machine I chose, <code>n2-standard-2</code>, has 8Gb of memory available.</p>
+
+<noscript><pre>400: Invalid request</pre></noscript>
+<script src="https://gist.github.com/884a95684acfa05b10c1c2545290f903.js?file=gke-cluster-creation.sh"> </script>
+
+<h1 id="deploy-minecraft-bedrock-server">Deploy Minecraft Bedrock Server</h1>
+
+<p>Below is the configuration describing what you need to deploy the server. Let's break it down:</p>
+
+<dl>
+  <dt><code>StorageClass</code></dt>
+  <dd>I'm using SSDs because they're faster and the name of the game, other than Minecraft, is keeping latency low. They're more expensive, so you can leave this option out if you don't want it by removing the <code>storageClassName</code> in the <code>PersistentVolumeClaim</code> configuration. Note that I'm also enabling volume expansion so when we need more space. When you want to grow space available follow (this blog post)<a href="https://kubernetes.io/blog/2018/07/12/resizing-persistent-volumes-using-kubernetes/">PVC Expansion</a> to do it.</dd>
+  <dt><code>PersistentVolumeClaim</code></dt>
+  <dd>We want server data like world generation, whitelisted users, and all the beautiful creations you've made to persist between restarts and upgrades. Here we're allocating a persistent volume for the cluster with a storage capacity of 1 Gig to start.</dd>
+  <dt><code>Deployment</code></dt>
+  <dd>We're running one <code>replica</code>, or instance, of the server allocating 50% of the node's memory, and around half of its CPU to the Minecraft server. You can adjust that to your needs. Also take a look at the <code>env</code> entries. Mojang requires the end user, you, to accept the End User License Agreement and that's available through the <code>EULA</code> environment variable. You set the game mode between creative, survival, and hardcore; difficulty to peaceful, easy, normal, or hard; enforce Xbox Live accounts with <code>ONLINE_MODE</code>, and allow cheats like <code>/gamerule showcoordinates true</code> for operators. All the available settings are listed in the <a href="https://github.com/itzg/docker-minecraft-bedrock-server">docker container repo on GitHub</a>.</dd>
+  <dt><code>Service</code></dt>
+  <dd>To expose this server online and make it possible for you to connect you need a service. We're using a <code>LoadBalancer</code> to make the server available on the typical port via UDP.</dd>
+</dl>
+
+<noscript><pre>400: Invalid request</pre></noscript>
+<script src="https://gist.github.com/884a95684acfa05b10c1c2545290f903.js?file=minecraft-bedrock-server.yaml"> </script>
+
+<p>Apply this configuration to your cluster.</p>
+
+<div class="language-sh highlighter-coderay"><table class="CodeRay"><tr>
+  <td class="line-numbers"><pre><a href="#n1" name="n1">1</a>
+</pre></td>
+  <td class="code"><pre>kubectl apply -f minecraft-bedrock-server.yaml
+</pre></td>
+</tr></table>
+</div>
+
+<h1 id="configure-your-player-whitelist">Configure Your Player Whitelist</h1>
+
+<p>By enabling the White List in the server configuration above the server is locked down. No players can access it. Let's change that by allowing only the players you choose to join. You'll need the "Gamertag" (Xbox Live username) for each player you want to give access to. Write a JSON file like the following and add the players you want on your server.</p>
+
+<noscript><pre>400: Invalid request</pre></noscript>
+<script src="https://gist.github.com/884a95684acfa05b10c1c2545290f903.js?file=whitelist.json"> </script>
+
+<p>Now add the whitelist to the server. Copy the whitelist into the persistent volume claimed by the running server with the following command, then restart Minecraft.</p>
+
+<div class="language-sh highlighter-coderay"><table class="CodeRay"><tr>
+  <td class="line-numbers"><pre><a href="#n1" name="n1">1</a>
+<a href="#n2" name="n2">2</a>
+<a href="#n3" name="n3">3</a>
+<a href="#n4" name="n4">4</a>
+</pre></td>
+  <td class="code"><pre>kubectl cp whitelist.json \
+  $(kubectl get pod -l app=mc-bedrock -o custom-columns=:metadata.name):/data/whitelist.json
+
+kubectl rollout restart deployment/mc-bedrock
+</pre></td>
+</tr></table>
+</div>
+
+<p>If you want to, you can watch the logs as the server starts up and you attempt to connect.</p>
+
+<div class="language-sh highlighter-coderay"><table class="CodeRay"><tr>
+  <td class="line-numbers"><pre><a href="#n1" name="n1">1</a>
+</pre></td>
+  <td class="code"><pre>kubectl logs -f deployment/mc-bedrock
+</pre></td>
+</tr></table>
+</div>
+
+<p>To connect, you'll need the IP address assigned to the <code>Service</code> which you can obtain by inspecting the service.</p>
+
+<div class="language-sh highlighter-coderay"><table class="CodeRay"><tr>
+  <td class="line-numbers"><pre><a href="#n1" name="n1">1</a>
+</pre></td>
+  <td class="code"><pre>kubectl get service mc-bedrock -o jsonpath='{.status.loadBalancer.ingress[0].ip}'
+</pre></td>
+</tr></table>
+</div>
+
+<h1 id="give-operator-permissions">Give Operator Permissions</h1>
+
+<p>You may want to give one or more players operator status on the server. This will let them use special commands or whitelist new players in-game. That's done with another JSON file in the form shown here.</p>
+
+<noscript><pre>400: Invalid request</pre></noscript>
+<script src="https://gist.github.com/884a95684acfa05b10c1c2545290f903.js?file=permissions.json"> </script>
+
+<p>Your "XUID" is a the unique identifier for your Xbox Live account. The best way I've managed to find this, honestly, is to view the logs when whitelisted players connect to the server. To find the <code>XUID</code> run the following command.</p>
+
+<div class="language-sh highlighter-coderay"><table class="CodeRay"><tr>
+  <td class="line-numbers"><pre><a href="#n1" name="n1">1</a>
+</pre></td>
+  <td class="code"><pre>kubectl logs deployment/mc-bedrock | grep xuid
+</pre></td>
+</tr></table>
+</div>
+
+<p>Copy the <code>xuid</code> you find in the log entry into your <code>permissions.json</code> file, upload it to persistent storage, and restart the server one more time!</p>
+
+<div class="language-sh highlighter-coderay"><table class="CodeRay"><tr>
+  <td class="line-numbers"><pre><a href="#n1" name="n1">1</a>
+<a href="#n2" name="n2">2</a>
+<a href="#n3" name="n3">3</a>
+<a href="#n4" name="n4">4</a>
+</pre></td>
+  <td class="code"><pre>kubectl cp permissions.json \
+  $(kubectl get pod -l app=mc-bedrock -o custom-columns=:metadata.name):/data/permissions.json
+
+kubectl rollout restart deployment/mc-bedrock
+</pre></td>
+</tr></table>
+</div>
+
+<h1 id="backup-and-restore">Backup and Restore</h1>
+
+<p>If you love yourself, your kids, or your friends enough you can implement <code>VolumeSnapshot</code>s for the <code>mc-bedrock</code> <code>PersistentVolumeClaim</code>. It's more or less straight forward. Here are some <a href="https://kubernetes.io/docs/concepts/storage/volume-snapshots/">docs</a> and a <a href="https://kubernetes.io/blog/2018/10/09/introducing-volume-snapshot-alpha-for-kubernetes/">blog post</a> to get you started.</p>
+
+<h1 id="attribution">Attribution</h1>
+
+<p>My Kubernetes configuration was built from the work done by <a href="https://github.com/itzg">Geoff Bourne</a> who maintains the canonical <a href="https://github.com/itzg/docker-minecraft-bedrock-server">Docker container</a> which makes all of this possible. Thank you, Geoff! <a href="https://twitter.com/itzg">Go follow him on Twitter</a>, too.</p>
+
+<div class="footnotes">
+  <ol>
+    <li id="fn:0">
+      <p>Personally I love playing Java Edition but my kids have Minecraft on their iPhones. Considering this was written in from the depths of shelter-in-place COVID-19 lockdown my kids one. <a href="#fnref:0" class="reversefootnote">&#8617;</a></p>
+    </li>
+  </ol>
+</div>
+
+      <footer class="entry-meta">
+        <span class="entry-tags"><a href="http://caseywest.com/tags/#kubernetes" title="Pages tagged kubernetes" class="tag">kubernetes</a><a href="http://caseywest.com/tags/#minecraft" title="Pages tagged minecraft" class="tag">minecraft</a><a href="http://caseywest.com/tags/#bedrock" title="Pages tagged bedrock" class="tag">bedrock</a><a href="http://caseywest.com/tags/#googlecloud" title="Pages tagged googlecloud" class="tag">googlecloud</a></span>
+        <span><a href="http://caseywest.com/run-minecraft-server-on-kubernetes/" rel="bookmark" title="Run a Minecraft Bedrock Server on Kubernetes">Run a Minecraft Bedrock Server on Kubernetes</a> was published on <span class="entry-date date published updated"><time datetime="2020-03-26T00:00:00-04:00">March 26, 2020</time></span></span>
+        (revised: <span class="entry-date date modified"><time datetime="2020-03-26 16:30:10 +0000">03/26/2020</time></span>)
+        <span class="author vcard"><span class="fn"><a href="http://caseywest.com/about/" title="About Casey West">Casey West</a></span></span>
+        <div class="social-share">
+  <ul class="socialcount socialcount-small inline-list">
+    <li class="reddit"><a href="https://www.reddit.com/submit?url=http://caseywest.com/run-minecraft-server-on-kubernetes/&title=Run+a+Minecraft+Bedrock+Server+on+Kubernetes" title="Submit on Reddit"><span class="count"><i class="fa fa-reddit-square"></i> Submit</span></a></li>
+    <li class="twitter"><a href="https://twitter.com/intent/tweet?text=Run+a+Minecraft+Bedrock+Server+on+Kubernetes%20%E2%80%94%20http://caseywest.com/run-minecraft-server-on-kubernetes/" title="Share on Twitter"><span class="count"><i class="fa fa-twitter-square"></i> Tweet</span></a></li>
+    <li class="facebook"><a href="https://www.facebook.com/sharer/sharer.php?u=Run+a+Minecraft+Bedrock+Server+on+Kubernetes%20%E2%80%94%20http://caseywest.com/run-minecraft-server-on-kubernetes/" title="Share on Facebook"><span class="count"><i class="fa fa-facebook-square"></i> Like</span></a></li>
+    <li class="googleplus"><a href="https://plus.google.com/share?url=Run+a+Minecraft+Bedrock+Server+on+Kubernetes%20%E2%80%94%20http://caseywest.com/run-minecraft-server-on-kubernetes/" title="Share on Google Plus"><span class="count"><i class="fa fa-google-plus-square"></i> +1</span></a></li>
+  </ul>
+</div><!-- /.social-share -->
+
+      </footer>
+    </div><!-- /.entry-content -->
+    
+    <div class="read-more">
+  
+    <div class="read-more-header">
+      <a href="http://caseywest.com/redefining-culture-fit/" class="read-more-btn">Read More</a>
+    </div><!-- /.read-more-header -->
+    <div class="read-more-content">
+      <h3><a href="http://caseywest.com/redefining-culture-fit/" title="Redefining Culture Fit">Redefining Culture Fit</a></h3>
+      <p>I prefer values which connect us deeply over rituals and traditions only some of us are able to enjoy.&hellip; <a href="http://caseywest.com/redefining-culture-fit/">Continue reading</a></p>
+    </div><!-- /.read-more-content -->
+  
+  <div class="read-more-list">
+    
+      <div class="list-item">
+        <h4><a href="http://caseywest.com/the-cloud-native-future/" title="The cloud-native future">The cloud-native future</a></h4>
+        <span>Published on September 02, 2015</span>
+      </div><!-- /.list-item -->
+    
+      <div class="list-item">
+        <h4><a href="http://caseywest.com/farewell-yapc-asia/" title="Farewell YAPC::Asia">Farewell YAPC::Asia</a></h4>
+        <span>Published on August 30, 2015</span>
+      </div><!-- /.list-item -->
+    
+  </div><!-- /.read-more-list -->
+</div><!-- /.read-more -->
+
+  </article>
+</div><!-- /#main -->
+
+<div class="footer-wrapper">
+  <footer role="contentinfo">
+    <p><span>&copy; 2020 Casey West.</span></p>
+<p class="attribution"><span>Powered by <a href="http://jekyllrb.com" rel="nofollow">Jekyll</a> using the <a href="http://mademistakes.com/hpstr/" rel="notfollow">HPSTR Theme</a>.</span>
+
+  </footer>
+</div><!-- /.footer-wrapper -->
+
+<script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+<script>window.jQuery || document.write('<script src="http://caseywest.com/assets/js/vendor/jquery-1.9.1.min.js"><\/script>')</script>
+<script src="http://caseywest.com/assets/js/scripts.min.js"></script>
+
+
+<!-- Asynchronous Google Analytics snippet -->
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+    (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+    m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-57986008-1', 'auto');
+  ga('require', 'linkid', 'linkid.js');
+  ga('send', 'pageview');
+</script>
+
+
+
+
+<script type="text/javascript"
+    src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
+</script>
+
+
+</body>
+</html>

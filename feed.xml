@@ -1,16 +1,185 @@
 <?xml version="1.0" encoding="utf-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom" xml:lang="en">
-<title type="text">I'm Casey West.</title>
+<title type="text">I'm Casey West</title>
 <generator uri="https://github.com/mojombo/jekyll">Jekyll</generator>
 <link rel="self" type="application/atom+xml" href="http://caseywest.com/feed.xml" />
 <link rel="alternate" type="text/html" href="http://caseywest.com" />
-<updated>2020-03-26T12:14:55-04:00</updated>
+<updated>2020-03-31T23:02:41-04:00</updated>
 <id>http://caseywest.com/</id>
 <author>
   <name>Casey West</name>
   <uri>http://caseywest.com/</uri>
   <email></email>
 </author>
+
+
+<entry>
+  <title type="html"><![CDATA[Run a Minecraft Bedrock Server on Kubernetes]]></title>
+ <link rel="alternate" type="text/html" href="http://caseywest.com/run-minecraft-server-on-kubernetes/" />
+  <id>http://caseywest.com/run-minecraft-server-on-kubernetes</id>
+  <updated>2020-03-26 16:30:10 +0000T00:00:00-00:00</updated>
+  <published>2020-03-26T00:00:00-04:00</published>
+  
+  <author>
+    <name>Casey West</name>
+    <uri>http://caseywest.com</uri>
+    <email></email>
+  </author>
+  <content type="html">&lt;p&gt;Do you, your kids, or your friends enjoy playing Minecraft on their Xbox, Windows PC, or mobile phones? If so this tutorial helps you get a Minecraft Bedrock server running reliabily on Kubernetes. Bedrock is the version which supports all platforms that aren't Java Edition&lt;sup id=&quot;fnref:0&quot;&gt;&lt;a href=&quot;#fn:0&quot; class=&quot;footnote&quot;&gt;1&lt;/a&gt;&lt;/sup&gt;.&lt;/p&gt;
+
+&lt;h1 id=&quot;prerequisites&quot;&gt;Prerequisites&lt;/h1&gt;
+
+&lt;p&gt;This quick guide uses &lt;a href=&quot;https://cloud.google.com&quot;&gt;Google Cloud Platform&lt;/a&gt; to spin up a small managed &lt;a href=&quot;https://kubernetes.io&quot;&gt;Kubernetes&lt;/a&gt; cluster on &lt;a href=&quot;https://cloud.google.com/kubernetes-engine/&quot;&gt;GKE&lt;/a&gt; to run a &lt;a href=&quot;https://www.minecraft.net/en-us/download/server/bedrock/&quot;&gt;Minecraft Bedrock Server&lt;/a&gt;. I'm going to use &lt;a href=&quot;https://console.cloud.google.com&quot;&gt;Cloud Shell&lt;/a&gt; as my client which gives me the following prerequisites out of the box:&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;The &lt;a href=&quot;https://cloud.google.com/sdk&quot;&gt;gcloud&lt;/a&gt; SDK.&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://kubernetes.io/docs/tasks/tools/install-kubectl/&quot;&gt;kubectl&lt;/a&gt; to interact with a Kubernetes cluster.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;If you want to use GCP you can get started pretty quickly by cloning the gist repo with this handy link. I recommend opening it in a new tab.&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;https://ssh.cloud.google.com/cloudshell/editor?cloudshell_git_repo=https://gist.github.com/884a95684acfa05b10c1c2545290f903.git&quot;&gt;&lt;img src=&quot;https://gstatic.com/cloudssh/images/open-btn.svg&quot; alt=&quot;Open in Cloud Shell&quot; /&gt;&lt;/a&gt;&lt;/p&gt;
+
+&lt;h1 id=&quot;create-your-cluster&quot;&gt;Create Your Cluster&lt;/h1&gt;
+
+&lt;p&gt;This cluster has one node (virtual machine) to run your bedrock server. If you want to deploy multiple servers, for instance one for each of your children so they don't PvP in game or IRL, you might want to change this config a little to add more nodes or change the node size.&lt;/p&gt;
+
+&lt;p&gt;The most important choices you'll make here are node size and zone placement.&lt;/p&gt;
+
+&lt;dl&gt;
+  &lt;dt&gt;Node Size&lt;/dt&gt;
+  &lt;dd&gt;You can review all &lt;a href=&quot;https://cloud.google.com/compute/vm-instance-pricing#general-purpose_machine_type_family&quot;&gt;GCE instance pricing&lt;/a&gt; before committing. I'm choosing a server that, at the time of this writing, costs about $56USD/month.&lt;/dd&gt;
+  &lt;dt&gt;Zone Placement&lt;/dt&gt;
+  &lt;dd&gt;It's recommended you choose a zone in a region that's close to you geographically. Take a look at our &lt;a href=&quot;https://cloud.google.com/compute/docs/regions-zones#locations&quot;&gt;locations&lt;/a&gt; in the docs.&lt;/dd&gt;
+&lt;/dl&gt;
+
+&lt;p&gt;Also note the CPU and Memory resource requests. The machine I chose, &lt;code&gt;n2-standard-2&lt;/code&gt;, has 8Gb of memory available.&lt;/p&gt;
+
+&lt;noscript&gt;&lt;pre&gt;400: Invalid request&lt;/pre&gt;&lt;/noscript&gt;
+&lt;script src=&quot;https://gist.github.com/884a95684acfa05b10c1c2545290f903.js?file=gke-cluster-creation.sh&quot;&gt; &lt;/script&gt;
+
+&lt;h1 id=&quot;deploy-minecraft-bedrock-server&quot;&gt;Deploy Minecraft Bedrock Server&lt;/h1&gt;
+
+&lt;p&gt;Below is the configuration describing what you need to deploy the server. Let's break it down:&lt;/p&gt;
+
+&lt;dl&gt;
+  &lt;dt&gt;&lt;code&gt;StorageClass&lt;/code&gt;&lt;/dt&gt;
+  &lt;dd&gt;I'm using SSDs because they're faster and the name of the game, other than Minecraft, is keeping latency low. They're more expensive, so you can leave this option out if you don't want it by removing the &lt;code&gt;storageClassName&lt;/code&gt; in the &lt;code&gt;PersistentVolumeClaim&lt;/code&gt; configuration. Note that I'm also enabling volume expansion so when we need more space. When you want to grow space available follow (this blog post)&lt;a href=&quot;https://kubernetes.io/blog/2018/07/12/resizing-persistent-volumes-using-kubernetes/&quot;&gt;PVC Expansion&lt;/a&gt; to do it.&lt;/dd&gt;
+  &lt;dt&gt;&lt;code&gt;PersistentVolumeClaim&lt;/code&gt;&lt;/dt&gt;
+  &lt;dd&gt;We want server data like world generation, whitelisted users, and all the beautiful creations you've made to persist between restarts and upgrades. Here we're allocating a persistent volume for the cluster with a storage capacity of 1 Gig to start.&lt;/dd&gt;
+  &lt;dt&gt;&lt;code&gt;Deployment&lt;/code&gt;&lt;/dt&gt;
+  &lt;dd&gt;We're running one &lt;code&gt;replica&lt;/code&gt;, or instance, of the server allocating 50% of the node's memory, and around half of its CPU to the Minecraft server. You can adjust that to your needs. Also take a look at the &lt;code&gt;env&lt;/code&gt; entries. Mojang requires the end user, you, to accept the End User License Agreement and that's available through the &lt;code&gt;EULA&lt;/code&gt; environment variable. You set the game mode between creative, survival, and hardcore; difficulty to peaceful, easy, normal, or hard; enforce Xbox Live accounts with &lt;code&gt;ONLINE_MODE&lt;/code&gt;, and allow cheats like &lt;code&gt;/gamerule showcoordinates true&lt;/code&gt; for operators. All the available settings are listed in the &lt;a href=&quot;https://github.com/itzg/docker-minecraft-bedrock-server&quot;&gt;docker container repo on GitHub&lt;/a&gt;.&lt;/dd&gt;
+  &lt;dt&gt;&lt;code&gt;Service&lt;/code&gt;&lt;/dt&gt;
+  &lt;dd&gt;To expose this server online and make it possible for you to connect you need a service. We're using a &lt;code&gt;LoadBalancer&lt;/code&gt; to make the server available on the typical port via UDP.&lt;/dd&gt;
+&lt;/dl&gt;
+
+&lt;noscript&gt;&lt;pre&gt;400: Invalid request&lt;/pre&gt;&lt;/noscript&gt;
+&lt;script src=&quot;https://gist.github.com/884a95684acfa05b10c1c2545290f903.js?file=minecraft-bedrock-server.yaml&quot;&gt; &lt;/script&gt;
+
+&lt;p&gt;Apply this configuration to your cluster.&lt;/p&gt;
+
+&lt;div class=&quot;language-sh highlighter-coderay&quot;&gt;&lt;table class=&quot;CodeRay&quot;&gt;&lt;tr&gt;
+  &lt;td class=&quot;line-numbers&quot;&gt;&lt;pre&gt;&lt;a href=&quot;#n1&quot; name=&quot;n1&quot;&gt;1&lt;/a&gt;
+&lt;/pre&gt;&lt;/td&gt;
+  &lt;td class=&quot;code&quot;&gt;&lt;pre&gt;kubectl apply -f minecraft-bedrock-server.yaml
+&lt;/pre&gt;&lt;/td&gt;
+&lt;/tr&gt;&lt;/table&gt;
+&lt;/div&gt;
+
+&lt;h1 id=&quot;configure-your-player-whitelist&quot;&gt;Configure Your Player Whitelist&lt;/h1&gt;
+
+&lt;p&gt;By enabling the White List in the server configuration above the server is locked down. No players can access it. Let's change that by allowing only the players you choose to join. You'll need the &quot;Gamertag&quot; (Xbox Live username) for each player you want to give access to. Write a JSON file like the following and add the players you want on your server.&lt;/p&gt;
+
+&lt;noscript&gt;&lt;pre&gt;400: Invalid request&lt;/pre&gt;&lt;/noscript&gt;
+&lt;script src=&quot;https://gist.github.com/884a95684acfa05b10c1c2545290f903.js?file=whitelist.json&quot;&gt; &lt;/script&gt;
+
+&lt;p&gt;Now add the whitelist to the server. Copy the whitelist into the persistent volume claimed by the running server with the following command, then restart Minecraft.&lt;/p&gt;
+
+&lt;div class=&quot;language-sh highlighter-coderay&quot;&gt;&lt;table class=&quot;CodeRay&quot;&gt;&lt;tr&gt;
+  &lt;td class=&quot;line-numbers&quot;&gt;&lt;pre&gt;&lt;a href=&quot;#n1&quot; name=&quot;n1&quot;&gt;1&lt;/a&gt;
+&lt;a href=&quot;#n2&quot; name=&quot;n2&quot;&gt;2&lt;/a&gt;
+&lt;a href=&quot;#n3&quot; name=&quot;n3&quot;&gt;3&lt;/a&gt;
+&lt;a href=&quot;#n4&quot; name=&quot;n4&quot;&gt;4&lt;/a&gt;
+&lt;/pre&gt;&lt;/td&gt;
+  &lt;td class=&quot;code&quot;&gt;&lt;pre&gt;kubectl cp whitelist.json \
+  $(kubectl get pod -l app=mc-bedrock -o custom-columns=:metadata.name):/data/whitelist.json
+
+kubectl rollout restart deployment/mc-bedrock
+&lt;/pre&gt;&lt;/td&gt;
+&lt;/tr&gt;&lt;/table&gt;
+&lt;/div&gt;
+
+&lt;p&gt;If you want to, you can watch the logs as the server starts up and you attempt to connect.&lt;/p&gt;
+
+&lt;div class=&quot;language-sh highlighter-coderay&quot;&gt;&lt;table class=&quot;CodeRay&quot;&gt;&lt;tr&gt;
+  &lt;td class=&quot;line-numbers&quot;&gt;&lt;pre&gt;&lt;a href=&quot;#n1&quot; name=&quot;n1&quot;&gt;1&lt;/a&gt;
+&lt;/pre&gt;&lt;/td&gt;
+  &lt;td class=&quot;code&quot;&gt;&lt;pre&gt;kubectl logs -f deployment/mc-bedrock
+&lt;/pre&gt;&lt;/td&gt;
+&lt;/tr&gt;&lt;/table&gt;
+&lt;/div&gt;
+
+&lt;p&gt;To connect, you'll need the IP address assigned to the &lt;code&gt;Service&lt;/code&gt; which you can obtain by inspecting the service.&lt;/p&gt;
+
+&lt;div class=&quot;language-sh highlighter-coderay&quot;&gt;&lt;table class=&quot;CodeRay&quot;&gt;&lt;tr&gt;
+  &lt;td class=&quot;line-numbers&quot;&gt;&lt;pre&gt;&lt;a href=&quot;#n1&quot; name=&quot;n1&quot;&gt;1&lt;/a&gt;
+&lt;/pre&gt;&lt;/td&gt;
+  &lt;td class=&quot;code&quot;&gt;&lt;pre&gt;kubectl get service mc-bedrock -o jsonpath='{.status.loadBalancer.ingress[0].ip}'
+&lt;/pre&gt;&lt;/td&gt;
+&lt;/tr&gt;&lt;/table&gt;
+&lt;/div&gt;
+
+&lt;h1 id=&quot;give-operator-permissions&quot;&gt;Give Operator Permissions&lt;/h1&gt;
+
+&lt;p&gt;You may want to give one or more players operator status on the server. This will let them use special commands or whitelist new players in-game. That's done with another JSON file in the form shown here.&lt;/p&gt;
+
+&lt;noscript&gt;&lt;pre&gt;400: Invalid request&lt;/pre&gt;&lt;/noscript&gt;
+&lt;script src=&quot;https://gist.github.com/884a95684acfa05b10c1c2545290f903.js?file=permissions.json&quot;&gt; &lt;/script&gt;
+
+&lt;p&gt;Your &quot;XUID&quot; is a the unique identifier for your Xbox Live account. The best way I've managed to find this, honestly, is to view the logs when whitelisted players connect to the server. To find the &lt;code&gt;XUID&lt;/code&gt; run the following command.&lt;/p&gt;
+
+&lt;div class=&quot;language-sh highlighter-coderay&quot;&gt;&lt;table class=&quot;CodeRay&quot;&gt;&lt;tr&gt;
+  &lt;td class=&quot;line-numbers&quot;&gt;&lt;pre&gt;&lt;a href=&quot;#n1&quot; name=&quot;n1&quot;&gt;1&lt;/a&gt;
+&lt;/pre&gt;&lt;/td&gt;
+  &lt;td class=&quot;code&quot;&gt;&lt;pre&gt;kubectl logs deployment/mc-bedrock | grep xuid
+&lt;/pre&gt;&lt;/td&gt;
+&lt;/tr&gt;&lt;/table&gt;
+&lt;/div&gt;
+
+&lt;p&gt;Copy the &lt;code&gt;xuid&lt;/code&gt; you find in the log entry into your &lt;code&gt;permissions.json&lt;/code&gt; file, upload it to persistent storage, and restart the server one more time!&lt;/p&gt;
+
+&lt;div class=&quot;language-sh highlighter-coderay&quot;&gt;&lt;table class=&quot;CodeRay&quot;&gt;&lt;tr&gt;
+  &lt;td class=&quot;line-numbers&quot;&gt;&lt;pre&gt;&lt;a href=&quot;#n1&quot; name=&quot;n1&quot;&gt;1&lt;/a&gt;
+&lt;a href=&quot;#n2&quot; name=&quot;n2&quot;&gt;2&lt;/a&gt;
+&lt;a href=&quot;#n3&quot; name=&quot;n3&quot;&gt;3&lt;/a&gt;
+&lt;a href=&quot;#n4&quot; name=&quot;n4&quot;&gt;4&lt;/a&gt;
+&lt;/pre&gt;&lt;/td&gt;
+  &lt;td class=&quot;code&quot;&gt;&lt;pre&gt;kubectl cp permissions.json \
+  $(kubectl get pod -l app=mc-bedrock -o custom-columns=:metadata.name):/data/permissions.json
+
+kubectl rollout restart deployment/mc-bedrock
+&lt;/pre&gt;&lt;/td&gt;
+&lt;/tr&gt;&lt;/table&gt;
+&lt;/div&gt;
+
+&lt;h1 id=&quot;backup-and-restore&quot;&gt;Backup and Restore&lt;/h1&gt;
+
+&lt;p&gt;If you love yourself, your kids, or your friends enough you can implement &lt;code&gt;VolumeSnapshot&lt;/code&gt;s for the &lt;code&gt;mc-bedrock&lt;/code&gt; &lt;code&gt;PersistentVolumeClaim&lt;/code&gt;. It's more or less straight forward. Here are some &lt;a href=&quot;https://kubernetes.io/docs/concepts/storage/volume-snapshots/&quot;&gt;docs&lt;/a&gt; and a &lt;a href=&quot;https://kubernetes.io/blog/2018/10/09/introducing-volume-snapshot-alpha-for-kubernetes/&quot;&gt;blog post&lt;/a&gt; to get you started.&lt;/p&gt;
+
+&lt;h1 id=&quot;attribution&quot;&gt;Attribution&lt;/h1&gt;
+
+&lt;p&gt;My Kubernetes configuration was built from the work done by &lt;a href=&quot;https://github.com/itzg&quot;&gt;Geoff Bourne&lt;/a&gt; who maintains the canonical &lt;a href=&quot;https://github.com/itzg/docker-minecraft-bedrock-server&quot;&gt;Docker container&lt;/a&gt; which makes all of this possible. Thank you, Geoff! &lt;a href=&quot;https://twitter.com/itzg&quot;&gt;Go follow him on Twitter&lt;/a&gt;, too.&lt;/p&gt;
+
+&lt;div class=&quot;footnotes&quot;&gt;
+  &lt;ol&gt;
+    &lt;li id=&quot;fn:0&quot;&gt;
+      &lt;p&gt;Personally I love playing Java Edition but my kids have Minecraft on their iPhones. Considering this was written in from the depths of shelter-in-place COVID-19 lockdown my kids one. &lt;a href=&quot;#fnref:0&quot; class=&quot;reversefootnote&quot;&gt;&amp;#8617;&lt;/a&gt;&lt;/p&gt;
+    &lt;/li&gt;
+  &lt;/ol&gt;
+&lt;/div&gt;
+
+  &lt;p&gt;&lt;a href=&quot;http://caseywest.com/run-minecraft-server-on-kubernetes/&quot;&gt;Run a Minecraft Bedrock Server on Kubernetes&lt;/a&gt; was originally published by Casey West at &lt;a href=&quot;http://caseywest.com&quot;&gt;I'm Casey West&lt;/a&gt; on March 26, 2020.&lt;/p&gt;</content>
+</entry>
 
 
 <entry>
@@ -71,7 +240,7 @@ This boils down to being deliberate about how we make decisions, and how we work
 &lt;p&gt;Thanks to the organizers of Ignite Velocity 2015 New York, the Pittsburgh Perl Workshop 2015, OSDC 2015, and Cloud Foundry Summit Berlin 2015 for giving me five minutes to talk about this at each of your events. I gave this talk four times in three weeks on three different continents. Recordings from &lt;a href=&quot;https://www.youtube.com/watch?v=Kcmv-h2J3HQ&quot;&gt;Velocity&lt;/a&gt; and &lt;a href=&quot;https://www.youtube.com/watch?v=BXv9KpYrW0w&quot;&gt;OSDC&lt;/a&gt; are available as are &lt;a href=&quot;https://speakerdeck.com/caseywest/redefining-culture-fit&quot;&gt;the slides&lt;/a&gt;.&lt;/p&gt;
 
 
-  &lt;p&gt;&lt;a href=&quot;http://caseywest.com/redefining-culture-fit/&quot;&gt;Redefining Culture Fit&lt;/a&gt; was originally published by Casey West at &lt;a href=&quot;http://caseywest.com&quot;&gt;I'm Casey West.&lt;/a&gt; on November 06, 2015.&lt;/p&gt;</content>
+  &lt;p&gt;&lt;a href=&quot;http://caseywest.com/redefining-culture-fit/&quot;&gt;Redefining Culture Fit&lt;/a&gt; was originally published by Casey West at &lt;a href=&quot;http://caseywest.com&quot;&gt;I'm Casey West&lt;/a&gt; on November 06, 2015.&lt;/p&gt;</content>
 </entry>
 
 
@@ -93,7 +262,7 @@ This boils down to being deliberate about how we make decisions, and how we work
 
 &lt;p&gt;A piece I wrote on what it means to be cloud-native.&lt;/p&gt;
 
-  &lt;p&gt;&lt;a href=&quot;http://caseywest.com/the-cloud-native-future/&quot;&gt;The cloud-native future&lt;/a&gt; was originally published by Casey West at &lt;a href=&quot;http://caseywest.com&quot;&gt;I'm Casey West.&lt;/a&gt; on September 02, 2015.&lt;/p&gt;</content>
+  &lt;p&gt;&lt;a href=&quot;http://caseywest.com/the-cloud-native-future/&quot;&gt;The cloud-native future&lt;/a&gt; was originally published by Casey West at &lt;a href=&quot;http://caseywest.com&quot;&gt;I'm Casey West&lt;/a&gt; on September 02, 2015.&lt;/p&gt;</content>
 </entry>
 
 
@@ -122,7 +291,7 @@ This boils down to being deliberate about how we make decisions, and how we work
 &lt;p&gt;Finally, thank you to &lt;a href=&quot;https://medium.com/@lestrrat/the-10th-and-final-yapc-asia-tokyo-6bf15dae1ab4&quot;&gt;Daisuke Maki&lt;/a&gt; for inviting me to speak this year!&lt;/p&gt;
 
 
-  &lt;p&gt;&lt;a href=&quot;http://caseywest.com/farewell-yapc-asia/&quot;&gt;Farewell YAPC::Asia&lt;/a&gt; was originally published by Casey West at &lt;a href=&quot;http://caseywest.com&quot;&gt;I'm Casey West.&lt;/a&gt; on August 30, 2015.&lt;/p&gt;</content>
+  &lt;p&gt;&lt;a href=&quot;http://caseywest.com/farewell-yapc-asia/&quot;&gt;Farewell YAPC::Asia&lt;/a&gt; was originally published by Casey West at &lt;a href=&quot;http://caseywest.com&quot;&gt;I'm Casey West&lt;/a&gt; on August 30, 2015.&lt;/p&gt;</content>
 </entry>
 
 
@@ -188,7 +357,7 @@ This boils down to being deliberate about how we make decisions, and how we work
 &lt;p&gt;Don't focus on operating your business. Focus on building it.&lt;/p&gt;
 
 
-  &lt;p&gt;&lt;a href=&quot;http://caseywest.com/the-mission-of-a-devops-team/&quot;&gt;The Mission of a DevOps Team&lt;/a&gt; was originally published by Casey West at &lt;a href=&quot;http://caseywest.com&quot;&gt;I'm Casey West.&lt;/a&gt; on July 16, 2015.&lt;/p&gt;</content>
+  &lt;p&gt;&lt;a href=&quot;http://caseywest.com/the-mission-of-a-devops-team/&quot;&gt;The Mission of a DevOps Team&lt;/a&gt; was originally published by Casey West at &lt;a href=&quot;http://caseywest.com&quot;&gt;I'm Casey West&lt;/a&gt; on July 16, 2015.&lt;/p&gt;</content>
 </entry>
 
 
@@ -222,7 +391,7 @@ This boils down to being deliberate about how we make decisions, and how we work
   &lt;p&gt;When we feel safe trust will emerge. This is what the foundations of leadership really are. The reason we call someone leader is because they choose to go first. They choose to extend trust first, even before there are any signs they should. The willingness to express empathy before anyone else.&lt;/p&gt;
 &lt;/blockquote&gt;
 
-  &lt;p&gt;&lt;a href=&quot;http://caseywest.com/trust-and-consequences/&quot;&gt;Trust and Consequences&lt;/a&gt; was originally published by Casey West at &lt;a href=&quot;http://caseywest.com&quot;&gt;I'm Casey West.&lt;/a&gt; on May 19, 2015.&lt;/p&gt;</content>
+  &lt;p&gt;&lt;a href=&quot;http://caseywest.com/trust-and-consequences/&quot;&gt;Trust and Consequences&lt;/a&gt; was originally published by Casey West at &lt;a href=&quot;http://caseywest.com&quot;&gt;I'm Casey West&lt;/a&gt; on May 19, 2015.&lt;/p&gt;</content>
 </entry>
 
 
@@ -562,7 +731,7 @@ long as the code it's talking about lasts.&lt;/p&gt;
   &lt;/ol&gt;
 &lt;/div&gt;
 
-  &lt;p&gt;&lt;a href=&quot;http://caseywest.com/durable-communication/&quot;&gt;Durable Communication&lt;/a&gt; was originally published by Casey West at &lt;a href=&quot;http://caseywest.com&quot;&gt;I'm Casey West.&lt;/a&gt; on May 10, 2015.&lt;/p&gt;</content>
+  &lt;p&gt;&lt;a href=&quot;http://caseywest.com/durable-communication/&quot;&gt;Durable Communication&lt;/a&gt; was originally published by Casey West at &lt;a href=&quot;http://caseywest.com&quot;&gt;I'm Casey West&lt;/a&gt; on May 10, 2015.&lt;/p&gt;</content>
 </entry>
 
 
@@ -673,7 +842,7 @@ long as the code it's talking about lasts.&lt;/p&gt;
   &lt;/ol&gt;
 &lt;/div&gt;
 
-  &lt;p&gt;&lt;a href=&quot;http://caseywest.com/the-help-timer/&quot;&gt;The Help Timer&lt;/a&gt; was originally published by Casey West at &lt;a href=&quot;http://caseywest.com&quot;&gt;I'm Casey West.&lt;/a&gt; on May 03, 2015.&lt;/p&gt;</content>
+  &lt;p&gt;&lt;a href=&quot;http://caseywest.com/the-help-timer/&quot;&gt;The Help Timer&lt;/a&gt; was originally published by Casey West at &lt;a href=&quot;http://caseywest.com&quot;&gt;I'm Casey West&lt;/a&gt; on May 03, 2015.&lt;/p&gt;</content>
 </entry>
 
 
@@ -811,7 +980,7 @@ long as the code it's talking about lasts.&lt;/p&gt;
   &lt;/ol&gt;
 &lt;/div&gt;
 
-  &lt;p&gt;&lt;a href=&quot;http://caseywest.com/technical-phone-screen-howto/&quot;&gt;Technical Phone Screen HOWTO&lt;/a&gt; was originally published by Casey West at &lt;a href=&quot;http://caseywest.com&quot;&gt;I'm Casey West.&lt;/a&gt; on April 19, 2015.&lt;/p&gt;</content>
+  &lt;p&gt;&lt;a href=&quot;http://caseywest.com/technical-phone-screen-howto/&quot;&gt;Technical Phone Screen HOWTO&lt;/a&gt; was originally published by Casey West at &lt;a href=&quot;http://caseywest.com&quot;&gt;I'm Casey West&lt;/a&gt; on April 19, 2015.&lt;/p&gt;</content>
 </entry>
 
 
@@ -933,7 +1102,7 @@ I'm sure you've heard this before: &lt;em&gt;&quot;we're going to put you on the
 &lt;/figure&gt;
 
 
-  &lt;p&gt;&lt;a href=&quot;http://caseywest.com/a-call-for-more-tech-leadership/&quot;&gt;A Call for More Tech Leadership&lt;/a&gt; was originally published by Casey West at &lt;a href=&quot;http://caseywest.com&quot;&gt;I'm Casey West.&lt;/a&gt; on April 12, 2015.&lt;/p&gt;</content>
+  &lt;p&gt;&lt;a href=&quot;http://caseywest.com/a-call-for-more-tech-leadership/&quot;&gt;A Call for More Tech Leadership&lt;/a&gt; was originally published by Casey West at &lt;a href=&quot;http://caseywest.com&quot;&gt;I'm Casey West&lt;/a&gt; on April 12, 2015.&lt;/p&gt;</content>
 </entry>
 
 
@@ -1118,7 +1287,7 @@ now, and why.&lt;/p&gt;
   &lt;/ol&gt;
 &lt;/div&gt;
 
-  &lt;p&gt;&lt;a href=&quot;http://caseywest.com/work-with-us-at-whitehat/&quot;&gt;Work with us at WhiteHat&lt;/a&gt; was originally published by Casey West at &lt;a href=&quot;http://caseywest.com&quot;&gt;I'm Casey West.&lt;/a&gt; on January 23, 2015.&lt;/p&gt;</content>
+  &lt;p&gt;&lt;a href=&quot;http://caseywest.com/work-with-us-at-whitehat/&quot;&gt;Work with us at WhiteHat&lt;/a&gt; was originally published by Casey West at &lt;a href=&quot;http://caseywest.com&quot;&gt;I'm Casey West&lt;/a&gt; on January 23, 2015.&lt;/p&gt;</content>
 </entry>
 
 
@@ -1600,7 +1769,7 @@ body
 &lt;iframe width=&quot;560&quot; height=&quot;315&quot; src=&quot;http://www.youtube.com/embed/ezQLP1dj_t8&quot; allowfullscreen=&quot;&quot;&gt;&lt;/iframe&gt;
 
 
-  &lt;p&gt;&lt;a href=&quot;http://caseywest.com/responsibly-use-peek-to-inspect-rails/&quot;&gt;Responsibly Use Peek to Inspect Rails&lt;/a&gt; was originally published by Casey West at &lt;a href=&quot;http://caseywest.com&quot;&gt;I'm Casey West.&lt;/a&gt; on January 07, 2015.&lt;/p&gt;</content>
+  &lt;p&gt;&lt;a href=&quot;http://caseywest.com/responsibly-use-peek-to-inspect-rails/&quot;&gt;Responsibly Use Peek to Inspect Rails&lt;/a&gt; was originally published by Casey West at &lt;a href=&quot;http://caseywest.com&quot;&gt;I'm Casey West&lt;/a&gt; on January 07, 2015.&lt;/p&gt;</content>
 </entry>
 
 
@@ -1713,7 +1882,7 @@ Turns out, by enabling the &lt;code&gt;cache&lt;/code&gt; in Travis I caused Rub
 &lt;p&gt;Be careful when modifying RuboCop's configuration that you copy what you need to keep from the defaults, because defining an entry in your project will discard the them, not merge them.&lt;/p&gt;
 
 
-  &lt;p&gt;&lt;a href=&quot;http://caseywest.com/faster-ci-on-travis-and-docker-for-ruby-and-rails-and-rubocop/&quot;&gt;Faster CI on Travis (and Docker) for Ruby (and Rails (and RuboCop))&lt;/a&gt; was originally published by Casey West at &lt;a href=&quot;http://caseywest.com&quot;&gt;I'm Casey West.&lt;/a&gt; on January 06, 2015.&lt;/p&gt;</content>
+  &lt;p&gt;&lt;a href=&quot;http://caseywest.com/faster-ci-on-travis-and-docker-for-ruby-and-rails-and-rubocop/&quot;&gt;Faster CI on Travis (and Docker) for Ruby (and Rails (and RuboCop))&lt;/a&gt; was originally published by Casey West at &lt;a href=&quot;http://caseywest.com&quot;&gt;I'm Casey West&lt;/a&gt; on January 06, 2015.&lt;/p&gt;</content>
 </entry>
 
 
@@ -1785,7 +1954,7 @@ Turns out, by enabling the &lt;code&gt;cache&lt;/code&gt; in Travis I caused Rub
 
 &lt;p&gt;This, I believe, is the most important advancement since Brooks wrote his paper. Organizations have recognized the need to grow great software designers. As a result the pace of development and product creation has increased dramatically. The state of the world is much better now than 1986 but we still have a long way to go.&lt;/p&gt;
 
-  &lt;p&gt;&lt;a href=&quot;http://caseywest.com/theres-still-no-silver-bullet/&quot;&gt;There's Still No Silver Bullet (2006)&lt;/a&gt; was originally published by Casey West at &lt;a href=&quot;http://caseywest.com&quot;&gt;I'm Casey West.&lt;/a&gt; on January 04, 2015.&lt;/p&gt;</content>
+  &lt;p&gt;&lt;a href=&quot;http://caseywest.com/theres-still-no-silver-bullet/&quot;&gt;There's Still No Silver Bullet (2006)&lt;/a&gt; was originally published by Casey West at &lt;a href=&quot;http://caseywest.com&quot;&gt;I'm Casey West&lt;/a&gt; on January 04, 2015.&lt;/p&gt;</content>
 </entry>
 
 
@@ -1953,7 +2122,7 @@ task &lt;span class=&quot;key&quot;&gt;default&lt;/span&gt;: &lt;span class=&quo
 
 &lt;p&gt;Since this is part of my testing expectations I can also rest easy because my continuous integration tool has my back on every change, too.&lt;/p&gt;
 
-  &lt;p&gt;&lt;a href=&quot;http://caseywest.com/run-bundle-audit-from-rake/&quot;&gt;Run bundle-audit from rake&lt;/a&gt; was originally published by Casey West at &lt;a href=&quot;http://caseywest.com&quot;&gt;I'm Casey West.&lt;/a&gt; on January 03, 2015.&lt;/p&gt;</content>
+  &lt;p&gt;&lt;a href=&quot;http://caseywest.com/run-bundle-audit-from-rake/&quot;&gt;Run bundle-audit from rake&lt;/a&gt; was originally published by Casey West at &lt;a href=&quot;http://caseywest.com&quot;&gt;I'm Casey West&lt;/a&gt; on January 03, 2015.&lt;/p&gt;</content>
 </entry>
 
 
@@ -2062,7 +2231,7 @@ task &lt;span class=&quot;key&quot;&gt;default&lt;/span&gt;: &lt;span class=&quo
 &lt;p&gt;Scroll to the bottom of that page for podcast subscription links. &lt;em&gt;Warning: political alignment obvious.&lt;/em&gt;&lt;/p&gt;
 
 
-  &lt;p&gt;&lt;a href=&quot;http://caseywest.com/2014-s-podcast-recommendations/&quot;&gt;2014's Podcast Recommendations&lt;/a&gt; was originally published by Casey West at &lt;a href=&quot;http://caseywest.com&quot;&gt;I'm Casey West.&lt;/a&gt; on December 31, 2014.&lt;/p&gt;</content>
+  &lt;p&gt;&lt;a href=&quot;http://caseywest.com/2014-s-podcast-recommendations/&quot;&gt;2014's Podcast Recommendations&lt;/a&gt; was originally published by Casey West at &lt;a href=&quot;http://caseywest.com&quot;&gt;I'm Casey West&lt;/a&gt; on December 31, 2014.&lt;/p&gt;</content>
 </entry>
 
 
@@ -2090,7 +2259,7 @@ task &lt;span class=&quot;key&quot;&gt;default&lt;/span&gt;: &lt;span class=&quo
 
 &lt;p&gt;Their CEO, Ryan Holmes, wrote more about it &lt;a href=&quot;https://www.linkedin.com/pulse/20141113221604-2967511--your-product-is-a-piece-of-sh-t-how-my-company-responded-to-this-tweet?trk=mp-reader-card&quot;&gt;on LinkedIn.&lt;/a&gt;&lt;/p&gt;
 
-  &lt;p&gt;&lt;a href=&quot;http://caseywest.com/hootsuite-has-best-response-to-criticism/&quot;&gt;Hootsuite Has Best Response to Criticism&lt;/a&gt; was originally published by Casey West at &lt;a href=&quot;http://caseywest.com&quot;&gt;I'm Casey West.&lt;/a&gt; on December 30, 2014.&lt;/p&gt;</content>
+  &lt;p&gt;&lt;a href=&quot;http://caseywest.com/hootsuite-has-best-response-to-criticism/&quot;&gt;Hootsuite Has Best Response to Criticism&lt;/a&gt; was originally published by Casey West at &lt;a href=&quot;http://caseywest.com&quot;&gt;I'm Casey West&lt;/a&gt; on December 30, 2014.&lt;/p&gt;</content>
 </entry>
 
 
@@ -2160,7 +2329,7 @@ task &lt;span class=&quot;key&quot;&gt;default&lt;/span&gt;: &lt;span class=&quo
   &lt;/ol&gt;
 &lt;/div&gt;
 
-  &lt;p&gt;&lt;a href=&quot;http://caseywest.com/integrated-tests-are-a-scam/&quot;&gt;Integrated Tests Are a Scam&lt;/a&gt; was originally published by Casey West at &lt;a href=&quot;http://caseywest.com&quot;&gt;I'm Casey West.&lt;/a&gt; on December 29, 2014.&lt;/p&gt;</content>
+  &lt;p&gt;&lt;a href=&quot;http://caseywest.com/integrated-tests-are-a-scam/&quot;&gt;Integrated Tests Are a Scam&lt;/a&gt; was originally published by Casey West at &lt;a href=&quot;http://caseywest.com&quot;&gt;I'm Casey West&lt;/a&gt; on December 29, 2014.&lt;/p&gt;</content>
 </entry>
 
 
@@ -2217,7 +2386,7 @@ task &lt;span class=&quot;key&quot;&gt;default&lt;/span&gt;: &lt;span class=&quo
 
 &lt;p&gt;Half the company was looking for a quick technical fix that would make it all better. The other half wanted to add process to over come the social issues. It was obvious to me we would have to fix both if we really wanted to solve the problem. Any solution that ignored the fact that we were a socio-technical organization was lacking.&lt;/p&gt;
 
-  &lt;p&gt;&lt;a href=&quot;http://caseywest.com/your-software-is-made-of-people/&quot;&gt;Your Software Is Made of People&lt;/a&gt; was originally published by Casey West at &lt;a href=&quot;http://caseywest.com&quot;&gt;I'm Casey West.&lt;/a&gt; on December 24, 2014.&lt;/p&gt;</content>
+  &lt;p&gt;&lt;a href=&quot;http://caseywest.com/your-software-is-made-of-people/&quot;&gt;Your Software Is Made of People&lt;/a&gt; was originally published by Casey West at &lt;a href=&quot;http://caseywest.com&quot;&gt;I'm Casey West&lt;/a&gt; on December 24, 2014.&lt;/p&gt;</content>
 </entry>
 
 
@@ -2248,7 +2417,7 @@ task &lt;span class=&quot;key&quot;&gt;default&lt;/span&gt;: &lt;span class=&quo
 
 &lt;p&gt;Hello, world!&lt;/p&gt;
 
-  &lt;p&gt;&lt;a href=&quot;http://caseywest.com/hello-world/&quot;&gt;hello, world&lt;/a&gt; was originally published by Casey West at &lt;a href=&quot;http://caseywest.com&quot;&gt;I'm Casey West.&lt;/a&gt; on December 24, 2014.&lt;/p&gt;</content>
+  &lt;p&gt;&lt;a href=&quot;http://caseywest.com/hello-world/&quot;&gt;hello, world&lt;/a&gt; was originally published by Casey West at &lt;a href=&quot;http://caseywest.com&quot;&gt;I'm Casey West&lt;/a&gt; on December 24, 2014.&lt;/p&gt;</content>
 </entry>
 
 </feed>
