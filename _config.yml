@@ -1,4 +1,4 @@
-title:            I'm Casey West.
+title:            I'm Casey West
 description:      Let's build great things together.
 disqus_shortname:
 reading_time:     true
@@ -44,6 +44,7 @@ markdown:    kramdown
 gems:
   - jekyll-sitemap
   - jekyll-paginate
+  - jekyll-gist
 sass:
   sass_dir: _sass
   style: compressed
